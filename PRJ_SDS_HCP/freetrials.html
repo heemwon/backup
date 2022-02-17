@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <base href="./" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <script src="assets/js/ie.js"></script>
+    <link rel="stylesheet" href="assets/css/library/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/library/choices.min.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/common.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- START : 수정 : 210701 title명 수정 -->
+    <title>Samsung Cloud Platform</title>
+    <!-- END : 수정 : 210701 title명 수정 -->
+  </head>
+  <body>
+    <div class="wrap free-trial">
+      <!-- 3depth 메뉴가 있을 시 header태그에 subpage 듀얼클래스를 추가해주세요. -->
+      <div id="header-template" class="header-include subpage"></div>
+      <article class="content">
+        <!-- START : 수정 : 210803 이미지 삭제 및 클래스 삭제 -->
+        <div class="hero-sub hero-solid">
+          <div class="content">
+            <div class="sub-content">
+              <h2 class="font-heading1" data-i18n="freeTrials.label.1"></h2>
+              <!-- START : 수정 : 210903 PC에서만 보이도록 class 수정 및 추가 -->
+              <div class="font-body2 pc-view" data-i18n="freeTrials.message.1"></div>
+              <div class="font-body2 mobile-view">
+                <span class="i18n-inherit" data-i18n="freeTrials.message.1"></span>
+                <br />
+                <span class="i18n-inherit" data-i18n="freeTrials.message.9"></span>
+              </div>
+              <a scp-console class="btn-solid large reverse pc-view" data-i18n="freeTrials.button.1"></a>
+              <!-- END : 수정 : 210903 PC에서만 보이도록 class 수정 및 추가 -->
+            </div>
+          </div>
+        </div>
+        <!-- END : 수정 : 210803 이미지 삭제 및 클래스 삭제 -->
+        <div class="page-content">
+          <div class="inner">
+            <div class="box">
+              <h3 class="font-heading2">
+                <em data-i18n="freeTrials.label.2"></em> <span class="i18n-inherit" data-i18n="freeTrials.label.3"></span>
+              </h3>
+              <p class="font-body1" data-i18n="freeTrials.message.2"></p>
+              <div class="card-wrap">
+                <!-- Virtual Server -->
+                <a href="product/compute/virtualServer.html" target="_self" class="card-type1 option" data-product="virtualServer">
+                  <span class="icon">
+                    <img src="assets/images/icon/ic_compute_virtualserver_44.png" alt="Virtual Server icon" />
+                  </span>
+                  <h4 class="title" data-i18n="label.label_86"></h4>
+                  <p class="text" data-i18n="message.message_5"></p>
+                  <div class="option-list">
+                    <span data-i18n="freeTrials.table.5"></span>
+                  </div>
+                </a>
+                <!-- Block Storage -->
+                <a href="product/storage/blockStorage.html" target="_self" class="card-type1 option" data-product="blockStorage">
+                  <span class="icon">
+                    <img src="assets/images/icon/ic_Storage_block_storage_44.png" alt="Block Storage icon" />
+                  </span>
+                  <h4 class="title" data-i18n="label.label_100"></h4>
+                  <p class="text" data-i18n="message.message_8"></p>
+                  <div class="option-list">
+                    <span data-i18n="freeTrials.table.2"></span>
+                  </div>
+                </a>
+                <!-- DB Service -->
+                <a href="product/database/dbService.html" target="_self" class="card-type1 option" data-product="dbService">
+                  <span class="icon">
+                    <img src="assets/images/icon/ic_database_dbserver_44.png" alt="DB Service icon" />
+                  </span>
+                  <h4 class="title" data-i18n="label.label_103"></h4>
+                  <p class="text" data-i18n="message.message_12"></p>
+                  <div class="option-list">
+                    <span data-i18n="freeTrials.table.1"></span>
+                  </div>
+                </a>
+                <!-- Load Balancer -->
+                <a href="product/network/loadBalancer.html" target="_self" class="card-type1 option" data-product="loadBalancer">
+                  <span class="icon">
+                    <img src="assets/images/icon/ic_networking_loadbalancer_44.png" alt="Load Balancer icon" />
+                  </span>
+                  <h4 class="title" data-i18n="label.label_93"></h4>
+                  <p class="text" data-i18n="message.message_17"></p>
+                  <div class="option-list">
+                    <span data-i18n="freeTrials.table.3"></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="box">
+              <h3 class="font-heading2">
+                <em data-i18n="freeTrials.label.4"></em> <span class="i18n-inherit" data-i18n="freeTrials.label.5"></span>
+              </h3>
+              <p class="font-body1" data-i18n="freeTrials.message.3"></p>
+              <div class="card-wrap">
+                <!-- VPN -->
+                <a href="product/network/vpc.html" target="_self" class="card-type1 option" data-product="vpc">
+                  <span class="icon">
+                    <img src="assets/images/icon/ic_networking_vpc_44.png" alt="VPC icon" />
+                  </span>
+                  <h4 class="title" data-i18n="label.label_88"></h4>
+                  <p class="text" data-i18n="message.message_15"></p>
+                  <div class="option-list">
+                    <span data-i18n="table.table_20"></span>
+                  </div>
+                </a>
+                <!-- Security Group -->
+                <a href="product/network/securityGroup.html" target="_self" class="card-type1 option" data-product="securityGroup">
+                  <span class="icon">
+                    <img src="assets/images/icon/ic_networking_securitygroup_44.png" alt="Security Group icon" />
+                  </span>
+                  <h4 class="title" data-i18n="label.label_112"></h4>
+                  <p class="text" data-i18n="message.message_16"></p>
+                  <div class="option-list">
+                    <span data-i18n="table.table_20"></span>
+                  </div>
+                </a>
+                <!-- Logging & Audit -->
+                <a href="product/management/logNaudit.html" target="_self" class="card-type1 option" data-product="logNaudit">
+                  <span class="icon">
+                    <img src="assets/images/icon/ic_management_loggingaudit_44.png" alt="Logging & Audit icon" />
+                  </span>
+                  <h4 class="title">Logging & Audit</h4>
+                  <p class="text" data-i18n="message.message_30"></p>
+                  <div class="option-list">
+                    <span data-i18n="freeTrials.table.4"></span>
+                  </div>
+                </a>
+                <!-- Cloud Monitoring -->
+                <a href="product/management/monitoring.html" target="_self" class="card-type1 option" data-product="monitoring">
+                  <span class="icon">
+                    <img src="assets/images/icon/ic_management_cloudmonitoring_44.png" alt="Cloud Monitoring icon" />
+                  </span>
+                  <h4 class="title" data-i18n="label.label_130"></h4>
+                  <p class="text" data-i18n="message.message_31"></p>
+                  <div class="option-list">
+                    <span data-i18n="table.table_20"></span>
+                  </div>
+                </a>
+                <!-- 인증서 관리 -->
+                <a href="product/security/certificateMgmt.html" target="_self" class="card-type1 option" data-product="certificateMgmt">
+                  <span class="icon">
+                    <img src="assets/images/icon/ic_security_certificatemanagement_44.png" alt="인증서 관리 icon" />
+                  </span>
+                  <h4 class="title" data-i18n="label.label_333"></h4>
+                  <p class="text" data-i18n="message.message_25"></p>
+                  <div class="option-list">
+                    <span data-i18n="table.table_20"></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <ul class="list-type1">
+              <li class="title i18n-br" data-i18n="freeTrials.message.4"></li>
+              <li class="title i18n-br" data-i18n="freeTrials.message.5"></li>
+              <li class="title i18n-br" data-i18n="freeTrials.message.6"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="page-content blue">
+          <div class="inner">
+            <div class="start-wrap">
+              <h3 class="font-heading2" data-i18n="freeTrials.label.6"></h3>
+              <p data-i18n="freeTrials.message.7"></p>
+              <ol>
+                <li>01. <span class="i18n-inherit" data-i18n="freeTrials.image.1"></span></li>
+                <li>02. <span class="i18n-inherit" data-i18n="freeTrials.image.2"></span></li>
+                <li>03. <span class="i18n-inherit" data-i18n="freeTrials.image.3"></span></li>
+                <li>04. <span class="i18n-inherit" data-i18n="freeTrials.image.4"></span></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="page-content white">
+          <div class="inner">
+            <div class="consult-wrap">
+              <div class="consult">
+                <h3 class="font-heading3 i18n-br" data-i18n="label.label_89"></h3>
+                <a href="support/question.html" class="btn-solid large" data-i18n="button.button_27"></a>
+              </div>
+              <div class="consult">
+                <ul>
+                  <li>
+                    <span data-i18n="freeTrials.message.8"></span><br/>
+                    <a scp-console class="link" data-i18n="freeTrials.image.1"></a>
+                  </li>
+                  <li>
+                    <span data-i18n="label.label_90"></span><br/>
+                    <a href="intro/case.html" class="link" data-i18n="button.button_18"></a>
+                  </li>
+                  <li>
+                    <span data-i18n="label.label_91"></span><br/>
+                    <a href="product.html" class="link" data-i18n="button.button_29"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <div id="footer-template"></div>
+    </div>
+
+    <script src="assets/js/library/jquery.min.js"></script>
+    <script src="assets/js/library/swiper-bundle.min.js"></script>
+    <script src="assets/js/library/scroll-lock.min.js"></script>
+    <script src="assets/js/library/ScrollMagic.min.js"></script>
+    <script src="assets/js/library/choices.min.js"></script>
+    <script src="assets/js/library/i18next-1.11.2.min.js"></script>
+
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/i18n/freetrials.js"></script>
+    <script src="assets/js/initialize.js"></script>
+    <script src="assets/js/pub.js"></script>
+  </body>
+</html>

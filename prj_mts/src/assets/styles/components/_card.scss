@@ -1,0 +1,77 @@
+[class*="card-type-"] {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 32px 20px 26px;
+  background-color: #dbecfb;
+  .title-type-01 {
+    width: calc(67% - 5px);
+  }
+  figure {
+    width: calc(33% - 5px);
+    img {
+      width: 100%;
+    }
+  }
+  background: url("../images/image/img_t_cover_01.png") no-repeat top 24px right 12px;
+  background-size: 140px;
+  background-color: #ffe8e8;
+}
+.card-type-02 {
+  background: url("../images/image/img_t_cover_03.png") no-repeat bottom 106px right 12px;
+  background-size: 140px;
+  background-color: #e9f5ed;
+  .title-type-01 {
+    margin-bottom: 24px;
+    width: 100%;
+  }
+  .guide-list {
+    min-width: 160px;
+  }
+}
+.card-type-03 {
+  background: url("../images/image/img_t_cover_02.png") no-repeat top 24px right 12px;
+  background-size: 140px;
+  background-color: #dbecfb;
+}
+.card-type-04 {
+  background: url("../images/image/img_t_cover_02_1.png") no-repeat top 24px right 12px;
+  background-size: 140px;
+  background-color: #dbecfb;
+}
+.card-type-05 {
+  background: url("../images/image/img_t_cover_04.png") no-repeat top 24px right 12px;
+  background-size: 140px;
+  background-color: #dbecfb;
+}
+.card-type-06 {
+  background: url("../images/image/img_fb_wrap_cover_01.png") no-repeat top 24px right 12px;
+  background-size: 140px;
+  background-color: #dbecfb;
+}
+.card-type-07 {
+  background: url("../images/image/img_fb_c_cover_01.png") no-repeat top 24px right 12px;
+  background-size: 140px;
+  background-color: #e5f8f4;
+}
+.card-type-08 {
+  background: url("../images/image/img_fb_c_cover_02.png") no-repeat top 24px right 12px;
+  background-size: 140px;
+  background-color: #fcecdd;
+}
+
+.txt-bg-box {
+  padding: 24px 20px;
+  background-color: #44464a;
+  .tit {
+    display: inline-block;
+  }
+  .tit,
+  .desc {
+    color: $white;
+  }
+  .desc {
+    @extend .body1-2;
+    margin-top: 8px;
+  }
+}

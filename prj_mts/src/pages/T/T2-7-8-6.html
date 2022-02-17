@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <base href="../../" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <div class="product-info-wrap">
+      <main>
+        <div class="menu-wrap">
+          <div class="btn-wrap">
+            <button type="button" class="dropdown-btn">미니코스피200옵션</button>
+          </div>
+          <ul class="sub-menu">
+            <li><a href="pages/T/T2-7-8-1.html">코스피200선물</a></li>
+            <li><a href="pages/T/T2-7-8-2.html">코스피200옵션</a></li>
+            <li><a href="pages/T/T2-7-8-3.html">코스피200위클리옵션</a></li>
+            <li><a href="pages/T/T2-7-8-4.html">KRX300선물</a></li>
+            <li><a href="pages/T/T2-7-8-5.html">미니코스피200선물</a></li>
+            <li class="active"><a href="pages/T/T2-7-8-6.html">미니코스피200옵션</a></li>
+            <li><a href="pages/T/T2-7-8-7.html">변동성지수선물</a></li>
+            <li><a href="pages/T/T2-7-8-8.html">코스피200섹터지수선물</a></li>
+            <li><a href="pages/T/T2-7-8-9.html">배당지수선물</a></li>
+            <li><a href="pages/T/T2-7-8-10.html">코스닥150옵션</a></li>
+            <li><a href="pages/T/T2-7-8-11.html">코스닥150선물</a></li>
+            <li><a href="pages/T/T2-7-8-12.html">K-뉴딜지수 선물</a></li>
+          </ul>
+        </div>
+        <div class="page-list-type-04">
+          <dl>
+            <dt>거래승수</dt>
+            <dd>5만</dd>
+            <dt>결제월 수</dt>
+            <dd>6개</dd>
+            <dt>거래기간</dt>
+            <dd>6개월</dd>
+            <dt>선물 스프레드 종목수</dt>
+            <dd>5개</dd>
+            <dt>호가가격 단위</dt>
+            <dd class="page-list-type-01">
+              <ul>
+                <li>호가가격 3p 미만 : 0.01p</li>
+                <li>호가가격 3p 이상: 0.02p</li>
+                <li>호가가격 10p 이상: 0.05p</li>
+              </ul>
+            </dd>
+            <dt>호가유형</dt>
+            <dd>지정가만 가능</dd>
+            <dt>호가수량한도</dt>
+            <dd>10,000계약</dd>
+            <dt>가격제한폭 확대방법</dt>
+            <dd>코스피200선물이 가격제한폭 확대요건에 해당되는 경우 미니 코스피200선물도 연계하여 동일하게 확대</dd>
+            <dt>기준가격</dt>
+            <dd class="piece-list-type-03">
+              행사가격 및 결제월이 동일한 코스피200옵션 기준가격
+              <ul>
+                <li>단, 호가가격 단위에 부합하지 않는 경우에는 가까운 가격으로 조정</li>
+              </ul>
+            </dd>
+            <dt>위탁증거금 기준가격</dt>
+            <dd>행사가격 및 결제월이 동일한 코스피200옵션 위탁증거금 기준가격</dd>
+            <dt>실시간 가격제한</dt>
+            <dd>미적용</dd>
+            <dt>위탁증거금률</dt>
+            <dd>7.50%</dd>
+            <dt>단일가격경쟁거래</dt>
+            <dd class="piece-list-type-03">
+              개장시(08:00~09:00) 및 거래종료 시(15:35~15:45) 균형가격에 의해 거래체결
+              <ul>
+                <li>단일가호가시간 종료 전 1분간은 불공정거래 예방 등을 위해 호가취소 및 정정이 제한됩니다.</li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+      </main>
+    </div>
+    @@include('../include/script.html')
+  </body>
+</html>

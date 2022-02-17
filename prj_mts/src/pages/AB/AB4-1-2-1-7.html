@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <base href="../../" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <div>
+      <main>
+        <div class="page-list-type-01">
+          <dl>
+            <dt class="tit">융자금 자동상환이란?</dt>
+            <dd class="desc">
+              융자금 자동 상환신청 시 매수결제일에 위탁수수료 및 거래세 등으로 사용되고 남은 예수금과 대출보증금 중 적은 금액범위 내에서 자동으로 융자금이 상환됩니다.<br />
+              (자동상환 된 금액만큼 대출보증금은 해지되며, 해지되지 않고 남아있는 대출보증금에 해당하는 현금 또는 부담보평가금액은 신용주문이 불가합니다)
+            </dd>
+            <dt class="tit">대출보증금</dt>
+            <dd class="desc">
+              신용매수 시 징수하는 신용보증금으로서 해당종목 보증금율만큼 대출보증금으로 설정, 설정된 대출보증금은 신용 주문 시 사용 불가
+              <br />
+              <span class="sub">[예시] <em class="accent">40%증거금(보증금율45%)</em> 종목 1,000만원 매수시 450만원 대출보증금설정</span>
+            </dd>
+            <dt class="tit">융자금 자동상환 신청계좌와 미신청계좌와의 차이점</dt>
+            <dd class="desc">
+              [예시 : 40% 증거금(보증금율:45%)종목을 신용으로 10,000,000원 매수 시]
+              <div class="piece-list-type-03">
+                <ul>
+                  <li>단, 대용증권평가금액은 6,250,000원</li>
+                </ul>
+              </div>
+            </dd>
+          </dl>
+        </div>
+        <div class="wrap-table">
+          <table>
+            <thead>
+              <tr>
+                <th>구분</th>
+                <th>융자금 자동상환 신청계좌</th>
+                <th>융자금 자동상환 신청계좌</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="left">계좌 잔고</td>
+                <td class="right">현금 5,000,000원, 대용 5,000,000원 테이블 바디</td>
+                <td class="right">현금 5,000,000원, 대용 5,000,000원 테이블 바디</td>
+              </tr>
+              <tr>
+                <td class="left">대출금</td>
+                <td class="right">5,500,000원</td>
+                <td class="right">10,000,000원</td>
+              </tr>
+              <tr>
+                <td class="left">대출보증금 현금/부담보평가(대용)</td>
+                <td class="right">0원</td>
+                <td class="right">4,500,000원</td>
+              </tr>
+              <tr>
+                <td class="left">예수금</td>
+                <td class="right">500,000원</td>
+                <td class="right">5,000,000원</td>
+              </tr>
+              <tr>
+                <td class="left">원담보현황 <span class="sub">(A)</span></td>
+                <td class="right">10,000,000원</td>
+                <td class="right">10,000,000원</td>
+              </tr>
+              <tr>
+                <td class="left">부담보현황 <span class="sub">(B)</span></td>
+                <td class="right">6,750,000원</td>
+                <td class="right">11,250,000원</td>
+              </tr>
+              <tr>
+                <td class="left">담보비율 <span class="sub">((A+B)÷대출금)x100</span></td>
+                <td class="right">304%</td>
+                <td class="right">212%</td>
+              </tr>
+              <tr>
+                <td class="left">현금주문 가능금액 <span class="sub">(40%증거금 종목 기준)</span></td>
+                <td class="right">2,500,000원</td>
+                <td class="right">13,750,000원</td>
+              </tr>
+              <tr>
+                <td class="left">신용주문 가능금액 <span class="sub">(45%보증금율 종목 기준)</span></td>
+                <td class="right">14,835,164원</td>
+                <td class="right">14,835,164원</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="page-list-type-01 mt24">
+          <p class="tit">융자금 자동상환 제외조건</p>
+          <ul>
+            <li>신용매수 수도결제일 당일, 전일 현금매수 체결분이 있을 경우(현금매도정산금액 < 현금매수정산금액이면제외)</li>
+            <li>금일(전일)매수 융자분을 금일 또는 익일(금일) 매도 상환 시 제외</li>
+          </ul>
+        </div>
+      </main>
+    </div>
+    @@include('../include/script.html')
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <base href="../../" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <div>
+      <main>
+        <div class="page-list-type-01">
+          <p class="tit">자산현황</p>
+          <ul>
+            <li>각 랩 모델별 평가금액 및 상세정보를 조회하는 화면입니다.</li>
+            <li>체결기준의 조회기준을 선택할 경우 주식평가금액은 D+2일의 수량 기준으로 계산되며, 예수금도 D+2일 정산액 기준으로 조회됩니다.</li>
+            <li>
+              주요항목의 계산식은 아래와 같습니다.
+              <span class="sub">
+                투자원금기준 평가손익 = 총평가금액 - 투자원금<br />
+                평가수익률 = 투자원금기준평가손익/투자원금×100
+              </span>
+            </li>
+            <li>랩 모델에서 운용하는 펀드는 당일 기준가격으로 평가금액 조회되며, 기준가격 반영 전에는 전 영업일의 기준가격으로 평가금액을 제공합니다.</li>
+            <li>당일의 펀드기준가격은 08:00까지 반영될 예정이나, 펀드의 사정으로 늦어질 수 있으니 평가금액 조회시 유의하시기 바랍니다.</li>
+          </ul>
+          <p class="tit">거래내역</p>
+          <ul>
+            <li>거래내역 조회는 인터넷 뱅킹 약정 및 스마트폰 서비스 신청 계좌만 조회 가능하므로 자산형황에서 조회되는 계좌목록과 다를 수 있습니다.</li>
+            <li>1회 최대 조회기간은 5년입니다. (결제일 기준)</li>
+            <li>CMA를 포함한 금융투자상품은 예금자보호법에 의하여 보호되지 않으며, 운용실적에 따라 이익 또는 손실이 발생할 수 있습니다.</li>
+            <li>입출금합계는 조회기간 내역의 단순 합계금액으로서 신용대출 이용시 단순 비교를 통한 손익 산출에 적합하지 않습니다.</li>
+            <li>오픈뱅킹서비스로 등록한 계좌의 거래내역을 확인하는 화면입니다.</li>
+            <li>최소 조회기간은 조회일자 기준으로 최소 6개월 범위까지 제공되며 제공되는 금융기관에 따라 더 넓은 범위의 조회결과 제공 가능합니다.</li>
+          </ul>
+        </div>
+      </main>
+    </div>
+    @@include('../include/script.html')
+  </body>
+</html>

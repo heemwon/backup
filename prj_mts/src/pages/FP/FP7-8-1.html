@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <base href="../../" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <div>
+      <main>
+        <div class="page-list-type-01">
+          <p class="tit">결제기준 조회</p>
+          <ul>
+            <li>
+              보유수량 단위
+              <span class="sub">
+                주식/ETN/ETF - 주, 펀드 - 좌수<br />
+                채권/ELS/DLS/ - 천원, RP - 원
+              </span>
+            </li>
+            <li>종목별 보유비중은 소수점 둘째 자리까지 표시됩니다. (소수점 셋째자리 반올림)</li>
+            <li>보유 금액이 작은 종목의 경우 비중이 0.00%로 표시 될 수 있습니다.</li>
+            <li>해외유가증권 및 외화잔고는 조회일 최초고시환율이 적용된 원화평가 금액입니다.</li>
+          </ul>
+          <p class="tit">체결기준 조회</p>
+          <ul>
+            <li>
+              보유수량 단위
+              <span class="sub">
+                주식/ETN/ETF - 주, 펀드 - 좌수<br />
+                채권/ELS/DLS/ - 천원, RP - 원
+              </span>
+            </li>
+            <li>종목별 보유비중은 소수점 둘째 자리까지 표시됩니다. 평가금액이 작은 종목의 경우 비중이 0.00%로 표시될수있습니다.</li>
+            <li>펀드자산은 당일 기준가로 평가되며, 당일 기준가 반영전 또는 영업일이 아닌 경우 직전영업일 기준가로 평가되어 세전평가금액으로 조회됩니다.</li>
+            <li>해외유가증권 및 외화잔고는 조회일 최초고시환율이 적용된 원화평가 금액입니다.</li>
+            <li>해외주식평가금액 ; 조회기준일 당일 결제잔고*전일종가*전일환율이 적용된 평가금액</li>
+          </ul>
+        </div>
+      </main>
+    </div>
+    @@include('../include/script.html')
+  </body>
+</html>

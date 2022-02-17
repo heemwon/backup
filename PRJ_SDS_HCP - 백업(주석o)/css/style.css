@@ -1,0 +1,48 @@
+/* device css */
+@import './responsive/pc.css';
+@import './responsive/tablet.css' screen and (max-width: 1200px);
+@import './responsive/mobile.css' screen and (max-width: 768px);
+
+/* variables */
+:root {
+  --app-height: 100%;
+  --header-height-home: 52px;
+  --header-height-sub: 100px;
+  
+  /* color */
+  --primary-color: #364FC7;
+  --primary-tint-01: #F9FAFD;
+  --primary-tint-02: #EAEDF9;
+  --primary-tint-03: #D6DCF4;
+  --primary-tint-04: #AEB8E9;
+  --primary-tint-05: #8695DD;
+  --primary-tint-06: #5E72D2;
+  --primary-tint-07: #4960CC;
+  --primary-shade-01: #3147B3;
+  --primary-shade-02: #2B3F9F;
+  --primary-shade-03: #26378B;
+  --primary-shade-04: #203078;
+  --primary-shade-05: #1B2763;
+  --primary-shade-06: #161F4F;
+
+  --ui-white: #FFF;
+  --ui-black: #000;
+  --ui-transparent: transparent;
+  --ui-01: #1F2533;
+  --ui-02: #4B505B;
+  --ui-03: #61666F;
+  --ui-04: #787C84;
+  --ui-05: #8E9198;
+  --ui-06: #A5A7AD;
+  --ui-07: #BBBDC1;
+  --ui-08: #CBCDD2;
+  --ui-09: #DDDEE0;
+  --ui-10: #E9EBED;
+  --ui-11: #F0F2F5;
+  --ui-12: #F7F8F9;
+  --ui-13: #FAFBFB;
+
+  --status-update: #F7A443;
+  --status-new: #FB4D58;
+}
+

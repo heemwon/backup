@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <base href="../../" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <div>
+      <main>
+        <div class="tab-wrap1" data-type="tab-wrap">
+          <ul class="tablist wrap-box full" role="tablist">
+            <li class="tab-item" role="tab">
+              <button type="button" class="active" role="button" aria-controls="panel1" data-type="tab-item">미국</button>
+            </li>
+            <li class="tab-item" role="tab">
+              <button type="button" role="button" aria-controls="panel2" data-type="tab-item">중국</button>
+            </li>
+            <li class="tab-item" role="tab">
+              <button type="button" role="button" aria-controls="panel3" data-type="tab-item">홍콩</button>
+            </li>
+            <li class="tab-item" role="tab">
+              <button type="button" role="button" aria-controls="panel4" data-type="tab-item">일본</button>
+            </li>
+            <li class="tab-item" role="tab">
+              <button type="button" role="button" aria-controls="panel5" data-type="tab-item">베트남</button>
+            </li>
+          </ul>
+          <ul class="panels mt24">
+            <li id="panel1" role="tabpanel" tabindex="0">
+              <div class="wrap-table mt16">
+                <p class="tit">거래가능시간(한국기준)</p>
+                <table>
+                  <colgroup>
+                    <col style="width: 30%" />
+                    <col style="width: 70%" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>거래가능시간</th>
+                      <td class="left">
+                        프리마켓 : 18:00 ~ 23:30 (Summer Time 시, 17:00 ~ 22:30)<br />
+                        정규시장 : 23:30 ~ 06:00 (Summer Time 시, 22:30 ~ 05:00)<br />
+                        애프터마켓 : 06:00 ~ 07:00 (Summer Time 시, 05:00 ~ 07:00)
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>거래가능시간(미국 반장일)</th>
+                      <td class="left">
+                        프리마켓 : 18:00 ~ 23:30 (Summer Time 시, 17:00 ~ 22:30)<br />
+                        정규시장 : 23:30 ~ 03:00 (Summer Time 시, 22:30 ~ 02:00)<br />
+                        애프터마켓 : 03:00 ~ 04:00 (Summer Time 시, 02:00 ~ 03:00)
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="page-list-type-01 mt10">
+                  <ul>
+                    <li>한국 공휴일과 상관없이 거래 가능(단, 미국 휴장일은 거래 불가)</li>
+                    <li>Summer Time: 매년 3월 두번째 일요일 ~ 11월 첫번째 일요일</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="wrap-table">
+                <p class="tit">주문 상세 안내</p>
+                <table>
+                  <colgroup>
+                    <col style="width: 30%" />
+                    <col style="width: 70%" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>거래통화</th>
+                      <td class="left">USD(미국달러)</td>
+                    </tr>
+                    <tr>
+                      <th>거래단위</th>
+                      <td class="left">
+                        1주<br />
+                        (단, 아멕스 HOLDRS종목, ETF·ETN종목의 빈호가 주문시에서는 100주 단위입니다.)
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>호가단위</th>
+                      <td class="left">
+                        주문가격 $1은 소수점 2자리<br />
+                        주문가격 $1 미만은 소수점 4자리
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>호가제한 (상/하한가)</th>
+                      <td class="left">
+                        없음<br />
+                        주문가격은 현재가 ± 20%내에서 가능
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>일중매매 (매도대금으로 재매수)</th>
+                      <td class="left">가능</td>
+                    </tr>
+                    <tr>
+                      <th>결제일</th>
+                      <td class="left">
+                        T+3일<br />
+                        현지 휴장일 및 공휴일 포함 시 해당 휴일 수만큼 결제일 순연<br />
+                        결제 후 환전/외화출금 가능
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="page-list-type-01">
+                  <ul>
+                    <li>거래소 규정에 따라 1,000,000주 이상 주문 불가합니다.</li>
+                    <li>당사는 OTC종목을 거래할 수 없습니다.</li>
+                    <li>미국 시장의 프리마켓, 애프터마켓은 투자자간 옥션 마켓으로 주문거부 사유가 다수 존재합니다.주문 전송 후 주문체결 및 거부여부를 반드시 확인해주시기 바랍니다.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="wrap-table">
+                <p class="tit">주문 유형 안내</p>
+                <table>
+                  <colgroup>
+                    <col style="width: 30%" />
+                    <col style="width: 70%" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>지정가(Limit Price)</th>
+                      <td class="left">거래하고자 하는 가격을 지정하여 주문</td>
+                    </tr>
+                    <tr>
+                      <th>장개시시장가 (MOO, Market-On-Open)</th>
+                      <td class="left">
+                        정규장 시초가에 최대한 근접하게 체결되는 시장가 매도주문<br />
+                        주문가능시간<br />
+                        뉴욕거래소 : 정규장 시작 직전까지<br />
+                        나스닥거래소 : 정규장 시작 2분전까지 (단, 정규장 시작 5분전까지만 취소 가능)<br />
+                        아멕스거래소 : 정규장 시작 1분전까지
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>장마감지정가 (MOC, Market-On-Close)</th>
+                      <td class="left">
+                        정규장 종가에 최대한 근접하게 체결되는 시장가 매도주문<br />
+                        주문가능시간<br />
+                        뉴욕거래소 : 정규장 종료 30초전까지<br />
+                        나스닥거래소 : 정규장 종료 5분전까지 (단, 정규장 종료 전 10분은 정정·취소 불가능)<br />
+                        아멕스거래소 : 정규장 종료 10분전까지
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>장개시지정가 (LOO, Limit-On-Open)</th>
+                      <td class="left">
+                        정규장 시초가가 지정한 가격과 동일하거나 유리한 가격일 경우 체결되는 매수·매도주문<br />
+                        주문가능시간<br />
+                        뉴욕거래소, 아멕스거래소 : MOO 주문시간과 동일하며 미체결시 즉시 거부됨<br />
+                        나스닥거래소 : 정규장 시작 30초전까지 (단, 정규장 시작 5분전까지만 정정/취소 가능)
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>장마감지정가 (LOC, Limit-On-Close)</th>
+                      <td class="left">
+                        정규장 종가가 지정한 가격과 동일하거나 유리한 가격일 경우 체결되는 매수·매도주문<br />
+                        주문가능시간 : MOC 주문시간과 동일하며 미체결시 즉시 취소됨
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="page-list-type-01 mt24">
+                <p class="tit">정정/취소주문 안내</p>
+                <ul>
+                  <li>원주문의 가격만 정정/취소가 가능하고, 수량 부분정정/부분취소가 불가합니다.</li>
+                  <li>정정주문은 [실시간 미체결], [체결/예약]에서 원주문에 반영, 별도의 정정주문 기록이 생기지 않습니다.</li>
+                </ul>
+              </div>
+              <div class="page-list-type-01">
+                <p class="tit">기타 유의사항</p>
+                <p class="tit">시세</p>
+                <ul>
+                  <li>무료 실시간 시세 서비스가 기본 제공되며, 유료 실시간 시세 서비스는 별도 신청할 수 있습니다.</li>
+                  <li>메뉴>계좌/서비스>해외 실시간 시세신청 → 앱 왼쪽상단 [메뉴검색]에서 '실시간 시세' 조회</li>
+                  <li>
+                    무료 실시간 시세 서비스가 제공하는 데이터는 유료 실시간 시세 서비스 대비 평균 50% 수준에 해당하는 정보이므로 거래량, 유동성, 순간체결량의 차이가 발생할 수 있으며, 현재가가
+                    일시적?부분적으로 실제 시세와 차이가 발생할 수 있습니다. 프리마켓, 정규시장, 애프터마켓의 정확한 체결정보를 원하는 고객님께서는 유료 실시간 시세 서비스 이용을 권장 드립니다.
+                  </li>
+                  <li>시가, 저가, 고가, 종가는 무료 실시간 시세 서비스 기준으로 표시되기 때문에 유료 실시간 시세 서비스의 시가, 저가, 고가, 종가와 다를 수 있습니다.</li>
+                  <li>종목별 과거 데이터(거래량, 시가, 종가, 고가, 차트 데이터)는 장 종료 후 유료 실시간 시세 서비스 데이터와 동일하게 업로드 됩니다.</li>
+                  <li>무료 실시간 시세 서비스를 이용하여 체결된 매매는 다른 거래소에서 체결되는 실제 시세와 차이가 발생할 수 있으며, 이로 인해 발생하는 손실에 대해서 당사가 책임지지 않습니다.</li>
+                  <li>미국주식 주문(체결)은 실시간 시세 서비스 유형에 관계없이 동일한 시스템으로 진행됩니다.</li>
+                  <li>
+                    유료 실시간 시세 서비스는 자동연장 서비스로 서비스 이용 고객님께서는 이용 기간을 확인하시어, 연장으로 인한 불편사항이 발생하지 않도록 유의하시기 바랍니다. (당월 서비스 신청 후 이미
+                    납부된 시세 이용료에 대해서는 환불되지 않으니 유의하시기 바랍니다.)
+                  </li>
+                </ul>
+                <p class="tit">주문</p>
+                <ul>
+                  <li>거래소 변경, 티커 변경, 주식분할/병합과 같은 내용이 발생한 종목은 프리마켓 개장 시점에 매매가 제한될 수 있으며, 처리 완료 시점에 정상 거래 가능합니다.</li>
+                  <li>
+                    프리마켓 미체결 주문은 정규시장으로 이어지고, 정규시장 미체결 주문은 애프터마켓으로 이어지며, 프리 및 애프터마켓은 호가 간의 가격 차이가 클 수 있으며, 거래량은 적고 가격변동성은
+                    높을 수 있으니 매매에 유의하시기 바랍니다.
+                  </li>
+                  <li>거래량 폭주, 또는 현지 사정에 의하여 시세지연이 발생할 수 있습니다.</li>
+                  <li>
+                    뉴욕거래소와 나스닥 거래소는 각각 다수의 거래소로 구성되어 있으므로, 당사의 주문은 그 중 체결 확률이 가장 높은 주요 거래소로 주문을 집행하게 됩니다. 이에 따라, 장중 저점과 고점이
+                    (예약)주문가격보다 낮거나 높음에도 불구하고 장외거래소 등 타 거래소의 호가가 동시에 제공됨에 따라 장중저점 가격보다 높은 매수 주문 또는 장중 고가보다 낮은 매도 주문일지라도 체결이
+                    안될 수 있는 점을 유의하시기 바랍니다. 또한 100주 이하의 단주 주문은 현지 증권사 재량으로 주문가격보다 더 유리한 가격으로도 체결될 수 있습니다.
+                  </li>
+                  <li>
+                    개별종목의 가격변동폭이 클 경우 미국의 각 거래소(다수 거래소)는 해당 종목에 대하여 특정시간 동안 또는 당일 거래정지(LULD 또는 서킷브레이커)시킬 수 있으며 해당 주식의 거래정지
+                    여부는 당사에서 고객에게 HTS나 모바일(MTS)를 통해 제공할 수 없습니다. (예시: A종목이 제1거래소는 거래정지, 제2거래소는 거래되는 경우 시세는 실시간으로 변동되며 주문 전송이
+                    제1거래소로 전송된 경우 주문 거부)
+                  </li>
+                  <li>미국 우선주의 경우 발행 회사가 옵션(매수청구권)을 행사할 시 시장가격보다 더 낮은 가격에 매도하여야 하는 경우도 있으므로, 우선주 발행 조건을 사전에 검토하시기 바랍니다.</li>
+                </ul>
+              </div>
+            </li>
+            <li id="panel2" role="tabpanel" tabindex="0" hidden>
+              <div class="wrap-table mt16">
+                <p class="tit">거래가능시간(한국기준)(상해,심천)</p>
+                <table>
+                  <colgroup>
+                    <col style="width: 30%" />
+                    <col style="width: 70%" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>거래가능시간</th>
+                      <td class="left">
+                        10:10 ~ 10:25 동시호가(10:20 ~ 10:25 취소주문 불가)<br />
+                        10:25 ~ 10:30 오전시장 대기주문(취소주문 포함) 접수<br />
+                        10:25 ~ 10:30 오전시장 대기주문(취소주문 포함) 접수<br />
+                        10:30 ~ 12:30 오전 정규장<br />
+                        12:30 ~ 14:00 점심 휴장<br />
+                        14:00 ~ 15:57 오후 정규장(13:55부터 주문접수 가능)<br />
+                        15:57 ~ 16:00 동시호가(취소주문 불가)
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="page-list-type-01 mt10">
+                  <ul>
+                    <li>한국 공휴일과 상관없이 거래 가능(단, 홍콩, 중국 중 한 곳이라도 매매일 또는 결제일이 휴일일 경우 매매불가)</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="wrap-table">
+                <p class="tit">주문 상세 안내</p>
+                <table>
+                  <colgroup>
+                    <col style="width: 30%" />
+                    <col style="width: 70%" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>주문유형</th>
+                      <td class="left">지정가 주문만 가능</td>
+                    </tr>
+                    <tr>
+                      <th>거래통화</th>
+                      <td class="left">CNY(중국 위안화)</td>
+                    </tr>
+                    <tr>
+                      <th>거래단위</th>
+                      <td class="left">매수 시 100주/매도 시 1주</td>
+                    </tr>
+                    <tr>
+                      <th>호가단위</th>
+                      <td class="left">CNY 0.01</td>
+                    </tr>
+                    <tr>
+                      <th>호가제한 (상/하한가)</th>
+                      <td class="left">± 10%</td>
+                    </tr>
+                    <tr>
+                      <th>일중매매 (매도대금으로 재매수)</th>
+                      <td class="left">당일 매수분 매도불가. 매도후 매도대금으로 당일 재매수 가능.</td>
+                    </tr>
+                    <tr>
+                      <th>결제일</th>
+                      <td class="left">
+                        주식/자금 T+1.<br />
+                        현지 휴장일 및 공휴일 포함 시 해당 휴일 수 만큼 결제일 순연.<br />
+                        결제 후 원화환전/외화출금 가능
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="page-list-type-01 mt10">
+                  <ul>
+                    <li>
+                      주문가격 입력범위(호가교란 방지를 위한 중국 정책)
+                      <ul class="depth-list">
+                        <li>동시호가 : 매수 시 최우선 매수호가의 - 3% 범위 내에서 주문 가능(최우선 매수호가 없는 경우 전일 종가의 -3% 내에서 매수 주문 가능)</li>
+                        <li>정규시장 : 매수 시 현재가의 -3% 범위 내에서 주문 가능</li>
+                      </ul>
+                    </li>
+                    <li>10시 10분부터 동시호가 주문 가능하나 호가는 10시 15분부터 거래소에서 제공</li>
+                  </ul>
+                  <p class="tit">정정/취소주문 안내</p>
+                  <ul>
+                    <li>취소주문만 가능. 정정주문 불가.</li>
+                  </ul>
+                  <p class="tit">시세/매매 유의사항</p>
+                  <ul>
+                    <li>개인 고객은 실시간시세를 신청하시는 경우 중국 상해A주, 심천A주 종목·지수의 무료 실시간 시세를 사용하실 수 있습니다.</li>
+                    <li>법인 고객은 유료 실시간 시세를 신청하신 경우에만 조회 가능합니다.</li>
+                    <li>
+                      환전신청: 메뉴>계좌/서비스>외화>환전<br />
+                      → 앱 왼쪽상단 [메뉴검색]에서 '환전' 조회
+                    </li>
+                    <li>거래량 폭주, 또는 현지 사정에 의하여 시세지연이 발생할 수 있습니다.</li>
+                  </ul>
+                  <p class="tit">선후강통 종목별 주문 한도(North Bound Trading) 유의사항</p>
+                  <ul>
+                    <li>외국인 투자 지분율이 26%이상 도달 시 거래소 웹사이트 공지</li>
+                    <li>외국인 투자 지분율이 28%이상 도달 시 해당 종목 매수 금지</li>
+                    <li>외국인 투자 지분율이 30%초과 시, Stock Connect를 통한 매수자 부터 매도 권유</li>
+                    <li>외국인 투자 지분율이 26%미만으로 하락 시 해당 종목 매수 가능</li>
+                    <li>
+                      종목별 투자 지분율 보드판<br />
+                      http://www.szse.cn/disclosure/deal/qfii/index.html
+                    </li>
+                    <li>
+                      홍콩거래소 거래정지 공시<br />
+                      https://www.hkex.com.hk/Mutual-Market/Stock-Connect/Reference-Materials/Alerts?sc_lang=en
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li id="panel3" role="tabpanel" tabindex="0" hidden>
+              <div class="wrap-table mt16">
+                <p class="tit">거래가능시간(한국기준)</p>
+                <table>
+                  <colgroup>
+                    <col style="width: 30%" />
+                    <col style="width: 70%" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>거래가능시간</th>
+                      <td class="left">
+                        10:00 ~ 10:15 동시호가(20분 동시호가 체결)<br />
+                        10:15 ~ 10:30 주문불가<br />
+                        10:30 ~ 13:00 오전 정규장<br />
+                        13:00 ~ 14:00 점심 휴장<br />
+                        13:00 ~ 14:00 점심 휴장<br />
+                        14:00 ~ 17:00 오후 정규장
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>
+                        장마감<br />
+                        동시호가
+                      </th>
+                      <td class="left">
+                        17:01 ~ 17:06 : 17시 종가대비 ±5% 이내 호가로 주문가능(정정 및 취소 가능)<br />
+                        17:06 ~ 17:08 : 17시 6분의 최우선 매수/매도 호가로 주문 가능(정정 및 취소 불가)<br />
+                        17:08 ~ 17:10 : 최우선 매수/매도 호가로 주문 가능하나 무작위 체결 이후 마감
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="page-list-type-01 mt10">
+                  <ul>
+                    <li>한국 공휴일과 상관없이 거래 가능(단, 홍콩 휴장일, 공휴일은 거래불가)</li>
+                    <li>중소형주의 경우 거래소가 정한 기준에 의해 동시호가가 없을 수 있음</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="wrap-table">
+                <p class="tit">주문 상세 안내</p>
+                <table>
+                  <colgroup>
+                    <col style="width: 30%" />
+                    <col style="width: 70%" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>주문유형</th>
+                      <td class="left">지정가 주문만 가능</td>
+                    </tr>
+                    <tr>
+                      <th>거래통화</th>
+                      <td class="left">
+                        HKD(홍콩 달러).<br />
+                        일부 종목은 CNY(중국 위안화)
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>거래단위</th>
+                      <td class="left">
+                        종목별로 상이.<br />
+                        주식수량에 표기된 "매매단위" 참조. (n주 단위로 표기)
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>호가제한 (상/하한가)</th>
+                      <td class="left">
+                        매수 : (최우선매도호가+10틱) ~ (최우선매수호가-24틱)<br />
+                        매도 : (최우선매도호가+24틱) ~ (최우선매수호가-10틱)<br />
+                        위 범위를 넘어간 호가의 주문은 거부되오니 주의하시기 바랍니다.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>일중매매 (매도대금으로 재매수)</th>
+                      <td class="left">가능</td>
+                    </tr>
+                    <tr>
+                      <th>결제일</th>
+                      <td class="left">
+                        T+2.<br />
+                        현지 휴장일 및 공휴일 포함 시 해당 휴일 수 만큼 결제일 지연.<br />
+                        결제 후 원화로 환전 또는 외화출금 가능
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="page-list-type-01">
+                  <ul>
+                    <li>종목별 최근 20일 일평균거래량의 10%이상 수량 또는 주문금액 USD 2백만 달러 초 주문 시 거부 됨</li>
+                  </ul>
+                  <p class="tit">정정/취소주문 안내</p>
+                  <ul>
+                    <li>원주문의 가격만 정정/취소 가능. 수량 부분정정/부분취소 불가.</li>
+                    <li>정정주문은 [실시간미체결][주문/체결]에서 원주문에 반영. 별도의 정정주문 기록이 생기지 않음.</li>
+                  </ul>
+                  <p class="tit">홍콩 단주주문</p>
+                  <ul>
+                    <li>매도 선택시 유형에 '단주 지정가' 선택이 가능합니다.</li>
+                    <li>단주주문은 단주수량 전량 매도만 가능합니다.</li>
+                    <li>단주주문은 단주시장에서 체결되므로 정규장 호가/체결가와 다를 수 있습니다.</li>
+                    <li>단주 지정가 주문은 수량정정 불가능, 가격정정 가능, 취소 가능합니다.</li>
+                    <li>단주 지정가 주문은 한국시간 16시 50분까지만 접수 가능합니다.</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li id="panel4" role="tabpanel" tabindex="0" hidden>
+              <div class="wrap-table mt16">
+                <p class="tit">거래가능시간(한국기준)</p>
+                <table>
+                  <colgroup>
+                    <col style="width: 30%" />
+                    <col style="width: 70%" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>거래가능시간</th>
+                      <td class="left">
+                        09:00 ~ 11:30 오전 정규장<br />
+                        12:30 ~ 15:00 오후 정규장
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="page-list-type-01 mt10">
+                  <ul>
+                    <li>한국 공휴일과 상관없이 거래 가능(단, 일본 휴장일 및 공휴일은 거래불가)</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="wrap-table">
+                <p class="tit">주문 상세 안내</p>
+                <table>
+                  <colgroup>
+                    <col style="width: 30%" />
+                    <col style="width: 70%" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>주문유형</th>
+                      <td class="left">지정가 주문만 가능</td>
+                    </tr>
+                    <tr>
+                      <th>거래통화</th>
+                      <td class="left">JPY(일본 엔화)</td>
+                    </tr>
+                    <tr>
+                      <th>거래단위</th>
+                      <td class="left">
+                        종목별로 상이.<br />
+                        주식수량에 표기된 "매매단위" 참조. (n주 단위로 표기)
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>호가제한 (상/하한가)</th>
+                      <td class="left">종목별로 상이(주가기준)</td>
+                    </tr>
+                    <tr>
+                      <th>가격제한</th>
+                      <td class="left">1일 가격제한폭은 종목별로 상이</td>
+                    </tr>
+                    <tr>
+                      <th>일중매매 (매도대금으로 재매수)</th>
+                      <td class="left">
+                        매수 후 매도 가능<br />
+                        매도 후 바로 매도자금 사용 가능
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>결제일</th>
+                      <td class="left">
+                        T+2일.<br />
+                        현지 휴장일 및 공휴일 포함 시 해당 휴일 수만큼 결제일 지연<br />
+                        결제 후 환전 또는 외화출금 가능
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="page-list-type-01">
+                  <p class="tit">정정/취소주문 안내</p>
+                  <ul>
+                    <li>원주문의 가격만 정정/취소 가능. 수량 부분정정/부분취소 불가.</li>
+                    <li>정정주문은 [실시간 미체결],[주문/체결]에서 원주문에 반영. 별도의 정정주문 기록이 생기지 않음.</li>
+                  </ul>
+                  <p class="tit">환전 및 입금 안내</p>
+                  <ul>
+                    <li>환전: [H702] 환전신청(실시간)</li>
+                    <li>외화입금 : [7505] 외화입금신청 (당사 외화대표계좌로 입금 후 신청)</li>
+                  </ul>
+                  <p class="tit">시세 유의사항</p>
+                  <ul>
+                    <li>일본 실시간 시세는 유료로 제공. (미신청시 20분 지연 시세)</li>
+                    <li>시세신청 : MTS전체메뉴 > 일본/베트남 탭선택 > 시세신청(실시간선택) > 인포맥스 회원가입 > 유료결제</li>
+                    <li>시세비용 : 2,500원/월(신청한 달 말일까지 제공)</li>
+                    <li>거래량 폭주, 또는 현지 사정에 의하여 시세지연이 발생할 수 있습니다.</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li id="panel5" role="tabpanel" tabindex="0" hidden>
+              <div class="wrap-table mt16">
+                <p class="tit">거래가능시간(한국기준)</p>
+                <table>
+                  <colgroup>
+                    <col style="width: 30%" />
+                    <col style="width: 70%" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>거래가능시간</th>
+                      <td class="left">
+                        11:00 ~ 11:15 동시호가 (호치민 주문불가, 하노이는 동시호가 없으므로 주문가능)<br />
+                        11:15 ~ 13:29 오전 정규장<br />
+                        13:30 ~ 15:00 점심 휴장<br />
+                        15:00 ~ 16:29 오후 정규장<br />
+                        16:30 ~ 16:45 동시호가 (호치민, 하노이 모두 주문은 가능하지만 정정/취소 불가)
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="page-list-type-01 mt10">
+                  <ul>
+                    <li>한국 공휴일과 상관없이 거래 가능(단, 베트남 휴장일 및 공휴일은 거래불가)</li>
+                    <li>동시호가 미체결 주문은 취소 후 신규주문 넣어 주시기 바랍니다.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="wrap-table">
+                <p class="tit">주문 상세 안내</p>
+                <table>
+                  <colgroup>
+                    <col style="width: 30%" />
+                    <col style="width: 70%" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>주문유형</th>
+                      <td class="left">지정가 주문만 가능</td>
+                    </tr>
+                    <tr>
+                      <th>거래통화</th>
+                      <td class="left">VND(베트남 동)</td>
+                    </tr>
+                    <tr>
+                      <th>거래단위</th>
+                      <td class="left">
+                        호치민 10주<br />
+                        하노이 100주
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>가격제한</th>
+                      <td class="left">
+                        호치민 ± 7%<br />
+                        하노이 ± 10%
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>일중매매 (매도대금으로 재매수)</th>
+                      <td class="left">불가능</td>
+                    </tr>
+                    <tr>
+                      <th>결제일</th>
+                      <td class="left">
+                        T+2일.<br />
+                        현지 휴장일 및 공휴일 포함 시 해당 휴일 수 만큼 결제일 지연<br />
+                        결제 후 USD를 원화로 환전 또는 외화출금 가능
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="page-list-type-01">
+                  <ul>
+                    <li>금일매매수수량은 T+3일 오전 매도가능(베트남 결제규정)</li>
+                  </ul>
+                  <p class="tit">정정/취소주문 안내</p>
+                  <ul>
+                    <li>정정주문은 [실시간 미체결],[주문/체결]에서 원주문에 반영. 별도의 정정주문 기록이 생기지 않음.</li>
+                  </ul>
+                  <p class="tit">환전 및 입금 안내</p>
+                  <ul>
+                    <li>
+                      USD환전
+                      <ul class="depth-list">
+                        <li>HTS H702 실시간 환전화면에서 환전</li>
+                      </ul>
+                    </li>
+                    <li>
+                      VND환전
+                      <ul class="depth-list">
+                        <li>매수 전 - 미달러 → 베트남동 환전신청</li>
+                        <li>매도 후 - 베트남동 → 미달러 환전신청</li>
+                        <li>베트남동(VND)는 국내 해외송금 및 환전불가</li>
+                      </ul>
+                    </li>
+                    <li>소요시간 : T+2일(현지사정에 따라 지연될 수 있습니다.)</li>
+                    <li>외화입금 : USD(달러) 입금 후, VND로 환전 신청 가능</li>
+                  </ul>
+                  <p class="tit">시세 유의사항</p>
+                  <ul>
+                    <li>베트남 실시간 시세는 유료로 제공. (미신청 시 15분 지연 시세)</li>
+                    <li>시세신청 및 비용: '[7781] 해외주식 실시간 시세 신청 화면'에서 신청가능.</li>
+                    <li>거래량 폭주, 또는 현지 사정에 의하여 시세지연이 발생할 수 있음</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </main>
+    </div>
+    @@include('../include/script.html')
+  </body>
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <base href="../../../" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <script src="assets/js/ie.js"></script>
+    <link rel="stylesheet" href="assets/css/library/choices.min.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/common.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Samsung Cloud Platform</title>
+  </head>
+  <body>
+    <div class="wrap tech-guide">
+      <!-- 3depth 메뉴가 있을 시 header태그에 subpage 듀얼클래스를 추가해주세요. -->
+      <div id="header-template" class="header-include subpage"></div>
+      <article class="content">
+        <div class="hero-sub">
+          <div class="content">
+            <div class="sub-content">
+              <h2 class="font-heading1">OpenAPI 보안 인증 가이드</h2>
+              <a
+                href="javascript:;"
+                target="_blank"
+                class="btn-border large"
+                ><i class="ico-link"></i><span class="i18n-inherit" data-i18n="button.button_3"></span></a
+              >
+            </div>
+          </div>
+          <div class="visual-tab">
+            <nav>
+              <ul class="tablist">
+                <li><a href="javascript:;" data-scroll-anchor data-i18n="category.category_18"></a></li>
+                <li><a href="javascript:;" data-scroll-anchor>OPENAPI 아키텍처</a></li>
+                <li><a href="javascript:;" data-scroll-anchor>OPENAPI 보안</a></li>
+                <li><a href="javascript:;" data-scroll-anchor>OPENAPI 호출 절차</a></li>
+                <li><a href="javascript:;" data-scroll-anchor>OPENAPI 리스트</a></li>
+              </ul>
+              <span class="progress-bar"></span>
+            </nav>
+          </div>
+        </div>
+        <div class="right-layout" data-scroll-section>
+          <div class="left-content">
+            <div class="detail-content">
+              <h3 class="font-heading2" data-i18n="category.category_18"></h3>
+              <div class="column-box">
+                삼성 클라우드 플랫폼이 제공하는 인프라/솔루션 상품을 이용할 수있도록 응용 프로그램 인터페이스(Application Programming Interface, API)를 제공하고 있는데요, 이 문서는 삼성 클라우드 플랫폼의 OpenAPI에 대한 설명과 API 호출하는 방법을 제시합니다.
+                <br /><br />
+                API는 RESTful방식으로 제공되며, JSON 형식으로 응답합니다. API에 따라 파라미터 값을 입력하고 등록, 수정, 삭제 , 조회 할 수 있습니다. HTTP 방식으로 Post, Get, Put, Delete 메서드 호출로 사용하며 호출 실패 시 오류 코드와 메시지를 반환합니다.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-layout" data-scroll-section>
+          <div class="left-content">
+            <div class="detail-content">
+              <h3 class="font-heading2">OpenAPI 아키텍처</h3>
+              <div class="column-box">
+                삼성 클라우드 플랫폼은 주요 상품(Virtual Server, Storage, Network 등)의 Web console에서 사용자들이 호출하는 기능을 개발자도 사용할 수 있도록 OpenAPI를 제공하고 있습니다.
+                <figure class="margin-bottom">
+                  <img src="assets/images/img/img_techguide9_01.jpg" alt="" />
+                  <figcaption>Figure 1. OpenAPI 연동 아키텍처</figcaption>
+                </figure>
+                삼성 클라우드 플랫폼 OpenAPI는 RESTful 방식으로 제공되어 각 상품별 기능이 유기적으로 연동되도록 설계되어 있습니다.
+                <ul class="list-type4 normal">
+                  <li>
+                    <p class="desc">UI : Web console은 각 상품의 OpenAPI와 연동되도록 설계되어 있습니다.</p>
+                  </li>
+                  <li>
+                    <p class="desc">Backend: Web console의 각 상품에서 제공해주는 기능은 OpenAPI로 연계됩니다. 삼성 클라우드 플랫폼이 아닌 외부 서비스를 통해 프로비저닝하는 K8s Cluster, S3 등도 OpenAPI의 사용이 가능하도록 연계하여 서비스를 제공하고 있습니다.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-layout" data-scroll-section>
+          <div class="left-content">
+            <div class="detail-content">
+              <h3 class="font-heading2">OpenAPI 보안</h3>
+              <div class="column-box">
+                <strong class="sub-title margin-bottom">그룹 별 인증키</strong>
+                삼성 클라우드 플랫폼은 2개의 인증키 값을 이용하고 그룹(프로젝트) 단위로도 인증키를 받아 사용하실 수 있습니다. OpenAPI를 사용하는 사용자를 고려하여 프로젝트 단위의 키를 별도로 발행하여 보안을 강화하였습니다.
+                <br /><br />
+                <strong class="sub-title margin-bottom">MFA</strong>
+                OpenAPI를 사용하려면 MFA(Multi-factor authentication) 적용으로 인해 임시키 발급을 받아 인증키와 임시키를 쌍으로 사용합니다. MFA 적용해 보안을 보다 강화하였습니다.
+                <br /><br />
+                <strong class="sub-title margin-bottom">HMAC 알고리즘</strong>
+                OpenAPI인증키는 HMAC SHA256 알고리즘으로 암호화 후 Base64인코딩됩니다.
+                <br /><br />
+                <strong class="sub-title margin-bottom">IP 접근제어</strong>
+                OpenAPI는 IP접근제어 기능이 적용되어, 높은 보안수준이 요구되는 경우 외부망로부터 지정되지 않는 IP의 API호출을 제한할 수 있습니다.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-layout" data-scroll-section>
+          <div class="left-content">
+            <div class="detail-content">
+              <h3 class="font-heading2">OpenAPI 호출 절차</h3>
+              <div class="column-box">
+                <strong class="sub-title margin-bottom">인증키 생성 및 관리</strong>
+                삼성 클라우드 플랫폼의 Open API 기능을 사용하시려면 인증키를 발급받아야 합니다. 인증키 발급은 삼성 클라우드 플랫폼 콘솔의 [마이프로필] > [인증키 관리] 에서 확인 할 수 있습니다.
+                <br />
+                인증키는 사용자 인증키(최대 2개) 또는 프로젝트 별 인증키(최대 2개)가 가능합니다. 그 절차는 아래와 같습니다.
+                <ol class="list-type4 bullet-number">
+                  <li>
+                    <p class="desc">삼성 클라우드 플랫폼에 로그인을 합니다.</p>
+                  </li>
+                  <li>
+                    <p class="desc">[마이프로필] > [인증키 관리] 메뉴로 접속하시면 ‘신규 인증키 생성’ 버튼을 클릭합니다.</p>
+                  </li>
+                  <li>
+                    <p class="desc">인증키 목록에서 발급받은 Access key와 Access Secret Key를 확인합니다.</p>
+                  </li>
+                </ol>
+                <figure class="margin-bottom">
+                  <img src="assets/images/img/img_techguide9_02.jpg" alt="" />
+                  <figcaption>Figure 2. 인증키 관리</figcaption>
+                </figure>
+                <br /><br />
+                <strong class="sub-title margin-bottom">API 호출시 인증 파라미터</strong>
+                <ul class="list-type4 normal">
+                  <li>
+                    <p class="desc">
+                      인증 파라미터<br />
+                      X-Cmp-AccessKey: 삼성 클라우드 플랫폼 포털에서 발급받은 Access Key<br />
+                      X-Cmp-Signature: 호출 API 요청을 Access Key와 매핑되는 Access Secret Key로 암호화한 서명. HMAC 암호화 알고리즘은 HMAC SHA256 사용<br />
+                      X-Cmp-Timestamp: 1970년 1월 1일 00:00:00 협정 세계시(UTC)부터의 경과 시간을 1/1000초(Millisecond) 단위로 정의
+                    </p>
+                  </li>
+                  <li>
+                    <p class="desc">
+                      인증 파라미터를 사용한 API 호출 예시
+                      <div class="code-wrap">
+curl -i -X GET
+-H "X-Cmp-AccessKey:2sd2gg=2agdbSD26svcD"
+-H "X-Cmp-Signature:fsfsdf235f9U35sdgf35Xsf/qgsdgsdg326=sfsdr23rsef="
+-H "X-Cmp-Timestamp:1605290625682"
+"https://cloud.samsungsds.com/iam/v2/access-keys”
+                      </div>
+                    </p>
+                  </li>
+                </ul>
+                <br /><br />
+                <strong class="sub-title margin-bottom">Signature</strong>
+                요청으로부터 서명할 문자열을 생성하고 Access Secret Key로 HMAC SHA256알고리즘으로 암호화 후 Base64 인코딩 합니다. 이 값을 x-Cmp-Signature로 사용합니다.
+                <br /><br />
+                <strong class="sub-title margin-bottom">Sample Java Code</strong>
+                <div class="code-wrap">
+public static String makeHmacSignature(String method,
+                                    String url,
+                                    String timestamp,
+                                    String accessKey,
+                                    String accessSecretKey,
+                                    String requestBody,
+                                    String headerProjectId,
+                                    String headerClientType,
+                                    String mediaType) {
+        StringBuilder builder = new StringBuilder().append(method)
+                                         .append(url)
+                                         .append(timestamp)
+                                         .append(accessKey)
+                                         .append(headerProjectId)
+                                         .append(headerClientType);
+        if (!mediaType.equals("MULTIPART_FORM_DATA")) {
+            builder.append(requestBody);
+        }
+
+        String body = builder.toString();
+        byte[] message = body.getBytes();
+        byte[] secretKey = accessSecretKey.getBytes();
+
+        String encodeBase64Str = null;
+        try {
+            Mac mac = Mac.getInstance("HmacSHA256");
+            SecretKeySpec secretKeySpec = new SecretKeySpec(secretKey, "HmacSHA256");
+            mac.init(secretKeySpec);
+            byte[] hmacSha256 = mac.doFinal(message);
+            encodeBase64Str = Base64.getEncoder().encodeToString(hmacSha256);
+
+        } catch (Exception e) {
+            throw new RuntimeException("Failed to calculate hmac-sha256", e);
+        }
+
+        return encodeBase64Str;
+    }
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-layout" data-scroll-section>
+          <div class="left-content">
+            <div class="detail-content">
+              <h3 class="font-heading2">OpenAPI 리스트</h3>
+              <div class="column-box">
+                <strong class="sub-title margin-bottom">인증키 생성 및 관리</strong>
+                삼성 클라우드 플랫폼의 OpenAPI는 공통 플랫폼, 각 상품에서 제공하는 OpenAPI의 상세한 정의서를 제공하고 있습니다. 상세 정의서의 경우 <a href="index.html">서비스 포털HOME ></a>에서 확인이 가능이 가능합니다.
+                <div class="table-wrap">
+                  <div class="table-scroll-wrap">
+                    <table>
+                      <colgroup>
+                        <col width="30%">
+                        <col width="50%">
+                        <col width="20%">
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th>상품군</th>
+                          <th>OpenAPI 제공 상품 리스트</th>
+                          <th>비고</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td rowspan="5">Compute</td>
+                          <td>Bare Metal Server</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>VM Auto-Scaling</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Virtual Server</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>K8s Engine</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>K8s Cluster</td>
+                          <td>K8s Native API 활용</td>
+                        </tr>
+                        <tr>
+                          <td rowspan="7">Network</td>
+                          <td>LB</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>VPC</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Security Group</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>VPN</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>DNS</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>VPC Firewall</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>GSLB</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td rowspan="9">Database</td>
+                          <td>Mysql</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>MariaDB</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>MS SQL Server</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>EPAS</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>PostgreSQL</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Tibero</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Vertica</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Elasticsearch</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Redis</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td rowspan="4"></td>
+                          <td>Object Storage</td>
+                          <td>S3 API 호환</td>
+                        </tr>
+                        <tr>
+                          <td>File Storage</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Backup</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Block Storage</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td rowspan="3">Management</td>
+                          <td>Cloud Monitoring</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Logging&Audit</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Job Scheduling</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td rowspan="2">Security</td>
+                          <td>Certificate Management</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Security Monitoring</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>App Service</td>
+                          <td>Notification</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Container</td>
+                          <td>K8s Apps</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>AI Service</td>
+                          <td>Kubeflow</td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <div id="footer-template"></div>
+    </div>
+    <script src="assets/js/library/jquery.min.js"></script>
+    <script src="assets/js/library/swiper-bundle.min.js"></script>
+    <script src="assets/js/library/scroll-lock.min.js"></script>
+    <script src="assets/js/library/ScrollMagic.min.js"></script>
+    <script src="assets/js/library/choices.min.js"></script>
+    <script src="assets/js/library/i18next-1.11.2.min.js"></script>
+
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/initialize.js"></script>
+    <script src="assets/js/pub.js"></script>
+  </body>
+</html>

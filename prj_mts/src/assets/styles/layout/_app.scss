@@ -1,0 +1,1777 @@
+// .main {
+//   font-family: Avenir, Helvetica, Arial, sans-serif;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+//   text-align: center;
+//   color: #2c3e50;
+//   margin-top: 60px;
+// }
+
+main {
+  padding: 16px 20px 40px;
+}
+.guide-img {
+  margin-top: 16px;
+  width: 100%;
+  + .guide-img {
+    margin-top: 8px;
+  }
+}
+.mt6 {
+  margin-top: 6px;
+}
+.mt10 {
+  margin-top: 10px !important;
+}
+
+.mt16 {
+  margin-top: 16px;
+}
+
+.mt24 {
+  margin-top: 24px !important;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+.mt34 {
+  margin-top: 34px;
+}
+
+.mt40 {
+  margin-top: 40px;
+}
+.mt50 {
+  margin-top: 50px;
+}
+.mt70 {
+  margin-top: 70px;
+}
+
+.left {
+  text-align: left !important;
+}
+
+.right {
+  text-align: right !important;
+}
+
+.center {
+  text-align: center !important;
+}
+
+.border-btm {
+  padding-bottom: 8px;
+  border-bottom: 1px solid $primary;
+}
+
+.wrap-box {
+  &.full {
+    margin: 0 -20px;
+  }
+}
+
+.wrap-btn {
+  &.center {
+    text-align: center;
+  }
+}
+
+.sub-box {
+  padding: 24px 18px 40px;
+  background-color: $text-color01;
+}
+.sub-box-02 {
+  padding: 16px 20px;
+  background-color: $obj-color01;
+}
+
+// swiper
+.swiper {
+  padding-bottom: 24px !important;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: $primary !important;
+  background: url("../images/icon/ico_pagearrow_r.png") no-repeat center center;
+  background-size: 20px;
+  &::after {
+    content: "" !important;
+  }
+}
+.swiper-button-prev {
+  background: url("../images/icon/ico_pagearrow_l.png") no-repeat center center;
+  background-size: 20px;
+}
+.swiper-pagination {
+  bottom: 0 !important;
+}
+.swiper-pagination-bullet-active {
+  background: $primary !important;
+}
+
+// 고객등급쿠폰-iNoble혜택-스탬프적립안내
+.stamp-save-info {
+  .stamp-box {
+    .h4 {
+      font-weight: 500;
+    }
+    .info {
+      margin-top: 12px;
+      padding-top: 12px;
+      text-align: center;
+      span {
+        color: $text-color05;
+      }
+    }
+    .sub-box-02 {
+      margin-top: 24px;
+      padding: 0 20px;
+      background-color: $obj-color01;
+      border-radius: 4px;
+      .sub-box-item {
+        padding: 24px 0;
+        text-align: center;
+        .badge {
+          padding: 2px 6px;
+          font-size: 12px;
+          line-height: 16px;
+          color: #ec5f5f;
+          border: 1px solid #ec5f5f;
+          border-radius: 50px;
+        }
+        .desc {
+          @extend .body1-2;
+          margin-top: 6px;
+          color: $text-color06;
+        }
+        figure {
+          margin-top: 14px;
+          img {
+            width: 100%;
+          }
+        }
+        + .sub-box-item {
+          border-top: 1px solid $checkbox-color-checked-disabled;
+        }
+      }
+    }
+  }
+}
+// 신용/대출 - 약정/신청/신용거래 신청/변경 - 신용거래 이용신청 - 신용서비스 안내
+// 신용/대출 - 약정/신청 - 신용거래 신청/변경 - 신용거래 이용신청 - 신용이자율 안내
+.credit-service-wrap {
+  .border-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 14px 20px;
+    border: 1px solid $checkbox-color-checked-disabled;
+    border-radius: 4px;
+    .level,
+    .desc {
+      @extend .body1-2;
+      width: 50%;
+    }
+    .desc {
+      text-align: right;
+      color: #f29930;
+      &.war {
+        margin-bottom: 6px;
+        color: #ea1724;
+      }
+    }
+  }
+  .date-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .sub {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+}
+// 신용/대출 - 약정/신청 - 담보대출 신청/취소/변경 - 담보대출 신청 - 담보대출 유의사항
+.mortgage-loan-wrap {
+  .btn {
+    height: 40px;
+    width: 100%;
+  }
+}
+// 금융상품 - 랩/투자자문사/자산관리 - 랩 계약신청 - 랩검색 - 상품상세
+.wrap-request-wrap {
+  .info-box {
+    .tag {
+      display: inline-block;
+      padding: 2px 4px;
+      background-color: $obj-color02;
+      font-size: 12px;
+      line-height: 16px;
+      color: #7b7b7b;
+      &.danger {
+        font-size: 10px;
+        line-height: 15px;
+        font-weight: 700;
+        color: #e54751;
+        background-color: #fef1f2;
+      }
+    }
+    .h3 {
+      display: block;
+      margin: 12px 0 18px;
+    }
+    .middle-box {
+      display: flex;
+      padding: 32px 0 24px;
+      .middle-item {
+        width: 50%;
+        .h6 {
+          display: block;
+        }
+      }
+    }
+  }
+}
+// 각종안내가이드 - 주식거래초보자가이드
+.beginner-guide-wrap {
+  .guide-list {
+    &.word {
+      > li {
+        position: relative;
+        z-index: 0;
+        padding-left: 32px;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 0;
+          z-index: 1;
+          width: 24px;
+          height: 24px;
+          transform: translate(0, -50%);
+        }
+        @for $i from 1 to 6 {
+          &.word-0#{$i} {
+            &::before {
+              background: url("../images/icon/ic_word_0" + $i + ".png") no-repeat center center;
+              background-size: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .order-info {
+    margin-top: 16px;
+    li {
+      display: flex;
+      justify-content: space-between;
+      @extend .body1-1;
+      + li {
+        margin-top: 6px;
+      }
+    }
+  }
+  .sales-group-01 {
+    padding: 24px 32px;
+    img {
+      width: 100%;
+    }
+  }
+}
+// 각종안내가이드 - 선물거래옵션 초보 - 상품안내
+.product-info-wrap {
+  .menu-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 0 20px 12px;
+    width: 100%;
+    background-color: $white;
+  }
+  .dropdown-btn {
+    display: block;
+    position: relative;
+    z-index: 0;
+    @extend .body1-2;
+    padding: 9px 44px 9px 16px;
+    width: 100%;
+    cursor: pointer;
+    text-align: left;
+    background-color: $obj-color01;
+    border: 1px solid $checkbox-color-checked-disabled;
+    border-radius: 4px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      z-index: 1;
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      background: url("../images/icon/ic_l_dropdown_text_closed_20.png") no-repeat center center;
+      background-size: 20px;
+      transform: translate(0, -50%);
+      transition: transform 0.2s;
+    }
+
+    &.active {
+      &::after {
+        transform: rotate(180deg) translate(0, 50%);
+      }
+    }
+  }
+  .page-list-type-04 {
+    margin-top: 50px;
+  }
+  .sub-menu {
+    overflow: hidden;
+    padding: 12px 8px 0;
+    height: 0;
+    transition: height 0.2s ease-in-out;
+    > li {
+      padding: 14px 0;
+      a {
+        display: block;
+      }
+      + li {
+        border-top: 1px solid $checkbox-color-checked-disabled;
+      }
+      &.active {
+        position: relative;
+        z-index: 0;
+        font-weight: 700;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: 0;
+          z-index: 1;
+          width: 24px;
+          height: 24px;
+          background: url("../images/icon/ic_l_list_check_on_24.png") no-repeat center center;
+          transform: translate(0, -50%);
+          background-size: 24px;
+        }
+      }
+    }
+    &.active {
+      height: auto;
+    }
+  }
+  main.menu-open {
+    position: relative;
+    z-index: 0;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+  .page-list-type-01 {
+    li {
+      margin-bottom: 0;
+      color: $text-color06;
+    }
+  }
+  .confirm {
+    margin-top: 51px;
+    padding: 11px 0;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+}
+// 각종안내가이드 - 주식거래초보 - 상품안내 - q1~4
+.product-info-q-wrap {
+  .title-type-01 {
+    .title {
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
+    .page-list-type-01 {
+      .tit {
+        margin-bottom: 10px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+// 로보추천서비스 - 서비스 소개
+.robo-recommend-wrap {
+  .title-type-02 {
+    margin-top: 24px;
+    padding: 16px 0 0;
+    width: 100%;
+    border-top: 1px solid rgba(28, 29, 31, 0.2);
+  }
+  .title-type-03 {
+    .title {
+      display: block;
+      @extend .h3;
+      padding-bottom: 8px;
+      margin: 70px 0 24px;
+      font-weight: 400;
+      border-bottom: 1px solid $obj-color06;
+      &.type-01 {
+        margin-top: 40px;
+      }
+    }
+    .sub-title {
+      @extend .h6;
+    }
+    > ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 16px;
+      li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(50% - 2px);
+        img {
+          max-width: 82px;
+        }
+      }
+    }
+    .ico-wrap.type-01 {
+      align-items: flex-start;
+      li {
+        position: relative;
+        z-index: 0;
+        width: 100%;
+        img {
+          position: absolute;
+          top: 50%;
+          left: 14px;
+          z-index: 1;
+          width: 50px;
+          transform: translate(0, -50%);
+        }
+        span {
+          padding-left: 90px;
+          width: 100%;
+        }
+        + li {
+          margin-top: 26px;
+        }
+      }
+    }
+    .txt-wrap {
+      margin-top: 8px;
+      padding: 16px 20px;
+      background-color: $obj-color01;
+      > li {
+        align-items: flex-start;
+      }
+      span {
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 400;
+      }
+      strong {
+        @extend .h4;
+        display: block;
+        margin-top: 2px;
+        color: #ec5f5f;
+      }
+      + .sub-title {
+        margin-top: 32px;
+      }
+    }
+    .right.sub {
+      display: block;
+      margin-top: 25px;
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 400;
+    }
+  }
+}
+// CFD 자동주문 유의사항
+.cfd-auto-order-wrap {
+  .tab-wrap1 .tablist.full-tab .tab-item button {
+    padding: 16px 0 12px;
+  }
+  .panels > li {
+    padding: 24px 20px 0;
+  }
+}
+// 고객서비스
+.customer-service-wrap {
+  .panels > li {
+    padding: 24px 20px 0;
+  }
+  .border-box {
+    position: relative;
+    z-index: 0;
+    padding: 20px 24px 20px 72px;
+    width: 100%;
+    border: 1px solid #e9ebef;
+    border-radius: 6px;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 24px;
+      z-index: 1;
+      width: 32px;
+      transform: translate(0, -50%);
+    }
+    .desc {
+      @extend .body2-2;
+      margin-top: 6px;
+      color: $text-color06;
+    }
+    + .border-box {
+      margin-top: 12px;
+    }
+    &.normal {
+      padding: 16px;
+      ul > li {
+        display: flex;
+        justify-content: space-between;
+        @extend .body2-2;
+        .category {
+          color: $text-color06;
+        }
+        + li {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  .border-txt {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    border-bottom: 1px solid $obj-color06;
+    .tit {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 700;
+    }
+  }
+  .title-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    .h2 {
+      width: calc(100% - 66px);
+    }
+    img {
+      width: 56px;
+    }
+  }
+  .desc.sub {
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .form-item {
+    .tit {
+      padding: 8px 0;
+      font-weight: 700;
+    }
+    &.name {
+      .txt-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        .tit {
+          width: calc(100% - 88px);
+        }
+      }
+    }
+    + .form-item {
+      margin-top: 24px;
+    }
+    .input-radio-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 8px;
+      @extend .body1-2;
+      input[type="radio"]:checked {
+        background-color: $primary;
+      }
+    }
+    .input-txt-wrap {
+      [class*="textarea"] {
+        padding: 13px 16px;
+        width: 100%;
+        background-color: $obj-color01;
+        border: 1px solid $checkbox-color-checked-disabled;
+        border-radius: 4px;
+      }
+      .input-textarea-header {
+        .question-category {
+          position: relative;
+          z-index: 0;
+          padding-right: 44px;
+          margin-right: 16px;
+          cursor: pointer;
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+            width: 20px;
+            height: 20px;
+            background: url("../images/icon/ic_l_dropdown_closed_20.png") no-repeat center center;
+            background-size: 20px;
+          }
+          input {
+            outline: none;
+          }
+        }
+      }
+      .hint-txt {
+        display: block;
+        margin-top: 4px;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: right;
+        color: $text-color05;
+      }
+      .input-txt-item {
+        + .input-txt-item {
+          margin-top: 8px;
+        }
+
+        &:nth-child(2) {
+          position: relative;
+          z-index: 0;
+          .err-msg {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+          }
+        }
+        .err-msg {
+          display: none;
+          margin-top: 4px;
+          font-size: 12px;
+          line-height: 18px;
+          color: #ea1724;
+        }
+        &.err {
+          [class*="textarea"] {
+            border: 1px solid $increase;
+            background-color: #fff8f9;
+          }
+          .hint-txt {
+            color: $increase;
+          }
+          .err-msg {
+            display: block;
+          }
+        }
+        .input-select-wrap {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          z-index: 100;
+          width: 100%;
+          .dim {
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.5);
+          }
+          .content {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            padding: 28px;
+            background-color: $white;
+            border-radius: 10px;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            .tit {
+              @extend .h5;
+            }
+            .desc {
+              @extend .body1-2;
+              margin-top: 8px;
+            }
+            ul {
+              margin-top: 8px;
+              li {
+                border-bottom: 1px solid $checkbox-color-checked-disabled;
+                button {
+                  padding: 14px 0;
+                  width: 100%;
+                  text-align: left;
+                  cursor: pointer;
+                  font-size: 16px;
+                  line-height: 24px;
+                }
+              }
+            }
+          }
+          &.active {
+            display: block;
+          }
+        }
+      }
+    }
+    .input-file-wrap {
+      .input-file-item {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+      [class*="file-add"] {
+        margin-top: 8px;
+        margin-left: 4px;
+        height: 77px;
+        border: 1px solid $checkbox-color-checked-disabled;
+        border-radius: 4px;
+        &:nth-child(2n + 1) {
+          margin-left: 0;
+        }
+      }
+      .file-add-btn {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        line-height: 18px;
+        color: $text-color06;
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+      .file-add-img {
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+        img {
+          width: 100%;
+        }
+        .del-btn {
+          display: inline-block;
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          z-index: 1;
+          width: 20px;
+          height: 20px;
+          background: url("../images/icon/ic_l_tag_delete_16.png") no-repeat center center;
+          background-size: 20px;
+          cursor: pointer;
+        }
+      }
+      input {
+        display: none;
+      }
+    }
+  }
+  .menu-wrap {
+    .btn-wrap {
+      margin-bottom: 24px;
+      width: 100%;
+      border: 1px solid $checkbox-color-checked-disabled;
+      border-radius: 4px;
+      background-color: $obj-color01;
+      .dropdown-btn {
+        position: relative;
+        z-index: 0;
+        padding: 13px 36px 13px 16px;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 14px;
+          right: 14px;
+          z-index: 1;
+          width: 20px;
+          height: 20px;
+          vertical-align: middle;
+          background: url("../images/icon/ic_l_dropdown_text_closed_20.png") no-repeat center center;
+          background-size: 20px;
+        }
+
+        .sub-tit {
+          position: relative;
+          z-index: 0;
+          padding-right: 8px;
+          margin-right: 8px;
+          &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 0;
+            z-index: 1;
+            width: 1px;
+            height: 18px;
+            transform: translate(0, -50%);
+            background-color: $checkbox-color-checked-disabled;
+          }
+        }
+      }
+      &.type-02 {
+        margin-bottom: 8px;
+        .dropdown-btn {
+          color: $text-color04;
+          .sub-btn {
+            position: relative;
+            z-index: 0;
+            padding-right: 44px;
+            color: $primary;
+            &::after {
+              content: "";
+              position: absolute;
+              top: 50%;
+              right: 14px;
+              z-index: 1;
+              width: 20px;
+              height: 20px;
+              transform: translate(0, -50%);
+              vertical-align: middle;
+              background: url("../images/icon/ic_l_dropdown_text_closed_20.png") no-repeat center center;
+              background-size: 20px;
+            }
+          }
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+    .content-wrap {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 200;
+      width: 100%;
+      .dim {
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      .content {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        padding: 28px 4px 28px 28px;
+        width: 100%;
+        background-color: $white;
+        border-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        .tit {
+          @extend .h5;
+        }
+        .desc {
+          @extend .body1-2;
+          margin-top: 8px;
+        }
+
+        .menu-list {
+          margin-top: 8px;
+          li {
+            border-bottom: 1px solid $checkbox-color-checked-disabled;
+            a {
+              padding: 14px 0;
+              width: 100%;
+              text-align: left;
+              font-size: 16px;
+              line-height: 24px;
+            }
+            &.active {
+              a {
+                position: relative;
+                z-index: 0;
+                font-weight: 700;
+                &::after {
+                  content: "";
+                  position: absolute;
+                  top: 50%;
+                  right: 0;
+                  z-index: 1;
+                  width: 24px;
+                  height: 24px;
+                  transform: translate(0, -50%);
+                  background: url("../images/icon/ic_l_list_check_on_24.png") no-repeat center center;
+                  background-size: 24px;
+                }
+              }
+            }
+          }
+          &.height-scroll {
+            overflow-y: auto;
+            padding-right: 22px;
+            max-height: 624px;
+            &::-webkit-scrollbar {
+              width: 2px;
+              background-color: transparent;
+            }
+            &::-webkit-scrollbar-thumb {
+              background-color: $checkbox-color-checked-disabled;
+            }
+          }
+        }
+      }
+      .tab-wrap1 {
+        margin-top: 8px;
+        .tablist {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          padding: 0;
+          box-shadow: none;
+          .tab-item {
+            button {
+              @extend .body1-5;
+              padding: 10px 16px;
+              border: 1px solid $obj-color04;
+              &.active {
+                border-color: $primary;
+              }
+            }
+            + .tab-item {
+              margin-left: 0;
+            }
+            &:first-child {
+              button {
+                border-radius: 4px;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+              }
+            }
+            &:last-child {
+              button {
+                border-radius: 4px;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+              }
+            }
+          }
+        }
+        .panels > li {
+          padding: 0;
+        }
+      }
+      &.active {
+        display: block;
+      }
+    }
+  }
+  .center-list {
+    > li {
+      position: relative;
+      z-index: 0;
+      padding: 15px 0 18px;
+      + li {
+        border-top: 1px solid $checkbox-color-checked-disabled;
+      }
+      .more-btn {
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        z-index: 1;
+        padding: 10px;
+        width: 7px;
+        height: 14px;
+        background: url("../images/icon/ic_more.png") no-repeat center center;
+        background-size: 7px;
+      }
+    }
+    .tit {
+      @extend .h6;
+      @extend .regular;
+      display: block;
+    }
+    .accent {
+      font-size: 11px;
+      line-height: 19px;
+    }
+    .info-list {
+      position: relative;
+      z-index: 0;
+      margin-top: 10px;
+      [class*="info"] {
+        display: inline-block;
+        position: relative;
+        z-index: 0;
+        padding-left: 20px;
+        width: calc(100% - 70px);
+        font-size: 12px;
+        line-height: 16px;
+        color: $text-color06;
+        + [class*="info"] {
+          margin-top: 6px;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 0;
+          z-index: 1;
+          width: 13px;
+          height: 13px;
+          transform: translate(0, -50%);
+        }
+      }
+      .info-address {
+        &::before {
+          background: url("../images/icon/ic_map.png") no-repeat center center;
+          background-size: 13px;
+        }
+      }
+      .info-tel {
+        &::before {
+          background: url("../images/icon/ic_phone_outline.png") no-repeat center center;
+          background-size: 13px;
+        }
+      }
+      .tel-btn {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        z-index: 1;
+        width: 40px;
+        transform: translate(0, -50%);
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .txt-box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 2;
+      transform: translate(-50%, -50%);
+      padding-top: 56px;
+      text-align: center;
+      .no-data-desc {
+        @extend .body1-2;
+        display: block;
+        margin-bottom: 8px;
+        color: $text-color05;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: 1;
+        width: 48px;
+        height: 48px;
+        background: url("../images/icon/ic_l_empty_48.png") no-repeat center center;
+        background-size: 48px;
+        transform: translate(-50%, 0);
+      }
+    }
+    .center-layout {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .info-list {
+        width: calc(100% - 52px);
+        .info-address {
+          padding-left: 0;
+          margin-top: 4px;
+          width: 100%;
+          &::before {
+            display: none;
+          }
+        }
+      }
+      .tel-btn {
+        width: 40px;
+        img {
+          width: 100%;
+        }
+      }
+      .btn {
+        margin-top: 12px;
+        width: 100%;
+        border-radius: 4px;
+      }
+    }
+  }
+  .checkbox {
+    display: flex;
+    input {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .personal-label {
+    @extend .body1-5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 32px);
+  }
+  .select-category-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    .dim {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.5);
+      &.active {
+        display: block;
+      }
+    }
+    .btn-wrap {
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      height: 52px;
+      background-color: #f9f9fa;
+      border-bottom: 1px solid #979797;
+      .category-btn {
+        position: relative;
+        z-index: 0;
+        padding: 8px 26px 8px 12px;
+        background-color: $white;
+        border: 1px solid $checkbox-color-checked-disabled;
+        border-radius: 50px;
+        color: $text-color06;
+        cursor: pointer;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: 12px;
+          z-index: 1;
+          width: 10px;
+          height: 16px;
+          background: url("../images/icon/ic_l_filter_closed_10.png") no-repeat center center;
+          background-size: 10px;
+          transform: translate(0, -50%);
+          transition: background 0.2s ease-in-out;
+        }
+        &.active {
+          color: $primary;
+          border-color: $primary;
+          &::after {
+            background: url("../images/icon/ic_l_filter_opned.png") no-repeat center center;
+            background-size: 10px;
+          }
+        }
+      }
+    }
+    .menu-wrap {
+      display: none;
+      position: absolute;
+
+      width: 100%;
+      background-color: $white;
+      z-index: 100;
+      > ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        li {
+          width: calc(33.33% - 8px);
+          text-align: center;
+          button {
+            padding: 11px 0;
+            width: 100%;
+            border: 1px solid $obj-color04;
+            border-radius: 4px;
+            color: $text-color06;
+            &.active {
+              color: $primary;
+              border-color: $primary;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+      &.active {
+        display: block;
+      }
+    }
+  }
+  .counseling-wrap {
+    margin-top: 52px;
+    > li .list-row:after {
+      right: 20px;
+    }
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 14px 48px 14px 20px !important;
+      .info {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        [class*="bagde-"] {
+          padding: 0 4px;
+          margin-right: 4px;
+          font-size: 10px;
+          line-height: 16px;
+          font-weight: 700;
+        }
+        .bagde-ask {
+          background-color: $obj-color02;
+          color: $text-color07;
+        }
+        .bagde-completion {
+          background-color: #e1f6f6;
+          color: #36a1ab;
+        }
+        .info-type {
+          font-size: 12px;
+          line-height: 16px;
+          color: $text-color06;
+        }
+      }
+      .title {
+        margin-top: 4px;
+        width: 100%;
+        @extend .body1-5;
+      }
+      .date-comment {
+        margin-top: 4px;
+        width: 100%;
+        .date {
+          font-size: 12px;
+          line-height: 16px;
+          color: $text-color06;
+        }
+        .comments {
+          position: relative;
+          z-index: 0;
+          margin-left: 8px;
+          padding-left: 18px;
+          font-size: 12px;
+          line-height: 16px;
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            background: url("../images/icon/chat_black_24dp.png") no-repeat center center;
+            background-size: 16px;
+          }
+        }
+      }
+    }
+    .inner {
+      .item {
+        &.right {
+          p {
+            margin-left: auto;
+            text-align: left;
+            color: $text-color06;
+          }
+        }
+        &.left {
+          p {
+            color: $primary;
+          }
+          .btn {
+            width: 280px;
+          }
+        }
+        &.button {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          border-top: 1px solid $obj-color02;
+          a {
+            margin-top: 16px;
+            padding-right: 20px;
+            background-color: transparent;
+          }
+        }
+        + .item {
+          margin-top: 16px;
+        }
+      }
+      p {
+        margin-bottom: 8px;
+        padding: 16px;
+        width: 280px;
+        border-radius: 6px;
+        background-color: $white;
+        border: 1px solid $checkbox-color-checked-disabled;
+        @extend .body1-2;
+        .date {
+          margin-top: 4px;
+          font-size: 12px;
+          line-height: 18px;
+        }
+      }
+      .del,
+      .edit {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 4px;
+        width: 16px;
+        height: 16px;
+        background: url("../images/icon/ic_l_cs_delete_trashcan_16.png") no-repeat center center;
+        background-size: 16px;
+      }
+      .edit {
+        background: url("../images/icon/ic_l_cs_edit_16.png") no-repeat center center;
+        background-size: 16px;
+      }
+    }
+    &.detail-page {
+      margin-top: 0;
+      .menu {
+        padding: 0 !important;
+        margin-bottom: 20px;
+      }
+      .title {
+        font-size: 20px !important;
+        line-height: 30px !important;
+      }
+      .inner {
+        padding: 20px;
+        background-color: $obj-color01;
+      }
+    }
+  }
+}
+// 고객서비스 - 이벤트/혜택 - 금융상품권 이용안내
+.gift-info-wrap {
+  .title-type-01 {
+    position: relative;
+    z-index: 0;
+  }
+  .ico-wrap {
+    margin-top: 12px;
+    > ul {
+      display: flex;
+      justify-content: space-between;
+      margin: 32px 0 24px;
+      li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(33.33% - 10px);
+        text-align: center;
+      }
+      img {
+        width: 50px;
+        height: 50px;
+      }
+      .info {
+        @extend .body2-2;
+        margin-top: 14px;
+        color: $text-color06;
+      }
+      .data {
+        @extend .body1-1;
+      }
+    }
+  }
+  .ico-info {
+    cursor: pointer;
+  }
+  .info-desc {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 134px;
+    z-index: 1;
+    padding: 16px;
+    width: 168px;
+    font-size: 12px;
+    line-height: 18px;
+    border: 1px solid $obj-color05;
+    border-radius: 4px;
+    background-color: $white;
+    &.active {
+      display: block;
+    }
+  }
+  .swiper {
+    position: relative;
+    z-index: 0;
+    margin-top: 16px;
+  }
+  .slide-box {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    border: 1px solid $checkbox-color-checked-disabled;
+    border-radius: 12px;
+    figure {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 160px;
+      img {
+        width: 180px;
+      }
+    }
+    .company {
+      width: 50%;
+    }
+    .num-wrap {
+      width: 50%;
+      text-align: right;
+      .price {
+        margin-bottom: 4px;
+        font-weight: 700;
+      }
+      span {
+        @extend .body2-5;
+        &.red {
+          color: #ea1724;
+        }
+        &.blue {
+          color: #235bed;
+        }
+        &.up {
+          &::before {
+            content: "▲";
+            display: inline-block;
+            color: inherit;
+          }
+        }
+        &.down {
+          &::before {
+            content: "▼";
+            display: inline-block;
+            color: inherit;
+          }
+        }
+        + span {
+          margin-left: 8px;
+        }
+      }
+    }
+    .btn-solid {
+      margin-top: 16px;
+    }
+  }
+  .swiper-pagination {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    left: auto;
+    z-index: 1;
+    max-width: 52px;
+    height: 26px;
+    border-radius: 80px;
+    font-size: 12px;
+    line-height: 26px;
+    color: $white;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+// 개인연금 가이드
+.personal-guide-wrap,
+.isa-guide-wrap,
+.bond-guide-wrap {
+  .tab-wrap1 .tablist.full-tab .tab-item button {
+    padding: 16px 0 12px;
+  }
+  .content-wrap {
+    padding: 40px 20px 0;
+  }
+}
+// isa 가이드
+.isa-guide-wrap {
+  .content-wrap {
+    padding: 40px 20px 0;
+    .title-type-03 {
+      .btn-wrap {
+        text-align: right;
+      }
+    }
+    .btn.full {
+      padding: 11px 0;
+      height: auto;
+    }
+    .precaution {
+      font-size: 12px;
+      line-height: 16px;
+      color: $text-color05;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .wrap-table {
+    .tit {
+      position: relative;
+      z-index: 0;
+      min-height: 24px;
+      .info {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        z-index: 1;
+        transform: translate(0, -50%);
+        font-weight: 400;
+        color: $text-color05;
+      }
+    }
+  }
+  .card-img-wrap {
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid $obj-color01;
+    .sub-txt {
+      @extend .body2-2;
+    }
+    .tit {
+      display: block;
+      margin-top: 8px;
+      @extend .h2;
+    }
+    figure {
+      display: flex;
+      justify-content: center;
+      margin: 32px 0;
+      img {
+        width: 218px;
+      }
+    }
+  }
+  .table-precaution {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+// 채권 가이드
+.bond-guide-wrap {
+  .sub-desc-box {
+    margin-top: 24px;
+    > li {
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      border: 1px solid $checkbox-color-checked-disabled;
+      border-radius: 10px;
+      background-color: $obj-color01;
+      .tit {
+        display: block;
+        padding: 15px 12px;
+        width: 30%;
+        height: 100%;
+        @extend .body2-2;
+      }
+      .desc {
+        padding: 15px 12px;
+        width: 70%;
+        border-left: 1px solid $checkbox-color-checked-disabled;
+        background-color: $white;
+      }
+      + li {
+        margin-top: 8px;
+      }
+    }
+  }
+  img {
+    width: 100%;
+  }
+}
+// 대여서비스 가이드
+.rental-guide-wrap {
+  img {
+    width: 100%;
+  }
+  .btn-wrap {
+    text-align: right;
+    a {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+}
+// 고객서비스 - 팝업
+.popup-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  .dim {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    padding: 28px;
+    width: 100%;
+    background-color: $white;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    .tit {
+      @extend .h4;
+      margin-bottom: 8px;
+    }
+    textarea {
+      padding: 13px 16px;
+      width: 100%;
+      border-radius: 4px;
+      background-color: $obj-color01;
+      border-color: $checkbox-color-checked-disabled;
+      &:focus {
+        border-color: $primary;
+      }
+    }
+    .hint-txt {
+      display: inline-block;
+      width: 100%;
+      font-size: 12px;
+      line-height: 18px;
+      text-align: right;
+      color: $text-color05;
+    }
+    .agree-wrap {
+      display: flex;
+      align-items: center;
+      .agree-btn {
+        width: 24px;
+        height: 24px;
+        border-color: $obj-color05;
+        border-radius: 4px;
+      }
+      .btn-txt {
+        @extend .body1-2;
+        margin-left: 8px;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+// 한투계좌간이체적용등록 - 이체거래 이용약관
+.transfer-transaction-wrap {
+  .page-list-type-03 {
+    ol > li {
+      li {
+        text-indent: -18px;
+      }
+      li::before {
+        display: none;
+      }
+    }
+  }
+}
+// 고객서비스_이벤트 - 고객 등급 기준 및 혜택
+.client-grade-wrap {
+  @for $i from 1 to 5 {
+    .ico-grade-0#{$i} {
+      display: inline-block;
+      margin-right: 8px;
+      width: 28px;
+      height: 28px;
+      background: url("../images/icon/ic_grade_0" + $i + ".png") no-repeat center center;
+      background-size: 28px;
+      vertical-align: middle;
+    }
+  }
+}
+// 고객등급쿠폰-iNoble혜택-사은서비스유의사항
+.inoble-service-wrap {
+  .border-box {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 1px solid #e9ebef;
+    border-radius: 6px;
+    .ico-call {
+      display: inline-block;
+      margin-right: 24px;
+      width: 32px;
+      height: 32px;
+      background: url("../images/icon/ic_l_customercenter_32.png") no-repeat center center;
+      background-size: 32px;
+    }
+  }
+}
+// 국내/해외주식 - 국내 적립식 자동매수 - 자동매수 안내 페이지
+.auto-purchase-info-wrap {
+  padding: 0;
+  .bg-box {
+    padding: 24px 20px;
+    background: linear-gradient(180deg, #ffffff 0%, #f2f4f7 100%);
+    .bg-list {
+      margin-top: 24px;
+      li {
+        @extend .body1-2;
+        position: relative;
+        z-index: 0;
+        padding: 13px 20px 13px 48px;
+        background: $white;
+        + li {
+          margin-top: 8px;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 16px;
+          z-index: 1;
+          width: 24px;
+          height: 24px;
+          transform: translate(0, -50%);
+        }
+        @for $i from 1 to 5 {
+          &:nth-child(#{$i}) {
+            &::before {
+              background: url("../images/icon/ic_l_sell_feature0" + $i + "_24.png") no-repeat center center;
+              background-size: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .page-list-type-01 {
+    padding: 20px 24px;
+    .tit {
+      display: inline-block;
+    }
+  }
+}
+.max-refund-wrap {
+  .tab-wrap1 .tablist {
+    .tab-item + .tab-item {
+      margin-left: 0;
+    }
+  }
+  .tab-wrap1 {
+    .panels > li {
+      padding: 24px 20px 0;
+    }
+  }
+}

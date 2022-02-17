@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <base href="../" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="assets/css/library/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/library/choices.min.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/common.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/calculator.css" />
+    <title>Samsung Cloud Platform</title>
+  </head>
+  <body>
+    <div class="wrap calulator">
+      <!-- 3depth 메뉴가 있을 시 header태그에 subpage 듀얼클래스를 추가해주세요. -->
+      <div id="header-template" class="header-include subpage"></div>
+      <article class="content" data-type="tab-wrap">
+        <div class="hero-sub img-exist hero-solid">
+          <div class="content">
+            <img src="assets/images/img/img_calculator.png" alt="" />
+            <div class="sub-content">
+              <h2 class="font-heading1">요금 계산기</h2>
+              <div class="font-body2">요금 계산기를 사용해 비용을 예측해보세요.</div>
+            </div>
+          </div>
+        </div>
+        <div class="page-content">
+          <div class="calc-container">
+            <div class="calc-edit">
+              <!-- Mobile Menu -->
+              <div class="calc-navi-mobile-wrap tablet-only">
+                <strong class="font-heading5 calc-navi-title">상품 추가</strong>
+                <div class="calc-navi-mobile">
+                  <nav class="calc-navi-mobile-list">
+                    <ul class="calc-navi-mobile-items">
+                      <!-- Compute -->
+                      <li>
+                        <div class="calc-navi-mobile-item" id="computeMobile">
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">Compute</div>
+                            <i class="icon-arrow_down">
+                              <svg focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                <path d="M11.975 5.192c.217-.238.589-.257.83-.043.215.19.254.502.108.736l-.064.084-4.412 4.839c-.21.23-.56.254-.8.069l-.074-.07L3.15 5.97c-.217-.238-.198-.605.044-.82.214-.19.532-.197.753-.028l.077.071L8 9.552l3.975-4.36z"></path>
+                              </svg>
+                            </i>
+                          </div>
+                        </div>
+                      </li>
+                      <!-- Container -->
+                      <li>
+                        <div class="calc-navi-mobile-item" id="containerMobile">
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">Container</div>
+                            <i class="icon-arrow_down">
+                              <svg focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                <path d="M11.975 5.192c.217-.238.589-.257.83-.043.215.19.254.502.108.736l-.064.084-4.412 4.839c-.21.23-.56.254-.8.069l-.074-.07L3.15 5.97c-.217-.238-.198-.605.044-.82.214-.19.532-.197.753-.028l.077.071L8 9.552l3.975-4.36z"></path>
+                              </svg>
+                            </i>
+                          </div>
+                        </div>
+                      </li>
+                      <!-- Storage -->
+                      <li>
+                        <div class="calc-navi-mobile-item" id="storageMobile">
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">Storage</div>
+                            <i class="icon-arrow_down">
+                              <svg focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                <path d="M11.975 5.192c.217-.238.589-.257.83-.043.215.19.254.502.108.736l-.064.084-4.412 4.839c-.21.23-.56.254-.8.069l-.074-.07L3.15 5.97c-.217-.238-.198-.605.044-.82.214-.19.532-.197.753-.028l.077.071L8 9.552l3.975-4.36z"></path>
+                              </svg>
+                            </i>
+                          </div>
+                        </div>
+                      </li>
+                      <!-- Database -->
+                      <li>
+                        <div class="calc-navi-mobile-item" id="databaseMobile">
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">Database</div>
+                            <i class="icon-arrow_down">
+                              <svg focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                <path d="M11.975 5.192c.217-.238.589-.257.83-.043.215.19.254.502.108.736l-.064.084-4.412 4.839c-.21.23-.56.254-.8.069l-.074-.07L3.15 5.97c-.217-.238-.198-.605.044-.82.214-.19.532-.197.753-.028l.077.071L8 9.552l3.975-4.36z"></path>
+                              </svg>
+                            </i>
+                          </div>
+                        </div>
+                      </li>
+                      <!-- Security -->
+                      <li>
+                        <div class="calc-navi-mobile-item" id="securityMobile">
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">Security</div>
+                            <i class="icon-arrow_down">
+                              <svg focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                <path d="M11.975 5.192c.217-.238.589-.257.83-.043.215.19.254.502.108.736l-.064.084-4.412 4.839c-.21.23-.56.254-.8.069l-.074-.07L3.15 5.97c-.217-.238-.198-.605.044-.82.214-.19.532-.197.753-.028l.077.071L8 9.552l3.975-4.36z"></path>
+                              </svg>
+                            </i>
+                          </div>
+                        </div>
+                      </li>
+                      <!-- Networking -->
+                      <li>
+                        <div class="calc-navi-mobile-item" id="networkingMobile">
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">Networking</div>
+                            <i class="icon-arrow_down">
+                              <svg focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                <path d="M11.975 5.192c.217-.238.589-.257.83-.043.215.19.254.502.108.736l-.064.084-4.412 4.839c-.21.23-.56.254-.8.069l-.074-.07L3.15 5.97c-.217-.238-.198-.605.044-.82.214-.19.532-.197.753-.028l.077.071L8 9.552l3.975-4.36z"></path>
+                              </svg>
+                            </i>
+                          </div>
+                        </div>
+                      </li>
+                      <!-- Application Service -->
+                      <li>
+                        <div class="calc-navi-mobile-item" id="applicationMobile">
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">Application Service</div>
+                            <i class="icon-arrow_down">
+                              <svg focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                <path d="M11.975 5.192c.217-.238.589-.257.83-.043.215.19.254.502.108.736l-.064.084-4.412 4.839c-.21.23-.56.254-.8.069l-.074-.07L3.15 5.97c-.217-.238-.198-.605.044-.82.214-.19.532-.197.753-.028l.077.071L8 9.552l3.975-4.36z"></path>
+                              </svg>
+                            </i>
+                          </div>
+                        </div>
+                      </li>
+                      <!-- AI Service -->
+                      <li>
+                        <div class="calc-navi-mobile-item" id="aiserviceMobile">
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">AI Service</div>
+                            <i class="icon-arrow_down">
+                              <svg focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                <path d="M11.975 5.192c.217-.238.589-.257.83-.043.215.19.254.502.108.736l-.064.084-4.412 4.839c-.21.23-.56.254-.8.069l-.074-.07L3.15 5.97c-.217-.238-.198-.605.044-.82.214-.19.532-.197.753-.028l.077.071L8 9.552l3.975-4.36z"></path>
+                              </svg>
+                            </i>
+                          </div>
+                        </div>
+                      </li>
+                      <!-- Analytics -->
+                      <li>
+                        <div class="calc-navi-mobile-item" id="analyticsMobile">
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">Analytics</div>
+                            <i class="icon-arrow_down">
+                              <svg focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                <path d="M11.975 5.192c.217-.238.589-.257.83-.043.215.19.254.502.108.736l-.064.084-4.412 4.839c-.21.23-.56.254-.8.069l-.074-.07L3.15 5.97c-.217-.238-.198-.605.044-.82.214-.19.532-.197.753-.028l.077.071L8 9.552l3.975-4.36z"></path>
+                              </svg>
+                            </i>
+                          </div>
+                        </div>
+                      </li>
+                      <!-- Management -->
+                      <li>
+                        <div class="calc-navi-mobile-item" id="managementMobile">
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">Management</div>
+                            <i class="icon-arrow_down">
+                              <svg focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                <path d="M11.975 5.192c.217-.238.589-.257.83-.043.215.19.254.502.108.736l-.064.084-4.412 4.839c-.21.23-.56.254-.8.069l-.074-.07L3.15 5.97c-.217-.238-.198-.605.044-.82.214-.19.532-.197.753-.028l.077.071L8 9.552l3.975-4.36z"></path>
+                              </svg>
+                            </i>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <!-- Mobile Sub Menu -->
+                    <!-- Compute Sub -->
+                    <ul class="calc-navi-mobile-items2" id="computeMobileSub">
+                      <li>
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">Virtual Server</div>
+                          <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                        </div>
+                      </li>
+                      <!-- START : 수정 : 211027 카드 추가 -->
+                      <li>
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">Bare Metal Server</div>
+                          <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                        </div>
+                      </li>
+                      <!-- END : 수정 : 211027 카드 추가 -->
+                      <li>
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">GPU Server</div>
+                          <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                        </div>
+                      </li>
+                    </ul>
+                    <!-- Container Sub -->
+                    <ul class="calc-navi-mobile-items2" id="containerMobileSub">
+                      <li>
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">Kubernetes Engine</div>
+                          <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                        </div>
+                      </li>
+                    </ul>
+                    <!-- Storage Sub -->
+                    <ul class="calc-navi-mobile-items2" id="storageMobileSub">
+                      <li>
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">Object Storage</div>
+                          <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">Backup</div>
+                          <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">Block Storage (VM)</div>
+                          <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">Block Storage (BM)</div>
+                          <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">File Storage</div>
+                          <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                        </div>
+                      </li>
+                    </ul>
+                    <!-- Database Sub -->
+                    <ul class="calc-navi-mobile-items2" id="databaseMobileSub">
+                      <li>
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">EPAS</div>
+                          <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">PostgreSQL</div>
+                          <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">MS-SQL</div>
+                          <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">MariaDB</div>
+                          <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">MySQL</div>
+                          <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">Tibero</div>
+                          <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">Redis</div>
+                          <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">Vertica</div>
+                          <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                        </div>
+                      </li>
+                    </ul>
+                    <!-- Security Sub -->
+                    <ul class="calc-navi-mobile-items2" id="securityMobileSub">
+                      <li>
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">웹 취약점 점검</div>
+                          <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">IDS</div>
+                          <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                        </div>
+                      </li>
+                    </ul>
+                    <!-- Networking Sub -->
+                    <ul class="calc-navi-mobile-items2" id="networkingMobileSub">
+                      <li>
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">VPC</div>
+                          <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">Load Balancer</div>
+                          <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">DNS</div>
+                          <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">GSLB</div>
+                          <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">VPN</div>
+                          <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                        </div>
+                      </li>
+                    </ul>
+                    <!-- Application Service Sub -->
+                    <ul class="calc-navi-mobile-items2" id="applicationMobileSub">
+                      <li>
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">SMS</div>
+                          <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">Push</div>
+                          <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">Mail</div>
+                          <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">API Gateway</div>
+                          <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                        </div>
+                      </li>
+                    </ul>
+                    <!-- AI Service Sub -->
+                    <ul class="calc-navi-mobile-items2" id="aiserviceMobileSub">
+                      <li>
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">Kubeflow</div>
+                          <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                        </div>
+                      </li>
+                    </ul>
+                    <!-- Analytics Sub -->
+                    <ul class="calc-navi-mobile-items2" id="analyticsMobileSub">
+                      <li>
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">Elasticsearch</div>
+                          <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                        </div>
+                      </li>
+                    </ul>
+                    <!-- Management Sub -->
+                    <ul class="calc-navi-mobile-items2" id="managementMobileSub">
+                      <li>
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">Logging/Audit</div>
+                          <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                        </div>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <!-- PC Menu -->
+              <div class="calc-navi pc-only">
+                <div class="input-box1">
+                  <strong class="font-heading6">상품 선택</strong>
+                  <input placeholder="상품을 검색하세요" type="text" class="search-field">
+                  <div class="search-field-icon-wrap">
+                    <i class="icon-clear" style="display: none;">
+                      <svg focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                        <path d="M3.407 2.697L8.003 7.293 12.599 2.697 13.307 3.404 8.71 8 13.307 12.596 12.599 13.303 8.003 8.707 3.407 13.303 2.7 12.596 7.296 8 2.7 3.404z"></path>
+                      </svg>
+                    </i>
+                    <i class="icon-search">
+                      <svg focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                        <path d="M7 1c3.314 0 6 2.686 6 6 0 1.402-.48 2.691-1.286 3.713L16 15l-1 1-4.287-4.286C9.69 12.519 8.402 13 7 13c-3.314 0-6-2.686-6-6s2.686-6 6-6zm0 1.5C4.515 2.5 2.5 4.515 2.5 7s2.015 4.5 4.5 4.5 4.5-2.015 4.5-4.5S9.485 2.5 7 2.5z"></path>
+                      </svg>
+                    </i>
+                  </div>
+                </div>
+                <nav class="calc-navi-list">
+                  <ul class="calc-navi-items" style="display: none;">
+                    <li class="calc-navi-search-item no-result">검색 결과가 없습니다.</li>
+                  </ul>
+                  <ul class="calc-navi-items" style="display: none;">
+                    <li class="calc-navi-search-item"><span class="accent">Virtual</span> Server</li>
+                  </ul>
+                  <ul class="calc-navi-items">
+                    <!-- Compute -->
+                    <li>
+                      <div class="calc-navi-item">
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">Compute</div>
+                          <i class="icon-arrow_down">
+                            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                              <path d="M11.975 5.192c.217-.238.589-.257.83-.043.215.19.254.502.108.736l-.064.084-4.412 4.839c-.21.23-.56.254-.8.069l-.074-.07L3.15 5.97c-.217-.238-.198-.605.044-.82.214-.19.532-.197.753-.028l.077.071L8 9.552l3.975-4.36z"></path>
+                            </svg>
+                          </i>
+                        </div>
+                      </div>
+                      <!-- Compute Sub -->
+                      <ul class="calc-navi-items2">
+                        <li>
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">Virtual Server</div>
+                            <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                          </div>
+                        </li>
+                        <!-- START : 수정 : 211027 카드 추가 -->
+                        <li>
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">Bare Metal Server</div>
+                            <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                          </div>
+                        </li>
+                        <!-- END : 수정 : 211027 카드 추가 -->
+                        <li>
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">GPU Server</div>
+                            <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- Container -->
+                    <li>
+                      <div class="calc-navi-item">
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">Container</div>
+                          <i class="icon-arrow_down">
+                            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                              <path d="M11.975 5.192c.217-.238.589-.257.83-.043.215.19.254.502.108.736l-.064.084-4.412 4.839c-.21.23-.56.254-.8.069l-.074-.07L3.15 5.97c-.217-.238-.198-.605.044-.82.214-.19.532-.197.753-.028l.077.071L8 9.552l3.975-4.36z"></path>
+                            </svg>
+                          </i>
+                        </div>
+                      </div>
+                      <!-- Container Sub -->
+                      <ul class="calc-navi-items2">
+                        <li>
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">Kubernetes Engine</div>
+                            <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- Storage -->
+                    <li>
+                      <div class="calc-navi-item">
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">Storage</div>
+                          <i class="icon-arrow_down">
+                            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                              <path d="M11.975 5.192c.217-.238.589-.257.83-.043.215.19.254.502.108.736l-.064.084-4.412 4.839c-.21.23-.56.254-.8.069l-.074-.07L3.15 5.97c-.217-.238-.198-.605.044-.82.214-.19.532-.197.753-.028l.077.071L8 9.552l3.975-4.36z"></path>
+                            </svg>
+                          </i>
+                        </div>
+                      </div>
+                      <!-- Storage Sub -->
+                      <ul class="calc-navi-items2">
+                        <li>
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">Object Storage</div>
+                            <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">Backup</div>
+                            <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">Block Storage (VM)</div>
+                            <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">Block Storage (BM)</div>
+                            <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">File Storage</div>
+                            <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- Database -->
+                    <li>
+                      <div class="calc-navi-item">
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">Database</div>
+                          <i class="icon-arrow_down">
+                            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                              <path d="M11.975 5.192c.217-.238.589-.257.83-.043.215.19.254.502.108.736l-.064.084-4.412 4.839c-.21.23-.56.254-.8.069l-.074-.07L3.15 5.97c-.217-.238-.198-.605.044-.82.214-.19.532-.197.753-.028l.077.071L8 9.552l3.975-4.36z"></path>
+                            </svg>
+                          </i>
+                        </div>
+                      </div>
+                      <!-- Database Sub -->
+                      <ul class="calc-navi-items2">
+                        <li>
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">EPAS</div>
+                            <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">PostgreSQL</div>
+                            <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">MS-SQL</div>
+                            <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">MariaDB</div>
+                            <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">MySQL</div>
+                            <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">Tibero</div>
+                            <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">Redis</div>
+                            <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">Vertica</div>
+                            <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- Security -->
+                    <li>
+                      <div class="calc-navi-item">
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">Security</div>
+                          <i class="icon-arrow_down">
+                            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                              <path d="M11.975 5.192c.217-.238.589-.257.83-.043.215.19.254.502.108.736l-.064.084-4.412 4.839c-.21.23-.56.254-.8.069l-.074-.07L3.15 5.97c-.217-.238-.198-.605.044-.82.214-.19.532-.197.753-.028l.077.071L8 9.552l3.975-4.36z"></path>
+                            </svg>
+                          </i>
+                        </div>
+                      </div>
+                      <!-- Security Sub -->
+                      <ul class="calc-navi-items2">
+                        <li>
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">웹 취약점 점검</div>
+                            <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">IDS</div>
+                            <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- Networking -->
+                    <li>
+                      <div class="calc-navi-item">
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">Networking</div>
+                          <i class="icon-arrow_down">
+                            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                              <path d="M11.975 5.192c.217-.238.589-.257.83-.043.215.19.254.502.108.736l-.064.084-4.412 4.839c-.21.23-.56.254-.8.069l-.074-.07L3.15 5.97c-.217-.238-.198-.605.044-.82.214-.19.532-.197.753-.028l.077.071L8 9.552l3.975-4.36z"></path>
+                            </svg>
+                          </i>
+                        </div>
+                      </div>
+                      <!-- Networking Sub -->
+                      <ul class="calc-navi-items2">
+                        <li>
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">VPC</div>
+                            <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">Load Balancer</div>
+                            <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">DNS</div>
+                            <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">GSLB</div>
+                            <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">VPN</div>
+                            <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- Application Service -->
+                    <li>
+                      <div class="calc-navi-item">
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">Application Service</div>
+                          <i class="icon-arrow_down">
+                            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                              <path d="M11.975 5.192c.217-.238.589-.257.83-.043.215.19.254.502.108.736l-.064.084-4.412 4.839c-.21.23-.56.254-.8.069l-.074-.07L3.15 5.97c-.217-.238-.198-.605.044-.82.214-.19.532-.197.753-.028l.077.071L8 9.552l3.975-4.36z"></path>
+                            </svg>
+                          </i>
+                        </div>
+                      </div>
+                      <!-- Application Service Sub -->
+                      <ul class="calc-navi-items2">
+                        <li>
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">SMS</div>
+                            <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">Push</div>
+                            <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">Mail</div>
+                            <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">API Gateway</div>
+                            <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- AI Service -->
+                    <li>
+                      <div class="calc-navi-item">
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">AI Service</div>
+                          <i class="icon-arrow_down">
+                            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                              <path d="M11.975 5.192c.217-.238.589-.257.83-.043.215.19.254.502.108.736l-.064.084-4.412 4.839c-.21.23-.56.254-.8.069l-.074-.07L3.15 5.97c-.217-.238-.198-.605.044-.82.214-.19.532-.197.753-.028l.077.071L8 9.552l3.975-4.36z"></path>
+                            </svg>
+                          </i>
+                        </div>
+                      </div>
+                      <!-- AI Service Sub -->
+                      <ul class="calc-navi-items2">
+                        <li>
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">Kubeflow</div>
+                            <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- Analytics -->
+                    <li>
+                      <div class="calc-navi-item">
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">Analytics</div>
+                          <i class="icon-arrow_down">
+                            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                              <path d="M11.975 5.192c.217-.238.589-.257.83-.043.215.19.254.502.108.736l-.064.084-4.412 4.839c-.21.23-.56.254-.8.069l-.074-.07L3.15 5.97c-.217-.238-.198-.605.044-.82.214-.19.532-.197.753-.028l.077.071L8 9.552l3.975-4.36z"></path>
+                            </svg>
+                          </i>
+                        </div>
+                      </div>
+                      <!-- Analytics Sub -->
+                      <ul class="calc-navi-items2">
+                        <li>
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">Elasticsearch</div>
+                            <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- Management -->
+                    <li>
+                      <div class="calc-navi-item">
+                        <div class="calc-navi-item-text">
+                          <div class="calc-label">Management</div>
+                          <i class="icon-arrow_down">
+                            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                              <path d="M11.975 5.192c.217-.238.589-.257.83-.043.215.19.254.502.108.736l-.064.084-4.412 4.839c-.21.23-.56.254-.8.069l-.074-.07L3.15 5.97c-.217-.238-.198-.605.044-.82.214-.19.532-.197.753-.028l.077.071L8 9.552l3.975-4.36z"></path>
+                            </svg>
+                          </i>
+                        </div>
+                      </div>
+                      <!-- Management Sub -->
+                      <ul class="calc-navi-items2">
+                        <li>
+                          <div class="calc-navi-item-text">
+                            <div class="calc-label">Logging/Audit</div>
+                            <i class="icon-add-box"><span class="blind">추가하기</span></i>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+
+              <!-- Card View List -->
+              <div class="calc-card-view">
+                <div class="card-top-info">
+                  <div class="total">총<span>1</span></div>
+                  <button tabindex="0" class="btn-calc btn-primary"><i class="ico-reset"></i>초기화</button>
+                </div>
+                <!-- 첫 진입 및 컨텐츠가 없으면 disabled 클래스를 추가해주세요. -->
+                <div class="card-view-content">
+                  <div class="intro-box">
+                    <img src="assets/images/img/img_empty_guide.png" alt="">
+                    <p>
+                      1) 상품을 선택한 후, 2) 사용량 등의 입력값을 입력하면<br />
+                      3) 예상 요금을 확인하실 수 있습니다.<br />
+                      요금 계산기 결과는 실제 사용 금액과 다를 수 있습니다.
+                    </p>
+                  </div>
+                  <div class="card-list">
+                    <!-- Card Compute : Virtual Server -->
+                    <!-- 수정시 accent 클래스 추가 -->
+                    <form class="card accent">
+                      <div class="top-section">
+                        <div class="title-section">
+                          <div class="calc-label medium">Compute</div>
+                          <div class="icon-section">
+                            <div class="icon-down">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <g id="ic" transform="translate(24) rotate(90)">
+                                  <rect id="사각형_137163" data-name="사각형 137163" width="24" height="24" fill="red" opacity="0"/>
+                                  <path id="패스_202519" data-name="패스 202519" d="M8,16,0,8,8,0" transform="translate(8 4)" fill="none" stroke="#1f2533" stroke-linejoin="round" stroke-width="1"/>
+                                </g>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="calc-label xlarge">Virtual Server</div>
+                      </div>
+                      <div class="card-content">
+                        <div class="calc-form">
+                          <div class="calc-form-group">
+                            <label class="calc-label">서버 대수</label>
+                            <div>
+                              <div class="select-box1 small">
+                                <select>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="6">6</option>
+                                  <option value="7">7</option>
+                                  <option value="8">8</option>
+                                  <option value="9">9</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="calc-form-group">
+                            <label class="calc-label">운영시스템(OS)</label>
+                            <div class="select-box1 small">
+                              <select>
+                                <option value="Windows">Windows</option>
+                                <option value="RHEL">RHEL</option>
+                                <option value="CentOS">CentOS</option>
+                                <option value="Oracle Linux">Oracle Linux</option>
+                                <option value="Suse">Suse</option>
+                                <option value="Ubuntu">Ubuntu</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="calc-form-group">
+                            <label class="calc-label">상품 유형</label>
+                            <div class="switch-box">
+                              <div class="switch-wrapper">
+                                <input tabindex="0" type="radio" id="vsTypeNormal" name="vs-type" checked>
+                                <label for="vsTypeNormal">일반</span>
+                              </div>
+                              <div class="switch-wrapper">
+                                <input tabindex="0" type="radio" id="vsTypeLarge" name="vs-type">
+                                <label for="vsTypeLarge">대용량</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="calc-form-group">
+                            <label class="calc-label">인스턴스 타입</label>
+                            <div class="select-box1 medium">
+                              <select>
+                                <option value="s1v1m2(cpu 1 vCore / 서버 메모리 2GB)">s1v1m2(cpu 1 vCore / 서버 메모리 2GB)</option>
+                                <option value="s1v2m4(cpu 2 vCore / 서버 메모리 4GB)">s1v2m4(cpu 2 vCore / 서버 메모리 4GB)</option>
+                                <option value="s1v2m8(cpu 2 vCore / 서버 메모리 8GB)">s1v2m8(cpu 2 vCore / 서버 메모리 8GB)</option>
+                                <option value="s1v4m8(cpu 4 vCore / 서버 메모리 8GB)">s1v4m8(cpu 4 vCore / 서버 메모리 8GB)</option>
+                                <option value="s1v2m16(cpu 2 vCore / 서버 메모리 16GB)">s1v2m16(cpu 2 vCore / 서버 메모리 16GB)</option>
+                                <option value="s1v2m24(cpu 2 vCore / 서버 메모리 24GB)">s1v2m24(cpu 2 vCore / 서버 메모리 24GB)</option>
+                                <option value="s1v2m32(cpu 2 vCore / 서버 메모리 32GB)">s1v2m32(cpu 2 vCore / 서버 메모리 32GB)</option>
+                                <option value="s1v4m16(cpu 4 vCore / 서버 메모리 16GB)">s1v4m16(cpu 4 vCore / 서버 메모리 16GB)</option>
+                                <option value="s1v4m32(cpu 4 vCore / 서버 메모리 32GB)">s1v4m32(cpu 4 vCore / 서버 메모리 32GB)</option>
+                                <option value="s1v4m32(cpu 4 vCore / 서버 메모리 48GB)">s1v4m32(cpu 4 vCore / 서버 메모리 48GB)</option>
+                                <option value="s1v4m32(cpu 4 vCore / 서버 메모리 64GB)">s1v4m32(cpu 4 vCore / 서버 메모리 64GB)</option>
+                                <option value="s1v6m12(cpu 6 vCore / 서버 메모리 12GB)">s1v6m12(cpu 6 vCore / 서버 메모리 12GB)</option>
+                                <option value="s1v6m12(cpu 6 vCore / 서버 메모리 24GB)">s1v6m12(cpu 6 vCore / 서버 메모리 24GB)</option>
+                                <option value="s1v6m12(cpu 6 vCore / 서버 메모리 48GB)">s1v6m12(cpu 6 vCore / 서버 메모리 48GB)</option>
+                                <option value="s1v6m12(cpu 6 vCore / 서버 메모리 72GB)">s1v6m12(cpu 6 vCore / 서버 메모리 72GB)</option>
+                                <option value="s1v6m12(cpu 6 vCore / 서버 메모리 96GB)">s1v6m12(cpu 6 vCore / 서버 메모리 96GB)</option>
+                                <option value="s1v8m16(cpu 8 vCore / 서버 메모리 16GB)">s1v8m16(cpu 8 vCore / 서버 메모리 16GB)</option>
+                                <option value="s1v8m16(cpu 8 vCore / 서버 메모리 32GB)">s1v8m16(cpu 8 vCore / 서버 메모리 32GB)</option>
+                                <option value="s1v8m16(cpu 8 vCore / 서버 메모리 64GB)">s1v8m16(cpu 8 vCore / 서버 메모리 64GB)</option>
+                                <option value="s1v8m16(cpu 8 vCore / 서버 메모리 96GB)">s1v8m16(cpu 8 vCore / 서버 메모리 96GB)</option>
+                                <option value="s1v8m16(cpu 8 vCore / 서버 메모리 128GB)">s1v8m16(cpu 8 vCore / 서버 메모리 128GB)</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="calc-form-group">
+                            <label class="calc-label">약정 기간</label>
+                            <div>
+                              <div class="select-box1 small tablet-only">
+                                <select>
+                                  <option value="없음">없음</option>
+                                  <option value="1년">1년</option>
+                                  <option value="3년">3년</option>
+                                </select>
+                              </div>
+                              <div class="pc-only">
+                                <div class="radio-container">
+                                  <div class="radio-wrapper">
+                                    <input tabindex="0" type="radio" id="vsTermsNone" name="vs-terms" checked>
+                                    <label for="vsTermsNone">없음</span>
+                                  </div>
+                                  <div class="radio-wrapper">
+                                    <input tabindex="0" type="radio" id="vsOneYear" name="vs-terms">
+                                    <label for="vsOneYear">1년</span>
+                                  </div>
+                                  <div class="radio-wrapper">
+                                    <input tabindex="0" type="radio" id="vsThreeYear" name="vs-terms">
+                                    <label for="vsThreeYear">3년</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="calc-label info">*약정기간 없음 선택시 1개월(730시간) 사용 적용</div>
+                            </div>
+                          </div>
+                          <div class="calc-form-group">
+                            <label class="calc-label">운영 등급</label>
+                            <div>
+                              <div class="select-box1 small tablet-only">
+                                <select>
+                                  <option value="미선택">미선택</option>
+                                  <option value="Lite">Lite</option>
+                                  <option value="Basic">Basic</option>
+                                  <option value="Premium">Premium</option>
+                                </select>
+                              </div>
+                              <div class="pc-only">
+                                <div class="radio-container">
+                                  <div class="radio-wrapper">
+                                    <input tabindex="0" type="radio" id="vsNone" name="vs-terms2" checked>
+                                    <label for="vsNone">미선택</label>
+                                  </div>
+                                  <div class="radio-wrapper">
+                                    <input tabindex="0" type="radio" id="vsLite" name="vs-terms2">
+                                    <label for="vsLite">Lite</label>
+                                  </div>
+                                  <div class="radio-wrapper">
+                                    <input tabindex="0" type="radio" id="vsBasic" name="vs-terms2">
+                                    <label for="vsBasic">Basic</label>
+                                  </div>
+                                  <div class="radio-wrapper">
+                                    <input tabindex="0" type="radio" id="vsPremium" name="vs-terms2">
+                                    <label for="vsPremium">Premium</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="btn-group">
+                          <button tabindex="0" class="btn-calc btn-default">삭제</button>
+                          <button tabindex="0" class="btn-calc btn-solid">상품추가</button>
+                        </div>
+                      </div>
+                    </form>
+                    <!-- START : 수정 : 211027 카드 추가 -->
+                    <!-- Card Compute : Bare Metal Server -->
+                    <!-- 수정시 accent 클래스 추가 -->
+                    <form class="card accent">
+                      <div class="top-section">
+                        <div class="title-section">
+                          <div class="calc-label medium">Compute</div>
+                          <div class="icon-section">
+                            <div class="icon-down">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <g id="ic" transform="translate(24) rotate(90)">
+                                  <rect id="사각형_137163" data-name="사각형 137163" width="24" height="24" fill="red" opacity="0"/>
+                                  <path id="패스_202519" data-name="패스 202519" d="M8,16,0,8,8,0" transform="translate(8 4)" fill="none" stroke="#1f2533" stroke-linejoin="round" stroke-width="1"/>
+                                </g>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="calc-label xlarge">Bare Metal Server</div>
+                      </div>
+                      <div class="card-content">
+                        <div class="calc-form">
+                          <div class="calc-form-group">
+                            <label class="calc-label">서버 대수</label>
+                            <div>
+                              <div class="select-box1 small">
+                                <select>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="6">6</option>
+                                  <option value="7">7</option>
+                                  <option value="8">8</option>
+                                  <option value="9">9</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="calc-form-group">
+                            <label class="calc-label">운영시스템(OS)</label>
+                            <div class="select-box1 small">
+                              <select>
+                                <option value="Windows">Windows</option>
+                                <option value="RHEL">RHEL</option>
+                                <option value="CentOS">CentOS</option>
+                                <option value="Ubuntu">Ubuntu</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="calc-form-group">
+                            <label class="calc-label">인스턴스 타입</label>
+                            <div class="select-box1 medium">
+                              <select>
+                                <option value="s1v8m32_metal(cpu 8 vCore / memory 32GB)">s1v8m32_metal(cpu 8 vCore / memory 32GB)</option>
+                                <option value="s1v8m64_metal(cpu 8 vCore / memory 64GB)">s1v8m64_metal(cpu 8 vCore / memory 64GB)</option>
+                                <option value="s1v8m128_metal(cpu 8 vCore / memory 128GB)">s1v8m128_metal(cpu 8 vCore / memory 128GB)</option>
+                                <option value="s1v16m64_metal(cpu 16 vCore / memory 64GB)">s1v16m64_metal(cpu 16 vCore / memory 64GB)</option>
+                                <option value="s1v16m128_metal(cpu 16 vCore / memory 128GB)">s1v16m128_metal(cpu 16 vCore / memory 128GB)</option>
+                                <option value="s1v16m256_metal(cpu 16 vCore / memory 256GB)">s1v16m256_metal(cpu 16 vCore / memory 256GB)</option>
+                                <option value="h1v72m288_metal(cpu 72 vCore / memory 288GB)">h1v72m288_metal(cpu 72 vCore / memory 288GB)</option>
+                                <option value="h1v72m576_metal(cpu 72 vCore / memory 576GB)">h1v72m576_metal(cpu 72 vCore / memory 576GB)</option>
+                                <option value="h1v72m1152_metal(cpu 72 vCore / memory 1152GB)">h1v72m1152_metal(cpu 72 vCore / memory 1152GB)</option>
+                                <option value="h1v96m384_metal(cpu 96 vCore / memory 384GB)">h1v96m384_metal(cpu 96 vCore / memory 384GB)</option>
+                                <option value="h1v96m768_metal(cpu 96 vCore / memory 768GB)">h1v96m768_metal(cpu 96 vCore / memory 768GB)</option>
+                                <option value="h1v96m1536_metal(cpu 96 vCore / memory 1536GB)">h1v96m1536_metal(cpu 96 vCore / memory 1536GB)</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="calc-form-group">
+                            <label class="calc-label">약정 기간</label>
+                            <div>
+                              <div class="select-box1 small tablet-only">
+                                <select>
+                                  <option value="없음">없음</option>
+                                  <option value="1년">1년</option>
+                                  <option value="3년">3년</option>
+                                </select>
+                              </div>
+                              <div class="pc-only">
+                                <div class="radio-container">
+                                  <div class="radio-wrapper">
+                                    <input tabindex="0" type="radio" id="vsTermsNone" name="vs-terms" checked>
+                                    <label for="vsTermsNone">없음</span>
+                                  </div>
+                                  <div class="radio-wrapper">
+                                    <input tabindex="0" type="radio" id="vsOneYear" name="vs-terms">
+                                    <label for="vsOneYear">1년</span>
+                                  </div>
+                                  <div class="radio-wrapper">
+                                    <input tabindex="0" type="radio" id="vsThreeYear" name="vs-terms">
+                                    <label for="vsThreeYear">3년</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="calc-label info">*약정기간 없음 선택시 1개월(730시간) 사용 적용</div>
+                            </div>
+                          </div>
+                          <div class="calc-form-group">
+                            <label class="calc-label">운영 등급</label>
+                            <div>
+                              <div class="select-box1 small tablet-only">
+                                <select>
+                                  <option value="미선택">미선택</option>
+                                  <option value="Lite">Lite</option>
+                                  <option value="Basic">Basic</option>
+                                  <option value="Premium">Premium</option>
+                                </select>
+                              </div>
+                              <div class="pc-only">
+                                <div class="radio-container">
+                                  <div class="radio-wrapper">
+                                    <input tabindex="0" type="radio" id="vsNone" name="vs-terms2" checked>
+                                    <label for="vsNone">미선택</label>
+                                  </div>
+                                  <div class="radio-wrapper">
+                                    <input tabindex="0" type="radio" id="vsLite" name="vs-terms2">
+                                    <label for="vsLite">Lite</label>
+                                  </div>
+                                  <div class="radio-wrapper">
+                                    <input tabindex="0" type="radio" id="vsBasic" name="vs-terms2">
+                                    <label for="vsBasic">Basic</label>
+                                  </div>
+                                  <div class="radio-wrapper">
+                                    <input tabindex="0" type="radio" id="vsPremium" name="vs-terms2">
+                                    <label for="vsPremium">Premium</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="btn-group">
+                          <button tabindex="0" class="btn-calc btn-default">삭제</button>
+                          <button tabindex="0" class="btn-calc btn-solid">상품추가</button>
+                        </div>
+                      </div>
+                    </form>
+                    <!-- END : 수정 : 211027 카드 추가 -->
+                    <!-- Card Compute : GPU Server -->
+                    <!-- 수정시 accent 클래스 추가 -->
+                    <form class="card accent">
+                      <div class="top-section">
+                        <div class="title-section">
+                          <div class="calc-label medium">Compute</div>
+                          <div class="icon-section">
+                            <div class="icon-down">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <g id="ic" transform="translate(24) rotate(90)">
+                                  <rect id="사각형_137163" data-name="사각형 137163" width="24" height="24" fill="red" opacity="0"/>
+                                  <path id="패스_202519" data-name="패스 202519" d="M8,16,0,8,8,0" transform="translate(8 4)" fill="none" stroke="#1f2533" stroke-linejoin="round" stroke-width="1"/>
+                                </g>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="calc-label xlarge">GPU Server</div>
+                      </div>
+                      <div class="card-content">
+                        <div class="calc-form">
+                          <div class="calc-form-group">
+                            <label class="calc-label">서버 대수</label>
+                            <div>
+                              <div class="select-box1 small">
+                                <select>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="6">6</option>
+                                  <option value="7">7</option>
+                                  <option value="8">8</option>
+                                  <option value="9">9</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="calc-form-group">
+                            <label class="calc-label">운영시스템(OS)</label>
+                            <div class="select-box1 small">
+                              <select>
+                                <option value="CentOS_GPU">CentOS_GPU</option>
+                                <option value="Oracle Linux_GPU">Oracle Linux_GPU</option>
+                                <option value="RHEL_GPU">RHEL_GPU</option>
+                                <option value="Suse_GPU">Suse_GPU</option>
+                                <option value="Ubuntu_GPU">Ubuntu_GPU</option>
+                                <option value="Windows_GPU">Windows_GPU</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="calc-form-group">
+                            <label class="calc-label">인스턴스 타입</label>
+                            <div class="select-box1 medium">
+                              <select>
+                                <option value="g1v8v1(cpu 8 vCore / 서버 메모리 64GB)">g1v8v1(cpu 8 vCore / 서버 메모리 64GB)</option>
+                                <option value="g1v16v2(cpu 16 vCore / 서버 메모리 128GB)">g1v16v2(cpu 16 vCore / 서버 메모리 128GB)</option>
+                                <option value="g1v32v4(cpu 32 vCore / 서버 메모리 256GB)">g1v32v4(cpu 32 vCore / 서버 메모리 256GB)</option>
+                                <option value="g1v64v8(cpu 64 vCore / 서버 메모리 512GB)">g1v64v8(cpu 64 vCore / 서버 메모리 512GB)</option>
+                                <option value="g1v16a1(cpu 16 vCore / 서버 메모리 240GB)">g1v16a1(cpu 16 vCore / 서버 메모리 240GB)</option>
+                                <option value="g1v32a2(cpu 32 vCore / 서버 메모리 480GB)">g1v32a2(cpu 32 vCore / 서버 메모리 480GB)</option>
+                                <option value="g1v64a4(cpu 64 vCore / 서버 메모리 960GB)">g1v64a4(cpu 64 vCore / 서버 메모리 960GB)</option>
+                                <option value="g1v128a8(cpu 128 vCore / 서버 메모리 1920GB)">g1v128a8(cpu 128 vCore / 서버 메모리 1920GB)</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="calc-form-group">
+                            <label class="calc-label">약정 기간</label>
+                            <div>
+                              <div class="select-box1 small tablet-only">
+                                <select>
+                                  <option value="없음">없음</option>
+                                  <option value="1년">1년</option>
+                                  <option value="3년">3년</option>
+                                </select>
+                              </div>
+                              <div class="pc-only">
+                                <div class="radio-container">
+                                  <div class="radio-wrapper">
+                                    <input tabindex="0" type="radio" id="gpuTermsNone" name="gpu-terms" checked>
+                                    <label for="gpuTermsNone">없음</span>
+                                  </div>
+                                  <div class="radio-wrapper">
+                                    <input tabindex="0" type="radio" id="gpuOneYear" name="gpu-terms">
+                                    <label for="gpuOneYear">1년</span>
+                                  </div>
+                                  <div class="radio-wrapper">
+                                    <input tabindex="0" type="radio" id="gpuThreeYear" name="gpu-terms">
+                                    <label for="gpuThreeYear">3년</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="calc-label info">*약정기간 없음 선택시 1개월(730시간) 사용 적용</div>
+                            </div>
+                          </div>
+                          <div class="calc-form-group">
+                            <label class="calc-label">운영 등급</label>
+                            <div>
+                              <div class="select-box1 small tablet-only">
+                                <select>
+                                  <option value="미선택">미선택</option>
+                                  <option value="Lite">Lite</option>
+                                  <option value="Basic">Basic</option>
+                                  <option value="Premium">Premium</option>
+                                </select>
+                              </div>
+                              <div class="pc-only">
+                                <div class="radio-container">
+                                  <div class="radio-wrapper">
+                                    <input tabindex="0" type="radio" id="gpuNone" name="gpu-terms2" checked>
+                                    <label for="gpuNone">미선택</label>
+                                  </div>
+                                  <div class="radio-wrapper">
+                                    <input tabindex="0" type="radio" id="gpuLite" name="gpu-terms2">
+                                    <label for="gpuLite">Lite</label>
+                                  </div>
+                                  <div class="radio-wrapper">
+                                    <input tabindex="0" type="radio" id="gpuBasic" name="gpu-terms2">
+                                    <label for="gpuBasic">Basic</label>
+                                  </div>
+                                  <div class="radio-wrapper">
+                                    <input tabindex="0" type="radio" id="gpuPremium" name="gpu-terms2">
+                                    <label for="gpuPremium">Premium</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                          <button tabindex="0" class="btn-calc btn-default">삭제</button>
+                          <button tabindex="0" class="btn-calc btn-solid">상품추가</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <ul class="info-bottom-text">
+                    <li>상품 입력 완료 후, 상품 추가 버튼을 누르면 우측의 상품 목록으로 이동됩니다.</li>
+                    <li>상품을 추가하면 예상 요금이 자동 계산되며 수정 및 삭제 시에도 예상 요금이 변경됩니다.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating : Only Mobile-->
+            <div class="floating-snackbar">
+              <!-- Snackbar : Only Mobile -->
+              <div class="calc-snackbar">
+                <div class="calc-label">상품 목록에 추가하였습니다.</div>
+              </div>
+              <!-- Snackbar : Only Mobile -->
+              <div class="calc-snackbar">
+                <div class="calc-label">상품 목록에서 제거되었습니다.</div>
+              </div>
+              <!-- Estimated fee : Only Mobile -->
+              <div class="estimated-fee-mobile">
+                <div class="bill-section">
+                  <div>
+                    <div class="calc-label">총 예상요금</div>
+                    <div class="calc-label info">(VAT 별도)</div>
+                  </div>
+                  <div class="calc-label price">3,900,000원</div>
+                </div>
+                <div class="icon-section">
+                  <div class="icon-down">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <g id="ic" transform="translate(24) rotate(90)">
+                        <rect id="사각형_137163" data-name="사각형 137163" width="24" height="24" fill="red" opacity="0"/>
+                        <path id="패스_202519" data-name="패스 202519" d="M8,16,0,8,8,0" transform="translate(8 4)" fill="none" stroke="#FFFFFF" stroke-linejoin="round" stroke-width="1"/>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Estimate -->
+            <div class="calc-section">
+              <div class="cost-estimate">
+                <div class="estimated-fee">
+                  <div class="top-section">
+                    <div class="title-section">
+                      <div class="calc-label large">예상 요금</div>
+                      <div class="icon-close mobile-only">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                          <g id="ic" transform="translate(24) rotate(90)">
+                            <rect id="사각형_137163" data-name="사각형 137163" width="24" height="24" fill="red" opacity="0"/>
+                            <path id="패스_202519" data-name="패스 202519" d="M8,16,0,8,8,0" transform="translate(8 4)" fill="none" stroke="#FFFFFF" stroke-linejoin="round" stroke-width="1"/>
+                          </g>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="estimate-terms">
+                      <div class="radio-container">
+                        <div class="radio-wrapper">
+                          <input tabindex="0" type="radio" id="oneMonth" name="terms" checked>
+                          <label for="oneMonth">1개월</span>
+                        </div>
+                        <div class="radio-wrapper">
+                          <input tabindex="0" type="radio" id="threeMonth" name="terms">
+                          <label for="threeMonth">3개월</span>
+                        </div>
+                        <div class="radio-wrapper">
+                          <input tabindex="0" type="radio" id="oneYear" name="terms">
+                          <label for="oneYear">1년</span>
+                        </div>
+                      </div>
+                      <div class="calc-label info">1개월 기준, VAT 별도</div>
+                    </div>
+                  </div>
+                  <div class="bottom-section">
+                    <div class="calc-label price"><span class="won">0</span> 원 / <span class="index">0</span>건</div>
+                    <div class="calc-label info excel">* 엑셀 다운로드는 예상 요금<br />1개월 기준으로만 확인이 가능합니다. </div>
+                  </div>
+                </div>
+                <!-- 첫 진입 및 컨텐츠가 없으면 disabled 클래스를 추가해주세요. -->
+                <div class="card-list">
+                  <div class="title-section">
+                    <div class="calc-label large">상품 목록</div>
+                    <div class="button-group pc-view">
+                      <button tabindex="0" class="btn-calc btn-default xsmall"><i class="ico-reset"></i></button>
+                      <button tabindex="0" class="btn-calc btn-primary"><i class="ico-down"></i>엑셀 다운로드</button>
+                    </div>
+                    <button tabindex="0" class="btn-calc btn-default xsmall mobile-only"><i class="ico-reset"></i>초기화</button>
+                  </div>
+                  <div class="intro-box card-list-intro">
+                    <img src="assets/images/img/ic_result_w_40.png" alt="">
+                    <p>상품을 추가하면 이곳에 표기되며,<br />
+                    각각의 상품 요금 및 전체 예상 요금을<br />
+                    확인하실 수 있습니다.</p>
+                  </div>
+
+                  <!-- Product Spec : Compute -->
+                  <div class="card">
+                    <div class="top-section">
+                      <div class="title-section">
+                        <div class="title-wrap">
+                          <div class="calc-label large">Compute <span class="num list-num">2</span></div>
+                          <div class="calc-label medium"><span class="num title-num">255,500</span>원</div>
+                        </div>
+                        <div class="icon-down">
+                          <svg focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <path d="M11.975 5.192c.217-.238.589-.257.83-.043.215.19.254.502.108.736l-.064.084-4.412 4.839c-.21.23-.56.254-.8.069l-.074-.07L3.15 5.97c-.217-.238-.198-.605.044-.82.214-.19.532-.197.753-.028l.077.071L8 9.552l3.975-4.36z"></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- START : 수정 : 211027 카드 추가 -->
+                    <div class="card-content">
+                      <!-- Product Spec : Compute : Bare Metal Server -->
+                      <div class="product-item">
+                        <dl>
+                          <div>
+                            <dt class="calc-label">상품명</dt>
+                            <dd class="calc-label">Bare Metal Server</dd>
+                          </div>
+                          <div>
+                            <dt class="calc-label">서버 대수</dt>
+                            <dd class="calc-label">1</dd>
+                          </div>
+                          <div>
+                            <dt class="calc-label">운영시스템(OS)</dt>
+                            <dd class="calc-label">Windows</dd>
+                          </div>
+                          <div>
+                            <dt class="calc-label">인스턴스 타입</dt>
+                            <dd class="calc-label">s1v8m32_metal(cpu 8 vCore / memory 32GB)</dd>
+                          </div>
+                          <div>
+                            <dt class="calc-label">약정 기간</dt>
+                            <dd class="calc-label">없음</dd>
+                          </div>
+                          <div>
+                            <dt class="calc-label">운영 등급</dt>
+                            <dd class="calc-label">미선택</dd>
+                          </div>
+                          <div>
+                            <dt class="calc-label">예상 요금</dt>
+                            <dd class="calc-label">2,180,510원 (1개월)</dd>
+                          </div>
+                        </dl>
+                        <div class="button-group">
+                          <button tabindex="0" class="btn-calc btn-default">삭제</button>
+                          <button tabindex="0" class="btn-calc btn-default">수정</button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- END : 수정 : 211027 카드 추가 -->
+                    <div class="card-content">
+                      <!-- Product Spec : Compute : GPU Server -->
+                      <div class="product-item">
+                        <dl>
+                          <div>
+                            <dt class="calc-label">상품명</dt>
+                            <dd class="calc-label">GPU Server</dd>
+                          </div>
+                          <div>
+                            <dt class="calc-label">서버 대수</dt>
+                            <dd class="calc-label">1</dd>
+                          </div>
+                          <div>
+                            <dt class="calc-label">운영시스템(OS)</dt>
+                            <dd class="calc-label">CentOS_GPU</dd>
+                          </div>
+                          <div>
+                            <dt class="calc-label">인스턴스 타입</dt>
+                            <dd class="calc-label">g1v8v1(cpu 8 vCore / 서버 메모리 64GB)</dd>
+                          </div>
+                          <div>
+                            <dt class="calc-label">약정 기간</dt>
+                            <dd class="calc-label">없음</dd>
+                          </div>
+                          <div>
+                            <dt class="calc-label">운영 등급</dt>
+                            <dd class="calc-label">미선택</dd>
+                          </div>
+                          <div>
+                            <dt class="calc-label">예상 요금</dt>
+                            <dd class="calc-label">2,180,510원 (1개월)</dd>
+                          </div>
+                        </dl>
+                        <div class="button-group">
+                          <button tabindex="0" class="btn-calc btn-default">삭제</button>
+                          <button tabindex="0" class="btn-calc btn-default">수정</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-content">
+                      <!-- Product Spec : Compute : Virtual Server -->
+                      <div class="product-item">
+                        <dl>
+                          <div>
+                            <dt class="calc-label">상품명</dt>
+                            <dd class="calc-label">Virtual Server</dd>
+                          </div>
+                          <div>
+                            <dt class="calc-label">서버 대수</dt>
+                            <dd class="calc-label">1</dd>
+                          </div>
+                          <div>
+                            <dt class="calc-label">운영시스템(OS)</dt>
+                            <dd class="calc-label">Windows</dd>
+                          </div>
+                          <div>
+                            <dt class="calc-label">상품 유형</dt>
+                            <dd class="calc-label">일반</dd>
+                          </div>
+                          <div>
+                            <dt class="calc-label">인스턴스 타입</dt>
+                            <dd class="calc-label">s1v1m2(cpu 1 vCore / 서버 메모리 2GB)</dd>
+                          </div>
+                          <div>
+                            <dt class="calc-label">약정 기간</dt>
+                            <dd class="calc-label">없음</dd>
+                          </div>
+                          <div>
+                            <dt class="calc-label">운영 등급</dt>
+                            <dd class="calc-label">미선택</dd>
+                          </div>
+                          <div>
+                            <dt class="calc-label">예상 요금</dt>
+                            <dd class="calc-label">59,130원 (1개월)</dd>
+                          </div>
+                        </dl>
+                        <div class="button-group">
+                          <button tabindex="0" class="btn-calc btn-default">삭제</button>
+                          <button tabindex="0" class="btn-calc btn-default">수정</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-wrap mobile-only">
+                  <button tabindex="0" class="btn-calc btn-primary big">엑셀 다운로드</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <div id="footer-template" class="footer-margin"></div>
+    </div>
+
+    <script src="assets/js/library/jquery.min.js"></script>
+    <script src="assets/js/library/jquery.tmpl.js"></script>
+    <script src="assets/js/library/swiper-bundle.min.js"></script>
+    <script src="assets/js/library/scroll-lock.min.js"></script>
+    <script src="assets/js/library/ScrollMagic.min.js"></script>
+    <script src="assets/js/library/choices.min.js"></script>
+    <script src="assets/js/library/i18next-1.11.2.min.js"></script>
+
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/initialize.js"></script>
+    <script src="assets/js/pub.js"></script>
+
+    <script>
+      // 왼쪽 메뉴 - PC
+      $(".calc-navi-item").click(function() {
+        if ($(this).hasClass("active")) {
+          $(this).removeClass("active");
+          $(this).siblings(".calc-navi-items2").slideUp(200);
+        } else {
+          $(".calc-navi-items2").hide();
+          $(this).addClass("active");
+          $(this).siblings(".calc-navi-items2").slideDown(200);
+        }
+      });
+      // 왼쪽 메뉴 - Mobile, Tablet
+      $(".calc-navi-mobile-item").click(function() {
+        var group = $(this).attr("id");
+
+        $(".calc-navi-mobile-items2").hide();
+        $('#' + group + 'Sub').show();
+      });
+      // 카드 접기
+      $(".card .top-section").click(function() {
+        // var parents = $(this).parents(".top-section");
+
+        if ($(this).hasClass("active")) {
+          $(this).removeClass("active");
+          $(this).siblings(".card-content").slideDown(200);
+        } else {
+          $(this).addClass("active");
+          $(this).siblings(".card-content").slideUp(200);
+        }
+      });
+      // 견적금액 플로팅 버튼
+      $(".estimated-fee-mobile").click(function() {
+        $(".floating-snackbar").hide();
+        $('body').addClass("scroll-lock");
+        $(".calc-section").show();
+        $(".cost-estimate .icon-close").click(function() {
+          $(".calc-section").hide();
+          $(".floating-snackbar").show();
+          $(".estimated-fee-mobile").show();
+          $('body').removeClass("scroll-lock");
+        });
+      });
+      // 윈도우 리사이즈시 요금계산서/scroll-lock 해제
+      $(window).resize(function() {
+        var width = window.innerWidth;
+
+        if (width > 768) {
+          $('body').removeClass('scroll-lock');
+          $(".calc-section").show();
+          $(".floating-snackbar").hide();
+        } else if (width <= 768) {
+          $(".calc-section").hide();
+          $(".floating-snackbar").show();
+          $(".estimated-fee-mobile").show();
+        }
+      });
+    </script>
+  </body>
+</html>

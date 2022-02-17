@@ -1,0 +1,2832 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <base href="../" />
+    <link rel="icon" href="../../../favicon.ico" />
+    <link rel="stylesheet" href="../css/library/choices.min.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Component</title>
+    <style>
+      .wrap-common {
+        padding: 20px 10px;
+        color: #222;
+      }
+      .wrap-common > h1 {
+        margin-bottom: 20px;
+        padding: 15px 0;
+        font-size: 24px;
+        font-weight: 800;
+        border-bottom: 1px solid #d8d8d8;
+      }
+      .wrap-common > h1 ~ h1 {
+        margin-top: 20px;
+      }
+      .area-grid {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+      }
+      .area-grid .grid1 {
+        flex: 1 0 auto;
+        padding: 10px;
+        max-width: 100%;
+        border: 1px solid #ddd;
+      }
+      .area-grid .grid2 {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+      }
+      footer {
+        width: 100%;
+      }
+      .bg-color {
+        background-color: #203078;
+      }
+      @media screen and (max-width: 768px) {
+        .area-grid .grid1 {
+          margin: 0;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap-common">
+      <h1>Header</h1>
+      <!-- 3depth 메뉴가 있을 시 header태그에 subpage 듀얼클래스를 추가해주세요. -->
+      <header class="subpage">
+        <div class="dim"></div>
+        <nav>
+          <h1>
+            <a service-portal internal><span class="hidden">SAMSUNG SDS Cloud Platform</span></a>
+          </h1>
+
+          <ul class="main-menu">
+            <li>
+              <!-- sub페이지 진입시 해당 대메뉴에 page-active 클래스를 추가해주세요. -->
+              <a href="javascript:;" class="page-active">소개</a>
+              <div class="sub-menu">
+                <div class="page-content">
+                  <div class="left-menu">
+                    <dl>
+                      <dt class="font-heading2">서비스 소개</dt>
+                      <dd>성공적인 디지털 전환을 위한 <br />삼성SDS 클라우드 서비스를 소개합니다.</dd>
+                    </dl>
+                    <a href="intro/services.html" class="btn-border large">자세히 보기</a>
+                  </div>
+                  <div class="right-menu">
+                    <ul>
+                      <li>
+                        <a href="intro/architecture.html">
+                          <strong>아키텍처 센터</strong>
+                          <span>아키텍처 설계에 대한 전문가 지침을 확인해 보세요.</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="intro/case.html">
+                          <strong>고객사례</strong>
+                          <span>비즈니스에 적용된 고객사례를 확인해 보세요.</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="intro/datacenter.html">
+                          <strong>데이터센터</strong>
+                          <span>글로벌 클라우드 인프라를 알아보세요.</span>
+                        </a>
+                      </li>
+                      <!-- START : 7월 이후 -->
+                      <!-- <li>
+                        <a href="intro/news.html">
+                          <strong>최신소식</strong>
+                          <span>삼성 SDS 클라우드의 최신소식을 알아보세요.</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="intro/insight.html">
+                          <strong>인사이트 리포트</strong>
+                          <span>전문가가 제공하는 리포트를 찾아보세요.</span>
+                        </a>
+                      </li> -->
+                      <!-- END : 7월 이후 -->
+                    </ul>
+                  </div>
+                </div>
+                <a href="javascript:;" class="btn-ico close"><span class="hidden">소개 서브메뉴 닫기</span></a>
+              </div>
+            </li>
+            <li>
+              <!-- sub페이지 진입시 해당 대메뉴에 page-active 클래스를 추가해주세요. -->
+              <a href="javascript:;">상품</a>
+              <div class="sub-menu product">
+                <div class="page-content">
+                  <div class="left-menu">
+                    <ul class="list-type2">
+                      <li>
+                        <a href="javascript:;" class="active">Compute</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">Storage</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">Database</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">Container</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">Networking</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">Security</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">Application Service</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">Analytics</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">AI Service</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">Management</a>
+                      </li>
+                    </ul>
+                    <a href="	product.html" class="btn-text arrow-b">모든 상품 보기</a>
+                  </div>
+                  <div class="right-menu">
+                    <div class="product-panel">
+                      <a href="product/compute.html" class="font-heading3">Compute</a>
+                      <ul>
+                        <li>
+                          <a href="product/compute/virtualServer.html">
+                            <strong>Virtual Server <span class="badge-new1">New</span></strong>
+                            <span>클라우드 컴퓨팅에 최적화 된 가상 서버</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="product/compute/vmAutoscaling.html">
+                            <strong>VM Auto-Scaling <span class="badge-update">Update</span></strong>
+                            <span>수요에 따라 자원을 자동으로 확장/축소하는 서비스</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="product/compute/baremetal.html">
+                            <strong>Bare Metal Server</strong>
+                            <span>가상화하지 않고 사용하는 고성능 물리 서버</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="product-panel">
+                      <a href="product/storage.html" class="font-heading3">Storage</a>
+                      <ul>
+                        <li>
+                          <a href="product/storage/blockStorage.html">
+                            <strong>Block Storage</strong>
+                            <span>대규모 데이터 처리와 DB 워크로드에 사용되는 스토리지</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="product/storage/fileStorage.html">
+                            <strong>File Storage</strong>
+                            <span>네트워크를 통해 다수의 클라이언트가 파일을 공유하는 스토리지</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="product/storage/objStorage.html">
+                            <strong>Object Storage</strong>
+                            <span>웹 기반 데이터 저장 공간을 제공하는 객체 스토리지</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="product/storage/backup.html">
+                            <strong>Backup</strong>
+                            <span>데이터를 백업하고 복구하는 서비스</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="product-panel">
+                      <a href="product/database.html" class="font-heading3">Database</a>
+                      <ul>
+                        <li>
+                          <a href="product/database/dbService.html">
+                            <strong>DB Service</strong>
+                            <span>웹 환경에서 Database를 간편하게 생성하고 관리하는 서비스</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="product-panel">
+                      <a href="product/container.html" class="font-heading3">Container</a>
+                      <ul>
+                        <li>
+                          <a href="product/container/k8sEngine.html">
+                            <strong>Kubernetes Engine</strong>
+                            <span>Kubernetes 컨테이너 오케스트레이션 서비스</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="product/container/k8sApps.html">
+                            <strong>Kubernetes Apps</strong>
+                            <span>Kubernetes 클러스터에 즉시 배포할 수 있도록 SW를 이미지화하여 제공하는 서비스</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="product-panel">
+                      <a href="product/network.html" class="font-heading3">Networking</a>
+                      <ul>
+                        <li>
+                          <a href="product/network/vpc.html">
+                            <strong>VPC</strong>
+                            <span>독립된 가상 네트워크 공간을 제공하는 서비스</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="product/network/securityGroup.html">
+                            <strong>Security Group</strong>
+                            <span>VM/VPC의 트래픽을 제어하는 가상 방화벽 </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="product/network/loadBalancer.html">
+                            <strong>Load Balancer</strong>
+                            <span>서버 트래픽 부하를 자동으로 분산하는 서비스</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="product/network/dns.html">
+                            <strong>DNS</strong>
+                            <span>간편하게 도메인을 설정하고 관리하는 서비스</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="product/network/gslb.html">
+                            <strong>GSLB</strong>
+                            <span>안정적인 네트워크 트래픽을 위한 DNS 기반의 로드 밸런싱</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="product/network/vpn.html">
+                            <strong>VPN</strong>
+                            <span>외부 네트워크와 클라우드 네트워크를 연결하는 서비스</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="product-panel">
+                      <a href="product/security.html" class="font-heading3">Security</a>
+                      <ul>
+                        <li>
+                          <a href="product/security/ddos.html">
+                            <strong>DDoS 대응</strong>
+                            <span>대용량 네트워크 트래픽 공격 탐지 및 대응 서비스</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="product/security/ids.html">
+                            <strong>IDS</strong>
+                            <span>홈페이지 및 애플리케이션 서버에 대한 침입을 실시간으로 탐지 및 대응하는 서비스</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="product/security/waf.html">
+                            <strong>WAF</strong>
+                            <span>웹 취약점과 공격으로부터 웹 애플리케이션을 보호하는 서비스</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="product/security/webVulnerability.html">
+                            <strong>웹 취약점 점검</strong>
+                            <span>웹 서비스의 보안 취약점 점검 및 대응 방법 제공 서비스</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="product/security/certificateMgmt.html">
+                            <strong>인증서 관리</strong>
+                            <span>SSL/TLS 인증서 등록 및 통합 관리 서비스 </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="product-panel">
+                      <a href="product/appService.html" class="font-heading3">Application Service</a>
+                      <ul>
+                        <li>
+                          <a href="product/appService/apiGateway.html">
+                            <strong>API Gateway</strong>
+                            <span>API를 손쉽게 관리하고 모니터링하는 서비스 </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="product/appService/alarm.html">
+                            <strong>Mail/SMS/Push</strong>
+                            <span>Mail, SMS, Push 알림 기능을 제공하는 서비스</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="product-panel">
+                      <a href="product/analytics.html" class="font-heading3">Analytics</a>
+                      <ul>
+                        <li>
+                          <a href="product/analytics/kafka.html">
+                            <strong>Kafka</strong>
+                            <span>Confluent Platform의 Kubernetes 클러스터를 생성/관리하는 서비스</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="product-panel">
+                      <a href="product/aiService.html" class="font-heading3">AI Service</a>
+                      <ul>
+                        <li>
+                          <a href="product/aiService/kubeflow.html">
+                            <strong>Kubeflow</strong>
+                            <span>Kubernetes 기반의 오픈소스 Machine Learning 플랫폼</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="product-panel">
+                      <a href="product/management.html" class="font-heading3">Management</a>
+                      <ul>
+                        <li>
+                          <a href="product/management/logNaudit.html">
+                            <strong>Logging & Audit</strong>
+                            <span>사용자의 활동 내역을 수집하고 분석하는 서비스</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="product/management/monitoring.html">
+                            <strong>Cloud Monitoring</strong>
+                            <span>클라우드 인프라의 안정적인 운영을 지원하는 서비스 </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <a href="javascript:;" class="btn-ico close"><span class="hidden">상품 서브메뉴 닫기</span></a>
+              </div>
+            </li>
+            <li>
+              <!-- sub페이지 진입시 해당 대메뉴에 page-active 클래스를 추가해주세요. -->
+              <a href="javascript:;">요금</a>
+              <div class="sub-menu">
+                <div class="page-content">
+                  <div class="left-menu">
+                    <dl>
+                      <dt class="font-heading2">요금 소개</dt>
+                      <dd>합리적인 삼성SDS 클라우드 요금을 알아보세요.</dd>
+                    </dl>
+                    <a href="pricing.html" class="btn-border large">자세히 보기</a>
+                  </div>
+                  <div class="right-menu">
+                    <ul>
+                      <li>
+                        <a scp-calculator>
+                          <strong>요금 계산기</strong>
+                          <span>삼성SDS 클라우드의 최적화된 요금을 확인해 보세요.</span>
+                        </a>
+                      </li>
+                      <!-- START : 무료체험 숨김 -->
+                      <!-- <li>
+                        <a href="../freetrials.html">
+                          <strong>무료체험</strong>
+                          <span>삼성SDS 클라우드 상품을 무료로 체험해보세요</span>
+                        </a>
+                      </li> -->
+                      <!-- START : 무료체험 숨김 -->
+                    </ul>
+                  </div>
+                </div>
+                <a href="javascript:;" class="btn-ico close"><span class="hidden">요금 서브메뉴 닫기</span></a>
+              </div>
+            </li>
+            <li>
+              <!-- sub페이지 진입시 해당 대메뉴에 page-active 클래스를 추가해주세요. -->
+              <a href="javascript:;">고객지원</a>
+              <div class="sub-menu">
+                <div class="page-content">
+                  <div class="left-menu">
+                    <dl>
+                      <dt class="font-heading2">문의하기</dt>
+                      <dd>궁금한 점이 있거나 도움이 필요하시면 언제든 문의하세요.</dd>
+                    </dl>
+                    <a href="support/question.html" class="btn-border large">문의하기</a>
+                  </div>
+                  <div class="right-menu">
+                    <ul>
+                      <li>
+                        <a href="support/notice.html">
+                          <strong>공지사항</strong>
+                          <span>클라우드 서비스 및 작업 관련 공지를 확인해 보세요.</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="support/faq.html">
+                          <strong>FAQ</strong>
+                          <span>많은 사람들이 궁금해하는 정보를 확인해 보세요.</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <a href="javascript:;" class="btn-ico close"><span class="hidden">고객지원 서브메뉴 닫기</span></a>
+              </div>
+            </li>
+          </ul>
+          <ul class="etc-menu">
+            <!-- // 주석: 으로 된 부분은 전체주석 풀었을 때 주석처리해주세요 (이유: html은 중첩주석이 안됨) -->
+            <!-- START : 7월 이후 -->
+            <!-- <li>
+              <a href="javascript:;" class="btn-ico search"><span class="hidden">검색하기</span></a>
+              <div class="total-search-wrap">
+                <div class="total-search" data-type="inputSearch">
+                  <input type="search" placeholder="검색어를 입력하세요" maxlength="255" autocomplete="off" spellcheck="false" />
+                  <button type="button" class="btn-delete">
+                    <span class="hidden">입력 삭제 버튼</span>
+                  </button>
+                  <button type="button" class="btn-search">
+                    <span class="hidden">search 버튼</span>
+                  </button>
+                </div>
+                <div class="search-list">
+                  <div class="search-box">
+                    <strong>자동완성</strong>
+                    <ul class="list-type2 auto">
+                      <li>
+                        // 주석: 자동완성 문구는 <strong class='mask'></strong> 태그에 감싸주세요
+                        <a href="javascript:;"><strong class="mask">clou</strong>d</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;"><strong class="mask">clou</strong>dnativecon</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;"><strong class="mask">clou</strong>d native computing</a>
+                      </li>
+                    </ul>
+                  </div>
+                  // 주석: 최근검색어가 없을 경우 hidden 듀얼클래스를 추가해주세요. <div class="search-box hidden">
+                  <div class="search-box">
+                    <strong>최근검색</strong>
+                    <ul class="list-type2 recent">
+                      <li>
+                        <a href="javascript:;">storage</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">데이터베이스 소개</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <button type="button" class="btn-text close">취소</button>
+              </div>
+            </li> -->
+            <!-- END : 7월 이후 -->
+            <!-- START : 7월 이후 -->
+            <!-- <li>
+              <div class="select-box1 lang">
+                <select id="" name="">
+                  <option value="kor">KOR</option>
+                  <option value="eng">ENG</option>
+                </select>
+              </div>
+            </li> -->
+            <!-- END : 7월 이후 -->
+            <li><a href="support/question.html">문의하기</a></li>
+            <!-- START : 무료체험 버튼 숨김 -->
+            <!-- <li>
+              <a href="../freetrials.html" class="btn-login">무료체험</a>
+            </li> -->
+            <!-- END : 무료체험 버튼 숨김 -->
+            <li>
+              <a scp-console class="btn-console"><span>Console</span></a>
+              <!-- START : 7월 이후 -->
+              <!-- <a href="javascript:;" aria-haspopup="dialog" data-popup="consolePopup" class="btn-console"><span>Console</span></a> -->
+              <!-- END : 7월 이후 -->
+            </li>
+            <li>
+              <a href="javascript:;" role="button" class="btn-ico ham"><span class="hidden">메뉴열기</span></a>
+            </li>
+          </ul>
+
+          <!-- mobile menu -->
+          <div class="mnb">
+            <div class="mnb-inner">
+              <a href="javascript:;" class="btn-ico close"><span class="hidden">모바일 메뉴 닫기</span></a>
+              <ul class="mmain-menu">
+                <li>
+                  <a href="javascript:;">소개</a>
+                  <div class="msub-menu">
+                    <div class="msub-menu-top">
+                      <a href="javascript:;" class="btn-text arrow">이전으로</a>
+                    </div>
+                    <div class="msub-menu-cont">
+                      <strong class="font-heading4">소개</strong>
+                      <ul>
+                        <li>
+                          <a href="intro/services.html">서비스 소개</a>
+                        </li>
+                        <li>
+                          <a href="intro/architecture.html">아키텍처 센터</a>
+                        </li>
+                        <li>
+                          <a href="intro/case.html">고객사례</a>
+                        </li>
+                        <li>
+                          <a href="intro/datacenter.html">데이터센터</a>
+                        </li>
+                        <!-- START : 7월 이후 -->
+                        <!-- <li>
+                          <a href="intro/news.html">최신소식</a>
+                        </li>
+                        <li>
+                          <a href="intro/insight.html">인사이트 리포트</a>
+                        </li> -->
+                        <!-- END : 7월 이후 -->
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="javascript:;">상품</a>
+                  <div class="msub-menu product">
+                    <div class="msub-menu-top">
+                      <a href="javascript:;" class="btn-text arrow">이전으로</a>
+                    </div>
+                    <div class="msub-menu-cont" data-scroll-lock-scrollable>
+                      <strong class="font-heading4">상품</strong>
+                      <ul>
+                        <li>
+                          <a href="product/compute.html">Compute</a>
+                          <ul class="list-type2">
+                            <li>
+                              <a href="product/compute/virtualServer.html">Virtual Server</a>
+                            </li>
+                            <li>
+                              <a href="product/compute/vmAutoscaling.html">VM Auto-Scaling</a>
+                            </li>
+                            <li>
+                              <a href="product/compute/baremetal.html">Bare Metal Server</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="product/storage.html">Storage</a>
+                          <ul class="list-type2">
+                            <li>
+                              <a href="product/storage/blockStorage.html">Block Storage</a>
+                            </li>
+                            <li>
+                              <a href="product/storage/fileStorage.html">File Storage</a>
+                            </li>
+                            <li>
+                              <a href="product/storage/objStorage.html">Object Storage</a>
+                            </li>
+                            <li>
+                              <a href="product/storage/backup.html">Backup</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="product/database.html">Database</a>
+                          <ul class="list-type2">
+                            <li>
+                              <a href="product/database/dbService.html">DB Service</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="product/container.html">Container</a>
+                          <ul class="list-type2">
+                            <li>
+                              <a href="product/container/k8sEngine.html">Kubernetes Engine</a>
+                            </li>
+                            <li>
+                              <a href="product/container/k8sApps.html">Kubernetes Apps</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="product/network.html">Networking</a>
+                          <ul class="list-type2">
+                            <li>
+                              <a href="product/network/vpc.html">VPC</a>
+                            </li>
+                            <li>
+                              <a href="product/network/securityGroup.html">Security Group</a>
+                            </li>
+                            <li>
+                              <a href="product/network/loadBalancer.html">Load Balancer</a>
+                            </li>
+                            <li>
+                              <a href="product/network/dns.html">DNS</a>
+                            </li>
+                            <li>
+                              <a href="product/network/gslb.html">GSLB</a>
+                            </li>
+                            <li>
+                              <a href="product/network/vpn.html">VPN</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="product/security.html">Security</a>
+                          <ul class="list-type2">
+                            <li>
+                              <a href="product/security/ddos.html">DDoS 대응</a>
+                            </li>
+                            <li>
+                              <a href="product/security/ids.html">IDS</a>
+                            </li>
+                            <li>
+                              <a href="product/security/waf.html">WAF</a>
+                            </li>
+                            <li>
+                              <a href="product/security/webVulnerability.html">웹 취약점 점검</a>
+                            </li>
+                            <li>
+                              <a href="product/security/certificateMgmt.html">인증서 관리</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="product/appService.html">Application Service</a>
+                          <ul class="list-type2">
+                            <li>
+                              <a href="product/appService/apiGateway.html">API Gateway</a>
+                            </li>
+                            <li>
+                              <a href="product/appService/alarm.html">Mail/SMS/Push</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="product/analytics.html">Analytics</a>
+                          <ul class="list-type2">
+                            <li>
+                              <a href="product/analytics/kafka.html">Kafka</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="product/aiService.html">AI Service</a>
+                          <ul class="list-type2">
+                            <li>
+                              <a href="product/aiService/kubeflow.html">Kubeflow</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="product/management.html">Management</a>
+                          <ul class="list-type2">
+                            <li>
+                              <a href="product/management/logNaudit.html">Logging & Audit</a>
+                            </li>
+                            <li>
+                              <a href="product/management/logNaudit.html">Cloud Monitoring</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="msub-menu-bottom">
+                      <a href="product.html" class="btn-sub large">모든 상품 보기</a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="javascript:;">요금</a>
+                  <div class="msub-menu">
+                    <div class="msub-menu-top">
+                      <a href="javascript:;" class="btn-text arrow">이전으로</a>
+                    </div>
+                    <div class="msub-menu-cont">
+                      <strong class="font-heading4">요금</strong>
+                      <ul>
+                        <li>
+                          <a href="pricing.html">요금 소개</a>
+                        </li>
+                        <li>
+                          <!-- START : 수정 : 20210621 모바일 버튼 숨김 -->
+                          <!-- <a href="javascript:;" aria-haspopup="dialog" data-popup="announcementPopup" class="mobile-only">요금 계산기</a> -->
+                          <!-- END : 수정 : 20210621 모바일 버튼 숨김 -->
+                          <a scp-calculator class="pc-only">요금 계산기</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="javascript:;">고객지원</a>
+                  <div class="msub-menu">
+                    <div class="msub-menu-top">
+                      <a href="javascript:;" class="btn-text arrow">이전으로</a>
+                    </div>
+                    <div class="msub-menu-cont">
+                      <strong class="font-heading4">고객지원</strong>
+                      <ul>
+                        <li>
+                          <a href="support/notice.html">공지사항</a>
+                        </li>
+                        <li>
+                          <a href="support/faq.html">FAQ</a>
+                        </li>
+                        <li>
+                          <a href="support/question.html">문의하기</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="metc-menu">
+                <!-- START : 7월 이후 -->
+                <!-- <li>
+                  <div class="select-box1 lang">
+                    <select id="" name="">
+                      <option value="KOR">KOR</option>
+                      <option value="ENG">ENG</option>
+                    </select>
+                  </div>
+                </li> -->
+                <!-- END : 7월 이후 -->
+                <li>
+                  <a href="support/question.html">문의하기</a>
+                </li>
+                <!-- START : 무료체험 버튼 숨김 -->
+                <!-- <li>
+                  <a href="../freetrials.html">무료체험</a>
+                </li> -->
+                <!-- END : 무료체험 버튼 숨김 -->
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- START : 3depth 메뉴가 있을 시 추가해주세요. -->
+        <div class="page-menu">
+          <!-- 소개 -->
+          <!-- sub페이지 중 활성화된 페이지에 active 클래스를 추가해주세요. -->
+          <!--
+          <div class="page-menu-inner">
+            <ul>
+              <li>
+                <a href="intro/services.html" class="active">서비스 소개</a>
+              </li>
+              <li>
+                <a href="intro/architecture.html">아키텍처 센터</a>
+              </li>
+              <li>
+                <a href="intro/case.html">고객사례</a>
+              </li>
+              <li>
+                <a href="intro/datacenter.html">데이터센터</a>
+              </li>  -->
+          <!-- START : 7월 이후 -->
+          <!-- <li>
+                <a href="intro/news.html">최신소식</a>
+              </li>
+              <li>
+                <a href="intro/insight.html">인사이트 리포트</a>
+              </li> -->
+          <!-- END : 7월 이후 -->
+          <!--</ul>
+          </div> -->
+          <!-- 상품 -->
+          <div class="page-dropdown">
+            <button type="button" class="btn-dropdown" data-toggle>Compute</button>
+            <ul class="dropdown-list">
+              <li>
+                <a href="product/compute.html" class="active">Compute</a>
+              </li>
+              <li>
+                <a href="product/storage.html">Storage</a>
+              </li>
+              <li>
+                <a href="product/database.html">Database</a>
+              </li>
+              <li>
+                <a href="product/container.html">Container</a>
+              </li>
+              <li>
+                <a href="product/network.html">Networking</a>
+              </li>
+              <li>
+                <a href="product/security.html">Security</a>
+              </li>
+              <li>
+                <a href="product/appService.html">Application Service</a>
+              </li>
+              <li>
+                <a href="product/analytics.html">Analytics</a>
+              </li>
+              <li>
+                <a href="product/aiService.html">AI Service</a>
+              </li>
+              <li>
+                <a href="product/management.html">Management</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-menu-inner">
+            <!-- sub페이지 중 활성화된 페이지에 active 클래스를 추가해주세요. -->
+            <!-- Compute -->
+            <ul>
+              <li>
+                <a href="product/compute/virtualServer.html" class="active">Virtual Server</a>
+              </li>
+              <li>
+                <a href="product/compute/vmAutoscaling.html">VM Auto-Scaling</a>
+              </li>
+              <li>
+                <a href="product/compute/baremetal.html">Bare Metal Server</a>
+              </li>
+            </ul>
+            <!-- Storage -->
+            <!-- <ul>
+              <li>
+                <a href="product/storage/blockStorage.html" class="active">Block Storage</a>
+              </li>
+              <li>
+                <a href="product/storage/fileStorage.html">File Storage</a>
+              </li>
+              <li>
+                <a href="product/storage/objStorage.html">Object Storage</a>
+              </li>
+              <li>
+                <a href="product/storage/backup.html">Backup</a>
+              </li>
+            </ul> -->
+            <!-- Database -->
+            <!-- <ul>
+              <li>
+                <a href="product/database/dbService.html" class="active">DB Service</a>
+              </li>
+            </ul> -->
+            <!-- Container -->
+            <!-- <ul>
+              <li>
+                <a href="product/container/k8sEngine.html">Kubernetes Engine</a>
+              </li>
+              <li>
+                <a href="product/container/k8sApps.html">Kubernetes Apps</a>
+              </li>
+            </ul> -->
+            <!-- Networking -->
+            <!-- <ul>
+              <li>
+                <a href="product/network/vpc.html">VPC</a>
+              </li>
+              <li>
+                <a href="product/network/securityGroup.html">Security Group</a>
+              </li>
+              <li>
+                <a href="product/network/loadBalancer.html">Load Balancer</a>
+              </li>
+              <li>
+                <a href="product/network/dns.html">DNS</a>
+              </li>
+              <li>
+                <a href="product/network/gslb.html">GSLB</a>
+              </li>
+              <li>
+                <a href="product/network/vpn.html">VPN</a>
+              </li>
+            </ul> -->
+            <!-- Security -->
+            <!-- <ul>
+              <li>
+                <a href="product/security/ddos.html">DDoS 대응</a>
+              </li>
+              <li>
+                <a href="product/security/ids.html">IDS</a>
+              </li>
+              <li>
+                <a href="product/security/waf.html">WAF</a>
+              </li>
+              <li>
+                <a href="product/security/webVulnerability.html">웹 취약점 점검</a>
+              </li>
+              <li>
+                <a href="product/security/certificateMgmt.html">인증서 관리</a>
+              </li>
+            </ul> -->
+            <!-- Application Service -->
+            <!-- <ul>
+              <li>
+                <a href="product/appService/apiGateway.html">API Gateway</a>
+              </li>
+              <li>
+                <a href="product/appService/alarm.html">Mail/SMS/Push</a>
+              </li>
+            </ul> -->
+            <!-- Analytics -->
+            <!-- <ul>
+              <li>
+                <a href="product/analytics/kafka.html">Kafka</a>
+              </li>
+            </ul> -->
+            <!-- AI Service -->
+            <!-- <ul>
+              <li>
+                <a href="product/aiService/kubeflow.html">Kubeflow</a>
+              </li>
+            </ul> -->
+            <!-- Management -->
+            <!-- <ul>
+              <li>
+                <a href="product/management/logNaudit.html">Logging & Audit</a>
+              </li>
+              <li>
+                <a href="product/management/monitoring.html">Cloud Monitoring</a>
+              </li>
+            </ul> -->
+          </div>
+          <!-- 상품 3depth 경우 -->
+          <!-- <div class="page-menu-inner">
+            <ul>
+              <li>
+                <a href="product/compute.html" class="active">Compute</a>
+              </li>
+              <li>
+                <a href="product/storage.html">Storage</a>
+              </li>
+              <li>
+                <a href="product/database.html">Database</a>
+              </li>
+              <li>
+                <a href="product/container.html">Container</a>
+              </li>
+              <li>
+                <a href="product/network.html">Networking</a>
+              </li>
+              <li>
+                <a href="product/security.html">Security</a>
+              </li>
+              <li>
+                <a href="product/appService.html">Application Service</a>
+              </li>
+              <li>
+                <a href="product/analytics.html">Analytics</a>
+              </li>
+              <li>
+                <a href="product/aiService.html">AI Service</a>
+              </li>
+              <li>
+                <a href="product/management.html">Management</a>
+              </li>
+            </ul>
+          </div> -->
+          <!-- 요금 -->
+          <!-- <div class="page-menu-inner">
+            <ul>
+              <li>
+                <a href="pricing.html">요금 소개</a>
+              </li>
+              <li>
+                <a href="javascript:;" aria-haspopup="dialog" data-popup="announcementPopup" class="mobile-only">요금 계산기</a>
+                <a scp-calculator class="pc-only">요금 계산기</a> 
+              </li>
+            </ul>
+          </div> -->
+          <!-- 고객지원 -->
+          <!-- <div class="page-menu-inner">
+            <ul>
+              <li>
+                <a href="support/notice.html">공지사항</a>
+              </li>
+              <li>
+                <a href="support/faq.html">FAQ</a>
+              </li>
+              <li>
+                <a href="support/question.html">문의하기</a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        <!-- END : 3depth 메뉴가 있을 시 추가해주세요. -->
+      </header>
+      <div class="wrap-layer-popup console" data-popup="consolePopup" role="dialog">
+        <div class="inner-layer-popup">
+          <div class="console-content">
+            <div class="wrap-layer-popup-title">
+              <div class="check-box1">
+                <input type="checkbox" id="consoleCheck" />
+                <label for="consoleCheck">
+                  <span class="check"></span>
+                  다시보지 않기
+                </label>
+              </div>
+              <button class="btn-close-popup" data-popup-close="consolePopup"></button>
+            </div>
+            <div class="tab-wrap1" data-type="tab-wrap">
+              <ul class="panels">
+                <li id="panel3-1" role="tabpanel" tabindex="0">
+                  <img src="../images/img/img_dashboard_home.gif" alt="콘솔소개 이미지" />
+                </li>
+                <li id="panel3-2" role="tabpanel" tabindex="0" hidden>
+                  <img src="../images/img/img_iam_home.gif" alt="콘솔소개 이미지" />
+                </li>
+              </ul>
+              <div class="right-content">
+                <div class="card-image">
+                  <div class="card-content">
+                    <h4>다양한 클라우드 자원을<br />고객 맞춤형으로<br />안전하고 편리하게</h4>
+                    <p class="text">
+                      최신 기술로 구축된 클라우드 자원을 셀프 서비스로 생성-관리하고 자원 현황을 실시간 모니터링 할 수 있습니다.
+                    </p>
+                  </div>
+                </div>
+                <ul class="tablist" role="tablist">
+                  <li class="tab-item" role="tab">
+                    <button type="button" class="active btn-chips-filter" role="button" aria-controls="panel3-1" data-type="tab-item">
+                      대시보드
+                    </button>
+                  </li>
+                  <li class="tab-item" role="tab">
+                    <button type="button" class="btn-chips-filter" role="button" aria-controls="panel3-2" data-type="tab-item">
+                      권한관리 서비스(IAM)
+                    </button>
+                  </li>
+                </ul>
+                <ul class="login-btn">
+                  <li>
+                    <a href="javascript:;" class="btn-solid large reverse">회원가입</a>
+                  </li>
+                  <li>
+                    <a href="javascript:;" class="btn-opacity large">기존 SDS회원 로그인</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrap-layer-popup" data-popup="announcementPopup" role="dialog">
+        <div class="inner-layer-popup">
+          <div class="wrap-layer-popup-title" tabindex="0">
+            <strong class="font-heading3">안내</strong>
+            <button class="btn-close-popup" data-popup-close="announcementPopup"></button>
+          </div>
+          <div class="layer-popup-contents font-body4">
+            <div class="inner">해당 기능은 PC에서만 지원됩니다.</div>
+          </div>
+          <div class="layer-popup-bottom">
+            <button type="button" class="btn-solid w100" data-popup-close="announcementPopup">확인</button>
+          </div>
+        </div>
+      </div>
+      <h1>Footer</h1>
+      <div class="area-grid">
+        <footer>
+          <div class="page-content">
+            <div class="ft-top">
+              <div class="ft-info">
+                <strong><span class="hidden">SDS Cloud Platform Essential</span></strong>
+
+                <ul class="ft-link">
+                  <!-- START : 7월 이후 -->
+                  <!-- <li>
+                    <div class="select-box1 lang">
+                      <select id="" name="">
+                        <option value="KOR">KOR</option>
+                        <option value="ENG">ENG</option>
+                      </select>
+                    </div>
+                  </li> -->
+                  <!-- END : 7월 이후 -->
+                  <li><a href="support/question.html" class="btn-link qna">문의하기 (1661-3311)</a></li>
+                </ul>
+              </div>
+              <nav class="ft-menu">
+                <ul>
+                  <li>
+                    <button type="button" class="menu-title">소개</button>
+                    <div class="menu-depth2">
+                      <ul>
+                        <li>
+                          <a href="intro/services.html">서비스 소개</a>
+                        </li>
+                        <li>
+                          <a href="intro/architecture.html">아키텍처 센터</a>
+                        </li>
+                        <li>
+                          <a href="intro/case.html">고객사례</a>
+                        </li>
+                        <li>
+                          <a href="intro/datacenter.html">데이터센터</a>
+                        </li>
+                        <!-- START : 7월 이후 -->
+                        <!-- <li>
+                          <a href="intro/news.html">최신소식</a>
+                        </li>
+                        <li>
+                          <a href="intro/insight.html">인사이트 리포트</a>
+                        </li> -->
+                        <!-- END : 7월 이후 -->
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <button type="button" class="menu-title">상품</button>
+                    <div class="menu-depth2">
+                      <ul>
+                        <li>
+                          <a href="product/compute.html">Compute</a>
+                        </li>
+                        <li>
+                          <a href="product/storage.html">Storage</a>
+                        </li>
+                        <li>
+                          <a href="product/database.html">Database</a>
+                        </li>
+                        <li>
+                          <a href="product/container.html">Container</a>
+                        </li>
+                        <li>
+                          <a href="product/network.html">Networking</a>
+                        </li>
+                        <li>
+                          <a href="product/security.html">Security</a>
+                        </li>
+                        <li>
+                          <a href="product/appService.html">Application Service</a>
+                        </li>
+                        <li>
+                          <a href="product/analytics.html">Analytics</a>
+                        </li>
+                        <li>
+                          <a href="product/aiService.html">AI Service</a>
+                        </li>
+                        <li>
+                          <a href="product/management.html">Management</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <button type="button" class="menu-title">요금</button>
+                    <div class="menu-depth2">
+                      <ul>
+                        <li>
+                          <a href="pricing.html">요금 소개</a>
+                        </li>
+                        <li>
+                          <!-- START : 수정 : 20210621 모바일 버튼 숨김 -->
+                          <!-- <a href="javascript:;" aria-haspopup="dialog" data-popup="announcementPopup" class="mobile-only">요금 계산기</a> -->
+                          <!-- END : 수정 : 20210621 모바일 버튼 숨김 -->
+                          <a scp-calculator class="pc-only">요금 계산기</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <button type="button" class="menu-title">고객지원</button>
+                    <div class="menu-depth2">
+                      <ul>
+                        <li>
+                          <a href="support/notice.html">공지사항</a>
+                        </li>
+                        <li>
+                          <a href="support/faq.html">FAQ</a>
+                        </li>
+                        <li>
+                          <a href="support/question.html">문의하기</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="ft-bottom">
+              <ul class="ft-policy">
+                <li>
+                  <a href="policy/privacy.html">개인정보처리방침</a>
+                </li>
+                <li>
+                  <a href="policy/terms.html">서비스 이용약관</a>
+                </li>
+                <li>
+                  <a href="policy/sla.html">서비스 수준 협약</a>
+                </li>
+              </ul>
+              <address class="font-body5">
+                <span>서울시 송파구 올림픽로 35길 125 삼성SDS (05510)</span>
+                <span>대표전화 : <a href="tel:02-6155-3114">02-6155-3114</a></span>
+                <span>Copyright SAMSUNG SDS. All rights reserved.</span>
+              </address>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <h1>Typography</h1>
+      <div class="area-grid">
+        <!-- class명/font-weight/font-size/line-height -->
+        <div class="grid2">
+          <h1 class="font-heading1">font-heading1/Bold/46px/62px</h1>
+          <h3 class="font-heading7">font-heading7/Bold/38px/48px</h3>
+          <h2 class="font-heading2">font-heading2/Bold/32px/48px</h2>
+          <h3 class="font-heading3">font-heading3/Bold/24px/34px</h3>
+          <h3 class="font-heading4">font-heading4/Bold/20px/28px</h3>
+          <h3 class="font-heading5">font-heading5/Bold/16px/24px</h3>
+          <h3 class="font-heading6">font-heading6/Bold/14px/22px</h3>
+        </div>
+        <div class="grid2">
+          <div class="font-body1">font-body1/Regular/18px/32px</div>
+          <div class="font-body2">font-body2/Regular/16px/26px</div>
+          <div class="font-body3">font-body3/Medium/16px/24px</div>
+          <div class="font-body4">font-body4/Regular/14px/24px</div>
+          <div class="font-body6">font-body6/Regular/13px/22px</div>
+          <div class="font-body5">font-body5/Regular/12px/20px</div>
+        </div>
+      </div>
+      <h1>Form</h1>
+      <div class="area-grid">
+        <div class="grid1">
+          <div class="form-box">
+            <div class="form-label">
+              <label for="selectForm1">Label</label>
+            </div>
+            <div class="select-box1 form-data">
+              <select id="selectForm1" name="selectEx1">
+                <!-- value가 null인 값을 placeholder로 쓰임 -->
+                <option value="">Hint text</option>
+                <option value="1">1입니다.</option>
+                <option value="2">2입니다.</option>
+                <option value="3">3입니다.</option>
+                <option value="4">4입니다.</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-box">
+            <div class="form-label">
+              <label for="selectForm1">Label</label>
+            </div>
+            <div class="input-box1 form-data">
+              <input type="text" value="" placeholder="Hint text" data-text-byte />
+              <span class="hint-txt"><span class="cnt">0</span>/800000 byte</span>
+            </div>
+          </div>
+        </div>
+        <div class="grid1">
+          <div class="input-box1">
+            <input type="text" value="" placeholder="Hint text" />
+            <span class="hint-txt"><span class="cnt">0</span>/800000 byte</span>
+          </div>
+          <!-- 필드오류시 status-fail 듀얼클래스를 추가해주세요. -->
+          <div class="input-box1 status-fail">
+            <input type="text" value="Input text" placeholder="Hint text" />
+            <span class="fail-txt">This information is required</span>
+          </div>
+          <div class="input-box1">
+            <input type="text" value="Input text" placeholder="Hint text" disabled />
+            <span class="hint-txt"><span class="cnt">0</span>/800000 byte</span>
+          </div>
+          <div class="input-box1 h24">
+            <input type="text" value="" placeholder="Hint text" />
+            <span class="hint-txt"><span class="cnt">0</span>/800000 byte</span>
+          </div>
+          <div class="input-box1 h24">
+            <input type="text" value="Input text" placeholder="Hint text" disabled />
+            <span class="hint-txt"><span class="cnt">0</span>/800000 byte</span>
+          </div>
+        </div>
+        <div class="grid1">
+          <!-- input search 형태에 typing시 입력삭제 버튼이 있으면 inputSearch data-type을 추가해주세요 -->
+          <div class="input-search1" data-type="inputSearch">
+            <input type="search" value="" placeholder="Hint text" />
+            <button type="button" class="btn-delete">
+              <span class="hidden">입력 삭제 버튼</span>
+            </button>
+            <button type="button" class="btn-search">
+              <span class="hidden">search 버튼</span>
+            </button>
+          </div>
+          <!-- input search 형태에 typing시 입력삭제 버튼이 있으면 inputSearch data-type을 추가해주세요 -->
+          <div class="input-search1 typing" data-type="inputSearch">
+            <input type="search" value="" placeholder="Hint text" />
+            <button type="button" class="btn-delete">
+              <span class="hidden">입력 삭제 버튼</span>
+            </button>
+            <button type="button" class="btn-search">
+              <span class="hidden">검색 버튼</span>
+            </button>
+          </div>
+        </div>
+        <div class="grid1">
+          <!-- TODO: multi 들어가게 되면 data-type 으로 구분 예정 -->
+          <div class="select-box1">
+            <select name="selectEx1">
+              <!-- value가 null인 값을 placeholder로 쓰임 -->
+              <option value="">Hint text</option>
+              <option value="1">
+                1입니다.1입니다.1입니다.1입니다.1입니다.1입니다.1입니다.1입니다.1입니다.1입니다.1입니다.1입니다.1입니다.
+              </option>
+              <option value="2">2입니다.</option>
+              <option value="3">3입니다.</option>
+              <option value="4">4입니다.</option>
+            </select>
+          </div>
+          <div class="select-box1">
+            <select name="selectEx2" disabled>
+              <!-- value가 null인 값을 placeholder로 쓰임 -->
+              <option value="">Hint text</option>
+              <option value="1">1입니다.</option>
+              <option value="2" selected>2입니다.</option>
+              <option value="3">3입니다.</option>
+              <option value="4">4입니다.</option>
+            </select>
+          </div>
+          <div class="select-box1 no-border">
+            <select name="selectEx2">
+              <!-- value가 null인 값을 placeholder로 쓰임 -->
+              <option value="">Hint text</option>
+              <option value="1">1입니다.</option>
+              <option value="2">2입니다.</option>
+              <option value="3">3입니다.</option>
+              <option value="4">4입니다.</option>
+            </select>
+          </div>
+          <div class="select-box1 h24">
+            <select name="selectEx3">
+              <!-- value가 null인 값을 placeholder로 쓰임 -->
+              <option value="">Hint text</option>
+              <option value="1">1입니다.1입니다.1입니다.1입니다.1입니다.</option>
+              <option value="2">2입니다.</option>
+              <option value="3">3입니다.</option>
+              <option value="4" disabled>4입니다.</option>
+            </select>
+          </div>
+          <div class="select-box1 h24">
+            <select name="selectEx4" disabled>
+              <!-- value가 null인 값을 placeholder로 쓰임 -->
+              <option value="">Hint text</option>
+              <option value="1">1입니다.</option>
+              <option value="2" selected>2입니다.</option>
+              <option value="3">3입니다.</option>
+              <option value="4">4입니다.</option>
+            </select>
+          </div>
+          <div class="select-box1 lang">
+            <select id="" name="">
+              <option value="KOR">KOR</option>
+              <option value="ENG">ENG</option>
+            </select>
+          </div>
+
+          <!-- 리스트에 checkbox인 형태 / 현재 주석처리 -->
+          <!-- <div class="select-box1 has-check">
+            <select name="selectEx2">
+              <option value>Hint text</option>
+              <option value="1">
+                1입니다.1입니다.1입니다.1입니다.1입니다.1입니다.1입니다.1입니다.1입니다.1입니다.1입니다.1입니다.1입니다.
+              </option>
+              <option value="2">2입니다.</option>
+              <option value="3">3입니다.</option>
+              <option value="4">4입니다.</option>
+              <option value="5">5입니다.</option>
+              <option value="6">6입니다.</option>
+              <option value="7">7입니다.</option>
+              <option value="8">8입니다.</option>
+              <option value="9">9입니다.</option>
+              <option value="10">10입니다.</option>
+            </select>
+          </div> -->
+          <!-- readonly인 경우 / 현재 주석처리 -->
+          <!-- select box 상태가 readonly인 경우 disabled를 추가해주시고 read-only 클래스를 추가해주세요. -->
+          <!-- <div class="select-box1">
+          <select name="selectEx4" class="read-only" disabled>
+            <option value>Hint text</option>
+            <option value="1">
+              1입니다.1입니다.1입니다.1입니다.1입니다.1입니다.1입니다.1입니다.1입니다.1입니다.1입니다.1입니다.1입니다.
+            </option>
+            <option value="2" selected>2입니다.</option>
+            <option value="3">3입니다.</option>
+            <option value="4">4입니다.</option>
+          </select>
+        </div> -->
+        </div>
+        <div class="grid1">
+          <!-- input box 요소가 한 공간에 두개 들어갈 경우 input-area-*로 한 번 더 감싸서 사용합니다. -->
+          <!-- input-area-select1 active 정의에 따라 변경할 수도 있음 -->
+          <div class="input-area-select1">
+            <div class="select-box1 no-border">
+              <select name="selectEx5">
+                <option value="1">한국 (+82)</option>
+                <option value="2">아프리카 (+82)</option>
+                <option value="3">아메리카 (+82)</option>
+                <option value="4">한국 (+82)</option>
+              </select>
+            </div>
+            <div class="input-box1">
+              <input type="number" value="" placeholder="Hint text" />
+            </div>
+          </div>
+        </div>
+        <div class="grid1">
+          <div class="textarea-box1">
+            <textarea cols="30" rows="10" placeholder="Hint text Hint text Hi nt text Hint text Hint text Hint text"></textarea>
+            <span class="hint-txt"><span class="cnt">0</span>/800000 byte</span>
+          </div>
+          <div class="textarea-box1 status-fail">
+            <textarea cols="30" rows="10" placeholder="Hint text Hint text Hi nt text Hint text Hint text Hint text"></textarea>
+            <span class="fail-txt">This information is required</span>
+          </div>
+        </div>
+        <div class="grid1">
+          <div class="checked-wrap">
+            <div class="check-box1">
+              <input type="checkbox" id="checkbox1" data-check="all" />
+              <label for="checkbox1"><span class="check"></span> 개인정보 수집 및 이용에 동의합니다. (필수)</label>
+            </div>
+            <!-- <div class="check-box1 indenterminate">
+              <input type="checkbox" id="checkbox2" />
+              <label for="checkbox2"><span class="check"></span> 개인정보 수집 및 이용에 동의합니다. (필수)</label>
+            </div> -->
+            <div class="check-box1">
+              <input type="checkbox" id="checkbox3" data-check="data" />
+              <label for="checkbox3"><span class="check"></span> 개인정보 수집 및 이용에 동의합니다. (필수)</label>
+            </div>
+            <div class="check-box1">
+              <input type="checkbox" id="checkbox4" data-check="data" checked disabled />
+              <label for="checkbox4"><span class="check"></span> 개인정보 수집 및 이용에 동의합니다. (필수)</label>
+            </div>
+          </div>
+        </div>
+        <div class="grid1">
+          <div class="radio-box1">
+            <input type="radio" id="radio1" name="radio1" />
+            <label for="radio1"><span class="check"></span> 개인정보 수집 및 이용에 동의합니다. (필수)</label>
+          </div>
+          <div class="radio-box1">
+            <input type="radio" id="radio2" name="radio1" />
+            <label for="radio2"><span class="check"></span> 개인정보 수집 및 이용에 동의합니다. (필수)</label>
+          </div>
+          <div class="radio-box1">
+            <input type="radio" id="radio3" name="radio1" disabled />
+            <label for="radio3"><span class="check"></span> 개인정보 수집 및 이용에 동의합니다. (필수)</label>
+          </div>
+        </div>
+      </div>
+      <h1>Button</h1>
+      <div class="area-grid">
+        <div class="grid1">
+          <a href="javascript:;" class="btn-solid">버튼 Basic</a>
+          <button type="button" class="btn-solid">버튼 Basic</button>
+          <a href="javascript:;" class="btn-solid large">버튼 large</a>
+          <button type="button" class="btn-solid large">버튼 large</button>
+          <a href="javascript:;" class="btn-solid small">버튼 small</a>
+          <button type="button" class="btn-solid small">버튼 small</button>
+          <a href="javascript:;" class="btn-solid disabled">버튼 Basic</a>
+          <button type="button" class="btn-solid" disabled>버튼 Basic</button>
+        </div>
+        <div class="grid1">
+          <a href="javascript:;" class="btn-border">버튼 Basic</a>
+          <button type="button" class="btn-border">버튼 Basic</button>
+          <a href="javascript:;" class="btn-border large">버튼 large</a>
+          <button type="button" class="btn-border large">버튼 large</button>
+          <a href="javascript:;" class="btn-border small">버튼 small</a>
+          <button type="button" class="btn-border small">버튼 small</button>
+          <a href="javascript:;" class="btn-border disabled">버튼 Basic</a>
+          <button type="button" class="btn-border" disabled>버튼 Basic</button>
+        </div>
+        <div class="grid1">
+          <a href="javascript:;" class="btn-sub">버튼 Basic</a>
+          <button type="button" class="btn-sub">버튼 Basic</button>
+          <a href="javascript:;" class="btn-sub large">버튼 large</a>
+          <button type="button" class="btn-sub large">버튼 large</button>
+          <a href="javascript:;" class="btn-sub small">버튼 small</a>
+          <button type="button" class="btn-sub small">버튼 small</button>
+          <a href="javascript:;" class="btn-sub disabled">버튼 Basic</a>
+          <button type="button" class="btn-sub" disabled>버튼 Basic</button>
+        </div>
+        <div class="grid1 bg-color">
+          <a href="javascript:;" class="btn-opacity">버튼 Basic</a>
+          <button type="button" class="btn-opacity">버튼 Basic</button>
+          <a href="javascript:;" class="btn-opacity large">버튼 large</a>
+          <button type="button" class="btn-opacity large">버튼 large</button>
+          <a href="javascript:;" class="btn-opacity small">버튼 small</a>
+          <button type="button" class="btn-opacity small">버튼 small</button>
+          <a href="javascript:;" class="btn-opacity disabled">버튼 Basic</a>
+          <button type="button" class="btn-opacity" disabled>버튼 Basic</button>
+        </div>
+        <div class="grid1 bg-color">
+          <a href="javascript:;" class="btn-solid large reverse">버튼 large</a>
+          <button type="button" class="btn-solid large reverse">버튼 large</button>
+          <button class="btn-solid large reverse" disabled>버튼 large</button>
+        </div>
+        <div class="grid1">
+          <a href="javascript:;" class="btn-sub ico-type"><i class="ico-download"></i>다운로드</a>
+          <button type="button" class="btn-sub ico-type"><i class="ico-download"></i>다운로드</button>
+          <a href="javascript:;" class="btn-sub small ico-type"><i class="ico-download"></i>다운로드</a>
+          <button type="button" class="btn-sub small ico-type"><i class="ico-download"></i>다운로드</button>
+          <a href="javascript:;" class="btn-sub large ico-type"><i class="ico-download"></i>다운로드</a>
+          <button type="button" class="btn-sub large ico-type"><i class="ico-download"></i>다운로드</button>
+        </div>
+        <div class="grid1">
+          <a href="javascript:;" class="btn-opacity large ico-type"><i class="ico-download white"></i>다운로드</a>
+          <button type="button" class="btn-opacity large ico-type"><i class="ico-download white"></i>다운로드</button>
+          <a href="javascript:;" class="btn-border large ico-type"><i class="ico-download blue"></i>다운로드</a>
+          <button type="button" class="btn-border large ico-type"><i class="ico-download blue"></i>다운로드</button>
+        </div>
+        <div class="grid1">
+          <button type="button" class="btn-chips">Chips</button>
+          <button type="button" class="btn-chips active">Chips</button>
+          <button type="button" class="btn-chips" disabled>Chips</button>
+        </div>
+        <div class="grid1">
+          <button type="button" class="btn-chips-filter">Chips</button>
+          <button type="button" class="btn-chips-filter active">Chips</button>
+          <button type="button" class="btn-chips-filter" disabled>Chips</button>
+          <button type="button" class="btn-chips-filter icon"><img src="../images/@temp/sample1.png" /> Chips</button>
+          <button type="button" class="btn-chips-filter icon active"><img src="../images/@temp/sample1.png" />Chips</button>
+          <button type="button" class="btn-chips-filter icon" disabled><img src="../images/@temp/sample1.png" />Chips</button>
+        </div>
+        <div class="grid1">
+          <button type="button" class="btn-text arrow">이전으로</button>
+          <button type="button" class="btn-text arrow-b">다음으로</button>
+          <!-- <button type="button" class="btn-text large arrow-b">다음으로</button> -->
+          <button type="button" class="btn-dropdown">Compute</button>
+        </div>
+      </div>
+      <h1>Title</h1>
+      <div class="area-grid">
+        <div class="grid1">
+          <h3 class="list-header1">
+            <div class="text">title <span class="num">00</span></div>
+            <!-- input search 형태에 typing시 입력삭제 버튼이 있으면 inputSearch data-type을 추가해주세요 -->
+            <div class="input-search1" data-type="inputSearch">
+              <input type="text" value="" placeholder="Hint text" />
+              <button type="button" class="btn-delete">
+                <span class="hidden">입력 삭제 버튼</span>
+              </button>
+              <button type="button" class="btn-search">
+                <span class="hidden">search 버튼</span>
+              </button>
+            </div>
+          </h3>
+          <div class="list-header2">
+            <h2 class="font-heading4">title</h2>
+            <!-- <div class="header-cont">
+              <div class="tablist" role="tablist">
+                <button type="button" class="btn-chips tab-item active" role="tab" aria-controls="panel1"data-type="tab-item">영업</button>
+                <button type="button" class="btn-chips tab-item" role="tab" aria-controls="panel2"data-type="tab-item">상품</button>
+                <button type="button" class="btn-chips tab-item" role="tab" aria-controls="panel3"data-type="tab-item">요금</button>
+                <button type="button" class="btn-chips tab-item" role="tab" aria-controls="panel4"data-type="tab-item">회원</button>
+                <button type="button" class="btn-chips tab-item" role="tab" aria-controls="panel5"data-type="tab-item">장애</button>
+                <button type="button" class="btn-chips tab-item" role="tab" aria-controls="panel6"data-type="tab-item">기타</button>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <!-- <h1>Grid Layout</h1>
+      <div>
+        <div class="grid-layout1">
+          <div class="input-wrap" data-grid-column="4">
+            <label for="input1">text<span class="required">*</span></label>
+            <div class="input-box1">
+              <input type="text" id="input1" value="" placeholder="Hint text" />
+            </div>
+          </div>
+          <div class="input-wrap" data-grid-column="3">
+            <label for="input2">text<span class="required">*</span></label>
+            <div class="input-box1">
+              <input type="text" id="input2" value="" placeholder="Hint text" />
+            </div>
+          </div>
+          <div class="input-wrap">
+            <label for="input3">text<span class="required">*</span></label>
+            <div class="input-box1">
+              <input type="text" id="input3" value="" placeholder="Hint text" />
+            </div>
+          </div>
+          <div class="input-wrap">
+            <label for="input31">text<span class="required">*</span></label>
+            <div class="input-box1">
+              <input type="text" id="input31" value="" placeholder="Hint text" />
+            </div>
+          </div>
+          <div class="input-wrap" data-grid-column="3">
+            <label for="input22">text<span class="required">*</span></label>
+            <div class="input-box1">
+              <input type="text" id="input22" value="" placeholder="Hint text" />
+            </div>
+          </div>
+          <div class="input-wrap" data-grid-column="2">
+            <label for="input4">text<span class="required">*</span></label>
+            <div class="input-box1">
+              <input type="text" id="input4" value="" placeholder="Hint text" />
+            </div>
+          </div>
+          <div class="input-wrap" data-grid-column="2">
+            <label for="input5">text<span class="required">*</span></label>
+            <div class="input-box1">
+              <input type="text" id="input5" value="" placeholder="Hint text" />
+            </div>
+          </div>
+          <div class="input-wrap" data-grid-column="2">
+            <label for="input6">text<span class="required">*</span></label>
+            <div class="input-box1">
+              <input type="text" id="input6" value="" placeholder="Hint text" />
+            </div>
+          </div>
+          <div class="input-wrap">
+            <label for="input7">text<span class="required">*</span></label>
+            <div class="input-box1">
+              <input type="text" id="input7" value="" placeholder="Hint text" />
+            </div>
+          </div>
+          <div class="input-wrap">
+            <label for="input8">text<span class="required">*</span></label>
+            <div class="input-box1">
+              <input type="text" id="input8" value="" placeholder="Hint text" />
+            </div>
+          </div>
+          <div class="input-wrap">
+            <label for="input71">text<span class="required">*</span></label>
+            <div class="input-box1">
+              <input type="text" id="input71" value="" placeholder="Hint text" />
+            </div>
+          </div>
+          <div class="input-wrap">
+            <label for="input81">text<span class="required">*</span></label>
+            <div class="input-box1">
+              <input type="text" id="input81" value="" placeholder="Hint text" />
+            </div>
+          </div>
+          <div class="input-wrap" data-grid-column="2">
+            <label for="input61">text<span class="required">*</span></label>
+            <div class="input-box1">
+              <input type="text" id="input61" value="" placeholder="Hint text" />
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <h1>Card</h1>
+      <div class="area-grid">
+        <div class="grid1">
+          <a href="javascript:;" class="card-type1">
+            <span class="badge-new1">New</span>
+            <span class="icon">icon</span>
+            <h4 class="title">스마트워크</h4>
+            <p class="text">스마트 워크 관련 API 총 정리</p>
+          </a>
+          <!-- 옵션이 있는경우 option 클래스를 추가해주세요 -->
+          <a href="javascript:;" class="card-type1 option">
+            <span class="badge-new1">New</span>
+            <span class="icon">icon</span>
+            <h4 class="title">스마트워크</h4>
+            <p class="text">스마트 워크 관련 API 총 정리</p>
+            <div class="option-list">
+              <span>VM당 1개 IP 기본 제공</span>
+            </div>
+          </a>
+        </div>
+        <div class="grid1">
+          <a href="javascript:;" class="card-type2">
+            <h4 class="title"><span class="icon">icon</span> 무료체험</h4>
+            <p class="text">SDS 클라우드 상품을 무료로 체험해 보세요</p>
+          </a>
+          <!-- 어두운 카드타입일 경우 dark 클래스 추가 -->
+          <a href="javascript:;" class="card-type2 dark">
+            <h4 class="title"><span class="icon">icon</span> 무료체험</h4>
+            <p class="text">SDS 클라우드 상품을 무료로 체험해 보세요</p>
+          </a>
+        </div>
+        <div class="grid1">
+          <a href="javascript:;" class="card-type3">
+            <figure>
+              <img src="../images/@temp/sample1.png" alt="" />
+            </figure>
+            <span class="cate-tag type1">IaaS</span>
+            <h4 class="title">Baremetal을 활용한 고가용성 Oracle DBMS 구성</h4>
+            <p class="text">
+              SCP Essential의 IaaS 베어메탈 상품과 Block Storage의 Multi-attach 기능을 이용하여 물리서버 기반의 고가용성 Oracle DBMS 구성
+            </p>
+          </a>
+        </div>
+        <div class="grid1">
+          <a href="javascript:;" class="card-type4">
+            <span class="cate-tag type1">IaaS</span>
+            <h4 class="title">Auto Scaling을 통한 서버 자동 확장</h4>
+            <p class="text">SCP Essential 의 Auto Scaling 기능을 이용하여 예측하지 못한 부하나 주기적인 요건</p>
+          </a>
+          <!-- 기술가이드 카드타입일 경우 skill 클래스 추가 -->
+          <a href="javascript:;" class="card-type4 skill">
+            <h4 class="title">Auto Scaling을 통한 서버 자동 확장</h4>
+            <p class="text">SCP Essential 의 Auto Scaling 기능을 이용하여 예측하지 못한 부하나 주기적인 요건</p>
+          </a>
+        </div>
+        <div class="grid1">
+          <a href="javascript:;" class="card-image">
+            <figure>
+              <img src="../images/@temp/sample1.png" alt="" />
+            </figure>
+            <div class="card-content">
+              <span class="badge">Cloud Trends</span>
+              <h4>2021년 API 기반 디지털 혁신 5대 트렌드</h4>
+              <p class="text">SDS의 API현황 보고서에서는 2020년에 진행된 디지털 혁신과 2021년 이후의 트렌드를 살펴봅니다</p>
+            </div>
+          </a>
+          <a href="javascript:;" class="card-image small">
+            <figure>
+              <img src="../images/@temp/sample1.png" alt="" />
+            </figure>
+            <div class="card-content">
+              <span class="badge">Cloud Trends</span>
+              <h4>2021년 API 기반 디지털 혁신 5대 트렌드</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+      <h1>page-visual</h1>
+      <div class="area-grid">
+        <div class="grid1">
+          <!-- 뒷배경 있을 경우 bg-color1 class 추가 -->
+          <div class="page-visual">
+            <!-- visual-image는 css에서 background-image로 사용 -->
+            <div class="visual-image">
+              <h4 class="font-body2">Cloud Trends</h4>
+              <h5 class="font-heading2">2021년 API 기반 디지털 혁신 5대 트렌드</h5>
+              <p class="font-body2">SDS의 API현황 보고서에서는 2020년에 진행된 디지털 혁신과 2021년 이후의 트렌드를 살펴봅니다.</p>
+              <a href="javascript:;" class="btn-sub large">버튼</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1>Hero Image(Banner) - Sub_1</h1>
+      <div class="area-grid">
+        <div class="grid1">
+          <!-- 이미지 있는 경우 클래스 img-exist -->
+          <!-- 배경 pupple 경우 클래스 hero-solid -->
+          <div class="hero-sub img-exist">
+            <div class="content">
+              <img src="../images/img/img_03@2x.png" alt="" />
+              <div class="sub-content">
+                <h2 class="font-heading1">타이틀</h2>
+                <div class="font-body2">
+                  서비 타이틑이 들어가는 영역입니다. 서비 타이틑이 들어가는 영역입니다. 서비 타이틑이 들어가는 영역입니다.
+                </div>
+                <a href="javascript:;" class="btn-solid large">버튼</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid2">
+          <!-- 이미지 있는 경우 클래스 img-exist -->
+          <!-- 배경 pupple 경우 클래스 hero-solid -->
+          <div class="hero-sub img-exist">
+            <div class="content">
+              <img src="../images/img/img_03@2x.png" alt="" />
+              <div class="sub-content">
+                <h2 class="font-heading1">타이틀</h2>
+                <div class="font-body2">
+                  서비 타이틑이 들어가는 영역입니다. 서비 타이틑이 들어가는 영역입니다. 서비 타이틑이 들어가는 영역입니다. 서비 타이틑이
+                  들어가는 영역입니다.
+                </div>
+                <div class="layout">
+                  <a href="javascript:;" class="btn-border large">버튼</a>
+                  <a href="javascript:;" class="btn-border large">버튼</a>
+                  <a href="javascript:;" class="btn-border large">+</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid2">
+          <!-- 이미지 있는 경우 클래스 img-exist -->
+          <!-- 배경 pupple 경우 클래스 hero-solid -->
+          <div class="hero-sub">
+            <div class="content">
+              <div class="sub-content">
+                <h2 class="font-heading1">타이틀</h2>
+                <div class="font-body2">서비 타이틑이 들어가는 영역입니다. 서비 타이틑이 들어가는 영역입니다.</div>
+                <a href="javascript:;" class="btn-border large">버튼</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid2">
+          <!-- 이미지 있는 경우 클래스 img-exist -->
+          <!-- 배경 pupple 경우 클래스 hero-solid -->
+          <div class="hero-sub img-exist hero-solid">
+            <div class="content">
+              <img src="../images/img/img_03@2x.png" alt="" />
+              <div class="sub-content">
+                <h2 class="font-heading1">타이틀</h2>
+                <div class="font-body2">
+                  서비 타이틑이 들어가는 영역입니다. 서비 타이틑이 들어가는 영역입니다. 서비 타이틑이 들어가는 영역입니다. 서비 타이틑이
+                  들어가는 영역입니다.
+                </div>
+                <a href="javascript:;" class="btn-solid large">버튼</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid2">
+          <!-- 이미지 있는 경우 클래스 img-exist -->
+          <!-- 배경 pupple 경우 클래스 hero-solid -->
+          <div class="hero-sub hero-solid">
+            <div class="content">
+              <div class="sub-content">
+                <h2 class="font-heading1">타이틀</h2>
+                <div class="font-body2">
+                  서비 타이틑이 들어가는 영역입니다. 서비 타이틑이 들어가는 영역입니다. 서비 타이틑이 들어가는 영역입니다. 서비 타이틑이
+                  들어가는 영역입니다.
+                </div>
+                <a href="javascript:;" class="btn-solid reverse large">버튼</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1>아코디언</h1>
+      <div class="area-grid">
+        <div class="accordion-wrap1" data-type="accordion-wrap">
+          <ul>
+            <li>
+              <a href="javascript:;" class="list-row" data-type="list-row">
+                <div class="accordion-data">
+                  <span class="type">분류</span>
+                  <p class="title-area">
+                    <span class="title new"
+                      >타이틀이 들어가는 영역입니다. 타이틀을 입력해주세요.타이틀이 들어가는 영역입니다. 타이틀을 입력해주세요.타이틀이
+                      들어가는 영역입니다. 타이틀을 입력해주세요.타이틀이 들어가는 영역입니다. 타이틀을 입력해주세요.타이틀이 들어가는
+                      영역입니다. 타이틀을 입력해주세요.타이틀이 들어가는 영역입니다. 타이틀을 입력해주세요.
+                      <span class="badge-new2">N</span></span
+                    >
+                  </p>
+                </div>
+                <div class="accordion-info">
+                  <span class="date">2021.04.20</span>
+                </div>
+              </a>
+              <div class="content">
+                <div class="inner">
+                  내용이 들어가는 영역입니다. 내용을 입력해주세요. 내용을 입력하시면 아코디언이 열릴때 노출되며 확인되고 아코디언이 닫히면
+                  노출되지 않습니다. 내용을 잘 확인 하고 제대로 나오는지 확인해주세요
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="javascript:;" class="list-row" data-type="list-row">
+                <div class="accordion-data">
+                  <span class="type">분류</span>
+                  <p class="title-area">
+                    <span class="title new"
+                      >타이틀이 들어가는 영역입니다. 타이틀을 입력해주세요.타이틀이 들어가는 영역입니다. 타이틀을 입력해주세요.타이틀이
+                      들어가는 영역입니다. <span class="badge-new2">N</span></span
+                    >
+                  </p>
+                </div>
+                <div class="accordion-info">
+                  <span class="date">2021.04.20</span>
+                </div>
+              </a>
+              <div class="content">
+                <div class="inner">내용2</div>
+              </div>
+            </li>
+            <li>
+              <a href="javascript:;" class="list-row" data-type="list-row">
+                <div class="accordion-data">
+                  <span class="type">분류</span>
+                  <p class="title-area">
+                    <span class="title">열기3</span>
+                  </p>
+                </div>
+                <div class="accordion-info">
+                  <span class="date">2021.04.20</span>
+                </div>
+              </a>
+              <div class="content">
+                <div class="inner">내용 3</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <h1>탭</h1>
+      <div class="area-grid">
+        <div class="grid2">
+          <div class="tab-wrap1" data-type="tab-wrap">
+            <ul class="tablist" role="tablist">
+              <li class="tab-item" role="tab">
+                <button type="button" class="active" role="button" aria-controls="panel1" data-type="tab-item">탭1</button>
+              </li>
+              <li class="tab-item" role="tab">
+                <button type="button" role="button" aria-controls="panel2" data-type="tab-item">탭2</button>
+              </li>
+              <li class="tab-item" role="tab">
+                <button type="button" role="button" aria-controls="panel3" data-type="tab-item">탭3</button>
+              </li>
+            </ul>
+            <ul class="panels">
+              <li id="panel1" role="tabpanel" tabindex="0">탭내용1</li>
+              <li id="panel2" role="tabpanel" tabindex="0" hidden>탭내용2</li>
+              <li id="panel3" role="tabpanel" tabindex="0" hidden>탭내용3</li>
+            </ul>
+          </div>
+        </div>
+        <div class="grid2">
+          <div class="tab-wrap1" data-type="tab-wrap">
+            <ul class="tablist large" role="tablist">
+              <li class="tab-item" role="tab">
+                <button type="button" class="active" role="button" aria-controls="panel1" data-type="tab-item">탭1</button>
+              </li>
+              <li class="tab-item" role="tab">
+                <button type="button" role="button" aria-controls="panel2" data-type="tab-item">탭2</button>
+              </li>
+              <li class="tab-item" role="tab">
+                <button type="button" role="button" aria-controls="panel3" data-type="tab-item">탭3</button>
+              </li>
+            </ul>
+            <ul class="panels">
+              <li id="panel1" role="tabpanel" tabindex="0">탭내용1</li>
+              <li id="panel2" role="tabpanel" tabindex="0" hidden>탭내용2</li>
+              <li id="panel3" role="tabpanel" tabindex="0" hidden>탭내용3</li>
+            </ul>
+          </div>
+        </div>
+        <div class="grid2">
+          <article class="content">
+            <div class="side-menu-layout">
+              <!-- 횡스크롤이 있는 탭의 경우 우측에 gradiant 처리를 위해 layer-type 클래스 추가 -->
+              <div class="tab-wrap1 layer-type" data-type="tab-wrap">
+                <div class="side-menu" data-type="tab-area">
+                  <ul class="tablist" role="tablist" data-type="tab-list">
+                    <li class="tab-item" role="tab">
+                      <button type="button" class="active" role="button" aria-controls="panel1" data-type="tab-item">전체(83)</button>
+                    </li>
+                    <li class="tab-item new" role="tab">
+                      <button type="button" role="button" aria-controls="panel2" data-type="tab-item">영업(15)</button>
+                    </li>
+                    <li class="tab-item" role="tab">
+                      <button type="button" role="button" aria-controls="panel3" data-type="tab-item">상품(18)</button>
+                    </li>
+                    <li class="tab-item" role="tab">
+                      <button type="button" role="button" aria-controls="panel4" data-type="tab-item">요금(10)</button>
+                    </li>
+                    <li class="tab-item" role="tab">
+                      <button type="button" role="button" aria-controls="panel5" data-type="tab-item">회원(20)</button>
+                    </li>
+                    <li class="tab-item" role="tab">
+                      <button type="button" role="button" aria-controls="panel6" data-type="tab-item">장애(7)</button>
+                    </li>
+                    <li class="tab-item" role="tab">
+                      <button type="button" role="button" aria-controls="panel7" data-type="tab-item">기타(13)</button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="right-content">
+                  <h3 class="list-header1">
+                    <div class="text">전체 <span class="num">78</span></div>
+                    <!-- input search 형태에 typing시 입력삭제 버튼이 있으면 inputSearch data-type을 추가해주세요 -->
+                    <div class="input-search1" data-type="inputSearch">
+                      <input type="text" value="" placeholder="검색어를 입력하세요" />
+                      <button type="button" class="btn-delete">
+                        <span class="hidden">입력 삭제 버튼</span>
+                      </button>
+                      <button type="button" class="btn-search">
+                        <span class="hidden">search 버튼</span>
+                      </button>
+                    </div>
+                  </h3>
+                  <ul class="panels">
+                    <!-- 탭안의 탭인 경우 부모 role="tabpanel" 들에 data-type="parent" 추가 -->
+                    <li id="panel1" role="tabpanel" tabindex="0" data-type="parent">
+                      <div class="accordion-wrap1" data-type="accordion-wrap">
+                        <ul>
+                          <li>
+                            <a href="javascript:;" class="list-row" data-type="list-row">
+                              <div class="accordion-data">
+                                <span class="type">분류</span>
+                                <p class="title-area">
+                                  <span class="title new"
+                                    >SDS의 EC2, S3등을 1년동안 무료로 사용하는 법 자세히 알아보기111<span class="badge-new2">N</span></span
+                                  >
+                                </p>
+                              </div>
+                              <div class="accordion-info">
+                                <span class="date">2021.04.20</span>
+                              </div>
+                            </a>
+                            <div class="content">
+                              <div class="inner">
+                                가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li id="panel2" role="tabpanel" tabindex="0" hidden data-type="parent">
+                      <div class="tab-wrap1" data-type="tab-wrap" style="display: block">
+                        <ul class="tablist" role="tablist">
+                          <li class="tab-item" role="tab">
+                            <button type="button" class="active" role="button" aria-controls="panel2-1" data-type="tab-item">탭1</button>
+                          </li>
+                          <li class="tab-item" role="tab">
+                            <button type="button" role="button" aria-controls="panel2-2" data-type="tab-item">탭2</button>
+                          </li>
+                          <li class="tab-item" role="tab">
+                            <button type="button" role="button" aria-controls="panel2-3" data-type="tab-item">탭3</button>
+                          </li>
+                        </ul>
+                        <ul class="panels">
+                          <li id="panel2-1" role="tabpanel" tabindex="0">탭내용1</li>
+                          <li id="panel2-2" role="tabpanel" tabindex="0" hidden>탭내용2</li>
+                          <li id="panel2-3" role="tabpanel" tabindex="0" hidden>탭내용3</li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li id="panel3" role="tabpanel" tabindex="0" hidden data-type="parent">
+                      <div class="accordion-wrap1" data-type="accordion-wrap">
+                        <ul>
+                          <li>
+                            <a href="javascript:;" class="list-row" data-type="list-row">
+                              <div class="accordion-data">
+                                <span class="type">분류</span>
+                                <p class="title-area">
+                                  <span class="title">3번탭</span>
+                                </p>
+                              </div>
+                              <div class="accordion-info">
+                                <span class="date">2021.04.20</span>
+                              </div>
+                            </a>
+                            <div class="content">
+                              <div class="inner">가나다가나다가나다가나</div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li id="panel4" role="tabpanel" tabindex="0" hidden data-type="parent">
+                      <div class="accordion-wrap1" data-type="accordion-wrap">
+                        <ul>
+                          <li>
+                            <a href="javascript:;" class="list-row" data-type="list-row">
+                              <div class="accordion-data">
+                                <span class="type">분류</span>
+                                <p class="title-area">
+                                  <span class="title">4번탭</span>
+                                </p>
+                              </div>
+                              <div class="accordion-info">
+                                <span class="date">2021.04.20</span>
+                              </div>
+                            </a>
+                            <div class="content">
+                              <div class="inner">가나다가나다가나다가나</div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li id="panel5" role="tabpanel" tabindex="0" hidden data-type="parent">
+                      <div class="accordion-wrap1" data-type="accordion-wrap">
+                        <ul>
+                          <li>
+                            <a href="javascript:;" class="list-row" data-type="list-row">
+                              <div class="accordion-data">
+                                <span class="type">분류</span>
+                                <p class="title-area">
+                                  <span class="title">5번탭</span>
+                                </p>
+                              </div>
+                              <div class="accordion-info">
+                                <span class="date">2021.04.20</span>
+                              </div>
+                            </a>
+                            <div class="content">
+                              <div class="inner">가나다가나다가나다가나</div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li id="panel6" role="tabpanel" tabindex="0" hidden data-type="parent">
+                      <div class="accordion-wrap1" data-type="accordion-wrap">
+                        <ul>
+                          <li>
+                            <a href="javascript:;" class="list-row" data-type="list-row">
+                              <div class="accordion-data">
+                                <span class="type">분류</span>
+                                <p class="title-area">
+                                  <span class="title">6번탭</span>
+                                </p>
+                              </div>
+                              <div class="accordion-info">
+                                <span class="date">2021.04.20</span>
+                              </div>
+                            </a>
+                            <div class="content">
+                              <div class="inner">가나다가나다가나다가나</div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li id="panel7" role="tabpanel" tabindex="0" hidden data-type="parent">
+                      <div class="accordion-wrap1" data-type="accordion-wrap">
+                        <ul>
+                          <li>
+                            <a href="javascript:;" class="list-row" data-type="list-row">
+                              <div class="accordion-data">
+                                <span class="type">분류</span>
+                                <p class="title-area">
+                                  <span class="title">7번탭</span>
+                                </p>
+                              </div>
+                              <div class="accordion-info">
+                                <span class="date">2021.04.20</span>
+                              </div>
+                            </a>
+                            <div class="content">
+                              <div class="inner">가나다가나다가나다가나</div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <h1>테이블</h1>
+      <div class="area-grid">
+        <!-- START: 체크박스가 있는 테이블 -->
+        <!-- <div class="table-wrap checked-wrap">
+          <table>
+            <colgroup>
+              <col width="3%" />
+              <col width="13%" />
+              <col width="13%" />
+              <col width="13%" />
+              <col width="13%" />
+              <col width="13%" />
+              <col width="*" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th>
+                  <div class="check-box1">
+                    <input type="checkbox" id="checkbox5" data-check="all" />
+                    <label for="checkbox5"><span class="check"></span></label>
+                  </div>
+                </th>
+                <th>서버명<button type="button" class="btn-filter"></button></th>
+                <th>이미지<button type="button" class="btn-filter active"></button></th>
+                <th>서버타입</th>
+                <th>대표IP</th>
+                <th>서버그룹명</th>
+                <th>상태</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="check-box1">
+                    <input type="checkbox" id="checkbox6" data-check="data" />
+                    <label for="checkbox6"><span class="check"></span> </label>
+                  </div>
+                </td>
+                <td>Reserved IP</td>
+                <td>Reserved IP</td>
+                <td>1234567</td>
+                <td>112.107.114.11</td>
+                <td>112.107.114.11</td>
+                <td>112.107.114.11</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="check-box1">
+                    <input type="checkbox" id="checkbox7" data-check="data" checked />
+                    <label for="checkbox7"><span class="check"></span></label>
+                  </div>
+                </td>
+                <td>Reserved IP</td>
+                <td>Reserved IP</td>
+                <td>ABCDEFG</td>
+                <td>112.107.114.11</td>
+                <td>112.107.114.11</td>
+                <td>112.107.114.11</td>
+              </tr>
+            </tbody>
+          </table>
+        </div> -->
+        <!-- END: 체크박스가 있는 테이블 -->
+        <div class="table-wrap">
+          <table>
+            <colgroup>
+              <col width="*" />
+              <col width="8%" />
+              <col width="8%" />
+              <col width="8%" />
+              <col width="8%" />
+              <col width="8%" />
+              <col width="8%" />
+              <col width="8%" />
+              <col width="8%" />
+              <col width="8%" />
+              <col width="8%" />
+              <col width="8%" />
+              <col width="8%" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th rowspan="2">인스턴스 타입</th>
+                <th colspan="3">할당자원</th>
+                <th colspan="3">무악정(원/시간)</th>
+                <th colspan="3">1년악정(원/시간)</th>
+                <th colspan="3">3년약정(원/시간)</th>
+              </tr>
+              <tr>
+                <th>vCore</th>
+                <th>Mem</th>
+                <th>NW 대역폭</th>
+                <th>오픈소스</th>
+                <th>RHEL</th>
+                <th>Windows</th>
+                <th>오픈소스</th>
+                <th>RHEL</th>
+                <th>Windows</th>
+                <th>오픈소스</th>
+                <th>RHEL</th>
+                <th>Windows</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>s1v8m32_metal</td>
+                <td>8</td>
+                <td>32</td>
+                <td rowspan="12" class="all-span">최대 25G</td>
+                <td>580</td>
+                <td>710</td>
+                <td>697</td>
+                <td>275,100</td>
+                <td>362,800</td>
+                <td>356,300</td>
+                <td>256,900</td>
+                <td>336,800</td>
+                <td>330,900</td>
+              </tr>
+              <tr>
+                <td>s1v8m64_metal</td>
+                <td>8</td>
+                <td>64</td>
+                <td>630</td>
+                <td>760</td>
+                <td>748</td>
+                <td>298,900</td>
+                <td>388,500</td>
+                <td>382,100</td>
+                <td>275,900</td>
+                <td>360,700</td>
+                <td>354,800</td>
+              </tr>
+              <tr>
+                <td>s1v8m128_metal</td>
+                <td>8</td>
+                <td>128</td>
+                <td>734</td>
+                <td>916</td>
+                <td>901</td>
+                <td>348,300</td>
+                <td>467,900</td>
+                <td>640,300</td>
+                <td>321,500</td>
+                <td>434,500</td>
+                <td>427,500</td>
+              </tr>
+              <tr>
+                <td>s1v16m64_metal</td>
+                <td>16</td>
+                <td>64</td>
+                <td>773</td>
+                <td>946</td>
+                <td>929</td>
+                <td>366,800</td>
+                <td>483,400</td>
+                <td>474,700</td>
+                <td>338,600</td>
+                <td>448,900</td>
+                <td>440,800</td>
+              </tr>
+              <tr>
+                <td>s1v16m128_metal</td>
+                <td>16</td>
+                <td>128</td>
+                <td>862</td>
+                <td>1,035</td>
+                <td>1,018</td>
+                <td>409,000</td>
+                <td>528,900</td>
+                <td>520,200</td>
+                <td>377,600</td>
+                <td>491,100</td>
+                <td>483,000</td>
+              </tr>
+              <tr>
+                <td>s1v16m256_metal</td>
+                <td>16</td>
+                <td>256</td>
+                <td>1,066</td>
+                <td>1,240</td>
+                <td>1,221</td>
+                <td>505,800</td>
+                <td>633,600</td>
+                <td>623,900</td>
+                <td>466,900</td>
+                <td>588,400</td>
+                <td>579,400</td>
+              </tr>
+              <tr>
+                <td>h1v72m288_metal</td>
+                <td>72</td>
+                <td>288</td>
+                <td>2,281</td>
+                <td>2,616</td>
+                <td>2,550</td>
+                <td>1,082,500</td>
+                <td>1,336,900</td>
+                <td>1,303,100</td>
+                <td>999,200</td>
+                <td>1,241,400</td>
+                <td>1,210,000</td>
+              </tr>
+              <tr>
+                <td>h1v72m576_metal</td>
+                <td>72</td>
+                <td>576</td>
+                <td>2,525</td>
+                <td>2,859</td>
+                <td>2,793</td>
+                <td>1,197,900</td>
+                <td>1,461,200</td>
+                <td>1,427,300</td>
+                <td>1,105,700</td>
+                <td>1,356,800</td>
+                <td>1,325,400</td>
+              </tr>
+              <tr>
+                <td>h1v72m1152_metal</td>
+                <td>72</td>
+                <td>1152</td>
+                <td>2,997</td>
+                <td>3,372</td>
+                <td>3,321</td>
+                <td>1,422,100</td>
+                <td>1,723,100</td>
+                <td>1,697,000</td>
+                <td>1,312,700</td>
+                <td>1,600,000</td>
+                <td>1,575,800</td>
+              </tr>
+              <tr>
+                <td>h1v96m384_metal</td>
+                <td>96</td>
+                <td>384</td>
+                <td>2,567</td>
+                <td>2,943</td>
+                <td>2,868</td>
+                <td>1,218,000</td>
+                <td>1,503,700</td>
+                <td>1,465,500</td>
+                <td>1,124,300</td>
+                <td>1,396,300</td>
+                <td>1,360,800</td>
+              </tr>
+              <tr>
+                <td>h1v96m768_metal</td>
+                <td>96</td>
+                <td>768</td>
+                <td>2,839</td>
+                <td>3,216</td>
+                <td>3,140</td>
+                <td>1,347,100</td>
+                <td>1,643,600</td>
+                <td>1,604,500</td>
+                <td>1,243,500</td>
+                <td>1,526,200</td>
+                <td>1,489,900</td>
+              </tr>
+              <tr>
+                <td>h1v96m1536_metal</td>
+                <td>96</td>
+                <td>536</td>
+                <td>3,996</td>
+                <td>4,496</td>
+                <td>4,531</td>
+                <td>1,896,100</td>
+                <td>2,297,500</td>
+                <td>2,315,300</td>
+                <td>1,750,200</td>
+                <td>2,133,400</td>
+                <td>2,150,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <h1>List</h1>
+      <div class="area-grid">
+        <div class="grid1">
+          <dl class="list-type1">
+            <dt class="title">요금 적용 기준</dt>
+            <dd>
+              <ul class="list">
+                <li>무약정 요금은 시간단위, 약정 요금은 일단위 과금</li>
+                <li>무약정 요금은 요금 변경 시 변경 요금 적용</li>
+                <li>약정 선택 시 Core, Mem이 변경 전보다 크거나 같을때만 인스턴스 변경 가능하며 변경 시 다운타임(down time) 발생 가능</li>
+                <li>약정기간 내 해지 시 위약금 발생 (월요금 * 50% * 잔여개월수) 잔여개월수 : 약정 개월수 - 사용개월수, 일할 계산</li>
+                <li>약정기간 종료시 적용 요금은 별도 협의. (자동연장 시 해당 시점의 무약정 요금 적용)</li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+        <div class="grid1">
+          <ul class="list-type2">
+            <li><a href="javascript:;">리스트1</a></li>
+            <li><a href="javascript:;">리스트2</a></li>
+            <li><a href="javascript:;">리스트3</a></li>
+          </ul>
+        </div>
+        <div class="grid2">
+          <ul class="list-type3">
+            <!-- <li>
+              <span class="title"><i class="ico-document"></i>SDS Cloud DB서비스 사용자 가이드</span>
+              <div class="util">
+                <a href="javascript:;" class="btn-text arrow-b">자세히 보기</a>
+              </div>
+            </li> -->
+            <li>
+              <span class="title">다운로드 문서일 경우</span>
+              <div class="util">
+                <a href="javscript:;" target="_blank" class="ico-download">
+                  <span class="hidden">파일 다운로드 버튼</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <span class="title"><i class="ico-document"></i>다운로드 문서일 경우</span>
+              <div class="util">
+                <a href="javscript:;" target="_blank" class="ico-download">
+                  <span class="hidden">파일 다운로드 버튼</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <span class="title"><i class="ico-document"></i>링크이동 문서일 경우(새창)</span>
+              <div class="util">
+                <a href="javscript:;" target="_blank" class="ico-newwindow">
+                  <span class="hidden">새창열기 버튼</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <span class="title"><i class="ico-document"></i>pdf 자세히 보기 문서일 경우</span>
+              <div class="util">
+                <a href="javscript:;" target="_blank" class="ico-link">
+                  <span class="hidden">문서 자세히 보기 버튼</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="grid2 bg-color">
+          <!-- 
+            앞에 붙는 글머리 기호에 따라서 듀얼클래스를 다르게 주세요.
+            숫자 : bullet-number
+            알파벳 : bullet-alphabet
+            중간에 '※' 기호가 들어가는 li 태그는 reference 클래스를 추가해주세요.
+          -->
+          <ol class="list-type4 bullet-alphabet">
+            <li>
+              <p class="desc">사용자가 다양한 서비스(금융, 병원, 이벤트)를 이용한다</p>
+            </li>
+            <li>
+              <p class="desc">서비스 지속성을 위해서 RDB는 HA, NoSQL은 Cluster로 구성하여 사용자가 원하는 다양한 데이터를 저장한다.</p>
+            </li>
+            <li>
+              <p class="desc">
+                Cache(Redis)서비스를 이용하여 컨텐츠를 사용자에게 빠르게 제공하고, 세션정보를 저장하여 처리시간을 단축한다.
+              </p>
+              <ul class="list bullet-number">
+                <li>
+                  분석 데이터 셋 저장 및 모델 파일 저장 용도로 Object Storage를 사용하여 Jupyter Notebook에서 S3 SDK를 이용하여 연계할 수
+                  있다.
+                </li>
+                <li>
+                  컨테이너 이미지 빌드/배포를 위한 Container Registry로 Kubernetes cluster에 Private Registry를 배포 또는 외부 DockerHub를
+                  이용할 수 있다.
+                </li>
+                <li class="reference">
+                  DockerHub, GitHub 등 사용자 VPC 외부의 서비스를 이용할 경우 Security Group에 방화벽 룰 추가가 필요하다.
+                </li>
+              </ul>
+            </li>
+            <li><p class="desc">메시징서비스(Kafka)를 이용하여 실시간 또는 배치로 목적에 Target 저장소로 데이터를 전송한다.</p></li>
+            <li>
+              <p class="desc">
+                Elastic Stack를 활용하여 여러 시스템에서 데이터를 수집(LogStash)하고, 분석 및 검색하며(Elasticsearch), 시각화 기능(Kibana)을
+                활용하여 다양한 정보를 제공 받을 수 있다.
+              </p>
+            </li>
+            <li><p class="desc">RDB 및 NoSQL등에 저장된 데이터를 배치를 통해서 Vertica로 전송하여 저장한다.</p></li>
+            <li><p class="desc">Vertica에 저장된 다양한 데이터를 활용하여 분석한다.</p></li>
+            <li>
+              <p class="desc">Object Storage 또는 HDFS에 저장된 데이터 또한 Vertica로 연계하여 데이터 분석이 가능하다. (향후 제공예정)</p>
+            </li>
+          </ol>
+        </div>
+        <div class="grid2">
+          <ol class="list-type5">
+            <li>
+              <strong class="title">모니터링 시스템 구축</strong>
+              <p class="desc">
+                주기적으로 수십 대 이상의 서버를 점검해서 이상징후를 분석해야 할 경우 각 서버 내 수집 Agent를 활용하여 서버의 다양한
+                정보(서버 설정정보, 시스템로그, SW설치정보, 보안정보 등)를 수집하여 저장하며, 사전에 정의한 이상징후 패턴과 mapping하여
+                문제가 되는 대상을 선정할 수 있다.
+              </p>
+            </li>
+            <li>
+              <strong class="title">데이터 중심 병원</strong>
+              <p class="desc">
+                계약관계에 있는 여러 병원의 환자의 진료내역(병명, 발생부위, 일반적인 증상, 특이사항, 치료현황 등)을 한 곳에서 저장하며,
+                환자가 내원하였을 경우 증상을 기반으로 진단을 빠르게 할 수 있고, 치료현황과 방법 등을 환자에게 제공할 수 있다.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <h1>모달</h1>
+      <div class="area-grid">
+        <div class="grid1">
+          <button class="btn-solid" aria-haspopup="dialog" data-popup="confirmPopup">문의하기 팝업</button>
+          <section class="wrap-layer-popup" data-popup="confirmPopup" role="dialog">
+            <div class="inner-layer-popup">
+              <div class="wrap-layer-popup-title" tabindex="0">
+                <h1 class="font-heading3">문의하기</h1>
+                <button class="btn-close-popup" data-popup-close="confirmPopup"></button>
+              </div>
+              <div class="layer-popup-contents font-body4">
+                <div class="inner">작성하신 내용으로 문의를 접수하시겠습니까?</div>
+              </div>
+              <div class="layer-popup-bottom">
+                <button type="button" class="btn-sub" data-close-confirm="confirmPopup" data-callback="callback1">아니오</button>
+                <button type="button" class="btn-solid" data-close-confirm="confirmPopup" data-callback="callback2">네</button>
+              </div>
+            </div>
+          </section>
+          <script>
+            // window에 function을 정의하고 각 팝업 버튼에서 해당 function이름으로 callback
+            window.callback1 = () => {
+              alert('아니오');
+            };
+            window.callback2 = () => {
+              alert('네');
+            };
+          </script>
+          <button class="btn-solid" aria-haspopup="dialog" data-popup="largePopup">개인정보 수집 및 이용에 관한 동의 팝업</button>
+          <section class="wrap-layer-popup large" data-popup="largePopup" role="dialog">
+            <!-- 
+              default : width 460px
+              .large : width 704px
+            -->
+            <div class="inner-layer-popup">
+              <div class="wrap-layer-popup-title" tabindex="0">
+                <h1 class="font-heading3">개인정보 수집 및 이용에 관한 동의</h1>
+                <button class="btn-close-popup" data-popup-close="largePopup"></button>
+              </div>
+              <div class="layer-popup-contents font-body4">
+                <div class="inner">
+                  문의하기 서비스 이용을 위하여 아래의 개인정보 수집ㆍ이용에 대한 내용을 자세히 읽어 보신 후 동의 여부를 결정하여 주시기
+                  바랍니다.<br /><br />
+
+                  1. 개인정보의 수집 및 이용 목적<br />
+                  고객 문의에 대한 답변 제공 및 현황관리<br /><br />
+
+                  2. 수집하는 개인정보의 항목<br />
+                  - 필수정보 : 성, 이름, 이메일, 연락처 <br />
+                  - 선택정보 : 회사명 <br />
+                  ※ 이용자 편의를 위해 쿠키정보를 활용하고 있습니다.<br /><br />
+
+                  3. 수집한 개인정보의 보유ㆍ이용기간<br />
+                  개인정보 수집 및 이용에 관한 동의 후 2년간 개인정보를 보유하고 이후 해당 정보를 지체 없이 파기합니다. 단, 법률에 의해
+                  보존의무가 있는 경우에는 법령이 지정한 일정기간 동안 보존합니다.<br /><br />
+
+                  4. 귀하는 위와 같은 개인정보 수집ㆍ이용에 동의하지 않으실 수 있습니다. <br />
+                  동의를 하지 않을 경우 문의하기 서비스가 제한될 수 있습니다.<br /><br />
+
+                  ※ 본 개인정보의 수집이용 등에 대한 상세한 내용은 삼성SDS 홈페이지(www.samsungsds.com)에 공개된 개인정보처리방침을
+                  참조하시기 바랍니다.<br />
+                  대한민국 애국가.<br />
+                  동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세. 무궁화 삼천리 화려 강산 대한 사람 대한으로 길이
+                  보전하세.<br />
+                  가을 하늘 공활한데 높고 구름 없이 밝은 달은 우리 가슴 일편단심일세. 무궁화 삼천리 화려 강산 대한 사람 대한으로 길이
+                  보전하세.<br />
+                  이 기상과 이 맘으로 충성을 다하여 괴로우나 즐거우나 나라 사랑하세. 무궁화 삼천리 화려 강산 대한 사람 대한으로 길이
+                  보전하세<br />
+                </div>
+              </div>
+              <div class="layer-popup-bottom">
+                <button type="button" class="btn-sub" data-close-confirm="largePopup" data-callback="callback3">거부</button>
+                <button type="button" class="btn-solid" data-close-confirm="largePopup" data-callback="callback4">동의</button>
+              </div>
+            </div>
+          </section>
+          <script>
+            // window에 function을 정의하고 각 팝업 버튼에서 해당 function이름으로 callback
+            window.callback3 = () => {
+              alert('거부');
+            };
+            window.callback4 = () => {
+              alert('동의');
+            };
+          </script>
+          <button class="btn-solid" aria-haspopup="dialog" data-popup="detailView">최신소식 상세보기</button>
+          <section class="wrap-layer-popup detail-view-popup" data-popup="detailView" role="dialog">
+            <!-- 
+              default : width 460px
+              .large : width 704px
+              .detail-view-popup : 최신소식/인사이트리포트 상세
+            -->
+            <div class="inner-layer-popup">
+              <div class="wrap-layer-popup-title" tabindex="0">
+                <h1 class="font-heading3"></h1>
+                <button class="btn-close-popup" data-popup-close="detailView"></button>
+              </div>
+              <div class="layer-popup-contents font-body4">
+                <div class="inner">
+                  <!-- START : 임시영역 -->
+                  <div style="background: rgba(0, 0, 255, 0.2)">콘텐츠 영역</div>
+                  <!-- END : 임시영역 -->
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <!-- TODO: 모바일 작업 예정 (현재 디자인 공유되지 않음) -->
+      <h1>배너</h1>
+      <div class="area-grid">
+        <div class="grid1">
+          <div class="banner-type1">
+            <div class="page-content">
+              <div>
+                <strong class="font-heading3">Load Balancer와 시작해보세요.</strong>
+                <a href="javascript:;" class="btn-solid large">무료체험</a>
+              </div>
+              <ul>
+                <li>
+                  <span>클라우드 전문가와 상담을 해보세요.</span>
+                  <a href="support/question.html" class="btn-text arrow-b">영업팀에 문의하기</a>
+                </li>
+                <li>
+                  <span>고객의 목소리를 듣고 싶으신가요?</span>
+                  <a href="javascript:;" class="btn-text arrow-b">고객사례</a>
+                </li>
+                <li>
+                  <span>더 많은 상품을 보고 싶으신가요?</span>
+                  <a href="javascript:;" class="btn-text arrow-b">전체상품</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- <div class="banner-type1">
+            <div class="page-content">
+              <div>
+                <strong class="font-heading3">비즈니스 성공에 필요한 상품들을 <br />클라우드 전문가와 상담해 보세요.</strong>
+                <a href="javascript:;" class="btn-solid large">영업팀에 문의하기</a>
+              </div>
+              <ul>
+                <li>
+                  <span>서비스를 무료로 체험해보세요.</span>
+                  <a href="javascript:;" class="btn-text arrow-b">무료체험</a>
+                </li>
+                <li>
+                  <span>고객의 경험을 듣고 싶으신가요?</span>
+                  <a href="javascript:;" class="btn-text arrow-b">고객사례</a>
+                </li>
+                <li>
+                  <span>더 많은 상품을 보고 싶으신가요?</span>
+                  <a href="javascript:;" class="btn-text arrow-b">전체상품</a>
+                </li>
+              </ul>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <h1>기타</h1>
+      <div class="area-grid">
+        <div class="grid1">
+          <!-- <div class="pagination">
+            <a href="javascript:;" class="first disabled"></a>
+            <a href="javascript:;" class="prev"></a>
+            <a href="javascript:;">1</a>
+            <span class="more">&middot;&middot;&middot;</span>
+            <a href="javascript:;">21</a>
+            <a href="javascript:;">22</a>
+            <span class="active">23</span>
+            <a href="javascript:;">24</a>
+            <a href="javascript:;">25</a>
+            <a href="javascript:;">26</a>
+            <a href="javascript:;">27</a>
+            <a href="javascript:;">28</a>
+            <span class="more">&middot;&middot;&middot;</span>
+            <a href="javascript:;">999</a>
+            <a href="javascript:;" class="next disabled"></a>
+            <a href="javascript:;" class="last"></a>
+          </div> -->
+          <div class="pagination">
+            <a href="javascript:;" class="prev disabled"></a>
+            <a href="javascript:;">1</a>
+            <span class="active">2</span>
+            <a href="javascript:;">3</a>
+            <a href="javascript:;">4</a>
+            <a href="javascript:;" class="next"></a>
+          </div>
+        </div>
+        <div class="grid1">
+          <span class="badge-update">update</span>
+          <span class="badge-new1">New</span>
+          <span class="badge-new2">N</span>
+          <span class="badge-text1">text</span>
+          <span class="badge-text2">text</span>
+        </div>
+        <div class="grid1">
+          <div class="table-wrap empty">
+            <span class="icon"></span>
+            <p class="text font-body4">서비스를 이용하려면, 고객센터로 문의해주세요.</p>
+          </div>
+        </div>
+        <div class="grid1">
+          <!-- 
+            기본 텍스트는 p태그에 감싸서 작성해주세요.
+            소제목은 strong태그에 감싸주시고 term-tit1 클래스를 추가해주세요.
+            작은 텍스트는 term-txt1 클래스를 추가해주세요.
+          -->
+          <div class="term-box">
+            <p>
+              삼성SDS 솔루션 출시, 이벤트, 뉴스레터를 받아보기 위하여 아래의 개인정보 수집*이용에 대한 내용을 자세히 읽어 보신 후 동의
+              여부를 결정하여 주시기 바랍니다.
+            </p>
+            <strong class="term-tit1">1. 개인정보의 수집 및 이용 목적 </strong>
+            <p>삼성SDS 솔루션 출시, 이벤트, 뉴스레터 이메일 수신 활용</p>
+            <strong class="term-tit1">2. 수집하는 개인정보의 항목 </strong>
+            <p>
+              - 필수정보 : 성, 이름, 이메일, 연락처<br />
+              - 선택정보 : 회사명, 부서명, 직책 <br />
+              ※ 이용자 편의를 위해 쿠키정보를 활용하고 있습니다.
+            </p>
+            <strong class="term-tit1">3. 수집한 개인정보의 보유ㆍ이용기간</strong>
+            <p>
+              개인정보 수집 및 이용에 관한 동의 후 2년간 개인정보를 보유하고 이후 해당 정보를 지체 없이 파기합니다. 단, 법률에 의해
+              보존의무가 있는 경우에는 법령이 지정한 일정기간 동안 보존합니다.
+            </p>
+            <strong class="term-tit1"
+              >4. 귀하는 위와 같은 개인정보 수집ㆍ이용에 동의하지 않으실 수 있습니다.<br />
+              동의를 하지 않을 경우 삼성SDS 솔루션 및 이벤트 정보 수신이 제한될 수 있습니다.</strong
+            ><br />
+            <p class="term-txt1">
+              ※ 본 개인정보의 수집이용 등에 대한 상세한 내용은 삼성SDS 홈페이지(<a
+                href="http://www.samsungsds.com/kr/index.html"
+                target="_blank"
+                title="새창열림"
+                tabindex="0"
+                >www.samsungsds.com</a
+              >)에 공개된 <a href="http://www.samsungsds.com/kr/etc/privacy/foot_privacy.html" tabindex="0">&lt;개인정보처리방침&gt;</a>을
+              참조하시기 바랍니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/ie.js"></script>
+    <script src="../js/library/scroll-lock.min.js"></script>
+    <script src="../js/library/ScrollMagic.min.js"></script>
+    <script src="../js/library/choices.min.js"></script>
+    <script src="../js/pub.js"></script>
+  </body>
+</html>

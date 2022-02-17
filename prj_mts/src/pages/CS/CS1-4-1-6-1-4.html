@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <base href="../../" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <div>
+      <main>
+        <div class="page-list-type-01">
+          <ul>
+            <li>
+              ELW 거래 투자자 보호를 위해 2011.8.1 부터 시행하게 된 제도로 워런트 거래를 위해서는 계좌의 예탁총액이 기본예탁금 이상 있을 경우에만 워런트 거래를 할 수 있는 제도입니다. (기본예탁금 :
+              1,500만원)
+            </li>
+            <li>계좌의 예탁총액 기준: 현금 및 대용증권 대용가 합계 (ELW평가금액 제외) 단, 구. 외환은행 개설 뱅키스 계좌는 대용증권 대용가 합계액만 예탁총액으로 산정</li>
+          </ul>
+          <div class="wrap-table mt24">
+            <p class="tit">주문 및 출금제한</p>
+            <table>
+              <colgroup>
+                <col width="20%" />
+                <col width="20%" />
+                <col width="60%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th colspan="2">구분</th>
+                  <th>제한사항</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th rowspan="2">출금제한</th>
+                  <th>ELW<br />잔고보유</td>
+                  <td rowspan="2" class="left">출금제한 없음</td>
+                </tr>
+                <tr>
+                  <th>ELW<br />잔고미보유</th>
+                </tr>
+                <tr>
+                  <th rowspan="3">주문제한</th>
+                  <th>ELW<br />잔고보유</th>
+                  <td class="left">주문가능</td>
+                </tr>
+                <tr>
+                  <th>ELW<br />매수금액</th>
+                  <td rowspan="2" class="left">
+                    <ul>
+                      <li>예탁총액 > 기본예탁금 : 주문가능</li>
+                      <li>예탁총액 ≤ 기본예탁금 : 주문불가</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th>ELW<br />잔고미보유</th>
+                </tr>
+              </tbody>
+            </table>
+            <p class="tit mt34">기본예탁금 차등 적용 안내</p>
+            <ul>
+              <li>기본예탁금 평가주기 : 분기(1,4,7,10월)말 장종료 후</li>
+            </ul>
+            <table>
+              <colgroup>
+                <col width="20%" />
+                <col width="30%" />
+                <col width="50%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>구분</th>
+                  <th>기본예탁금</th>
+                  <th>제한사항</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1단계</td>
+                  <td>500만원</td>
+                  <td class="left">
+                    <ul>
+                      <li>적격기관 투자자</li>
+                      <li>우량고객 { (① or ② or ③) and ④ }</li>
+                    </ul>
+                    ① 최근 3개월간 ELW약정 3천만원 이상<br />
+                    ② 전월 위탁자산 평잔 5천만원 이상<br />
+                    ③ 고객등급 VIP<br />
+                    ④ 최근 3개월 반대매매 누적 금액 1억원 미만 또는 반대매매 발생횟수 3회 미만인 계좌
+                  </td>
+                </tr>
+                <tr>
+                  <td>2단계</td>
+                  <td>1,500만원</td>
+                  <td class="left">
+                    <ul>
+                      <li>
+                        신규 및 기본 일반계좌
+                        <ul class="depth-list">
+                          <li>1단계, 3단계, 수탁거부 조건에 해당하지 않는 계좌</li>
+                          <li>신규계좌 : 워런트증권 위험고지 등록 30일 이내</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3단계</td>
+                  <td>3,000만원</td>
+                  <td class="left">
+                    <ul>
+                      <li>
+                        관리대상 고객 (최근3개월간)
+                        <ul class="depth-list">
+                          <li>최근 3개월 반대매매 누적금액 1억원 이상 또는 반대매매 발생횟수가 3회 이상인 계좌</li>
+                          <li>반대매매 1백만원 미만인 경우 누적금액, 누적발생횟수 계산에 미만영</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>수탁거부</td>
+                  <td>수탁거부</td>
+                  <td class="left">
+                    <ul>
+                      <li>연체 및 금융질서 문란자</li>
+                      <li>연계신용거래자</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+    @@include('../include/script.html')
+  </body>
+</html>

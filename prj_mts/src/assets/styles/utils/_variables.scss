@@ -1,0 +1,76 @@
+/* Color */
+$white: #ffffff;
+$primary: #000000;
+$accent: #f26551;
+$increase: #f34b55;
+$decrease: #4f7cef;
+
+/* State Color */
+$state-color01: #4098eb;
+$state-color02: #48c5b5;
+$state-color03: #ffbe73;
+$state-color04: #fe886e;
+$state-color05: #f34b55;
+
+/* Text Color */
+$text-color01: #fafafa;
+$text-color02: #eaeaea;
+$text-color03: #cfcfcf; // Disable
+$text-color04: #aaaaaa; // Placeholder
+$text-color05: #909090; // Hint, Caption
+$text-color06: #737373; // Sub Info
+$text-color07: #4a4a4a; // Text Button
+$text-color08: #0b0b0b; // Main Info
+
+/* Object Color */
+$obj-color01: #f9f9fa; // Field BG
+$obj-color02: #f2f3f4; // Wide divider, Table Line
+$obj-color03: #e8e9ea; // List Line
+$obj-color04: #cbcdcf; // Button Line
+$obj-color05: #a4a6aa; // Check, Radio
+$obj-color06: #75777b; // Title Line
+$obj-color07: #33353c; // Alternative Solid Button
+
+/* Button */
+$btn-color: $primary;
+$btn-font-weight: 400;
+$btn-line-height: 1.6;
+$btn-border-color: #d9d9d9;
+$btn-border-radius: 2px;
+
+$btn-disabled-color: #00000040;
+$btn-disabled-border: #d9d9d9;
+$btn-disabled-background: #f5f5f5;
+
+$btn-color-primary: $primary;
+$btn-color-primary-hover: $primary;
+
+$btn-height-default: 32px;
+$btn-height-small: 24px;
+$btn-height-large: 40px;
+
+$btn-padding-default: 4px 15px;
+$btn-padding-small: 0 12px;
+$btn-padding-large: 6px 15px;
+
+/* Checkbox */
+$checkbox-color-disabled: #e4e4e4;
+$checkbox-color-checked-disabled: #e3e4e5;
+$checkbox-color-checked: $primary;
+$checkbox-width: 20px;
+$checkbox-height: 20px;
+$checkbox-border-color: $obj-color05;
+$checkbox-border-radius: 4px;
+$checkbox-label-lineheight: 20px;
+$checkbox-label-padding: 28px;
+
+/* Radio */
+$radio-color-disabled: #e4e4e4;
+$radio-color-checked-disabled: $obj-color02;
+$radio-color-checked: $primary;
+$radio-width: 20px;
+$radio-height: 20px;
+$radio-border-color: $obj-color05;
+$radio-border-radius: 20px;
+$radio-label-lineheight: 20px;
+$radio-label-padding: 28px;

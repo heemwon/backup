@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <base href="../../../" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <script src="assets/js/ie.js"></script>
+    <link rel="stylesheet" href="assets/css/library/choices.min.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/common.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Samsung Cloud Platform</title>
+  </head>
+  <body>
+    <div class="wrap tech-guide">
+      <!-- 3depth 메뉴가 있을 시 header태그에 subpage 듀얼클래스를 추가해주세요. -->
+      <div id="header-template" class="header-include subpage"></div>
+      <article class="content">
+        <div class="hero-sub">
+          <div class="content">
+            <div class="sub-content">
+              <h2 class="font-heading1">Lift and Shift 마이그레이션</h2>
+              <a
+                href="javascript:;"
+                target="_blank"
+                class="btn-border large"
+                ><i class="ico-link"></i><span class="i18n-inherit" data-i18n="button.button_3"></span></a
+              >
+            </div>
+          </div>
+          <div class="visual-tab">
+            <nav>
+              <ul class="tablist">
+                <li><a href="javascript:;" data-scroll-anchor data-i18n="category.category_18"></a></li>
+                <li><a href="javascript:;" data-scroll-anchor>LIFT AND SHIFT 마이그레이션의 특징</a></li>
+                <li><a href="javascript:;" data-scroll-anchor>ZCONVERTER를 이용한 마이그레이션 절차</a></li>
+              </ul>
+              <span class="progress-bar"></span>
+            </nav>
+          </div>
+        </div>
+        <div class="right-layout" data-scroll-section>
+          <div class="left-content">
+            <div class="detail-content">
+              <h3 class="font-heading2" data-i18n="category.category_18"></h3>
+              <div class="column-box">
+                클라우드를 시작하거나 전환할 때 고려 할 수 있는 전략은 여러가지가 있습니다.<br /><br />
+                애플리케이션 변경없이 그대로 호스팅만 변경하는 Rehosting, 대부분의 아키텍처는 유지하지만 클라우드 환경의 이점을 얻기 위해 일부를 수정하는 Replatforming, 애플리케이션 구조는 유지하지만 클라우드 환경에 맞는 아키텍처로 다시 재구성하는 Refactoring, 기존 애플리케이션을 재설계하여 Cloud Native구조로 새롭게 구축하는 Rebuilding, 그리고 기존의 애플리케이션을 버리고 SaaS로 대체하는 Replacing 입니다.
+                <br /><br />
+                흔히 5R 전략이라고 불리는 이 5가지 전환 방식 중 전환 효과는 가장 적지만 신속성과 단순성으로 인해 가장 많이 쓰이는 방식은 Lift and Shift라고도 불리는 Rehosting 방식입니다.
+                <br /><br />
+                이 문서에서는 Lift and Shift Migration 방식의 특징과 마이그레이션 툴을 소개하고, 그 솔루션을 활용한 SDS Cloud로의 마이그레이션 방법에 대해 다뤄보도록 하겠습니다.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-layout" data-scroll-section>
+          <div class="left-content">
+            <div class="detail-content">
+              <h3 class="font-heading2">Lift and Shift 마이그레이션의 특징</h3>
+              <div class="column-box">
+                Lift and Shift 전략의 가장 큰 장점은 높은 효율성입니다. 마이그레이션은 On-premises의 물리서버나 가상머신을 그대로 클라우드에 옮겨와 동일하게 운영하는 방식입니다. 
+                <br /><br />
+                네트워크와 보안, 공유 스토리지 등 최소한의 환경만 맞춰준다면 기존의 애플리케이션과 서비스를 큰 변경 없이 사용 할 수 있어 개발 비용 뿐만 아니라 시간, 인력, 운영의 비용을 최소화 할 수 있습니다.
+                <br /><br />
+                하지만 기존의 레거시 환경에 최적화된 아키텍처를 그대로 유지하기 때문에 단순 인프라 비용 이외에 유연한 자원 스케일링을 이용한 운영 안정성과 비용 효율성 증대, 다양한 클라우드 PaaS, SaaS 상품과의 연계를 통한 개발 경쟁력 확보, 고급 
+                관리 기능을 활용한 운영 효율화 등 클라우드의 또 다른 이점들은 얻기 어려워 지는 단점이 있습니다.
+                <br /><br />
+                따라서 초기에는 빠른 이전을 위해 Lift and Shift 전략을 취한다 하더라도, 이후에는 라이프사이클에 따라 애플리케이션들을 Rebuilding하거나Refactoring 하는 전략을 사용해 양쪽 전략의 장점을 얻을 수 있도록 전환 이후의 전략에도 소홀히 않는 것이 중요합니다.
+                <br /><br />
+                Lift and Shift 전환 시 고려 할 사항은 아래와 같은 것들이 있습니다.
+                <ul class="list-type4 normal">
+                  <li>
+                    <p class="desc">허용된 Downtime에 맞는 Cut Over 전략</p>
+                  </li>
+                  <li>
+                    <p class="desc">Cut Over 전략에 맞는 적정 마이그레이션 툴 선정</p>
+                  </li>
+                  <li>
+                    <p class="desc">
+                      데이터의 크기와 성격에 맞춘 데이터 이관 전략
+                    </p>
+                  </li>
+                  <li>
+                    <p class="desc">
+                      on-premises 네트워크 구성을 고려한 VPC 설계
+                    </p>
+                  </li>
+                  <li>
+                    <p class="desc">
+                      애플리케이션간 연동 및 기존 방화벽 규칙을 고려한 보안 규칙 정의
+                    </p>
+                  </li>
+                  <li>
+                    <p class="desc">
+                      마이그레이션 중/전환 이후의 on-premises와의 네트워크 연결 
+                    </p>
+                  </li>
+                  <li>
+                    <p class="desc">
+                      로깅, 모니터링, 알람 등 운영 체계
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-layout" data-scroll-section>
+          <div class="left-content">
+            <div class="detail-content">
+              <h3 class="font-heading2">ZConverter를 이용한 마이그레이션 절차</h3>
+              <div class="column-box">
+                SDS Cloud 서비스가 오픈된 이후로 고객의 여러 서비스들이 SDS Cloud로 전환을 진행하고 있습니다. 그 중 많은 서비스들이 먼저 Lift and Shift 전략으로 빠른 이전 후에 라이프사이클에 따라 Rebuilding/Refactoring하는 전략을 채택하고 있습니다.
+                <br /><br />
+                마이그레이션 전략 중에 제일 단순한 것이 Lift and Shift이지만, 전환의 규모가 클수록 그 복잡성은 급격하게 증가하는 경향이 있습니다. 그리고 전환하려고 하는 서비스들 중 몇몇 업무들은 수동으로 전환 한다면 오히려 다른 전략에 비해 효용성이 떨어질 수 있습니다.
+                <br /><br />
+                따라서 대규모 마이그레이션에 대응하기 위한 자동화된 마이그레이션 툴을 고려하게 되는데요, 여기서는 ISA Tec의 ZConverter의 특징과 마이그레이션 절차에 대해서 알아보겠습니다.
+                <br /><br />
+                ZConverter 의 기술적인 특징은 아래와 같습니다.
+                <ul class="list-type4 normal">
+                  <li>
+                    <p class="desc">Lift and Shift 마이그레이션 솔루션</p>
+                  </li>
+                  <li>
+                    <p class="desc">백업 기반 기술을 통해 P2V, V2V 마이그레이션 제공</p>
+                  </li>
+                  <li>
+                    <p class="desc">
+                     이기종 클라우드 플랫폼, 이기종 하이퍼바이저, 이기종 디스크 포맷 간 마이그레이션 지원
+                    </p>
+                  </li>
+                  <li>
+                    <p class="desc">
+                      포털을 통한 마이그레이션 관리, 모니터링, 전환 수행 등 편의 기능 제공
+                    </p>
+                  </li>
+                </ul>
+                <br /><br />
+                ZConverter의 특징은 마이그레이션을 SaaS로 제공하여 업체가 제공하는 Cloud Migration 포탈에 접속하여 통해 설정 및 모니터링, 전환을 수행하게 됩니다. 보안 등의 이슈가 있다면 전용 포탈을 내부에 구축하는것도 가능하나, 포탈없이 마이그레이션을 수행하는 것은 불가능합니다.
+                <br /><br />
+                ZConverter를 이용한 마이그레이션 절차는 다음과 같습니다.
+                <figure class="margin-bottom">
+                  <img src="assets/images/img/img_techguide8_01.jpg" alt="" />
+                  <figcaption>Figure 1. ZConverter를 활용한 마이그레이션 절차</figcaption>
+                </figure>
+                <ol class="list-type4 bullet-number">
+                  <li>
+                    <p class="desc">On-premises와 SDS Cloud 네트워크 연결: L2 Extension or L3 Routing</p>
+                  </li>
+                  <li>
+                    <p class="desc">VPC 생성 및 마이그레이션을 위한 타겟 Virtual Server 생성</p>
+                  </li>
+                  <li>
+                    <p class="desc">
+                      Source 서버와 Target 서버, 관련 서버들과 마이그레이션 포털 간 보안 그룹 및 방화벽 오픈
+                    </p>
+                  </li>
+                  <li>
+                    <p class="desc">
+                      Source 서버, Target 서버에 Agent 설치
+                    </p>
+                  </li>
+                  <li>
+                    <p class="desc">
+                      Cloud Migration 포탈에서 마법사를 이용하여 Source서버와 Target 서버 연결
+                    </p>
+                  </li>
+                  <li>
+                    <p class="desc">
+                      포털을 통해 Source 서버 백업 수행: 전환 전까지 추가 증분 백업 가능
+                    </p>
+                  </li>
+                  <li>
+                    <p class="desc">
+                      포털을 통해 마이그레이션: Taget 서버 복구모드 전환 후 Target서버에 Source서버 데이터 마이그레이션            
+                    </p>
+                  </li>
+                  <li>
+                    <p class="desc">
+                      Target 서버 수작업 후행 처리
+                    </p>
+                  </li>
+                  <li>
+                    <p class="desc">
+                      Target 서버 정상 부팅 여부 및 Application 모니터링
+                    </p>
+                  </li>
+                </ol>
+                <br /><br />
+                ZConverter를 이용해 마이그레이션 할 때 사용하는 통신 포트는 아래와 같습니다.
+                <div class="table-wrap">
+                  <div class="table-scroll-wrap">
+                    <table>
+                      <colgroup>
+                        <col width="5%">
+                        <col width="15%">
+                        <col width="15%">
+                        <col width="15%">
+                        <col width="50%">
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th>Source</th>
+                          <th>Destination</th>
+                          <th>Port/Service</th>
+                          <th>Note</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>User</td>
+                          <td>포털</td>
+                          <td>TCP: 80, 443</td>
+                          <td>ZConverter 포탈 접근</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Source Server</td>
+                          <td>포털</td>
+                          <td>TCP: 50000, 50001</td>
+                          <td>서버 정보 전송</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>Target Server</td>
+                          <td>포털</td>
+                          <td>TCP: 50000, 50001</td>
+                          <td>서버 정보 전송</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>Source Server</td>
+                          <td>저장소</td>
+                          <td>TCP: 139, 445</td>
+                          <td>Source 서버로부터의 저장소 접근</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>User</td>
+                          <td>저장소</td>
+                          <td>TCP: 139, 445</td>
+                          <td>Target 서버로부터의 저장소 접근</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                지금까지 Lift and Shift 마이그레이션 특징과 ZConverter를 이용한 마이그레이션 절차에 대해 알아보았습니다.
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <div id="footer-template"></div>
+    </div>
+    <script src="assets/js/library/jquery.min.js"></script>
+    <script src="assets/js/library/swiper-bundle.min.js"></script>
+    <script src="assets/js/library/scroll-lock.min.js"></script>
+    <script src="assets/js/library/ScrollMagic.min.js"></script>
+    <script src="assets/js/library/choices.min.js"></script>
+    <script src="assets/js/library/i18next-1.11.2.min.js"></script>
+
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/initialize.js"></script>
+    <script src="assets/js/pub.js"></script>
+  </body>
+</html>

@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <base href="../../" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <div>
+      <main class="cfd-auto-order-wrap">
+        <div class="tab-wrap1 wrap-box full" data-type="tab-wrap">
+          <ul class="tablist full-tab" role="tablist">
+            <li class="tab-item" role="tab">
+              <button type="button" class="active" role="button" aria-controls="panel1" data-type="tab-item">위험고지</button>
+            </li>
+            <li class="tab-item" role="tab">
+              <button type="button" role="button" aria-controls="panel2" data-type="tab-item">잔고청산안내</button>
+            </li>
+            <li class="tab-item" role="tab">
+              <button type="button" role="button" aria-controls="panel3" data-type="tab-item">매수·매도감시</button>
+            </li>
+          </ul>
+          <ul class="panels">
+            <li id="panel1" role="tabpanel" tabindex="0">
+              <div class="page-list-type-01">
+                <p class="tit mb-8">사용법 숙지</p>
+                <ul>
+                  <li>CFD 서버감시주문(진입감시/청산감시/TWAP)은 사용자의 거래 편의를 위해 개발한 기능으로 반드시 사용법을 사전에 숙지하여야 합니다.</li>
+                  <li>사용자의 고의, 과실, 전산기기 등의 조작오류로 인한 사고 및 사용법 오류로 인한 손실에 대해 회사는 책임을 지지 않습니다.</li>
+                </ul>
+                <p class="tit mb-8">오류 및 장애발생</p>
+                <ul>
+                  <li>시세급변 및 주문폭주 시 시세 및 주문 전송 지연과 시세누락, 거래상대방 시스템 오류 등으로 서버감시 주문이 정상적이지 않을 수 있습니다.</li>
+                  <li>CFD 서버감시는 사용자PC환경, 네트워크 상태, 거래소/거래상대방 문제, 시세 문제 등으로 주문 미처리 등의 오류가 발생할 수 있습니다.</li>
+                  <li>회사는 긴급한 상황 발생으로 서버감시불가 상황이라고 판단할 경우, 신규감시주문 차단 및 감시중인 주문을 임의로 취소할 수 있습니다.</li>
+                  <li>회사는 이러한 오류 및 장애로 발생한 기회비용 등의 손실에 대해 책임을 지지 않습니다.</li>
+                </ul>
+                <p class="tit mb-8">오류 및 장애발생</p>
+                <ul>
+                  <li>시세급변 및 주문폭주 시 시세 및 주문 전송 지연과 시세누락, 거래상대방 시스템 오류 등으로 서버감시 주문이 정상적이지 않을 수 있습니다.</li>
+                  <li>CFD 서버감시는 사용자PC환경, 네트워크 상태, 거래소/거래상대방 문제, 시세 문제 등으로 주문 미처리 등의 오류가 발생할 수 있습니다.</li>
+                  <li>회사는 긴급한 상황 발생으로 서버감시불가 상황이라고 판단할 경우, 신규감시주문 차단 및 감시중인 주문을 임의로 취소할 수 있습니다.</li>
+                  <li>회사는 이러한 오류 및 장애로 발생한 기회비용 등의 손실에 대해 책임을 지지 않습니다.</li>
+                </ul>
+                <p class="tit mb-8">체결 리스크</p>
+                <ul>
+                  <li>시세급변, 거래상대방 주문접수 및 체결 지연으로 주문이 미처리되거나 원하지 않는 호가에 체결될 수 있습니다.</li>
+                  <li>CFD는 거래상대방과 연결된 주문 네트워크를 통해 거래되는 장외거래상품으로 거래상대방 오류 가능성이 항상 존재합니다.</li>
+                  <li>(유사)시장가주문이라 하더라도 시장상황, 거래소 규정(UP TICK룰 등), 거래상대방 제한, 유사시장가 한계 등으로 인해 반드시 체결을 보장하지 않습니다.</li>
+                  <li>서버감시에서 조건만족 여부를 판단하는 기준가격은 주문접수를 수행시키는 역할을 하며, 체걸가격은 기준가격과 상이할 수 있습니다.</li>
+                </ul>
+                <p class="tit mb-8">시장 리스크</p>
+                <ul>
+                  <li>시장패닉으로 인한 시세급변, 변동성급변 시 조건만족을 한 경우에도 체결이 이루어지지 않을 수 있습니다.</li>
+                  <li>
+                    전산장애, 천재지변, 네트워크 장애, 거래소 장애, FCM 장애, 전시 또는 부득이한 사유가 있는 경우 서비스의 제공이 지연되거나 중단될 수 있으며, 이로 인하여 발생한 손해에 대해서는
+                    당사에서 책임을 지지 않습니다.
+                  </li>
+                </ul>
+                <p class="body1-2 mt24">CFD 서버감시 주문으로 인한 결과에 대한 모든 책임은 사용자에 있으며, 회사는 이에 대한 책임을 지지 않습니다.</p>
+              </div>
+            </li>
+            <li id="panel2" role="tabpanel" tabindex="0" hidden="">
+              <div class="page-list-type-01">
+                <p class="tit mb-8">서버자동주문 개요</p>
+                <ul>
+                  <li>서버자동주문은 서버를 통해서 실행되기 때문에, HTS/MTS 종료 등에도 실행 중인 감시는 사용자가 취소하기 전까지는 계속 유지됩니다.</li>
+                  <li>청산감시설정은 <em class="accent">최대 3개의 조건을 동시에 설정</em>할 수 있으며, 설정 조건 중 <em class="accent">1개라도 만족되면 주문이 나가고 감시는 자동 종료</em>됩니다.</li>
+                  <li>청산감시설정은 동일종목에 대해 최대 1개의 감시조건만 등록할 수 있습니다.</li>
+                  <li>유효기간은 조건등록시점 일자로부터 최대 30일 이내에서 설정 가능합니다.</li>
+                  <li>서버자동주문은 <span class="typo-border-btm">해당 거래소의 영업일을 기준으로 감시종료</span>됩니다. 미국 등 해외종목 거래 시 유효기간 설정에 유의하여 주시기 바랍니다.</li>
+                  <li>감시조건만족으로 나가는 모든 주문은 <em class="accent">당 영업일 종료까지만 유효한 DAY주문</em>입니다.</li>
+                </ul>
+              </div>
+              <div class="page-list-type-03">
+                <ol>
+                  <li class="tit">
+                    <strong class="bold">조건설정</strong>
+                    <p class="tit mt16">1) 간편설정</p>
+                    <div class="wrap-table">
+                      <table>
+                        <colgroup>
+                          <col width="20%" />
+                          <col width="26.66%" />
+                          <col width="26.66%" />
+                          <col width="26.66%" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>조건</th>
+                            <th>구분</th>
+                            <th>기준항목</th>
+                            <th>감시기준</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th>조건1</th>
+                            <td>매수/매도</td>
+                            <td>현재가</td>
+                            <td>이상/이하</td>
+                          </tr>
+                          <tr>
+                            <th>조건2</th>
+                            <td>매수/매도</td>
+                            <td>수익률</td>
+                            <td>이상/이하</td>
+                          </tr>
+                          <tr>
+                            <th>조건3</th>
+                            <td>매수/매도</td>
+                            <td>평가손익</td>
+                            <td>이상/이하</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="page-list-type-01">
+                        <ul>
+                          <li>청산감시설정 중 간편설정은 사용자가 가장 많이 사용하는 기준항목 3개를 고정시켜 제공하게 됩니다.</li>
+                          <li>간편설정에서는 <em class="accent">최대 3가지 조건을 동시에 설정</em>할 수 있습니다.</li>
+                          <li>설정 조건 중 <em class="accent">하나라도 만족하면 주문이 나가게 되고 서버감시는 자동 종료</em>됩니다.</li>
+                          <li class="depth-list">
+                            <strong class="bold">조건 1/2/3 :</strong> 기준항목이 기준가 이상/이하를 터치하면 조건만족
+                            <ul>
+                              <li>입력 : 기준항목, 기준가</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <p class="tit mt24">2) 일반설정</p>
+                    <div class="wrap-table">
+                      <table>
+                        <colgroup>
+                          <col width="20%" />
+                          <col width="25%" />
+                          <col width="30%" />
+                          <col width="25%" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>조건</th>
+                            <th>구분</th>
+                            <th>기준항목</th>
+                            <th>감시기준</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th rowspan="2">조건1/ 조건2</th>
+                            <td rowspan="2">매수/매도</td>
+                            <td>현재가/ 매수1호가/ 매도1호가/수익률</td>
+                            <td>이상/이하</td>
+                          </tr>
+                          <tr>
+                            <td>전일종가/평가손익</td>
+                            <td>상승/하락</td>
+                          </tr>
+                          <tr>
+                            <th rowspan="2">조건3</th>
+                            <td>매수</td>
+                            <td rowspan="2">현재가/수익률/ 평가손익/전일종가</td>
+                            <td>지점대비 상승</td>
+                          </tr>
+                          <tr>
+                            <td>매도</td>
+                            <td>고점대비 하락</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="page-list-type-01">
+                        <ul>
+                          <li>청산감시설정은 <em class="accent">최대 3가지 조건을 동시에 설정</em>할 수 있습니다.</li>
+                          <li>설정 조건 중 <em class="accent">하나라도 만족하면 주문이 나가게 되고 서버감시는 자동 종료</em>됩니다.</li>
+                          <li class="depth-list">
+                            <strong class="bold">조건1/2</strong>
+                            <ul>
+                              <li>입력 : 기준항목, 기준가</li>
+                            </ul>
+                          </li>
+                          <li class="depth-list">
+                            <strong class="bold">조건2 :</strong> 현재가가 기준항목 대비 설정폭 이상 상승/하락하면 조건만족
+                            <ul>
+                              <li>입력 : 기준항목, 설정폭</li>
+                            </ul>
+                          </li>
+                          <li class="depth-list">
+                            <strong class="bold">조건 3 :</strong> 현재가가 기준가에 도달한 후 설정폭 이상 상승/하락하면 조건만족
+                            <ul>
+                              <li>입력 : 기준값, 설정폭</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="tit">
+                    <strong class="bold">주문수량</strong>
+                    <div class="page-list-type-01 mt16">
+                      <ul>
+                        <li>주문수량은 <strong class="bold">청산가능수량 대비</strong> % 또는 <strong class="bold">수량 직접입력</strong> 중 선택하여 설정할 수 있습니다.</li>
+                        <li>청산가능수량의 xx%를 선택하는 경우, <em class="accent">주문수량은 조건만족 후 주문이 나가는 시점의 청산가능수량으로 계산</em>됩니다.</li>
+                        <li>수량을 직접 입력하는 경우, 주문접수 시점의 청산가능수량이 부족하여 주문이 접수되지 않을 수 있습니다.</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="tit">
+                    <strong class="bold">주문횟수</strong>
+                    <div class="page-list-type-01 mt16">
+                      <ul>
+                        <li>주문횟수는 <strong class="bold">1회</strong> 또는 <strong class="bold">분할주문</strong> 중 선택할 수 있습니다.</li>
+                        <li>분할주문은 주문시간/주문가격 및 분할횟수를 선택하여 설정합니다.</li>
+                      </ul>
+                    </div>
+                    <div class="wrap-table">
+                      <table>
+                        <colgroup>
+                          <col width="25%" />
+                          <col width="50%" />
+                          <col width="25%" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>설정</th>
+                            <th>내용</th>
+                            <th>분할횟수</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th>주문시간</th>
+                            <td>조건만족시점부터 장종료 5분전까지</td>
+                            <td rowspan="2">2~10회</td>
+                          </tr>
+                          <tr>
+                            <th>주문간격</th>
+                            <td>10초 / 30초 / 1분 / 3분 / 5분 / 10분 / 15분 / 20분 / 30분</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </li>
+                  <li class="tit">
+                    <strong class="bold">주문가격</strong>
+                    <div class="page-list-type-01 mt16">
+                      <ul>
+                        <li>주문가격은 상대가, (유사)시장가, 지정가로 설정할 수 있습니다.</li>
+                        <li>
+                          거래소(또는 거래상대방)로 주문가격제한 기준이 다르며, 신규매도의 경우 업틱룰 등 제한이 있기 때문에 <em class="accent">사전에 가격제한조건</em>에 대해 확인하여야 합니다.
+                        </li>
+                        <li>거래소, 거래상대방의 가격제한조건으로 발생한 주문거부 등으로 인한 체결누락에 대해서는 회사에서 책임지지 않습니다.</li>
+                        <li class="depth-list">
+                          <strong class="bold">상대가격</strong>
+                          <ul>
+                            <li><span class="typo-border-btm">현재가 / 매수1호가 / 매도1호가 대비 설정틱</span>으로 주문접수</li>
+                            <li>설정틱 : 0, ±1, ±3, ±5, ±7, ±10, ±15, ±20틱 가능</li>
+                            <li>신규매도의 경우, 업틱룰로 인해 현재가만 선택가능하며 +틱으로만 설정 가능합니다.</li>
+                          </ul>
+                        </li>
+                        <li class="depth-list">
+                          <strong class="bold">(유사)시장가</strong>
+                          <ul>
+                            <li>시장가를 지원하지 않는 경우, <em class="accent">현재가±9틱을 주문가격으로 하여 지정가</em> 주문 접수</li>
+                          </ul>
+                        </li>
+                        <li class="depth-list">
+                          <strong class="bold">지정가</strong>
+                          <ul>
+                            <li>주문가격을 직접 입력</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="tit">
+                    <strong class="bold">조건만족 미체결주문처리 설정</strong>
+                    <div class="page-list-type-01 mt16">
+                      <ul>
+                        <li>
+                          서버감시조건 만족으로 접수된 미체결주문이 일정 조건을 만족하는 경우 2가지 기능 중 선택하여 정정하는 옵션입니다. 옵션을 선택하지 않는 경우, 미체결주문은 장종료시까지
+                          유지됩니다.
+                        </li>
+                        <li class="depth-list">
+                          현재가정정
+                          <ul>
+                            <li>주문가와 현재가가 일정기준 이상 차이나는 경우, 현재가로 최대 5회까지 자동정정</li>
+                            <li>기준 : 1~10틱까지 설정 가능</li>
+                            <li>정정횟수 : 1~5회 범위에서 설정 가능</li>
+                          </ul>
+                        </li>
+                        <li class="depth-list">
+                          (유사)시장가 정정
+                          <ul>
+                            <li>장마감을 기준으로 설정한 시간 전에 시장가로 정정</li>
+                            <li>시간선택 : 1분 / 3분 / 5분 / 7분 / 10분 / 15분 / 30분 / 60분 / 90분 / 120분</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="tit">
+                    <strong class="bold">기타</strong>
+                    <div class="page-list-type-01 mt116">
+                      <ul>
+                        <li class="depth-list">
+                          동일종목 미체결주문 취소
+                          <ul>
+                            <li>
+                              조건만족 시 동일한 종목에 대해 동일한 방향으로 미체결주문이 있는 경우, 해당 미체결주문을 취소하고 서버주문을 접수하는 옵션입니다. 서버주문이 매수인 경우, 매도
+                              미체결주문은 취소되지 않습니다.
+                            </li>
+                            <li>기존주문에 대한 취소 응답이 지연되는 경우, 10초 후 주문을 접수하게 됩니다.</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </li>
+            <li id="panel3" role="tabpanel" tabindex="0" hidden="">
+              <div class="page-list-type-01">
+                <p class="tit mb-8">서버자동주문 개요</p>
+                <ul>
+                  <li>서버자동주문은 서버를 통해서 실행되기 때문에, HTS/MTS 종료 등에도 실행 중인 감시는 사용자가 취소하기 전까지는 계속 유지됩니다.</li>
+                  <li>청산감시설정은 <em class="accent">최대 3개의 조건을 동시에 설정</em>할 수 있으며, 설정 조건 중 <em class="accent">1개라도 만족되면 주문이 나가고 감시는 자동 종료</em>됩니다.</li>
+                  <li>유효기간은 조건등록시점 일자로부터 최대 30일 이내에서 설정 가능합니다.</li>
+                  <li>서버자동주문은 <span class="typo-border-btm">해당 거래소의 영업일을 기준으로 감시종료</span>됩니다. 미국 등 해외종목 거래 시 유효기간 설정에 유의하여 주시기 바랍니다.</li>
+                  <li>감시조건만족으로 나가는 모든 주문은 <em class="accent">당 영업일 종료까지만 유효한 DAY주문</em>입니다.</li>
+                </ul>
+              </div>
+              <div class="page-list-type-03">
+                <ol>
+                  <li class="tit">
+                    <strong class="bold">조건설정</strong>
+                    <p class="tit mt16">1) 간편설정</p>
+                    <div class="wrap-table">
+                      <table>
+                        <colgroup>
+                          <col width="20%" />
+                          <col width="26.66%" />
+                          <col width="26.66%" />
+                          <col width="26.66%" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>조건</th>
+                            <th>구분</th>
+                            <th>기준항목</th>
+                            <th>감시기준</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th>조건1</th>
+                            <td>매수/매도</td>
+                            <td>현재가/ 매수1호가/ 매도1호가</td>
+                            <td>이상/이하</td>
+                          </tr>
+                          <tr>
+                            <th>조건2</th>
+                            <td>매수/매도</td>
+                            <td>전일종가/전일시가/전일고가/전일저가/당일시가</td>
+                            <td>상승/하락</td>
+                          </tr>
+                          <tr>
+                            <th rowspan="2">조건3</th>
+                            <td>매수</td>
+                            <td>헌재가</td>
+                            <td>지점대비 상승</td>
+                          </tr>
+                          <tr>
+                            <td>매도</td>
+                            <td>현재가</td>
+                            <td>고점대비 하락</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="page-list-type-01">
+                        <ul>
+                          <li>진입감시설정은 <em class="accent">최대 3가지 조건을 동시에 설정</em>할 수 있습니다.</li>
+                          <li>설정 조건 중 <em class="accent">하나라도 만족하면 주문이 나가게 되고 서버감시는 자동 종료</em>됩니다.</li>
+                          <li class="depth-list">
+                            <strong class="bold">조건 1 :</strong> 기준항목이 기준가 이상/이하를 터치하면 조건만족
+                            <ul>
+                              <li>입력 : 기준항목, 기준가</li>
+                            </ul>
+                          </li>
+                          <li class="depth-list">
+                            <strong class="bold">조건 2 :</strong> 현재가가 기준항목 대비 설정폭 이상 상승/하락하면 조건만족
+                            <ul>
+                              <li>입력 : 기준항목, 설정폭</li>
+                            </ul>
+                          </li>
+                          <li class="depth-list">
+                            <strong class="bold">조건 3 :</strong> 현재가가 기준가에 도달한 후 설정폭 이상 상승/하락하면 조건만족
+                            <ul>
+                              <li>입력 : 기준값, 설정폭</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="tit">
+                    <strong class="bold">주문수량</strong>
+                    <div class="page-list-type-01 mt16">
+                      <ul>
+                        <li>주문수량은 <strong class="bold">청산가능수량 대비</strong> % 또는 <strong class="bold">수량 직접입력</strong> 중 선택하여 설정할 수 있습니다.</li>
+                        <li>청산가능수량의 xx%를 선택하는 경우, <em class="accent">주문수량은 조건만족 후 주문이 나가는 시점의 주문가능수량으로 계산</em>됩니다.</li>
+                        <li>수량을 직접 입력하는 경우, 주문접수 시점의 청산가능수량이 부족하여 주문이 접수되지 않을 수 있습니다.</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="tit">
+                    <strong class="bold">주문횟수</strong>
+                    <div class="page-list-type-01 mt16">
+                      <ul>
+                        <li>주문횟수는 <strong class="bold">1회</strong> 또는 <strong class="bold">분할주문</strong> 중 선택할 수 있습니다.</li>
+                        <li>분할주문은 주문시간/주문가격 및 분할횟수를 선택하여 설정합니다.</li>
+                      </ul>
+                    </div>
+                    <div class="wrap-table">
+                      <table>
+                        <colgroup>
+                          <col width="25%" />
+                          <col width="50%" />
+                          <col width="25%" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>설정</th>
+                            <th>내용</th>
+                            <th>분할횟수</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th>주문시간</th>
+                            <td>조건만족시점부터 장종료 5분전까지</td>
+                            <td rowspan="2">2~10회</td>
+                          </tr>
+                          <tr>
+                            <th>주문간격</th>
+                            <td>10초 / 30초 / 1분 / 3분 / 5분 / 10분 / 15분 / 20분 / 30분</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </li>
+                  <li class="tit">
+                    <strong class="bold">주문가격</strong>
+                    <div class="page-list-type-01 mt16">
+                      <ul>
+                        <li>주문가격은 상대가, (유사)시장가, 지정가로 설정할 수 있습니다.</li>
+                        <li>
+                          거래소(또는 거래상대방)로 주문가격제한 기준이 다르며, 신규매도의 경우 업틱룰 등 제한이 있기 때문에 <em class="accent">사전에 가격제한조건</em>에 대해 확인하여야 합니다.
+                        </li>
+                        <li>거래소, 거래상대방의 가격제한조건으로 발생한 주문거부 등으로 인한 체결누락에 대해서는 회사에서 책임지지 않습니다.</li>
+                        <li class="depth-list">
+                          <strong class="bold">상대가격</strong>
+                          <ul>
+                            <li><span class="typo-border-btm">현재가 / 매수1호가 / 매도1호가 대비 설정틱</span>으로 주문접수</li>
+                            <li>설정틱 : 0, ±1, ±3, ±5, ±7, ±10, ±15, ±20틱 가능</li>
+                            <li>신규매도의 경우, 업틱룰로 인해 현재가만 선택가능하며 +틱으로만 설정 가능합니다.</li>
+                          </ul>
+                        </li>
+                        <li class="depth-list">
+                          <strong class="bold">(유사)시장가</strong>
+                          <ul>
+                            <li>시장가를 지원하지 않는 경우, <em class="accent">현재가±9틱을 주문가격으로 하여 지정가</em> 주문 접수</li>
+                          </ul>
+                        </li>
+                        <li class="depth-list">
+                          <strong class="bold">지정가</strong>
+                          <ul>
+                            <li>주문가격을 직접 입력</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="tit">
+                    <strong class="bold">조건만족 미체결주문처리 설정</strong>
+                    <div class="page-list-type-01 mt16">
+                      <ul>
+                        <li>
+                          서버감시조건 만족으로 접수된 미체결주문이 일정 조건을 만족하는 경우 2가지 기능 중 선택하여 정정하는 옵션입니다. 옵션을 선택하지 않는 경우, 미체결주문은 장종료시까지
+                          유지됩니다.
+                        </li>
+                        <li class="depth-list">
+                          현재가정정
+                          <ul>
+                            <li>주문가와 현재가가 일정기준 이상 차이나는 경우, 현재가로 최대 5회까지 자동정정</li>
+                            <li>기준 : 1~10틱까지 설정 가능</li>
+                            <li>정정횟수 : 1~5회 범위에서 설정 가능</li>
+                          </ul>
+                        </li>
+                        <li class="depth-list">
+                          (유사)시장가 정정
+                          <ul>
+                            <li>장마감을 기준으로 설정한 시간 전에 시장가로 정정</li>
+                            <li>시간선택 : 1분 / 3분 / 5분 / 7분 / 10분 / 15분 / 30분 / 60분 / 90분 / 120분</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="tit">
+                    <strong class="bold">기타</strong>
+                    <div class="page-list-type-01 mt116">
+                      <ul>
+                        <li class="depth-list">
+                          동일종목 미체결주문 취소
+                          <ul>
+                            <li>
+                              조건만족 시 동일한 종목에 대해 동일한 방향으로 미체결주문이 있는 경우, 해당 미체결주문을 취소하고 서버주문을 접수하는 옵션입니다. 서버주문이 매수인 경우, 매도
+                              미체결주문은 취소되지 않습니다.
+                            </li>
+                            <li>기존주문에 대한 취소 응답이 지연되는 경우, 10초 후 주문을 접수하게 됩니다.</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </main>
+    </div>
+    @@include('../include/script.html')
+  </body>
+</html>

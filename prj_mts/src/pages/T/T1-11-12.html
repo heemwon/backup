@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <base href="../../" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <div>
+      <main class="beginner-guide-wrap">
+        <div class="wrap-table">
+          <p class="tit">매매시간</p>
+          <table>
+            <colgroup>
+              <col width="20%" />
+              <col width="20%" />
+              <col width="40%" />
+              <col width="20%" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th colspan="2" rowspan="2" class="left">구분</th>
+                <th colspan="2">주식거래</th>
+              </tr>
+              <tr>
+                <th>코스피/코스닥/코넥스</th>
+                <th>K-OTC</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="left" rowspan="3">정규 시장</td>
+                <td class="left">거래 시간</td>
+                <td class="left">09:00 ~ 15:30</td>
+                <td class="left">09:00 ~ 15:30</td>
+              </tr>
+              <tr>
+                <td class="left">호가 접수</td>
+                <td class="left">08:20 ~ 15:30</td>
+                <td class="left">09:00 ~ 15:30</td>
+              </tr>
+              <tr>
+                <td class="left">동시 호가</td>
+                <td class="left">
+                  08:30 ~ 09:00<br />
+                  15:20 ~ 15:30
+                </td>
+                <td class="left">-</td>
+              </tr>
+              <tr>
+                <td class="left" rowspan="3">시간외 매매</td>
+                <td class="left">장개 시전</td>
+                <td class="left">
+                  08:30 ~ 08:40<br />
+                  (호가접수 08:20~)<br />
+                  <span class="accent">코넥스 거래 불가</span>
+                </td>
+                <td class="left">-</td>
+              </tr>
+              <tr>
+                <td class="left">시간외 종가</td>
+                <td class="left">
+                  15:40 ~ 16:00<br />
+                  (호가접수 15:30 ~)
+                </td>
+                <td class="left">-</td>
+              </tr>
+              <tr>
+                <td class="left">시간외 단일가</td>
+                <td class="left">
+                  16:00 ~ 18:00<br />
+                  <span class="accent">코넥스 거래 불가</span>
+                </td>
+                <td class="left">-</td>
+              </tr>
+              <tr>
+                <td colspan="2" class="left">예약주문</td>
+                <td class="left">15:40 ~ 익일 07:30</td>
+                <td class="left">-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="page-list-type-01 mt16">
+          <ul>
+            <li>호가접수시간은 당사 주문접수 시간을 의미하며, 정규시장 거래소 호가 접수시간은 거래소/코스닥/코넥스/주식상품 08:20부터, 장개시전 시간외 08:30부터 입니다.</li>
+            <li>시간외 단일가매매는 종목별로 매매 거래시간이 다를 수 있습니다.</li>
+            <li>예약주문은 다음날 오전 8:20에 본주문으로 접수됩니다. 예약주문 내역을 다음날 장시간에 반드시 확인하기 바랍니다.</li>
+            <li>ARS 예약주문은 1년 365일 24시간 이용 가능합니다.</li>
+          </ul>
+        </div>
+        <p class="h6 border-btm mt34">정정/취소주문 안내</p>
+        <ul class="order-info">
+          <li>
+            코스피(KOSPI)
+            <span class="date">1주</span>
+          </li>
+          <li>
+            코스닥(KOSDAQ)
+            <span class="date">1주</span>
+          </li>
+          <li>
+            코넥스(KONEX)
+            <span class="date">1주</span>
+          </li>
+        </ul>
+        <p class="h6 border-btm mt34">주문체결의 우선순위</p>
+        <figure class="sales-group-01">
+          <img src="assets/images/image/sales_system_img_01.png" alt="" />
+        </figure>
+        <p class="body1-2">
+          살 때는 높은 가격의 주문이, 팔 때는 낮은 가격의 주문이 먼저 체결됩니다. 만약 같은 가격이라면 주문시간이 빠른순으로 체결되고, 시간도 같다면 수량이 많은 주문이 먼저 체결됩니다.
+        </p>
+        <p class="h6 border-btm mt34">결제제도</p>
+        <div class="wrap-table mt24">
+          <p class="tit">1. 보통거래(3일결제)</p>
+          <table>
+            <colgroup>
+              <col width="10%" />
+              <col width="45%" />
+              <col width="45%" />
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>월</th>
+                <td class="left">삼성전자 50주 매수</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>화</th>
+                <td></td>
+                <td class="left">삼성전자 50주 매도</td>
+              </tr>
+              <tr>
+                <th>수</th>
+                <td class="left">
+                  삼성전자 50주 입고 매수대금 출금 <br />
+                  [(50)X매수가격+ 매매수수료]
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>목</th>
+                <td class="left">
+                  삼성전자 50주 입고 매수대금 출금 <br />
+                  [(50)X매수가격+ 매매수수료]
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>금</th>
+                <td></td>
+                <td class="left">
+                  삼성전자 50주 입고 매도대금 출금<br />
+                  [(50)X매수가격+ 매매수수료-세금]
+                </td>
+              </tr>
+              <tr>
+                <th>토</th>
+                <td></td>
+                <td class="left">
+                  휴장<br />
+                  (결제일 제외)
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="body1-2 mt16">
+            우리나라는 3일 결제제도를 취하고 있으므로 주식을 매입했을 경우 D+2일에 주식이 실제 입고되며 계좌에서 해당 금액(매수금액+매매수수료)이 빠져나갑니다. 하지만 매도는 D+2일전에도 매수수량 전부
+            또는 일부를 언제든지 가능합니다. 주식을 매도했을 경우 D+2일에 주식이 빠져나가고 해당금액(매도금액-매매수수료-세금)이 계좌에 들어옵니다.
+          </p>
+          <p class="tit mt16">2. 당일결제거래</p>
+          <p class="body1-2 mt16">매매가 성립된 날 당일세 수도 결제하여 매매대금이 정산되는 거래를 주로 채권 매매시 적용됩니다.</p>
+        </div>
+        <p class="h6 mt34">상하한가 폭</p>
+        <div class="wrap-table mt6">
+          <table>
+            <colgroup>
+              <col width="40%" />
+              <col width="60%" />
+            </colgroup>
+            <tbody>
+              <tr>
+                <td class="left">코스피</td>
+                <td class="left">±30%</td>
+              </tr>
+              <tr>
+                <td class="left">코스닥</td>
+                <td class="left">±30%</td>
+              </tr>
+              <tr>
+                <td class="left">코넥스</td>
+                <td class="left">±15%</td>
+              </tr>
+              <tr>
+                <td class="left">시간외 단일가</td>
+                <td class="left">±10%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="h6 border-btm mt34">주문의 종류</p>
+        <div class="page-list-type-01 mt24">
+          <dl>
+            <dt class="tit">지정가</dt>
+            <dd class="desc">고객이 원하는 가격을 입력하여 주식을 주문하는 방식이에요. 보통 현재가보다 유리한 가격으로 거래하고자 할 때 이용합니다.</dd>
+            <dt class="tit">시장가</dt>
+            <dd class="desc">시장에 형성된 가격으로 거래하는 주문 방식으로 가격을 지정할 수 없습니다. 주문이 접수된 시점에서 가장 유리한 가격으로 체결됩니다.</dd>
+            <dt class="tit">조건부지정가</dt>
+            <dd class="desc">지정가로 주문했지만 15시 20분까지 체결되지 않은 경우 시장가 주문으로 전환되는 거래 방식입니다.</dd>
+            <dt class="tit">경매매</dt>
+            <dd class="desc">
+              매도인 1 : 매수인 多 방식으로, 매수장개시 전 시간외시장(07:30~08:30) 매수호가 접수 후 08:30에 채결하며, 가격우선원칙 > 시간우선원칙에 따라 매도수량에 매수주문을 매칭시키고 매도수량
+              전부가 체결되는 주문의 가격을 전체 주문가격의 체결가격으로 합니다.
+            </dd>
+          </dl>
+        </div>
+      </main>
+    </div>
+    @@include('../include/script.html')
+  </body>
+</html>

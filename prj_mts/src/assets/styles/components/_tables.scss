@@ -1,0 +1,139 @@
+.wrap-table {
+  position: relative;
+  .tit {
+    @extend .h6;
+    + table {
+      margin-top: 16px;
+    }
+  }
+  .info {
+    display: inline-block;
+    margin-bottom: 12px;
+    width: 100%;
+    text-align: right;
+    font-size: 12px;
+    line-height: 16px;
+    color: $text-color06;
+  }
+  table {
+    table-layout: fixed;
+    width: 100%;
+    border-top: 1px solid $obj-color06;
+    thead {
+      border-bottom: 1px solid $obj-color04;
+      tr {
+        th {
+          padding: 10px;
+          font-size: 13px;
+          color: $text-color06;
+          line-height: 19px;
+          border-left: 1px solid $obj-color02;
+          border-bottom: 1px solid $obj-color02;
+          background-color: $obj-color01;
+          &:first-child {
+            border-left: none;
+          }
+        }
+      }
+    }
+    tbody {
+      th {
+        padding: 10px;
+        font-size: 13px;
+        color: $text-color06;
+        line-height: 19px;
+        vertical-align: middle;
+        border-bottom: 1px solid $obj-color02;
+        background-color: $obj-color01;
+      }
+      td {
+        padding: 10px;
+        font-size: 14px;
+        color: $text-color08;
+        line-height: 22px;
+        text-align: center;
+        vertical-align: middle;
+        word-break: break-all;
+        border-left: 1px solid $obj-color02;
+        border-bottom: 1px solid $obj-color02;
+        &:first-child {
+          border-left: none;
+        }
+      }
+    }
+    .sub {
+      display: block;
+      font-size: 10px;
+      line-height: 14px;
+    }
+  }
+
+  &.fixed-header {
+    overflow: auto;
+    table {
+      thead {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+      }
+    }
+  }
+
+  &.fixed-left-header {
+    overflow: auto;
+    table {
+      tbody {
+        th {
+          position: sticky;
+          left: 0;
+          z-index: 0;
+        }
+      }
+    }
+  }
+
+  &.fixed-header.fixed-left-header {
+    table {
+      thead {
+        th:first-child {
+          position: sticky;
+          left: 0;
+        }
+      }
+    }
+  }
+  + .wrap-table {
+    margin-top: 24px;
+  }
+  > [class*="page-list-type"],
+  > [class*="piece-list-type"] {
+    margin-top: 10px;
+  }
+
+  &.table-type1 {
+    table {
+      tbody {
+        th,
+        td {
+          text-align: left;
+          vertical-align: middle;
+        }
+        th {
+          background-color: #fff;
+        }
+        td {
+          border-left: 0;
+        }
+      }
+    }
+  }
+  &.table-type2 {
+    table {
+      thead {
+        th {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}

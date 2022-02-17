@@ -1,0 +1,225 @@
+.h0 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 42px;
+}
+.h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 34px;
+}
+.h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.h4 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.h5 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  &.regular {
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
+.h6 {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  &.regular {
+    font-weight: 400;
+  }
+}
+
+.body1 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+}
+.body1-1 {
+  @extend .body1;
+  font-weight: 500;
+}
+.body1-2 {
+  @extend .body1;
+  font-weight: 400;
+}
+.body1-3 {
+  @extend .body1;
+  line-height: 18px;
+}
+.body1-4 {
+  @extend .body1-1;
+  line-height: 18px;
+}
+.body1-5 {
+  @extend .body1-2;
+  line-height: 18px;
+}
+.body1-6 {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.body2 {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 19px;
+}
+.body2-1 {
+  @extend .body2;
+  font-weight: 500;
+}
+.body2-2 {
+  @extend .body2;
+  font-weight: 400;
+}
+.body2-3 {
+  @extend .body2;
+  line-height: 17px;
+}
+.body2-4 {
+  @extend .body2-1;
+  line-height: 17px;
+}
+.body2-5 {
+  @extend .body2-2;
+  line-height: 17px;
+}
+// font-color
+.accent {
+  color: $accent !important;
+  &::before {
+    background-color: $accent !important;
+  }
+}
+.sub {
+  color: $text-color05;
+}
+.accent-link {
+  color: $state-color01;
+}
+.bold {
+  font-weight: 700 !important;
+}
+.typo-border-btm {
+  text-decoration: underline !important;
+}
+.title-type-01 {
+  strong {
+    display: inline-block;
+    width: 100%;
+    font-weight: 500;
+  }
+  .title {
+    @extend .h3;
+  }
+  .badge {
+    @extend .body1-3;
+    color: #ec5f5f;
+    + .title {
+      margin-top: 4px;
+    }
+  }
+  > .desc {
+    @extend .body1-2;
+    margin-top: 8px;
+    color: $text-color06;
+    &.normal {
+      margin-top: 24px;
+      color: $primary;
+    }
+    &.sml {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+  ol {
+    margin-top: 34px;
+    > li {
+      @extend .h6;
+      @extend .regular;
+      @for $i from 1 to 6 {
+        &:nth-child(#{$i}) {
+          position: relative;
+          z-index: 0;
+          &::before {
+            content: "" + $i + "";
+            position: absolute;
+            top: 2px;
+            left: 0;
+            z-index: 1;
+            width: 20px;
+            height: 20px;
+            color: $white;
+            background-color: $primary;
+            border-radius: 50%;
+            vertical-align: middle;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+          }
+        }
+      }
+      > span {
+        display: inline-block;
+        padding-left: 24px;
+      }
+      + li {
+        margin-top: 64px;
+      }
+    }
+  }
+  + .title-type-01 {
+    margin-top: 64px;
+  }
+}
+.title-type-02 {
+  .title {
+    @extend .body1-2;
+  }
+  .desc {
+    margin-top: 2px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: $text-color06;
+  }
+}
+.title-type-03 {
+  .title {
+    @extend .h3;
+    display: inline-block;
+    padding-bottom: 8px;
+    &.border {
+      width: 100%;
+      border-bottom: 1px solid $primary;
+    }
+  }
+  .sub-tit {
+    @extend .h6;
+    @extend .regular;
+    line-height: 26px;
+    margin-top: 24px;
+    + .desc {
+      margin-top: 8px;
+    }
+  }
+  .desc {
+    @extend .body2-2;
+    color: $text-color07;
+  }
+  + .title-type-03 {
+    margin-top: 72px;
+  }
+}

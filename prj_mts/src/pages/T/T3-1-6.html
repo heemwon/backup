@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <base href="../../" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <div>
+      <main>
+        <div class="page-list-type-01">
+          <ul>
+            <li>장시간별 조회조건에 따라 다음과 같이 현재가, 시간외, 예상가가 조회됩니다.</li>
+            <li>현재가: 정규장 시세를 확인할 수 있습니다. 장마감 후에는 종가가 표시되고, 익일 05시30분부터 초기화됩니다. (선물/옵션은 익일 06:30분)</li>
+            <li>시간외: 시간외단일가(16:00~18:00) 시세가 나옵니다. 장마감 후에는 종가 시세가 표시됩니다.</li>
+            <li>예상가: 장전 동시호가(08:10~09:00), 장마감 동시호가(15:20~15:30) 시간의 예상체결가를 확인합니다.단, 초저유동성 종목이나, VI 발동 등 장중에 예상체결가가 나올 수 있습니다.</li>
+            <li>보유종목, 순위/업종/테마 탭의 종목 불러오기 또는 편집한 목록은 다른 매체(HTS, 홈페이지, 다른App에서 조회할 수 없으며, 한국투자앱을 삭제하시면 해당 내역도 초기화됩니다.</li>
+            <li>해외주식의 경우 예상가, 시간외단일가 탭 선택시에도 현재가 시세로 표시가 됩니다.</li>
+          </ul>
+        </div>
+      </main>
+    </div>
+    @@include('../include/script.html')
+  </body>
+</html>

@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <base href="../../../" />
+    <link rel="icon" href="../../../favicon.ico" />
+    <link rel="stylesheet" href="../css/library/choices.min.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>iptables을 활용한 가상 서버 네트워크 제어 - 상세보기 (기술가이드) - 레퍼런스 아키텍쳐 - 소개</title>
+  </head>
+  <body>
+    <div class="wrap tech-guide">
+      <!-- 3depth 메뉴가 있을 시 header태그에 subpage 듀얼클래스를 추가해주세요. -->
+      <header class="subpage">
+        <div class="dim"></div>
+        <nav>
+          <h1>
+            <a service-portal internal><span class="hidden">SAMSUNG SDS Cloud Platform</span></a>
+          </h1>
+
+          <ul class="main-menu">
+            <li>
+              <!-- sub페이지 진입시 해당 대메뉴에 page-active 클래스를 추가해주세요. -->
+              <a href="javascript:;" class="page-active">소개</a>
+              <div class="sub-menu">
+                <div class="page-content">
+                  <div class="left-menu">
+                    <dl>
+                      <dt class="font-heading2">서비스 소개</dt>
+                      <dd>성공적인 디지털 전환을 위한 <br />삼성SDS 클라우드 서비스를 소개합니다.</dd>
+                    </dl>
+                    <a href="intro/services.html" class="btn-border large">자세히 보기</a>
+                  </div>
+                  <div class="right-menu">
+                    <ul>
+                      <li>
+                        <a href="intro/architecture.html">
+                          <strong>아키텍처 센터</strong>
+                          <span>아키텍처 설계에 대한 전문가 지침을 확인해 보세요.</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="intro/case.html">
+                          <strong>고객사례</strong>
+                          <span>비즈니스에 적용된 고객사례를 확인해 보세요..</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="intro/datacenter.html">
+                          <strong>데이터센터</strong>
+                          <span>글로벌 클라우드 인프라를 알아보세요.</span>
+                        </a>
+                      </li>
+                      <!-- START : 7월 이후 -->
+                      <!-- <li>
+                        <a href="intro/news.html">
+                          <strong>최신소식</strong>
+                          <span>삼성 SDS 클라우드의 최신소식을 알아보세요.</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="intro/insight.html">
+                          <strong>인사이트 리포트</strong>
+                          <span>전문가가 제공하는 리포트를 찾아보세요.</span>
+                        </a>
+                      </li> -->
+                      <!-- END : 7월 이후 -->
+                    </ul>
+                  </div>
+                </div>
+                <a href="javascript:;" class="btn-ico close"><span class="hidden">소개 서브메뉴 닫기</span></a>
+              </div>
+            </li>
+            <li>
+              <!-- sub페이지 진입시 해당 대메뉴에 page-active 클래스를 추가해주세요. -->
+              <a href="javascript:;">상품</a>
+              <div class="sub-menu product">
+                <div class="page-content">
+                  <div class="left-menu">
+                    <ul class="list-type2">
+                      <li>
+                        <a href="javascript:;" class="active">Compute</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">Storage</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">Database</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">Container</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">Networking</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">Security</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">Application Service</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">Analytics</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">AI Service</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">Management</a>
+                      </li>
+                    </ul>
+                    <a href="	product.html" class="btn-text arrow-b">모든 상품 보기</a>
+                  </div>
+                  <div class="right-menu">
+                    <div class="product-panel">
+                      <a href="product/compute.html" class="font-heading3">Compute</a>
+                      <ul>
+                        <li>
+                          <a href="product/compute/virtualServer.html">
+                            <strong>Virtual Server</strong>
+                            <span>클라우드 컴퓨팅에 최적화 된 가상 서버</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="product/compute/vmAutoscaling.html">
+                            <strong>VM Auto-Scaling </strong>
+                            <span>수요에 따라 자원을 자동으로 확장/축소하는 서비스</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="product/compute/baremetal.html">
+                            <strong>Bare Metal Server</strong>
+                            <span>가상화하지 않고 사용하는 고성능 물리 서버</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="product-panel">
+                      <a href="product/storage.html" class="font-heading3">Storage</a>
+                      <ul>
+                        <li>
+                          <a href="product/storage/blockStorage.html">
+                            <strong>Block Storage</strong>
+                            <span>대규모 데이터 처리와 DB 워크로드에 사용되는 스토리지</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="product/storage/fileStorage.html">
+                            <strong>File Storage</strong>
+                            <span>네트워크를 통해 다수의 클라이언트가 파일을 공유하는 스토리지</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="product/storage/objStorage.html">
+                            <strong>Object Storage</strong>
+                            <span>웹 기반 데이터 저장 공간을 제공하는 객체 스토리지</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="product/storage/backup.html">
+                            <strong>Backup</strong>
+                            <span>데이터를 백업하고 복구하는 서비스</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="product-panel">
+                      <a href="product/database.html" class="font-heading3">Database</a>
+                      <ul>
+                        <li>
+                          <a href="product/database/dbService.html">
+                            <strong>DB Service</strong>
+                            <span>웹 환경에서 Database를 간편하게 생성하고 관리하는 서비스</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="product-panel">
+                      <a href="product/container.html" class="font-heading3">Container</a>
+                      <ul>
+                        <li>
+                          <a href="product/container/k8sEngine.html">
+                            <strong>Kubernetes Engine</strong>
+                            <span>Kubernetes 컨테이너 오케스트레이션 서비스</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="product/container/k8sApps.html">
+                            <strong>Kubernetes Apps</strong>
+                            <span>Kubernetes 클러스터에 즉시 배포할 수 있도록 SW를 이미지화하여 제공하는 서비스</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="product-panel">
+                      <a href="product/network.html" class="font-heading3">Networking</a>
+                      <ul>
+                        <li>
+                          <a href="product/network/vpc.html">
+                            <strong>VPC</strong>
+                            <span>독립된 가상 네트워크 공간을 제공하는 서비스</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="product/network/securityGroup.html">
+                            <strong>Security Group</strong>
+                            <span>VM/VPC의 트래픽을 제어하는 가상 방화벽 </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="product/network/loadBalancer.html">
+                            <strong>Load Balancer</strong>
+                            <span>서버 트래픽 부하를 자동으로 분산하는 서비스</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="product/network/dns.html">
+                            <strong>DNS</strong>
+                            <span>간편하게 도메인을 설정하고 관리하는 서비스</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="product/network/gslb.html">
+                            <strong>GSLB</strong>
+                            <span>안정적인 네트워크 트래픽을 위한 DNS 기반의 로드 밸런싱</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="product/network/vpn.html">
+                            <strong>VPN</strong>
+                            <span>외부 네트워크와 클라우드 네트워크를 연결하는 서비스</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="product-panel">
+                      <a href="product/security.html" class="font-heading3">Security</a>
+                      <ul>
+                        <li>
+                          <a href="product/security/ddos.html">
+                            <strong>DDoS 대응</strong>
+                            <span>대용량 네트워크 트래픽 공격 탐지 및 대응 서비스</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="product/security/ids.html">
+                            <strong>IDS</strong>
+                            <span>홈페이지 및 애플리케이션 서버에 대한 침입을 실시간으로 탐지 및 대응하는 서비스</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="product/security/waf.html">
+                            <strong>WAF</strong>
+                            <span>웹 취약점과 공격으로부터 웹 애플리케이션을 보호하는 서비스</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="product/security/webVulnerability.html">
+                            <strong>웹 취약점 점검</strong>
+                            <span>웹 서비스의 보안 취약점 점검 및 대응 방법 제공 서비스</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="product/security/certificateMgmt.html">
+                            <strong>인증서 관리</strong>
+                            <span>SSL/TLS 인증서 등록 및 통합 관리 서비스 </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="product-panel">
+                      <a href="product/appService.html" class="font-heading3">Application Service</a>
+                      <ul>
+                        <li>
+                          <a href="product/appService/apiGateway.html">
+                            <strong>API Gateway</strong>
+                            <span>API를 손쉽게 관리하고 모니터링하는 서비스 </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="product/appService/alarm.html">
+                            <strong>Mail/SMS/Push</strong>
+                            <span>Mail, SMS, Push 알림 기능을 제공하는 서비스</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="product-panel">
+                      <a href="product/analytics.html" class="font-heading3">Analytics</a>
+                      <ul>
+                        <li>
+                          <a href="product/analytics/kafka.html">
+                            <strong>Kafka</strong>
+                            <span>Confluent Platform의 Kubernetes 클러스터를 생성/관리하는 서비스</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="product-panel">
+                      <a href="product/aiService.html" class="font-heading3">AI Service</a>
+                      <ul>
+                        <li>
+                          <a href="product/aiService/kubeflow.html">
+                            <strong>Kubeflow</strong>
+                            <span>Kubernetes 기반의 오픈소스 Machine Learning 플랫폼</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="product-panel">
+                      <a href="product/management.html" class="font-heading3">Management</a>
+                      <ul>
+                        <li>
+                          <a href="product/management/logNaudit.html">
+                            <strong>Logging & Audit</strong>
+                            <span>사용자의 활동 내역을 수집하고 분석하는 서비스</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="product/management/monitoring.html">
+                            <strong>Cloud Monitoring</strong>
+                            <span>클라우드 인프라의 안정적인 운영을 지원하는 서비스 </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <a href="javascript:;" class="btn-ico close"><span class="hidden">상품 서브메뉴 닫기</span></a>
+              </div>
+            </li>
+            <li>
+              <!-- sub페이지 진입시 해당 대메뉴에 page-active 클래스를 추가해주세요. -->
+              <a href="javascript:;">요금</a>
+              <div class="sub-menu">
+                <div class="page-content">
+                  <div class="left-menu">
+                    <dl>
+                      <dt class="font-heading2">요금 소개</dt>
+                      <dd>합리적인 삼성SDS 클라우드 요금을 알아보세요.</dd>
+                    </dl>
+                    <a href="pricing.html" class="btn-border large">자세히 보기</a>
+                  </div>
+                  <div class="right-menu">
+                    <ul>
+                      <li>
+                        <a scp-calculator>
+                          <strong>요금 계산기</strong>
+                          <span>삼성SDS 클라우드의 최적화된 요금을 확인해 보세요..</span>
+                        </a>
+                      </li>
+                      <!-- START : 무료체험 숨김 -->
+                      <!-- <li>
+                        <a href="../freetrials.html">
+                          <strong>무료체험</strong>
+                          <span>삼성SDS 클라우드 상품을 무료로 체험해보세요</span>
+                        </a>
+                      </li> -->
+                      <!-- START : 무료체험 숨김 -->
+                    </ul>
+                  </div>
+                </div>
+                <a href="javascript:;" class="btn-ico close"><span class="hidden">요금 서브메뉴 닫기</span></a>
+              </div>
+            </li>
+            <li>
+              <!-- sub페이지 진입시 해당 대메뉴에 page-active 클래스를 추가해주세요. -->
+              <a href="javascript:;">고객지원</a>
+              <div class="sub-menu">
+                <div class="page-content">
+                  <div class="left-menu">
+                    <dl>
+                      <dt class="font-heading2">문의하기</dt>
+                      <dd>궁금한 점이 있거나 도움이 필요하시면 언제든 문의하세요.</dd>
+                    </dl>
+                    <a href="support/question.html" class="btn-border large">문의하기</a>
+                  </div>
+                  <div class="right-menu">
+                    <ul>
+                      <li>
+                        <a href="support/notice.html">
+                          <strong>공지사항</strong>
+                          <span>클라우드 서비스 및 작업 관련 공지를 확인해 보세요..</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="support/faq.html">
+                          <strong>FAQ</strong>
+                          <span>많은 사람들이 궁금해하는 정보를 확인해 보세요..</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <a href="javascript:;" class="btn-ico close"><span class="hidden">고객지원 서브메뉴 닫기</span></a>
+              </div>
+            </li>
+          </ul>
+          <ul class="etc-menu">
+            <!-- START : 7월 이후 -->
+            <!-- <li>
+              <a href="javascript:;" class="btn-ico search"><span class="hidden">검색하기</span></a>
+              <div class="total-search-wrap">
+                <div class="total-search" data-type="inputSearch">
+                  <input type="search" placeholder="검색어를 입력하세요" maxlength="255" autocomplete="off" spellcheck="false" />
+                  <button type="button" class="btn-delete">
+                    <span class="hidden">입력 삭제 버튼</span>
+                  </button>
+                  <button type="button" class="btn-search">
+                    <span class="hidden">search 버튼</span>
+                  </button>
+                </div>
+                <div class="search-list">
+                  <div class="search-box">
+                    <strong>자동완성</strong>
+                    <ul class="list-type2 auto">
+                      <li>
+                        // 주석: 자동완성 문구는 <strong class='mask'></strong> 태그에 감싸주세요
+                        <a href="javascript:;"><strong class="mask">clou</strong>d</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;"><strong class="mask">clou</strong>dnativecon</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;"><strong class="mask">clou</strong>d native computing</a>
+                      </li>
+                    </ul>
+                  </div>
+                  // 주석: 최근검색어가 없을 경우 hidden 듀얼클래스를 추가해주세요. <div class="search-box hidden">
+                  <div class="search-box">
+                    <strong>최근검색</strong>
+                    <ul class="list-type2 recent">
+                      <li>
+                        <a href="javascript:;">storage</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">데이터베이스 소개</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <button type="button" class="btn-text close">취소</button>
+              </div>
+            </li> -->
+            <!-- END : 7월 이후 -->
+            <!-- START : 7월 이후 -->
+            <!-- <li>
+              <div class="select-box1 lang">
+                <select id="" name="">
+                  <option value="kor">KOR</option>
+                  <option value="eng">ENG</option>
+                </select>
+              </div>
+            </li> -->
+            <!-- END : 7월 이후 -->
+            <li><a href="support/question.html">문의하기</a></li>
+            <!-- START : 무료체험 버튼 숨김 -->
+            <!-- <li>
+              <a href="../freetrials.html" class="btn-login">무료체험</a>
+            </li> -->
+            <!-- END : 무료체험 버튼 숨김 -->
+            <li>
+              <a scp-console class="btn-console"><span>Console</span></a>
+              <!-- START : 7월 이후 -->
+              <!-- <a href="javascript:;" aria-haspopup="dialog" data-popup="consolePopup" class="btn-console"><span>Console</span></a> -->
+              <!-- END : 7월 이후 -->
+            </li>
+            <li>
+              <a href="javascript:;" role="button" class="btn-ico ham"><span class="hidden">메뉴열기</span></a>
+            </li>
+          </ul>
+
+          <!-- mobile menu -->
+          <div class="mnb">
+            <div class="mnb-inner">
+              <a href="javascript:;" class="btn-ico close"><span class="hidden">모바일 메뉴 닫기</span></a>
+              <ul class="mmain-menu">
+                <li>
+                  <a href="javascript:;">소개</a>
+                  <div class="msub-menu">
+                    <div class="msub-menu-top">
+                      <a href="javascript:;" class="btn-text arrow">이전으로</a>
+                    </div>
+                    <div class="msub-menu-cont">
+                      <strong class="font-heading4">소개</strong>
+                      <ul>
+                        <li>
+                          <a href="intro/services.html">서비스 소개</a>
+                        </li>
+                        <li>
+                          <a href="intro/architecture.html">아키텍처 센터</a>
+                        </li>
+                        <li>
+                          <a href="intro/case.html">고객사례</a>
+                        </li>
+                        <li>
+                          <a href="intro/datacenter.html">데이터센터</a>
+                        </li>
+                        <!-- START : 7월 이후 -->
+                        <!-- <li>
+                          <a href="intro/news.html">최신소식</a>
+                        </li>
+                        <li>
+                          <a href="intro/insight.html">인사이트 리포트</a>
+                        </li> -->
+                        <!-- END : 7월 이후 -->
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="javascript:;">상품</a>
+                  <div class="msub-menu product">
+                    <div class="msub-menu-top">
+                      <a href="javascript:;" class="btn-text arrow">이전으로</a>
+                    </div>
+                    <div class="msub-menu-cont" data-scroll-lock-scrollable>
+                      <strong class="font-heading4">상품</strong>
+                      <ul>
+                        <li>
+                          <a href="product/compute.html">Compute</a>
+                          <ul class="list-type2">
+                            <li>
+                              <a href="product/compute/virtualServer.html">Virtual Server</a>
+                            </li>
+                            <li>
+                              <a href="product/compute/vmAutoscaling.html">VM Auto-Scaling</a>
+                            </li>
+                            <li>
+                              <a href="product/compute/baremetal.html">Bare Metal Server</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="product/storage.html">Storage</a>
+                          <ul class="list-type2">
+                            <li>
+                              <a href="product/storage/blockStorage.html">Block Storage</a>
+                            </li>
+                            <li>
+                              <a href="product/storage/fileStorage.html">File Storage</a>
+                            </li>
+                            <li>
+                              <a href="product/storage/objStorage.html">Object Storage</a>
+                            </li>
+                            <li>
+                              <a href="product/storage/backup.html">Backup</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="product/database.html">Database</a>
+                          <ul class="list-type2">
+                            <li>
+                              <a href="product/database/dbService.html">DB Service</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="product/container.html">Container</a>
+                          <ul class="list-type2">
+                            <li>
+                              <a href="product/container/k8sEngine.html">Kubernetes Engine</a>
+                            </li>
+                            <li>
+                              <a href="product/container/k8sApps.html">Kubernetes Apps</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="product/network.html">Networking</a>
+                          <ul class="list-type2">
+                            <li>
+                              <a href="product/network/vpc.html">VPC</a>
+                            </li>
+                            <li>
+                              <a href="product/network/securityGroup.html">Security Group</a>
+                            </li>
+                            <li>
+                              <a href="product/network/loadBalancer.html">Load Balancer</a>
+                            </li>
+                            <li>
+                              <a href="product/network/dns.html">DNS</a>
+                            </li>
+                            <li>
+                              <a href="product/network/gslb.html">GSLB</a>
+                            </li>
+                            <li>
+                              <a href="product/network/vpn.html">VPN</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="product/security.html">Security</a>
+                          <ul class="list-type2">
+                            <li>
+                              <a href="product/security/ddos.html">DDoS 대응</a>
+                            </li>
+                            <li>
+                              <a href="product/security/ids.html">IDS</a>
+                            </li>
+                            <li>
+                              <a href="product/security/waf.html">WAF</a>
+                            </li>
+                            <li>
+                              <a href="product/security/webVulnerability.html">웹 취약점 점검</a>
+                            </li>
+                            <li>
+                              <a href="product/security/certificateMgmt.html">인증서 관리</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="product/appService.html">Application Service</a>
+                          <ul class="list-type2">
+                            <li>
+                              <a href="product/appService/apiGateway.html">API Gateway</a>
+                            </li>
+                            <li>
+                              <a href="product/appService/alarm.html">Mail/SMS/Push</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="product/analytics.html">Analytics</a>
+                          <ul class="list-type2">
+                            <li>
+                              <a href="product/analytics/kafka.html">Kafka</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="product/aiService.html">AI Service</a>
+                          <ul class="list-type2">
+                            <li>
+                              <a href="product/aiService/kubeflow.html">Kubeflow</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="product/management.html">Management</a>
+                          <ul class="list-type2">
+                            <li>
+                              <a href="product/management/logNaudit.html">Logging & Audit</a>
+                            </li>
+                            <li>
+                              <a href="product/management/logNaudit.html">Cloud Monitoring</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="msub-menu-bottom">
+                      <a href="product.html" class="btn-sub large">모든 상품 보기</a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="javascript:;">요금</a>
+                  <div class="msub-menu">
+                    <div class="msub-menu-top">
+                      <a href="javascript:;" class="btn-text arrow">이전으로</a>
+                    </div>
+                    <div class="msub-menu-cont">
+                      <strong class="font-heading4">요금</strong>
+                      <ul>
+                        <li>
+                          <a href="pricing.html">요금 소개</a>
+                        </li>
+                        <li>
+                          <!-- START : 수정 : 20210621 모바일 버튼 숨김 -->
+                          <!-- <a href="javascript:;" aria-haspopup="dialog" data-popup="announcementPopup" class="mobile-only">요금 계산기</a> -->
+                          <!-- END : 수정 : 20210621 모바일 버튼 숨김 -->
+                          <a scp-calculator class="pc-only">요금 계산기</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="javascript:;">고객지원</a>
+                  <div class="msub-menu">
+                    <div class="msub-menu-top">
+                      <a href="javascript:;" class="btn-text arrow">이전으로</a>
+                    </div>
+                    <div class="msub-menu-cont">
+                      <strong class="font-heading4">고객지원</strong>
+                      <ul>
+                        <li>
+                          <a href="support/notice.html">공지사항</a>
+                        </li>
+                        <li>
+                          <a href="support/faq.html">FAQ</a>
+                        </li>
+                        <li>
+                          <a href="support/question.html">문의하기</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="metc-menu">
+                <!-- START : 7월 이후 -->
+                <!-- <li>
+                  <div class="select-box1 lang">
+                    <select id="" name="">
+                      <option value="KOR">KOR</option>
+                      <option value="ENG">ENG</option>
+                    </select>
+                  </div>
+                </li> -->
+                <!-- END : 7월 이후 -->
+                <li>
+                  <a href="support/question.html">문의하기</a>
+                </li>
+                <!-- START : 무료체험 버튼 숨김 -->
+                <!-- <li>
+                  <a href="../freetrials.html">무료체험</a>
+                </li> -->
+                <!-- END : 무료체험 버튼 숨김 -->
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- START : 3depth 메뉴가 있을 시 추가해주세요. -->
+        <div class="page-menu">
+          <!-- 소개 -->
+          <!-- sub페이지 중 활성화된 페이지에 active 클래스를 추가해주세요. -->
+
+          <div class="page-menu-inner">
+            <ul>
+              <li>
+                <a href="intro/services.html">서비스 소개</a>
+              </li>
+              <li>
+                <a href="intro/architecture.html" class="active">아키텍처 센터</a>
+              </li>
+              <li>
+                <a href="intro/case.html">고객사례</a>
+              </li>
+              <li>
+                <a href="intro/datacenter.html">데이터센터</a>
+              </li>
+              <!-- START : 7월 이후 -->
+              <!-- <li>
+                <a href="intro/news.html">최신소식</a>
+              </li>
+              <li>
+                <a href="intro/insight.html">인사이트 리포트</a>
+              </li> -->
+              <!-- END : 7월 이후 -->
+            </ul>
+          </div>
+        </div>
+        <!-- END : 3depth 메뉴가 있을 시 추가해주세요. -->
+      </header>
+      <div class="wrap-layer-popup console" data-popup="consolePopup" role="dialog">
+        <div class="inner-layer-popup">
+          <div class="console-content">
+            <div class="wrap-layer-popup-title">
+              <div class="check-box1">
+                <input type="checkbox" id="consoleCheck" />
+                <label for="consoleCheck">
+                  <span class="check"></span>
+                  다시보지 않기
+                </label>
+              </div>
+              <button class="btn-close-popup" data-popup-close="consolePopup"></button>
+            </div>
+            <div class="tab-wrap1" data-type="tab-wrap">
+              <ul class="panels">
+                <li id="panel3-1" role="tabpanel" tabindex="0">
+                  <img src="../images/img/img_dashboard_home.gif" alt="콘솔소개 이미지" />
+                </li>
+                <li id="panel3-2" role="tabpanel" tabindex="0" hidden>
+                  <img src="../images/img/img_iam_home.gif" alt="콘솔소개 이미지" />
+                </li>
+              </ul>
+              <div class="right-content">
+                <div class="card-image">
+                  <div class="card-content">
+                    <h4>다양한 클라우드 자원을<br />고객 맞춤형으로<br />안전하고 편리하게</h4>
+                    <p class="text">
+                      최신 기술로 구축된 클라우드 자원을 셀프 서비스로 생성-관리하고 자원 현황을 실시간 모니터링 할 수 있습니다.
+                    </p>
+                  </div>
+                </div>
+                <ul class="tablist" role="tablist">
+                  <li class="tab-item" role="tab">
+                    <button type="button" class="active btn-chips-filter" role="button" aria-controls="panel3-1" data-type="tab-item">
+                      대시보드
+                    </button>
+                  </li>
+                  <li class="tab-item" role="tab">
+                    <button type="button" class="btn-chips-filter" role="button" aria-controls="panel3-2" data-type="tab-item">
+                      권한관리 서비스(IAM)
+                    </button>
+                  </li>
+                </ul>
+                <ul class="login-btn">
+                  <li>
+                    <a href="javascript:;" class="btn-solid large reverse">회원가입</a>
+                  </li>
+                  <li>
+                    <a href="javascript:;" class="btn-opacity large">기존 SDS회원 로그인</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrap-layer-popup" data-popup="announcementPopup" role="dialog">
+        <div class="inner-layer-popup">
+          <div class="wrap-layer-popup-title" tabindex="0">
+            <strong class="font-heading3">안내</strong>
+            <button class="btn-close-popup" data-popup-close="announcementPopup"></button>
+          </div>
+          <div class="layer-popup-contents font-body4">
+            <div class="inner">해당 기능은 PC에서만 지원됩니다.</div>
+          </div>
+          <div class="layer-popup-bottom">
+            <button type="button" class="btn-solid w100" data-popup-close="announcementPopup">확인</button>
+          </div>
+        </div>
+      </div>
+      <article class="content">
+        <div class="hero-sub">
+          <div class="content">
+            <div class="sub-content">
+              <h2 class="font-heading1">iptables을 활용한 가상 서버 네트워크 제어</h2>
+              <a
+                href="../pdf/SDS_Technical_Guide_Network_control_of_virtual_servers_using_iptables_v1_kor.pdf"
+                target="_blank"
+                class="btn-border large"
+                ><i class="ico-link"></i>자세히 보기</a
+              >
+            </div>
+          </div>
+          <div class="visual-tab">
+            <nav>
+              <ul class="tablist">
+                <li><a href="javascript:;" data-scroll-anchor>개요</a></li>
+                <li><a href="javascript:;" data-scroll-anchor>NETFILTER가 제공하는 HOOK POINT</a></li>
+                <li><a href="javascript:;" data-scroll-anchor>IPTABLES 동작 원리</a></li>
+                <li><a href="javascript:;" data-scroll-anchor>테이블</a></li>
+                <li><a href="javascript:;" data-scroll-anchor>체인</a></li>
+                <li><a href="javascript:;" data-scroll-anchor>패킷 흐름도</a></li>
+                <li><a href="javascript:;" data-scroll-anchor>IPTABLES 룰</a></li>
+                <li><a href="javascript:;" data-scroll-anchor>타겟</a></li>
+                <li><a href="javascript:;" data-scroll-anchor>POLICY CHAIN DEFAULT BEHAVIOR</a></li>
+              </ul>
+              <span class="progress-bar"></span>
+            </nav>
+          </div>
+        </div>
+        <div class="right-layout" data-scroll-section>
+          <div class="left-content">
+            <div class="detail-content">
+              <h3 class="font-heading2">개요</h3>
+              <div class="column-box">
+                이 문서에서는 iptables 동작 원리의 바탕이 되는 Netfilter 라는 프레임워크와 기본적인 iptables 사용법에 대해 다뤄보겠습니다.
+                <br /><br />
+                iptables 를 이용해서 리눅스의 방화벽 기능이 동작되게 하는 것은 실제로는 iptables 가 아니라, Netfilter 라는 리눅스 커널에
+                이미 내장되어 있는 프레임워크 덕분입니다. Netfilter 를 주로 패킷 필터링 프레임워크(Packet Filtering Framework)라고 부르는데,
+                말 그대로 패킷을 필터링할 수 있는 뼈대를 제공한다고 이해하면 됩니다.
+                <br /><br />
+                즉, Netfilter 자체가 패킷 필터링을 구현해서 모든 규칙을 다 가지고 있는 것은 아니고, iptables 라는 User-Space 에서 실행되는
+                툴을 제공하고, 이 툴을 사용해 룰을 추가하면, 패킷이 리눅스 커널에 들어와서 Netfilter 가 정해놓은 각 지점을 통과할 때 미리
+                정해진 룰들이 있으면, Netfilter 가 패킷이 그 룰들을 거치게 만들어서 drop 또는 accept 등으로 동작하게 합니다.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-layout" data-scroll-section>
+          <div class="left-content">
+            <div class="detail-content">
+              <h3 class="font-heading2">Netfilter가 제공하는 Hook point</h3>
+              <div class="column-box">
+                Netfilter 는 5개의 Hook point 를 제공합니다. 패킷들이 각 지점을 통과하면서 각 Hook point 에 등록된 커널 모듈을 트리거하게
+                됩니다.
+                <br /><br />
+                동일 Hook point 에 복수 개의 커널 모듈을 등록해서 사용할 수 있으므로, 커널 모듈이 Hook point 를 잡아서 쓰겠다고 등록할 때
+                Priority Number 를 입력해서 그 우선 순위대로 커널 모듈을 트리거하게 됩니다.
+                <ul class="list-type6 bullet-none">
+                  <li>
+                    <strong class="title">NF_IP_PRE_ROUTING</strong>
+                    <ul class="list">
+                      <li>
+                        외부에서 온 패킷이 리눅스 커널의 네트워크 스택에 들어온 직후에 발생하는 Hook입니다. 패킷을 라우팅하기 전에
+                        발생합니다.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong class="title">NF_IP_LOCAL_IN</strong>
+                    <ul class="list">
+                      <li>패킷이 라우팅된 후 목적지가 자신일 경우, 패킷을 로컬 프로세스에 전달하기 전에 발생하는 Hook입니다.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong class="title">NF_IP_FORWARD</strong>
+                    <ul class="list">
+                      <li>패킷이 라우팅된 후 목적지가 자신이 아닐 경우, 패킷을 다른 곳으로 Forwarding하는 경우 발생하는 Hook입니다.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong class="title">NF_IP_LOCAL_OUT</strong>
+                    <ul class="list">
+                      <li>패킷이 프로세스에서 나와 네트워크 스택을 통과하기 전에 발생하는 Hook입니다.</li>
+                    </ul>
+                  </li>
+                  <li class="margin-bottom">
+                    <strong class="title">NF_IP_POST_ROUTING</strong>
+                    <ul class="list">
+                      <li>패킷이 네트워크 스택을 통과한 후 밖으로 보내기 전 발생하는 Hook입니다.</li>
+                    </ul>
+                  </li>
+                </ul>
+                위 5 개의 Hook point 를 그림으로 나타내면 다음과 같습니다.
+                <figure class="margin-bottom">
+                  <img src="../images/img/img_w_ip_f1_1_5_23.jpg" alt="Figure 1. Netfilter 패킷 경로" />
+                  <figcaption class="explan-footer">Figure 1. Netfilter 패킷 경로</figcaption>
+                </figure>
+                위 그림은 Netfilter 에서 패킷의 경로를 나타내고 있습니다.
+                <br /><br />
+                Routing1 은 NIC(Network Interface Card)에서 전달받은 패킷이 로컬 프로세스가 받아야 하는 패킷인지, 아니면 다른 호스트가
+                받아야 하는 패킷인지 구분하여 라우팅하는 과정을 나타냅니다.<br />
+                Routing2 는 프로세스에서 전송한 패킷이 NF_IP_LOCAL_OUT 에서 DNAT 될 경우 다시 라우팅하는 과정을 나타냅니다.
+                <br /><br />
+                정리하면, 패킷 경로는 아래의 3 가지로 구분할 수 있습니다.
+                <ul class="list-type6 bullet-none">
+                  <li>
+                    <strong class="title">외부에서 온 패킷의 목적지가 자신인 경우</strong>
+                    <ul class="list">
+                      <li>NF_IP_PRE_ROUTING -> NF_IP_LOCAL_IN -> Process</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong class="title">외부에서 온 패킷의 목적지가 자신이 아닌 경우</strong>
+                    <ul class="list">
+                      <li>NF_IP_PRE_ROUTING -> NF_IP_FORWARD -> NF_IP_POST_ROUTING -> Network Interface</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong class="title">로컬 프로세스에서 전송하는 패킷의 경우</strong>
+                    <ul class="list">
+                      <li>NF_IP_LOCAL_OUT -> NF_IP_POST_ROUTING -> Network Interface</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-layout" data-scroll-section>
+          <div class="left-content">
+            <div class="detail-content">
+              <h3 class="font-heading2">iptables 동작 원리</h3>
+              <div class="column-box">
+                iptables 에 의한 패킷 필터링 메커니즘을 이해하기 위해서는 아래 네 가지 용어 또는 구조를 이해해야 합니다.<br />
+                - tables, chains, rules, targets
+                <br /><br />
+                테이블(tables)은 이미 커널에 만들어져 있고 5개가 있습니다. 각 테이블에는 미리 정의된 체인(chain)들이 있고, 이 체인에
+                룰(rule)들이 들어가게 됩니다. 룰에는 타겟(target)을 정하게 되어 있는데, 어떤 패킷이 해당 룰에 일치(match)하면 그 타겟으로
+                가서 다시 다른 룰에 일치하는지 검사하거나,drop이나 accept 등의 동작을 할 수 있습니다.
+                <br /><br />
+                그럼 각 구조에 대해서 좀 더 알아보겠습니다.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-layout" data-scroll-section>
+          <div class="left-content">
+            <div class="detail-content">
+              <h3 class="font-heading2">테이블</h3>
+              <div class="column-box">
+                다음과 같이 총 5가지의 테이블을 제공합니다.
+                <ul class="list-type6 bullet-number">
+                  <li>
+                    <strong class="title">Filter Table</strong>
+                    <ul class="list bullet-none">
+                      <li>
+                        패킷 필터링을 위한 테이블입니다. 패킷을 원래 목적지까지 전달할지, 아니면 drop할지를 결정합니다. Firewall 기능은
+                        Filter Table을 통해 구축할 수 있습니다.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong class="title">Mangle Table</strong>
+                    <ul class="list bullet-none">
+                      <li>
+                        패킷의 IP 헤더를 바꾸는데 사용됩니다. 예를 들어, 패킷의 TTL(Time to Live)을 변경하거나 패킷을 Marking하여 다른
+                        iptables의 테이블이나 네트워크 툴에서 패킷을 구분할 수 있도록 할 수 있습니다.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong class="title">NAT Table</strong>
+                    <ul class="list bullet-none">
+                      <li>
+                        패킷 NAT(Network Address Translation)를 위한 테이블입니다. 패킷의 Source Address나 Destination Address를 변경합니다.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong class="title">Raw Table</strong>
+                    <ul class="list bullet-none">
+                      <li>
+                        Netfilter 프레임워크는 Hook 뿐만 아니라 Connection Tracking 기능을 제공합니다. 이전에 도착한 패킷들을 바탕으로 방금
+                        도착한 패킷의 Connection을 추적합니다. Raw Table은 특정 패킷이 Connection Tracking에서 제외되도록 설정합니다.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong class="title">Security Table</strong>
+                    <ul class="list bullet-none">
+                      <li>SELinux에서 패킷을 어떻게 처리할지 결정하기 위한 테이블입니다.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-layout" data-scroll-section>
+          <div class="left-content">
+            <div class="detail-content">
+              <h3 class="font-heading2">체인</h3>
+              <div class="column-box">
+                각 테이블에는 빌트인(built-in) 체인들이 있고, 이 체인들의 이름은 Netfilter Hook 이름을 따와서 만들었습니다.
+                <ul class="list-type6 bullet-number">
+                  <li>
+                    <strong class="title">PREROUTING</strong>
+                    <ul class="list bullet-none">
+                      <li>NF_IP_PRE_ROUTING Hook이 트리거합니다.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong class="title">INPUT</strong>
+                    <ul class="list bullet-none">
+                      <li>NF_IP_LOCAL_IN Hook이 트리거합니다.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong class="title">FORWARD</strong>
+                    <ul class="list bullet-none">
+                      <li>NF_IP_FORWARD Hook이 트리거합니다.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong class="title">OUTPUT</strong>
+                    <ul class="list bullet-none">
+                      <li>NF_IP_LOCAL_OUT Hook이 트리거합니다.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong class="title">POSTROUTING</strong>
+                    <ul class="list bullet-none">
+                      <li>NF_IP_POST_ROUTING Hook이 트리거합니다.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-layout" data-scroll-section>
+          <div class="left-content">
+            <div class="detail-content">
+              <h3 class="font-heading2">패킷 흐름도</h3>
+              <div class="column-box">
+                iptables 에서 패킷의 경로는 다음과 같습니다.
+                <figure class="margin-bottom">
+                  <img src="../images/img/img_w_ip_f2_1_5_23.jpg" alt="패킷 흐름도" />
+                  <figcaption class="explan-footer">Figure 2. iptables 패킷 경로</figcaption>
+                </figure>
+                위 그림처럼 패킷들은 각 Hook 에서 여러 테이블들을 통과하면서 처리됩니다. 물론 각 테이블에는 여러 체인들이 있고, 각 체인에
+                룰이 등록되는데, 패킷이 어떤 룰에 매칭되어서 그 운명이 결정된다면(예를 들어, accept 또는 drop), 다음 체인 또는 테이블로
+                진행하지 않습니다.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-layout" data-scroll-section>
+          <div class="left-content">
+            <div class="detail-content">
+              <h3 class="font-heading2">iptables 룰</h3>
+              <div class="column-box">
+                룰은 특정 테이블의 특정 체인에 등록되어 있고, 각 체인들이 호출될 때 패킷이 등록된 룰과의 매치 여부를 확인한 후 액션을
+                결정합니다.
+                <br /><br />
+                룰의 매치 기준으로는 프로토콜 타입, 출발지 주소/포트, 목적지 주소/포트, input/output interface 등의 조합이 될 수 있습니다.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-layout" data-scroll-section>
+          <div class="left-content">
+            <div class="detail-content">
+              <h3 class="font-heading2">타겟</h3>
+              <div class="column-box">
+                타겟은 패킷이 등록한 룰과 매치되었을 때 트리거되는 액션입니다.
+                <br /><br />
+                타겟은 -j 또는 —jump 옵션을 사용합니다. 타겟은 사용자 정의 체인(User-defined Chain)이거나, 빌트인 타겟 중의 하나이거나, 타겟
+                확장(extension)일 수 있습니다. 사용자 정의 체인인 경우에는 그 지정된 사용자 정의 체인으로 점프해서 룰 매칭 여부를 계속
+                시도합니다. <br />
+                빌트인 타겟은 ACCEPT, DROP, QUEUE, RETURN 이 있는데 다음과 같습니다.
+                <ol class="list-type4 bullet-number margin-bottom">
+                  <li>
+                    <p class="desc">ACCEPT - iptables가 패킷을 받아들입니다.</p>
+                  </li>
+                  <li>
+                    <p class="desc">
+                      DROP - iptables가 패킷을 버립니다. 시스템에 연결하려는 사람에게는 시스템이 존재하지 않는 것처럼 보입니다.
+                    </p>
+                  </li>
+                  <li>
+                    <p class="desc">QUEUE - iptables는 패킷을 userspace로 전달합니다.</p>
+                  </li>
+                  <li>
+                    <p class="desc">
+                      RETURN - iptables는 이 패킷에 대한 현재 체인의 다음 규칙 세트 실행을 중지합니다. 컨트롤은 호출 체인으로 반환됩니다.
+                    </p>
+                  </li>
+                </ol>
+                타겟 확장으로는 REJECT, LOG 가 있습니다.
+                <ol class="list-type4 bullet-number margin-bottom">
+                  <li>
+                    <p class="desc">
+                      REJECT: iptables는 패킷을 “거부”합니다. TCP의 경우 “connection reset” 패킷을, UDP 또는 ICMP의 경우 “destination host
+                      unreachable” 패킷을 보냅니다. (위 빌트인 타겟인 DROP 과 차이가 있음)
+                    </p>
+                  </li>
+                </ol>
+                만약, 타겟이 빌트인 타겟이면 패킷의 운명이 바로 결정되기 때문에 현재 테이블에서의 패킷 처리는 더 이상 진행하지 않습니다.
+                <br /><br />
+                만약, 타겟이 사용자 정의 체인이고 패킷의 운명이 이 사용자 정의 체인에 의해 결정되지 않는다면, 다시 원래 체인으로 돌아와서
+                나머지 룰과의 매칭을 시도하게 됩니다.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-layout" data-scroll-section>
+          <div class="left-content">
+            <div class="detail-content">
+              <h3 class="font-heading2">Policy Chain Default Behavior</h3>
+              <div class="column-box">
+                위에서 언급한 각 체인들에 룰들이 추가된다고 했을 때, 만약 패킷이 어떤 룰에도 매칭되지 않으면 어떻게 처리할 것인지를 정해야
+                합니다.
+                <div class="table-wrap full-table margin-bottom">
+                  <div class="table-scroll-wrap">
+                    <table>
+                      <colgroup>
+                        <col width="35%" />
+                        <col width="55%" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th>Options</th>
+                          <th>Description</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>-N (--new-chain)</td>
+                          <td class="left">새로운 체인 추가</td>
+                        </tr>
+                        <tr>
+                          <td>-F (--flush)</td>
+                          <td class="left">해당 체인의 모든 rule 삭제</td>
+                        </tr>
+                        <tr>
+                          <td>-P (--policy)</td>
+                          <td class="left">정책 변경</td>
+                        </tr>
+                        <tr>
+                          <td>-R (--replace)</td>
+                          <td class="left">Rule 을 교체</td>
+                        </tr>
+                        <tr>
+                          <td>-A (--append)</td>
+                          <td class="left">새로운 rule 추가</td>
+                        </tr>
+                        <tr>
+                          <td>-I (--insert)</td>
+                          <td class="left">새로운 rule 삽입</td>
+                        </tr>
+                        <tr>
+                          <td>-X (--delete-chain)</td>
+                          <td class="left">빈 체인 삭제</td>
+                        </tr>
+                        <tr>
+                          <td>-L (--list)</td>
+                          <td class="left">테이블에 정의된 rule 확인</td>
+                        </tr>
+                        <tr>
+                          <td>-D (--delete)</td>
+                          <td class="left">Rule 삭제</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                현재 정책을 보려면 아래와 같이 수행합니다.
+                <div class="code-wrap margin-bottom">
+                  &#36; sudo iptables -L &#124; grep policy<br />
+                  Chain INPUT (policy ACCEPT)<br />
+                  Chain FORWARD (policy ACCEPT)<br />
+                  Chain OUTPUT (policy ACCEPT)
+                </div>
+                iptables 명령어에서 ­t 옵션으로 테이블을 지정하지 않으면 디폴트 값이 filter table 이므로 다른 테이블(예: nat)의 체인들에
+                대한 디폴트 정책을 알고 싶으면 아래와 같이 수행합니다.
+                <div class="code-wrap margin-bottom">&#36; sudo iptables ­t nat ­L &#124; grep policy</div>
+                만약, 테이블의 각 체인들에 대한 디폴트 정책을 변경하고 싶으면 아래와 같이 -P 옵션을 사용합니다.
+                <br /><br />
+                다음은 디폴트 값으로 모든 패킷에 대해 accept 일 경우입니다.
+                <div class="code-wrap margin-bottom">
+                  &#36; sudo iptables -P INPUT ACCEPT<br />
+                  &#36; sudo iptables -P OUTPUT ACCEPT<br />
+                  &#36; sudo iptables -P FORWARD ACCEPT<br />
+                </div>
+                다음은 디폴트 값으로 모든 패킷에 대해 drop 일 경우입니다.
+                <div class="code-wrap margin-bottom">
+                  &#36; sudo iptables -P INPUT DROP<br />
+                  &#36; sudo iptables ­P OUTPUT DROP<br />
+                  &#36; sudo iptables -P FORWARD DROP<br />
+                </div>
+                현재 룰을 확인하기 위해서는 다음의 명령을 수행합니다.
+                <div class="code-wrap margin-bottom">
+                  &#36; sudo iptables ­L<br />
+                  &#36; sudo iptables -S
+                </div>
+                체인의 끝에 룰을 추가하기(-A (—append)) 위해서는 다음의 명령을 수행합니다.
+                <div class="code-wrap margin-bottom">&#36; sudo iptables -A</div>
+                체인의 특정 위치에 룰을 삽입(-I(—insert)) 하려면 다음의 명령을 수행합니다.
+                <div class="code-wrap margin-bottom">&#36; sudo iptables -I</div>
+                룰을 교체(-R(—replace))하려면 다음의 명령을 수행합니다.
+                <div class="code-wrap margin-bottom">&#36; sudo iptables -R</div>
+                룰을 삭제(-D(—delete))하려면 다음의 명령을 수행합니다.
+                <div class="code-wrap margin-bottom">&#36; sudo iptables -D</div>
+                이상으로 Netfilter 에 대한 개념과 iptables 를 활용한 다양한 사용방법에 대해 살펴봤습니다. 클라우드 환경에서 가상 서버의
+                완벽한 네트워크 라우팅 설정에 도움이 되길 바랍니다.
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <footer>
+        <div class="page-content">
+          <div class="ft-top">
+            <div class="ft-info">
+              <strong><span class="hidden">SDS Cloud Platform Essential</span></strong>
+
+              <ul class="ft-link">
+                <!-- START : 7월 이후 -->
+                <!-- <li>
+                  <div class="select-box1 lang">
+                    <select id="" name="">
+                      <option value="KOR">KOR</option>
+                      <option value="ENG">ENG</option>
+                    </select>
+                  </div>
+                </li> -->
+                <!-- END : 7월 이후 -->
+                <li><a href="support/question.html" class="btn-link qna">문의하기 (1661-3311)</a></li>
+              </ul>
+            </div>
+            <nav class="ft-menu">
+              <ul>
+                <li>
+                  <button type="button" class="menu-title">소개</button>
+                  <div class="menu-depth2">
+                    <ul>
+                      <li>
+                        <a href="intro/services.html">서비스 소개</a>
+                      </li>
+                      <li>
+                        <a href="intro/architecture.html">아키텍처 센터</a>
+                      </li>
+                      <li>
+                        <a href="intro/case.html">고객사례</a>
+                      </li>
+                      <li>
+                        <a href="intro/datacenter.html">데이터센터</a>
+                      </li>
+                      <!-- START : 7월 이후 -->
+                      <!-- <li>
+                        <a href="intro/news.html">최신소식</a>
+                      </li>
+                      <li>
+                        <a href="intro/insight.html">인사이트 리포트</a>
+                      </li> -->
+                      <!-- END : 7월 이후 -->
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <button type="button" class="menu-title">상품</button>
+                  <div class="menu-depth2">
+                    <ul>
+                      <li>
+                        <a href="product/compute.html">Compute</a>
+                      </li>
+                      <li>
+                        <a href="product/storage.html">Storage</a>
+                      </li>
+                      <li>
+                        <a href="product/database.html">Database</a>
+                      </li>
+                      <li>
+                        <a href="product/container.html">Container</a>
+                      </li>
+                      <li>
+                        <a href="product/network.html">Networking</a>
+                      </li>
+                      <li>
+                        <a href="product/security.html">Security</a>
+                      </li>
+                      <li>
+                        <a href="product/appService.html">Application Service</a>
+                      </li>
+                      <li>
+                        <a href="product/analytics.html">Analytics</a>
+                      </li>
+                      <li>
+                        <a href="product/aiService.html">AI Service</a>
+                      </li>
+                      <li>
+                        <a href="product/management.html">Management</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <button type="button" class="menu-title">요금</button>
+                  <div class="menu-depth2">
+                    <ul>
+                      <li>
+                        <a href="pricing.html">요금 소개</a>
+                      </li>
+                      <li>
+                        <!-- START : 수정 : 20210621 모바일 버튼 숨김 -->
+                        <!-- <a href="javascript:;" aria-haspopup="dialog" data-popup="announcementPopup" class="mobile-only">요금 계산기</a> -->
+                        <!-- END : 수정 : 20210621 모바일 버튼 숨김 -->
+                        <a scp-calculator class="pc-only">요금 계산기</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <button type="button" class="menu-title">고객지원</button>
+                  <div class="menu-depth2">
+                    <ul>
+                      <li>
+                        <a href="support/notice.html">공지사항</a>
+                      </li>
+                      <li>
+                        <a href="support/faq.html">FAQ</a>
+                      </li>
+                      <li>
+                        <a href="support/question.html">문의하기</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="ft-bottom">
+            <ul class="ft-policy">
+              <li>
+                <a href="policy/privacy.html">개인정보처리방침</a>
+              </li>
+              <li>
+                <a href="policy/terms.html">서비스 이용약관</a>
+              </li>
+              <li>
+                <a href="policy/sla.html">서비스 수준 협약</a>
+              </li>
+            </ul>
+            <address class="font-body5">
+              <span>서울시 송파구 올림픽로 35길 125 삼성SDS (05510)</span>
+              <span>대표전화 : <a href="tel:02-6155-3114">02-6155-3114</a></span>
+              <span>Copyright SAMSUNG SDS. All rights reserved.</span>
+            </address>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="../js/ie.js"></script>
+    <script src="../js/library/scroll-lock.min.js"></script>
+    <script src="../js/library/ScrollMagic.min.js"></script>
+    <script src="../js/library/choices.min.js"></script>
+    <script src="../js/pub.js"></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <base href="../../" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <div>
+      <main>
+        <div class="page-list-type-01">
+          <ul>
+            <li>
+              장내에서 거래 중인 채권을 거래하는 화면입니다.
+              <ul class="depth-list">
+                <li>매매수량단위 : 액면 1원 단위</li>
+                <li>호가수량단위 : 액면 1만원 단위</li>
+              </ul>
+            </li>
+            <li>
+              시장구분
+              <ul class="depth-list">
+                <li>일반 : 모든 상장채권(단, 소액시장거래대상 호가의 경우 일반시장거래가 제한됩니다.)</li>
+                <li>
+                  소액 : 1인당 호가수량이 액면 5천만원 이하인 당월/전월에 발행된 제1종 국민주택채권, 도시철도채권, 지역개발채권<br />
+                  * 고객 기준, 매수/매도 각 5,000만원, 체결 수량은 제외됩니다.
+                </li>
+              </ul>
+            </li>
+            <li>매매는 거래소 장시간과 동일하게 운영되어 15시 30분까지 가능합니다.</li>
+            <li>소액채권의 경우 소액시장 참여여부를 잘못 선택하여 주문이 거부되는 경우가 있으므로 주문체결 여부를 반드시 확인하시기 바랍니다.</li>
+            <li>채권매매수수료는 시장구분(일반/소액) 및 잔존기간에 따라 다르게 적용됩니다.</li>
+          </ul>
+        </div>
+      </main>
+    </div>
+    @@include('../include/script.html')
+  </body>
+</html>

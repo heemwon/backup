@@ -1,0 +1,106 @@
+.tf {
+  padding: 12px 36px 12px 16px;
+  @extend .body1;
+  font-weight: 400;
+  border: 1px solid #e3e4e5;
+  border-radius: 4px;
+  background-color: $obj-color01;
+
+  &:focus,
+  &:hover {
+    border: 1px solid #0b0b0b;
+  }
+
+  &.error {
+    color: $state-color05;
+    border-color: $state-color05;
+    background-color: #fff8f9;
+    &::after {
+      display: block;
+    }
+  }
+
+  &.alternative {
+    padding: 8px 36px 8px 16px;
+  }
+
+  &.multi {
+    padding: 12px 14px 12px 16px;
+    height: 92px;
+    @extend .body1;
+    font-weight: 400;
+    resize: none;
+  }
+}
+
+.tf[readonly],
+.tf[readonly]:hover,
+.tf[readonly]:focus,
+.tf[readonly]:active {
+  color: $text-color05;
+}
+
+.tf[disabled],
+.tf[disabled]:hover,
+.tf[disabled]:focus,
+.tf[disabled]:active {
+  color: $text-color03;
+  text-shadow: none;
+}
+
+.wrap-tf-help {
+  display: flex;
+  flex-direction: column;
+  label {
+    @extend .body1;
+    font-weight: 400;
+  }
+  .tf {
+    margin-top: 8px;
+  }
+  .msg {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  &.error {
+    .tf {
+      @extend .tf.error;
+    }
+    .msg {
+      color: $state-color05;
+    }
+  }
+}
+
+.wrap-tf-label {
+  display: flex;
+  flex-direction: column;
+  label {
+    @extend .body1;
+    font-weight: 400;
+  }
+  .tf {
+    margin-top: 8px;
+  }
+  .msg {
+    display: none;
+  }
+
+  &.error {
+    .tf {
+      @extend .tf.error;
+    }
+    .msg {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 4px;
+      font-size: 12px;
+      color: $state-color05;
+      line-height: 18px;
+    }
+  }
+}

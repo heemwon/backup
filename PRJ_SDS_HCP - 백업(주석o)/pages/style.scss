@@ -1,0 +1,63 @@
+.wrap-layer-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 120;
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 1920px;
+  background-color: #fff;
+  border: 1px solid black;
+  transform: translate(-50%, -50%);
+  .txt-box {
+    .popup-tlt {
+      font-size: 36px;
+      font-weight: 500;
+      line-height: 54px;
+    }
+    .popup-etc {
+      margin-top: 20px;
+      font-size: 16px;
+      line-height: 24px;
+      color: #888;
+      li {
+        font-size: 16px;
+        line-height: 24px;
+        color: #888;
+      }
+      .list-num {
+        margin-left: 10px;
+        list-style-type: decimal;
+        ul {
+          margin-left: 10px;
+        }
+      span {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 16px;
+      }
+    }
+  }
+  .btn-close-popup {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 14px;
+    height: 14px;
+    background-image: url('../images/ico/ico_closed_pop.png');
+    background-size: 14px;
+  }
+  .check-box1 {
+    font-size: 14px;
+    line-height: 20px;
+    label {
+      .check {
+        margin-right: 8px;
+        width: 16px;
+        height: 16px;
+        border: 1px solid #a5a7ad;
+        background-color: #fff;
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <base href="../../" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <div>
+      <main class="customer-service-wrap">
+        <div class="form-item name">
+          <div class="txt-wrap">
+            <p class="tit">연락처</p>
+            <a href="javascript:;" class="btn btn-text sml">연락처 수정</a>
+          </div>
+          <div class="border-box normal">
+            <ul>
+              <li>
+                <span class="category">휴대폰</span>
+                <span class="result">010-1234-****</span>
+              </li>
+              <li>
+                <span class="category">이메일</span>
+                <span class="result">ab******@abc.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="form-wrap mt24">
+          <div class="form-item">
+            <p class="tit">문의내용</p>
+            <div class="input-txt-wrap">
+              <!-- START : 입력값이 없을 경우 err 클래스를 추가해주세요 -->
+              <div class="input-txt-item">
+                <div class="input-textarea-header">
+                  <button type="button" class="question-category">문의</button>
+                  <input type="text" id="title" value placeholder="제목을 입력해주세요." required />
+                </div>
+                <span class="err-msg">제목은 필수사항입니다.</span>
+                <!-- START : 문의유형 선택 팝업 -->
+                <div class="input-select-wrap">
+                  <div class="dim"></div>
+                  <div class="content">
+                    <strong class="tit">문의유형 선택</strong>
+                    <p class="desc">계좌조회와 관련된 업무처리는 답변이 불가하므로 계좌관리점 또는 고객센터로 연락주시기 바랍니다.</p>
+                    <ul>
+                      <li><button type="button" class="select-menu">펀드</button></li>
+                      <li><button type="button" class="select-menu">채권</button></li>
+                      <li><button type="button" class="select-menu">ELS</button></li>
+                      <li><button type="button" class="select-menu">그 외 투자상품</button></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- START : 입력값이 없을 경우 err 클래스를 추가해주세요 -->
+              <div class="input-txt-item">
+                <textarea
+                  id="cpntent"
+                  cols="30"
+                  rows="10"
+                  placeholder="문의내용을 입력해주세요.
+개인정보(주민등록번호, 계좌번호, 연락처 등)가
+포함되지 않도록 주의해 주시기 바랍니다."
+                  class="input-textarea-wrap"
+                  required
+                ></textarea>
+                <span class="err-msg">내용은 필수사항입니다.</span>
+                <span class="hint-txt">
+                  <span class="cnt">0</span>
+                  /1000자
+                </span>
+              </div>
+              <div class="input-txt-item checkbox">
+                <input type="checkbox" id="personal-check" />
+                <label for="personal-check" class="personal-label">개인정보 수집·이용에 동의합니다.<a href="pages/CS/CS1-5-1-5-1-2.html" class="btn type-02">상세보기</a></label>
+              </div>
+              <div class="piece-list-type-01 small mt24">
+                <p class="tit">유의사항</p>
+                <ul>
+                  <li>상담시간: 08:30~17:00 (토/일요일, 공휴일 제외)</li>
+                  <li>금융상품 상담 외 문의는 상담이 제한될 수 있습니다.</li>
+                  <li>운용원칙: 당사의 판단에 따라 상담내용에 부적합하다고 판단되는 경우, 해당 내용은 관리자가 삭제할 수 있습니다.</li>
+                  <li>상담신청 24시간 이내 답변을 원칙으로 하고 있으나 상담 신청이 많은 경우 답변이 지연될 수 있습니다. 상담은 신청 순서대로 진행됩니다.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    @@include('../include/script.html')
+  </body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <base href="../../" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <div>
+      <main class="client-grade-wrap">
+        <div class="tab-wrap1" data-type="tab-wrap">
+          <ul class="tablist full-tab type-02 wrap-box full" role="tablist">
+            <li class="tab-item" role="tab">
+              <button type="button" role="button" aria-controls="panel1" data-type="tab-item">등급기준</button>
+            </li>
+            <li class="tab-item" role="tab">
+              <button type="button" class="active" role="button" aria-controls="panel2" data-type="tab-item">등급별 혜택</button>
+            </li>
+          </ul>
+          <ul class="panels mt16">
+            <li id="panel1" role="tabpanel" tabindex="0" hidden>
+              <p class="body1-2">
+                고객등급은 개인고객을 대상으로 매분기마다 직전 3개월 거래실적(금융상품, 주식, 선물옵션 등 모든 거래)과 거래기간, 급여계좌 등록, 자동이체건수 등을 점수로 환산하여 산정합니다.
+              </p>
+              <p class="h6 mt24">점수 환산 기준</p>
+              <div class="wrap-table mt10">
+                <table>
+                  <colgroup>
+                    <col style="width: 20%" />
+                    <col style="width: 30%" />
+                    <col style="width: 50%" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th class="left">자산</th>
+                      <td class="left">3개월 자산 평잔</td>
+                      <td class="left piece-list-type-03">
+                        10만원당 1점
+                        <ul class="mt10">
+                          <li>금융상품 자산평잔(좌수기준/CMA잔고 포함)</li>
+                          <li>위탁계좌 자산평잔</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="left">수익</th>
+                      <td class="left">3개월 수익 합산</td>
+                      <td class="left piece-list-type-03">
+                        1천원당 1점
+                        <ul class="mt10">
+                          <li>판매보수, 판매수수료</li>
+                          <li>매매수수료</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th rowspan="4" class="left">가산점</th>
+                      <td class="left">거래기간</td>
+                      <td class="left piece-list-type-03">
+                        거래기간 1년당 5점씩 부여
+                        <ul class="mt10">
+                          <li>최대 100점</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="left">펀드상품</td>
+                      <td class="left piece-list-type-03">
+                        적립식계좌 자동이체 : 10점(건당)
+                        <ul class="mt10">
+                          <li>자동이체금액 10만원 이상</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="left">개인연금 상품</td>
+                      <td class="left piece-list-type-03">
+                        적립식계좌 자동이체 : 20점(건당)
+                        <ul class="mt10">
+                          <li>자동이체금액 10만원 이상</li>
+                          <li>개인연금, 연금저축 시리즈</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="left">지급결제 서비스</td>
+                      <td class="left page-list-type-01">
+                        <ul>
+                          <li>급여 계좌 등록 : 20점</li>
+                          <li>CMA 자동이체 출금 : 5점(건당)</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="page-list-type-01 mt24">
+                <p class="tit">등급 특별 적용</p>
+                <ul>
+                  <li>
+                    프라임 등급
+                    <ul class="depth-list">
+                      <li>당사 퇴직연금(IRP계좌 제외) 가입 고객</li>
+                      <li>당사 개인형 IRP계좌 가입 고객 : 잔고보유(1원 이상) 익일 부터</li>
+                    </ul>
+                  </li>
+                  <li>
+                    골드 등급
+                    <ul class="depth-list">
+                      <li>베트남 펀드 공모 1, 2호 분기말 잔고 1천만좌 이상 유지고객</li>
+                    </ul>
+                  </li>
+                  <li>
+                    최초 고객 신규 우대(주민등록번호 기준)
+                    <ul class="depth-list">
+                      <li>고객 번호 생성 당일 입금(고) 된 자산을 기준으로 익일 고객 등급 부여</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li id="panel2" role="tabpanel" tabindex="0">
+              <p class="h6"><i class="ico-grade-01"></i>VIP</p>
+              <div class="wrap-table table-type1 mt10">
+                <table>
+                  <colgroup>
+                    <col style="width: 20%" />
+                    <col style="width: 80%" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th class="left">기준</th>
+                      <td class="left">10,000점 이상</td>
+                    </tr>
+                    <tr>
+                      <th class="left">혜택</th>
+                      <td class="page-list-type-01 left">
+                        <ul>
+                          <li>금융종합소득과세 신고 대행 서비스</li>
+                          <li>시세정보 및 수익률 알림 서비스</li>
+                          <li>
+                            수수료 면제
+                            <ul class="depth-list near">
+                              <li>전 금융기관 CD기 출금</li>
+                              <li>창구 송금</li>
+                              <li>기타 업무</li>
+                              <li>공모주청약</li>
+                              <li>온라인이체</li>
+                            </ul>
+                          </li>
+                          <li>공모주 청약 한도 우대</li>
+                          <li>투자자 교육과 메일 서비스 제공</li>
+                          <li>인터넷 투자방송 서비스</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="h6 mt24"><i class="ico-grade-02"></i>골드</p>
+              <div class="wrap-table table-type1 mt10">
+                <table>
+                  <colgroup>
+                    <col style="width: 20%" />
+                    <col style="width: 80%" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th class="left">기준</th>
+                      <td class="page-list-type-01 left">
+                        <ul>
+                          <li>1,000점 이상</li>
+                          <li>베트남 펀드 공모 1, 2호 분기말 잔고 1천만좌 이상 유지 고객</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="left">혜택</th>
+                      <td class="page-list-type-01 left">
+                        <ul>
+                          <li>시세정보 및 수익률 알림 서비스</li>
+                          <li>
+                            수수료 면제
+                            <ul class="depth-list near">
+                              <li>전 금융기관 CD기 출금</li>
+                              <li>창구 송금</li>
+                              <li>기타 업무</li>
+                              <li>공모주청약</li>
+                              <li>온라인이체</li>
+                            </ul>
+                          </li>
+                          <li>공모주 청약 한도 우대</li>
+                          <li>투자자 교육과 메일 서비스 제공</li>
+                          <li>인터넷 투자방송 서비스</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="h6 mt24"><i class="ico-grade-03"></i>프라임</p>
+              <div class="wrap-table table-type1 mt10">
+                <table>
+                  <colgroup>
+                    <col style="width: 20%" />
+                    <col style="width: 80%" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th class="left">기준</th>
+                      <td class="page-list-type-01 left">
+                        <ul>
+                          <li>300점 이상</li>
+                          <li>당사 퇴직연금(IRP계좌 제외) 가입 고객</li>
+                          <li>당사 개인형 IRP계좌 가입 고객 : 잔고보유(1원 이상) 익일부터</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="left">혜택</th>
+                      <td class="page-list-type-01 left">
+                        <ul>
+                          <li>공모주 청약 수수료 : 온라인 면제</li>
+                          <li>온라인 이체 수수료 : 50% 면제</li>
+                          <li>투자자 교육과 메일 서비스 제공</li>
+                          <li>인터넷 투자방송 서비스</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="h6 mt24"><i class="ico-grade-04"></i>패밀리</p>
+              <div class="wrap-table table-type1 mt10">
+                <table>
+                  <colgroup>
+                    <col style="width: 20%" />
+                    <col style="width: 80%" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th class="left">기준</th>
+                      <td class="left">300점 미만</td>
+                    </tr>
+                    <tr>
+                      <th class="left">혜택</th>
+                      <td class="page-list-type-01 left">
+                        <ul>
+                          <li>투자자 교육과 메일 서비스 제공</li>
+                          <li>인터넷 투자방송 서비스</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="piece-list-type-03 mt24">
+                <ul>
+                  <li>전 금융기관 CD기 출금수수료 면제는 신규 IC카드 발급고객에 한합니다.</li>
+                  <li>기타 업무수수료, 주식현물고/타사대제출고수수료, 매체재발급 수수료(통장, 카드, 보안카드, 체크카드) 잔고 증명서 수수료</li>
+                  <li>고객등급은 분기 1회 산정되며 등급 하락 시 1회에 한하여 유예됩니다.</li>
+                  <li>
+                    아래 2가지 요건을 충족하신 경우 고객 등급과 관계없이 전금융기관 CD기 출금/이체수수료 및 온라인 이체수수료를 면제해 드립니다. (단, 지하철 및 편의점 CD기 제외)
+                    <ul class="sub-depth">
+                      <li>CMA를 급여 계좌로 등록하고 매월 50만원 이상 입금</li>
+                      <li>CMS 자동이체출금 1건 이상 등록</li>
+                    </ul>
+                  </li>
+                  <li>고객 등급 관련 사항은 당사 사정에 의해 변경될 수 있습니다.</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </main>
+    </div>
+    @@include('../include/script.html')
+  </body>
+</html>

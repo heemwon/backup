@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <base href="../../" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <div>
+      <main>
+        <div class="page-list-type-01">
+          <ul>
+            <li>신용, 대출 및 연체이자 계산식은 다음과 같습니다.</li>
+          </ul>
+          <div class="wrap-table">
+            <table>
+              <tbody>
+                <tr>
+                  <th>신용이자</th>
+                  <td>
+                    (대출잔액X이율1X일수1/365)<br />
+                    -(대출잔액X이율2X일수2/365)
+                  </td>
+                </tr>
+                <tr>
+                  <th>대주이자</th>
+                  <td>대주매각대금 잔액X이율X일수/365</td>
+                </tr>
+                <tr>
+                  <th>대출이자</th>
+                  <td>
+                    (대출잔액X이율1X일수1/365)<br />
+                    +(대출잔액X이율2X일수2/365)
+                  </td>
+                </tr>
+                <tr>
+                  <th>연체이자</th>
+                  <td>대출잔액X연체이율X(기준일자-만기일 익일)/365</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <ul class="mt16">
+            <li>단, 2월이 29일인 윤년의 경우 366일로 계산합니다.</li>
+            <li>과거일자로 조회 시 대출잔액은 금액 기준으로 계산되기 때문에 이자금액이 상이할 수 있습니다.</li>
+          </ul>
+        </div>
+      </main>
+    </div>
+    @@include('../include/script.html')
+  </body>
+</html>

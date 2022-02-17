@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <base href="../" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <script src="assets/js/ie.js"></script>
+    <link rel="stylesheet" href="assets/css/library/choices.min.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/common.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- START : 수정 : 210701 title명 수정 -->
+    <title>Samsung Cloud Platform</title>
+    <!-- END : 수정 : 210701 title명 수정 -->
+  </head>
+  <body>
+    <div class="wrap faq">
+      <!-- 3depth 메뉴가 있을 시 header태그에 subpage 듀얼클래스를 추가해주세요. -->
+      <div id="header-template" class="header-include subpage"></div>
+
+      <!-- 영문 content -->
+      <article class="content">
+        <div class="hero-sub img-exist">
+          <div class="content">
+            <img src="assets/images/img/img_faq.png" alt="" />
+            <div class="sub-content">
+              <h2 class="font-heading1" data-i18n="label.label_441"></h2>
+            </div>
+          </div>
+        </div>
+        <!-- START : 수정 : 20210608 FAQ 리스트 컨텐츠 변경 -->
+        <div class="side-menu-layout">
+          <div class="tab-wrap1 layer-type gradiant-active" data-type="tab-wrap">
+            <div class="side-menu" data-type="tab-area">
+              <ul class="tablist" role="tablist" data-type="tab-list">
+                <!-- START : 수정 : 20210520 aria-controls 제거 -->
+                <li class="tab-item" role="tab">
+                  <!-- END : 수정 : 20210520 aria-controls 제거 -->
+                  <!-- 활성화 시 active 클래스 추가 -->
+                  <!-- START : 수정 : 20210520 class role aria-controls data-type 추가 -->
+                  <button type="button" role="button" data-type="tab-item" onclick="onClickTab(this)" aria-controls="panel-all">
+                    <span name="category" class="i18n-inherit" data-i18n="category.category_15"></span>
+                    (<span class="i18n-inherit" count="ALL"></span>)
+                  </button>
+                  <!-- END : 수정 : 20210520 class role aria-controls data-type 추가 -->
+                </li>
+                <li class="tab-item" role="tab">
+                  <button type="button" role="button" data-type="tab-item" onclick="onClickTab(this)" aria-controls="panel-offerings">
+                    <span name="category" class="i18n-inherit" data-i18n="category.category_5"></span>
+                    (<span class="i18n-inherit" count="OFFERINGS"></span>)
+                  </button>
+                </li>
+                <li class="tab-item" role="tab">
+                  <button type="button" role="button" data-type="tab-item" onclick="onClickTab(this)" aria-controls="panel-pricing">
+                    <span name="category" class="i18n-inherit" data-i18n="category.category_6"></span>
+                    (<span class="i18n-inherit" count="PRICING"></span>)
+                  </button>
+                </li>
+                <li class="tab-item" role="tab">
+                  <button type="button" role="button" data-type="tab-item" onclick="onClickTab(this)" aria-controls="panel-membership">
+                    <span name="category" class="i18n-inherit" data-i18n="category.category_29"></span>
+                    (<span class="i18n-inherit" count="MEMBERSHIP"></span>)
+                  </button>
+                </li>
+                <li class="tab-item" role="tab">
+                  <button type="button" role="button" data-type="tab-item" onclick="onClickTab(this)" aria-controls="panel-trouble">
+                    <span name="category" class="i18n-inherit" data-i18n="category.category_30"></span>
+                    (<span class="i18n-inherit" count="TROUBLE"></span>)
+                  </button>
+                </li>
+                <li class="tab-item" role="tab">
+                  <button type="button" role="button" data-type="tab-item" onclick="onClickTab(this)" aria-controls="panel-others">
+                    <span name="category" class="i18n-inherit" data-i18n="category.category_31"></span>
+                    (<span class="i18n-inherit" count="OTHERS"></span>)
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="right-content">
+              <!-- START: 아코디언 리스트 -->
+              <ul class="panels">
+                <li id="panel-all" role="tabpanel" tabindex="0">
+                  <div class="accordion-wrap1" data-type="accordion-wrap">
+                    <h3 class="list-header1">
+                      <div class="text">
+                        <span class="i18n-inherit" data-i18n="category.category_15"></span>(<span class="num" count="ALL"></span>)
+                      </div>
+                    </h3>
+                    <ul />
+                  </div>
+                </li>
+                <li id="panel-offerings" role="tabpanel" tabindex="0" hidden>
+                  <div class="accordion-wrap1" data-type="accordion-wrap">
+                    <h3 class="list-header1">
+                      <div class="text">
+                        <span class="i18n-inherit" data-i18n="category.category_5"></span>(<span class="num" count="OFFERINGS"></span>)
+                      </div>
+                    </h3>
+                    <ul />
+                  </div>
+                </li>
+                <li id="panel-pricing" role="tabpanel" tabindex="0" hidden>
+                  <div class="accordion-wrap1" data-type="accordion-wrap">
+                    <h3 class="list-header1">
+                      <div class="text">
+                        <span class="i18n-inherit" data-i18n="category.category_6"></span>(<span class="num" count="PRICING"></span>)
+                      </div>
+                    </h3>
+                    <ul />
+                  </div>
+                </li>
+                <li id="panel-membership" role="tabpanel" tabindex="0" hidden>
+                  <div class="accordion-wrap1" data-type="accordion-wrap">
+                    <h3 class="list-header1">
+                      <div class="text">
+                        <span class="i18n-inherit" data-i18n="category.category_29"></span>(<span class="num" count="MEMBERSHIP"></span>)
+                      </div>
+                    </h3>
+                    <ul />
+                  </div>
+                </li>
+                <li id="panel-trouble" role="tabpanel" tabindex="0" hidden>
+                  <div class="accordion-wrap1" data-type="accordion-wrap">
+                    <h3 class="list-header1">
+                      <div class="text">
+                        <span class="i18n-inherit" data-i18n="category.category_30"></span>(<span class="num" count="TROUBLE"></span>)
+                      </div>
+                    </h3>
+                    <ul />
+                  </div>
+                </li>
+                <li id="panel-others" role="tabpanel" tabindex="0" hidden>
+                  <div class="accordion-wrap1" data-type="accordion-wrap">
+                    <h3 class="list-header1">
+                      <div class="text">
+                        <span class="i18n-inherit" data-i18n="category.category_31"></span>(<span class="num" count="OTHERS"></span>)
+                      </div>
+                    </h3>
+                    <ul />
+                  </div>
+                </li>
+              </ul>
+              <!-- END: 아코디언 리스트 -->
+              <!-- START : 수정 : 211025 페이지네이션 추가 -->
+              <div class="pagination">
+                <a href="javascript:;" class="first disabled mobile-view"></a>
+                <a href="javascript:;" class="prev disabled"></a>
+                <a href="javascript:;">1</a>
+                <span class="active">2</span>
+                <a href="javascript:;">3</a>
+                <a href="javascript:;">4</a>
+                <a href="javascript:;">5</a>
+                <a href="javascript:;" class="next"></a>
+                <a href="javascript:;" class="last mobile-view"></a>
+              </div>
+              <!-- END : 수정 : 211025 페이지네이션 추가 -->
+            </div>
+          </div>
+        </div>
+        <!-- END : 수정 : 20210608 FAQ 리스트 컨텐츠 변경 -->
+      </article>
+
+      <!-- START : 수정 : 20210528 margin 공통 클래스 추가 -->
+      <div id="footer-template" class="footer-margin"></div>
+    </div>
+
+    <script src="assets/js/library/jquery.min.js"></script>
+    <script src="assets/js/library/swiper-bundle.min.js"></script>
+    <script src="assets/js/library/scroll-lock.min.js"></script>
+    <script src="assets/js/library/ScrollMagic.min.js"></script>
+    <script src="assets/js/library/choices.min.js"></script>
+    <script src="assets/js/library/i18next-1.11.2.min.js"></script>
+
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/initialize.js"></script>
+    <script src="assets/js/pub.js"></script>
+
+    <script src="assets/js/support/data/faq.ko.js"></script>
+    <script src="assets/js/support/data/faq.en.js"></script>
+    <script src="assets/js/support/support-faq.js"></script>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <base href="../../" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <div class="product-info-wrap">
+      <main>
+        <div class="menu-wrap">
+          <div class="btn-wrap">
+            <button type="button" class="dropdown-btn">변동성지수선물</button>
+          </div>
+          <ul class="sub-menu">
+            <li><a href="pages/T/T2-7-8-1.html">코스피200선물</a></li>
+            <li><a href="pages/T/T2-7-8-2.html">코스피200옵션</a></li>
+            <li><a href="pages/T/T2-7-8-3.html">코스피200위클리옵션</a></li>
+            <li><a href="pages/T/T2-7-8-4.html">KRX300선물</a></li>
+            <li><a href="pages/T/T2-7-8-5.html">미니코스피200선물</a></li>
+            <li><a href="pages/T/T2-7-8-6.html">미니코스피200옵션</a></li>
+            <li class="active"><a href="pages/T/T2-7-8-7.html">변동성지수선물</a></li>
+            <li><a href="pages/T/T2-7-8-8.html">코스피200섹터지수선물</a></li>
+            <li><a href="pages/T/T2-7-8-9.html">배당지수선물</a></li>
+            <li><a href="pages/T/T2-7-8-10.html">코스닥150옵션</a></li>
+            <li><a href="pages/T/T2-7-8-11.html">코스닥150선물</a></li>
+            <li><a href="pages/T/T2-7-8-12.html">K-뉴딜지수 선물</a></li>
+          </ul>
+        </div>
+        <div class="page-list-type-04">
+          <dl>
+            <dt>기초자산</dt>
+            <dd>코스피200변동성 지수 (V-KOSPI200)</dd>
+            <dt>거래수량단위 및 1계약의 금액</dt>
+            <dd class="page-list-type-01">
+              <ul>
+                <li>거래수량단위 : 1계약</li>
+                <li>1계약의 금액 : 선물가격 X 25만</li>
+              </ul>
+            </dd>
+            <dt>결제월 및 선물 스프레드거래의 종목</dt>
+            <dd class="page-list-type-01">
+              <ul>
+                <li>결제월 : 매월</li>
+                <li>
+                  결제월의 수 : 연속한 6개<br />
+                  (분기월 중 2개와 그밖의 월 중 4개)
+                </li>
+                <li>선물스프레드거래의 종목 : 5개</li>
+              </ul>
+            </dd>
+            <dt>결제월 및 선물 스프레드거래의 종목</dt>
+            <dd class="page-list-type-01">
+              <ul>
+                <li>최종거래일 : 결제월이 속하는 월의 다음 월의 두번째 목요일(해당 일이 휴장일인 경우 앞당김)부터 30일(Calender Day) 전일에 해당되는 날</li>
+                <li>결제월의 거래기간 : 6개월</li>
+                <li>최종결제일 : 최종거래일의 다음 거래일</li>
+              </ul>
+            </dd>
+            <dt>거래기간</dt>
+            <dd class="wrap-table">
+              <table>
+                <colgroup>
+                  <col width="26%" />
+                  <col width="37%" />
+                  <col width="37%" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th class="left">구분</th>
+                    <th>호가접수시간</th>
+                    <th>거래시간</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="left">최종거래일 미도래종목</th>
+                    <td>08:00 ~ 15:45</td>
+                    <td>09:00 ~ 15:45</td>
+                  </tr>
+                  <tr>
+                    <th class="left">최종거래일 도래종목</th>
+                    <td>08:00 ~ 15:35</td>
+                    <td>09:00 ~ 15:35</td>
+                  </tr>
+                </tbody>
+              </table>
+            </dd>
+            <dt>호가가격단위(Tick)</dt>
+            <dd>0.05p (최소사격변동금액은 12,500원)</dd>
+            <dt>결제월 및 선물 스프레드거래의 종목</dt>
+            <dd class="page-list-type-01">
+              <ul>
+                <li>호가 종류 : 지정가만 가능 (실시간 상하한가 적용시 시장가, 조건부지정가, 최유리지정가 허용)</li>
+                <li>호가조건 : 일부충족조건, 전량충족조건</li>
+                <li>호가의 정정취소, 입력제한 : 코스피200옵션과 동일</li>
+              </ul>
+            </dd>
+            <dt>일일정산</dt>
+            <dd class="wrap-table">
+              <table>
+                <colgroup>
+                  <col width="25%" />
+                  <col width="75%" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th class="left">구분</th>
+                    <th>호가접수시간</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>약정가격 有</th>
+                    <td class="left">당일의 가장 나중에 성립된 약정가격 *정산가격 괴리율은 15%</td>
+                  </tr>
+                  <tr>
+                    <th>약정가격 無</th>
+                    <td class="left">당일의 기준가격</td>
+                  </tr>
+                </tbody>
+              </table>
+            </dd>
+            <dt>최종결제가격</dt>
+            <dd>최종거래일(V-KOSPI200 증가)</dd>
+            <dt>최종결제방법</dt>
+            <dd>현금결제</dd>
+            <dt>가격제한폭</dt>
+            <dd>1단계 ±30% / 2단계 ±45% / 3단계 ±60%</dd>
+            <dt>단일가격경쟁거래</dt>
+            <dd class="piece-list-type-03">
+              개장시(08:00~09:00) 및 거래종료 시(15:35~15:45) 균형가격에 의해 거래체결
+              <ul>
+                <li>단일가호가시간 종료 전 1분간은 불공정거래 예방 등을 위해 호가취소 및 정정이 제한됩니다.</li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+      </main>
+    </div>
+    @@include('../include/script.html')
+  </body>
+</html>

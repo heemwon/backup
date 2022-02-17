@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <base href="../../" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <div>
+      <main>
+        <div class="wrap-table table-type1">
+          <table>
+            <colgroup>
+              <col style="width: 22%" />
+              <col style="width: 78%" />
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>투자원금</th>
+                <td>해당 집한투자증권을 매수하기 위해 투자자가 투자자매매・중개업자에게 납입한 금액의 누계를 기재한다(선취 판매수수료로 납부한 금액 포함).</td>
+              </tr>
+              <tr>
+                <th>중간환매대금</th>
+                <td>투자기간 중 해당 집합투자증권을 환매한 금액의 누계를 기재하며, 비용 차감 후 중간환매대금은 환매수수료 및 세금 등 제반비용을 차감하고 투자자에게 실제 지급한 금액을 기재한다.</td>
+              </tr>
+              <tr>
+                <th>수수료<br />/보수</th>
+                <td>투자기간 중 발생한 판매수수료 등 각종 수수료 및 총보수(판매보수, 운용보수, 신탁보수, 사무관리보수)를 의미한다.</td>
+              </tr>
+              <tr>
+                <th>평가금액</th>
+                <td>정보제공 기준시점의 집합투자기구의 기준가격과 투자자가 보유한 집한투자증권의 좌수를 곱하여 계산한다.</td>
+              </tr>
+              <tr>
+                <th>누적수익률(비용 차감 전)</th>
+                <td>
+                  누적수익률(비용 차감 전)<br />
+                  = [(평가금액 + 비용차감 중간환매대금) ÷ 투자원금 -1]
+                </td>
+              </tr>
+              <tr>
+                <th>연환산수익률</th>
+                <td>
+                  “연환산수익률”은 아래와 같이 연평균(기하평균)하여 계산한다. 다만, 투자기간이 1년 미만일 경우 표시하지 않는다.<br />
+                  = (1 + 가입이후누적수익률)^(1/가입년수) -1
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="page-list-type-01 mt24">
+          <p class="tit">기타 상세한 내용은 아래 기준에 따른다.</p>
+          <ul>
+            <li>법령상 보관기간(10년) 경과로 과거 자료가 남아있지 않아 산출이 불가능한 정보는 공란으로 처리하되, 주석으로 산출이 불가능한 이유를 기재한다.</li>
+            <li>판매회사가 이동된 집합투자기구 및 전환형집합투자기구의 경우 이동(전환) 후 시점을 최초 투자일로 계산할 수 있다.</li>
+            <li>이연판매보수 체계를 적용하는 집합투자기구 및 목표전환형 집합투자기구의 경우 전환 전 기간을 포함하여 작성한다.</li>
+            <li>현금배당은 중간환매대금에 포함한다.</li>
+            <li>기준가격이 외화로 표시되는 집합투자기구의 경우 금액 단위를 외화로 표시할 수 있다.</li>
+          </ul>
+        </div>
+      </main>
+    </div>
+    @@include('../include/script.html')
+  </body>
+</html>

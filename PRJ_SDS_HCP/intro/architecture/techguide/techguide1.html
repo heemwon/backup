@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <base href="../../../" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <script src="assets/js/ie.js"></script>
+    <link rel="stylesheet" href="assets/css/library/choices.min.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/common.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- START : 수정 : 210701 title명 수정 -->
+    <title>Samsung Cloud Platform</title>
+    <!-- END : 수정 : 210701 title명 수정 -->
+  </head>
+  <body>
+    <div class="wrap tech-guide cloud">
+      <!-- 3depth 메뉴가 있을 시 header태그에 subpage 듀얼클래스를 추가해주세요. -->
+      <div id="header-template" class="header-include subpage"></div>
+      <article class="content">
+        <div class="hero-sub">
+          <div class="content">
+            <div class="sub-content">
+              <h2 class="font-heading1" data-i18n="label.label_75"></h2>
+              <a
+                data-i18n="[href]pdf.pdf_57"
+                target="_blank"
+                class="btn-border large"
+                ><i class="ico-link"></i><span class="i18n-inherit" data-i18n="button.button_3"></span></a
+              >
+            </div>
+          </div>
+          <div class="visual-tab">
+            <nav>
+              <ul class="tablist">
+                <li><a href="javascript:;" data-scroll-anchor data-i18n="category.category_18"></a></li>
+                <li><a href="javascript:;" data-scroll-anchor>SBD FENCING</a></li>
+                <li><a href="javascript:;" data-scroll-anchor>SBD 구성 요소</a></li>
+                <li><a href="javascript:;" data-scroll-anchor>SBD FENCING 동작 방식</a></li>
+                <li><a href="javascript:;" data-scroll-anchor>SBD FENCING 구성 옵션</a></li>
+                <li><a href="javascript:;" data-scroll-anchor>SBD FENCING 테스트 결과</a></li>
+              </ul>
+              <span class="progress-bar"></span>
+            </nav>
+          </div>
+        </div>
+        <div class="right-layout" data-scroll-section>
+          <div class="left-content">
+            <div class="detail-content">
+              <h3 class="font-heading2" data-i18n="category.category_18"></h3>
+              <div class="column-box">
+                본 문서는 클라우드 환경에서 가상 서버의 고가용성을 확보하기 위해 이중화 솔루션(Pacemaker)을 활용하여 서버를 이중화 구성할 때
+                활용할 수 있는 내용을 다루고 있습니다.
+                <br /><br />
+                2개 노드 클러스터 구성에서 Split-brain 현상<sup>1</sup>을 방지하기 위해 Fencing<sup>2</sup> 설정을 하게 되는데 클라우드
+                환경에서 구성할 수 있는 SBD 를 활용한 Fencing 설정 중에서 주요 옵션과 구성 이후 테스트 항목에 대해 설명합니다.
+              </div>
+            </div>
+          </div>
+          <div class="right-content">
+            <ul class="list bullet-number">
+              <li>
+                클러스터로 구성된 두 시스템 그룹 간 네트워크의 일시적 단절이 발생 시 나타나는 현상이며, 클러스터 상의 모든 노드들이 노드
+                각자가 자신을 Primary라고 인식하게 되는 상황
+              </li>
+              <li>
+                시스템 장애로부터 데이터를 보호하기 위한 장치/방법으로, OS 리소스 및 HA 클러스터 장애시 해당 노드의 공유 자원(예: 공유
+                스토리지)에 대한 연결을 끊어 공유 데이터의 무결성을 보장하는 방법
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="right-layout" data-scroll-section>
+          <div class="left-content">
+            <div class="detail-content">
+              <h3 class="font-heading2">SBD Fencing</h3>
+              <div class="column-box">
+                SBD Fencing 은 Storage-Based Death 또는 STONITH<sup>3</sup> Block Device 라고 부릅니다. 클러스터 노드 간에 설치된 공유
+                스토리지를 사용하고, 서버의 sbd 데몬 프로세스가 이 공유 영역에 기록된 메시지를 통해서 Fencing 여부를 결정합니다. Split-brain
+                상황에서 Fencing 될 노드에 메시지를 보내면 watchdog 에 의해 해당 노드가 스스로 Fencing 하게 됩니다. <br /><br />
+                SBD 사용 정책(옵션 설정)에 따라 SBD 용 공유 디스크 Fail 시 단독으로 Self- Fencing 하게 설정할 수 있고, SBD 디스크가 Fail
+                이어도 Pacemaker 의 노드 상태에 따라 Fencing 여부를 결정하도록 할 수도 있습니다.
+                <br /><br />
+                SBD Fencing 은 Hardware Watchdog 이 더 안정적입니다. 클라우드 환경에서 SBD Fencing 을 위해 Software Watchdog 으로 사용할 수
+                있지만, 커널 Hang 등의 문제로 인해 정상적으로 처리되지 않을 수도 있습니다.
+              </div>
+            </div>
+          </div>
+          <div class="right-content">
+            <ul class="list bullet-number" start="3" style="--start: 3">
+              <li>Shoot The Other Node In The Head</li>
+            </ul>
+          </div>
+        </div>
+        <div class="right-layout" data-scroll-section>
+          <div class="left-content">
+            <div class="detail-content">
+              <h3 class="font-heading2">SBD 구성 요소</h3>
+              <div class="column-box">
+                SBD Fencing 설정을 위해 필요한 구성 요소는 다음과 같습니다.
+                <ul class="list-type6 half-layout bullet-none">
+                  <li>
+                    <strong class="title">SBD파티션</strong>
+                    <ul class="list">
+                      <li>노드 간 통신할 수 있는 공유 데이터 영역이며, 최대 3개까지 추가 가능</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong class="title">SBD 데몬 프로세스</strong>
+                    <ul class="list">
+                      <li>SBD 영역에 대해 모니터링하고, 클러스터 데몬 프로세스와 통신</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong class="title">메시지</strong>
+                    <ul class="list">
+                      <li>노드 간 SBD 영역에 메시지를 통해 통신</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong class="title">Watchdog</strong>
+                    <ul class="list">
+                      <li>Self-Fencing을 위해 주기적으로 감시</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-layout" data-scroll-section>
+          <div class="left-content">
+            <div class="detail-content">
+              <h3 class="font-heading2">SBD Fencing 동작 방식</h3>
+              <div class="column-box">
+                SBD Fencing 이 어떻게 동작하는지를 살펴보겠습니다.
+                <figure>
+                  <img src="assets/images/img/img_w_ce_f1_1_5_22.jpg" alt="SBD Fencing 동작 방식" />
+                  <figcaption class="explan-footer">Figure 1. SBD Fencing 동작 방식</figcaption>
+                </figure>
+                <ol class="list-type4 bullet-number">
+                  <li>
+                    <p class="desc">Node A의 NIC down으로 Heartbeat 통신이 중단되면서 Split-brain 현상 발생</p>
+                  </li>
+                  <li>
+                    <p class="desc">Node B의 Pacemaker 데몬 프로세스가 sbd 데몬 프로세스에게 Heartbeat 통신 중단으로 fencing 명령 수행</p>
+                  </li>
+                  <li>
+                    <p class="desc">Node B의 sbd 데몬 프로세스는 SBD 디스크에 fencing 메시지 기록</p>
+                  </li>
+                  <li>
+                    <p class="desc">Node A의 sbd 데몬 프로세스는 fencing 메시지를 읽고</p>
+                  </li>
+                  <li>
+                    <p class="desc">sbd 데몬 프로세스가 watchdog 호출</p>
+                  </li>
+                  <li>
+                    <p class="desc">watchdog에 의해 Self-Fencing으로 서버 재부팅</p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-layout" data-scroll-section>
+          <div class="left-content">
+            <div class="detail-content">
+              <h3 class="font-heading2">SBD Fencing 구성 옵션</h3>
+              <div class="column-box">
+                SBD Fencing 구성을 위한 주요 옵션에 대한 설명과 설정 값에 대해 알아보겠습니다.
+                <ol class="list-type4 bullet-number">
+                  <li>
+                    <p class="desc">Pacemaker는 /etc/sysconfig/sbd 파일에 옵션을 설정합니다.</p>
+                  </li>
+                  <li>
+                    <p class="desc">주요 옵션에 대한 설명은 다음의 표의 내용을 참고합니다.</p>
+                    <div class="table-wrap">
+                      <div class="table-scroll-wrap">
+                        <table>
+                          <colgroup>
+                            <col width="21%" />
+                            <col width="55%" />
+                            <col width="10%" />
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th data-i18n="label.label_398"></th>
+                              <th>설명</th>
+                              <th>권고값</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td rowspan="2">SBD_PACEMAKER (-P)</td>
+                              <td class="left ico">
+                                SBD 디스크가 Fail 되더라도 Pacemaker 의 노드 상태가 정상이면 Fencing 이 발생하지 않음
+                              </td>
+                              <td rowspan="2">Yes</td>
+                            </tr>
+                            <tr>
+                              <td class="left ico">IO Fencing 목적이 아닌 일반적인 클러스터 환경에서는 기본적으로 yes 사용을 권고</td>
+                            </tr>
+                            <tr>
+                              <td>SBD_WATCHDOG (-W)</td>
+                              <td class="left ico">watchdog 을 이용해 Fencing</td>
+                              <td>Yes</td>
+                            </tr>
+                            <tr>
+                              <td rowspan="3">SBD_WATCHDOG_TIMEOUT</td>
+                              <td class="left ico">
+                                SBD watchdog 장치가 연결이 되지 않을 경우에 대한 타임아웃 시간으로, 이 시간이 지나면 노드를 Fencing 시킴 단,
+                                SBD_PACEMAKER=yes 로 설정되고 노드 상태가 정상이면 Fencing 이 발생하지 않음
+                              </td>
+                              <td rowspan="3">10~20</td>
+                            </tr>
+                            <tr>
+                              <td class="left ico">watchdog timeout 시간은 스토리지 IO delay 시간에 따라 결정함.</td>
+                            </tr>
+                            <tr>
+                              <td class="left ico">
+                                SBD 장치가 multipath 또는 iSCSI 일 경우 시간 초과는 경로 오류를 감지하여 다음 경로로 전환하는 데 필요한
+                                시간으로 설정함 multipath 의 경우, max_polling_interval (default: 4 * polling_interval - 10~20) 보다 크게
+                                설정함
+                              </td>
+                            </tr>
+                            <tr>
+                              <td rowspan="3">msgwait timeout<br />( -4 &lt;timeout&gt; )</td>
+                              <td class="left ico">SBD 장치의 노드 슬롯에 기록된 메시지가 전달된 것으로 간주되는 시간</td>
+                              <td rowspan="3">20~40</td>
+                            </tr>
+                            <tr>
+                              <td class="left ico">SBD_WATCHDOG_TIMEOUT 의 2배로 설정함</td>
+                            </tr>
+                            <tr>
+                              <td class="left ico">
+                                Pacemaker 의 stonith-timeout(전체 STONITH 작업이 완료될 때까지 대기하는 시간)은 (msgwait timeout + 20%)값
+                                보다 크게 설정해야 함 stonith-timeout >= msgwait timeout + msgwait timeout * 20%
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <span class="explan-footer">Table 1. SBD Fencing 주요 옵션</span>
+                    </div>
+                  </li>
+                  <li>
+                    <p class="desc">
+                      /etc/sysconfig/sbd 파일 내에 환경변수로 정의가 되지 않았을 경우, SBD_OPTS에 추가로 옵션을 설정할 수 있습니다. (위의
+                      주요 옵션이 파일 내에 있는지 확인하고 없으면 추가합니다.)
+                    </p>
+                    <div class="code-wrap">
+# cat /etc/sysconfig/sbd
+
+SBD_DEVICE=&quot;/dev/vdi&quot;
+
+# Whether to enable the pacemaker integration.
+#
+SBD_PACEMAKER=yes
+<span class="color-1"
+  >#&ndash;P 옵션 (해당 옵션이 한 번일 경우 Enable, 두 번(&ndash;P&ndash;P) 또는 없을 경우 Disable)</span
+>
+SBD_STARTMODE=always
+<span class="color-1"># &ndash;S 0</span>
+SBD_DELAY_START=no
+SBD_WATCHDOG_DEV = /dev/watchdog
+SBD_WATCHDOG=yes
+<span class="color-1"
+  >#&ndash;W 옵션 (해당 옵션이 한 번일 경우 Enable, 두 번(&ndash;W&ndash;W) 또는 없을 경우 Disable)</span
+>
+SBD_WATCHDOG_TIMEOUT=10
+
+## Type: string
+## Default: &quot;&quot;
+#
+#
+Additional options for starting sbd
+#
+SBD_OPTS=&quot;&quot;
+<span class="color-1"># 추가 옵션</span> -->
+                    </div>
+                    <span class="explan-footer">Figure 2. /etc/sysconfig/sbd 파일</span>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-layout" data-scroll-section>
+          <div class="left-content">
+            <div class="detail-content">
+              <h3 class="font-heading2">SBD Fencing 테스트 결과</h3>
+              <div class="column-box">
+                SBD Fencing 을 활용하여 Failover 테스트를 수행하고 제대로 동작하는지를 확인합니다.
+                <ol class="list-type4 bullet-number">
+                  <li>
+                    <p class="desc">
+                      Test Case 1. Primary VM 강제 재부팅 시 Failover 검증<br />
+                      점검 결과: 2분 이내 Fail-Over 정상 동작
+                    </p>
+                    <figure>
+                      <img src="assets/images/img/img_w_ce_f2_1_5_22.jpg" alt="SBD Fencing 테스트 결과" />
+                    </figure>
+                  </li>
+                  <li>
+                    <p class="desc">
+                      Test Case 2. Fencing 디스크 제거를 통한 Failover 검증<br />
+                      점검 결과: Fencing Disk 강제 제거 시에도 Cluster 설정한대로 Fail-Over 가 발생하지 않음
+                    </p>
+                    <figure>
+                      <img src="assets/images/img/img_w_ce_f3_1_5_22.jpg" alt="SBD Fencing 테스트 결과" />
+                    </figure>
+                  </li>
+                  <li class="margin-bottom">
+                    <p class="desc">
+                      Test Case 3. Fencing Process Suspend 상황을 통한 Failover 검증<br />
+                      점검 결과: Fencing Disk 강제 제거 시에도 Cluster 설정한대로 Fail-Over 가 발생하지 않음
+                    </p>
+                    <figure>
+                      <img src="assets/images/img/img_w_ce_f4_1_5_22.jpg" alt="SBD Fencing 테스트 결과" />
+                    </figure>
+                  </li>
+                </ol>
+                이상으로 SBD 를 활용한 Fencing 구성에 대한 주요 옵션과 테스트 결과를 살펴봤습니다. 클라우드 환경에서 가상 서버에 대한 이중화
+                구성 시 SBD Fencing 을 활용해 Split- brain 현상을 방지하는데 도움이 되길 바랍니다.
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <div id="footer-template"></div>
+    </div>
+    <script src="assets/js/library/jquery.min.js"></script>
+    <script src="assets/js/library/swiper-bundle.min.js"></script>
+    <script src="assets/js/library/scroll-lock.min.js"></script>
+    <script src="assets/js/library/ScrollMagic.min.js"></script>
+    <script src="assets/js/library/choices.min.js"></script>
+    <script src="assets/js/library/i18next-1.11.2.min.js"></script>
+
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/initialize.js"></script>
+    <script src="assets/js/pub.js"></script>
+  </body>
+</html>

@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title data-role="ui-title"></title>
+    <style type="text/css">
+      /* reset.css */
+      *{box-sizing:border-box}
+      *:before,*:after{box-sizing:border-box}
+      *{margin:0;padding:0}
+      html{height:100%;margin:0;padding:0;font-family:'맑은 고딕','Malgun Gothic',sans-serif}
+      body{margin:0;padding:0;height:100%;font-size:12px;color:#666;line-height:1.2;word-break:keep-all;-moz-text-size-adjust:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;-ms-overflow-style:none;scrollbar-width:none}
+      label{vertical-align:middle}
+      address,em{font-style:normal}
+      strong,b,th{font-weight:500}
+      fieldset,img{border:0;vertical-align:middle}
+      caption,legend{width:1px;text-align:left;font-size:0;line-height:0;text-indent:-999em}
+      ul,ol,dl,dt,dd,li{list-style:none}
+      h1,h2,h3,h4,h5,h6{font-weight:bold;font-size:100%}
+      input,textarea,select{color:#666;letter-spacing:-1px;vertical-align:middle;-webkit-appearance:none;border-radius:0;border:0}
+      article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block}
+      div,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,p,form,iframe,fieldset,input,table,tr,th,td,button,textarea,select,thead,tbody,tfoot,pre,option{margin:0;padding:0;color:#666}
+      table,tr,td,th,thead,tbody,tfoot{letter-spacing:-1px}
+      textarea{resize:none}
+      table{width:100%;border-spacing:0}
+      table th{border-collapse:collapse;*border-collapse:collapse}
+      table td{border-collapse:collapse}
+      button{border:none;background:none;cursor:pointer}
+      input,button,select,textarea{font-family:'맑은 고딕','Malgun Gothic',sans-serif;letter-spacing:-1px}
+      figcaption{position:absolute;overflow:hidden;width:0;height:0;font-size:0;line-height:0}
+      legend{visibility:hidden;overflow:hidden;width:0;height:0;font-size:0;line-height:0}
+      a{color:#666;text-decoration:none}
+      h5{font-size:14px}
+      #header h1{height:60px;line-height:60px;padding-left:28px;margin-top:0;color:#fff;background:#15212d;font-size:28px;font-weight:500}
+      #container{padding:0 30px 30px}
+      #container .contents:after{content:'';clear:both;display:block}
+      .guide-summary{margin-bottom:30px}
+      .guide-summary h2{margin:30px 0 10px;padding-bottom:5px;font-size:18px;border-bottom:1px solid #000}
+      .guide-summary h3{margin:20px 0 10px;font-size:14px}
+      .guide-summary ul+ul{margin-top:20px}
+      .guide-summary ul li{line-height:22px}
+      .guide-summary p{line-height:22px}
+      .guide-table{width:100%;border:1px solid #dadada}
+      .guide-table thead th{background:#f1f1f1;border-bottom:1px solid #999;padding:10px 0;border-left:1px solid #dadada;font-size:14px;font-weight:bold}
+      .guide-table tbody td{padding:5px;border-left:1px solid #dadada;font-size:14px}
+      .guide-table thead tr th:first-child, .guide-table tbody tr td:first-child{border-left:0}
+      .guide-table tbody tr.confirm{background:#ffe793}
+      .guide-table tbody tr.complete{background:#c0ffee}
+      .guide-table tbody tr.complete td.state{color:red}
+      .guide-table tbody tr.delete{background:#aaa;text-decoration:line-through}
+      .guide-table tbody tr.delete td{color:#666 !important}
+      .guide-table tbody tr.delete td a{color:#666}
+      .guide-table tbody tr.ing{font-weight:bold; background: #fff;}
+      .guide-table tbody tr.hr{font-weight:bold; background: #000;}
+      .guide-table tbody tr.hr td{color:#fff;}
+      .guide-table tbody tr{background-color: #eee;}
+      .guide-table tbody tr td:last-child a{color:blue}
+      .guide-table tbody tr + tr td{border-top:1px solid #dadada}
+      .guide-table tbody td.no{text-align:center}
+      .guide-table tbody td.date, .guide-table tbody td.update{text-align:center}
+      .guide-table tbody tr.update td:last-child::before{display:inline-block;content:'update';background-color:darkorange;border-radius:10px;padding:2px 8px 4px;color:#fff;font-weight:700;margin-right:5px}
+      .guide-table tbody td.state{text-align:center}
+      .guide-table tbody td.left{text-align:left}
+      .guide-table tbody td.filelink{text-align:left}
+      .guide-table tbody td.filelink a{text-decoration:none;color:blue}
+      .guide-table tbody tr td:last-child{white-space:pre-line}
+      .progress-bar{background:linear-gradient(to bottom, #d5d5d5, #e4e4e4);border-radius:20px;height:20px;width:600px;position:relative;margin-top:10px}
+      .progress-bar .txt{position:absolute;left:0;right:0;text-align:center;top:-18px;font-weight:bold;z-index:10}
+      .progress-bar .bar{display:block;background:linear-gradient(to bottom, #4db2dc 50%, #369dc8 50%);border-radius:20px;height:100%;line-height:20px;color:#000;text-align:center;position:absolute;top:0;left:0;z-index:1}
+      .page_progress_txt{font-size:14px}
+      .page_progress_txt li{float:left;margin-left:10px}
+      .column-2{display:flex;justify-content:space-between;width:600px;overflow:hidden}
+      .column-2 h4{float:left}
+      .column-2 .page_progress_txt{float:right;margin:20px 2px 10px 0}
+      .dimmed{display:inline-block;position:relative}
+      .dimmed:before{position:absolute;content:'';display:block;left:0;top:0;height:100%;width:100%;z-index:1}
+      .guide-table tbody td.filelink .dimmed a{text-decoration:none;color:#333}
+      .wrap-tab.fixed{position:fixed;top:0;left:0;z-index:10;width:100%;box-shadow:0 4px 8px 0 rgb(0 0 0 / 8%);}
+      .wrap-tab.fixed ~ .tab-content {padding-top:70px;}
+      .wrap-tab ul:after{display:block;content:'';clear:both}
+      .wrap-tab ul{display:flex;flex-wrap:wrap}
+      .wrap-tab ul li{flex:1 0 auto;box-sizing:border-box;height:50px;background:#eceff2;font-size:14px;text-align:center;line-height:50px;border:1px solid #ddd;}
+      .wrap-tab ul li + li {border-left:0;}
+      .wrap-tab ul li a{display:block;color:#6c7b8e;}
+      .wrap-tab ul li.active{background:none;position:relative;font-weight:bold;background:#fff;border-bottom:0;}
+      .wrap-tab ul li.active:after{display:block;content:'';width:100%;position:absolute;top:-1px;height:3px;background:#369dc8}
+      .wrap-tab ul li.active a {color:#369dc8;}
+      .tab-content{display:none;padding-top:30px}
+      .tab-content.active{display:block}
+      .web ul{padding-top:10px}
+      .web ul li{padding:10px 0;padding-left:12px;border-bottom:1px solid #ddd}
+      .web ul li ul li{border-bottom:0}
+      .path-desc{margin-top:30px;padding-top:30px;border-top:1px solid #ddd}
+      .path-desc:first-child{border-top:0;padding-top:0}
+      .path-desc h5{padding-bottom:10px}
+      .path-desc > ul li dl{padding:10px 0;padding-left:6px}
+      .path-desc > ul li ul li{padding-left:12px}
+      .path-desc > ul li ul li dl{padding:5px 0;padding-left:6px}
+      .path-desc > ul li ul li dl:first-child{padding-top:0}
+      .path-desc > ul li ul li dl:last-child{padding-bottom:10px}
+      .path-desc > ul li ul li{border-bottom:0}
+      .path-desc dl dt, .path-desc dl dd{display:inline-block}
+      .path-desc dl:before{display:inline-block;content:'-'}
+      .path-desc dl dt{font-weight:bold;padding-right:5px}
+      .path-desc dl dt:after{display:inline-block;content:':';padding-left:5px}
+      .link{text-decoration:underline;color:blue}
+      .cmd-code{display:block !important;background:#23241f;color:#f8f8f2;margin:10px 0;padding:10px 20px}
+      .tree-list{padding-top:10px}
+      .tree-list > ul li{position:relative;padding-left:20px}
+      .tree-list > ul li::before{content:'';position:absolute;top:14px;left:0;width:12px;height:1px;background:#ddd}
+      .tree-list > ul li::after{content:'';position:absolute;top:0;left:0;width:1px;height:100%;background:#ddd}
+      .tree-list > ul li:last-child:after{height:14px}
+      .tree-list > ul li strong{display:inline-block;height:28px;line-height:28px}
+      .tree-list > ul li span{display:inline-block;position:relative;margin-left:10px;padding:3px 5px 4px;border:1px solid #ccc;line-height:1;border-radius:3px;font-size:11px}
+      .tree-list > ul li span:before{content:'';display:block;position:absolute;width:8px;height:1px;background-color:#ccc;left:-9px;top:50%}
+      #loading{display:none;position:fixed;top:0;left:0;z-index:10;width:100%;height:100%;background:rgba(0,0,0,0.2)}
+      #loading.active{display:block}
+      .loading-spinner{display:inline-block;position:absolute;top:50%;left:50%;z-index:11;width:80px;height:80px;margin:-40px 0 0 -40px;border:6px solid rgba(255, 255, 255, 0.6);border-radius:50%;border-top-color:#369dc8;animation:spin 1s ease-in-out infinite;-webkit-animation:spin 1s ease-in-out infinite}
+      #goTop{position:fixed;bottom:20px;right:20px;width:50px;height:50px;background:rgba(21,33,45,0.8);border-radius:50px}
+      .btn-gotop{position:relative;width:100%;height:100%;font-size:0}
+      .btn-gotop::before{content:'';position:absolute;top:50%;left:50%;width:16px;height:16px;margin-top:4px;border:solid #4db2dc;border-width:2px 2px 0 0;transform:translate(-50%, -50%) rotate(-45deg)}
+      @keyframes spin{
+        to{
+          transform:rotate(360deg);
+          -webkit-transform:rotate(360deg)
+        }
+      }
+      @-webkit-keyframes spin{
+        to{
+          transform:rotate(360deg);-webkit-transform:rotate(360deg)
+        }
+      }
+      @media (max-width: 1000px){
+        #container{padding:10px 10px 80px}
+        #header h1{height:auto;line-height:1.4;padding:15px}
+        .column-2{display:flex;justify-content:space-between;width:100%;padding-bottom:10px}
+        .column-2 .page_progress_txt{float:initial;margin:20px 0 10px}
+        .progress-bar{width:100%}
+        .wrap-tab ul li{width:33.333%}
+        .wrap-tab ul li:nth-last-child(1), .wrap-tab ul li:nth-last-child(2){display:none}
+        .wrap-tab ul li.active {border  :0;}
+        .guide-table{display:block}
+        .guide-table thead{display:none}
+        .guide-table tbody{display:block;}
+        .guide-table tr{display:block}
+        .guide-table tr th, .guide-table tr td{display:inline-block}
+        .guide-table tbody td{border:0}
+        .guide-table tbody tr + tr td{border:0}
+        .guide-table tbody tr td:not(.no)+td::before{display:inline;content:'>';padding-right:5px}
+        .guide-table tbody tr td.filelink::before, .guide-table tbody tr td.date::before, .guide-table tbody tr td.update::before{display:none !important}
+        .guide-table tbody tr+tr{border-top:1px solid #dadada}
+        .guide-table tbody tr td:last-child, .guide-table tbody tr td.date, .guide-table tbody tr td.state{display:none}
+        #goTop{bottom:15px;right:15px;width:40px;height:40px}
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header id="header">
+        <h1 data-role="ui-title"></h1>
+      </header>
+      <div id="container">
+        <div class="contents">
+          <div class="guide-summary">
+            <h2>브라우저 지원 범위 및 퍼블리싱 참고사항</h2>
+            <h3>모바일 웹앱</h3>
+            <ul>
+              <li><strong>Web View</strong></li>
+            </ul>
+            <h3>Mobile OS</h3>
+            <ul>
+              <li>iOS: 10+</li>
+              <li>Android: 4.4+</li>
+            </ul>
+            <h3>문서타입 및 인코딩</h3>
+            <p class="box-code">&lt;!DOCTYPE html&gt;<br />&lt;meta charset="utf-8"&gt;</p>
+            <div class="column-2">
+              <h3>진행률</h3>
+              <div class="page_progress_txt" id="pageProgressInfo">
+                <ul></ul>
+              </div>
+            </div>
+            <div class="progress-bar" id="progressBar">
+              <span class="txt"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+          <div class="wrap-tab">
+            <ul>
+              <li data-role="tab1">
+                <a href="javascript:;">PageList</a>
+              </li>
+              <li data-role="tab2">
+                <a href="javascript:;">폴더 구조도</a>
+              </li>
+              <li data-role="tab3">
+                <a href="javascript:;">라이브러리</a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content" data-role="tab1"></div>
+          <div class="tab-content" data-role="tab2">
+            <div class="path-desc">
+              <h5>폴더 구조 및 설명</h5>
+              <div id="tree" class="tree-list">
+                <ul>
+                  <li>
+                    <strong> assets </strong> <span>css/font/image</span>
+                    <ul>
+                      <li>
+                        <strong>css <span>css</span></strong>
+                      </li>
+                      <li>
+                        <strong> fonts <span>웹 폰트</span> </strong>
+                      </li>
+                      <li>
+                        <strong> images <span>이미지 리소스</span> </strong>
+                        <ul>
+                          <li>
+                            <ul>
+                              <li>
+                                <strong> common <span>공통 이미지</span> </strong>
+                              </li>
+                              <li>
+                                <strong> icon <span>아이콘</span> </strong>
+                              </li>
+                              <li>
+                                <strong> image <span>이미지</span> </strong>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <strong> js <span>자바스크립트 리소스</span> </strong>
+                            <ul>
+                              <li>
+                                <strong> libs <span>자바스크립트 라이브러리</span> </strong>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong> html <span>HTML 페이지</span> </strong>
+                    <ul>
+                      <li>
+                        <strong> common <span>HTML 공통 페이지</span> </strong>
+                      </li>
+                      
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content" data-role="tab3">
+            <div class="path-desc">
+              <h5>사용 라이브러리 반응형 Mobile/PC</h5>
+              <ul>
+                <li>
+                  <dl>
+                    <dt>ScrollMagic - v2.0.8</dt>
+                    <dd>
+                      scroll 라이브러리 (<a href="https://scrollmagic.io/" target="_blank" class="link"
+                        >https://scrollmagic.io/</a
+                      >)
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>slick - v1.8.1</dt>
+                    <dd>
+                      슬라이드 라이브러리 (<a href="https://kenwheeler.github.io/slick/" target="_blank" class="link"
+                        >https://kenwheeler.github.io/slick/</a
+                      >)
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="loading" class="active">
+          <div class="loading-spinner"></div>
+        </div>
+        <div id="goTop">
+          <button class="btn-gotop">위로 이동</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="https://polyfill.io/v3/polyfill.js?features=fetch"></script> -->
+
+    <script>
+      // url은 구글스프레드시트 탭별로 구분
+      // 구글 시트 url: https://docs.google.com/spreadsheets/
+      var initData = {
+        title: '한국투자증권',
+        tabActive: 'tab1',
+        list: [
+          {
+            type: 'PageList',
+            // url:
+            //   '',
+          },
+        ],
+      };
+      var headerData = {};
+      var pageData = {};
+      var urlNum = 0;
+      var baseURL = './';
+
+      var loader = document.querySelector('#loading');
+      var wrapTab = document.querySelector('.wrap-tab');
+      var wrapTabTop = wrapTab.getBoundingClientRect().top;
+
+      // get google data
+      var getGoggleSheet = {
+        // getListData: function (url, type) {
+        //   fetch(url, {
+        //     method: 'GET',
+        //     headers: {
+        //       'Content-Type': 'text/plain;charset=utf-8',
+        //     },
+        //   })
+        //     .then(function (res) {
+        //       return res.json();
+        //     })
+        //     .then(function (data) {
+        //       // json 출력
+        //       headerData[type] = data.header;
+        //       pageData[type] = data.data;
+        //       var app = new App();
+        //       urlNum += 1;
+        //       if (urlNum === initData.list.length) {
+        //         loader.classList.remove('active');
+        //       }
+        //     })
+        //     .catch(function (err) {
+        //       console.log('Fetch Error', err);
+        //     });
+        // },
+        getListData: function (type) {
+          headerData[type] = ['Depth1', 'Depth2', 'Depth3', 'Depth4', 'Depth5', 'File', 'complete', 'EndDate', 'ModifyDate', 'etc'];
+          /*
+            날짜 예시: 2021/05/11
+            complete 상태 : 진행중, 검수요청, 완료, 웹뷰, 화면 삭제
+
+            IA 엑셀 문서의 탭별로 정리중.
+          */
+          pageData[type] = [
+            {Depth1: 'Common', Depth2: 'Component', Depth3: '', Depth4: '', Depth5: '', File: './common/common.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '', Depth2: '오류', Depth3: '', Depth4: '', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+
+            // HOME_전체메뉴_알림_검색_내정보관리 : 211122 완료 (v0.4)
+            {Depth1: 'HOME_전체메뉴_알림_검색_내정보관리 : 211122 완료 (v0.4)', Depth2: '', Depth3: '', Depth4: '', Depth5: '', File: '', complete: '구분', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '홈', Depth2: '알림', Depth3: '알림함', Depth4: '더보기 메뉴', Depth5:'유의사항', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: '0.4.3'},
+            // 고객서비스 : 211122 완료 (v0.4)
+            {Depth1: '고객서비스 : 211122 완료 (v0.4)', Depth2: '', Depth3: '', Depth4: '', Depth5: '', File: '', complete: '구분', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '고객서비스', Depth2: '내정보 관리', Depth3: '유의사항', Depth4: '', Depth5: '', File: './CS/CS1-1-1-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'CS1.1.1.1'},
+            {Depth1: '', Depth2: '', Depth3: '우편물수령지 관리', Depth4: '수신채널 동의 약관 상세', Depth5: '', File: '', complete: '웹뷰', EndDate: '', ModifyDate: '', etc: 'CS1.1.2.3'},
+            {Depth1: '', Depth2: '', Depth3: '개인정보마케팅동의', Depth4: '개인(신용)정보 수집, 이용동의 약관 상세', Depth5: '', File: '', complete: '웹뷰', EndDate: '', ModifyDate: '', etc: 'CS1.1.3.1'},
+            {Depth1: '', Depth2: 'ID관리', Depth3: 'ID등록', Depth4: '약관 및 위험고지 동의', Depth5: '약관 상세', File: '', complete: '웹뷰', EndDate: '', ModifyDate: '', etc: 'CS1.2.3.4.1'},
+            {Depth1: '', Depth2: '', Depth3: 'ID관리', Depth4: 'ID변경', Depth5: '유의사항', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'CS1.2.5.1.2'},
+            {Depth1: '', Depth2: '계좌관리', Depth3: '계좌 비밀번호 저장', Depth4: '계좌 비밀번호 저장관리', Depth5: '유의사항', File: './CS/CS1-3-2-1-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'CS1.3.2.1.1'},
+            {Depth1: '', Depth2: '', Depth3: '종목 증거금률 변경', Depth4: '유의사항', Depth5: '', File: './CS/CS1-3-5-2.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'CS1.3.5.2'},
+            {Depth1: '', Depth2: '', Depth3: '비과세 종합저축 계약변경', Depth4: '유의사항', Depth5: '', File: './CS/CS1-3-6-2.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'CS1.3.6.2'},
+            {Depth1: '', Depth2: '거래서비스신청', Depth3: '이벤트/혜택', Depth4: '금융상품권', Depth5: '유의사항', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+
+            {Depth1: '', Depth2: '', Depth3: 'ID 비밀번호관리', Depth4: '비밀번호 변경', Depth5: '유의사항', File: './CS/고객서비스-비밀번호변경-유의사항.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '', Depth2: '', Depth3: 'ID 해지', Depth4: 'ID 해지 완료', Depth5: '유의사항', File: './CS/고객서비스-ID해지완료-유의사항.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+
+            // 인증센터 : 211122 완료 (v0.4)
+            {Depth1: '인증센터 : 211122 완료 (v0.4)', Depth2: '', Depth3: '', Depth4: '', Depth5: '', File: '', complete: '구분', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '인증센터', Depth2: '인증 공통', Depth3: '휴대폰 본인확인', Depth4: 'Android', Depth5: '통신사 이용약관 동의', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'C4.0.1.0'},
+            {Depth1: '', Depth2: '인증/OTP센터', Depth3: '한국투자인증', Depth4: '한국투자인증 이용안내', Depth5: '', File: './C/C4-1-1-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'C4.1.1.1'},
+            {Depth1: '', Depth2: '', Depth3: '공동인증서', Depth4: '인증서 발급/재발급', Depth5: 'Step3.약관동의 - 약관상세', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'C4.1.2.3.3.1'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '인증서 온라인 발급 사전동의', Depth5: '유의사항', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'C4.1.2.8.1'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '전자금융사기 예방서비스', Depth5: '유의사항', File: '	./C/C4-1-2-9-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'C4.1.2.9.1'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '', Depth5: '이용단말기 신청 안내', File: './C/C4-1-2-9-2.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'C4.1.2.9.2'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '', Depth5: '이용단말기 해지 안내', File: '	', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'C4.1.2.9.8'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '', Depth5: '추가인증 신청 안내', File: './C/C4-1-2-9-15.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'C4.1.2.9.15'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '', Depth5: '추가인증 해지 안내', File: '	', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'C4.1.2.9.20'},
+            {Depth1: '', Depth2: '', Depth3: '바이오인증 메인', Depth4: '유의사항', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'C4.1.3.0'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '바이오인증 등록 시작', Depth5: 'Step.3 추가본인 확인 - 온라인 이용서비스 범위', File: './C/C4-1-3-1-3-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'C4.1.3.1.3.1'},
+            {Depth1: '', Depth2: '', Depth3: 'OTP/모바일OTP', Depth4: 'OTP등록', Depth5: '유의사항', File: './C/C4-1-5-1-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'C4.1.5.1.1'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '모바일OTP 발급', Depth5: 'Step1.고객정보 확인 - 모바일OTP 이용안내', File: './C/C4-1-5-3-1-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'C4.1.5.3.1.1'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '모바일/모바일OTP 해지', Depth5: '유의사항', File: './C/C4-1-5-6-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'C4.1.5.6.1'},
+            // ??
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '', Depth5: 'Step3. 유의사항 동의', File: './C/C4-1-2-9-5.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'C4.1.2.9.5'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '', Depth5: 'Step2. 서비스 해지 연락처 선택', File: './C/C4-1-2-9-22.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'C4.1.2.9.22'},
+            {Depth1: '', Depth2: '', Depth3: '바이오인증 메인', Depth4: '바이오인증 등록 시작', Depth5: '', File: './C/C4-1-3-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'C4.1.3.1'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '', Depth5: 'Step3. 추가본인 확인', File: './C/C4-1-3-1-3.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'C4.1.3.1.3'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '이체 시 보안매체 필수 이용신청/해지', Depth5: '', File: './C/C4-1-3-3.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'C4.1.3.3'},
+
+            // 로그인 : 211122 완료 (v0.4)
+            // 환경설정 : 211122 완료 (v0.4)
+            {Depth1: '환경설정 : 211122 완료 (v0.4)', Depth2: '', Depth3: '', Depth4: '', Depth5: '', File: '', complete: '구분', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '환경설정', Depth2: '설정', Depth3: '알림', Depth4: 'PUSH 알림', Depth5: '유의사항', File: './S/S5-1-3-1-2.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'S5.1.3.1.2'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '거래내역 SMS알림', Depth5: '유의사항', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'S5.1.3.6.1'},
+
+            {Depth1: '', Depth2: '', Depth3: 'PUSH 알림', Depth4: '유의사항', Depth5: '', File: './S/환경설정-push-유의사항.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},            
+            {Depth1: '', Depth2: '', Depth3: '거래내역 - SMS 알림', Depth4: '유의사항', Depth5: '', File: './S/환경설정-거래내역SMS알림-유의사항.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '', Depth2: '5.1.4. 계좌', Depth3: '계좌비밀번호 저장(유지)방법', Depth4: '계좌 비밀번호 저장관리', Depth5: '유의사항', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'S5.1.4.1.1.1'},
+            
+            // 트레이딩
+            // 트레이딩_국내_해외주식 : 211122 완료 (v0.4)
+            {Depth1: '트레이딩_국내_해외주식 : 211122 완료 (v0.4)', Depth2: '', Depth3: '', Depth4: '', Depth5: '', File: '', complete: '구분', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '국내/해외주식', Depth2: '관심종목', Depth3: '더보기', Depth4: '유의사항', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.1.20.2'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '도움말', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.1.20.3'},
+            {Depth1: '', Depth2: '국내 현재가', Depth3: '거래원', Depth4: '외국인계별 종목 매매동향', Depth5: '유의사항', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.3.5.2.1'},
+            {Depth1: '', Depth2: '', Depth3: '투자자', Depth4: '외국인', Depth5: '유의사항', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.3.6.3.3'},
+            {Depth1: '', Depth2: '', Depth3: '더보기', Depth4: '유의사항', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.3.13.3'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '도움말', Depth5: '도움말', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.3.13.4'},
+            {Depth1: '', Depth2: 'ETF 현재가', Depth3: '거래원', Depth4: '외국인계별 종목 매매동향', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.3.5.2'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '', Depth5: '유의사항', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.3.5.2.1'},
+            {Depth1: '', Depth2: '', Depth3: '투자자', Depth4: '외국인', Depth5: '유의사항', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.3.6.3.3'},
+            {Depth1: '', Depth2: 'ETN 현재가', Depth3: '거래원', Depth4: '외국인계별 종목 매매동향', Depth5: '유의사항', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.3.5.2.1'},
+            {Depth1: '', Depth2: '', Depth3: '투자자', Depth4: '외국인', Depth5: '유의사항', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.3.6.3.3'},
+            {Depth1: '', Depth2: 'ELW 현재가', Depth3: '거래원', Depth4: '외국인계별 종목 매매동향', Depth5: '유의사항', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.3.5.2.1'},
+            {Depth1: '', Depth2: 'KONEX 현재가', Depth3: '거래원', Depth4: '외국인계별 종목 매매동향', Depth5: '유의사항', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.3.5.2.1'},
+            {Depth1: '', Depth2: 'K-OTC 현재가', Depth3: '거래원', Depth4: '외국인계별 종목 매매동향', Depth5: '유의사항', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.3.5.2.1'},
+            {Depth1: '', Depth2: '신주인수권 현재가', Depth3: '거래원', Depth4: '외국인계별 종목 매매동향', Depth5: '유의사항', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.3.5.2.1'},
+            {Depth1: '', Depth2: '', Depth3: '투자자', Depth4: '외국인', Depth5: '유의사항', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.3.5.3.3'},
+            {Depth1: '', Depth2: '국내주문(실시간/예약)', Depth3: '매수', Depth4: '현금', Depth5: '외화포함 조회안내', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '', Depth2: '', Depth3: '더보기', Depth4: '유의사항', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '도움말', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '', Depth2: '국내 자동주문', Depth3: '매수감시', Depth4: '매수조건 설정', Depth5: '감시조건 설정 유의사항', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.7.3.2.2'},
+            {Depth1: '', Depth2: '', Depth3: '자동주문 위험고지', Depth4: '', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.7.5'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '자동주문 유의사항', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.7.5.1'},
+            {Depth1: '', Depth2: '국내 적립식 자동매수', Depth3: '자동매수 안내페이지', Depth4: '', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.8.1'},
+            {Depth1: '', Depth2: '', Depth3: '유의사항', Depth4: '', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T18.5'},
+            {Depth1: '', Depth2: '국내 주식잔고', Depth3: '매매손익', Depth4: '유의사항', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.9.2.1.1'},
+            {Depth1: '', Depth2: '', Depth3: '손익추이', Depth4: '유의사항', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.9.4.1'},
+            {Depth1: '', Depth2: '주식거래 초보자 가이드', Depth3: '', Depth4: '', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '', Depth2: '해외주문(실시간/예약)', Depth3: '더보기', Depth4: '유의사항', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.13.11.2'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '예약주문 유의사항', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.13.11.3'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '수령분할주문 유의사항', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.13.11.4'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '수량분할주문 도움말', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.13.11.5'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '베트남 외국인 매매현황', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.13.11.6'},
+            {Depth1: '', Depth2: '해외 자동주문', Depth3: '해외자동주문 위험고지', Depth4: '', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.14.5'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '해외자동주문 유의사항', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.14.5.1'},
+            {Depth1: '', Depth2: '해외 주식잔고', Depth3: '매매손익', Depth4: '매매손익 유의사항', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.15.2.1'},
+            {Depth1: '', Depth2: '', Depth3: '유의사항', Depth4: '', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.15.6'},
+            {Depth1: '', Depth2: '해외주식 초보자 가이드', Depth3: '', Depth4: '', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+
+            // ??
+            {Depth1: '', Depth2: '1.5. 국내 주문(실시간/예약)', Depth3: '더보기', Depth4: '유의사항', Depth5:'', File: './T/T1-5-7-3.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.5.7.3'},
+            {Depth1: '', Depth2: '', Depth3: '유의사항', Depth4: '', Depth5:'', File: './T/T1-8-5.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.8.5'},
+            {Depth1: '', Depth2: '', Depth3: '더보기', Depth4: '유의사항', Depth5:'', File: './T/T1-13-11-2.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.13.11.2'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '예약주문 유의사항', Depth5:'', File: './T/T1-13-11-3.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.13.11.3'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '수량분할주문 유의사항', Depth5:'', File: './T/T1-13-11-4.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.13.11.4'},
+            {Depth1: '', Depth2: '1.15. 해외 주식잔고', Depth3: '유의사항', Depth4: '', Depth5:'', File: './T/T1-14-5.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T1.15.6'},
+            
+            // 트레이딩_선물옵션
+            {Depth1: '트레이딩_선물옵션 : 211122 완료 (v0.4)', Depth2: '', Depth3: '', Depth4: '', Depth5: '', File: '', complete: '구분', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '선물옵션', Depth2: '선물옵선거래 초보자 가이드', Depth3: '', Depth4: '', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+
+            // 트레이딩_CFD
+            {Depth1: '트레이딩_CFD', Depth2: '', Depth3: '', Depth4: '', Depth5: '', File: '', complete: '구분', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '', Depth2: '3.4. CFD 현재가', Depth3: '국내주식', Depth4: '거래원', Depth5:'유의사항', File: './T/CFD-현재가-거래원-유의사항.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '', Depth2: '', Depth3: '투자자', Depth4: '외국인', Depth5:'유의사항', File: './T/T3-4-6-2-3.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T3.4.6.2.3'},
+            {Depth1: '', Depth2: '', Depth3: '더보기', Depth4: '유의사항', Depth5:'', File: './T/T3-4-16-4.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T3.4.16.4'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '면책조항', Depth5:'', File: './T/T3-4-16-5.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T3.4.16.5'},
+
+            // 트레이딩_금현물
+            {Depth1: '트레이딩_금현물', Depth2: '', Depth3: '', Depth4: '', Depth5: '', File: '', complete: '구분', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '4. 금현물', Depth2: '4.3. 금현물 잔고', Depth3: '잔고', Depth4: '유의사항', Depth5:'', File: './T/T4-3-1-3.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T4.3.1.3'},
+            {Depth1: ' ', Depth2: '', Depth3: '당일손익', Depth4: '유의사항', Depth5:'', File: './T/T4-3-2-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T4.3.2.1'},
+
+            // 트레이딩_투자정보
+            {Depth1: '트레이딩_투자정보 : 211122 완료 (v0.4)', Depth2: '', Depth3: '', Depth4: '', Depth5: '', File: '', complete: '구분', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '투자정보', Depth2: '투자정보(시장트렌드)', Depth3: '지수/환율/금리', Depth4: '유의사항', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T5.3.7'},
+            {Depth1: '', Depth2: '투자정보(국내 종목정보)', Depth3: '종목순위', Depth4: '유의사항', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T5.9.14'},
+            {Depth1: '', Depth2: '', Depth3: '국내업종', Depth4: '유의사항', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T5.11.4'},
+            {Depth1: '', Depth2: '', Depth3: '테마', Depth4: '유의사항', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T5.12.11'},
+            {Depth1: '', Depth2: '투자정보(국내 매매동향)', Depth3: '회원사동향', Depth4: '유의사항', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T5.15.3'},
+            {Depth1: '', Depth2: '투자정보(증시/투자일정)', Depth3: '국내 증시/청약일정', Depth4: '유의사항', Depth5: '', File: './T/T5-22-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T5.22.1'},
+            // ??
+            {Depth1: '', Depth2: '시장/트렌드', Depth3: '유의사항', Depth4: '', Depth5:'', File: './T/시장트렌드-유의사항.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '', Depth2: '국내 투자정보', Depth3: '유의사항-1', Depth4: '', Depth5:'', File: './T/국내투자정보-유의사항-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '', Depth2: '', Depth3: '유의사항-2', Depth4: '', Depth5:'', File: './T/국내투자정보-유의사항-2.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '', Depth2: '', Depth3: '유의사항-3', Depth4: '', Depth5:'', File: './T/국내투자정보-유의사항-3.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '', Depth2: '국내 매매동향', Depth3: '유의사항', Depth4: '', Depth5:'', File: './T/국내매매동향-유의사항.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+
+            // 트레이딩_모의투자
+            {Depth1: '트레이딩_모의투자', Depth2: '', Depth3: '', Depth4: '', Depth5: '', File: '', complete: '구분', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '', Depth2: '', Depth3: '6.2. 모의투자 로그인', Depth4: '모의투자 비밀번호 재등록', Depth5: '비밀번호 입력규칙', File: './T/T6-2-1-2.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T6.2.1.2'},
+            
+            // 자산/뱅킹 (AB)
+            // 자산_뱅킹_자산_내역 : 211122 완료 (v0.4)
+            {Depth1: '자산_뱅킹_자산_내역 : 211122 완료 (v0.4)', Depth2: '', Depth3: '', Depth4: '', Depth5: '', File: '', complete: '구분', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '자산/내역', Depth2: '총자산현황_한국투자증권_계좌별 자산', Depth3: '계좌잔고', Depth4: '계좌정보', Depth5:'지점위치보기', File: './AB/AB1-1-1-1-1-4-3.html', complete: '웹뷰', EndDate: '', ModifyDate: '', etc: '	AB1.1.1.1.1.4.3<br/>TODO : 지도 삽입'},
+
+            {Depth1: '', Depth2: '총자산현황_다른금융기관', Depth3: '유의사항', Depth4: '', Depth5:'', File: './AB/AB1-1-3.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB1.1.3'},
+            {Depth1: '', Depth2: '국내주식 권리내역', Depth3: '유의사항', Depth4: '', Depth5:'', File: './AB/AB1-3-2.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB1.3.2'},
+            {Depth1: '', Depth2: '해외주식 권리내역', Depth3: '유의사항', Depth4: '', Depth5:'', File: './AB/AB1-4-2.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB1.4.2'},
+            {Depth1: '', Depth2: '오픈뱅킹서비스 신청', Depth3: '오픈뱅킹 서비스 안내', Depth4: '', Depth5:'', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB1.7.1.1'},
+            {Depth1: '', Depth2: '', Depth3: '휴대폰 인증', Depth4: '약관 상세(HTML)', Depth5:'', File: './AB/AB1-7-1-3-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB1.7.1.3.1'},
+            {Depth1: '', Depth2: '', Depth3: '오픈뱅킹 이용계좌 등록방식 선택', Depth4: '출금동의', Depth5:'약관 상세(HTML)', File: './AB/AB1-7-1-7-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB1.7.1.7.1'},
+            {Depth1: '', Depth2: '오픈뱅킹 거래내역', Depth3: '기타', Depth4: '거래내역 유의사항', Depth5:'', File: '	./AB/AB1-8-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB1.8.1<br />부분웹뷰'},
+            // ??
+            {Depth1: '1. 자산/내역', Depth2: '거래내역', Depth3: '유의사항', Depth4: '', Depth5:'', File: './AB/AB1-2-2.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB1.2.2'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '오픈뱅킹 약관동의', Depth5:'', File: './AB/AB1-7-1-2.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB1.7.1.2'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '출금동의', Depth5:'약관 상세(HTML)', File: './AB/AB1-7-1-7-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB1.7.1.7.1'},
+            {Depth1: '', Depth2: '오픈뱅킹 거래내역', Depth3: '거래내역 유의사항', Depth4: '', Depth5:'', File: './AB/AB1-8-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB1.8.1'},
+
+            // 자산_뱅킹_이체 : 211122 완료 (v0.4)
+            {Depth1: '자산_뱅킹_이체 : 211122 완료 (v0.4)', Depth2: '', Depth3: '', Depth4: '', Depth5: '', File: '', complete: '구분', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '이체', Depth2: '이체/간편송금', Depth3: '간편송금', Depth4: '서비스 미신청', Depth5: '간편송금 서비스 신청 - 간편송금 서비스 이용약관', File: './AB/AB2-1-10-1-1-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB2.1.10.1.1.1'},
+            {Depth1: '', Depth2: '', Depth3: '더보기', Depth4: '이체 유의사항', Depth5: '계좌번호 이체', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB2.1.11'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '', Depth5: '오픈뱅킹 이체', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB2.1.11.1.1'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '', Depth5: '간편송금', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB2.1.11.1.2'},
+            {Depth1: '', Depth2: '자동이체', Depth3: '자동이체 신청내역', Depth4: '자동이체 유의사항', Depth5: '입금신청', File: './AB/AB2-2-5-3.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB2.2.5.3'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '', Depth5: '이체신청', File: './AB/AB2-2-5-3-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB2.2.5.3.1'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '', Depth5: '신청내역', File: './AB/AB2-2-5-3-2.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB2.2.5.3.2'},
+            {Depth1: '', Depth2: '은행제휴계좌이체', Depth3: '한국투자>은행', Depth4: '유의사항', Depth5: '', File: './AB/AB2-3-2-2.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB2.3.2.2'},
+            {Depth1: '', Depth2: '유가증권출고', Depth3: '유의사항', Depth4: '', Depth5: '', File: './AB/AB2-4-5.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB2.4.5'},
+            {Depth1: '', Depth2: '이체(입출금)내역', Depth3: '유의사항', Depth4: '', Depth5: '', File: './AB/AB2-5-7.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB2.5.7'},
+            {Depth1: '', Depth2: '이체한도 변경', Depth3: '유의사항', Depth4: '', Depth5: '', File: './AB/AB2-6-3.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB2.6.3'},
+            {Depth1: '', Depth2: '한투 계좌간 이체 적용 등록', Depth3: '유의사항', Depth4: '', Depth5: '', File: './AB/AB2-7-3.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB2.7.3'},
+            // ??
+            {Depth1: '2. 이체', Depth2: '2.1. 이체/간편송금', Depth3: '간편송금', Depth4: '서비스 신청', Depth5:'간편송금 서비스 신청', File: './AB/AB2-1-10-1-1.html', complete: '화면 삭제', EndDate: '', ModifyDate: '', etc: 'AB2.1.10.1.1'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '', Depth5:'간편송금 서비스 신청 완료', File: './AB/AB2-1-10-1-2.html', complete: '화면 삭제', EndDate: '', ModifyDate: '', etc: 'AB2.1.10.1.2'},
+            {Depth1: '', Depth2: '2.4. 유가증권출고', Depth3: '유가증권출고', Depth4: '', Depth5: '', File: './AB/AB2-4.html', complete: '화면 삭제', EndDate: '', ModifyDate: '', etc: 'AB2.4'},
+            {Depth1: '', Depth2: '', Depth3: '출고종목 선택 및 수량입력', Depth4: '', Depth5: '', File: './AB/AB2-4-1.html', complete: '화면 삭제', EndDate: '', ModifyDate: '', etc: 'AB2.4.1'},
+            {Depth1: '', Depth2: '', Depth3: '양도거래 확인 안내', Depth4: '', Depth5: '', File: './AB/AB2-4-1-2.html', complete: '화면 삭제', EndDate: '', ModifyDate: '', etc: 'AB2.4.1.2'},
+            {Depth1: '', Depth2: '', Depth3: '주권 양도여부 고객 확인절차 안내', Depth4: '', Depth5: '', File: './AB/AB2-4-2-3.html', complete: '화면 삭제', EndDate: '', ModifyDate: '', etc: 'AB2.4.2.3'},
+
+            // 자산_뱅킹_환전_외화 : 211122 완료 (v0.4)
+            {Depth1: '자산_뱅킹_환전_외화 : 211122 완료 (v0.4)', Depth2: '', Depth3: '', Depth4: '', Depth5: '', File: '', complete: '구분', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '환전/외화', Depth2: '외화이체', Depth3: '유의사항', Depth4: '', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB3.3.6'},
+            {Depth1: '', Depth2: '해외송금', Depth3: '해외송금', Depth4: '환전 후 송금', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB3.4.2'},
+
+            {Depth1: '환전/외화', Depth2: '3.1. 환전', Depth3: '유의사항', Depth4: '', Depth5: '', File: './AB/환전외화-유의사항.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '', Depth2: '3.3. 외화이체', Depth3: '타행이체', Depth4: '유의사항', Depth5: '', File: './AB/환전외화-외화타행이체-유의사항.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '해외송금 ', Depth2: '3.4. 해외송금 ', Depth3: '유의사항', Depth4: '', Depth5: '', File: './AB/해외송금-유의사항.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+
+            // 자산_뱅킹_신용_대출_대여
+            
+            // 자산_뱅킹_청약 : 211122 완료 (v0.4)
+            {Depth1: '자산_뱅킹_청약 : 211122 완료 (v0.4)', Depth2: '', Depth3: '', Depth4: '', Depth5: '', File: '', complete: '구분', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '청약', Depth2: '청약가이드', Depth3: '', Depth4: '', Depth5:'', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB5.1'},
+            {Depth1: '', Depth2: '공모주/실권주 청약', Depth3: '유의사항', Depth4: '', Depth5:'', File: './AB/AB5-2-3.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB5.2.3<br />부분웹뷰'},
+            {Depth1: '', Depth2: '환불금이체계좌 설정', Depth3: '환불금이체계좌 변경', Depth4: '이체거래약관 상세', Depth5:'', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB5.4.1.1'},
+            {Depth1: '', Depth2: '유상청약', Depth3: '청약신청', Depth4: '예약청약신청', Depth5:'유의사항', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB5.6.1.2.1'},
+            {Depth1: '', Depth2: '', Depth3: '유의사항', Depth4: '', Depth5:'', File: './AB/AB5-6-3.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB5.6.3'},
+            {Depth1: '', Depth2: '해외증권 배당옵션', Depth3: '유의사항', Depth4: '', Depth5:'', File: './AB/AB5-7-3.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB5.7.3'},
+            // ??
+            {Depth1: '', Depth2: '5.2. 공모주/실권주 청약', Depth3: '청약신청', Depth4: '청약신청', Depth5: '자동이체 신청', File: './AB/AB5-2-1-1-2.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB5.2.1.1.2<br />부분웹뷰'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '청약 상세정보', Depth5: '증거금 계산기', File: './AB/AB5-2-1-2-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB5.2.1.2.1<br/>부분웹뷰'},
+            {Depth1: '', Depth2: '5.5. 청약주식이체계좌 설정', Depth3: '', Depth4: '', Depth5: '', File: './AB/AB5-5.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB5.5'},
+            {Depth1: '', Depth2: '5.6. 유상청약', Depth3: '청약신청', Depth4: '청약신청', Depth5: '', File: './AB/AB5-6-1-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB5.6.1.1<br />부분웹뷰'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '예약청약신청', Depth5: '', File: './AB/AB5-6-1-2.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB5.6.1.2<br />부분웹뷰'},
+            {Depth1: '', Depth2: '5.7. 해외증권 배당옵션', Depth3: '배당옵션 신청', Depth4: '해외증권 배당옵션 신청', Depth5: '', File: './AB/AB5-7-1-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB5.7.1.1'},
+            {Depth1: '', Depth2: '', Depth3: '신청내역/취소', Depth4: '', Depth5: '', File: './AB/AB5-7-2.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB5.7.2'},
+
+            // 자산_뱅킹_계좌개설 : 211122 완료 (v0.4)
+            {Depth1: '자산_뱅킹_계좌개설 : 211122 완료 (v0.4)', Depth2: '', Depth3: '', Depth4: '', Depth5: '', File: '', complete: '구분', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '계좌개설', Depth2: '스마트폰계좌개설_개설할 계좌 선택', Depth3: '휴대폰 본인확인', Depth4: '약관 상세', Depth5:'', File: './AB/AB6-1-2-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB6.1.2.1'},
+            {Depth1: '', Depth2: '온라인 추가 계좌개설', Depth3: '온라인 추가 계좌개설 안내', Depth4: '', Depth5:'', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'AB6.6.1.1'},
+            
+            // 금융상품(FP)
+            // 금융상품_관심금융상품
+            
+            // 금융상품_개인연금/IRP : 211122 완료 (v0.4)
+            {Depth1: '금융상품_개인연금/IRP : 211122 완료 (v0.4)', Depth2: '', Depth3: '', Depth4: '', Depth5: '', File: '', complete: '구분', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '개인연금/IRP', Depth2: '개인연금 펀드 검색', Depth3: '유의사항', Depth4: '', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP2.1.2'},
+            {Depth1: '', Depth2: '개인연금 계약이전(타사>당사)', Depth3: '투자 주요내용 확인', Depth4: '개인연금 계약이전 가입자 유의사항', Depth5: '', File: './FP/FP2-3-2-2.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP2.3.2.2'},
+            {Depth1: '', Depth2: '', Depth3: '가져올 계좌 정보 입력', Depth4: '타사연금계좌 추가', Depth5: '타사 연금계좌 추가 유의사항', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP2.3.5.1.1'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '가져올 계좌 정보 입력 유의사항', Depth5: '', File: './FP/FP2-3-5-2.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP2.3.5.2'},
+            {Depth1: '', Depth2: '나의 개인연금', Depth3: '자산현황', Depth4: '가입계좌 상세', Depth5: '연금저축계좌 - 유의사항', File: './FP/FP2-4-1-1-1-3.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP2.4.1.1.1.3'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '', Depth5: '연금저축펀드 - 유의사항', File: './FP/FP2-4-1-1-2-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP2.4.1.1.2.1'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '', Depth5: '개인연금저축 - 유의사항', File: './FP/FP2-4-1-1-3-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP2.4.1.1.3.1'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '납입한도/적립기간변경', Depth5: '신청정보입력 - 유의사항', File: './FP/FP2-4-1-1-4-1-2.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP2.4.1.1.4.1.2'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '추가매수', Depth5: '신청정보 입력 - 유의사항', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP2.4.1.3.2'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '매도', Depth5: '신청정보 입력 - 유의사항', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP2.4.1.4.1.1'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '', Depth5: '신청완료 - 유의사항', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP2.4.1.4.4.1'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '전환', Depth5: '전환종목 선택 - 유의사항', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP2.4.1.5.1.1'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '', Depth5: '신청정보 확인 - 유의사항', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP2.4.1.5.3.1'},
+            {Depth1: '', Depth2: '', Depth3: '거래내역/취소', Depth4: '거래취소', Depth5: '신청정보확인 - 유의사항', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP2.4.2.1.1.1'},
+            {Depth1: '', Depth2: '반기수익률보고서', Depth3: '운용수익', Depth4: '운용수익안내', Depth5: '', File: './FP/FP2-5-3-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP2.5.3.1'},
+            {Depth1: '', Depth2: '', Depth3: '운용보수', Depth4: '운용보수안내', Depth5: '', File: './FP/FP2-5-4-1-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP2.5.4.1.1'},
+            {Depth1: '', Depth2: '', Depth3: '유의사항', Depth4: '', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP2.5.7'},
+            {Depth1: '', Depth2: '개인연금/IRP가이드', Depth3: '', Depth4: '', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+            // ???
+            {Depth1: '', Depth2: '', Depth3: '가져올 계좌 정보 입력', Depth4: '유의사항', Depth5: '', File: './FP/FP2-3-5-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP2.3.5.1'},
+            {Depth1: '', Depth2: '반기수익률보고서', Depth3: '반기수익률보고서 제도안내', Depth4: '', Depth5: '', File: './FP/개인연금IRP-반기수익률보고서제도안내.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+
+            // 금융상품_ISA : 211122 완료 (v0.4)
+            {Depth1: '금융상품_ISA : 211122 완료 (v0.4)', Depth2: '', Depth3: '', Depth4: '', Depth5: '', File: '', complete: '구분', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: 'ISA', Depth2: 'ISA랩서비스신청안내', Depth3: 'ISA랩 검색', Depth4: 'ISA랩 상품상세', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP3.2.1.1'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '', Depth5: '신청정보확인', File: './FP/FP3-2-1-1-6.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP3.2.1.1.6'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '', Depth5: '유의사항', File: './FP/FP3-2-1-1-9.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP3.2.1.1.9'},
+            {Depth1: '', Depth2: '', Depth3: '유의사항', Depth4: '', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP3.2.4'},
+            {Depth1: '', Depth2: 'ISA 계좌개설/가이드', Depth3: '', Depth4: '', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP3.4'},
+            // 금융상품_ISA
+            {Depth1: 'ISA', Depth2: '상품계약', Depth3: 'ISA 랩 서비스 계약안내', Depth4: '유의사항 ', Depth5: '', File: './FP/ISA랩서비스-계약안내-유의사항.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '', Depth2: '나의 ISA 계약관리', Depth3: 'ISA중개형', Depth4: '과세적용내용확인', Depth5: ' ', File: './FP/FP3-3-1-2-1-1-2.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP3.3.1.2.1.1.2'},
+            {Depth1: '', Depth2: '', Depth3: 'ISA신탁', Depth4: '계약정보 상세', Depth5: '유의사항', File: './FP/FP3-3-1-4-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP3.3.1.4.1'},
+            {Depth1: '', Depth2: '', Depth3: '나의 ISA 랩', Depth4: 'ISA 랩 계약 유의사항', Depth5: '', File: './FP/ISA랩-계약-유의사항.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+            
+            // 금융상품_ELS/DLS : 211122 완료 (v0.4)
+            {Depth1: '금융상품_ELS/DLS : 211122 완료 (v0.4)', Depth2: '', Depth3: '', Depth4: '', Depth5: '', File: '', complete: '구분', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: 'ELS/DLS', Depth2: '청약중인 ELS/DLS 검색', Depth3: '원화', Depth4: '상품상세', Depth5: 'ELS/DLS 상품가입-투자주요내용상세보기(PDF)', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP4.1.1.1.5.4.2'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '', Depth5: '유의사항', File: './FP/FP4-1-1-1-6.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP4.1.1.1.6'},
+            {Depth1: '', Depth2: '', Depth3: '유의사항', Depth4: '', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP4.1.4'},
+            {Depth1: '', Depth2: '청약중인 ELS/DLS 상세', Depth3: 'ELS/DLS 가입 - 유의사항 ', Depth4: '', Depth5: '', File: './FP/ELS-DLS-청약중인ELSDLS-가입-유의사상.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '', Depth2: '나의 ELS/DLS', Depth3: '유의사항 ', Depth4: '', Depth5: '', File: './FP/FP4-3-4.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP4.3.4'},
+            {Depth1: '', Depth2: 'ELS/DLS 가이드', Depth3: ' ', Depth4: '', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP4.5'},
+            
+            // 금융상품_편드 : 211122 완료 (v0.4)
+            {Depth1: '금융상품_편드 : 211122 완료 (v0.4)', Depth2: '', Depth3: '', Depth4: '', Depth5: '', File: '', complete: '구분', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '펀드', Depth2: '펀드몰', Depth3: '상품상세', Depth4: '펀드 상품가입', Depth5: '투자정보입력-투자권유대행인동의서', File: '', complete: '웹뷰', EndDate: '', ModifyDate: '', etc: 'FP5.1.2.4.5.2'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '', Depth5: '투자정보입력-유의사항', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP5.1.2.4.6'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '', Depth5: '투자 주요내용 확인-간이투자설명서(PDF)', File: '', complete: '웹뷰', EndDate: '', ModifyDate: '', etc: 'FP5.1.2.4.7'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '유의사항', Depth5: '', File: './FP/FP5-1-2-5.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP5.1.2.5'},
+            {Depth1: '', Depth2: '추천포트폴리오', Depth3: '추천포트폴리오 상품상세', Depth4: '투자주요내용확인', Depth5: '투자주요내용 상세(PDF)', File: '', complete: '웹뷰', EndDate: '', ModifyDate: '', etc: 'FP5.7.1.1.3.1'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '유의사항', Depth5: '', File: './FP/FP5-7-1-1-6.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP5.7.1.1.6'},
+            {Depth1: '', Depth2: '나의 펀드', Depth3: '상품가입', Depth4: '추가매수', Depth5: '투자정보입력-유의사항', File: './FP/FP5-8-1-2-1-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP5.8.1.2.1.1'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '투자방법', Depth5: '유의사항', File: './FP/펀드-상품가입-유의사항.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '매도', Depth5: '신청정보입력-유의사항', File: './FP/FP5-8-1-3-1-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP5.8.1.3.1.1'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '', Depth5: '신청정보확인-유의사항', File: './FP/FP5-8-1-3-4-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP5.8.1.3.4.1'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '전환신청', Depth5: '전환종목 선택-유의사항', File: './FP/FP5-8-1-4-1-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP5.8.1.4.1.1'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '', Depth5: '신청정보입력-유의사항', File: './FP/FP5-8-1-4-2-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP5.8.1.4.2.1<br /><span style="color:#f00">아이디 중복</span>'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '', Depth5: '신청정보확인-유의사항', File: './FP/FP5-8-1-4-2-1.1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP5.8.1.4.2.1<br /><span style="color:#f00">아이디 중복</span>'},
+            {Depth1: '', Depth2: '', Depth3: '거래내역/취소', Depth4: '거래취소', Depth5: '신청정보확인-유의사항', File: './FP/FP5-8-2-1-1-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP5.8.2.1.1.1'},
+            {Depth1: '', Depth2: '5.8 실질수익률보고서', Depth3: '', Depth4: '', Depth5: '유의사항', File: './FP/FP5-9-1-1-1.html', complete: '화면 삭제', EndDate: '', ModifyDate: '', etc: 'FP5.9.1.1.1'},
+            
+            // 금융상품_채권 : 211122 완료 (v0.4)
+            {Depth1: '금융상품_채권 : 211122 완료 (v0.4)', Depth2: '', Depth3: '', Depth4: '', Depth5: '', File: '', complete: '구분', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '채권/RP/발행어음', Depth2: '장외채권 검색', Depth3: '유의사항', Depth4: '', Depth5: '', File: './FP/FP6-1-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP6.1.1'},
+            {Depth1: '', Depth2: '', Depth3: '장외채권 상품상세', Depth4: '가상투자', Depth5: '투자정보 입력 - 유의사항', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP6.1.2.1.1.1'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '', Depth5: '예상결과보기 - 현금흐름표 - 유의사항', File: './FP/FP6-1-2-1-2-1-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP6.1.2.1.2.1.1'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '매수', Depth5: '투자주요내용확인 - 상품설명서 - 장외채권 상품관련 유의사항', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP6.1.2.2.3.1.2'},
+            {Depth1: '', Depth2: '', Depth3: '장외채권 매수', Depth4: '상품상세', Depth5: '거래 주의사항 확인', File: './FP/FP6-1-2-2-5.html', complete: '화면 삭제', EndDate: '', ModifyDate: '', etc: 'FP6.1.2.2.5'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '', Depth5: '장외채권 상품관련 유의사항', File: './FP/FP6-1-2-2-4-1-1.html', complete: '화면 삭제', EndDate: '', ModifyDate: '', etc: 'FP6.1.2.2.4.1.1'},
+            {Depth1: '', Depth2: '', Depth3: '가상투자', Depth4: '투자정보입력', Depth5: '유의사항', File: './FP/FP6-1-2-1-1-1.html', complete: '화면 삭제', EndDate: '', ModifyDate: '', etc: 'FP6.1.2.1.1.1'},
+            {Depth1: '', Depth2: '장내채권 둘러보기', Depth3: '유의사항', Depth4: '', Depth5: '', File: './FP/FP6-4-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP6.4.1'},
+            {Depth1: '', Depth2: '', Depth3: '진입경로선택', Depth4: '가상투자하기', Depth5: '투자정보입력 - 유의사항', File: './FP/FP6-4-2-1-1-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP6.4.2.1.1.1'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '', Depth5: '예상결과보기 - 현금흐름표 - 유의사항', File: './FP/FP6-4-2-1-2-1-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP6.4.2.1.2.1.1'},
+            {Depth1: '', Depth2: '', Depth3: '거래내역/취소', Depth4: '신청정보 확인', Depth5: '유의사항', File: './FP/채권-거래내역취소-신청정보확인-유의사항.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '현재가', Depth5: '유의사항', File: './FP/채권-장내채권-현재가-유의사항.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+            
+            // 금융상품_RP : 211122 완료 (v0.4)
+            {Depth1: '금융상품_RP : 211122 완료 (v0.4)', Depth2: '', Depth3: '', Depth4: '', Depth5: '', File: '', complete: '구분', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '채권/RP/발행어음 ', Depth2: 'RP 검색', Depth3: '유의사항', Depth4: '', Depth5: '', File: './FP/FP6-5-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP6.5.1'},
+            {Depth1: '', Depth2: '', Depth3: 'RP 상품가입(원화)', Depth4: '신청정보확인', Depth5: '거래 유의사항', File: './FP/FP6-5-2-4-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP6.5.2.4.1'},
+            {Depth1: '', Depth2: '', Depth3: 'RP 상품가입(외화)', Depth4: '신청정보확인', Depth5: '거래 유의사항', File: './FP/FP6-6-2-4-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP6.6.2.4.1'},
+            {Depth1: '', Depth2: 'RP자동매매서비스', Depth3: '외화RP 자동매매 서비스 신청안내', Depth4: '계좌번호선택', Depth5: '해외증권거래신청 - 유의사항', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP6.7.1.1.1.1'},
+            {Depth1: '', Depth2: '', Depth3: '유의사항', Depth4: '', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP6.7.3'},
+            {Depth1: '', Depth2: '나의 RP', Depth3: '상품가입', Depth4: '유의사항', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP6.8.1.1.1'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '추가매수(원화)', Depth5: '투자정보입력 - 유의사항', File: './FP/FP6-8-1-3-1-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP6.8.1.3.1.1'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '추가매수(외화)', Depth5: '투자정보입력 - 유의사항', File: './FP/FP6-8-1-4-1-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP6.8.1.4.1.1'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '매도(원화)', Depth5: '매도정보입력 - 유의사항', File: './FP/FP6-8-1-5-1-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP6.8.1.5.1.1'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '매도(외화)', Depth5: '매도정보입력 - 유의사항', File: './FP/FP6-8-1-6-1-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP6.8.1.6.1.1'},
+            {Depth1: '', Depth2: 'RP 가이드', Depth3: '', Depth4: '', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP6.9'},
+            {Depth1: '', Depth2: 'RP원화 신규매수', Depth3: 'RP 가입 유의사항', Depth4: '', Depth5: '', File: './FP/RP-원화-신규매수-유의사항.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '', Depth2: 'RP외화 신규매수', Depth3: '유의사항', Depth4: '', Depth5: '', File: './FP/RP-외화-신규매수-유의사항.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '', Depth2: '나의 RP ', Depth3: '유의사항', Depth4: '', Depth5: '', File: './FP/RP-나의RP-유의사항.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '', Depth2: '자동매매 서비스', Depth3: '', Depth4: '외화RP 자동매매 서비스 신청안내', Depth5: '유의사항', File: './FP/RP-자동매매서비스-유의사항.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '', Depth2: '해외증권 거래신청', Depth3: '', Depth4: '유의사항', Depth5: '', File: './FP/RP-해외증권거래신청-유의사항.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+
+            // 금융상품_발행어음 : 211122 완료 (v0.4)
+            {Depth1: '금융상품_발행어음 : 211122 완료 (v0.4)', Depth2: '', Depth3: '', Depth4: '', Depth5: '', File: '', complete: '구분', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '발행어음', Depth2: '발행어음 검색(원화/외화)', Depth3: '유의사항', Depth4: '', Depth5: '', File: './FP/FP6-10-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP6.10.1'},
+            {Depth1: '', Depth2: '', Depth3: '상품가입(원화)', Depth4: '신청정보확인', Depth5: '거래 유의사항', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP6.10.2.1.4.1'},
+            {Depth1: '', Depth2: '', Depth3: '상품가입(외화)', Depth4: '신청정보확인', Depth5: '거래 유의사항', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP6.11.1.1.4.1'},
+            {Depth1: '', Depth2: '신규 매수', Depth3: '적립식 발행어음 거래 주의사항', Depth4: '', Depth5: '', File: './FP/발행어음-적립식발행어음-거래주의사항.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '', Depth2: '나의 발행어음', Depth3: '유의사항', Depth4: '', Depth5: '', File: './FP/발행어음-나의발행어음-유의사항.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '', Depth2: '', Depth3: '추가매수(원화)', Depth4: '신청정보입력', Depth5: '유의사항', File: './FP/FP6-12-1-3-1-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP6.12.1.3.1.1'},
+            {Depth1: '', Depth2: '', Depth3: '추가매수(외화)', Depth4: '신청정보입력', Depth5: '유의사항', File: './FP/FP6-12-1-4-1-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP6.12.1.4.1.1'},
+            {Depth1: '', Depth2: '', Depth3: '매도(원화)', Depth4: '신청정보입력', Depth5: '유의사항', File: './FP/FP6-12-1-5-1-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP6.12.1.5.1.1'},
+            {Depth1: '', Depth2: '', Depth3: '매도(외화)', Depth4: '신청정보입력', Depth5: '유의사항', File: './FP/FP6-12-1-6-1-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP6.12.1.6.1.1'},
+            {Depth1: '', Depth2: '발행어음 투자 가이드', Depth3: '', Depth4: '', Depth5: '', File: '', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP6.13'},
+            // 금융상품_랩/투자자문사/자산관리
+            // 금융상품_CMA : 211122 완료 (v0.4)
+            {Depth1: '금융상품_CMA : 211122 완료 (v0.4)', Depth2: '', Depth3: '', Depth4: '', Depth5: '', File: '', complete: '구분', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: 'CMA', Depth2: 'CMA 신청', Depth3: '유의사항', Depth4: '', Depth5: '', File: './FP/FP8-1-5.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP8.1.5'},
+            {Depth1: '', Depth2: '나의 CMA & 체크카드', Depth3: '적용이율조회', Depth4: '유의사항', Depth5: '', File: './FP/FP8-2-1-3.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP8.2.1.3'},
+            {Depth1: '', Depth2: '', Depth3: '체크카드 신청', Depth4: '신청정보입력', Depth5: '유의사항', File: './FP/FP8-2-3-1-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP8.2.3.1.1'},
+            {Depth1: '', Depth2: '', Depth3: '나의 체크카드', Depth4: '카드관리', Depth5: '혜택안내', File: './FP/FP8-2-4-4-3.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP8.2.4.4.3'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '분실/재발급/해지', Depth5: '재발급사유입력 - 유의사항', File: './FP/FP8-2-4-6-3-1-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP8.2.4.6.3.1.1'},
+            {Depth1: '', Depth2: '', Depth3: '', Depth4: '', Depth5: '신청정보입력 - 유의사항', File: './FP/FP8-2-4-6-3-2-1.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'FP8.2.4.6.3.2.1'},
+
+            {Depth1: '구분선', Depth2: '', Depth3: '', Depth4: '', Depth5: '', File: '', complete: '구분', EndDate: '', ModifyDate: '', etc: ''},
+            // 금융상품_로보추천서비스
+            {Depth1: '로보추천 서비스', Depth2: '서비스 목록', Depth3: '유의사항', Depth4: '', Depth5: '', File: './T/로보추천서비스-서비스목록-유의사항.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: ''},
+            {Depth1: '', Depth2: '서비스 신청', Depth3: '안내사항', Depth4: '유의사항', Depth5: '', File: './T/T5-24-4-2.html', complete: '진행중', EndDate: '', ModifyDate: '', etc: 'T5.24.4.2'},
+
+
+          ];
+
+          var app = new App();
+          urlNum += 1;
+          if (urlNum === initData.list.length) {
+            loader.classList.remove('active');
+          }
+        },
+        // 구글 시트에서 날짜 형식으로 받은 날짜 텍스트 변환
+        changeDate: function (date) {
+          if (date != 'Invalid Date') {
+            var year = date.getFullYear();
+            var month = 1 + date.getMonth();
+            var day = date.getDate();
+            month = month >= 10 ? month : '0' + month;
+            day = day >= 10 ? day : '0' + day;
+            return year + '/' + month + '/' + day;
+          } else {
+            return '';
+          }
+        },
+        // 완료 후 ModifyDate 날짜 오늘 날짜와 비교 후 tr에 update class 추가
+        checkUpdate: function (date) {
+          var next3day = new Date();
+          var prev3day = new Date();
+          next3day.setDate(next3day.getDate() + 2);
+          prev3day.setDate(prev3day.getDate() - 2);
+          if (date != 'Invalid Date' && date > prev3day && next3day > date) {
+            return 'update';
+          } else {
+            return '';
+          }
+        },
+        // 현재 상태 값에 따른 클래스명 return
+        checkComplete: function (state) {
+          if (state === '화면 삭제') {
+            // 중복 또는 제외 할 화면이 있을 경우  || 로 추가
+            return 'delete';
+          } else if (state === '진행중') {
+            return 'ing';
+          } else if (state === '완료') {
+            return 'complete';
+          } else if (state === '검수요청') {
+            return 'confirm';
+          } else if (state === '구분') {
+            return 'hr';
+          } else {
+            return '';
+          }
+        },
+      };
+
+      // load event
+      var loadEvent = {
+        initTabData: function () {
+          initData.list.forEach(function (value, idx) {
+            var tabContentHtml = '';
+            tabContentHtml += "	<div class='this-list-view'>";
+            tabContentHtml += "     <table class='guide-table'>";
+            tabContentHtml += '     </table>';
+            tabContentHtml += '	</div>';
+
+            var tabContent = document.querySelector(".tab-content[data-role='tab" + (idx + 1) + "']");
+            if (tabContent) {
+              tabContent.innerHTML = tabContentHtml;
+            }
+            tabContentHtml = '';
+          });
+        },
+        goTop: function () {
+          var goTopBtn = document.querySelector('.btn-gotop');
+          goTopBtn.addEventListener('click', function () {
+            window.scrollTo({
+              top: 0,
+              behavior: 'smooth',
+            });
+          });
+        },
+      };
+
+      // scroll event
+      var scrollEvent = {
+        tabFixed: function (curScroll) {
+          if (wrapTabTop < curScroll) {
+            wrapTab.classList.add('fixed');
+          } else {
+            wrapTab.classList.remove('fixed');
+          }
+        },
+      };
+
+      // google data load after event
+      var App = function () {
+        var _this = self;
+        var dataLength = 0;
+
+        _this.env = {
+          eleTitle: document.querySelectorAll('*[data-role=ui-title]'),
+          eleList: document.querySelector('*[data-role=ui-list]'),
+        };
+
+        _this.setTitle = function () {
+          // ie에서 node 배열은 forEach문 에러남
+          Array.prototype.forEach.call(_this.env.eleTitle, function (title) {
+            title.textContent = initData.title;
+          });
+        };
+
+        _this.setList = function () {
+          var headerHtml = '';
+          var listHtml = '';
+          // 각 시트 반복
+          initData.list.forEach(function (value, idx) {
+            // 엑셀 행 값 반복
+            var listIdx = 0;
+            var targetTabContent = document.querySelectorAll('.tab-content')[idx];
+            var target = targetTabContent.querySelector('table');
+            var tbody = document.createElement('tbody');
+
+            if (headerData[value.type].length) {
+              headerHtml += '         <thead>';
+              headerHtml += '             <tr>';
+              headerHtml += '<th scope="col">Index</th>';
+              headerData[value.type].forEach(function (value) {
+                headerHtml += '<th scope="col">' + value + '</th>';
+              });
+              headerHtml += '             </tr>';
+              headerHtml += '         </thead>';
+              target.innerHTML = headerHtml;
+            }
+
+            if (target) {
+              if (pageData[value.type] !== undefined) {
+                for (i = 0; i < pageData[value.type].length; i++) {
+                  // IE 가 Object.values 를 지원하지 않아 아래와 같이 IE 대응 코드로 수정
+                  // var forTarget = Object.values(pageData[value.type][i]);
+
+                  // A열부터 0, B = 1, C = 2 .... 순차적으로 숫자 올라감
+                  listIdx += 1;
+
+                  tbody.setAttribute('data-role', 'ui-list');
+                  tbody.appendChild(document.createElement('tr'));
+                  listHtml += "<td class='no'>" + listIdx + '</td>';
+
+                  Object.keys(pageData[value.type][i]).forEach(function (val, idx) {
+                    if (val.indexOf('File') >= 0) {
+                      listHtml +=
+                        "<td class='filelink'><a href='" +
+                        pageData[value.type][i][val] +
+                        "' target='_blank'>" +
+                        pageData[value.type][i][val] +
+                        '</a></td>';
+                    } else if (val.indexOf('complete') >= 0) {
+                      listHtml += "<td class='state'>" + pageData[value.type][i][val] + '</td>';
+                      getGoggleSheet.checkComplete(pageData[value.type][i][val]) !== '' &&
+                        tbody
+                          .querySelector('tr:nth-child(' + (i + 1) + ')')
+                          .classList.add(getGoggleSheet.checkComplete(pageData[value.type][i][val]));
+                      getGoggleSheet.checkUpdate(new Date(pageData[value.type][i][val])) !== '' &&
+                        tbody
+                          .querySelector('tr:nth-child(' + (i + 1) + ')')
+                          .classList.add(getGoggleSheet.checkUpdate(new Date(pageData[value.type][i][val])));
+                    } else if (val.indexOf('EndDate') >= 0) {
+                      listHtml += "<td class='date'>" + getGoggleSheet.changeDate(new Date(pageData[value.type][i][val])) + '</td>';
+                    } else if (val.indexOf('ModifyDate') >= 0) {
+                      listHtml += "<td class='update'>" + getGoggleSheet.changeDate(new Date(pageData[value.type][i][val])) + '</td>';
+                    } else {
+                      listHtml += '<td>' + pageData[value.type][i][val] + '</td>';
+                    }
+                  });
+
+                  tbody.querySelector('tr:nth-child(' + (i + 1) + ')').innerHTML = listHtml;
+                  listHtml = '';
+                }
+                target.appendChild(tbody);
+              }
+              dataLength += listIdx;
+            }
+          });
+        };
+
+        _this.setProgress = function () {
+          var completeCnt = 0;
+          var ingCnt = 0;
+          var totalCnt = 0;
+          var exceptCnt = 0; // 중복 또는 제외 할 화면이 있을 경우
+
+          initData.list.forEach(function (value, idx) {
+            if (pageData[value.type] !== undefined) {
+              for (i = 0; i < pageData[value.type].length; i++) {
+                forTarget = pageData[value.type][i].complete;
+                if (forTarget === '완료' || forTarget === '화면 삭제') {
+                  completeCnt += 1;
+                } else if (forTarget === '진행중' || forTarget === '검수요청') {
+                  ingCnt += 1;
+                } else if (forTarget === '웹뷰') {
+                  // 중복 또는 제외 할 화면이 있을 경우
+                  exceptCnt += 1;
+                }
+              }
+            }
+          });
+
+          totalCnt = dataLength - exceptCnt;
+          var percent = ((completeCnt / totalCnt) * 100).toFixed(1);
+          var progressBarTxt = document.querySelector('#progressBar .txt');
+          var progressBar = document.querySelector('#progressBar .bar');
+          progressBarTxt.textContent = percent + '%';
+          progressBar.style.width = percent + '%';
+
+          var progressInfo = document.querySelector('#pageProgressInfo');
+          var progressTxt = '';
+          progressTxt += '<li><strong>전체 : </strong>' + totalCnt + '</li>';
+          progressTxt += '<li><strong>완료 : </strong>' + completeCnt + '</li>';
+          progressTxt += '<li><strong>진행중 : </strong>' + ingCnt + '</li>';
+          progressInfo.innerHTML = progressTxt;
+        };
+
+        _this.tab = function () {
+          var tabs = wrapTab.querySelectorAll('ul > li');
+          var tabContents = document.querySelectorAll('.tab-content');
+
+          // ie에서 node 배열은 forEach문 에러남
+          Array.prototype.forEach.call(tabs, function (tab, index) {
+            var tabButton = tab.querySelector('a');
+            if (tab.getAttribute('data-role') === initData.tabActive) {
+              tab.classList.add('active');
+              tabContents[index].classList.add('active');
+            }
+            tabButton.addEventListener('click', function () {
+              for (var i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove('active');
+                tabContents[i].classList.remove('active');
+              }
+              this.parentNode.classList.add('active');
+              tabContents[index].classList.add('active');
+            });
+          });
+        };
+
+        _this.init = (function () {
+          _this.setTitle();
+          _this.setList();
+          _this.setProgress();
+          _this.tab();
+        })();
+      };
+
+      window.addEventListener('load', function () {
+        loadEvent.initTabData();
+        loadEvent.goTop();
+        initData.list.forEach(function (info) {
+          // getGoggleSheet.getListData(info.url, info.type);
+          getGoggleSheet.getListData(info.type);
+        });
+      });
+
+      window.addEventListener('scroll', function (e) {
+        scrollEvent.tabFixed(this.scrollY);
+      });
+    </script>
+  </body>
+</html>

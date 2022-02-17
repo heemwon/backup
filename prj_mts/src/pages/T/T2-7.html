@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <base href="../../" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <div>
+      <main class="beginner-guide-wrap">
+        <div class="tab-wrap1" data-type="tab-wrap">
+          <ul class="tablist full-tab wrap-box full type-02" role="tablist">
+            <li class="tab-item" role="tab">
+              <button type="button" class="active" role="button" aria-controls="panel1" data-type="tab-item">초보자가이드</button>
+            </li>
+            <li class="tab-item" role="tab">
+              <button type="button" role="button" aria-controls="panel2" data-type="tab-item" class="">상품안내</button>
+            </li>
+          </ul>
+          <ul class="panels">
+            <li id="panel1" role="tabpanel" tabindex="0">
+              <div class="card-type-02 wrap-box full">
+                <div class="title-type-01">
+                  <strong class="title">선물/옵션 거래가 처음이세요?</strong>
+                  <p class="desc">선물/옵션은 파생상품으로써, 거래하고자 하는 상품의 계좌개설 과정과 기본 예탁금이 필요한 상품입니다.</p>
+                </div>
+                <ul class="guide-list sml">
+                  <li>
+                    <a href="pages/T/T2-7-1.html">파생상품이란?</a>
+                  </li>
+                  <li>
+                    <a href="pages/T/T2-7-2.html">기본예탁금 안내</a>
+                  </li>
+                  <li>
+                    <a href="pages/T/T2-7-3.html">적격 개인투자자 제도</a>
+                  </li>
+                </ul>
+                <button type="button" class="btn-solid mt30">계좌개설 하러가기</button>
+              </div>
+              <ul class="guide-list mt6">
+                <li>
+                  <a href="pages/T/T2-7-4.html"><span>Q.</span>선물옵션 거래는 어떻게 시작하나요?</a>
+                </li>
+                <li>
+                  <a href="pages/T/T2-7-5.html"><span>Q.</span>선물옵션 현재가는 어떻게 봐야 하나요?</a>
+                </li>
+                <li>
+                  <a href="pages/T/T2-7-6.html"><span>Q.</span>선물옵션 주문이 어려워요</a>
+                </li>
+                <li>
+                  <a href="pages/T/T2-7-7.html"><span>Q.</span>선물옵션 잔고나 손익은 어떻게 확인하나요?</a>
+                </li>
+              </ul>
+            </li>
+            <li id="panel2" role="tabpanel" tabindex="0" hidden="true">
+              <p class="bold border-btm mt24">선물/옵션 상품</p>
+              <ul class="guide-list">
+                <li>
+                  <a href="pages/T/T2-7-8-1.html">주가지수선물옵션</a>
+                </li>
+                <li>
+                  <a href="pages/T/T2-7-8-13.html">개별주식선물옵션</a>
+                </li>
+                <li>
+                  <a href="pages/T/T2-7-8-16.html">금리선물</a>
+                </li>
+                <li>
+                  <a href="pages/T/T2-7-8-19.html">통화선물</a>
+                </li>
+                <li>
+                  <a href="pages/T/T2-7-8-24.html">실물선물</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </main>
+    </div>
+    @@include('../include/script.html')
+  </body>
+</html>

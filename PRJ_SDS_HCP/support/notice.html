@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <base href="../" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <script src="assets/js/ie.js"></script>
+    <link rel="stylesheet" href="assets/css/library/choices.min.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/common.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- START : 수정 : 210701 title명 수정 -->
+    <title>Samsung Cloud Platform</title>
+    <!-- END : 수정 : 210701 title명 수정 -->
+  </head>
+  <body>
+    <div class="wrap notice">
+      <!-- 3depth 메뉴가 있을 시 header태그에 subpage 듀얼클래스를 추가해주세요. -->
+      <div id="header-template" class="header-include subpage"></div>
+
+      <article class="content">
+        <!-- START : 수정 : 20210526 구조변경 -->
+        <div class="hero-sub img-exist">
+          <div class="content">
+            <img src="assets/images/img/img_notice.png" alt="" />
+            <div class="sub-content">
+              <h2 class="font-heading1" data-i18n="button.button_22"></h2>
+            </div>
+          </div>
+        </div>
+        <!-- END : 수정 : 20210526 구조변경 -->
+        <!-- START : 수정 : 20210608 공지사항 리스트 컨텐츠 변경 -->
+        <div class="side-menu-layout">
+          <div class="tab-wrap1 layer-type" data-type="tab-wrap">
+            <div class="side-menu">
+              <ul class="tablist" role="tablist">
+                <!-- START : 수정 : 20210520 aria-controls 제거 -->
+                <li class="tab-item" role="tab">
+                  <!-- END : 수정 : 20210520 aria-controls 제거 -->
+                  <!-- 활성화 시 active 클래스 추가 -->
+                  <!-- START : 수정 : 20210520 class role aria-controls data-type 추가 -->
+                  <button type="button" role="button" data-type="tab-item" onclick="onClickTab(this)" aria-controls="panel-all">
+                    <span name="category" class="i18n-inherit" data-i18n="category.category_15"></span>
+                    (<span class="i18n-inherit" count="ALL"></span>)
+                  </button>
+                  <!-- END : 수정 : 20210520 class role aria-controls data-type 추가 -->
+                </li>
+                <li class="tab-item" role="tab">
+                  <button type="button" role="button" data-type="tab-item" onclick="onClickTab(this)" aria-controls="panel-announcement">
+                    <span name="category" class="i18n-inherit" data-i18n="category.category_32"></span>
+                    (<span class="i18n-inherit" count="ANNOUNCEMENT"></span>)
+                  </button>
+                </li>
+                <li class="tab-item" role="tab">
+                  <button type="button" role="button" data-type="tab-item" onclick="onClickTab(this)" aria-controls="panel-maintenance">
+                    <span name="category" class="i18n-inherit" data-i18n="category.category_33"></span>
+                    (<span class="i18n-inherit" count="MAINTENANCE"></span>)
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="right-content">
+              <!-- START: 아코디언 리스트 -->
+              <ul class="panels">
+                <li id="panel-all" role="tabpanel" tabindex="0">
+                  <div class="accordion-wrap1" data-type="accordion-wrap">
+                    <h3 class="list-header1">
+                      <div class="text">
+                        <span class="i18n-inherit" data-i18n="category.category_15"></span>(<span class="num" count="ALL"></span>)
+                      </div>
+                    </h3>
+                    <ul />
+                  </div>
+                </li>
+                <li id="panel-announcement" role="tabpanel" tabindex="0">
+                  <div class="accordion-wrap1" data-type="accordion-wrap">
+                    <h3 class="list-header1">
+                      <div class="text">
+                        <span class="i18n-inherit" data-i18n="category.category_32"></span>(<span class="num" count="ANNOUNCEMENT"></span>)
+                      </div>
+                    </h3>
+                    <ul />
+                  </div>
+                </li>
+                <li id="panel-maintenance" role="tabpanel" tabindex="0">
+                  <div class="accordion-wrap1" data-type="accordion-wrap">
+                    <h3 class="list-header1">
+                      <div class="text">
+                        <span class="i18n-inherit" data-i18n="category.category_33"></span>(<span class="num" count="MAINTENANCE"></span>)
+                      </div>
+                    </h3>
+                    <ul />
+                  </div>
+                </li>
+              </ul>
+              <!-- END: 아코디언 리스트 -->
+            </div>
+          </div>
+        </div>
+        <!-- END : 수정 : 20210608 공지사항 리스트 컨텐츠 변경 -->
+      </article>
+
+      <!-- START : 수정 : 20210528 margin 공통 클래스 추가 -->
+      <div id="footer-template" class="footer-margin"></div>
+    </div>
+
+    <script src="assets/js/library/jquery.min.js"></script>
+    <script src="assets/js/library/swiper-bundle.min.js"></script>
+    <script src="assets/js/library/scroll-lock.min.js"></script>
+    <script src="assets/js/library/ScrollMagic.min.js"></script>
+    <script src="assets/js/library/choices.min.js"></script>
+    <script src="assets/js/library/i18next-1.11.2.min.js"></script>
+
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/initialize.js"></script>
+    <script src="assets/js/pub.js"></script>
+
+    <script src="assets/js/support/data/notice.ko.js"></script>
+    <script src="assets/js/support/data/notice.en.js"></script>
+    <script src="assets/js/support/support-notice.js"></script>
+  </body>
+</html>

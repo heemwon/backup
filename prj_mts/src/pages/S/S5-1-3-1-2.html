@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <base href="../../" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <div>
+      <main>
+        <div class="page-list-type-03">
+          <p class="tit">스마트 알림 서비스 안내</p>
+          <ol>
+            <li>
+              신청기준
+              <p class="desc desc-type1">고객ID 기준으로 신청 가능합니다.</p>
+              <ul class="sub">
+                <li>[스마트 알림] ON 시 등록된 복수의 단말기에서 알림 수신 가능하며, 한 단말기 당 1개의 ID만 스마트 알림 수신허용으로 설정 할 수 있습니다.</li>
+                <li>ex. A아이디로 스마트 알림 수신 등록 후 B아이디로 로그인 시, A아이디로 등록한 정보가 소멸되어 스마트 알림 수신이 불가능합니다.</li>
+              </ul>
+            </li>
+            <li>
+              서비스 유효기간
+              <p class="desc desc-type1">비사용 3개월 까지 유효합니다.</p>
+              <ul class="sub">
+                <li>알림 설정 후 3개월 이상 비 로그인 기 저장된 알림 설정이 일괄 삭제됩니다.</li>
+              </ul>
+            </li>
+            <li>
+              알림 내역 보관기간
+              <p class="desc desc-type1">영업일 기준 3일 내역 보관됩니다.</p>
+              <ul class="sub">
+                <li>
+                  알림 history는 단말기에 저장되며 영업일 기준 최근 3일간 수신된 내역을 조회할 수 있습니다. <br />
+                  (단, 단말기 메모리 부족, App재설치 등의 사유로 history가 삭제 될 수 있습니다.)
+                </li>
+              </ul>
+            </li>
+          </ol>
+          <!-- START : 수정 : 211202 공통요소로 수정 -->
+          <div class="piece-list-type-03 mt16">
+            <ul>
+              <li>
+                스마트 알림서비스 이용은 한국투자증권 어플리케이션의 최신버전이 정상적으로 설치되어 있어야 하며 어플리케이션 삭제, 다른 아이디로 로그인, App의 비정상 종료 등의 경우 알림메시지가
+                전송되지 않습니다.
+              </li>
+              <li>본 서비스는 미등록시, 서비스 제공업체(google/Apple) 시스템 사정 및 개별 통신환경등에 따라 원활한 상승이 이루어지지 않을 수 있으니 부가서비스로만 활용해주세요.</li>
+              <li>스마트 알림서비스는 서비스 신청 및 기기 정보 정상 등록 완료 시 App을 종료한 상태에서도 알림 메시지 수신이 가능합니다.</li>
+            </ul>
+          </div>
+          <!-- END : 수정 : 211202 공통요소로 수정 -->
+        </div>
+
+        <hr class="line" />
+
+        <div class="page-list-type-03">
+          <p class="tit">종목시세/뉴스, 지수 알림</p>
+          <ol>
+            <li>
+              종목시세 알림 등록 가능 개수
+              <p class="desc desc-type1">최대 30개까지 가능합니다.</p>
+            </li>
+            <li>
+              시세포착 알림 (목표가, 등락률%, 거래량)
+              <p class="desc desc-type1">1회성 알림으로 필요 시 재설정 필요합니다.</p>
+              <ul class="sub">
+                <li>메시지 전송 완료 시 설정 조건이 소멸되며 재설정이 필요합니다.</li>
+              </ul>
+            </li>
+            <li>
+              특이사항 알림
+              <p class="desc desc-type1">1일 최초 1회 기준으로 알림 발송합니다.</p>
+            </li>
+            <li>
+              시간별 현재가 알림
+              <p class="desc desc-type1">시간별 현재가/지수 알림은 장운영 시간 변동에 따라 발송이 누락/지연 될 수 있습니다.</p>
+              <ul class="sub">
+                <li>ex. 대입수능시험에 따른 장운영 시간 조정 등</li>
+              </ul>
+            </li>
+            <li>
+              시가/종가 알림
+              <p class="desc desc-type1">시간별 현재가 알림에서 시가/종가 설정 시 장운영 시각에 맞춰 시가/종가 발생시각에 통보됩니다.</p>
+            </li>
+            <li>
+              종목 뉴스/시황 알림
+              <p class="desc desc-type1">해당 종목에 관련된 뉴스/시황이 등록될 때 알림이 제공됩니다.</p>
+              <ul class="sub">
+                <li>알림 받을 뉴스/시황 종류를 선택할 수 있습니다.</li>
+              </ul>
+            </li>
+          </ol>
+          <!-- START : 수정 : 211202 공통요소로 변경 -->
+          <div class="piece-list-type-03 mt16">
+            <ul>
+              <li>시세/지수알림 서비스는 고객님의 판단에 의해 결정하는 것이며, 이 서비스를 통한 거래의 이익과 손실은 고객 본인에게 귀속됩니다.</li>
+            </ul>
+          </div>
+          <!-- END : 수정 : 211202 공통요소로 변경 -->
+        </div>
+      </main>
+    </div>
+    @@include('../include/script.html')
+  </body>
+</html>
