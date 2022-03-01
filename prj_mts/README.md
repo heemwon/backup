@@ -1,3 +1,14 @@
+```
+$ npm install -g gulp-cli
+```
+## 프로젝트 환경
+
+```
+$ npm install
+$ gulp
+```
+
+
 # 웹퍼블리싱 가이드
 
 ## 프로젝트 환경
