@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="57.029" height="56" viewBox="0 0 57.029 56">
+    <defs>
+        <linearGradient id="linear-gradient" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#71d6cf"/>
+            <stop offset="1" stop-color="#1d8981"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-3" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#f88c63"/>
+            <stop offset="1" stop-color="#ed4223"/>
+        </linearGradient>
+        <filter id="패스_4087" width="27.029" height="34.191" x="30" y="20.247" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <style>
+            .cls-5{fill:none;stroke:#f4c215;stroke-width:1.5px}
+        </style>
+    </defs>
+    <g id="ico_checklist_02_on" transform="translate(7.192 10)">
+        <g id="ico_checklist_02_off" transform="translate(-16 28.001)">
+            <g id="그룹_3635" transform="translate(-3 -23.321)">
+                <path id="패스_3521" fill="url(#linear-gradient)" d="M25.7 22.507h.486L41.8 35.878v18.337H10.088V35.878z" transform="translate(11.721 -21.895)"/>
+                <path id="패스_3522" fill="#fff" d="M4.663 0a4.791 4.791 0 0 1 4.663 4.91v8.147H0V4.91A4.791 4.791 0 0 1 4.663 0z" transform="translate(32.999 19.264)"/>
+                <path id="패스_4086" d="M22.643 15.182L38.41 1.319l15.942 13.863" class="cls-5" transform="translate(-0.834 -6)"/>
+            </g>
+            <path id="선_359" d="M0 9L0 0" class="cls-5" transform="translate(53.309)"/>
+            <g filter="url(#패스_4087)" transform="matrix(1, 0, 0, 1, 8.81, -38)">
+                <path id="패스_4087-2" fill="url(#linear-gradient-3)" d="M4.515 0c2.493 0 4.514 3.539 4.514 7.905a25.934 25.934 0 0 1-1.514 8.286H1.141A53.506 53.506 0 0 1 0 7.905C0 3.539 2.021 0 4.515 0z" transform="translate(39 26.25)"/>
+            </g>
+        </g>
+    </g>
+</svg>

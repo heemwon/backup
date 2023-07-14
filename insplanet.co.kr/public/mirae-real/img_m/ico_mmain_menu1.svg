@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45">
+    <defs>
+        <style>
+            .cls-8{fill:none}.cls-6{stroke:none}
+        </style>
+    </defs>
+    <g id="전자위임장" transform="translate(25.586 14.048)">
+        <g id="yl">
+            <g id="패스_1917" data-name="패스 1917" style="fill:#fff">
+                <path class="cls-6" d="M42.88 56.22H10.843V37.838l16.462-13.94L42.88 37.825V56.22z" transform="translate(-35.68 -32.056)"/>
+                <path d="M27.292 24.892 11.593 38.185V55.47H42.13V38.16L27.292 24.893m-.249-1.755h.537L43.63 37.49v19.48H10.093V37.49l16.95-14.353z" style="fill:#000;stroke:none" transform="translate(-35.68 -32.056)"/>
+            </g>
+            <g id="사각형_707" data-name="사각형 707" style="stroke:#000;stroke-width:1.5px;fill:#fff">
+                <path class="cls-6" d="M5.041 0a5.041 5.041 0 0 1 5.041 5.041v9.073H0V5.041A5.041 5.041 0 0 1 5.041 0z" transform="translate(-13.163 10.493)"/>
+                <path class="cls-8" d="M5.041.75a4.291 4.291 0 0 1 4.29 4.291v7.975a.348.348 0 0 1-.348.348H1.1a.348.348 0 0 1-.348-.348V5.041A4.291 4.291 0 0 1 5.041.75z" transform="translate(-13.163 10.493)"/>
+            </g>
+        </g>
+        <g id="그룹_4043" data-name="그룹 4043">
+            <path id="선_351" data-name="선 351" transform="translate(10.971 10.972)" style="fill:none;stroke:#000;stroke-width:1.5px" d="M7.142 7.142 0 0"/>
+            <g id="타원_163" data-name="타원 163" style="fill:#f4c215;stroke:#000;stroke-width:1.5px">
+                <circle class="cls-6" cx="7.271" cy="7.271" r="7.271"/>
+                <circle class="cls-8" cx="7.271" cy="7.271" r="6.521"/>
+            </g>
+        </g>
+    </g>
+</svg>

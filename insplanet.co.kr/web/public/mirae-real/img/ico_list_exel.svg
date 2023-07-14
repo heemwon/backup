@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-4{fill:none;stroke:#fff;stroke-width:1.2px}
+        </style>
+    </defs>
+    <g id="ico_list_exel" transform="translate(-1286 -763)">
+        <path id="패스_3624" fill="#19559e" d="M0 .857L12-2v20L0 15.143z" transform="translate(1288 767)"/>
+        <path id="사각형_1430" fill="#2f65a7" d="M0 0h6a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H0V0z" transform="translate(1301 768)"/>
+        <path id="선_365" d="M0 0L5 0" class="cls-4" transform="translate(1301 771)"/>
+        <path id="선_366" d="M0 0L5 0" class="cls-4" transform="translate(1301 774)"/>
+        <path id="선_367" d="M0 0L5 0" class="cls-4" transform="translate(1301 777)"/>
+        <path id="선_368" d="M0 0L5 0" class="cls-4" transform="translate(1301 780)"/>
+        <path id="w" fill="#fff" d="M1.7 14.028l1.667.007.567-2.925c.03-.156.057-.312.083-.469s.051-.316.075-.477l.073-.493c.025-.168.05-.34.078-.517h.05l.079.515.076.49c.025.16.051.319.078.477s.055.316.085.475l.589 2.931 1.727.007 1.38-6.737H6.946l-.609 3.331c-.027.162-.052.325-.076.487s-.046.325-.068.488l-.066.49c-.023.164-.045.328-.07.494h-.05q-.045-.248-.087-.494l-.084-.49q-.042-.245-.086-.488t-.092-.487l-.7-3.327h-1.3l-.667 3.324q-.052.238-.1.48t-.087.487q-.042.245-.082.492t-.081.494H2.6c-.025-.165-.048-.329-.07-.492l-.065-.489c-.021-.163-.044-.325-.067-.487s-.048-.324-.075-.486l-.6-3.318H.268z" transform="translate(1289.869 764.962)"/>
+    </g>
+</svg>

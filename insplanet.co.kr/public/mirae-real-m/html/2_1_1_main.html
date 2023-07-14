@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../js/libs/jquery.min.js"></script>
+    <script src="../js/libs/jquery-ui.min.js"></script>
+    <script src="../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../js/sub.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>인터넷 등기소</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="area-header">
+        <div class="area-inner">
+            <h1 class="title logo">대한민국 법원 인터넷 등기소</h1>
+            <span class="btn-notice has-notice"><button>알림</button></span>
+            <span class="btn-navigation"><button>메뉴</button></span>
+        </div>
+    </header>
+    <!-- //Header -->
+    <!-- Navigation -->
+    <div class="navigation-global">
+        <div class="navigation-inner">
+            <!-- Header : Navigation -->
+            <div class="contain-header">
+                <span class="link-home"><a href="/">HOME</a></span>
+                <!-- 로그인 전 -->
+                <div class="login-before">
+                    <p class="text-infor">로그인하시면 보다 편리하게<br> 서비스를 이용하실 수 있습니다.</p>
+                    <div class="box-member">
+                        <span class="btn-login"><a href="">로그인</a></span>
+                        <span class="btn-join"><a href="">회원가입</a></span>
+                        <span class="btn-certify"><a href="">인증센터</a></span>
+                    </div>
+                </div>
+                <!-- 로그인 후 -->
+                <!-- <div class="login-after">
+                    <p class="text-infor">
+                        김부동산중개인님, 안녕하세요!<br>
+                        <span class="log"> 마지막 방문 &nbsp;<span class="log date">2021.11.30 11:05:20</span></span>
+                    </p>
+                    <div class="box-member">
+                        <span class="btn-login"><a href="">로그아웃</a></span>
+                        <span class="btn-join"><a href="">마이페이지</a></span>
+                        <span class="btn-certify"><a href="">인증센터</a></span>
+                    </div>
+                </div>  -->
+                <span class="btn-close"><button>닫기</button></span>
+            </div>
+            <!-- //Header : Navigation -->
+            <!-- body : Navigation -->
+            <div class="contain-body">
+                <div class="box-navigation">
+                    <ul>
+                        <li class="on"><button>1depth메뉴</button>
+                            <div class="depth1">
+                                <ul>
+                                    <li><button>2depth</button>
+                                        <div class="depth2">
+                                            <ul>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><button>2depth</button>
+                                        <div class="depth2">
+                                            <ul>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><button>2depth</button>
+                                        <div class="depth2">
+                                            <ul>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><button>1depth메뉴</button>
+                            <div class="depth1">
+                                <ul>
+                                    <li><button>2depth</button>
+                                        <div class="depth2">
+                                            <ul>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><button>2depth</button>
+                                        <div class="depth2">
+                                            <ul>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><button>2depth</button>
+                                        <div class="depth2">
+                                            <ul>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><button>1depth메뉴</button>
+                            <div class="depth1">
+                                <ul>
+                                    <li><button>2depth</button>
+                                        <div class="depth2">
+                                            <ul>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><button>2depth</button>
+                                        <div class="depth2">
+                                            <ul>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><button>2depth</button>
+                                        <div class="depth2">
+                                            <ul>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><button>1depth메뉴</button>
+                            <div class="depth1">
+                                <ul>
+                                    <li><button>2depth</button>
+                                        <div class="depth2">
+                                            <ul>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><button>2depth</button>
+                                        <div class="depth2">
+                                            <ul>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><button>2depth</button>
+                                        <div class="depth2">
+                                            <ul>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><button>1depth메뉴</button>
+                            <div class="depth1">
+                                <ul>
+                                    <li><button>2depth</button>
+                                        <div class="depth2">
+                                            <ul>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><button>2depth</button>
+                                        <div class="depth2">
+                                            <ul>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><button>2depth</button>
+                                        <div class="depth2">
+                                            <ul>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><button>1depth메뉴</button>
+                            <div class="depth1">
+                                <ul>
+                                    <li><button>2depth</button>
+                                        <div class="depth2">
+                                            <ul>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><button>2depth</button>
+                                        <div class="depth2">
+                                            <ul>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><button>2depth</button>
+                                        <div class="depth2">
+                                            <ul>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><button>1depth메뉴</button>
+                            <div class="depth1">
+                                <ul>
+                                    <li><button>2depth</button>
+                                        <div class="depth2">
+                                            <ul>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><button>2depth</button>
+                                        <div class="depth2">
+                                            <ul>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><button>2depth</button>
+                                        <div class="depth2">
+                                            <ul>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><button>1depth메뉴</button>
+                            <div class="depth1">
+                                <ul>
+                                    <li><button>2depth</button>
+                                        <div class="depth2">
+                                            <ul>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><button>2depth</button>
+                                        <div class="depth2">
+                                            <ul>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><button>2depth</button>
+                                        <div class="depth2">
+                                            <ul>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                                <li><a href="">3depth menu</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //body : Navigation -->
+            </div>
+
+        </div>
+    </div>
+    <!-- //Navigation -->
+    <!-- Contents -->
+    <div class="area-content">
+        <div class="area-inner">
+
+            <!-- 본문영역 -->
+            <div class="contain-main">
+                <p class="text-infor"><strong>인터넷등기소에서</strong> <br >누구나 쉽게 등기열람하세요.</p>
+
+                <div class="box-radio">
+                    <span class="radio-btn-con">
+                        <span class="radio-btn-item">
+                            <input type="radio" name="radiobtn" id="radiobtn1-1" checked="">
+                            <label for="radiobtn1-1">부동산</label>
+                        </span>
+                        <span class="radio-btn-item">
+                            <input type="radio" name="radiobtn" id="radiobtn1-2">
+                            <label for="radiobtn1-2">법인</label>
+                        </span>
+                    </span>
+                </div>
+                <div class="box-search">
+                    <label for="">
+                        <input type="text" placeholder="건물명, 도로명 또는 지번 입력" >
+                    </label>
+                    <button type="button" class="search-btn">
+                        <img src="../img/btn_mmain_search.svg" alt="search">
+                    </button>
+                </div>
+
+                <div class="box-service">
+                    <a href=""><img src="../img/ico_mmain_menu1.svg" alt="" ><span>부동산등기<br/>열람</span></a>
+                    <a href=""><img src="../img/ico_mmain_menu2.svg" alt="" ><span>등기<br/>협업공간</span></a>
+                    <a href=""><img src="../img/ico_mmain_menu3.svg" alt="" ><span>등기신청사건 처리현황</span></a>
+                    <a href=""><img src="../img/ico_mmain_menu4.svg" alt="" ><span>법인등기 열람</span></a>
+                    <a href="" class="w100"><img src="../img/ico_mmain_menu5.svg" alt="" ><span>전자표준양식<br/>신청처리내역조회</span></a>
+                    <a href=""><img src="../img/ico_mmain_menu6.svg" alt="" ><span>발급여부 확인</span></a>
+                    <a href=""><img src="../img/ico_mmain_menu7.svg" alt="" ><span>부동산등기<br/>전자서명</span></a>
+                    <a href=""><img src="../img/ico_mmain_menu8.svg" alt="" ><span>확정일자 열람</span></a>
+                    <a href=""><img src="../img/ico_mmain_menu9.svg" alt="" ><span>무인발급<br/>수수료결제</span></a>
+                </div>
+
+                <div class="box-pass-link">
+                    <hr>
+                    <a href="" class="link">
+                        <span class="title">등기소 출입증 신청관리</span>
+                        <span class="desc">등기소 방문에 필요한 출입증을 발급합니다.</span>
+                    </a>
+                </div>
+
+                <div class="box-cslink">
+                    <a href=""><img src="../img/ico_mmain_quick_form.svg" alt="" >등기소 찾기</a>
+                    <a href=""><img src="../img/ico_mmain_quick_faq.svg" alt="" >등기이용지원</a>
+                    <a href=""><img src="../img/ico_mmain_quick_confirm.svg" alt="" >부동산거래체크리스트</a>
+                    <a href=""><img src="../img/ico_mmain_quick_examp.svg" alt="" >사용자 지원센터</a>
+                </div>
+
+                <div class="box-notice">
+                    <div class="list-notice">
+                        <div><a href=""><span class="text">인터넷등기소에 등록한 영구보존문서의 유효기간 변경 안내</span><span class="date">0000-00-00</span></a></div>
+                        <div><a href=""><span class="text">인터넷등기소에 등록한 영구보존문서의 유효기간 변경 안내</span><span class="date">0000-00-00</span></a></div>
+                        <div><a href=""><span class="text">인터넷등기소에 등록한 영구보존문서의 유효기간 변경 안내</span><span class="date">0000-00-00</span></a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- // 본문영역 -->
+
+        </div>
+    </div>
+    <!-- //Contents -->
+    <!-- Footer -->
+    <footer class="area-footer">
+        <div class="area-inner">
+            <div class="box-privite">
+                <a href="">이용약관</a>
+                <a href=""><strong>개인정보처리방침</strong></a>
+                <a href="">원격지원</a>
+                
+            </div>
+            <p class="text-copyright">Copyright © Supreme Court of Korea.<br > All right reserved.</p>
+        </div>
+    </footer>
+    <!-- //Footer -->
+
+    <!-- 사이드 바 -->
+    <div class="area-sidebar">
+        <div class="area-inner">
+            <div class="contain-cslink">
+                <div class="box-cslink">
+                    <span class="btn-call"><button type="button">전화상담</button></span>
+                    <span class="btn-cscenter"><button type="button">고객센터</button></span>
+                    <span class="btn-chatbot"><button type="button">챗봇</button></span>
+                </div>
+                <span class="btn-sideup"><button>&nbsp;</button></span>
+            </div>
+            <span class="btn-anchertop"><button type="button">TOP</button></span>
+        </div>
+    </div>
+    <!-- //사이드 바 -->
+
+    <script>
+        //하단 공지사항 롤링
+        $(".box-notice .list-notice").not(".slick-initialized").slick({//하단 관련사이트 롤링
+            "arrows":false,
+            vertical:true,
+            dot:false,
+            draggable:false,
+            autoplay:true,
+            autoplaySpeed:8000
+        });
+    </script>
+</body>
+</html>

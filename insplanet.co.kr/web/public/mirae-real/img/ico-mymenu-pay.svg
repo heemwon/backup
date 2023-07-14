@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+    <defs>
+        <style>
+            .cls-9{fill:none}.cls-8{stroke:none}
+        </style>
+    </defs>
+    <g id="ico_mymenu_pay" transform="translate(3.548 .862)">
+        <g id="사각형_1510" fill="#fff" stroke="#000" stroke-width="1.5px">
+            <path d="M0 0H36.681V26.677H0z" class="cls-8" transform="translate(3.452 16.477)"/>
+            <path d="M0.75 0.75H35.931V25.927H0.75z" class="cls-9" transform="translate(3.452 16.477)"/>
+        </g>
+        <g id="사각형_1511" fill="none" stroke="#000" stroke-width="1.5px">
+            <path d="M0 0H10.004V5.335H0z" class="cls-8" transform="translate(9.454 32.483)"/>
+            <path d="M0.75 0.75H9.254V4.585H0.75z" class="cls-9" transform="translate(9.454 32.483)"/>
+        </g>
+        <path id="Stroke_17" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="1.5px" d="M0 .409h36.446" transform="translate(4.361 24.178)"/>
+        <g id="yl" stroke="#000" stroke-width="1.5px" transform="translate(24.585 10.138)">
+            <g id="타원_163" fill="#f4c215">
+                <circle cx="10.458" cy="10.458" r="10.458" class="cls-8"/>
+                <circle cx="10.458" cy="10.458" r="9.708" class="cls-9"/>
+            </g>
+            <path id="패스_4054" fill="none" stroke-linecap="round" stroke-linejoin="round" d="M24.9 3.6l2.525 8 2.5-8 2.573 8 2.108-8" transform="translate(-19.114 3.17)"/>
+            <path id="선_416" fill="none" stroke-linecap="round" d="M0 0L11.338 0" transform="translate(5.12 10.679)"/>
+        </g>
+    </g>
+</svg>

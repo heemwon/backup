@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../../js/libs/jquery.min.js"></script>
+    <script src="../../js/libs/jquery-ui.min.js"></script>
+    <script src="../../js/libs/jquery.selectric.js"></script>
+    <script src="../../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../../js/sub.js"></script>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/guide.css">
+    <link rel="stylesheet" href="../../css/sub.css">
+    <title>Filter Style Guide</title>
+</head>
+
+<body>
+    <main>
+        <!-- Filter -->
+        <h1>Filter Style Guide</h1>
+        <hr />
+        <section>
+            <h2>기본형</h2>
+            <div>
+                <div class="filter-wrap default">
+                    <ul class="form-con">
+                        <li>
+                            <div class="element-con">
+                                <p class="title-con">
+                                    <label for="addr">주소</label>
+                                </p>
+                                <div class="cont-con">
+                                    <input type="text" name="" id="addr">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="element-con">
+                                <p class="title-con">
+                                    부동산 구분
+                                </p>
+                                <div class="cont-con">
+                                    <div class="flex-wrap">
+                                        <span class="radio-btn-con">
+                                            <input type="radio" name="radio" id="radio0">
+                                            <label for="radio0">전체</label>
+                                            <input type="radio" name="radio" id="radio1">
+                                            <label for="radio1">집합건물</label>
+                                            <input type="radio" name="radio" id="radio2">
+                                            <label for="radio2">토지</label>
+                                            <input type="radio" name="radio" id="radio3">
+                                            <label for="radio3">건물</label>
+                                        </span>
+                                        <label for="">
+                                            <input type="text" placeholder="가이드문구 출력">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="element-con">
+                                <p class="title-con">
+                                    <label for="default">등기기록상태</label>
+                                </p>
+                                <div class="cont-con">
+                                    <span class="select-con">
+                                        <select name="" id="default" class="">
+                                            <option value="1">현행</option>
+                                            <option value="2">예정</option>
+                                        </select>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="element-con">
+                                <p class="title-con">
+                                    <label for="defaultcity">시/도</label>
+                                </p>
+                                <div class="cont-con">
+                                    <span class="select-con">
+                                        <select name="" id="defaultcity" class="">
+                                            <option value="1">전체</option>
+                                            <option value="2">시/도</option>
+                                            <option value="3">군/구</option>
+                                        </select>
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="btn-con">
+                        <div class="util-btn-con">
+                            <button type="button" class="btn-solid medium color-4d">초기화</button>
+                            <button type="button" class="btn-solid medium">조회</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <section>
+            <h2>접힘펼침형</h2>
+            <div>
+                <div class="filter-wrap active" data-filter-folding="container">
+                    <ul class="form-con">
+                        <li>
+                            <div class="element-con">
+                                <p class="title-con">
+                                    <label for="addr2">주소</label>
+                                </p>
+                                <div class="cont-con">
+                                    <input type="text" name="" id="addr2" class="" value="서울특별시 강일동 211-1">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="element-con">
+                                <p class="title-con">
+                                    부동산 구분
+                                </p>
+                                <div class="cont-con">
+                                    <div class="flex-wrap">
+                                        <span class="radio-btn-con">
+                                            <input type="radio" name="radiobtn" id="radiobtn0">
+                                            <label for="radiobtn0">전체</label>
+                                            <input type="radio" name="radiobtn" id="radiobtn1" checked>
+                                            <label for="radiobtn1">집합건물</label>
+                                            <input type="radio" name="radiobtn" id="radiobtn2">
+                                            <label for="radiobtn2">토지</label>
+                                            <input type="radio" name="radiobtn" id="radiobtn3">
+                                            <label for="radiobtn3">건물</label>
+                                        </span>
+                                        <label for="">
+                                            <input type="text" placeholder="가이드문구 출력">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="element-con">
+                                <p class="title-con">
+                                    <label for="registration">등기기록상태</label>
+                                </p>
+                                <div class="cont-con">
+                                    <span class="select-con">
+                                        <select name="" id="registration" class="">
+                                            <option value="" selected>현행</option>
+                                            <option value="">예정</option>
+                                        </select>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="element-con">
+                                <p class="title-con">
+                                    <label for="city">시/도</label>
+                                </p>
+                                <div class="cont-con">
+                                    <span class="select-con">
+                                        <select name="" id="city" class="">
+                                            <option value="">전체</option>
+                                            <option value="" selected>서울특별시</option>
+                                            <option value="">부산광역시</option>
+                                        </select>
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="selected-item">
+                            <div class="item-wrap">
+                                <div class="item-con">
+                                    <span class="label">주소</span>
+                                    <span class="value">서울특별시 강일동 211-1</span>
+                                </div>
+                                <div class="item-con">
+                                    <span class="label">부동산 구분</span>
+                                    <span class="value">집합건물</span>
+                                </div>
+                                <div class="item-con">
+                                    <span class="label">등기기록상태</span>
+                                    <span class="value">현행</span>
+                                </div>
+                                <div class="item-con">
+                                    <span class="label">시/도</span>
+                                    <span class="value">서울특별시</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="btn-con">
+                        <div class="util-btn-con">
+                            <button type="button" class="btn-solid medium color-4d">초기화</button>
+                            <button type="button" class="btn-solid medium">조회</button>
+                        </div>
+                        <div class="fold-btn-con">
+                            <button type="button" class="fold-btn" data-filter-folding="trigger"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="filter-wrap" data-filter-folding="container">
+                    <ul class="form-con">
+                        <li>
+                            <div class="element-con">
+                                <p class="title-con">
+                                    부동산 구분
+                                </p>
+                                <div class="cont-con">
+                                    <div class="flex-wrap">
+                                        <span class="radio-btn-con">
+                                            <input type="radio" name="rradio" id="rradio0">
+                                            <label for="rradio0">전체</label>
+                                            <input type="radio" name="rradio" id="rradio1">
+                                            <label for="rradio1">집합건물</label>
+                                            <input type="radio" name="rradio" id="rradio2">
+                                            <label for="rradio2">토지</label>
+                                            <input type="radio" name="rradio" id="rradio3">
+                                            <label for="rradio3">건물</label>
+                                        </span>
+                                        <label for="">
+                                            <input type="text" placeholder="가이드문구 출력">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="element-con">
+                                <p class="title-con">
+                                    <label for="registration2">등기기록상태</label>
+                                </p>
+                                <div class="cont-con">
+                                    <span class="select-con">
+                                        <select name="" id="registration2" class="">
+                                            <option value="1">현행</option>
+                                            <option value="2">예정</option>
+                                        </select>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="element-con">
+                                <p class="title-con">
+                                    <label for="city2">시/도</label>
+                                </p>
+                                <div class="cont-con">
+                                    <span class="select-con">
+                                        <select name="" id="city2" class="">
+                                            <option value="1">전체</option>
+                                            <option value="2">시/도</option>
+                                            <option value="3">군/구</option>
+                                        </select>
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="selected-item">
+                            <div class="item-wrap">
+                                <div class="item-con">
+                                    <span class="label">제출방식</span>
+                                    <span class="value">제출방식</span>
+                                </div>
+                                <div class="item-con">
+                                    <span class="label">조회조건</span>
+                                    <span class="value">조회조건 값 출력</span>
+                                </div>
+                                <div class="item-con">
+                                    <span class="label">조건</span>
+                                    <span class="value">최대 글자수는 열다섯자까지 나옵니다최대 글자수는 열다섯자까지 나옵니다</span>
+                                </div>
+                                <div class="item-con">
+                                    <span class="label">조건검색구분</span>
+                                    <span class="value">사용자가선택한검색조건이출력됨</span>
+                                </div>
+                                <div class="item-con">
+                                    <span class="label">등기기록상태</span>
+                                    <span class="value">조회조건 값 출력</span>
+                                </div>
+                                <div class="item-con">
+                                    <span class="label">조회조건</span>
+                                    <span class="value">조회조건 값 출력</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="btn-con">
+                        <div class="util-btn-con">
+                            <button type="button" class="btn-solid medium color-4d">초기화</button>
+                            <button type="button" class="btn-solid medium">조회</button>
+                        </div>
+                        <div class="fold-btn-con">
+                            <button type="button" class="fold-btn" data-filter-folding="trigger"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <section>
+            <h2>팝업형</h2>
+            <div class="popup-wrap" style="display: block; max-width: 1000px; position: relative; height: auto;">
+                <div class="filter-wrap active align-center">
+                    <ul class="form-con">
+                        <li>
+                            <div class="element-con">
+                                <p class="title-con">
+                                    부동산 구분
+                                </p>
+                                <div class="cont-con">
+                                    <div class="flex-wrap">
+                                        <span class="radio-btn-con">
+                                            <input type="radio" name="radiobtn" id="radiobtn0">
+                                            <label for="radiobtn0">전체</label>
+                                            <input type="radio" name="radiobtn" id="radiobtn1">
+                                            <label for="radiobtn1">집합건물</label>
+                                            <input type="radio" name="radiobtn" id="radiobtn2">
+                                            <label for="radiobtn2">토지</label>
+                                            <input type="radio" name="radiobtn" id="radiobtn3">
+                                            <label for="radiobtn3">건물</label>
+                                        </span>
+                                        <label for="">
+                                            <input type="text" placeholder="가이드문구 출력">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="btn-con">
+                        <div class="util-btn-con">
+                            <button type="button" class="btn-solid medium">조회</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup-wrap" style="display: block; max-width: 1000px; position: relative; height: auto;">
+                <div class="filter-wrap active">
+                    <ul class="form-con">
+                        <li>
+                            <div class="element-con">
+                                <p class="title-con">
+                                    <label for="addr3">주소</label>
+                                </p>
+                                <div class="cont-con">
+                                    <input type="text" name="" id="addr3" class="">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="element-con">
+                                <p class="title-con">
+                                    부동산 구분
+                                </p>
+                                <div class="cont-con">
+                                    <div class="flex-wrap">
+                                        <span class="radio-btn-con">
+                                            <input type="radio" name="radiobtn" id="radiobtn0">
+                                            <label for="radiobtn0">전체</label>
+                                            <input type="radio" name="radiobtn" id="radiobtn1">
+                                            <label for="radiobtn1">집합건물</label>
+                                            <input type="radio" name="radiobtn" id="radiobtn2">
+                                            <label for="radiobtn2">토지</label>
+                                            <input type="radio" name="radiobtn" id="radiobtn3">
+                                            <label for="radiobtn3">건물</label>
+                                        </span>
+                                        <label for="">
+                                            <input type="text" placeholder="가이드문구 출력">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="element-con">
+                                <p class="title-con">
+                                    <label for="registration3">등기기록상태</label>
+                                </p>
+                                <div class="cont-con">
+                                    <span class="select-con">
+                                        <select name="" id="registration3" class="">
+                                            <option value="1">현행</option>
+                                            <option value="2">예정</option>
+                                        </select>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="element-con">
+                                <p class="title-con">
+                                    <label for="city3">시/도</label>
+                                </p>
+                                <div class="cont-con">
+                                    <span class="select-con">
+                                        <select name="" id="city3" class="">
+                                            <option value="1">전체</option>
+                                            <option value="2">시/도</option>
+                                            <option value="3">군/구</option>
+                                        </select>
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="btn-con">
+                        <div class="util-btn-con">
+                            <button type="button" class="btn-solid medium">조회</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <hr />
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../js/libs/jquery.min.js"></script>
+    <script src="../js/libs/jquery-ui.min.js"></script>
+    <script src="../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../js/sub.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <title>인터넷 등기소</title>
+</head>
+<body>
+    <header class="area-header">
+        <div class="area-inner">
+            <span class="btn-historyback"><button onclick="history.back()">뒤로</button></span>
+            <h1 class="title">간편등기 신청</h1>
+            <span class="btn-navigation"><button onclick="location.href='./2_1_1_main.html'">메뉴</button></span>
+        </div>
+    </header>
+    <!-- Contents -->
+    <div class="area-content">
+        <div class="area-inner">
+            <div class="content-wrap">
+                <!-- 인디케이터 -->
+                <section>
+                    <div class="indicator-wrap">
+                        <p class="title">작성내역 확인</p>
+                        <ul class="indicator-con">
+                            <li>Step 1</li>
+                            <li>Step 2</li>
+                            <li class="active">Step 3</li>
+                            <li>Step 4</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 등기대상 선택 -->
+                <section>
+                    <div class="item-con tc">
+                        <img src="../img/img_documents_est@2x.jpg" alt="등기명의인표시변경등기신청">
+                    </div>
+                </section>
+
+                <section class="bottom-button-sec flex-between" data-fixed-btn>
+                    <button type="button" class="btn-solid color-4d" onclick="location.href='./MEST_02_1_01.html'">수정</button>
+                    <button type="button" class="btn-solid color-52" onclick="location.href='./MEST_04_1_01.html'">다음</button>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer class="area-footer">
+        <div class="area-inner">
+            <div class="box-privite">
+                <a href="">이용약관</a>
+                <a href=""><strong>개인정보처리방침</strong></a>
+                <a href="">원격지원</a>
+                
+            </div>
+            <p class="text-copyright">Copyright © Supreme Court of Korea.<br > All right reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

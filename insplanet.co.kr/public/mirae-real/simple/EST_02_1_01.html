@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../js/libs/jquery.min.js"></script>
+    <script src="../js/libs/jquery-ui.min.js"></script>
+    <script src="../js/libs/jquery.selectric.js"></script>
+    <script src="../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../js/sub.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/sub.css">
+
+    <link rel="stylesheet" href="../css/simple.css">
+    <script src="../js/simple.js"></script>
+    <title>부동산_신청서작성_주소변경</title>
+</head>
+
+<body>
+
+    <!-- 본문영역 -->
+    <div class="area-content">
+        <div class="area-inner">
+
+            <div class="content-wrap">
+
+                <!-- 타이틀, indicator -->
+                <section class="page-title-sec">
+                    <div class="title-btn-con">
+                        <div class="title-con">
+                            <h3>간편등기 신청</h3>
+                        </div>
+                        <!-- 간편등기 step indicator -->
+                        <div class="indicator-wrap" data-slide="indiCon">
+                            <ul class="indicator-con">
+                                <li>
+                                    <button type="button">
+                                        <span class="num">1</span>
+                                        <span class="title">등기대상 선택</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="active">
+                                        <span class="num">2</span>
+                                        <span class="title">신청서 작성</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button">
+                                        <span class="num">3</span>
+                                        <span class="title">작성내역 확인</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button">
+                                        <span class="num">4</span>
+                                        <span class="title">수수료 결제</span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <span class="active-bar" style="width: 95px; left: 46px;"></span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 간편등기 slider 컨테이너 -->
+                <div class="slide-wrap">
+                    <!-- slider -->
+                    <div class="slide-con" data-slide="slideCon">
+                        <div class="content-wrap active" data-slide="slide">
+                            <div class="content-con">
+                                <!-- 선택한 유형 -->
+                                <section class="category-sec">
+                                    <div class="top-bg-wrap property">
+                                        <span class="division-text">부동산</span>
+                                        <span class="type-text">주소변경</span>
+                                    </div>
+                                </section>
+                                <!-- // 선택한 유형 -->
+
+                                <!-- 내용영역 -->
+                                <div class="grey-bg-wrap">
+                                    <!-- 등기할 사항 -->
+                                    <section class="simple-sec">
+                                        <div class="sec-body">
+                                            <div class="white-bg-wrap">
+                                                <div class="inner-wrap">
+                                                    <div class="box-title">
+                                                        <h4 class="sec-title">부동산 및 변경해야 할 등기</h4>
+                                                    </div>
+                                                    <div class="address-select-wrap">
+                                                        <button type="button" class="address-select-btn">
+                                                            <span class="title">부동산 선택</span>
+                                                            <span class="address">서울특별시 마포구 대흥로6길 14-11 미래빌 제2층 제 202호 [용당동 149-30]</span>
+                                                        </button>
+                                                        <div class="address-select-con">
+                                                            <!-- 주소 검색 -->
+                                                            <div class="flex-wrap bottom">
+                                                                <div class="left-con">
+                                                                    <span class="radio-btn-con">
+                                                                        <input type="radio" name="search-type" id="search-addr" checked>
+                                                                        <label for="search-addr">부동산주소</label>
+                                                                        <input type="radio" name="search-type" id="search-num">
+                                                                        <label for="search-num">고유번호</label>
+                                                                    </span>
+                                                                </div>
+                                                                <div class="right-con">
+                                                                    <div class="search-con">
+                                                                        <label for="address-search-input">
+                                                                            <input type="text" name="address-search" id="address-search-input" class="search-input" placeholder="지번 또는 도로명 주소 입력">
+                                                                        </label>
+                                                                        <div class="checkbox-con research">
+                                                                            <input type="checkbox" name="re-search" id="re-search">
+                                                                            <label for="re-search">결과 내 재검색</label>
+                                                                        </div>
+                                                                        <button type="button" class="search-btn">
+                                                                            <img src="../img/btn_search_s.svg" alt="search">
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- 주소 테이블 -->
+                                                            <div class="table-con mt40">
+                                                                <div class="table-body">
+                                                                    <table class="table-list">
+                                                                        <caption>토지/임야대장등본</caption>
+                                                                        <colgroup>
+                                                                            <col style="width: 72px;">
+                                                                            <col style="width: 192px;">
+                                                                            <col style="width: auto;">
+                                                                        </colgroup>
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col">선택</th>
+                                                                                <th scope="col">부동산 고유번호</th>
+                                                                                <th scope="col">소재, 지번(건물명칭, 번호)</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="has-element">
+                                                                                    <span class="radio-con only-box">
+                                                                                        <input type="radio" name="property" id="rbox0"><label for="rbox0"></label>
+                                                                                    </span>
+                                                                                </td>
+                                                                                <td class="ff-roboto">1234-1234-1234567</td>
+                                                                                <td class="left">
+                                                                                    서울특별시 동작구 신대방1동 72-2
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="has-element">
+                                                                                    <span class="radio-con only-box">
+                                                                                        <input type="radio" name="property" id="rbox1"><label for="rbox1"></label>
+                                                                                    </span>
+                                                                                </td>
+                                                                                <td class="ff-roboto">1234-1234-1234567</td>
+                                                                                <td class="left">
+                                                                                    서울특별시 동작구 신대방1동 72-2
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="has-element">
+                                                                                    <span class="radio-con only-box">
+                                                                                        <input type="radio" name="property" id="rbox2"><label for="rbox2"></label>
+                                                                                    </span>
+                                                                                </td>
+                                                                                <td class="ff-roboto">1234-1234-1234567</td>
+                                                                                <td class="left">
+                                                                                    서울특별시 대흥로6길 11 [용강동 1501-51 흥신빌라] 벽돌조 다층주택 100
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="has-element">
+                                                                                    <span class="radio-con only-box">
+                                                                                        <input type="radio" name="property" id="rbox3"><label for="rbox3"></label>
+                                                                                    </span>
+                                                                                </td>
+                                                                                <td class="ff-roboto">1234-1234-1234567</td>
+                                                                                <td class="left">
+                                                                                    서울특별시 동작구 신대방1동 72-2
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="has-element">
+                                                                                    <span class="radio-con only-box">
+                                                                                        <input type="radio" name="property" id="rbox4"><label for="rbox4"></label>
+                                                                                    </span>
+                                                                                </td>
+                                                                                <td class="ff-roboto">1234-1234-1234567</td>
+                                                                                <td class="left">
+                                                                                    서울특별시 동작구 신대방1동 72-2
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                                <div class="table-foot">
+                                                                    <div class="table-util-con">
+                                                                        <div class="inline-wrap">
+                                                                            <span class="select-con w62">
+                                                                                <label for="smallsel1">
+                                                                                    <select name="" id="smallsel1" class="">
+                                                                                        <option value="">1</option>
+                                                                                        <option value="">2</option>
+                                                                                    </select>
+                                                                                </label>
+                                                                            </span>
+                                                                            <span class="slash">
+                                                                                <img src="../img/ico_read_perline.svg" alt="/">
+                                                                            </span>
+                                                                            <span class="fs-15">5</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- 변경해야 할 등기 -->
+                                                            <div class="form-con mt20">
+                                                                <div class="table-head">
+                                                                    <div class="left-con">
+                                                                        <h5 class="sec-sub-title">변경해야 할 등기</h5>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="table-body">
+                                                                    <table class="table-list">
+                                                                        <caption>변경해야 할 등기</caption>
+                                                                        <colgroup>
+                                                                            <col style="width: 33.33%;">
+                                                                            <col style="width: 33.33%;">
+                                                                            <col style="width: auto;">
+                                                                        </colgroup>
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col">해당구</th>
+                                                                                <th scope="col">순위</th>
+                                                                                <th scope="col">성명</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="has-element">
+                                                                                    <span class="select-con w230">
+                                                                                        <label for="">
+                                                                                            <select name="" id="" class="" disabled>
+                                                                                                <option value="">갑구</option>
+                                                                                                <option value="">을구</option>
+                                                                                            </select>
+                                                                                        </label>
+                                                                                    </span>
+                                                                                </td>
+                                                                                <td class="has-element">
+                                                                                    <label for="">
+                                                                                        <input type="text" name="" id="" class="w230" placeholder="순위번호 입력">
+                                                                                    </label>
+                                                                                </td>
+                                                                                <td class="has-element">
+                                                                                    <label for="">
+                                                                                        <input type="text" name="" id="" class="w230" placeholder="김이동" readonly>
+                                                                                    </label>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- 버튼 -->
+                                                            <div class="btn-con flex-wrap mt20">
+                                                                <div class="left-con"></div>
+                                                                <div class="right-con">
+                                                                    <button type="button" class="btn medium">취소</button>
+                                                                    <button type="button" class="btn-solid medium">확인</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="inner-wrap">
+                                                    <div class="table-head">
+                                                        <div class="left-con">
+                                                            <h5>변경사항</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-body">
+                                                        <table class="table-detail">
+                                                            <caption>변경사항</caption>
+                                                            <colgroup>
+                                                                <col style="width: 230px;">
+                                                                <col style="width: auto;">
+                                                            </colgroup>
+                                                            <tbody>
+                                                                <tr class="element-row">
+                                                                    <th scope="row">
+                                                                        등기기록 상 주소
+                                                                    </th>
+                                                                    <td>
+                                                                        서울특별시 종로구 수표로18가길 23 제2동 제1층 [관수동 102-3]
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="element-row">
+                                                                    <th scope="row">
+                                                                        변경 할 주소
+                                                                    </th>
+                                                                    <td>
+                                                                        <div class="address-wrap">
+                                                                            <div class="address-con">
+                                                                                <label for="">
+                                                                                    <input type="text" name="" id="addr" class="" placeholder="" readonly value="서울특별시 중구 수표로 23">
+                                                                                </label>
+                                                                                <button type="button" class="btn-solid color-4d">주소검색</button>
+                                                                            </div>
+                                                                            <div class="detail-con">
+                                                                                <label for="">
+                                                                                    <input type="text" name="" id="addr-detail" class="" placeholder="상세주소 입력">
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="element-row">
+                                                                    <th scope="row">
+                                                                        <div class="inline-wrap">
+                                                                            <div class="inline-wrap">
+                                                                                <label for="datepicker0" class="fs-14 color-5a">등기원인일자</label>
+                                                                                <div class="tooltip-wrap ml10">
+                                                                                    <span class="tooltip-btn" data-tooltip="trigger" tabindex="0"><img src="../img/ico_qmark@2x.png" alt="Question mark"></span>
+                                                                                    <div class="tooltip-cont-con" data-tooltip="container">
+                                                                                        <div class="tooltip-head">
+                                                                                            <p class="title">등기원인일자 확인 안내</p>
+                                                                                            <button type="button" class="close-btn" onclick="tooltipHandler.closeTooltip()">
+                                                                                                <img src="../img/btn_tooltips_close.svg" alt="닫기">
+                                                                                            </button>
+                                                                                        </div>
+                                                                                        <div class="tooltip-body">
+                                                                                            <p>주민등록 초본에 기재되어 있는  ‘신고일’ 의 날짜를 입력해 주시기 바랍니다.</p>
+                                                                                            <div class="mt15">
+                                                                                                <img src="../img/img_tooltip_info.jpg" alt="등록면허세 영수증">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </th>
+                                                                    <td>
+                                                                        <span class="datepicker-con">
+                                                                            <input type="text" name="" id="datepicker0" class="datepicker w300" placeholder="전입일자 선택">
+                                                                        </span>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <!-- 행정기간연계 및 첨부서면 -->
+                                    <section class="simple-sec">
+                                        <div class="sec-body">
+                                            <div class="white-bg-wrap">
+                                                <!-- 첨부서면 -->
+                                                <div class="inner-wrap">
+                                                    <div class="box-title">
+                                                        <h4 class="sec-title">첨부서면</h4>
+                                                    </div>
+                                                    <div class="bg-box-wrap">
+                                                        <div class="flex-wrap">
+                                                            <div class="left-con">
+                                                                <ul class="list-bullet fs-14">
+                                                                    <li>
+                                                                        <div>등록면허세영수필확인서 등록을 위해 먼저 등록면허세를 납부해 주시기 바랍니다.</div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div>등록면허세를 이미 납부하신 경우 납세번호 입력하고 등록면허세영수필확인서를 연계요청하시기 바랍니다.</div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="right-con">
+                                                                <button type="button" class="btn" onclick="popupManager.openPopup('#popup-license')">등록면허세 신고</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-body">
+                                                        <table class="table-detail">
+                                                            <caption>첨부서면</caption>
+                                                            <colgroup>
+                                                                <col style="width: 230px;">
+                                                                <col style="width: auto;">
+                                                            </colgroup>
+                                                            <tbody>
+                                                                <tr class="element-row">
+                                                                    <th scope="row">
+                                                                        <div class="inline-wrap">
+                                                                            <label for="bill" class="fs-14 color-5a">등록면허세영수필확인서</label>
+                                                                            <div class="tooltip-wrap ml10">
+                                                                                <span class="tooltip-btn" data-tooltip="trigger" tabindex="0"><img src="../img/ico_qmark@2x.png" alt="Question mark"></span>
+                                                                                <div class="tooltip-cont-con" data-tooltip="container">
+                                                                                    <div class="tooltip-head">
+                                                                                        <p class="title">등록면허세 납세번호 확인 안내</p>
+                                                                                        <button type="button" class="close-btn" onclick="tooltipHandler.closeTooltip()">
+                                                                                            <img src="../img/btn_tooltips_close.svg" alt="닫기">
+                                                                                        </button>
+                                                                                    </div>
+                                                                                    <div class="tooltip-body">
+                                                                                        <p>영수필확인서 또는 납부내역서에 기재되어 있는 ‘납세번호’ 를 입력해 주시기 바랍니다.</p>
+                                                                                        <div class="mt15">
+                                                                                            <img src="../img/img_tooltip_fee2.jpg" alt="등록면허세(등록분) 납부확인서">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </th>
+                                                                    <td class="pr-none">
+                                                                        <div class="flex-wrap">
+                                                                            <div class="left-con inline-wrap">
+                                                                                <input type="text" name="" id="bill" class="w300" placeholder="납부번호 입력">
+                                                                                <button type="button" class="btn">연계요청</button>
+                                                                            </div>
+                                                                            <div class="right-con">
+                                                                                <span class="checked-text on">연계완료</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <!-- 등록면허세 -->
+                                    <section class="simple-sec">
+                                        <div class="sec-body">
+                                            <div class="white-bg-wrap">
+                                                <div class="inner-wrap">
+                                                    <div class="table-head">
+                                                        <div class="left-con">
+                                                            <h4 class="sec-title">등록면허세</h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-body">
+                                                        <table class="table-detail">
+                                                            <caption>등록면허세</caption>
+                                                            <colgroup>
+                                                                <col style="width: 153px;">
+                                                                <col style="width: auto;">
+                                                                <col style="width: 153px;">
+                                                                <col style="width: auto;">
+                                                            </colgroup>
+                                                            <tbody>
+                                                                <tr class="element-row">
+                                                                    <th scope="row">
+                                                                        <label for="licenfee">등록면허세</label>
+                                                                    </th>
+                                                                    <td>
+                                                                        <span class="ff-roboto">6,000</span>원
+                                                                    </td>
+                                                                    <th scope="row">
+                                                                        <label for="farmfee">지방교육세</label>
+                                                                    </th>
+                                                                    <td>
+                                                                        <span class="ff-roboto">1,200</span>원
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="element-row">
+                                                                    <th scope="row">
+                                                                        <label for="localfee">농어촌특별세</label>
+                                                                    </th>
+                                                                    <td colspan="3">
+                                                                        <span class="ff-roboto">0</span>원
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                </div>
+                                <!-- // 내용영역 -->
+
+                                <!-- 버튼영역 -->
+                                <section class="button-sec">
+                                    <div class="flex-wrap">
+                                        <div class="left-con">
+                                            <button type="button" class="btn large" onclick="popupManager.openPopup('#popup-apply-stop')">취소</button>
+                                        </div>
+                                        <div class="right-con">
+                                            <button type="button" class="btn-solid large color-4d prev-btn" data-slide="prev">이전</button>
+                                            <button type="button" class="btn-solid large color-52 next-btn" data-slide="next">다음</button>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- // 버튼영역 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- 도움말 -->
+        <div class="contain-help"><!-- area-content에 'help'클래스 추가/삭제 -->
+            <div class="contain-inner">
+
+                <h1 class="title">간편도움말</h1>
+                <div class="tab-anchor">
+                    <button class="on">이용안내</button>
+                    <button>이용절차</button>
+                    <button>용어해설</button>
+                    <button>오류시 조치</button>
+                </div>
+                <div class="box-body tab-help1 on">
+                    <dl class="help-define">
+                        <dt>신청서 기재사항 입력1</dt>
+                        <dd>신청서 작성은 전체 5개의 화면으로 구성되어 있으며 제출방식을 전자로 선택하고, 부동산표시, 등기의무자정보, 등기권리자정보, 신청인정보 등을 입력합니다.
+                            <p class="text-em">자주쓰는 유형 등록 버튼을 눌러 자주 이용하는 유형을 저
+                                장해두면,  ‘등기유형 선택’ 목록에 반영되어 신청서 작성
+                                시 쉽게 이용할 수 있습니다.</p>
+                                <ul class="list-em">
+                                    <li>자주쓰는 유형 등록 버튼을 눌러 자주 이용하는 유형을 저
+                                        장해두면,  ‘등기유형 선택’ 목록에 반영되어 신청서 작성
+                                        시 쉽게 이용할 수 있습니다.</li>
+                                </ul>
+                        </dd>
+                    </dl>
+                    <span class="link-more"><a href="">더보기</a></span>
+                </div>
+                <div class="box-body tab-help2">
+                    <dl class="help-define">
+                        <dt>신청서 기재사항 입력2</dt>
+                        <dd>신청서 작성은 전체 5개의 화면으로 구성되어 있으며 제출방식을 전자로 선택하고, 부동산표시, 등기의무자정보, 등기권리자정보, 신청인정보 등을 입력합니다.
+                            <p class="text-em"></p>
+                        </dd>
+                    </dl>
+                    <span class="link-more"><a href="">더보기</a></span>
+                </div>
+                <div class="box-body tab-help3">
+                    <dl class="help-define">
+                        <dt>신청서 기재사항 입력3</dt>
+                        <dd>신청서 작성은 전체 5개의 화면으로 구성되어 있으며 제출방식을 전자로 선택하고, 부동산표시, 등기의무자정보, 등기권리자정보, 신청인정보 등을 입력합니다.
+                            <p class="text-em"></p>
+                        </dd>
+                    </dl>
+                    <span class="link-more"><a href="">더보기</a></span>
+                </div>
+                <div class="box-body tab-help4">
+                    <dl class="help-define">
+                        <dt>신청서 기재사항 입력4</dt>
+                        <dd>신청서 작성은 전체 5개의 화면으로 구성되어 있으며 제출방식을 전자로 선택하고, 부동산표시, 등기의무자정보, 등기권리자정보, 신청인정보 등을 입력합니다.
+                            <p class="text-em"></p>
+                        </dd>
+                    </dl>
+                    <span class="link-more"><a href="">더보기</a></span>
+                </div>
+                <span class="btn-close"><button>닫기</button></span>
+
+            </div>
+        </div>
+        <!-- //도움말 -->
+    </div>
+    <!-- //본문영역 -->
+
+
+    <!-- ///////// 팝업 ///////// -->
+    
+    <!-- 등록면허세 신고 -->
+    <div class="popup-wrap" id="popup-license">
+        <div class="content-wrap mw730 no-footer">
+            <div class="popup-head">
+                <div class="popup-title">
+                    <h4>등록면허세 정액분 신고</h4>
+                </div>
+                <div class="close-btn">
+                    <button type="button" onclick="popupManager.closePopup();"><img src="../img/btn_gnb_close.svg" alt="close"></button>
+                </div>
+            </div>
+            <div class="popup-body">
+                <div class="popup-cont">
+                    
+                    <!-- 임시 - iframe 로드 -->
+                    <div>
+                        iframe 로드
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="dim-wrap"></div>
+    </div>
+
+</body>
+</html>

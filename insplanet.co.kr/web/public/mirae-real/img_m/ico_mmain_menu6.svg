@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45">
+    <defs>
+        <style>
+            .cls-3,.cls-4{stroke:#000;stroke-miterlimit:10;stroke-width:1.5px;fill:none}.cls-4{stroke-linecap:round}
+        </style>
+    </defs>
+    <g id="연건문서관리" transform="translate(5.98 4.615)">
+        <path id="Stroke_7" data-name="Stroke 7" d="M27.63 35.471H0V0h27.816v31.674" transform="translate(-.075 .195)" style="stroke-width:1.5px;stroke-miterlimit:10;stroke:#000;fill:#fff"/>
+        <path id="Stroke_9" data-name="Stroke 9" class="cls-3" d="M0 .4h7.556" transform="translate(16.056 8.677)"/>
+        <path id="Stroke_11" data-name="Stroke 11" class="cls-3" d="M0 .4h7.556" transform="translate(16.056 12.667)"/>
+        <path id="Stroke_15" data-name="Stroke 15" class="cls-4" d="M0 5.624h5.624V0H0z" transform="translate(5.712 8.256)"/>
+        <path id="Stroke_17" data-name="Stroke 17" class="cls-4" d="M0 5.625h5.624V0H0z" transform="translate(5.712 19.641)"/>
+        <g id="그룹_3961" data-name="그룹 3961" transform="translate(-.367 -.292)">
+            <g id="Stroke_5" data-name="Stroke 5" style="fill:#f4c215;stroke-miterlimit:10">
+                <path d="M8.5 16.25C4.227 16.25.75 12.772.75 8.5S4.227.75 8.5.75s7.75 3.477 7.75 7.75-3.477 7.75-7.75 7.75z" style="stroke:none" transform="translate(19.387 19.677)"/>
+                <path d="M8.5 1.5c-3.86 0-7 3.14-7 7s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7m0-1.5a8.5 8.5 0 1 1-.001 17.001A8.5 8.5 0 0 1 8.5 0z" style="fill:#1d1d1d;stroke:none" transform="translate(19.387 19.677)"/>
+            </g>
+            <path id="Stroke_20" data-name="Stroke 20" d="M6.513 0 3.057 3.949a.742.742 0 0 1-.532.254H2.5a.738.738 0 0 1-.524-.218L0 2.012" transform="translate(24.428 26.396)" style="stroke:#1d1d1d;stroke-linejoin:round;fill:none;stroke-width:1.5px;stroke-miterlimit:10"/>
+        </g>
+    </g>
+</svg>

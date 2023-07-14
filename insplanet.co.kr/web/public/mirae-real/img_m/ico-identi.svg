@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+    <g transform="translate(-429.128 -810.717)">
+        <rect width="64" height="64" rx="5" transform="translate(429.128 810.717)" style="fill:#f2f4f5"/>
+        <path transform="translate(445.128 826.717)" style="opacity:.2;fill:none" d="M0 0h32v32H0z"/>
+        <g data-name="사각형 1906" transform="translate(455.128 829.717)" style="stroke:#1d1d1d;stroke-width:1.5px;fill:none">
+            <rect width="11" height="11" rx="5.5" style="stroke:none"/>
+            <rect x=".75" y=".75" width="9.5" height="9.5" rx="4.75" style="fill:none"/>
+        </g>
+        <path data-name="패스 4140" d="M452.878 847.523v-3.167c0-2.676 1.387-5.184 5.721-5.184s10.6.155 10.6.155" transform="translate(-2.92 4.437)" style="stroke:#1d1d1d;stroke-width:1.5px;fill:none"/>
+        <g data-name="그룹 3961">
+            <g data-name="Stroke 5" style="stroke-miterlimit:10;fill:#f4c215">
+                <path d="M8 15.25C4.002 15.25.75 11.996.75 8 .75 4.002 4.002.75 8 .75S15.25 4.002 15.25 8c0 3.997-3.252 7.25-7.25 7.25z" style="stroke:none" transform="translate(461.128 840.716)"/>
+                <path d="M8 1.5A6.507 6.507 0 0 0 1.5 8c0 3.584 2.916 6.5 6.5 6.5s6.5-2.916 6.5-6.5S11.584 1.5 8 1.5M8 0a8 8 0 1 1-.001 16.001A8 8 0 0 1 8 0z" style="fill:#1d1d1d;stroke:none" transform="translate(461.128 840.716)"/>
+            </g>
+            <path data-name="Stroke 20" d="M7 0 3.286 4.228a.8.8 0 0 1-.572.272h-.029a.8.8 0 0 1-.563-.233L0 2.153" transform="translate(465.628 846.716)" style="stroke-linejoin:round;stroke-miterlimit:10;stroke:#1d1d1d;stroke-width:1.5px;fill:none"/>
+        </g>
+    </g>
+</svg>

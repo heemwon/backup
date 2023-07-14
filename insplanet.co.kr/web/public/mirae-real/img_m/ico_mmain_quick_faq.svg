@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#fff}
+        </style>
+    </defs>
+    <g id="ico_mmain_quick_faq" transform="translate(-4.921 -2.04)">
+        <g id="그룹_4045" data-name="그룹 4045" transform="translate(.5 2)">
+            <g id="사각형_1948" data-name="사각형 1948" class="cls-2" transform="translate(14.922 2.04)">
+                <rect width="3" height="6" rx="1.5" style="stroke:none"/>
+                <rect x=".5" y=".5" width="2" height="5" rx="1" style="fill:none"/>
+            </g>
+            <path id="패스_4103" data-name="패스 4103" class="cls-2" d="M11.763 8.451H8.4V22h12V8.451h-3.38" transform="translate(2.025 -2.458)"/>
+            <path id="선_492" data-name="선 492" class="cls-2" transform="translate(13.421 12.997)" d="M0 0h6"/>
+            <path id="선_493" data-name="선 493" class="cls-2" transform="translate(14.421 14.997)" d="M0 0h4"/>
+        </g>
+    </g>
+</svg>

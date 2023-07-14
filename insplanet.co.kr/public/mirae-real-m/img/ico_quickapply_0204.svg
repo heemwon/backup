@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="패스_4108" data-name="패스 4108" d="M0 0h23l.256 5.919-4.844 3.293-12.418 9.979L5.063 25H0z" transform="translate(452 842.717)" style="fill:#fff"/>
+        </clipPath>
+        <style>
+            .cls-3{fill:#f4c215}.cls-3,.cls-8{stroke:#1d1d1d;stroke-width:2px}.cls-10,.cls-8{fill:none}.cls-9{stroke:none}
+        </style>
+    </defs>
+    <g id="ico_quickapply_0104o" transform="translate(-1139 -688)">
+        <g id="그룹_4037" data-name="그룹 4037" transform="translate(691 -139.717)">
+            <g id="사각형_1906" data-name="사각형 1906" class="cls-3" transform="translate(458 827.717)">
+                <rect class="cls-9" width="11" height="13" rx="5.5"/>
+                <rect class="cls-10" x="1" y="1" width="9" height="11" rx="4.5"/>
+            </g>
+            <g id="그룹_4038" data-name="그룹 4038" transform="translate(-693 139.717)">
+                <circle id="타원_264" data-name="타원 264" cx="14.5" cy="14.5" r="14.5" transform="translate(1158 707)" style="fill:#c6c6c6"/>
+                <text id="名" transform="translate(1173 728)" style="fill:#1d1d1d;font-size:18px;font-family:AppleSDGothicNeo-ExtraBold,Apple SD Gothic Neo;letter-spacing:-.028em;font-weight:800"><tspan x="-7.785" y="0">名</tspan></text>
+            </g>
+            <path id="사각형_1924" data-name="사각형 1924" transform="translate(457 849.217)" style="fill:#f4c215" d="M0 0h11v26H0z"/>
+            <g id="마스크_그룹_54" data-name="마스크 그룹 54" style="clip-path:url(#clip-path)">
+                <g id="사각형_1907" data-name="사각형 1907" class="cls-3" transform="translate(452 842.717)">
+                    <rect class="cls-9" width="22" height="22" rx="5"/>
+                    <rect class="cls-10" x="1" y="1" width="20" height="20" rx="4"/>
+                </g>
+            </g>
+            <path id="선_622" data-name="선 622" class="cls-8" transform="translate(457.368 849.744)" d="M0 0v25.473"/>
+            <path id="선_623" data-name="선 623" class="cls-8" transform="translate(468.285 849.744)" d="M0 0v25.473"/>
+            <path id="선_624" data-name="선 624" class="cls-8" transform="translate(462.827 862.48)" d="M0 0v12.737"/>
+        </g>
+    </g>
+</svg>

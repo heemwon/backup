@@ -1,0 +1,205 @@
+@charset "utf-8";
+
+/*-------------------------------------------------------------------
+    @Accordion
+-------------------------------------------------------------------*/
+.accordion-wrap {
+    .accordion-con {
+        > ul > li, > li {
+            border-bottom: 1px solid $color-ed;
+            &:first-child {
+                border-top: 2px solid $color-1d;
+            }
+            .title-con {
+                width: 100%;
+                padding: 15px 50px 15px 24px;
+                text-align: left;
+                background: url("../img/ico_acco_close.svg") no-repeat right 16px center;
+                .title {
+                    @include fontStyler(18px, 500, 1.5, -0.9px, $color-1d);
+                }
+                &.no-bg {
+                    background-image: none !important;
+                }
+            }
+            .cont-wrap {
+                display: none;
+            }
+            .cont-con {
+                padding: 24px 25px;
+                background-color: $color-f7;
+                border-top: 1px solid $color-ed;
+                &.pad-none {
+                    padding: 0;
+                }
+                &.bg-wh {
+                    background-color: $color-ff;
+                }
+                &.payment {
+                    padding-bottom: 40px;
+                    background-color: $color-ff;
+                }
+                &:first-child {
+                    border-top: none;
+                }
+                .cont-head {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 11px;
+                    .title {
+                        @include fontStyler(15px, bold, 1.6, -0.3px, $color-1d);
+                    }
+                    .accodion-inner-btn {
+                        padding-left: 29px;
+                        background: url("../img/btn_sicon_close_bk.svg") $color-ff no-repeat 10px center;
+                        &::before {
+                            content: "상세닫기";
+                            display: inline-block;
+                        }
+                    }
+                }
+                .cont-body {
+                    .cont {
+                        @include fontStyler(15px, 500, 1.47, normal, $color-5a);
+                    }
+                    .btn-con {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 10px;
+                    }
+                }
+                &.close {
+                    .cont-head {
+                        margin-bottom: 0;
+                    }
+                    .cont-body {
+                        display: none;
+                    }
+                    .accodion-inner-btn {
+                        background-image: url("../img/btn_sicon_open_bk.svg");
+                        &::before {
+                            content: "상세보기";
+                        }
+                    }
+                }
+            }
+            &.active {
+                .title-con {
+                    background-image: url("../img/ico_acco_open.svg");
+                }
+                .cont-wrap {
+                    display: block;
+                    border-top: 1px solid $color-ed;
+                }
+            }
+        }
+        /* 리스트형 */
+        &.list-type {
+            > li {
+                .title-con {
+                    padding: 19px 48px 18px 24px;
+                    background: url("../img/ico_acco_open.svg") no-repeat right 24px center;
+                }
+                .cont-wrap {
+                    display: none;
+                }
+                .list-cont-con {
+                    > li {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 13px 24px 13px 31px;
+                        border-top: 1px solid $color-ed;
+                        @include fontStyler(15px, normal, 1.8, normal, $color-41);
+                        .number {
+                            position: relative;
+                            padding-right: 16px;
+                            margin-right: 16px;
+                            &::after {
+                                content: "";
+                                display: block;
+                                width: 1px;
+                                height: 16px;
+                                position: absolute;
+                                top: 5px;
+                                right: 0;
+                                background-color: $color-ed;
+                            }
+                        }
+                        .title {
+                            flex: 1;
+                        }
+                    }
+                }
+                &.active {
+                    .title-con {
+                        background-image: url("../img/ico_acco_close.svg");
+                    }
+                    .cont-wrap {
+                        display: block;
+                    }
+                }
+            }
+        }
+        /* 제목 + 버튼형 */
+        &.title-type {
+            .accodion-head {
+                padding-bottom: 10px;
+                border-bottom: 1px solid $color-41;
+                .accodion-btn {
+                    padding-left: 29px;
+                    background: url("../img/btn_sicon_open_bk.svg") no-repeat 10px center;
+                    &::before {
+                        content: "상세보기";
+                        display: inline-block;
+                    }
+                }
+            }
+            .accodion-body {
+                display: none;
+                padding-top: 25px;
+                &.active {
+                    display: block;
+                }
+            }
+            .accodion-head.active {
+                & + .accodion-body {
+                    display: block;
+                }
+                .accodion-btn {
+                    background-image: url("../img/btn_sicon_close_bk.svg");
+                    &::before {
+                        content: "상세닫기";
+                    }
+                }
+            }
+        }
+        /* 제목 + 버튼 + 리스트형 */
+        &.title-list-type {
+            .accodion-head {
+                padding-bottom: 10px;
+                .accodion-total-btn {
+                    padding-left: 29px;
+                    color: $color-ff;
+                    border: none;
+                    background: url("../img/btn_sicon_open_wh.svg") $color-4d no-repeat 10px center;
+                    &::before {
+                        content: "전체 펼침";
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        &.is-total-opened {
+            .accodion-head {
+                .accodion-total-btn {
+                    background-image: url("../img/btn_sicon_close_wh.svg");
+                    &::before {
+                        content: "전체 닫힘";
+                    }
+                }
+            }
+        }
+    }
+}

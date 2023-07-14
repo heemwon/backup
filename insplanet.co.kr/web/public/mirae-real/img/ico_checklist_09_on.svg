@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+    <defs>
+        <linearGradient id="linear-gradient" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#71d6cf"/>
+            <stop offset="1" stop-color="#1d8981"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-2" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#ffea4d"/>
+            <stop offset="1" stop-color="#ffc16e"/>
+        </linearGradient>
+        <style>
+            .cls-1{fill:red;opacity:0}.cls-4{fill:url(#linear-gradient-2)}
+        </style>
+    </defs>
+    <g id="ico_checklist_09_on" transform="translate(7.192 10)">
+        <path id="guide" d="M0 0H56V56H0z" class="cls-1" transform="translate(-7.192 -10)"/>
+        <path id="guide-2" d="M0 0H40V40H0z" class="cls-1" transform="translate(0.808 -2)"/>
+        <g id="ico_checklist_09_off" transform="translate(-82.276 23.536)">
+            <g id="home" transform="translate(29.205 -41.859)">
+                <path id="패스_3512" fill="url(#linear-gradient)" d="M26.592 23.027h1l16.5 14.723v19.983h-34V37.75z" transform="translate(44.787 -3.704)"/>
+                <path id="사각형_1208" fill="#fff" d="M5 0a5 5 0 0 1 5 5v9.257H0V5a5 5 0 0 1 5-5z" transform="translate(66.878 39.772)"/>
+            </g>
+            <path id="사각형_1837" d="M0 0H12V5.748H0z" class="cls-4" transform="translate(111.084 -4.463)"/>
+            <path id="사각형_1838" d="M0 0H12V5.748H0z" class="cls-4" transform="translate(111.084 1.298)"/>
+            <path id="사각형_1839" d="M0 0H12V5.139H0z" class="cls-4" transform="translate(111.084 7.046)"/>
+        </g>
+    </g>
+</svg>

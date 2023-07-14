@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../../js/libs/jquery.min.js"></script>
+    <script src="../../js/libs/jquery-ui.min.js"></script>
+    <script src="../../js/libs/jquery.selectric.js"></script>
+    <script src="../../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../../js/sub.js"></script>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/guide.css">
+    <link rel="stylesheet" href="../../css/sub.css">
+    <title>패턴</title>
+</head>
+
+<body>
+    <div class="apply-wrap">
+        
+        <!-- 5-1. 첨부서면목록 -->
+        <div class="title-content-wrap">
+            <div class="title-wrap">
+                <h2>5-1. 첨부서면목록</h2>
+            </div>
+            <div class="cont-wrap">
+                <!-- 첨부서면 목록 -->
+                <section class="form-sec">
+                    <div class="sec-body">
+                        <div class="table-head">
+                            <div class="left-con">
+                                <h4>첨부서면</h4>
+                            </div>
+                            <div class="right-con" id="go-table-btn0">
+                                <button type="button" class="btn">일괄스캔</button>
+                                <button type="button" class="btn">일괄첨부</button>
+                                <button type="button" class="btn-solid">선택삭제</button>
+                            </div>
+                        </div>
+                        <div class="table-body">
+                            <table class="table-list">
+                                <caption>첨부서면 목록</caption>
+                                <colgroup>
+                                    <col style="width: 60px;">
+                                    <col style="width: 260px;">
+                                    <col style="width: auto;">
+                                    <col style="width: 255px;">
+                                    <col style="width: 160px;">
+                                    <col style="width: 100px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbox0"><label for="cbox0"></label>
+                                            </span>
+                                        </th>
+                                        <th scope="col">첨부서면명</th>
+                                        <th scope="col">부가정보</th>
+                                        <th scope="col">작성/첨부</th>
+                                        <th scope="col">상태</th>
+                                        <th scope="col">서명인</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbox1"><label for="cbox1"></label>
+                                            </span>
+                                        </td>
+                                        <td>위임장</td>
+                                        <td>위임인 김일동</td>
+                                        <td class="has-element">
+                                            <div class="inline-wrap">
+                                                <button type="button" class="btn color-main color-check">서식수정</button>
+                                                <button type="button" class="btn">스캔</button>
+                                                <button type="button" class="btn">전자문서</button>
+                                            </div>
+                                        </td>
+                                        <td class="has-element">
+                                            <span class="status-blue">작성 / 승인</span>
+                                        </td>
+                                        <td class="has-element">
+                                            <button type="button" class="btn">등록</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbox1"><label for="cbox1"></label>
+                                            </span>
+                                        </td>
+                                        <td>위임장</td>
+                                        <td>위임인 김일동</td>
+                                        <td class="has-element">
+                                            <div class="inline-wrap">
+                                                <button type="button" class="btn color-main color-check">서식수정</button>
+                                                <button type="button" class="btn">스캔</button>
+                                                <button type="button" class="btn">전자문서</button>
+                                            </div>
+                                        </td>
+                                        <td class="has-element">
+                                            <span class="status-blue">작성 / 승인</span>
+                                        </td>
+                                        <td class="has-element">
+                                            <button type="button" class="btn">등록</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbox2"><label for="cbox2"></label>
+                                            </span>
+                                        </td>
+                                        <td>확인서면</td>
+                                        <td>위임인 김일동</td>
+                                        <td class="has-element">
+                                            <div class="inline-wrap">
+                                                <button type="button" class="btn color-main color-check">서식수정</button>
+                                                <button type="button" class="btn">스캔</button>
+                                                <button type="button" class="btn">전자문서</button>
+                                            </div>
+                                        </td>
+                                        <td class="has-element">
+                                            <span class="status-blue">작성 / 승인</span>
+                                        </td>
+                                        <td class="has-element">
+                                            <button type="button" class="btn">등록</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbox1"><label for="cbox1"></label>
+                                            </span>
+                                        </td>
+                                        <td>매매계약서</td>
+                                        <td>위임인 김일동</td>
+                                        <td class="has-element">
+                                            <div class="inline-wrap">
+                                                <button type="button" class="btn" disabled>서식작성</button>
+                                                <button type="button" class="btn color-main color-check">스캔</button>
+                                                <button type="button" class="btn">전자문서</button>
+                                            </div>
+                                        </td>
+                                        <td class="has-element">
+                                            <span class="status-blue">스캔</span>
+                                        </td>
+                                        <td class="has-element">
+                                            <span class="status-blue">등록완료</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbox1"><label for="cbox1"></label>
+                                            </span>
+                                        </td>
+                                        <td>위임장</td>
+                                        <td>위임인 김일동</td>
+                                        <td class="has-element">
+                                            <div class="inline-wrap">
+                                                <button type="button" class="btn" disabled>서식작성</button>
+                                                <button type="button" class="btn">스캔</button>
+                                                <button type="button" class="btn">전자문서</button>
+                                            </div>
+                                        </td>
+                                        <td class="has-element">
+                                            <span class="status-black">미완료</span>
+                                        </td>
+                                        <td class="has-element">
+                                            <button type="button" class="btn">등록</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="table-btn-focus">
+                                <a href="#go-table-btn0">테이블 기능 버튼으로 이동</a>
+                            </div>
+                        </div>
+                        <div class="row-btn-wrap">
+                            <button type="button" class="btn-row">
+                                <span>첨부서면 추가</span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <!-- // 첨부서면 목록 -->
+            </div>
+            <div class="cont-wrap">
+                <!-- 첨부서면 목록 -->
+                <section class="form-sec">
+                    <div class="sec-body">
+                        <div class="table-head">
+                            <div class="left-con">
+                                <h4>첨부서면</h4>
+                            </div>
+                            <div class="right-con" id="go-table-btn0">
+                                <button type="button" class="btn-solid">선택삭제</button>
+                            </div>
+                        </div>
+                        <div class="table-body">
+                            <table class="table-list">
+                                <caption>첨부서면 목록</caption>
+                                <colgroup>
+                                    <col style="width: 60px;">
+                                    <col style="width: auto;">
+                                    <col style="width: 240px;">
+                                    <col style="width: 255px;">
+                                    <col style="width: 120px;">
+                                    <col style="width: 180px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbox0"><label for="cbox0"></label>
+                                            </span>
+                                        </th>
+                                        <th scope="col">첨부서면명</th>
+                                        <th scope="col">부가정보</th>
+                                        <th scope="col">작성/첨부</th>
+                                        <th scope="col">상태</th>
+                                        <th scope="col">서명현황</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbox1"><label for="cbox1"></label>
+                                            </span>
+                                        </td>
+                                        <td>위임장</td>
+                                        <td class="has-element">
+                                            <label for=""><input type="text" name="" id="" class="w200" placeholder="부가정보 입력"></label>
+                                        </td>
+                                        <td class="has-element">
+                                            <div class="inline-wrap">
+                                                <button type="button" class="btn color-main color-check">서식수정</button>
+                                                <button type="button" class="btn">스캔</button>
+                                                <button type="button" class="btn">전자문서</button>
+                                            </div>
+                                        </td>
+                                        <td class="has-element">
+                                            <span class="status-blue">작성 / 승인</span>
+                                        </td>
+                                        <td class="has-element">
+                                            <span class="state-sign">1 / 2</span>
+                                            <button type="button" class="btn">추가서명인</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbox1"><label for="cbox1"></label>
+                                            </span>
+                                        </td>
+                                        <td>이사회의록</td>
+                                        <td class="has-element">
+                                            <label for=""><input type="text" name="" id="" class="w200" placeholder="부가정보 입력"></label>
+                                        </td>
+                                        <td class="has-element">
+                                            <div class="inline-wrap">
+                                                <button type="button" class="btn color-main color-check">서식수정</button>
+                                                <button type="button" class="btn">스캔</button>
+                                                <button type="button" class="btn">전자문서</button>
+                                            </div>
+                                        </td>
+                                        <td class="has-element">
+                                            <span class="status-blue">작성 / 승인</span>
+                                        </td>
+                                        <td class="has-element">
+                                            <span class="state-sign">1 / 3</span>
+                                            <button type="button" class="btn">추가서명인</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbox1"><label for="cbox1"></label>
+                                            </span>
+                                        </td>
+                                        <td>기타</td>
+                                        <td class="has-element">
+                                            <label for=""><input type="text" name="" id="" class="w200" placeholder="부가정보 입력"></label>
+                                        </td>
+                                        <td class="has-element">
+                                            <div class="inline-wrap">
+                                                <button type="button" class="btn">서식작성</button>
+                                                <button type="button" class="btn">스캔</button>
+                                                <button type="button" class="btn color-main color-check">전자문서</button>
+                                            </div>
+                                        </td>
+                                        <td class="has-element">
+                                            <span class="status-blue">작성 / 승인</span>
+                                        </td>
+                                        <td class="has-element">
+                                            <span class="state-sign">1 / 3</span>
+                                            <button type="button" class="btn">추가서명인</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbox1"><label for="cbox1"></label>
+                                            </span>
+                                        </td>
+                                        <td>조사보고서</td>
+                                        <td class="has-element">
+                                            <label for=""><input type="text" name="" id="" class="w200" placeholder="부가정보 입력"></label>
+                                        </td>
+                                        <td class="has-element">
+                                            <div class="inline-wrap">
+                                                <button type="button" class="btn">서식작성</button>
+                                                <button type="button" class="btn color-main color-check">스캔</button>
+                                                <button type="button" class="btn">전자문서</button>
+                                            </div>
+                                        </td>
+                                        <td class="has-element">
+                                            <span class="status-blue">작성 / 승인</span>
+                                        </td>
+                                        <td class="has-element">
+                                            <span class="state-sign">1 / 2</span>
+                                            <button type="button" class="btn">추가서명인</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbox1"><label for="cbox1"></label>
+                                            </span>
+                                        </td>
+                                        <td>취임승낙서</td>
+                                        <td class="has-element">
+                                            <label for=""><input type="text" name="" id="" class="w200" placeholder="부가정보 입력"></label>
+                                        </td>
+                                        <td class="has-element">
+                                            <div class="inline-wrap">
+                                                <button type="button" class="btn">서식작성</button>
+                                                <button type="button" class="btn">스캔</button>
+                                                <button type="button" class="btn">전자문서</button>
+                                            </div>
+                                        </td>
+                                        <td class="has-element">
+                                            <span class="status-black">미완료</span>
+                                        </td>
+                                        <td class="has-element">
+                                            -
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbox1"><label for="cbox1"></label>
+                                            </span>
+                                        </td>
+                                        <td>잔(액)고증명서</td>
+                                        <td class="has-element">
+                                            <label for=""><input type="text" name="" id="" class="w200" placeholder="부가정보 입력"></label>
+                                        </td>
+                                        <td class="has-element">
+                                            <div class="inline-wrap">
+                                                <button type="button" class="btn">발급의뢰서작성</button>
+                                            </div>
+                                        </td>
+                                        <td class="has-element">
+                                            <span class="status-black">미완료</span>
+                                        </td>
+                                        <td class="has-element">
+                                            -
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbox1"><label for="cbox1"></label>
+                                            </span>
+                                        </td>
+                                        <td>인감신고서</td>
+                                        <td class="has-element">
+                                            <label for=""><input type="text" name="" id="" class="w200" placeholder="부가정보 입력"></label>
+                                        </td>
+                                        <td class="has-element">
+                                            <div class="inline-wrap">
+                                                <button type="button" class="btn">서식작성</button>
+                                                <button type="button" class="btn">스캔</button>
+                                                <button type="button" class="btn">전자문서</button>
+                                            </div>
+                                        </td>
+                                        <td class="has-element">
+                                            <span class="status-black">미완료</span>
+                                        </td>
+                                        <td class="has-element">
+                                            -
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="table-btn-focus">
+                                <a href="#go-table-btn0">테이블 기능 버튼으로 이동</a>
+                            </div>
+                        </div>
+                        <div class="row-btn-wrap">
+                            <button type="button" class="btn-row">
+                                <span>첨부서면 추가</span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <!-- // 첨부서면 목록 -->
+            </div>
+        </div>
+        <!-- // 5-1. 첨부서면목록 -->
+        
+        <!-- 5-2. 첨부서면목록추가 (팝업) -->
+        <div class="title-content-wrap">
+            <div class="title-wrap">
+                <h2>5-2. 첨부서면목록추가 (팝업)</h2>
+            </div>
+            <div class="cont-wrap">
+                <div class="popup-head"></div>
+                <div class="popup-body">
+                    <div class="popup-cont">
+    
+                        <section class="form-sec">
+                            <div class="sec-head">
+                                <ul class="tabmenu-con" data-tab="container" id="tabmenu0">
+                                    <li class="tabmenu-item active">
+                                        <a href="#none">지정양식</a>
+                                    </li>
+                                    <li class="tabmenu-item">
+                                        <a href="#none">기타양식</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sec-body mt25">
+                                <ul class="tabchild-con" data-tab-bind="tabmenu0">
+                                    <li class="tabchild-item active">
+                                        <div class="list-wrap">
+                                            <div class="list-head flex-wrap">
+                                                <div class="left-con"></div>
+                                                <div class="right-con">
+                                                    <div class="list-search-con ml10">
+                                                        <label for=""><input type="text" name="" id="total-search" class="search-input" placeholder="첨부서면을 검색해주세요."></label>
+                                                        <button type="button" class="search-btn">
+                                                            <img src="../../img/btn_board_search.svg" alt="search">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="list-body">
+                                                <ul class="list-half-con">
+                                                    <li>
+                                                        <span class="checkbox-con">
+                                                            <input type="checkbox" name="" id="item0">
+                                                            <label for="item0">매매계약서</label>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="checkbox-con">
+                                                            <input type="checkbox" name="" id="item1">
+                                                            <label for="item1">부동산거래계약신고필증</label>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="checkbox-con">
+                                                            <input type="checkbox" name="" id="item2">
+                                                            <label for="item2">주민등록정보</label>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="checkbox-con">
+                                                            <input type="checkbox" name="" id="item3">
+                                                            <label for="item3">일반건축물 대장</label>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="checkbox-con">
+                                                            <input type="checkbox" name="" id="item4">
+                                                            <label for="item4">확인서면</label>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="checkbox-con">
+                                                            <input type="checkbox" name="" id="item5">
+                                                            <label for="item5">토지/임야대장</label>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="checkbox-con">
+                                                            <input type="checkbox" name="" id="item6">
+                                                            <label for="item6">등기필증</label>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="checkbox-con">
+                                                            <input type="checkbox" name="" id="item7">
+                                                            <label for="item7">토지거래허가서</label>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="checkbox-con">
+                                                            <input type="checkbox" name="" id="item8">
+                                                            <label for="item8">임대사업자등록정보</label>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="checkbox-con">
+                                                            <input type="checkbox" name="" id="item9">
+                                                            <label for="item9">임대사업자등록정보</label>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="tabchild-item">
+                                        기타양식
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+    
+                    </div>
+                </div>
+                <div class="popup-foot">
+                    <div class="left-con">
+                        <button type="button" class="btn medium">보조버튼</button>
+                    </div>
+                    <div class="right-con">
+                        <button type="button" class="btn-solid medium color-4d">취소</button>
+                        <button type="button" class="btn-solid medium">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // 5-2. 첨부서면목록추가 (팝업) -->
+        
+        <!-- 5-3. 파일업로드 -->
+        <div class="title-content-wrap">
+            <div class="title-wrap">
+                <h2>5-3. 파일업로드</h2>
+            </div>
+            <div class="cont-wrap">
+                <div class="popup-head"></div>
+                <div class="popup-body">
+                    <div class="popup-cont">
+    
+                        <section class="form-sec mb16">
+                            <div class="sec-head">
+                                <ul class="fs-15 color-41">
+                                    <li>
+                                        <div>하나의 신청서에 등록 가능한 첨부서면 용량은 최대 200Mbyte입니다.</div>
+                                    </li>
+                                    <li>
+                                        <div class="text-bullet">PDF: 서명 안된 파일, SIG: 서명 완료 파일</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sec-body">
+                                <div class="table-body">
+                                    <table class="table-list">
+                                        <caption>파일업로드</caption>
+                                        <colgroup>
+                                            <col style="width: auto;">
+                                            <col style="width: 452px;">
+                                            <col style="width: 142px;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">첨부서면명</th>
+                                                <th scope="col">부가정보</th>
+                                                <th scope="col">전자문서 업로드</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>매매계약서1</td>
+                                                <td class="has-element">
+                                                    <label for=""><input type="text" name="" id="" class="w410" placeholder="가나다빌라 매매계약서1"></label>
+                                                </td>
+                                                <td class="has-element">
+                                                    <div class="btn-multi-wrap">
+                                                        <div class="btn-multi-con">
+                                                            <button type="button" onclick="alert('기능 1번')" class="btn-multi">기능 1번</button>
+                                                            <button type="button" onclick="alert('기능 2번')" class="btn-multi">기능 2번</button>
+                                                            <button type="button" onclick="alert('기능 3번')" class="btn-multi active">기능 3번</button>
+                                                            <button type="button" onclick="alert('기능 4번')" class="btn-multi">기능 4번</button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>매매계약서1</td>
+                                                <td class="has-element">
+                                                    <label for=""><input type="text" name="" id="" class="w410" placeholder="가나다빌라 매매계약서1"></label>
+                                                </td>
+                                                <td class="has-element">
+                                                    <div class="btn-multi-wrap">
+                                                        <div class="btn-multi-con">
+                                                            <button type="button" onclick="alert('기능 1번')" class="btn-multi">기능 1번</button>
+                                                            <button type="button" onclick="alert('기능 2번')" class="btn-multi">기능 2번</button>
+                                                            <button type="button" onclick="alert('기능 3번')" class="btn-multi active">기능 3번</button>
+                                                            <button type="button" onclick="alert('기능 4번')" class="btn-multi">기능 4번</button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>매매계약서1</td>
+                                                <td class="has-element">
+                                                    <label for=""><input type="text" name="" id="" class="w410" placeholder="가나다빌라 매매계약서1"></label>
+                                                </td>
+                                                <td class="has-element">
+                                                    <div class="btn-multi-wrap">
+                                                        <div class="btn-multi-con">
+                                                            <button type="button" onclick="alert('기능 1번')" class="btn-multi">기능 1번</button>
+                                                            <button type="button" onclick="alert('기능 2번')" class="btn-multi">기능 2번</button>
+                                                            <button type="button" onclick="alert('기능 3번')" class="btn-multi active">기능 3번</button>
+                                                            <button type="button" onclick="alert('기능 4번')" class="btn-multi">기능 4번</button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="table-foot mt25">
+                                    <div class="attach-file-wrap">
+                                        <ul>
+                                            <li>
+                                                <div class="title">
+                                                    매매계약서1
+                                                </div>
+                                                <div class="cont">
+                                                    <a href="#none" class="text-btn color-1d icon-down-pdf">
+                                                        첨부파일abcdefg.pdf
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="title">
+                                                    매매계약서2
+                                                </div>
+                                                <div class="cont">
+                                                    <a href="#none" class="text-btn color-1d icon-down-pdf">
+                                                        efghi_jppoi.sif
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="title">
+                                                    매매계약서3
+                                                </div>
+                                                <div class="cont">
+                                                    <a href="#none" class="text-btn color-1d icon-down-pdf">
+                                                        T109847733.pdf
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // 5-3. 파일업로드 -->
+        
+    </div>
+</body>
+
+</html>

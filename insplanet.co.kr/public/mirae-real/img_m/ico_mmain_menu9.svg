@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45">
+    <defs>
+        <style>
+            .cls-7{fill:none}.cls-6{stroke:none}
+        </style>
+    </defs>
+    <g id="실거래신고관리" transform="translate(5.98 4.615)">
+        <g id="그룹_3649" data-name="그룹 3649" transform="translate(-27.684 .089)">
+            <g id="타원_257" data-name="타원 257" transform="translate(25.703 -2.705)" style="stroke:#1d1d1d;stroke-width:1.5px;fill:#f4c215">
+                <circle class="cls-6" cx="18.5" cy="18.5" r="18.5"/>
+                <circle class="cls-7" cx="18.5" cy="18.5" r="17.75"/>
+            </g>
+            <g id="타원_215" data-name="타원 215" transform="translate(24.703 .295)" style="fill:#fff;stroke:#1d1d1d;stroke-width:1.5px">
+                <circle class="cls-6" cx="18.5" cy="18.5" r="18.5"/>
+                <circle class="cls-7" cx="18.5" cy="18.5" r="17.75"/>
+            </g>
+            <path id="패스_3526" data-name="패스 3526" d="M24.9 3.6 29 17.039 33.067 3.6l4.18 13.439L40.669 3.6" transform="translate(10.572 9.374)" style="stroke-linejoin:round;stroke-linecap:round;fill:none;stroke:#1d1d1d;stroke-width:1.5px"/>
+            <path id="선_296" data-name="선 296" transform="translate(34.065 17.197)" style="stroke-linecap:round;fill:none;stroke:#1d1d1d;stroke-width:1.5px" d="M0 0h18.303"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .cls-4{fill:none}.cls-2{fill:#faab41}.cls-4{stroke:#d7bf9f;stroke-width:2px;stroke-miterlimit:10}
+        </style>
+    </defs>
+    <g id="ico_complaint" transform="translate(-578 -5150)">
+        <path id="guide" transform="translate(578 5150)" style="opacity:.2;fill:none" d="M0 0h40v40H0z"/>
+        <g id="그룹_3664" data-name="그룹 3664" transform="translate(578 5150.001)">
+            <g id="Group_21" data-name="Group 21" transform="translate(.147)">
+                <path id="패스_4100" data-name="패스 4100" class="cls-2" d="M39.306 144.7 38.2 158.809H.567L-.543 144.7l7.22-4.511h25.264z" transform="translate(.543 -126.857)"/>
+                <path id="Stroke_7" data-name="Stroke 7" d="M1 33.83V1h26.666v32.83z" transform="translate(5.521 -1)" style="fill:#f5f0cf"/>
+                <path id="Stroke_9" data-name="Stroke 9" class="cls-4" d="M0 .4h8.739" transform="translate(11.809 5.886)"/>
+                <path id="Stroke_11" data-name="Stroke 11" class="cls-4" d="M0 .4h16.23" transform="translate(11.809 10.99)"/>
+                <path id="Stroke_11-2" data-name="Stroke 11" class="cls-4" d="M0 .4h16.23" transform="translate(11.809 16.137)"/>
+                <path id="Stroke_11-3" data-name="Stroke 11" d="M0 .4h13.684" transform="translate(13.538 33.042)" style="stroke:#000;stroke-width:1.5px;stroke-miterlimit:10;fill:none"/>
+            </g>
+            <path id="패스_4101" data-name="패스 4101" d="M40 201.14v21.654l-21.052-1.76L0 222.794V201.14l15.158 10.827h7.579z" transform="translate(0 -183.384)" style="fill:#fec77c"/>
+            <path id="패스_4103" data-name="패스 4103" class="cls-2" d="M39 324.6H-1l20-17.74z" transform="translate(1 -285.194)"/>
+        </g>
+        <path id="Stroke_10" data-name="Stroke 10" d="M6.093 18.783 0 20l1.219-6.093L14.623.5a1.723 1.723 0 0 1 2.437 0l2.44 2.44a1.725 1.725 0 0 1 0 2.437z" transform="translate(598 5161.742)" style="fill:#dc3636"/>
+    </g>
+</svg>

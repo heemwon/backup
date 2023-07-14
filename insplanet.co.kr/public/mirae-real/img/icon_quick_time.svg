@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27">
+    <defs>
+        <style>
+            .cls-3{fill:#8f9bb3}
+        </style>
+    </defs>
+    <g id="icon_quick_time" transform="translate(-7 -.327)">
+        <path id="Container" transform="translate(7 .327)" style="fill:none;opacity:.2" d="M0 0h27v27H0z"/>
+        <g id="Mask" transform="translate(11 2.327)">
+            <path id="제외_1" data-name="제외 1" d="M10.125 19.714a10.2 10.2 0 0 1-7.16-2.887 9.675 9.675 0 0 1 0-13.94 10.32 10.32 0 0 1 14.319 0 9.675 9.675 0 0 1 0 13.94 10.2 10.2 0 0 1-7.159 2.887zm0-18.163a8.6 8.6 0 0 0-6.034 2.433 8.143 8.143 0 0 0-2.5 5.874 8.431 8.431 0 0 0 8.533 8.307 8.431 8.431 0 0 0 8.532-8.307 8.431 8.431 0 0 0-8.531-8.307z" transform="translate(0 3.428)" style="stroke:transparent;stroke-miterlimit:10;fill:#8f9bb3"/>
+            <path id="Shape" class="cls-3" d="M1.714 6.571V.857A.857.857 0 0 0 0 .857v7.429h6.286a.857.857 0 0 0 0-1.714z" transform="translate(8.761 7.052)"/>
+            <rect id="Rectangle" class="cls-3" width="9.143" height="1.714" rx=".857" transform="translate(5.553)"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+    <g data-name="ico / 18 / edit">
+        <path style="opacity:.2;fill:none" d="M0 0h18v18H0z"/>
+        <path data-name="Stroke 10" d="M4.265 13.148 0 14l.853-4.264 7.383-7.383a1.206 1.206 0 0 1 1.706 0l1.407 1.406.3.3a1.208 1.208 0 0 1 0 1.706z" transform="translate(3.501 .5)" style="stroke:#4b6ceb;stroke-linecap:round;fill:#4b6ceb;stroke-linejoin:round;stroke-miterlimit:10"/>
+        <path data-name="선 620" transform="translate(10.5 4.5)" style="stroke:#fff;fill:none" d="m0 0 3.036 2.964"/>
+        <path data-name="선 621" transform="translate(3.526 16.5)" style="stroke:#4b6ceb;stroke-linecap:round;fill:none" d="M0 0h10"/>
+    </g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+    <defs>
+        <style>
+            .cls-4{fill:#fff}.cls-3{fill:none;stroke:#fff;stroke-width:2px;stroke-miterlimit:10}
+        </style>
+    </defs>
+    <g id="ico_quickapply_0105" transform="translate(-1259 -414)">
+        <g id="Group_19" data-name="Group 19" transform="translate(1264.851 415.25)">
+            <path id="패스_4115" data-name="패스 4115" d="M32.012 23.709V.625H-1.476v40.156h22.5" transform="translate(.125 .625)" style="fill:none;stroke:#fff;stroke-width:2px"/>
+            <path id="Stroke_3" data-name="Stroke 3" class="cls-3" d="M0 .5h9.77" transform="translate(7.31 27.757)"/>
+            <path id="Stroke_5" data-name="Stroke 5" class="cls-3" d="M0 .5h9.77" transform="translate(7.31 32.916)"/>
+            <path id="Stroke_7" data-name="Stroke 7" class="cls-4" d="M2.805 0A2.8 2.8 0 1 1 0 2.8 2.8 2.8 0 0 1 2.805 0z" transform="translate(12.325 9.15)"/>
+            <path id="Stroke_9" data-name="Stroke 9" class="cls-4" d="M0 5.789V3.98A3.984 3.984 0 0 1 3.979 0H7.6a3.983 3.983 0 0 1 3.979 3.98v1.809" transform="translate(9.405 16.592)"/>
+        </g>
+        <g id="그룹_4041" data-name="그룹 4041" transform="translate(1264.767 419.635)" style="opacity:.25">
+            <path id="빼기_12" data-name="빼기 12" class="cls-4" d="M8.433 9.657a3.869 3.869 0 0 1-1.262-.4 10.375 10.375 0 0 0-1.557-.567 1.889 1.889 0 0 0 .8-1.54V4.468a1.886 1.886 0 0 0-3.771 0V7.15a1.89 1.89 0 0 0 .8 1.54 10.37 10.37 0 0 0-1.558.565 3.871 3.871 0 0 1-1.262.4.492.492 0 0 1-.456-.243A1.73 1.73 0 0 1 0 8.546V4.525a4.525 4.525 0 1 1 9.05 0v4.021c0 .769-.19 1.111-.617 1.111z" transform="translate(26.352 20)"/>
+            <path id="제외_2" data-name="제외 2" class="cls-4" d="M7247.233 5581.365h-19v-15h19v15zm-9.5-10a1.5 1.5 0 0 0-.5 2.914v2.588a.5.5 0 0 0 1 0v-2.586a1.5 1.5 0 0 0-.5-2.916z" transform="translate(-7207 -5541)"/>
+        </g>
+    </g>
+</svg>

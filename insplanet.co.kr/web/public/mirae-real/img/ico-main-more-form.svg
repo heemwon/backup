@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40.001" height="40" viewBox="0 0 40.001 40">
+    <defs>
+        <style>
+            .cls-5{stroke:#000;stroke-width:1.5px;fill:none;stroke-miterlimit:10}
+        </style>
+    </defs>
+    <g id="ico_main_more_form" transform="translate(-11.807 21)">
+        <g id="icn" transform="translate(5.678 -10.178)">
+            <g id="그룹_3649">
+                <path id="패스_265" fill="#fff" stroke="#000" stroke-width="1.5px" d="M3082.007 1037.937c.844-.061 6.664 0 6.664 0a7.374 7.374 0 0 0 0-.889c-.053-1.261-.518-4.151-3.333-4.173-3.718-.029-6.396 5.284-3.331 5.062z" transform="translate(-3044.114 -1041.697)"/>
+                <path id="패스_263" fill="#fff" stroke="#070203" stroke-width="1.5px" d="M309.034 427.247v7s.446 3.062-3.745 3.062h-22.216l-.063-29.64s-.3-6.464 5.284-6.464h24.82s-4.079.335-4.079 6.464z" transform="translate(-271.82 -410.031)"/>
+                <g id="패스_264" fill="#fff" stroke="none" stroke-linecap="round">
+                    <path d="M3089.521 1065h-24.137c-.193-.03-1.488-.304-2.47-2.357-.173-.905-.097-2.907-.02-4.143h22.078c.006.154.015.327.026.52.096 1.734.316 5.716 4.523 5.98z" transform="translate(-3055.93 -1037.704)"/>
+                    <path fill="#000" d="M3063.604 1059.25c-.057 1.198-.07 2.508.03 3.16.74 1.486 1.616 1.787 1.826 1.84h20.52c-.317-.328-.561-.674-.748-1.002-.7-1.232-.891-2.699-.972-3.998h-20.656m-1.407-1.5h23.55s-.066.04 0 1.228c.13 2.364.568 5.285 4.223 5.285h.092c.703 0-.006 1.487-.006 1.487h-24.716s-1.874-.136-3.143-2.868c-.31-1.393 0-5.132 0-5.132z" transform="translate(-3055.93 -1037.704)"/>
+                </g>
+                <path id="Stroke_3" d="M0 .477l7.943.034" class="cls-5" transform="translate(16.814 -.53)"/>
+                <path id="Stroke_3-2" d="M0 .477l13.842.034" class="cls-5" transform="translate(16.814 4.063)"/>
+            </g>
+            <path id="Stroke_10" fill="#f4c215" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5px" d="M4.562 14.061L0 14.974l.912-4.562L10.947.378a1.29 1.29 0 0 1 1.824 0L14.6 2.2a1.292 1.292 0 0 1 0 1.824z" transform="translate(29.714 1.504)"/>
+        </g>
+    </g>
+</svg>

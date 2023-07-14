@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+    <g transform="translate(11.98 6.615)">
+        <rect width="64" height="64" rx="5" transform="translate(-11.98 -6.615)" style="fill:#f2f4f5"/>
+        <path transform="translate(4.02 9.385)" style="opacity:.2;fill:none" d="M0 0h32v32H0z"/>
+        <path data-name="패스 4137" d="M12.268 31.017H3.02V8.447h10.349l3.816 4.214h11.707v6.017" transform="translate(3.826 4.763)" style="stroke-width:1.5px;stroke:#1d1d1d;fill:none"/>
+        <g data-name="Icon feather-link">
+            <path data-name="패스 4130" d="M0 7.425a3.218 3.218 0 0 0 2.369 1.346A3.18 3.18 0 0 0 4.9 7.79l1.948-2.026a3.471 3.471 0 0 0 0-4.775 3.162 3.162 0 0 0-4.594 0L1.137 2.144" transform="rotate(2 -717.414 746.472)" style="stroke:#000;stroke-linejoin:round;stroke-width:1.5px;fill:none"/>
+            <path data-name="패스 4131" d="M7.8 1.354A3.218 3.218 0 0 0 5.43.009a3.18 3.18 0 0 0-2.53.98L.952 3.015a3.471 3.471 0 0 0 0 4.775 3.162 3.162 0 0 0 4.594 0l1.11-1.155" transform="rotate(2 -849.606 595.615)" style="stroke:#000;stroke-linejoin:round;stroke-width:1.5px;fill:none"/>
+        </g>
+        <path data-name="사각형 2026" transform="translate(12.02 21.385)" style="fill:#f4c215" d="M0 0h8v4H0z"/>
+    </g>
+</svg>

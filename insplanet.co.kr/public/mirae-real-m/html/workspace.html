@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Work List</title>
+	<style>
+		* {margin:0;padding:0;}
+            h1 {padding:15px 20px 15px 20px;font-size:24px;background:#ececec;}
+            .stat {padding:10px 10px;}
+            .stat p {display:inline-block;margin-left:10px;font-size:12px;}
+            h2 {margin:30px 20px 0px 20px;}
+            table {width:calc(100% - 40px);margin:0 20px 50px 20px;border-collapse:collapse;border-top:2px solid #ccc;}
+            th {padding:10px 20px;font-size:12px;border-bottom:1px solid #ccc;background:#ececec;}
+            td {padding:5px 20px;font-size:12px;border-bottom:1px solid #ccc;}
+            td:nth-child(1),
+            td:nth-child(7)  {text-align:center;}
+	</style>
+	<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script> -->
+	<script src="../js/libs/jquery.min.js"></script>
+    <script>
+        $(function() {
+            var trNum = $('table tr').length + 1;
+            for(i = 0; i < trNum; i++){
+                $('table tr:nth-child(' + i + ') td:first-child').text(i-1);
+                linktext = $('table tr:nth-child(' + i + ') td:nth-child(6)').text()
+                if($('table tr:nth-child(' + i + ') td:nth-child(7)').text() == '완료'){
+                    $('table tr:nth-child(' + i + ') td:nth-child(6)').html('<a href="./'+ linktext +'" target="_blank">'+ linktext +'</a>')
+                }
+                if($('table tr:nth-child(' + i + ') td:nth-child(7)').text() == '진행중'){
+                    $('table tr:nth-child(' + i + ') td:nth-child(6)').html('<a href="./'+ linktext +'" target="_blank">'+ linktext +'</a>')
+                }
+            }
+            $('.stat .page-total').text(trNum - 2)
+            $('.stat .page-ing').text($('table td:nth-child(7):contains("진행중")').length)
+            $('.stat .page-comp').text($('table td:nth-child(7):contains("완료")').length)
+
+        });
+    </script>
+</head>
+<body>
+	<h1>HTML Worklist</h1>
+
+	<h2>Mobile Ver</h2>
+	<div class="stat">
+		<p>전체 페이지 : <span class="page-total"></span> 페이지</p>
+		<p>진행중 : <span class="page-ing"></span> 페이지</p>
+		<p>완료 : <span class="page-comp"></span> 페이지</p>
+	</div>
+	<table>
+		<colgroup>
+		<col width="80" >
+		<col width="150" >
+		<col width="150" >
+		<col width="150" >
+		<col width="150" >
+		<col width="auto" >
+		<col width="100" >
+		<col width="auto" >
+		</colgroup>
+		<tr>
+			<th>No.</th>
+			<th>구분</th>
+			<th>DEPTH1</th>
+			<th>DEPTH1</th>
+			<th>DEPTH3</th>
+			<th>파일명</th>
+			<th>작업상황</th>
+			<th>비고</th>
+		</tr>
+		<!-- 
+		<tr>
+			<td></td>
+			<td>Guide</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>guide.html</td>
+			<td>진행중</td>
+			<td>윈도우팝업</td>
+		</tr>
+		 -->
+		<tr>
+			<td></td>
+			<td>Component</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>guide/font.html</td>
+			<td>완료</td>
+			<td>폰트</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Component</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>guide/form.html</td>
+			<td>완료</td>
+			<td>폼 Element</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Component</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>guide/input_case.html</td>
+			<td>완료</td>
+			<td>폼 Element</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Component</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>guide/button.html</td>
+			<td>완료</td>
+			<td>버튼</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Component</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>guide/message.html</td>
+			<td>완료</td>
+			<td>Message Box</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Component</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>guide/popup.html</td>
+			<td>완료</td>
+			<td>팝업</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Component</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>guide/progress.html</td>
+			<td>완료</td>
+			<td>아코디언</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>메인화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>2_1_1_main.html</td>
+			<td>완료</td>
+			<td>Main</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>등기협업공간(CWP)</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>3_1_1_cwp.html</td>
+			<td>완료</td>
+			<td>Main</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>4_1_1_login.html</td>
+			<td>완료</td>
+			<td>로그인</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>4_1_2_login_nonmember.html</td>
+			<td>완료</td>
+			<td>로그인</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>6_1_1_error_404.html</td>
+			<td>완료</td>
+			<td>error-404</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>6_1_2_error_check.html</td>
+			<td>완료</td>
+			<td>error-서비스점검</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>8_1_1_inquiry_result.html</td>
+			<td>완료</td>
+			<td>조회결과</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>8_1_2_inquiry_condition.html</td>
+			<td>완료</td>
+			<td>조회조건</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>8_1_3_inquiry_condition_result.html</td>
+			<td>완료</td>
+			<td>조회조건+조회결과</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>8_1_4_inquiry_condition_tab.html</td>
+			<td>완료</td>
+			<td>화면탭+조회조건(스와이프 탭)</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>8_1_5_inquiry_condition_result_tab.html</td>
+			<td>완료</td>
+			<td>화면탭+조회조건(위치기반정보제공)</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>8_1_6_inquiry_condition_result.html</td>
+			<td>완료</td>
+			<td>조회조건+아코디언형 조회결과</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>8_1_6_inquiry_condition_result_accordion.html</td>
+			<td>완료</td>
+			<td>화면탭+조회조건(자료센터)</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>8_1_7_inquiry_result_detail.html</td>
+			<td>완료</td>
+			<td>조회조건+조회결과/조회상세</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>8_1_8_inquiry_detail.html</td>
+			<td>완료</td>
+			<td>조회상세</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>8_2_1_default_write.html</td>
+			<td>완료</td>
+			<td>기본입력</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>8_2_3_default_write_tab.html</td>
+			<td>완료</td>
+			<td>화면탭+기본입력</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>8_2_4_default_write_accordion.html</td>
+			<td>완료</td>
+			<td>아코디언형입력</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>8_2_5_default_write.html</td>
+			<td>완료</td>
+			<td>단계형입력</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>8_3_2_popup_accordion.html</td>
+			<td>완료</td>
+			<td>정보고지형팝업</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>8_4_1_certify.html</td>
+			<td>완료</td>
+			<td>인증센터</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>8_4_2_certify.html</td>
+			<td>완료</td>
+			<td>인증센터 2</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>8_4_3_certify.html</td>
+			<td>완료</td>
+			<td>인증센터 3</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>8_4_4_payment_01.html</td>
+			<td>완료</td>
+			<td>결제_신용카드</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>8_4_4_payment_02.html</td>
+			<td>완료</td>
+			<td>결제_선불전자</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>8_4_4_payment_03.html</td>
+			<td>완료</td>
+			<td>결제_휴대폰</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>8_4_5_payment_complete.html</td>
+			<td>완료</td>
+			<td>결제완료</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>8_6_1_search_result.html</td>
+			<td>완료</td>
+			<td>법인등기열람_조회결과</td>
+		</tr>
+
+		<!-- 부동산입력 팝업 / 주소검색 팝업 -->
+		<tr>
+			<td></td>
+			<td>주소검색 팝업</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>8_4_6_address_popup_01.html</td>
+			<td>완료</td>
+			<td>부동산 등기신청_신청서작성_주소검색_도로명_popup</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>주소검색 팝업</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>8_4_6_address_popup_02.html</td>
+			<td>완료</td>
+			<td>부동산 등기신청_신청서작성_주소검색_소재지번_popup</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>주소검색 팝업</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>8_4_6_address_popup_03_result.html</td>
+			<td>완료</td>
+			<td>부동산 등기신청_신청서작성_주소검색결과_popup</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>주소검색 팝업</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>8_4_6_address_popup_04_nodata.html</td>
+			<td>완료</td>
+			<td>부동산 등기신청_신청서작성_주소검색결과_nodata_popup</td>
+		</tr>
+
+
+		<!-- [[[[[간편등기]]]]] -->
+		<tr>
+			<td></td>
+			<td>간편등기_공통</td>
+			<td>팝업</td>
+			<td></td>
+			<td></td>
+			<td>popup_simple.html</td>
+			<td>완료</td>
+			<td>간편등기 관련 팝업</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>간편등기_공통</td>
+			<td>인트로 페이지</td>
+			<td></td>
+			<td></td>
+			<td>MCOP_01_1.html</td>
+			<td>완료</td>
+			<td>간편등기신청_초기화면</td>
+		</tr>
+
+		<!-- [간편등기] 부동산 -->
+		<tr>
+			<td></td>
+			<td>간편등기_부동산</td>
+			<td>등기원인선택</td>
+			<td></td>
+			<td></td>
+			<td>MEST_01_2.html</td>
+			<td>완료</td>
+			<td>부동산_등기원인선택</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>간편등기_부동산</td>
+			<td>신청서 작성</td>
+			<td>주소변경</td>
+			<td></td>
+			<td>MEST_02_1_01.html</td>
+			<td>완료</td>
+			<td>신청서작성_주소변경</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>간편등기_부동산</td>
+			<td>작성내역 확인</td>
+			<td>주소변경</td>
+			<td></td>
+			<td>MEST_03_1.html</td>
+			<td>완료</td>
+			<td>작성내역 확인</td>
+		</tr>
+		
+		<!-- [간편등기] 법인 -->
+		<tr>
+			<td></td>
+			<td>간편등기_법인</td>
+			<td>등기원인선택</td>
+			<td></td>
+			<td></td>
+			<td>MCOP_01_2.html</td>
+			<td>완료</td>
+			<td>법인_등기원인선택</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>간편등기_법인</td>
+			<td>신청서 작성</td>
+			<td>대표이사 주소변경</td>
+			<td></td>
+			<td>MCOP_02_1_01.html</td>
+			<td>완료</td>
+			<td>신청서작성_대표이사주소변경</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>간편등기_법인</td>
+			<td>작성내역 확인</td>
+			<td>대표이사 주소변경</td>
+			<td></td>
+			<td>MCOP_03_1.html</td>
+			<td>완료</td>
+			<td>작성내역 확인</td>
+		</tr>
+
+		<!-- [간편등기] 결제 -->
+		<tr>
+			<td></td>
+			<td>간편등기_공통</td>
+			<td>수수료결제</td>
+			<td></td>
+			<td></td>
+			<td>MEST_04_1_01.html</td>
+			<td>완료</td>
+			<td>수수료결제</td>
+		</tr>
+	</table>
+</body>
+</html>

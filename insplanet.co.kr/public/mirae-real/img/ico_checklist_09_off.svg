@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+    <defs>
+        <style>
+            .cls-1{fill:red;opacity:0}.cls-4{fill:#fff;stroke:#000;stroke-width:1.5px}.cls-5{stroke:none}.cls-7{fill:none}
+        </style>
+    </defs>
+    <g id="ico_checklist_09_off" transform="translate(7.192 10)">
+        <path id="guide" d="M0 0H56V56H0z" class="cls-1" transform="translate(-7.192 -10)"/>
+        <path id="guide-2" d="M0 0H40V40H0z" class="cls-1" transform="translate(0.808 -2)"/>
+        <g id="ico_checklist_09_off-2" transform="translate(-82.276 23.536)">
+            <g id="home" transform="translate(29.205 -41.859)">
+                <g id="패스_3512" fill="#fff">
+                    <path d="M43.342 56.983h-32.5V38.086l16.036-14.309h.429l16.035 14.31v18.896z" class="cls-5" transform="translate(44.787 -3.704)"/>
+                    <path fill="#000" d="M27.092 24.59l-15.5 13.832v17.81h31v-17.81l-15.5-13.831m-.5-1.564h1l16.5 14.723v19.983h-34V37.75l16.5-14.723z" transform="translate(44.787 -3.704)"/>
+                </g>
+                <g id="사각형_1208" fill="#fec867" stroke="#000" stroke-width="1.5px">
+                    <path d="M5 0a5 5 0 0 1 5 5v9.257H0V5a5 5 0 0 1 5-5z" class="cls-5" transform="translate(66.878 39.772)"/>
+                    <path d="M5 .75A4.25 4.25 0 0 1 9.25 5v8.163a.345.345 0 0 1-.345.345h-7.81a.345.345 0 0 1-.345-.345V5A4.25 4.25 0 0 1 5 .75z" class="cls-7" transform="translate(66.878 39.772)"/>
+                </g>
+            </g>
+            <g id="사각형_1370" class="cls-4">
+                <path d="M0 0H12V6.5H0z" class="cls-5" transform="translate(111.04 -4.463)"/>
+                <path d="M0.75 0.75H11.25V5.75H0.75z" class="cls-7" transform="translate(111.04 -4.463)"/>
+            </g>
+            <g id="사각형_1371" class="cls-4">
+                <path d="M0 0H12V6.5H0z" class="cls-5" transform="translate(111.04 0.537)"/>
+                <path d="M0.75 0.75H11.25V5.75H0.75z" class="cls-7" transform="translate(111.04 0.537)"/>
+            </g>
+            <g id="사각형_1372" class="cls-4">
+                <path d="M0 0H12V6.5H0z" class="cls-5" transform="translate(111.04 5.537)"/>
+                <path d="M0.75 0.75H11.25V5.75H0.75z" class="cls-7" transform="translate(111.04 5.537)"/>
+            </g>
+        </g>
+    </g>
+</svg>

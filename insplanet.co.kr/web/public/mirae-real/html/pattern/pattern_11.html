@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../../js/libs/jquery.min.js"></script>
+    <script src="../../js/libs/jquery-ui.min.js"></script>
+    <script src="../../js/libs/jquery.selectric.js"></script>
+    <script src="../../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../../js/sub.js"></script>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/guide.css">
+    <link rel="stylesheet" href="../../css/sub.css">
+    <title>패턴</title>
+</head>
+
+<body>
+    <div class="apply-wrap mb50">
+        
+        <!-- 11-1. 열람·발급 일반 조회 - 지도위치확인 버튼 추가 -->
+
+        <div class="title-wrap">
+            <h2>11-1. 열람·발급 일반 조회 - 지도위치확인 버튼 추가</h2>
+        </div>
+        <div class="cont-wrap mb50">
+            
+            <section class="form-sec mt40">
+                <div class="filter-wrap default">
+                    <ul class="form-con">
+                        <li>
+                            <div class="element-con">
+                                <p class="title-con">조회구분<span class="required">필수</span></p>
+                                <div class="radio-btn-con">
+                                    <input type="radio" name="radiobtn" id="radiobtn0">
+                                    <label for="radiobtn0">버튼형 옵션1</label>
+                                    <input type="radio" name="radiobtn" id="radiobtn1">
+                                    <label for="radiobtn1">버튼형 옵션2</label>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="element-con">
+                                <p class="title-con">
+                                    <label for="addr">주소<span class="required">필수</span></label>
+                                </p>
+                                <div class="cont-con">
+                                    <div class="inline-wrap">
+                                        <input type="text" name="" id="bondnum" class="w717" placeholder="국민주택채권발행번호 입력">
+                                        <button type="button" class="btn icon-map">지도위치확인</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="element-con">
+                                <div class="title-con inline-wrap">
+                                    <label for="purpose" class="fs-14 color-5a">부동산 구분</label>
+                                    <div class="tooltip-wrap">
+                                        <span class="tooltip-btn right" data-tooltip="trigger" tabindex="0"><img src="../../img/ico_qmark@2x.png" alt="Question mark"></span>
+                                        <div class="tooltip-cont-con" data-tooltip="container">
+                                            <div class="tooltip-head">
+                                                <p class="title">부동산 구분</p>
+                                                <button type="button" class="close-btn" onclick="tooltipHandler.closeTooltip()">
+                                                    <img src="../../img/btn_tooltips_close.svg" alt="닫기">
+                                                </button>
+                                            </div>
+                                            <div class="tooltip-body">
+                                                <p>부동산 구분</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cont-con">
+                                    <div class="inline-wrap">
+                                        <span class="radio-con">
+                                            <input type="radio" name="type" id="tr0">
+                                            <label for="tr0">전체</label>
+                                        </span>
+                                        <span class="radio-con ml20">
+                                            <input type="radio" name="type" id="tr1">
+                                            <label for="tr1">집합건물</label>
+                                        </span>
+                                        <span class="radio-con ml20">
+                                            <input type="radio" name="type" id="tr2">
+                                            <label for="tr2">토지</label>
+                                        </span>
+                                        <span class="radio-con ml20">
+                                            <input type="radio" name="type" id="tr3">
+                                            <label for="tr3">건물</label>
+                                        </span>
+
+                                        <label for="purpose" class="fs-14 color-5a ml60">시/도</label>
+                                        <span class="select-con w150">
+                                            <select name="" id="city1" class="">
+                                                <option value="1">전체</option>
+                                                <option value="2">시/도</option>
+                                                <option value="3">군/구</option>
+                                            </select>
+                                        </span>
+                                        <label for="purpose" class="fs-14 color-5a ml40">등기기록상태</label>
+                                        <span class="select-con w120">
+                                            <select name="" id="regi1" class="">
+                                                <option value="1">현행</option>
+                                                <option value="2">예정</option>
+                                            </select>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="btn-con">
+                        <div class="util-btn-con">
+                            <button type="button" class="btn-solid medium color-4d">초기화</button>
+                            <button type="button" class="btn-solid medium">조회</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- // 11-1. 열람·발급 일반 조회 - 지도위치확인 버튼 추가 -->
+
+        <!-- 11-2. 간편열람·발급 조회 -->
+        <div class="title-wrap mb40">
+            <h2>11-2. 간편열람·발급 조회</h2>
+        </div>
+        <div class="cont-wrap mb50">
+            
+            <!-- STEP이 있는 박스 -->
+            <div class="step-sec">
+                <h6 class="title"><span class="step">STEP 1</span> 열람/발급하고자 하는 등기정보 선택</h6>
+                <div class="box-inner">
+                    <div class="filter-wrap default">
+                        <ul class="form-con">
+                            <li>
+                                <div class="element-con">
+                                    <p class="title-con">용도<span class="required">필수</span></p>
+                                    <span class="radio-con">
+                                        <input type="radio" name="type" id="tr0">
+                                        <label for="tr0">열람</label>
+                                    </span>
+                                    <span class="radio-con ml40">
+                                        <input type="radio" name="type" id="tr0">
+                                        <label for="tr0">발급</label>
+                                    </span>
+                                </div>
+                                <div class="element-con">
+                                    <p class="title-con">등기기록유형<span class="required">필수</span></p>
+                                    <span class="radio-con">
+                                        <input type="radio" name="type" id="tr0">
+                                        <label for="tr0">말소사항포함(전부)</label>
+                                    </span>
+                                    <span class="radio-con ml40">
+                                        <input type="radio" name="type" id="tr0">
+                                        <label for="tr0">현재유효사항(전부)</label>
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="element-con">
+                                    <label for="purpose" class="title-con fs-14 color-5a">(주민)등록번호 공개여부</label>
+                                    <span class="select-con w200">
+                                        <select name="" id="regi1" class="">
+                                            <option value="1">미공개</option>
+                                            <option value="2">공개</option>
+                                        </select>
+                                    </span>
+                                </div>
+                                <div class="element-con">
+                                    <label for="purpose" class="title-con fs-14 color-5a">등기상태</label>
+                                    <span class="select-con w200">
+                                        <select name="" id="regi1" class="">
+                                            <option value="1">현행</option>
+                                        </select>
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <h6 class="title"><span class="step">STEP 2</span> 부동산 주소 입력</h6>
+                <div class="box-inner">
+                    <div class="filter-wrap default">
+                        <ul class="form-con">
+                            <li>
+                                <div class="element-con">
+                                    <p class="title-con">
+                                        <label for="addr">주소<span class="required">필수</span></label>
+                                    </p>
+                                    <div class="cont-con">
+                                        <input type="text" name="" id="bondnum" class="w717" placeholder="지번 또는 도로명 주소 입력">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box-button">
+                    <button type="button" class="btn-solid medium color-4d">초기화</button>
+                    <button type="button" class="btn-solid medium">간편조회</button>
+                </div>
+            </div>
+            <!-- //STEP이 있는 박스 -->
+
+        </div>
+        <!-- // 11-2. 간편열람·발급 조회 -->
+
+        <!-- 11-3. 부동산등기 일괄등록 신청(열람·발급) -->
+        <div class="title-wrap">
+            <h2>11-3. 부동산등기 일괄등록 신청(열람·발급)</h2>
+        </div>
+        <div class="cont-wrap">
+
+            <div class="flex-wrap mb15">
+                <div class="left-con"></div>
+                <div class="right-con">
+                    <button type="button" class="btn icon-exel">일괄열람&middot;발급 템플릿</button>
+                </div>
+            </div>
+            <div class="box-line-type1">
+                <div class="box-head"><label>일괄 열람/발급 파일등록</label></div>
+                <div class="box-body">
+                    <div class="file-wrap w560" data-file="container">
+                        <input type="file" id="file" class="real-file" data-file="file">
+                        <span class="file-name" data-file="name"></span>
+                        <label for="file" class="file-btn">파일찾기</label>
+                        <button type="button" class="delete-btn" data-file="delete-btn">삭제</button>
+                    </div>
+                </div>
+                <div class="box-extention">
+                    <button type="button" class="btn-solid medium">일괄 열람/발급</button>
+                </div>
+            </div>
+            
+        </div>
+        <!-- // 11-3. 부동산등기 일괄등록 신청(열람·발급) -->
+
+
+    </div>
+</body>
+
+</html>

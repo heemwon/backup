@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+    <defs>
+        <style>
+            .cls-4{stroke:#000;stroke-width:1.5px}.cls-4,.cls-7{fill:none}.cls-6{stroke:none}
+        </style>
+    </defs>
+    <g id="ico_mymenu_day" transform="translate(1.661 -2.304)">
+        <g id="사각형_1464" fill="#fff" stroke="#000" stroke-width="1.5px">
+            <path d="M0 0H36V30H0z" class="cls-6" transform="translate(8.339 15.344)"/>
+            <path d="M0.75 0.75H35.25V29.25H0.75z" class="cls-7" transform="translate(8.339 15.344)"/>
+        </g>
+        <g id="사각형_1487" fill="#fec867" stroke="#000" stroke-width="1.5px">
+            <path d="M0 0H36V8H0z" class="cls-6" transform="translate(8.339 15.344)"/>
+            <path d="M0.75 0.75H35.25V7.25H0.75z" class="cls-7" transform="translate(8.339 15.344)"/>
+        </g>
+        <path id="선_349" d="M0 0L0 5.765" class="cls-4" transform="translate(16.922 13.304)"/>
+        <path id="선_350" d="M0 0L0 5.765" class="cls-4" transform="translate(35.579 13.304)"/>
+        <text id="_31" font-family="NotoSansCJKkr-Bold, Noto Sans CJK KR" font-size="13px" font-weight="700" letter-spacing="-0.04em" transform="translate(19.257 38.337)">
+            <tspan x="0" y="0">31</tspan>
+        </text>
+    </g>
+</svg>

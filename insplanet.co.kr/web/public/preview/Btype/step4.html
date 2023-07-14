@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1600, maximum-scale=1.0,user-scalable=no">
+    <title>미래등기</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        input::-ms-reveal,
+        input::-ms-clear {
+        display: none;
+        }
+        img {display:block;margin:0 auto;}
+        .navigation {position:relative;z-index:10;height:96px;background:#fff;}
+        .navigation .logo {position:absolute;left:30px;top:20px;}
+        .navigation .nav {position:relative;padding:36px 0 0 0;}
+        .navigation .nav img {position:absolute;left:50%;top:40px;margin:0 0 0 -630px;}
+        /* .navigation .nav button {display:block;position:absolute;left:50%;top:34px;margin:0 0 0 -318px;width:80px;height:30px;border:none;outline:none;background:none;}
+        .navigation .nav button:hover {background:url(images/dummy_gnb_on1depth01.png) no-repeat 50%;} */
+        .navigation .util {position:absolute;right:80px;top:26px;}
+        .sidebar {display:flex;flex-direction:column;justify-content:center;position:fixed;left:0;top:0;bottom:0;z-index:1;width:80px;text-align:center;background:#fff;}
+        .quickbar {display:flex;flex-direction:column;justify-content:center;position:fixed;right:0;top:0;bottom:0;z-index:1;width:80px;text-align:center;background:#fff;}
+        .footer {position:relative;z-index:10;height:301px;background:url(images/footer.png) no-repeat 50%;}
+        .nav-drop {display:none;position:absolute;left:0;top:96px;padding:40px 40px 0 0;width:100%;height:405px;background:#455f9b;}
+        .nav-drop.on {display:block;}
+        .wrap {min-width:1330px;}
+        .cont-wrap {display:flex;justify-content:flex-end;width:1216px;margin:0 auto;padding:34px 0 1000px 0;}
+        .cont-wrap .lnb {position:relative;margin:0 50px 0 0;}
+        .cont-wrap .lnb.on {position:fixed;left:50%;top:150px;margin:0 0 0 -590px;}
+        .cont-wrap .lnb button {display:block;position:absolute;left:0;top:0;width:200px;height:30px;background:none;cursor:pointer;border:none;outline:none;}
+        .cont-wrap .lnb button.link1 {top:46px;}
+        .cont-wrap .lnb button.link2 {top:87px;}
+        .cont-wrap .lnb button.link3 {top:123px;}
+        .cont-wrap .lnb button.link4 {top:160px;}
+        .cont-wrap .lnb button.link5 {top:201px;}
+        .cont-wrap .step {position:fixed;left:50%;bottom:30px;margin:0 0 0 -336px;}
+        section {position:relative;margin-bottom:60px;}
+        section img {margin:0;}
+        .wrap-sub {height:120px}
+        .wrap-sub .inner {position:relative;left:0;top:0;z-index:9;width:100%;}
+        .wrap-sub.on .inner {position:fixed;}
+        .sub1 {position:relative;height:65px;background:#eaedf4;}
+        .sub1 img {position:absolute;left:50%;top:20px;margin:0 0 0 -600px;}
+        .sub2 {position:relative;height:55px;background:#455f9b;}
+        .sub2 .bar {display:block;width:0;height:100%;background:#000;opacity:0.3;}
+        .sub2 .img1 {position:absolute;left:50%;top:16px;margin:0 0 0 -600px;}
+        .sub2 .img2 {position:absolute;left:50%;top:8px;margin:0 0 0 600px;}
+        .error {position:absolute;left:0;top:120px;padding:23px 0 0 0;width:100%;height:70px;background:#ff5858;opacity:0.9;}
+
+    </style>
+    <script>
+        $(function(){
+            $('.popup-notice').on('click',function(){
+                $(this).removeClass('on');
+                $('body').removeClass('popup');
+            })
+
+            $('.navigation .nav img').on('mouseenter',function(){
+                
+                if($('.nav-drop').hasClass == 0){
+                    console.log('test')
+                    $('.nav-drop').removeClass('on') 
+                }else{
+                    console.log('test')
+                    $('.nav-drop').addClass('on') 
+                }
+            });
+
+            $('.navigation').on('mouseleave',function(){
+                $('.nav-drop').removeClass('on')
+            });
+
+
+            $('.link1').on('click',function(){
+                $('html').stop().animate({
+                    scrollTop: 0 + 'px'
+                });
+            });
+            $('.link2').on('click',function(){
+                $('html').stop().animate({
+                    scrollTop: $('.content2').offset().top - 144 + 'px'
+                });
+            });
+            $('.link3').on('click',function(){
+                $('html').stop().animate({
+                    scrollTop: $('.content3').offset().top - 144 + 'px'
+                });
+            });
+            $('.link4').on('click',function(){
+                $('html').stop().animate({
+                    scrollTop: $('.content4').offset().top - 144 + 'px'
+                });
+            });
+            $('.link5').on('click',function(){
+                $('html').stop().animate({
+                    scrollTop: $('.content5').offset().top - 144 + 'px'
+                });
+            });
+        });
+
+        $(window).on('load',function(){
+            // contPos1 = $('.content1').offset().top - 346;
+            // contPos2 = $('.content2').offset().top - 346;
+            // contPos3 = $('.content3').offset().top - 346;
+            // contPos4 = $('.content4').offset().top - 346;
+            // contPos5 = $('.content5').offset().top - 346;
+        })
+
+        $(window).scroll(function(){
+
+            contPos1 = $('.content1').offset().top - 144;
+            contPos2 = $('.content2').offset().top - 144;
+            contPos3 = $('.content3').offset().top - 144;
+            contPos4 = $('.content4').offset().top - 144;
+            contPos5 = $('.content5').offset().top - 144;
+
+            if($(document).scrollTop() > 96){
+                $('.wrap-sub').addClass('on')
+                $('.cont-wrap .lnb').addClass('on')
+                //console.log('test')
+            }else{
+                $('.wrap-sub').removeClass('on')
+                $('.cont-wrap .lnb').removeClass('on')
+            }
+
+            if($(document).scrollTop() < contPos2 ){
+                $('.img-lnb').attr('src','images/dummy_cont_steps1.png')
+                //console.log('test1')
+            }else if($(document).scrollTop() < contPos3 ){
+                $('.img-lnb').attr('src','images/dummy_cont_steps2.png')
+                //console.log('test2')
+            }else if($(document).scrollTop() < contPos4 ){
+                $('.img-lnb').attr('src','images/dummy_cont_steps3.png')
+                //console.log('test3')
+            }else if($(document).scrollTop() < contPos5 ){
+                $('.img-lnb').attr('src','images/dummy_cont_steps4.png')
+                //console.log('test4')
+            }else{
+                $('.img-lnb').attr('src','images/dummy_cont_steps5.png')
+                //console.log('test5')
+            }
+
+            $('.sub2 .bar').css({'width':($(document).scrollTop() / ($('.content5').offset().top - 150) * 100) + '%'});
+
+            
+        });
+        
+    </script>
+</head>
+<body class="">
+    <div class="wrap">
+        <div class="navigation">
+            <div class="logo"><a href="../index.html"><img src="images/img_logo.png" alt="" ></a></div>
+            <div class="nav"><img src="images/header_menu.png" alt="" >
+            <button class="btn-gnb"></button>
+            </div>
+            <div class="util"><img src="images/gnb_util_logon.png" alt="Menu" ></div>
+            <div class="nav-drop">
+                <img src="images/dummy_gnb_on.png" alt="" >
+            </div>
+        </div>
+        <div class="wrap-sub">
+            <div class="inner">
+                <div class="sub1"><img src="images/dummy_btn_location.png" alt="" ></div>
+                <div class="sub2"><span class="bar"></span><img src="images/dummy_progressbar_summary.png" alt="" class="img1" ><img src="images/btn_help.png" alt="" class="img2" ></div>
+                <div class="error"><img src="images/dummy_error_text.png" alt="" ></div>
+            </div>
+        </div>
+        <div class="cont-wrap">
+            <div class="lnb">
+                <img src="images/dummy_cont_steps1.png" alt="" class="img-lnb" >
+                <button type="button" class="link1"></button>
+                <button type="button" class="link2"></button>
+                <button type="button" class="link3"></button>
+                <button type="button" class="link4"></button>
+                <button type="button" class="link5"></button>
+            </div>
+            <div>
+                <section class="content1">
+                    <img src="images/dummy_cont_step1-1error.png" alt="" >
+                </section>
+                <section class="content2">
+                    <img src="images/dummy_cont_step1-2.png" alt="" >
+                </section>
+                <section class="content3">
+                    <img src="images/dummy_cont_step1-3.png" alt="" >
+                </section>
+                <section class="content4">
+                    <img src="images/dummy_cont_step1-4.png" alt="" >
+                </section>
+                <section class="content5">
+                    <img src="images/dummy_cont_step1-5.png" alt="" >
+                </section>
+            </div>
+            <div class="step"><img src="images/btn_floating.png" alt="" ><a href="index.html" class="link1"></a></div>
+        </div>
+        
+        <div class="footer"></div>
+
+        <div class="quickbar"><img src="images/right_menu.png" alt="quick" ></div>
+    </div>
+
+</body>
+</html>

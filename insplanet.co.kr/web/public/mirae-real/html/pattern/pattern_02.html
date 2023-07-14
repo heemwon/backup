@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../../js/libs/jquery.min.js"></script>
+    <script src="../../js/libs/jquery-ui.min.js"></script>
+    <script src="../../js/libs/jquery.selectric.js"></script>
+    <script src="../../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../../js/sub.js"></script>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/guide.css">
+    <link rel="stylesheet" href="../../css/sub.css">
+    <title>패턴</title>
+</head>
+
+<body>
+    <div class="apply-wrap">
+        
+        <!-- 2-1. 다중 입력옵션선택 -->
+        <div class="title-content-wrap">
+            <div class="title-wrap">
+                <h2>2-1. 다중 입력옵션선택</h2>
+                <h5>입력옵션을 선택하면 하단에 선택한 입력옵션 패턴이 추가됨</h5>
+            </div>
+            <div class="cont-wrap">
+                <!-- 기타사항 -->
+                <section class="form-sec">
+                    <div class="sec-head">
+                        <h4>기타사항</h4>
+                    </div>
+                    <div class="sec-body">
+                        <div class="type-select-wrap bd-bottom-none">
+                            <div class="btn-con small">
+                                <span class="checkbox-btn-con">
+                                    <input type="checkbox" name="etc" id="etc0" checked>
+                                    <label for="etc0">
+                                        <span>신탁사항</span>
+                                    </label>
+                                </span>
+                                <span class="checkbox-btn-con">
+                                    <input type="checkbox" name="etc" id="etc1">
+                                    <label for="etc1">
+                                        <span>환매특약</span>
+                                    </label>
+                                </span>
+                                <span class="checkbox-btn-con">
+                                    <input type="checkbox" name="etc" id="etc2">
+                                    <label for="etc2">
+                                        <span>약정/금지사항</span>
+                                    </label>
+                                </span>
+                                <span class="checkbox-btn-con">
+                                    <input type="checkbox" name="etc" id="etc3">
+                                    <label for="etc3">
+                                        <span>지분특정 표시</span>
+                                    </label>
+                                </span>
+                                <span class="checkbox-btn-con">
+                                    <input type="checkbox" name="etc" id="etc4" checked>
+                                    <label for="etc4">
+                                        <span>대위자</span>
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- // 기타사항 -->
+
+                <!-- 신탁사항 입력 -->
+                <section class="form-sec depth-2">
+                    <div class="sec-body">
+                        <div class="table-head">
+                            <div class="left-con">
+                                <div class="inline-wrap">
+                                    <h5>신탁사항 입력</h5>
+                                    <span class="checkbox-con ml25">
+                                        <input type="checkbox" name="" id="check0">
+                                        <label for="check0">모든 부동산에 일괄적용</label>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="right-con" id="go-table-btn0">
+                                <button type="button" class="btn-solid">선택삭제</button>
+                            </div>
+                        </div>
+                        <div class="table-body">
+                            <table class="table-list">
+                                <caption>신탁사항 입력</caption>
+                                <colgroup>
+                                    <col style="width: 60px;">
+                                    <col style="width: auto;">
+                                    <col style="width: 316px;">
+                                    <col style="width: 222px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbox0"><label for="cbox0"></label>
+                                            </span>
+                                        </th>
+                                        <th scope="col">부동산</th>
+                                        <th scope="col">유형</th>
+                                        <th scope="col">신탁원부번호</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbox1"><label for="cbox1"></label>
+                                            </span>
+                                        </td>
+                                        <td class="left">경기도 용인시 기흥구 동백동 7000 100동 1층 1호</td>
+                                        <td class="has-element">
+                                            <span class="select-con w275">
+                                                <label for="">
+                                                    <select name="" id="">
+                                                        <option value="">신탁행위</option>
+                                                        <option value="">1</option>
+                                                    </select>
+                                                </label>
+                                            </span>
+                                        </td>
+                                        <td class="has-element">
+                                            <span class="input-unit-wrap">
+                                                <span class="unit-left">제</span>
+                                                <label for="">
+                                                    <input type="text" name="" id="unit0" class="w130" placeholder="">
+                                                </label>
+                                                <span class="unit-right">호</span>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbox2"><label for="cbox2"></label>
+                                            </span>
+                                        </td>
+                                        <td class="left">경기도 용인시 기흥구 동백동 7000 100동 1층 1호</td>
+                                        <td class="has-element">
+                                            <span class="select-con w275">
+                                                <label for="">
+                                                    <select name="" id="">
+                                                        <option value="">신탁행위</option>
+                                                        <option value="">1</option>
+                                                    </select>
+                                                </label>
+                                            </span>
+                                        </td>
+                                        <td class="has-element">
+                                            <span class="input-unit-wrap">
+                                                <span class="unit-left">제</span>
+                                                <label for="">
+                                                    <input type="text" name="" id="unit1" class="w130" placeholder="">
+                                                </label>
+                                                <span class="unit-right">호</span>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="table-btn-focus">
+                                <a href="#go-table-btn0">테이블 기능 버튼으로 이동</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- // 신탁사항 입력 -->
+
+                <!-- 대위자 등록 -->
+                <section class="form-sec depth-2">
+                    <div class="sec-body">
+                        <div class="table-head">
+                            <div class="left-con">
+                                <h5>대위자 등록</h5>
+                            </div>
+                            <div class="right-con" id="go-table-btn1">
+                                <button type="button" class="btn-solid">선택삭제</button>
+                            </div>
+                        </div>
+                        <div class="table-body">
+                            <table class="table-list">
+                                <caption>대위자 등록</caption>
+                                <colgroup>
+                                    <col style="width: 60px;">
+                                    <col style="width: 130px;">
+                                    <col style="width: 150px;">
+                                    <col style="width: auto;">
+                                    <col style="width: 222px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbox0"><label for="cbox0"></label>
+                                            </span>
+                                        </th>
+                                        <th scope="col">피대위자</th>
+                                        <th scope="col">대위자</th>
+                                        <th scope="col">대위자 주소</th>
+                                        <th scope="col">등록여부</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbox3"><label for="cbox3"></label>
+                                            </span>
+                                        </td>
+                                        <td>김회장</td>
+                                        <td>공동 대표이사</td>
+                                        <td class="left">자본금 1천만원</td>
+                                        <td class="has-element">
+                                            <button type="button" class="btn color-main">대위자 등록</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbox4"><label for="cbox4"></label>
+                                            </span>
+                                        </td>
+                                        <td>김회장</td>
+                                        <td>공동 대표이사</td>
+                                        <td class="left">자본금 1천만원</td>
+                                        <td class="has-element">
+                                            <span class="status-blue">등록</span>
+                                            <button type="button" class="btn">수정</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="table-btn-focus">
+                                <a href="#go-table-btn1">테이블 기능 버튼으로 이동</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- // 대위자 등록 -->
+
+                <!-- 연계요청 대상 문서 -->
+                <section class="form-sec depth-2">
+                    <div class="sec-head">
+                        <h5>연계요청 대상 문서</h5>
+                    </div>
+                    <div class="sec-body">
+                        <div class="type-select-wrap bd-bottom-none left">
+                            <div class="btn-con small">
+                                <span class="checkbox-btn-con">
+                                    <input type="checkbox" name="docs" id="docs0" checked disabled>
+                                    <label for="docs0">
+                                        <span>토지/임야대장등본</span>
+                                    </label>
+                                </span>
+                                <span class="checkbox-btn-con">
+                                    <input type="checkbox" name="docs" id="docs1">
+                                    <label for="docs1">
+                                        <span>일반건축물대장</span>
+                                    </label>
+                                </span>
+                                <span class="checkbox-btn-con">
+                                    <input type="checkbox" name="docs" id="docs2" checked>
+                                    <label for="docs2">
+                                        <span>집합건축물대장</span>
+                                    </label>
+                                </span>
+                                <span class="checkbox-btn-con">
+                                    <input type="checkbox" name="docs" id="docs3">
+                                    <label for="docs3">
+                                        <span>등록세영수필확인서</span>
+                                    </label>
+                                </span>
+                                <span class="checkbox-btn-con">
+                                    <input type="checkbox" name="docs" id="docs4">
+                                    <label for="docs4">
+                                        <span>토지거래허가서</span>
+                                    </label>
+                                </span>
+                                <span class="checkbox-btn-con">
+                                    <input type="checkbox" name="docs" id="docs5">
+                                    <label for="docs5">
+                                        <span>취득세영수필확인서</span>
+                                    </label>
+                                </span>
+                                <span class="checkbox-btn-con">
+                                    <input type="checkbox" name="docs" id="docs6">
+                                    <label for="docs6">
+                                        <span>등록면허세영수필확인서</span>
+                                    </label>
+                                </span>
+                                <span class="checkbox-btn-con">
+                                    <input type="checkbox" name="docs" id="docs7">
+                                    <label for="docs7">
+                                        <span>부동산(주택)거래계약신고필증</span>
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- // 연계요청 대상 문서 -->
+
+                <!-- 토지/임야대장등본 -->
+                <section class="form-sec depth-3">
+                    <div class="sec-body">
+                        <div class="table-head">
+                            <div class="left-con">
+                                <h6>토지/임야대장등본</h6>
+                            </div>
+                            <div class="right-con" id="go-table-btn2">
+                                <button type="button" class="btn color-main">연계문서 직접입력</button>
+                                <button type="button" class="btn-solid">선택삭제</button>
+                            </div>
+                        </div>
+                        <div class="table-body">
+                            <table class="table-list">
+                                <caption>토지/임야대장등본</caption>
+                                <colgroup>
+                                    <col style="width: 60px;">
+                                    <col style="width: 170px;">
+                                    <col style="width: auto;">
+                                    <col style="width: 210px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="land0"><label for="land0"></label>
+                                            </span>
+                                        </th>
+                                        <th scope="col">부동산 고유번호</th>
+                                        <th scope="col">주소</th>
+                                        <th scope="col">상태</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="land1"><label for="land1"></label>
+                                            </span>
+                                        </td>
+                                        <td class="ff-roboto">2149-2021-000013</td>
+                                        <td class="left">전라북도 익산시 어양동 20210312-13 대 100㎡</td>
+                                        <td class="has-element">
+                                            <button type="button" class="btn">대상확인</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="land2"><label for="land2"></label>
+                                            </span>
+                                        </td>
+                                        <td class="ff-roboto">2149-2021-000013</td>
+                                        <td class="left">전라북도 익산시 어양동 20210312-13 대 100㎡</td>
+                                        <td class="has-element">
+                                            <span class="status-black">요청중</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="table-btn-focus">
+                                <a href="#go-table-btn2">테이블 기능 버튼으로 이동</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- // 토지/임야대장등본 -->
+
+                <!-- 토지거래허가서 -->
+                <section class="form-sec depth-3">
+                    <div class="sec-body">
+                        <div class="table-head">
+                            <div class="left-con">
+                                <h6>토지거래허가서</h6>
+                            </div>
+                            <div class="right-con" id="go-table-btn3">
+                                <button type="button" class="btn-solid">선택삭제</button>
+                            </div>
+                        </div>
+                        <div class="table-body">
+                            <table class="table-list">
+                                <caption>토지거래허가서</caption>
+                                <colgroup>
+                                    <col style="width: 60px;">
+                                    <col style="width: auto;">
+                                    <col style="width: 315px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="landagree0"><label for="landagree0"></label>
+                                            </span>
+                                        </th>
+                                        <th scope="col">토지거래허가서 일련번호</th>
+                                        <th scope="col">상태</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="landagree1"><label for="landagree1"></label>
+                                            </span>
+                                        </td>
+                                        <td class="has-element">
+                                            <div class="inline-wrap">
+                                                <span class="select-con w160">
+                                                    <label for="">
+                                                        <select name="" id="" class="">
+                                                            <option value="">서울특별시</option>
+                                                        </select>
+                                                    </label>
+                                                </span>
+                                                <span class="select-con w160">
+                                                    <label for="">
+                                                        <select name="" id="" class="">
+                                                            <option value="">강남구</option>
+                                                        </select>
+                                                    </label>
+                                                </span>
+                                                <label for="">
+                                                    <input type="text" name="" id="" class="w90" value="2021">
+                                                </label>
+                                                <span class="hyphen"></span>
+                                                <label for="">
+                                                    <input type="text" name="" id="" class="w90" value="1">
+                                                </label>
+                                                <span class="hyphen"></span>
+                                                <label for="">
+                                                    <input type="text" name="" id="" class="w90" value="2021">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td class="has-element">
+                                            <button type="button" class="btn">대상확인</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="landagree2"><label for="landagree2"></label>
+                                            </span>
+                                        </td>
+                                        <td class="ff-roboto tc">41135-2018-1-200001</td>
+                                        <td class="has-element">
+                                            <span class="status-black">요청중</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="table-btn-focus">
+                                <a href="#go-table-btn3">테이블 기능 버튼으로 이동</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- // 토지거래허가서 -->
+            </div>
+        </div>
+        <!-- // 2-1. 다중 입력옵션선택 -->
+        
+        <!-- 2-2. 단일 입력옵션선택 -->
+        <div class="title-content-wrap">
+            <div class="title-wrap">
+                <h2>2-2. 단일 입력옵션선택</h2>
+                <h5>입력옵션을 선택하면 선택한 입력옵션화면이 나옴</h5>
+            </div>
+            <div class="cont-wrap">
+                <!-- 탭메뉴 - 타이틀 -->
+                <section class="form-sec">
+                    <div class="sec-body">
+                        <ul class="tabmenu-con" data-tab="container" id="tabmenu0">
+                            <li class="tabmenu-item active">
+                                <a href="#none">국민주택채권매입액</a>
+                            </li>
+                            <li class="tabmenu-item">
+                                <a href="#none">타관수령정보</a>
+                            </li>
+                        </ul>
+                        <h4 class="mt40">시가표준액 및 국민주택채권매입액</h4>
+                    </div>
+                </section>
+                <!-- // 탭메뉴 - 타이틀 -->
+
+                <!-- 국민주택채권매입액 정보 -->
+                <section class="form-sec depth-2">
+                    <div class="sec-body">
+                        <div class="table-head">
+                            <div class="left-con">
+                                <div class="inline-wrap">
+                                    <h5>국민주택채권매입액 정보</h5>
+                                    <span class="checkbox-con ml25">
+                                        <input type="checkbox" name="" id="nhinfo0">
+                                        <label for="nhinfo0">납세 면세(비과세포함)</label>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="right-con" id="go-table-btn4">
+                                <button type="button" class="btn">추가채권입력</button>
+                                <button type="button" class="btn-solid">선택삭제</button>
+                            </div>
+                        </div>
+                        <div class="table-body">
+                            <table class="table-list">
+                                <caption>국민주택채권매입액 정보</caption>
+                                <colgroup>
+                                    <col style="width: 60px;">
+                                    <col style="width: 188px;">
+                                    <col style="width: 236px;">
+                                    <col style="width: 236px;">
+                                    <col style="width: auto;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbond0"><label for="cbond0"></label>
+                                            </span>
+                                        </th>
+                                        <th scope="col">부동산 구분</th>
+                                        <th scope="col">시가표준액</th>
+                                        <th scope="col">국민주택채권매입액</th>
+                                        <th scope="col">국민주택채권발행번호</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbond1"><label for="cbond1"></label>
+                                            </span>
+                                        </td>
+                                        <td>토지</td>
+                                        <td class="right">
+                                            1,000,000원
+                                        </td>
+                                        <td class="right">
+                                            1,000,000원
+                                        </td>
+                                        <td class="ff-roboto" rowspan="2">
+                                            1234-56-7890-1234<br/>
+                                            1234-56-7890-1234<br/>
+                                            1234-56-7890-1234
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbond2"><label for="cbond2"></label>
+                                            </span>
+                                        </td>
+                                        <td>토지</td>
+                                        <td class="right">
+                                            1,000,000원
+                                        </td>
+                                        <td class="right">
+                                            1,000,000원
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="5" class="total-row">
+                                            <span class="title">국민주택채권매입액 총액</span>
+                                            <span class="cont">60,000원</span>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <div class="table-btn-focus">
+                                <a href="#go-table-btn4">테이블 기능 버튼으로 이동</a>
+                            </div>
+                        </div>
+                        <div class="row-btn-wrap">
+                            <button type="button" class="btn-row">
+                                <span>국민주택채권매입액 추가</span>
+                            </button>
+                        </div>
+                        <div class="table-foot">
+                            <div class="border-box-wrap mt25 fs-15">
+                                <p>
+                                    국민주택채권 매입대상금액조회 관련 문의는 담당기관인 국토교통부 주택기금과로 문의해 주십시오.
+                                </p>
+                                <p>
+                                    - 국토교통부 주택도시기금포털
+                                    <a href="#none" class="text-btn icon-next ml20">국민주택채권 매입대상금액조회 바로가기</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- // 국민주택채권매입액 정보 -->
+
+                <!-- 국민주택채권매입액 정보 -->
+                <section class="form-sec depth-2">
+                    <div class="sec-head">
+                        <div class="flex-wrap">
+                            <div class="left-con">
+                                <div class="inline-wrap">
+                                    <h5>국민주택채권매입액 정보</h5>
+                                    <span class="checkbox-con ml25">
+                                        <input type="checkbox" name="" id="nhinfo1" checked>
+                                        <label for="nhinfo1">납세 면세(비과세포함)</label>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="right-con">
+                                <button type="button" class="btn">최근면제사유</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sec-body">
+                        <div class="block-wrap">
+                            <label for="">
+                                <textarea name="" id="" cols="30" rows="10" placeholder="면제사유 입력"></textarea>
+                            </label>
+                        </div>
+                        <div class="border-box-wrap mt25 fs-15">
+                            <p>
+                                국민주택채권 매입대상금액조회 관련 문의는 담당기관인 국토교통부 주택기금과로 문의해 주십시오.
+                            </p>
+                            <p>
+                                - 국토교통부 주택도시기금포털
+                                <a href="#none" class="text-btn icon-next ml20">국민주택채권 매입대상금액조회 바로가기</a>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!-- // 국민주택채권매입액 정보 -->
+            </div>
+        </div>
+        <!-- // 2-2. 단일 입력옵션선택 -->
+        
+        <!-- 2-3. 신청메뉴 내 유형선택 -->
+        <div class="title-content-wrap">
+            <div class="title-wrap">
+                <h2>2-3. 신청메뉴 내 유형선택</h2>
+                <h5>신청 시 유형을선택하는 패턴</h5>
+            </div>
+            <div class="cont-wrap mw1312">
+                <!-- 탭메뉴 - 타이틀 -->
+                <section class="form-sec">
+                    <div class="sec-head">
+                        <div class="flex-wrap">
+                            <div class="left-con">
+                                <h4>신청유형</h4>
+                            </div>
+                            <div class="right-con">
+                                <div class="tooltip-wrap type-hover">
+                                    <button type="button" class="btn top">기존 자료 활용하기</button>
+                                    <div class="msg-con">
+                                        <div class="inner-con">
+                                            <p>기존에 작성 완료된 신청서를 재사용할 경우 이용하세요</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sec-body">
+                        <div class="bg-box-wrap no-border">
+                            <ul class="tabmenu-con solid-type mt42" data-tab="container">
+                                <li class="tabmenu-item active">
+                                    <a href="#none">전자신청</a>
+                                </li>
+                                <li class="tabmenu-item">
+                                    <a href="#none">e-form</a>
+                                </li>
+                            </ul>
+                            <div class="inline-wrap mt45 mb42 tc">
+                                <ul class="list-bullet fs-15 color-41 tl">
+                                    <li>
+                                        <div>최초 작성 후 3개월이 경과한 신청정보는 자동으로 삭제됩니다.</div>
+                                    </li>
+                                    <li>
+                                        <div>행정정보연계 요청을 통하여 수집된 문서에 포함된 개인정보는 등기처리 업무의 목적으로 활용될 수 있습니다.</div>
+                                    </li>
+                                </ul>
+                                <!-- <button type="button" class="btn medium icon-form-check ml25">동의합니다</button> -->
+                                <span class="checkbox-btn-con type2">
+                                    <input type="checkbox" name="" id="btn-agree">
+                                    <label for="btn-agree">동의합니다</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- // 탭메뉴 - 타이틀 -->
+
+                <!-- 등기유형 -->
+                <section class="form-sec">
+                    <div class="sec-head">
+                        <div class="flex-wrap">
+                            <div class="left-con">
+                                <h4>등기유형</h4>
+                            </div>
+                            <div class="right-con">
+                                <a href="#" class="text-btn icon-setting">나의등기유형 설정</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sec-body">
+                        <div class="type-select-wrap left">
+                            <div class="btn-con">
+                                <span class="radio-btn-con">
+                                    <input type="radio" name="regi" id="regi0">
+                                    <label for="regi0">
+                                        <span>주식회사 (대표)이사/감사 등의 변경 이사/감사 등의 변경</span>
+                                    </label>
+                                    <input type="radio" name="regi" id="regi1">
+                                    <label for="regi1">
+                                        <span>최대두줄까지 나오게 고정사이즈로 라디오 버튼</span>
+                                    </label>
+                                    <input type="radio" name="regi" id="regi2">
+                                    <label for="regi2">
+                                        <span>유한회사 본점/지점 등의 변경</span>
+                                    </label>
+                                    <input type="radio" name="regi" id="regi3">
+                                    <label for="regi3">
+                                        <span>유한회사 본점/지점 등의 변경</span>
+                                    </label>
+                                    <input type="radio" name="regi" id="regi4">
+                                    <label for="regi4">
+                                        <span>유한회사 본점/지점 등의 변경</span>
+                                    </label>
+                                </span>
+                                <span class="radio-btn-con">
+                                    <input type="radio" name="regi" id="regi5">
+                                    <label for="regi5">
+                                        <span>최대두줄까지 나오게 고정사이즈로 라디오 버튼</span>
+                                    </label>
+                                    <input type="radio" name="regi" id="regi6">
+                                    <label for="regi6">
+                                        <span>최대두줄까지 나오게 고정사이즈로 라디오 버튼</span>
+                                    </label>
+                                    <input type="radio" name="regi" id="regi7">
+                                    <label for="regi7">
+                                        <span>유한회사 본점/지점 등의 변경</span>
+                                    </label>
+                                    <input type="radio" name="regi" id="regi8">
+                                    <label for="regi8">
+                                        <span>유한회사 본점/지점 등의 변경</span>
+                                    </label>
+                                    <button type="button" class="more-btn">
+                                        <span>등기유형 더보기</span>
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="bottom-con">
+                                <p class="msg">등기유형이 선택되었습니다.</p>
+                                <p class="item">주식회사 (대표)이사/감사 등의 임원사항 변경</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- // 등기유형 -->
+
+                <!-- 등기할 항목 선택 -->
+                <section class="form-sec w1000">
+                    <div class="sec-head">
+                        <h4>등기할 항목 선택</h4>
+                    </div>
+                    <div class="sec-body">
+                        <div class="type-select-wrap">
+                            <div class="btn-con small">
+                                <span class="checkbox-btn-con">
+                                    <input type="checkbox" name="regismall" id="regismall0" checked disabled>
+                                    <label for="regismall0">
+                                        <span>특수/기타법인설립 기본항목 (필수)</span>
+                                    </label>
+                                </span>
+                                <span class="checkbox-btn-con">
+                                    <input type="checkbox" name="regismall" id="regismall1" checked>
+                                    <label for="regismall1">
+                                        <span>최대두줄까지 고정사이즈로 라디오 버튼</span>
+                                    </label>
+                                </span>
+                                <span class="checkbox-btn-con">
+                                    <input type="checkbox" name="regismall" id="regismall2">
+                                    <label for="regismall2">
+                                        <span>주식회사설립 기본항목</span>
+                                    </label>
+                                </span>
+                                <span class="checkbox-btn-con">
+                                    <input type="checkbox" name="regismall" id="regismall3">
+                                    <label for="regismall3">
+                                        <span>목적</span>
+                                    </label>
+                                </span>
+                                <span class="checkbox-btn-con">
+                                    <input type="checkbox" name="regismall" id="regismall4">
+                                    <label for="regismall4">
+                                        <span>임원 출자 항목</span>
+                                    </label>
+                                </span>
+                                <span class="checkbox-btn-con">
+                                    <input type="checkbox" name="regismall" id="regismall5">
+                                    <label for="regismall5">
+                                        <span>유한회사 본점/지점 등의 변경</span>
+                                    </label>
+                                </span>
+                                <span class="checkbox-btn-con">
+                                    <input type="checkbox" name="regismall" id="regismall6">
+                                    <label for="regismall6">
+                                        <span>유한회사 본점/지점 등의 변경</span>
+                                    </label>
+                                </span>
+                                <span class="checkbox-btn-con">
+                                    <input type="checkbox" name="regismall" id="regismall7">
+                                    <label for="regismall7">
+                                        <span>유한회사 본점/지점 등의 변경</span>
+                                    </label>
+                                </span>
+                                <span class="checkbox-btn-con">
+                                    <input type="checkbox" name="regismall" id="regismall8">
+                                    <label for="regismall8">
+                                        <span>유한회사 본점/지점 등의 변경</span>
+                                    </label>
+                                </span>
+                                <span class="checkbox-btn-con">
+                                    <input type="checkbox" name="regismall" id="regismall9">
+                                    <label for="regismall9">
+                                        <span>유한회사 본점/지점 등의 변경</span>
+                                    </label>
+                                </span>
+                            </div>
+                            <div class="bottom-con">
+                                <div class="inline-wrap">
+                                    <button type="button" class="btn-solid medium color-4d icon-reset-wh">재선택</button>
+                                    <button type="button" class="btn-solid medium">선택항목 적용</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- // 등기할 항목 선택 -->
+            </div>
+        </div>
+        <!-- // 2-3. 신청메뉴 내 유형선택 -->
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../js/libs/jquery.min.js"></script>
+    <script src="../js/libs/jquery-ui.min.js"></script>
+    <script src="../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../js/sub.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <title>인터넷 등기소</title>
+</head>
+<body>
+    <header class="area-header">
+        <div class="area-inner">
+            <span class="btn-historyback"><button>뒤로</button></span>
+            <h1 class="title">부동산 검색</h1>
+            <span class="btn-navigation"><button>메뉴</button></span>
+        </div>
+    </header>
+    <div class="area-content">
+        <div class="area-inner">
+            <div class="content-wrap">
+                <!-- 탭메뉴 -->
+                <section class="content-sec">
+                    <ul class="tabmenu-con swipe" data-tab="container" id="tabmenu0">
+                        <li class="tabmenu-item active">
+                            <a href="#none">미열람</a>
+                        </li>
+                        <li class="tabmenu-item">
+                            <a href="#none">재열람</a>
+                        </li>
+                        <li class="tabmenu-item">
+                            <a href="#none">열람내역</a>
+                        </li>
+                    </ul>
+                    <div class="tabchild-con" data-tab-bind="tabmenu0">
+                        <div class="tabchild-item active">
+                            <!-- 페이지 상단 -->
+                            <section class="page-top-sec mt25">
+                                <div class="desc-con">
+                                    <p>열람화면을 통해 열람하신 등기기록은 법적인 효력이 없어 관공서 등에 제출 할 수 없습니다.</p>
+                                </div>
+                            </section>
+    
+                            <!-- 부동산 검색 -->
+                            <section class="form-sec">
+                                <dl class="form-item">
+                                    <dt class="item-head">
+                                        <span class="left-con">
+                                            <span class="item-title">조회구분</span>
+                                            <span class="required">필수</span>
+                                        </span>
+                                        <span class="right-con">
+                                            <span class="required-info"><span class="star">*</span> 필수입력</span>
+                                        </span>
+                                    </dt>
+                                    <dd class="item-body">
+                                        <span class="radio-btn-con col3">
+                                            <span class="radio-btn-item">
+                                                <input type="radio" name="radiobtn" id="radiobtn1-1" checked>
+                                                <label for="radiobtn1-1">간편검색</label>
+                                            </span>
+                                            <span class="radio-btn-item">
+                                                <input type="radio" name="radiobtn" id="radiobtn1-2">
+                                                <label for="radiobtn1-2">소재지번</label>
+                                            </span>
+                                            <span class="radio-btn-item">
+                                                <input type="radio" name="radiobtn" id="radiobtn1-3">
+                                                <label for="radiobtn1-3">도로명</label>
+                                            </span>
+                                        </span>
+                                    </dd>
+                                </dl>
+                                <dl class="form-item">
+                                    <dt class="item-head">
+                                        <span class="left-con">
+                                            <span class="item-title">부동산구분</span>
+                                            <span class="required">필수</span>
+                                        </span>
+                                    </dt>
+                                    <dd class="item-body">
+                                        <span class="radio-btn-con">
+                                            <span class="radio-btn-item">
+                                                <input type="radio" name="radiobtn2" id="radiobtn2-1" checked>
+                                                <label for="radiobtn2-1">전체</label>
+                                            </span>
+                                            <span class="radio-btn-item">
+                                                <input type="radio" name="radiobtn2" id="radiobtn2-2">
+                                                <label for="radiobtn2-2">집합건물</label>
+                                            </span>
+                                            <span class="radio-btn-item">
+                                                <input type="radio" name="radiobtn2" id="radiobtn2-3">
+                                                <label for="radiobtn2-3">토지</label>
+                                            </span>
+                                            <span class="radio-btn-item">
+                                                <input type="radio" name="radiobtn2" id="radiobtn2-4">
+                                                <label for="radiobtn2-4">건물</label>
+                                            </span>
+                                        </span>
+                                    </dd>
+                                </dl>
+                                <dl class="form-item">
+                                    <dt class="item-head">
+                                        <span class="left-con">
+                                            <label for="addr1" class="item-title"> 시/도</label>
+                                            <span class="required">필수</span>
+                                        </span>
+                                    </dt>
+                                    <dd class="item-body">
+                                        <div class="block-wrap">
+                                            <span class="select-con">
+                                                <select name="" id="addr1" class="">
+                                                    <option value="">선택하세요</option>
+                                                </select>
+                                            </span>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl class="form-item">
+                                    <dt class="item-head">
+                                        <span class="left-con">
+                                            <label for="addr2" class="item-title">지번</label>
+                                            <span class="required">필수</span>
+                                        </span>
+                                    </dt>
+                                    <dd class="item-body">
+                                        <div class="block-wrap">
+                                            <input type="text" id="addr2" placeholder="가이드문구 출력">
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </section>
+
+                            <!-- button -->
+                            <section class="button-sec mt25">
+                                <button type="button" class="btn-solid large">조회</button>
+                            </section>
+                        </div>
+                        <div class="tabchild-item">
+                            재열람
+                        </div>
+                        <div class="tabchild-item">
+                            열람내역
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer class="area-footer">
+        <div class="area-inner">
+            <div class="box-privite">
+                <a href="">이용약관</a>
+                <a href=""><strong>개인정보처리방침</strong></a>
+                <a href="">원격지원</a>
+                
+            </div>
+            <p class="text-copyright">Copyright © Supreme Court of Korea.<br > All right reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

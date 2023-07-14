@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .cls-4,.cls-5{fill:#fff;stroke:#000;stroke-width:1.5px}.cls-5{fill:none}
+        </style>
+    </defs>
+    <g id="ico_main_more_examp" transform="translate(1.192 11)">
+        <g id="icn" transform="translate(-8.531 2.518)">
+            <path id="Stroke_7" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="1.5px" d="M19.989 0H0v35h27.5V7.753" transform="translate(8.339 -10.518)"/>
+            <path id="folder" fill="#f4c215" stroke="#000" stroke-width="1.5px" d="M16 13V2.61H7.343L5.862 0H0v13z" transform="translate(29.964 11.482)"/>
+            <path id="사각형_1207" d="M0 0H5V5H0z" class="cls-4" transform="translate(13.667 -.921)"/>
+            <path id="사각형_1255" d="M0 0H5V5H0z" class="cls-4" transform="translate(13.667 8.884)"/>
+            <path id="패스_3550" d="M13.687 12.789h3.324" class="cls-5" transform="translate(9.266 -13.71)"/>
+            <path id="패스_3551" d="M13.687 12.789h7.79" class="cls-5" transform="translate(9.266 -9.618)"/>
+            <path id="패스_3552" fill="#fff" stroke="#000" stroke-linecap="round" stroke-width="1.5px" d="M32.1-9.811v6.074h5.975z" transform="translate(-3.113 .352)"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="사각형_1923" d="M0 0H40V11H0z" class="cls-1" transform="translate(4 -4)"/>
+        </clipPath>
+        <clipPath id="clip-path-2">
+            <path id="사각형_1905" d="M0 0H40V10H0z" class="cls-1" transform="translate(10 33)"/>
+        </clipPath>
+        <style>
+            .cls-1{fill:#303871}.cls-11,.cls-4{fill:none}.cls-4,.cls-7{stroke:#1d1d1d;stroke-width:2px}.cls-7{fill:#f4c215}.cls-9{fill:#1d1d1d}.cls-10{stroke:none}
+        </style>
+    </defs>
+    <g id="ico_quickapply_0202_on" transform="translate(-831 -681.27)">
+        <g id="Icon_feather-refresh-cw" transform="translate(828 685.27)">
+            <g id="마스크_그룹_53" clip-path="url(#clip-path)">
+                <g id="타원_253" class="cls-4" transform="translate(4 -3)">
+                    <circle cx="23" cy="23" r="23" class="cls-10"/>
+                    <circle cx="23" cy="23" r="22" class="cls-11"/>
+                </g>
+            </g>
+            <g id="마스크_그룹_52" clip-path="url(#clip-path-2)">
+                <g id="타원_255" class="cls-4" transform="translate(4 -3)">
+                    <circle cx="23" cy="23" r="23" class="cls-10"/>
+                    <circle cx="23" cy="23" r="22" class="cls-11"/>
+                </g>
+            </g>
+            <path id="패스_4103" fill="none" stroke="#1d1d1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2px" d="M32.864 6v7.364H25.5" transform="translate(11.136 -6.775)"/>
+        </g>
+        <g id="그룹_3895">
+            <g id="사각형_1902" class="cls-7" transform="translate(864 706.865)">
+                <path d="M2 0h11a2 2 0 0 1 2 2v4H0V2a2 2 0 0 1 2-2z" class="cls-10"/>
+                <rect width="13" height="4" x="1" y="1" class="cls-11" rx="1"/>
+            </g>
+            <g id="타원_251" class="cls-7" transform="translate(867 696.365)">
+                <circle cx="4.5" cy="4.5" r="4.5" class="cls-10"/>
+                <circle cx="4.5" cy="4.5" r="3.5" class="cls-11"/>
+            </g>
+            <g id="그룹_3896" opacity="0.25">
+                <path id="사각형_1903" d="M2 0h11a2 2 0 0 1 2 2v4H0V2a2 2 0 0 1 2-2z" class="cls-9" transform="translate(831 706.865)"/>
+                <circle id="타원_252" cx="4.5" cy="4.5" r="4.5" class="cls-9" transform="translate(834 696.365)"/>
+            </g>
+        </g>
+    </g>
+</svg>

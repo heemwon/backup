@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="19px" viewBox="0 0 18 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ico - pen</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ico---pen" transform="translate(-0.003000, 0.506000)">
+            <rect id="container" fill-opacity="0" fill="#FF0000" fill-rule="nonzero" x="0" y="0" width="18" height="18"></rect>
+            <g id="그룹_3900" transform="translate(3.600000, 0.979068)" stroke="#4B6CEB">
+                <path d="M0.4,11.0209318 L7.8,0.820931786 C8.4,-0.0790682142 9.7,-0.279068214 10.6,0.420931786 C11.5,1.02093179 11.7,2.32093179 11,3.22093179 L3.6,13.4209318 L0,15.0209318 L0.4,11.0209318 Z" id="합치기_57" stroke-width="1.0001"></path>
+                <line x1="6" y1="3.32093179" x2="9.3" y2="5.92093179" id="선_520"></line>
+                <path d="M9.10541192,4.19411524 L9.10541192,4.19411524 L9.10541192,4.19411524 L10.6349223,4.19411524 C11.1872071,4.19411524 11.6349223,4.64183049 11.6349223,5.19411524 L11.6349223,8.19411524 L11.6349223,6.7489334 L11.6349223,6.7489334" id="Rectangle" stroke-linejoin="round" transform="translate(9.634922, 6.194115) rotate(34.000000) translate(-9.634922, -6.194115) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

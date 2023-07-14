@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-3,.cls-6{fill:none}.cls-3{stroke:#fff;stroke-width:1.2px}.cls-5{stroke:none}
+        </style>
+    </defs>
+    <g id="ico_list_han" transform="translate(-1206 -763)">
+        <path id="사각형_1409" fill="none" d="M0 0H24V24H0z" opacity="0.1" transform="translate(1206 763)"/>
+        <path id="빼기_10" fill="#009edd" d="M-7655 3478.951h-14a1 1 0 0 1-1-1v-18a1 1 0 0 1 1-1h11.047l-.048.048 4 4v14.951a1 1 0 0 1-.999 1.001z" transform="translate(8880 -2693.951)"/>
+        <g id="그룹_2804" transform="translate(-215.319 -43.95)">
+            <path id="패스_3621" d="M1433.421 814.077v1.951" class="cls-3" transform="translate(-.102 -1.078)"/>
+            <path id="패스_3622" d="M1427.858 816.631h8" class="cls-3" transform="translate(1.46 -1.681)"/>
+            <g id="타원_232" class="cls-3" transform="translate(1431.319 815.95)">
+                <circle cx="2" cy="2" r="2" class="cls-5"/>
+                <circle cx="2" cy="2" r="1.4" class="cls-6"/>
+            </g>
+            <g id="타원_233" fill="#fff" stroke="#fff" stroke-width="1.5px" transform="translate(1432.819 820.95)">
+                <circle cx=".75" cy=".75" r=".75" class="cls-5"/>
+                <circle cx=".75" cy=".75" class="cls-6"/>
+            </g>
+            <path id="패스_3623" d="M1427.859 828v2.626h8" class="cls-3" transform="translate(1.96 -6.55)"/>
+        </g>
+    </g>
+</svg>

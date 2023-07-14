@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:1.5px}
+        </style>
+    </defs>
+    <g id="ico_mymenu_register1" transform="translate(12.266 10.265)">
+        <path id="Stroke_1" d="M0 12.061V0h25.608v14.987" class="cls-2" transform="translate(5.894 -.265)"/>
+        <path id="Stroke_3" d="M0 .367h6.956" class="cls-2" transform="translate(19.859 4.222)"/>
+        <path id="Stroke_5" d="M0 .367h6.956" class="cls-2" transform="translate(19.859 7.896)"/>
+        <path id="Stroke_9" fill="#fec867" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5px" d="M0 5.179h5.179V0H0z" transform="translate(10.214 3.837)"/>
+        <path id="Stroke_10" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="1.5px" d="M30.927 22.041H0V2h10.724l4 2.939h16.203v17.1z" transform="translate(.734 12.796)"/>
+    </g>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+    <defs>
+        <linearGradient id="linear-gradient" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#f88c63"/>
+            <stop offset="1" stop-color="#ed4223"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-2" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#ffea4d"/>
+            <stop offset="1" stop-color="#ffc16e"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-4" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#71d6cf"/>
+            <stop offset="1" stop-color="#1d8981"/>
+        </linearGradient>
+        <filter id="Stroke_3" width="25.949" height="19.533" x="9.682" y="11.02" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="Stroke_3-2" width="31.845" height="19.533" x="9.683" y="15.613" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur-2" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur-2" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <style>
+            .cls-1{fill:red;opacity:0}.cls-3{fill:url(#linear-gradient-2)}.cls-4{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:1.5px}
+        </style>
+    </defs>
+    <g id="ico_checklist_06_on" transform="translate(7.192 10)">
+        <path id="guide" d="M0 0H56V56H0z" class="cls-1" transform="translate(-7.192 -10)"/>
+        <path id="guide-2" d="M0 0H40V40H0z" class="cls-1" transform="translate(0.808 -2)"/>
+        <g id="Group_21" transform="translate(3.077 -0.386)">
+            <g id="그룹_3650" transform="translate(-8.398 8.208)">
+                <path id="패스_265" fill="url(#linear-gradient)" d="M3082.007 1037.937c.844-.061 6.664 0 6.664 0a7.374 7.374 0 0 0 0-.889c-.053-1.261-.518-4.151-3.333-4.173-3.718-.029-6.396 5.284-3.331 5.062z" transform="translate(-3044.114 -1041.697)"/>
+                <path id="패스_263" d="M309.034 427.247v7s.446 3.062-3.745 3.062h-22.216l-.063-29.64s-.3-6.464 5.284-6.464h24.82s-4.079.335-4.079 6.464z" class="cls-3" transform="translate(-271.82 -410.031)"/>
+                <path id="패스_264" d="M3062.2 1057.75h23.55s-.066.04 0 1.229c.132 2.382.574 5.33 4.309 5.284.713-.009 0 1.487 0 1.487h-24.719s-1.874-.135-3.143-2.868a27.274 27.274 0 0 1 .003-5.132z" class="cls-3" transform="translate(-3055.93 -1037.704)"/>
+                <g filter="url(#Stroke_3)" transform="matrix(1, 0, 0, 1, -1.87, -17.82)">
+                    <path id="Stroke_3-3" d="M0 .477l7.943.034" class="cls-4" transform="translate(18.69 17.29)"/>
+                </g>
+                <g filter="url(#Stroke_3-2)" transform="matrix(1, 0, 0, 1, -1.87, -17.82)">
+                    <path id="Stroke_3-4" d="M0 .477l13.842.034" class="cls-4" transform="translate(18.69 21.89)"/>
+                </g>
+            </g>
+            <g id="그룹_3641" transform="translate(-2.078 19.773)">
+                <path id="패스_3521" fill="url(#linear-gradient-4)" d="M18.458 22.507h.261l8.37 7.169v9.831h-17v-9.831z" transform="translate(11.721 -21.895)"/>
+                <path id="패스_3522" fill="#fff" d="M2.5 0A2.569 2.569 0 0 1 5 2.632V7H0V2.632A2.569 2.569 0 0 1 2.5 0z" transform="translate(27.809 10.612)"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+<svg id="bul_tree_1depth_close" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+    <defs>
+        <style>
+            .cls-3{fill:none;stroke:#4d546c;stroke-width:1.5px}
+        </style>
+    </defs>
+    <g id="패스_4068" data-name="패스 4068" style="fill:#fff">
+        <path d="M16.667 19.5H3.333A2.837 2.837 0 0 1 .5 16.667V3.333A2.837 2.837 0 0 1 3.333.5h13.334A2.837 2.837 0 0 1 19.5 3.333v13.334a2.837 2.837 0 0 1-2.833 2.833z" style="stroke:none"/>
+        <path d="M3.333 1A2.336 2.336 0 0 0 1 3.333v13.334A2.336 2.336 0 0 0 3.333 19h13.334A2.336 2.336 0 0 0 19 16.667V3.333A2.336 2.336 0 0 0 16.667 1H3.333m0-1h13.334A3.333 3.333 0 0 1 20 3.333v13.334A3.333 3.333 0 0 1 16.667 20H3.333A3.333 3.333 0 0 1 0 16.667V3.333A3.333 3.333 0 0 1 3.333 0z" style="fill:#4d546c;stroke:none"/>
+    </g>
+    <g id="btn_more" transform="translate(8 5)">
+        <g id="bul_tree_1depth_close-2" data-name="bul_tree_1depth_close" transform="translate(-5 -2)">
+            <path id="선_80" data-name="선 80" class="cls-3" transform="translate(2 6.758)" d="M10 0H0"/>
+            <path id="선_81" data-name="선 81" class="cls-3" transform="rotate(90 2.44 4.44)" d="M9.758 0H0"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+    <defs>
+        <style>
+            .cls-6{stroke:none}
+        </style>
+    </defs>
+    <g id="ico_mymenu_view1" transform="translate(-47.879 -8.323)">
+        <g id="패스_3512" fill="#fff">
+            <path d="M43.744 56.983H10.843V38.089L27.07 23.777h.446L43.744 38.09v18.894z" class="cls-6" transform="translate(44.787 -3.704)"/>
+            <path fill="#000" d="M27.293 24.58l-15.7 13.848v17.805H42.993V38.428l-15.7-13.848m-.507-1.553H27.8L44.494 37.75v19.983H10.093V37.75l16.694-14.723z" transform="translate(44.787 -3.704)"/>
+        </g>
+        <g id="사각형_1208" fill="#fec867" stroke="#000" stroke-width="1.5px">
+            <path d="M4.877 0a4.877 4.877 0 0 1 4.878 4.877v9.38H0v-9.38A4.877 4.877 0 0 1 4.877 0z" class="cls-6" transform="translate(66.875 39.772)"/>
+            <path fill="none" d="M4.877.75A4.127 4.127 0 0 1 9 4.877v8.3a.335.335 0 0 1-.335.335h-7.58a.335.335 0 0 1-.335-.335v-8.3A4.127 4.127 0 0 1 4.877.75z" transform="translate(66.875 39.772)"/>
+        </g>
+        <path id="Fill_5" fill="#fff" stroke="#000" stroke-width="1.5px" d="M6.78 0A6.779 6.779 0 1 1 0 6.78 6.779 6.779 0 0 1 6.78 0" transform="translate(80.509 21.339)"/>
+        <path id="Stroke_21" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5px" d="M0 0l4.222 4.788" transform="translate(91.978 33.012)"/>
+    </g>
+</svg>

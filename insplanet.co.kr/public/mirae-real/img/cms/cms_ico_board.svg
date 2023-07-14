@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g data-name="ico / board">
+        <path style="opacity:.2;fill:none" d="M0 0h24v24H0z"/>
+        <g data-name="사각형 2024" transform="translate(3 3.75)" style="stroke-width:1.5px;stroke:#1d1d1d;fill:none">
+            <rect width="17" height="13" rx="2" style="stroke:none"/>
+            <rect x=".75" y=".75" width="15.5" height="11.5" rx="1.25" style="fill:none"/>
+        </g>
+        <g data-name="사각형 2025" style="fill:#fff;stroke:#1d1d1d">
+            <path style="stroke:none" d="M0 0h7v1.5H0z" transform="translate(8 9.5)"/>
+            <path style="fill:none" d="M.5.5h6V1h-6z" transform="translate(8 9.5)"/>
+        </g>
+        <g data-name="사각형 2026" style="fill:#fff;stroke:#1d1d1d">
+            <path style="stroke:none" d="M0 0h9v1.5H0z" transform="translate(7 18.75)"/>
+            <path style="fill:none" d="M.5.5h8V1h-8z" transform="translate(7 18.75)"/>
+        </g>
+    </g>
+</svg>

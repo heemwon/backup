@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+    <defs>
+        <style>
+            .cls-3{stroke-width:2px;fill:none;stroke:#c6c6c6;stroke-miterlimit:10}.cls-4{fill:#c6c6c6}.cls-5{fill:#f4c215}.cls-7,.cls-8{stroke:none}.cls-8{fill:#000}
+        </style>
+    </defs>
+    <g id="ico_quickapply_0105o" transform="translate(-1259 -414)">
+        <g id="Group_19" data-name="Group 19" transform="translate(1264.851 415.25)">
+            <path id="패스_4115" data-name="패스 4115" d="M32.012 23.709V.625H-1.476v40.156h22.5" transform="translate(.125 .625)" style="stroke-width:2px;stroke:#1d1d1d;fill:#fff"/>
+            <path id="Stroke_3" data-name="Stroke 3" class="cls-3" d="M0 .5h9.77" transform="translate(7.31 27.757)"/>
+            <path id="Stroke_5" data-name="Stroke 5" class="cls-3" d="M0 .5h9.77" transform="translate(7.31 32.916)"/>
+            <path id="Stroke_7" data-name="Stroke 7" class="cls-4" d="M2.805 0A2.8 2.8 0 1 1 0 2.8 2.8 2.8 0 0 1 2.805 0z" transform="translate(12.325 9.15)"/>
+            <path id="Stroke_9" data-name="Stroke 9" class="cls-4" d="M0 5.789V3.98A3.984 3.984 0 0 1 3.979 0H7.6a3.983 3.983 0 0 1 3.979 3.98v1.809" transform="translate(9.405 16.592)"/>
+        </g>
+        <g id="그룹_4041" data-name="그룹 4041" transform="translate(1264.767 419.635)">
+            <g id="빼기_12" data-name="빼기 12" class="cls-5">
+                <path class="cls-7" d="M8.433 10.657c-.525 0-1.048-.224-1.655-.483-.45-.192-.915-.39-1.407-.514l-.845-.212-.845.212c-.493.123-.958.322-1.408.514-.607.26-1.13.483-1.655.483a1.496 1.496 0 0 1-1.311-.724C-.903 9.588-1 9.148-1 8.546v-4.02A5.531 5.531 0 0 1 4.525-1a5.531 5.531 0 0 1 5.525 5.525v4.021c0 .57-.087.993-.274 1.33a1.495 1.495 0 0 1-1.343.781zM4.526 3.583a.886.886 0 0 0-.885.885V7.15c0 .287.14.557.375.723l.51.361.51-.36a.888.888 0 0 0 .376-.724V4.468a.886.886 0 0 0-.886-.885z" transform="translate(26.352 20)"/>
+                <path class="cls-8" d="M8.433 9.657c.427 0 .617-.342.617-1.11V4.524A4.53 4.53 0 0 0 4.525 0 4.53 4.53 0 0 0 0 4.525v4.021c0 .405.053.69.162.868.099.164.248.243.456.243.32 0 .756-.186 1.262-.402.463-.198.989-.423 1.558-.565a1.89 1.89 0 0 1-.797-1.54V4.468c0-1.04.845-1.885 1.885-1.885s1.886.846 1.886 1.885V7.15c0 .612-.299 1.187-.798 1.54.569.143 1.094.367 1.557.565.505.216.942.402 1.262.402m0 2c-.73 0-1.37-.273-2.048-.563-.414-.177-.842-.36-1.257-.464l-.603-.15-.601.15c-.416.104-.844.287-1.258.464-.679.29-1.319.563-2.048.563-.911 0-1.7-.439-2.166-1.205C-1.856 9.944-2 9.34-2 8.546v-4.02A6.533 6.533 0 0 1 4.525-2a6.533 6.533 0 0 1 6.525 6.525v4.021c0 .747-.127 1.324-.4 1.816a2.502 2.502 0 0 1-2.217 1.295z" transform="translate(26.352 20)"/>
+            </g>
+            <g id="사각형_1368" data-name="사각형 1368" style="stroke:#000;fill:#f4c215;stroke-width:2px">
+                <path class="cls-7" d="M0 0h19v15H0z" transform="translate(21.233 25.365)"/>
+                <path style="fill:none" d="M1 1h17v13H1z" transform="translate(21.233 25.365)"/>
+            </g>
+            <g id="합치기_52" data-name="합치기 52" class="cls-5">
+                <path class="cls-7" d="m1.5 2.03-.166-.06A.501.501 0 0 1 1.5 1a.5.5 0 0 1 .167.97l-.167.06z" transform="translate(29.233 30.365)"/>
+                <path class="cls-8" d="M1.5 6a.5.5 0 0 1-.5-.5V2.914a1.5 1.5 0 1 1 1 0v2.588a.5.5 0 0 1-.5.5z" transform="translate(29.233 30.365)"/>
+            </g>
+        </g>
+    </g>
+</svg>

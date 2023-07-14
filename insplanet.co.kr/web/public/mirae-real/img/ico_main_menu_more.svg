@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+    <defs>
+        <style>
+            .cls-2{fill:#fff;stroke:#1d1d1d;stroke-width:3px}.cls-4{stroke:none}.cls-5{fill:none}
+        </style>
+    </defs>
+    <g id="ico_main_menu_more" transform="translate(-610.5 977)">
+        <g id="사각형_1471" class="cls-2">
+            <path d="M0 0H21V21H0z" class="cls-4" transform="translate(614.5 -973)"/>
+            <path d="M1.5 1.5H19.5V19.5H1.5z" class="cls-5" transform="translate(614.5 -973)"/>
+        </g>
+        <g id="사각형_1474" class="cls-2">
+            <path d="M0 0H21V21H0z" class="cls-4" transform="translate(614.5 -946)"/>
+            <path d="M1.5 1.5H19.5V19.5H1.5z" class="cls-5" transform="translate(614.5 -946)"/>
+        </g>
+        <g id="사각형_1472" class="cls-2">
+            <path d="M0 0H21V21H0z" class="cls-4" transform="translate(641.5 -973)"/>
+            <path d="M1.5 1.5H19.5V19.5H1.5z" class="cls-5" transform="translate(641.5 -973)"/>
+        </g>
+        <g id="사각형_1473" fill="#f4c215" stroke="#1d1d1d" stroke-width="3px">
+            <path d="M0 0H21V21H0z" class="cls-4" transform="translate(641.5 -946)"/>
+            <path d="M1.5 1.5H19.5V19.5H1.5z" class="cls-5" transform="translate(641.5 -946)"/>
+        </g>
+    </g>
+</svg>

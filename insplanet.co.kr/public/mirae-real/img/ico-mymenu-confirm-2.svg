@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .cls-3{stroke:#000;stroke-width:1.5px;stroke-miterlimit:10;fill:none}
+        </style>
+    </defs>
+    <g id="ico_mymenu_confirm2" transform="translate(-1.811 2)">
+        <g id="Group_9" transform="translate(3.092 6.284)">
+            <path id="Stroke_1" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="1.5px" d="M18.828 28.636h-8.261l1.205-1.836 1.487-2.457H0V0h34.364v24.341h-10.79l3.713 4.3z" transform="translate(.716 .716)"/>
+            <path id="Stroke_3" d="M0 .477l34.275.035" class="cls-3" transform="translate(.804 19.056)"/>
+            <path id="Stroke_3-2" d="M0 .477l5.4.035" class="cls-3" transform="translate(15.122 8.556)"/>
+            <path id="Stroke_3-3" d="M0 .477l5.4.035" class="cls-3" transform="translate(15.122 11.419)"/>
+            <g id="사각형_1488" fill="#fff" stroke="#000" stroke-width="1.5px">
+                <path stroke="none" d="M0 0H6V6H0z" transform="translate(5.5 7)"/>
+                <path fill="none" d="M0.75 0.75H5.25V5.25H0.75z" transform="translate(5.5 7)"/>
+            </g>
+        </g>
+        <path id="Stroke_10" fill="#f4c215" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5px" d="M4.831 14.891L0 15.857l.966-4.831L11.593.4a1.366 1.366 0 0 1 1.932 0l1.932 1.931a1.368 1.368 0 0 1 0 1.932z" transform="translate(25.052 -.035)"/>
+    </g>
+</svg>

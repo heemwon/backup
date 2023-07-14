@@ -1,0 +1,269 @@
+@charset "utf-8";
+body.pg-work{
+    overflow: hidden;
+    .sec-1{
+        .inner-sec{
+            .cont-top{
+
+            }
+            .cont-btm{
+
+            }
+        }
+    }
+
+    @include break-point-max(sm){
+        .txt-holder{
+
+        }
+    }
+
+    @include break-point-min(md){
+        .sec-1{
+            .inner-sec{
+                .btn-next{
+                    .icon{
+                        @include vw-converter(width, 32, $psd-pc-width);
+                        @include vw-converter(height, 32, $psd-pc-width);
+                    }
+                }
+
+                .content-top{
+                    background: lightblue;
+                    @include vw-converter(padding, 0 340, $psd-pc-width);
+                    height: cal-vh(660,1080);
+                    padding-top: cal-vh(270,1080);
+                    .txt-holder{
+                        background: pink;
+                        h1{
+                            @include vw-converter(font-size, 56,  $psd-pc-width);
+                            letter-spacing: -0.5px;
+                        }
+
+                        .desc{
+                            @include vw-converter(margin-top, 24, $psd-pc-width);
+                            @include vw-converter(font-size, 18, $psd-pc-width);
+                            line-height: percentage(26/18);
+                        }
+
+                        .btn-next{
+                            @include vw-converter(margin-top, 44, $psd-pc-width);
+                        }
+
+                    }
+                }
+
+                .content-btm{
+                    height: cal-vh(420,1080);
+
+                    .gallery-list-wrap{
+                        height:100%;
+                        .gallery-list{
+                            display: flex;
+                            height: inherit;
+
+                            .list-item{
+                                height: inherit;
+                                width: 33.33%;
+                                .list-link{
+                                    height: inherit;
+                                    figure{
+                                        position: relative;
+                                        height: inherit;
+                                        &:before{
+                                            display: block;
+                                            position: absolute; left:0; top:0; right:0; bottom:0;
+                                            background-color: black;
+                                            opacity: 0.3;
+                                            content:'';
+                                            transition: opacity 0.25s ease-in-out;
+                                        }
+                                        
+                                        figcaption{
+                                            display: flex;
+                                            align-items: center;
+                                            position: absolute; left:0; top:0; right:0; bottom:0;
+                                            @include vw-converter(padding, 0 20 0 56, $psd-pc-width);
+                                            color:#fff;
+                                            .cap{
+                                                display: block;
+                                                @include vw-converter(font-size, 16, $psd-pc-width);
+                                                line-height: 1;
+                                                letter-spacing: -0.57px;
+                                            }
+                                            .title{
+                                                display: inline-block;
+                                                @include vw-converter(margin-top, 16, $psd-pc-width);
+                                                @include vw-converter(font-size, 28, $psd-pc-width);
+                                                line-height: 1;
+                                                letter-spacing: -0.5px;
+
+                                                &:after{
+                                                    display: block;
+                                                    width:0;
+                                                    @include vw-converter(height, 4, $psd-pc-width);
+                                                    background-color: #fff;
+                                                    content:'';
+                                                    transition: width 0.25s ease-in-out;
+                                                }
+                                            }
+
+                                        }
+
+
+                                    }
+
+                                    &:hover{
+                                        figure{
+                                            &:before{
+                                                opacity: 0;
+                                            }
+
+                                            figcaption{
+                                                .title{
+                                                    &:after{
+                                                        width:100%;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &:nth-child(1){
+                                    background: sienna;
+                                }
+                                &:nth-child(2){
+                                    background: sandybrown;
+                                }
+                                &:nth-child(3){
+                                    background:lightsalmon;
+                                }
+                                &:nth-child(4){
+                                    background: sienna;
+                                }
+                                &:nth-child(5){
+                                    background: sandybrown;
+                                }
+                                &:nth-child(6){
+                                    background:lightsalmon;
+                                }
+                                &:nth-child(7){
+                                    background: sienna;
+                                }
+                                &:nth-child(8){
+                                    background: sandybrown;
+                                }
+
+                            }
+                        }
+                    }
+
+                    .pop-gallery-detail{
+                        display: none;
+                        position: fixed;
+                        left:0; top:0; right:0; bottom:0;
+                        background: #fff;
+                        z-index: 90;
+                        .inner-detail{
+                            width:100%;
+                            height:100vh;
+                            overflow:hidden;
+                            overflow-y:auto;
+
+
+
+                            .dtail-sec-kv{
+                                .inner-sec{
+                                    position: relative;
+                                    .img-holder{
+                                        @include vw-converter(height, 958, $psd-pc-width);
+                                        .img{
+                                            background: sandybrown;
+                                        }
+                                    }
+
+                                    .txt-holder{
+                                        background: gray;
+                                        position: absolute; left:0; right:0;
+                                        @include vw-converter(bottom, 140, $psd-pc-width);
+                                        @include vw-converter(padding, 0 340, $psd-pc-width);
+                                        color:#fff;
+                                        line-height: 1;
+
+                                        .cap{
+                                            @include vw-converter(font-size, 26, $psd-pc-width);
+                                            font-weight: $fw-bold;
+                                        }
+
+                                        .title{
+                                            @include vw-converter(margin-top, 34, $psd-pc-width);
+                                            @include vw-converter(font-size, 56, $psd-pc-width);
+                                            font-weight: $fw-black;
+                                        }
+
+                                        .btn-next{
+                                            @include vw-converter(margin-top, 48, $psd-pc-width);
+                                        }
+                                    }
+                                }
+                            }
+
+                            .dtail-sec-1{
+                                .detail-content-wrap{
+                                    display: flex;
+                                    @include vw-converter(padding, 144 340, $psd-pc-width);
+
+                                    .detail-title{
+                                        @include vw-converter(font-size, 26, $psd-pc-width);
+                                        @include vw-converter(width, 210, $psd-pc-width);
+                                    }
+
+                                    .detail-content{
+                                        @include vw-converter(font-size, 18, $psd-pc-width);
+                                        line-height: percentage(30/18);
+                                        color: #666;
+
+                                        .desc-box{
+                                            p{
+                                                &:not(:first-child){
+                                                    @include vw-converter(margin-top, 40, $psd-pc-width);
+                                                }
+                                            }
+
+                                        }
+
+                                        .sub-title{
+                                            display: inline-block;
+                                            @include vw-converter(margin-top, 56, $psd-pc-width);
+                                            @include vw-converter(font-size, 16, $psd-pc-width);
+                                            line-height: percentage(30/16);
+
+                                            &:after{
+                                                display: block;
+                                                @include vw-converter(height, 2, $psd-pc-width);
+                                                background-color: $base-color;
+                                                content:'';
+                                            }
+                                        }
+
+                                        .desc{
+                                            @include vw-converter(margin-top, 16, $psd-pc-width);
+                                        }
+
+                                    }
+                                }
+                            }
+
+                            .btn-area{
+                                @include vw-converter(padding, 120 0, $psd-pc-width);
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

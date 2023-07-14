@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../js/libs/jquery.min.js"></script>
+    <script src="../js/libs/jquery-ui.min.js"></script>
+    <script src="../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../js/sub.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <title>인터넷 등기소</title>
+</head>
+<body>
+    <header class="area-header">
+        <div class="area-inner">
+            <span class="btn-historyback"><button>뒤로</button></span>
+            <h1 class="title">로그인</h1>
+            <span class="btn-navigation"><button>메뉴</button></span>
+        </div>
+    </header>
+    <div class="area-content">
+        <div class="area-inner">
+            <div class="content-wrap">
+                <section class="login-sec">
+                    <!-- 아이디 로그인 -->
+                    <div class="id-wrap">
+                        <div class="title-con">
+                            <p class="title">아이디 로그인</p>
+                            <a href="#none" class="text-btn icon-next">회원가입</a>
+                        </div>
+                        <div class="cont-con">
+                            <ul>
+                                <li>
+                                    <label for="input-id">
+                                        <input type="text" name="" id="input-id">
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="input-pw">
+                                        <input type="password" name="" id="input-pw">
+                                    </label>
+                                </li>
+                                <li class="flex-wrap between">
+                                    <div class="left-con">
+                                        <span class="checkbox-con">
+                                            <input type="checkbox" name="" id="save-id">
+                                            <label for="save-id">아이디 저장</label>
+                                        </span>
+                                    </div>
+                                    <div class="right-con">
+                                        <a href="#none" class="text-btn icon-next">아이디/비밀번호 찾기</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn-solid large">로그인</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 소셜 로그인 -->
+                    <!-- <div class="social-wrap">
+                        <button type="button"><img src="../img/btn_login_sns_na@3x.png" alt="Naver Login"></button>
+                        <button type="button"><img src="../img/btn_login_sns_kt@3x.png" alt="Kakao Talk Login"></button>
+                        <button type="button"><img src="../img/btn_login_sns_fb@3x.png" alt="Facebook Login"></button>
+                        <button type="button"><img src="../img/btn_login_sns_gg@3x.png" alt="Google Login"></button>
+                    </div> -->
+                    <!-- 인증서 로그인 -->
+                    <div class="cert-wrap">
+                        <div class="title-con">
+                            <p class="title">인증서 로그인</p>
+                            <a href="#none" class="text-btn icon-next">인증서 로그인 안내</a>
+                        </div>
+                        <button type="button" class="btn-solid large">공동･금융 인증서</button>
+                        <button type="button" class="btn-solid simple">간편인증</button>
+                    </div>
+                </section>
+
+                <hr class="seperate-line mt60 mb24">
+
+                <!-- 비회원 로그인 -->
+                <section class="login-sec">
+                    <div class="nonmember-wrap">
+                        <div class="title-con">
+                            <p class="title"><a href="#none">비회원 로그인</a></p>
+                            <div class="help-con">
+                                <span class="fs-14 color-86">처음오셨나요</span>
+                                <button type="button" class="tooltip-btn" onclick="popupManager.openPopup('#popup-first')"><img src="../img/m_ico_qmark@3x.png" alt="도움말"></button>
+                            </div>
+                            <div class="popup-wrap" id="popup-first">
+                                <div class="content-wrap">
+                                    <div class="popup-head">
+                                        <div class="popup-title">
+                                            <p class="title">처음오셨나요?</p>
+                                        </div>
+                                        <div class="close-btn">
+                                            <button type="button" onclick="popupManager.closePopup();"><img src="../img/btn_popup_close.svg" alt="close"></button>
+                                        </div>
+                                    </div>
+                                    <div class="popup-body">
+                                        <div class="popup-cont">
+                                            <section class="content-sec">
+                                                <p class="fs-15">
+                                                    열람/발급 서비스는 등록절차 없이 공동･금융 인증서 또는 간편인증을 통해 바로 이용할 수 있습니다.
+                                                    <br><br>
+                                                    단, 전자신청사용자는 회원가입을 하셔야만 로그인 
+                                                    할 수 있습니다.
+                                                </p>
+                                            </section>
+                                        </div>
+                                    </div>
+                                    <div class="popup-foot">
+                                        <section class="button-sec">
+                                            <div class="btn-con">
+                                                <button type="button" class="btn-solid fw-normal icon-join">회원가입</button>
+                                                <button type="button" class="btn-solid fw-normal">로그인 이용안내</button>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                                <div class="dim-wrap"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer class="area-footer">
+        <div class="area-inner">
+            <div class="box-privite">
+                <a href="">이용약관</a>
+                <a href=""><strong>개인정보처리방침</strong></a>
+                <a href="">원격지원</a>
+                
+            </div>
+            <p class="text-copyright">Copyright © Supreme Court of Korea.<br > All right reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

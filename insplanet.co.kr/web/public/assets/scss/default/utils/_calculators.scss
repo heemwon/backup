@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+// 단위 제거 함수
+@function delUnit($value) {
+    @return ($value / ($value * 0 + 1))
+}
+
+// vw Calculator
+@function cal-vw($px, $psd-pixel){
+    $psd-pixel: if(unitless($psd-pixel), $psd-pixel, delUnit($psd-pixel));
+    $vw: null;
+    @if type-of($px) == number {
+        $vw: if(unitless($px), $px, delUnit($px))*100/$psd-pixel*1vw;
+    }
+    @else if type-of($px) == list {
+        $vw: ();
+        @each $value in $px {
+            @if type-of($value) == number {
+                $vw: append($vw, if(unitless($value), $value, delUnit($value))*100/$psd-pixel*1vw);
+            }
+            @else if type-of($value) == string {
+                $vw: append($vw, auto);
+            }
+        }
+    }
+
+    @return $vw;
+}
+
+@function cal-vh($px, $psd-pixel){
+    $psd-pixel: if(unitless($psd-pixel), $psd-pixel, delUnit($psd-pixel));
+    $vh: null;
+    @if type-of($px) == number {
+        $vh: if(unitless($px), $px, delUnit($px))*100/$psd-pixel*1vh;
+    }
+    @else if type-of($px) == list {
+        $vh: ();
+        @each $value in $px {
+            @if type-of($value) == number {
+                $vh: append($vh, if(unitless($value), $value, delUnit($value))*100/$psd-pixel*1vh);
+            }
+            @else if type-of($value) == string {
+                $vh: append($vh, auto);
+            }
+        }
+    }
+
+    @return $vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

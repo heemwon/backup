@@ -1,0 +1,167 @@
+@charset "utf-8";
+@import '_color.scss';
+@import '_mixin.scss';
+
+
+/*-------------------------------------------------------------------
+    @Table
+-------------------------------------------------------------------*/
+/* table layout */
+.table{
+    &-sec {margin-top:30px;}
+    &-head {
+        margin-bottom:8px;
+    }
+    &-body {}
+    &-title {
+        @include fontDefault(16px, bold, $color-1d);
+    }
+}
+/* List */
+table.table-list {
+    width: 100%;
+    border-top: 2px solid $color-1d;
+    th, td {
+        text-align: center;
+        border-left: 1px solid $color-ed;
+        border-bottom: 1px solid $color-ed;
+        &:first-child {
+            border-left: none;
+        }
+        &.left {
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: left;
+        }
+        &.right {
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: right;
+        }
+        &.break {
+            word-break: break-word;
+        }
+        .inline-center {
+            display: inline-block;
+            vertical-align: middle;
+            min-width: 40px;
+            padding-left: 6px;
+            text-align: center;
+        }
+    }
+    thead th {
+        padding: 11px 10px;
+        border-bottom: none;
+        background-color: $color-f7;
+        @include fontStyler(14px, normal, 17px, -0.56px, $color-5a);
+        &.has-element {
+            padding: 9px 10px;
+        }
+        /* sorting */
+        .sorting {
+            display: inline-block;
+            padding-right: 18px;
+            cursor: pointer;
+            &.asc {
+                background: url("../img/icon_read_order_asc.svg") no-repeat right center;
+            }
+            &.desc {
+                background: url("../img/icon_read_order_desc.svg") no-repeat right center;
+            }
+        }
+    }
+    td {
+        padding: 12px 10px;
+        @include fontStyler(15px, normal, 22px, normal, $color-1d);
+        &.has-element, &.has-status-btn {
+            padding: 9px 10px 10px;
+        }
+        &.has-status-btn {
+            font-size: 0;
+            text-align: center;
+            > * {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            > span {
+                @include fontStyler(15px, normal, 30px, normal);
+                &.default {
+                    color: $color-1d;
+                    margin-right: 25px;
+                }
+                &.fin {
+                    color: $color-1d;
+                }
+                &.yet {
+                    color: $color-86;
+                    margin-right: 23px;
+                }
+                &.udt {
+                    color: $color-86;
+                    margin-right: 16px;
+                }
+            }
+        }
+        .long-text {
+            display: block;
+            width: 100%;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            text-align: left;
+        }
+        .icon-btn-con {
+            font-size: 0;
+            > * {
+                margin-left: 10px;
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+        /* 상태 */
+        .status-blue {
+            display: inline-block;
+            min-width: 50px;
+            text-align: center;
+            @include fontDefault(15px, 500, $color-sub1);
+        }
+        .status-grey {
+            display: inline-block;
+            min-width: 50px;
+            text-align: center;
+            @include fontDefault(15px, 500, $color-86);
+        }
+    }
+    tfoot {
+        td {
+            padding: 12px 24px 13px;
+            background-color: #f8faff;
+        }
+    }
+}
+/* Detail */
+table.table-detail {
+    width: 100%;
+    border-top: 2px solid $color-1d;
+    th, td {
+        text-align: left;
+        vertical-align: top;
+        border-bottom: 1px solid $color-ed;
+        word-break: break-all;
+    }
+    th {
+        padding: 16px 15px;
+        background-color: $color-f7;
+        @include fontStyler(14px, normal, 1.57, -0.56px, $color-5a);
+    }
+    td {
+        padding: 15px;
+        @include fontStyler(15px, normal, 1.6, normal);
+    }
+}
+table.has-action {
+    tr:active {
+        background-color: rgba(29, 29, 29, 0.1);
+    }
+}

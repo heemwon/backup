@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .cls-2,.cls-3{fill:#fff;stroke:#000;stroke-width:1.5px;stroke-miterlimit:10}.cls-3{fill:none}
+        </style>
+    </defs>
+    <g id="ico_main_more_view3" transform="translate(.191 2)">
+        <g id="Group_21" transform="translate(-.192 1.209)">
+            <path id="Stroke_7" d="M1 0h25.594v27.856H1z" class="cls-2" transform="translate(5.791 -2.209)"/>
+            <path id="Stroke_7-2" d="M1 32.189V1h26.594v31.189z" class="cls-2" transform="translate(.791 .791)"/>
+            <path id="Stroke_9" d="M0 .4h7" class="cls-3" transform="translate(15.793 9.203)"/>
+            <path id="Stroke_11" d="M0 .4h7" class="cls-3" transform="translate(15.793 13.162)"/>
+            <path id="Stroke_15" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5px" d="M0 5h5V0H0z" transform="translate(6.532 8.789)"/>
+        </g>
+        <path id="Fill_5" fill="#fec867" stroke="#000" stroke-linecap="round" stroke-width="1.5px" d="M6.78 0A6.779 6.779 0 1 1 0 6.78 6.779 6.779 0 0 1 6.78 0" transform="translate(23.513 20.919)"/>
+        <path id="Stroke_21" d="M0 0l4.222 4.788" class="cls-3" transform="translate(34.981 32.592)"/>
+    </g>
+</svg>

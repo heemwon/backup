@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Work List</title>
+	<style>
+		* {margin:0;padding:0;}
+            h1 {padding:15px 20px 15px 20px;font-size:24px;background:#ececec;}
+            .stat {padding:10px 10px;}
+            .stat p {display:inline-block;margin-left:10px;font-size:12px;}
+            h2 {margin:30px 20px 0px 20px;}
+            table {width:calc(100% - 40px);margin:0 20px 50px 20px;border-collapse:collapse;border-top:2px solid #ccc;}
+            th {padding:10px 20px;font-size:12px;border-bottom:1px solid #ccc;background:#ececec;}
+            td {padding:5px 20px;font-size:12px;border-bottom:1px solid #ccc;}
+            td:nth-child(1),
+            td:nth-child(7)  {text-align:center;}
+            .tr{text-align: right;}
+	</style>
+	<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script> -->
+	<script src="../js/libs/jquery.min.js"></script>
+    <script>
+        $(function() {
+            var trNum = $('table tr').length + 1;
+            for(i = 0; i < trNum; i++){
+                $('table tr:nth-child(' + i + ') td:first-child').text(i-1);
+                linktext = $('table tr:nth-child(' + i + ') td:nth-child(6)').text()
+                if($('table tr:nth-child(' + i + ') td:nth-child(7)').text() == '완료'){
+                    $('table tr:nth-child(' + i + ') td:nth-child(6)').html('<a href="./'+ linktext +'" target="_blank">'+ linktext +'</a>')
+                }
+                if($('table tr:nth-child(' + i + ') td:nth-child(7)').text() == '진행중'){
+                    $('table tr:nth-child(' + i + ') td:nth-child(6)').html('<a href="./'+ linktext +'" target="_blank">'+ linktext +'</a>')
+                }
+            }
+            $('.stat .page-total').text(trNum - 2)
+            $('.stat .page-ing').text($('table td:nth-child(7):contains("진행중")').length)
+            $('.stat .page-comp').text($('table td:nth-child(7):contains("완료")').length)
+
+        });
+    </script>
+</head>
+<body>
+	<h1>HTML Worklist</h1>
+
+	<h2>PC Ver</h2>
+	<div class="stat">
+		<p>총 페이지 : <span class="page-total"></span> 페이지</p>
+		<p>진행중 : <span class="page-ing"></span> 페이지</p>
+		<p>완료 : <span class="page-comp"></span> 페이지</p>
+	</div>
+	<table>
+		<colgroup>
+		<col width="80" >
+		<col width="200" >
+		<col width="auto" >
+		<col width="auto" >
+		<col width="auto" >
+		<col width="auto" >
+		<col width="auto" >
+		<col width="auto" >
+		</colgroup>
+		<tr>
+			<th>No.</th>
+			<th>구분</th>
+			<th>DEPTH1</th>
+			<th>DEPTH1</th>
+			<th>DEPTH3</th>
+			<th>파일명</th>
+			<th>작업상황</th>
+			<th>비고</th>
+		</tr>
+		<!-- 
+		<tr>
+			<td></td>
+			<td>Guide</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>guide.html</td>
+			<td>진행중</td>
+			<td>윈도우팝업</td>
+		</tr>
+		-->
+
+		<!-- Sample -->
+		<tr>
+			<td></td>
+			<td>Sample</td>
+			<td>대표이사 주소변경 1set</td>
+			<td></td>
+			<td></td>
+			<td>sample.html</td>
+			<td>완료</td>
+			<td>Sample - 대표이사 주소변경 1set</td>
+		</tr>
+		<!-- // Sample -->
+
+		<!-- 공통 -->
+		<tr>
+			<td></td>
+			<td>공통</td>
+			<td>팝업, 툴팁</td>
+			<td></td>
+			<td></td>
+			<td>popup_tooltip.html</td>
+			<td>완료</td>
+			<td>
+				간편등기 관련 팝업, 툴팁
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>공통</td>
+			<td>인트로 페이지</td>
+			<td></td>
+			<td></td>
+			<td>EST_01_1_01.html</td>
+			<td>완료</td>
+			<td>
+				EST_01_1_01 / COP_01_1_01 간편등기신청_초기화면<br/>
+				EST_01_1_02 / COP_01_1_02 등기원인선택<br/>
+				EST_01_1_03 / COP_01_1_03 등기원인선택 후
+			</td>
+		</tr>
+		<!-- // 공통 -->
+
+		<!-- 부동산 -->
+		<tr>
+			<td></td>
+			<td>부동산</td>
+			<td>신청서 작성</td>
+			<td>주소변경</td>
+			<td></td>
+			<td>EST_02_1_01.html</td>
+			<td>완료</td>
+			<td>
+				EST_02_1_01 / EST_02_1_02 <br/>
+				부동산_신청서작성_주소변경 / 주소검색 UI
+			</td>
+		</tr>
+		<!-- 21.08.17 삭제 -->
+		<!-- 
+		<tr>
+			<td></td>
+			<td>부동산</td>
+			<td>근저당권 말소</td>
+			<td></td>
+			<td></td>
+			<td>DSMP_EST_ADD_003.html</td>
+			<td>완료</td>
+			<td>부동산_근저당권 말소</td>
+		</tr> 
+		-->
+		<!-- // 부동산 -->
+
+		<!-- 법인 -->
+		<tr>
+			<td></td>
+			<td>법인</td>
+			<td>신청서 작성</td>
+			<td>대표이사 주소변경</td>
+			<td></td>
+			<td>COP_02_1_01.html</td>
+			<td>완료</td>
+			<td>신청서작성_대표이사 주소변경</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>법인</td>
+			<td>신청서 작성</td>
+			<td>대표이사 취임(중임)</td>
+			<td></td>
+			<td>COP_02_2_01.html</td>
+			<td>완료</td>
+			<td>신청서작성_대표이사 취임(중임)</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>법인</td>
+			<td>신청서 작성</td>
+			<td>본점소재지변경 (관할 내)</td>
+			<td></td>
+			<td>COP_02_3_01.html</td>
+			<td>완료</td>
+			<td>신청서작성_본점소재지변경 (관할 내)</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>법인</td>
+			<td>신청서 작성</td>
+			<td>목적변경</td>
+			<td></td>
+			<td>COP_02_4_01.html</td>
+			<td>완료</td>
+			<td>신청서작성_목적변경</td>
+		</tr>
+		<!-- // 법인 -->
+
+		<!-- 작성완료 / 결제 -->
+		<tr>
+			<td></td>
+			<td>공통</td>
+			<td>작성내역확인</td>
+			<td></td>
+			<td></td>
+			<td>EST_03_1.html</td>
+			<td>완료</td>
+			<td>작성내역확인</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>공통</td>
+			<td>수수료결제</td>
+			<td></td>
+			<td></td>
+			<td>EST_04_1_01.html</td>
+			<td>완료</td>
+			<td>수수료결제</td>
+		</tr>
+		<!-- // 작성완료 / 결제 -->
+	</table>
+</body>
+</html>

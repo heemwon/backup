@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <g data-name="사각형 1819" style="stroke-width:1.5px;stroke:#1d1d1d;fill:#fff">
+        <path style="stroke:none" d="M0 0h24v32H0z" transform="translate(8 8)"/>
+        <path style="fill:none" d="M.75.75h22.5v30.5H.75z" transform="translate(8 8)"/>
+    </g>
+    <g data-name="사각형 1818" style="stroke-width:1.5px;stroke:#1d1d1d;fill:#fff">
+        <path style="stroke:none" d="M0 0h24v40H0z" transform="translate(2)"/>
+        <path style="fill:none" d="M.75.75h22.5v38.5H.75z" transform="translate(2)"/>
+    </g>
+    <path data-name="Op component 1" transform="translate(7.967 6.47)" style="stroke:#000;stroke-width:1.5px;fill:#fff" d="M0 0h5v5H0z"/>
+    <path data-name="Op component 3" transform="translate(7.967 15.707)" style="stroke:#000;stroke-width:1.5px;fill:#fff" d="M0 0h5v5H0z"/>
+    <g data-name="Group 23">
+        <path data-name="Fill 5" d="M6.78 0A6.779 6.779 0 1 1 0 6.78 6.779 6.779 0 0 1 6.78 0" transform="translate(23.509 5.339)" style="fill:#33386f;stroke:#000;stroke-width:1.5px"/>
+        <path data-name="Stroke 21" d="m0 0 4.222 4.788" transform="translate(34.978 17.012)" style="stroke-miterlimit:10;fill:none;stroke:#000;stroke-width:1.5px"/>
+    </g>
+</svg>

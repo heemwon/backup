@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+    <defs>
+        <style>
+            .cls-3{stroke:#1d1d1d;stroke-width:3px}.cls-3,.cls-7{fill:none}.cls-6{stroke:none}
+        </style>
+    </defs>
+    <g id="ico_main_menu_day" transform="translate(-7.405 -10.304)">
+        <g id="사각형_1464" fill="#fff" stroke="#1d1d1d" stroke-width="3px">
+            <path d="M0 0H54V46H0z" class="cls-6" transform="translate(8.406 16.344)"/>
+            <path d="M1.5 1.5H52.5V44.5H1.5z" class="cls-7" transform="translate(8.406 16.344)"/>
+        </g>
+        <g id="사각형_1475" fill="#f4c215" stroke="#1d1d1d" stroke-width="3px">
+            <path d="M0 0H54V13H0z" class="cls-6" transform="translate(8.406 16.344)"/>
+            <path d="M1.5 1.5H52.5V11.5H1.5z" class="cls-7" transform="translate(8.406 16.344)"/>
+        </g>
+        <path id="선_349" d="M0 0L0 8.824" class="cls-3" transform="translate(21.441 13.304)"/>
+        <path id="선_350" d="M0 0L0 8.824" class="cls-3" transform="translate(49.405 13.304)"/>
+        <text id="_31" fill="#1d1d1d" font-family="NotoSansCJKkr-Black, Noto Sans CJK KR" font-size="18px" font-weight="800" letter-spacing="-0.04em" transform="translate(26.545 51.191)">
+            <tspan x="0" y="0">31</tspan>
+        </text>
+    </g>
+</svg>

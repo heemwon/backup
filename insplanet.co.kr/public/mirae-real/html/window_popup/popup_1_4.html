@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../../js/libs/jquery.min.js"></script>
+    <script src="../../js/libs/jquery-ui.min.js"></script>
+    <script src="../../js/libs/jquery.selectric.js"></script>
+    <script src="../../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../../js/sub.js"></script>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <!-- <link rel="stylesheet" href="../../css/guide.css"> -->
+    <link rel="stylesheet" href="../../css/sub.css">
+    <title>확인서면 작성</title>
+</head>
+
+<body>
+
+        <!-- window popup -->
+        <div class="window-popup-wrap">
+            <div class="content-wrap">
+                <div class="popup-head">
+                    <div class="popup-title">
+                        <h4>확인서면 작성</h4>
+                    </div>
+                </div>
+                <div class="popup-body">
+                    <div class="popup-cont">
+                        <!-- 정보입력 -->
+                        <section class="form-sec">
+                            <div class="sec-body">
+                                <ul class="list-bullet fs-16 color-41">
+                                    <li>
+                                        <div>전자확인서면을 이용할 경우 별도의 첨부서면(신분확인 및 우무인⋅필적기재정보)를 스캔하여 등록해야 합니다.</div>
+                                    </li>
+                                    <li class="important">
+                                        <div>신분확인 및 우무인⋅필적기재정보 안내 : 등기필증 소유자의 신분확인용 문서로 신분증을 복사한 용지에 우무인을 찍고 필적을 기재한 서면 (별도양식 없음)</div>
+                                    </li>
+                                </ul>
+    
+                                <div class="bg-box-wrap no-border mt25">
+                                    <dl class="title-cont-wrap">
+                                        <dt>등기목적</dt>
+                                        <dd>질권설정</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 정보입력 -->
+    
+                        <!-- 아코디언 -->
+                        <section class="form-sec">
+                            <div class="sec-body">
+                                <div class="accordion-wrap">
+                                    <div class="tr mb10">
+                                        <span class="required-info"><span class="star">*</span> 표시 필수입력사항</span>
+                                    </div>
+                                    <ul class="accordion-con" data-accordion="container">
+                                        <li class="active" data-accordion="item">
+                                            <button type="button" class="title-con" data-accordion="trigger">
+                                                <span class="inline-wrap">
+                                                    <span class="title">등기의무자 선택</span>
+                                                    <span class="selected-item-con ml25">
+                                                        <span class="item">김이동</span>
+                                                    </span>
+                                                </span>
+                                            </button>
+                                            <div class="cont-wrap">
+                                                <div class="cont-con">
+                                                    <div class="cont-head mb25">
+                                                        <p class="fs-15 color-5a">- 등록하실 등기의무자를 선택하세요.</p>
+                                                    </div>
+                                                    <div class="cont-body">
+                                                        <table class="table-list-inner">
+                                                            <caption>등기의무자 선택</caption>
+                                                            <colgroup>
+                                                                <col style="width: 60px;">
+                                                                <col style="width: 125px;">
+                                                                <col style="width: 160px;">
+                                                                <col style="width: auto;">
+                                                                <col style="width: 135px;">
+                                                            </colgroup>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col" class="has-element">
+                                                                        <span class="checkbox-con only-box">
+                                                                            <input type="checkbox" name="" id="inner0"><label for="inner0"></label>
+                                                                        </span>
+                                                                    </th>
+                                                                    <th scope="col">성명(명칭)</th>
+                                                                    <th scope="col">(주민)등록번호</th>
+                                                                    <th scope="col">주소</th>
+                                                                    <th scope="col">작성여부</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="has-element">
+                                                                        <span class="checkbox-con only-box">
+                                                                            <input type="checkbox" name="" id="inner2"><label for="inner2"></label>
+                                                                        </span>
+                                                                    </td>
+                                                                    <td>김이동</td>
+                                                                    <td class="ff-roboto">
+                                                                        790101-1234567
+                                                                    </td>
+                                                                    <td class="left">
+                                                                        서울특별시 강남구 역삼동 123
+                                                                    </td>
+                                                                    <td>
+                                                                        <span class="status-grey">미작성</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="has-element">
+                                                                        <span class="checkbox-con only-box">
+                                                                            <input type="checkbox" name="" id="inner3"><label for="inner3"></label>
+                                                                        </span>
+                                                                    </td>
+                                                                    <td>김이동</td>
+                                                                    <td class="ff-roboto">
+                                                                        790101-1234567
+                                                                    </td>
+                                                                    <td class="left">
+                                                                        서울특별시 강남구 역삼동 123
+                                                                    </td>
+                                                                    <td>
+                                                                        <span class="status-blue">작성완료</span>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="cont-foot">
+                                                        <div class="table-util-con">
+                                                            <div class="left-con">
+                                                                <button type="button" class="btn icon-reset">초기화</button>
+                                                            </div>
+                                                            <div class="right-con">
+                                                                <button type="button" class="btn-solid color-4d">선택 완료</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="active" data-accordion="item">
+                                            <button type="button" class="title-con" data-accordion="trigger">
+                                                <span class="inline-wrap">
+                                                    <span class="title">부동산 선택</span>
+                                                    <span class="selected-item-con ml25">
+                                                        <span class="item">전라북소 익산시 어양동 1234423</span>
+                                                        <span class="item">전라북소 익산시 어양동 1234423</span>
+                                                    </span>
+                                                </span>
+                                            </button>
+                                            <div class="cont-wrap">
+                                                <div class="cont-con">
+                                                    <div class="cont-head mb25">
+                                                        <p class="fs-15 color-5a">- 부동산을 선택하세요.</p>
+                                                    </div>
+                                                    <div class="cont-body">
+                                                        <table class="table-list-inner">
+                                                            <caption>부동산 선택</caption>
+                                                            <colgroup>
+                                                                <col style="width: 60px;">
+                                                                <col style="width: auto;">
+                                                            </colgroup>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col" class="has-element">
+                                                                        <span class="checkbox-con only-box">
+                                                                            <input type="checkbox" name="" id="inner4"><label for="inner4"></label>
+                                                                        </span>
+                                                                    </th>
+                                                                    <th scope="col">부동산 표시</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="has-element">
+                                                                        <span class="checkbox-con only-box">
+                                                                            <input type="checkbox" name="" id="inner5"><label for="inner5"></label>
+                                                                        </span>
+                                                                    </td>
+                                                                    <td class="left">
+                                                                        [토지] 전라북소 익산시 어양동 1234423
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="has-element">
+                                                                        <span class="checkbox-con only-box">
+                                                                            <input type="checkbox" name="" id="inner6"><label for="inner6"></label>
+                                                                        </span>
+                                                                    </td>
+                                                                    <td class="left">
+                                                                        김갑동/주말
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="has-element">
+                                                                        <span class="checkbox-con only-box">
+                                                                            <input type="checkbox" name="" id="inner7"><label for="inner7"></label>
+                                                                        </span>
+                                                                    </td>
+                                                                    <td class="left">
+                                                                        김갑동
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="cont-foot">
+                                                        <div class="table-util-con">
+                                                            <div class="left-con">
+                                                                <button type="button" class="btn icon-reset">초기화</button>
+                                                            </div>
+                                                            <div class="right-con">
+                                                                <button type="button" class="btn-solid color-4d">선택 완료</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="active" data-accordion="item">
+                                            <button type="button" class="title-con" data-accordion="trigger">
+                                                <span class="title">본인확인정보</span>
+                                            </button>
+                                            <div class="cont-wrap">
+                                                <div class="cont-con pad-none">
+                                                    <div class="cont-body">
+                                                        <table class="table-detail-inner">
+                                                            <caption>본인확인정보</caption>
+                                                            <colgroup>
+                                                                <col style="width: 162px;">
+                                                                <col style="width: auto;">
+                                                            </colgroup>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="row">
+                                                                        본인확인정보
+                                                                    </th>
+                                                                    <td>
+                                                                        <div class="block-wrap">
+                                                                            <div class="inline-wrap">
+                                                                                <span class="radio-con">
+                                                                                    <input type="radio" name="idencheck" id="innerradio0">
+                                                                                    <label for="innerradio0">주민등록증</label>
+                                                                                </span>
+                                                                                <span class="radio-con ml25">
+                                                                                    <input type="radio" name="idencheck" id="innerradio1">
+                                                                                    <label for="innerradio1">외국인등록증</label>
+                                                                                </span>
+                                                                                <span class="radio-con ml25">
+                                                                                    <input type="radio" name="idencheck" id="innerradio2">
+                                                                                    <label for="innerradio2">국내거소신고증</label>
+                                                                                </span>
+                                                                                <span class="radio-con ml25">
+                                                                                    <input type="radio" name="idencheck" id="innerradio3">
+                                                                                    <label for="innerradio3">여권</label>
+                                                                                </span>
+                                                                                <span class="radio-con ml25">
+                                                                                    <input type="radio" name="idencheck" id="innerradio4">
+                                                                                    <label for="innerradio4">운전면허증</label>
+                                                                                </span>
+                                                                            </div>
+                                                                            <div class="inline-wrap">
+                                                                                <span class="checkbox-con">
+                                                                                    <input type="checkbox" name="type" id="innercheck0">
+                                                                                    <label for="innercheck0">기타</label>
+                                                                                </span>
+                                                                                <span class="ml18">
+                                                                                    <label for="checkinput">
+                                                                                        <input type="text" name="" id="checkinput" class="w712" placeholder="가이드문구 출력">
+                                                                                    </label>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">
+                                                                        <label for="special">
+                                                                            특기사항<span class="required">필수</span>
+                                                                        </label>
+                                                                    </th>
+                                                                    <td>
+                                                                        <textarea name="" id="special" cols="30" rows="10" placeholder="부가정보 입력"></textarea>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 아코디언 -->
+    
+                        <!-- 하단 정보 -->
+                        <section class="form-sec mb0">
+                            <div class="sec-body">
+                                <div class="full-bg-wrap">
+                                    <p class="msg">
+                                        위 본인확인정보에 따라 등기의무자 등 본인임을 확인하고 ⎡부동산등기규칙⎦ 제 111조 제3항의 규정에 따라 이 서면을 작성하였습니다.
+                                    </p>
+                                    <p class="date">2020.12.12</p>
+                                    <p class="name">법무사 이이순</p>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 하단 정보 -->
+                    </div>
+                </div>
+                <div class="popup-foot">
+                    <div class="left-con"></div>
+                    <div class="right-con">
+                        <button type="button" class="btn-solid medium color-4d">작성취소</button>
+                        <button type="button" class="btn-solid medium">작성완료</button>
+                    </div>
+                </div>
+            </div>
+            <div class="dim-wrap"></div>
+        </div>
+
+</body>
+
+</html>

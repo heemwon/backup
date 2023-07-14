@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}.cls-5,.cls-6{stroke:none}.cls-6{fill:#1d1d1d}
+        </style>
+    </defs>
+    <g id="ico_main_menu_process" transform="translate(.841 -.755)">
+        <g id="패스_257" class="cls-1">
+            <path d="M38.32 48.785L-5.787 46.19l-2.62-9.655L.576 17.5h32.478l9.329 19.005-4.062 12.28z" class="cls-5" transform="translate(10.159 -8.436)"/>
+            <path d="M1.527 19l-8.342 17.675 2.193 8.08 41.88 2.465 3.508-10.604L32.12 19H1.527m-1.902-3H33.99L44 36.394 39.384 50.35l-46.336-2.726L-10 36.394-.375 16z" class="cls-6" transform="translate(10.159 -8.436)"/>
+        </g>
+        <g id="패스_3634" fill="#f4c215">
+            <path d="M33.905 12.038H-2.094c-.278-2.33-.845-7.162-1.07-9.635-.032-.343-.056-.633-.075-.878h38.29c-.02.245-.043.534-.074.875-.226 2.474-.794 7.307-1.072 9.638z" class="cls-5" transform="translate(11.253 6.83)"/>
+            <path d="M-1.599 3.025c.21 2.12.575 5.282.838 7.513h33.334c.263-2.23.627-5.393.837-7.513H-1.599m38.14-3.1c.068 0 .133.379-.07 2.612-.31 3.378-1.235 11.001-1.235 11.001h-38.66S-4.35 5.918-4.66 2.54c-.204-2.235-.138-2.613-.07-2.613.035 0 .07.099.07.099h41.13s.035-.1.07-.1z" class="cls-6" transform="translate(11.253 6.83)"/>
+        </g>
+        <g id="패스_260" class="cls-1">
+            <path d="M38.248 21.339H-5.15L-6.337 2.547V1.5h45.799v.638l-1.214 19.2z" class="cls-5" transform="translate(10.967 17.071)"/>
+            <path d="M-4.805 3l1.065 16.839h40.58L37.904 3h-42.71m-3.03-3h48.798v2.186l-1.306 20.653H-6.557l-1.28-20.245V0z" class="cls-6" transform="translate(10.967 17.071)"/>
+        </g>
+        <g id="빼기_6" class="cls-1">
+            <path d="M52.5 21.996h-51V1.501h16v5.35h19V1.502l16-.001v20.495z" class="cls-5" transform="translate(.159 28.135)"/>
+            <path d="M51 20.496V3.001H38v5.35H16V3H3v17.496h48m3 3H0V.001h18.999v5.35H35V.002l19-.001v23.495z" class="cls-6" transform="translate(.159 28.135)"/>
+        </g>
+        <g id="사각형_133" fill="#fff" stroke="#1d1d1d" stroke-width="3px" transform="translate(22.159 40.91)">
+            <path d="M0 0H10V3H0z" class="cls-5"/>
+            <rect width="7" x="1.5" y="1.5" fill="none"/>
+        </g>
+    </g>
+</svg>

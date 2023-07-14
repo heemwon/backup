@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../../js/libs/jquery.min.js"></script>
+    <script src="../../js/libs/jquery-ui.min.js"></script>
+    <script src="../../js/libs/jquery.selectric.js"></script>
+    <script src="../../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../../js/sub.js"></script>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/guide.css">
+    <link rel="stylesheet" href="../../css/sub.css">
+    <title>Table Style Guide</title>
+</head>
+
+<body>
+    <main>
+        <!-- Table -->
+        <h1>Table Style Guide</h1>
+        <hr />
+        <h2 class="mb20">입출력 테이블</h2>
+        <section class="content-sec">
+            <div class="sec-head">
+                <h4>1단 테이블</h4>
+            </div>
+            <div class="sec-body">
+                <div class="table-body">
+                    <table class="table-detail">
+                        <caption>등록정보입력</caption>
+                        <colgroup>
+                            <col style="width: 25%;">
+                            <col style="width: auto;">
+                        </colgroup>
+                        <tbody>
+                            <tr class="element-row">
+                                <th scope="row">
+                                    항목명<span class="required">필수</span>
+                                </th>
+                                <td>
+                                    <span class="radio-con">
+                                        <input type="radio" name="type" id="rop0">
+                                        <label for="rop0">옵션명</label>
+                                    </span>
+                                    <span class="radio-con ml40">
+                                        <input type="radio" name="type" id="rop1">
+                                        <label for="rop1">옵션명</label>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="element-row">
+                                <th scope="row">
+                                    <label for="input">
+                                        항목명<span class="required">필수</span>
+                                    </label>
+                                </th>
+                                <td>
+                                    <input type="text" name="" id="input">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <section class="content-sec">
+            <div class="sec-body">
+                <div class="table-head">
+                    <div class="left-con">
+                        <h4>2단 테이블</h4>
+                    </div>
+                    <div class="right-con">
+                        <span class="required-info"><span class="star">*</span> 표시 필수입력사항</span>
+                    </div>
+                </div>
+                <div class="table-body">
+                    <table class="table-detail">
+                        <caption>등록정보입력</caption>
+                        <colgroup>
+                            <col style="width: 16.7%;">
+                            <col style="width: 33.3%;">
+                            <col style="width: 16.7%;">
+                            <col style="width: 33.3%;">
+                        </colgroup>
+                        <tbody>
+                            <tr class="element-row">
+                                <th scope="row">
+                                    <label for="sel">
+                                        항목명<span class="required">필수</span>
+                                    </label>
+                                </th>
+                                <td>
+                                    <span class="select-con w130">
+                                        <select name="" id="sel" class="">
+                                            <option value="">직접입력</option>
+                                            <option value="">option1</option>
+                                            <option value="">option2</option>
+                                        </select>
+                                    </span>
+                                </td>
+                                <th scope="row">
+                                    <label for="period0">
+                                        항목명<span class="required">필수</span>
+                                    </label>
+                                </th>
+                                <td>
+                                    <span class="datepicker-con">
+                                        <input type="text" name="" id="period0" class="datepicker w136">
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="element-row">
+                                <th scope="row">
+                                    <label for="unit2">
+                                        항목명<span class="required">필수</span>
+                                    </label>
+                                </th>
+                                <td>
+                                    <span class="input-unit-wrap">
+                                        <span class="unit-left">금</span>
+                                        <input type="text" name="" id="unit2" class="w280" placeholder="">
+                                        <span class="unit-right">원</span>
+                                    </span>
+                                </td>
+                                <th scope="row">
+                                    <label for="input1">
+                                        항목명<span class="required">필수</span>
+                                    </label>
+                                </th>
+                                <td>
+                                    <input type="text" name="" id="input1">
+                                </td>
+                            </tr>
+                            <tr class="element-row">
+                                <th scope="row">
+                                    항목명<span class="required">필수</span>
+                                </th>
+                                <td colspan="3">
+                                    <div class="address-wrap">
+                                        <div class="address-con">
+                                            <label for="">
+                                                <input type="text" name="" id="addr" class="" placeholder="" readonly value="(04182) 서울특별시 동작구 신대방 1동 72-2">
+                                            </label>
+                                            <button type="button" class="btn-solid color-4d">주소검색</button>
+                                        </div>
+                                        <div class="detail-con">
+                                            <label for="">
+                                                <input type="text" name="" id="addr-detail" class="" placeholder="상세주소를 입력해주세요.">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <section class="content-sec">
+            <!-- <div class="sec-head">
+                <h4>3단 테이블</h4>
+            </div> -->
+            <div class="sec-body">
+                <div class="table-head">
+                    <div class="left-con">
+                        <h4>3단 테이블</h4>
+                    </div>
+                    <div class="right-con">
+                        <span class="required-info"><span class="star">*</span> 표시 필수입력사항</span>
+                    </div>
+                </div>
+                <div class="table-body">
+                    <table class="table-detail">
+                        <caption>등록정보입력</caption>
+                        <colgroup>
+                            <col style="width: 13.33%;">
+                            <col style="width: 20%;">
+                            <col style="width: 13.33%;">
+                            <col style="width: 20%;">
+                            <col style="width: 13.33%;">
+                            <col style="width: 20%;">
+                        </colgroup>
+                        <tbody>
+                            <tr class="element-row">
+                                <th scope="row">
+                                    <label for="input2">
+                                        항목명<span class="required">필수</span>
+                                    </label>
+                                </th>
+                                <td colspan="5">
+                                    <input type="text" name="" id="input2">
+                                </td>
+                            </tr>
+                            <tr class="element-row">
+                                <th scope="row">
+                                    <label for="period1">
+                                        항목명<span class="required">필수</span>
+                                    </label>
+                                </th>
+                                <td>
+                                    <span class="datepicker-con">
+                                        <input type="text" name="" id="period1" class="datepicker w136">
+                                    </span>
+                                </td>
+                                <th scope="row">
+                                    <label for="input3">
+                                        항목명<span class="required">필수</span>
+                                    </label>
+                                </th>
+                                <td colspan="3">
+                                    <input type="text" name="" id="input3">
+                                </td>
+                            </tr>
+                            <tr class="element-row">
+                                <th scope="row">
+                                    항목명<span class="required">필수</span>
+                                </th>
+                                <td>
+                                    
+                                </td>
+                                <th scope="row">
+                                    <label for="unit4">
+                                        항목명<span class="required">필수</span>
+                                    </label>
+                                </th>
+                                <td>
+                                    <span class="input-unit-wrap">
+                                        <input type="text" name="" id="unit4" class="w47 disable-clear-btn" placeholder="">
+                                        <span class="unit-right">동</span>
+                                        <label for="">
+                                            <input type="text" name="" id="unit5" class="w47 disable-clear-btn ml15" placeholder="">
+                                        </label>
+                                        <span class="unit-right">층</span>
+                                        <label for="">
+                                            <input type="text" name="" id="unit6" class="w47 disable-clear-btn ml15" placeholder="">
+                                        </label>
+                                        <span class="unit-right">호</span>
+                                    </span>
+                                </td>
+                                <th scope="row">
+                                    항목명<span class="required">필수</span>
+                                </th>
+                                <td>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <section class="content-sec">
+            <div class="sec-head">
+                <h4>테이블 타이틀(단일화면 업무처리)</h4>
+            </div>
+            <div class="sec-body">
+                <div class="table-head">
+                    <div class="left-con">
+                        <span class="fs-14 color-86">전체 3건</span>
+                    </div>
+                    <div class="right-con">
+                        <div class="dropdown-wrap">
+                            <button type="button" class="current-item">데이터 정렬옵션값</button>
+                            <ul class="dropdown-con">
+                                <li class="dropdown-item">
+                                    <button type="button">30개 보기</button>
+                                </li>
+                                <li class="dropdown-item">
+                                    <button type="button">50개 보기</button>
+                                </li>
+                                <li class="dropdown-item">
+                                    <button type="button">100개 보기</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn">모듈버튼/부가 단위처리</button>
+                        <button type="button" class="btn color-main">주요 단위처리</button>
+                        <button type="button" class="btn-solid">선택처리</button>
+                    </div>
+                </div>
+                <div class="table-body">
+                    <table class="table-list" summary="테이블 설명">
+                        <caption>테이블 타이틀</caption>
+                        <colgroup>
+                            <col style="width: 60px;">
+                            <col style="width: 80px;">
+                            <col style="width: 220px;">
+                            <col style="width: auto;">
+                            <col style="width: 140px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col" class="has-element">
+                                    <span class="checkbox-con only-box">
+                                        <input type="checkbox" name="" id="cbox0"><label for="cbox0"></label>
+                                    </span>
+                                </th>
+                                <th scope="col" class="ff-roboto">NO</th>
+                                <th scope="col">성명 (등록번호)</th>
+                                <th scope="col">주소</th>
+                                <th scope="col">등기필 정보</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="has-element">
+                                    <span class="checkbox-con only-box">
+                                        <input type="checkbox" name="" id="cbox1"><label for="cbox1"></label>
+                                    </span>
+                                </td>
+                                <td class="ff-roboto">1</td>
+                                <td>김등기 (719191-1234567)</td>
+                                <td class="left">서울특별시 영등포구 여의나루로 57</td>
+                                <td>
+                                    <span class="status-blue">검증완료</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="has-element">
+                                    <span class="checkbox-con only-box">
+                                        <input type="checkbox" name="" id="cbox2"><label for="cbox2"></label>
+                                    </span>
+                                </td>
+                                <td class="ff-roboto">2</td>
+                                <td>김등기 (719191-1234567)</td>
+                                <td class="left">서울특별시 영등포구 여의나루로 57</td>
+                                <td class="has-element">
+                                    <button type="button" class="btn">단일처리버튼</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="paging-wrap">
+                    <ul class="paging-con">
+                        <li class="paging-item first"><a href="#none"><img src="../../img/btn_paging_prev_2.svg" alt="go first"></a></li>
+                        <li class="paging-item prev"><a href="#none"><img src="../../img/btn_paging_prev.svg" alt="go prev"></a></li>
+                        <li class="paging-item num"><a href="#none">1</a></li>
+                        <li class="paging-item num active"><a href="#none">2</a></li>
+                        <li class="paging-item num"><a href="#none">3</a></li>
+                        <li class="paging-item num"><a href="#none">4</a></li>
+                        <li class="paging-item num"><a href="#none">5</a></li>
+                        <li class="paging-item num"><a href="#none">6</a></li>
+                        <li class="paging-item num"><a href="#none">7</a></li>
+                        <li class="paging-item num"><a href="#none">8</a></li>
+                        <li class="paging-item num"><a href="#none">9</a></li>
+                        <li class="paging-item num"><a href="#none">10</a></li>
+                        <li class="paging-item next"><a href="#none"><img src="../../img/btn_paging_next.svg" alt="go next"></a></li>
+                        <li class="paging-item last"><a href="#none"><img src="../../img/btn_paging_next_2.svg" alt="go last"></a></li>
+                    </ul>
+                </div>
+                <div class="flex-wrap mt40">
+                    <div class="left-con">
+                        <button type="button" class="btn medium">보조버튼 1</button>
+                        <button type="button" class="btn medium">보조버튼 2</button>
+                    </div>
+                    <div class="right-con">
+                        <button type="button" class="btn-solid medium color-4b">업무버튼 1</button>
+                        <button type="button" class="btn-solid medium color-c3" disabled>업무버튼 2</button>
+                        <button type="button" class="btn-solid medium color-4b">업무버튼 3</button>
+                        <button type="button" class="btn-solid medium color-4b">업무버튼 4</button>
+                        <button type="button" class="btn-solid medium crud">CRUD버튼</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <section class="content-sec">
+            <div class="sec-head">
+                <h4>테이블 타이틀 (다 건의 영역 존재 시 - 신청서작성/화면처리버튼 FAB로 적용)</h4>
+                <div class="bg-box-wrap mt10 mb25">
+                    <ul class="list-bullet fs-15">
+                        <li>
+                            <div>주민등록사항정보(주민등록표등⋅초본)가 필요한 등기유형일 경우에는 반드시 아래 행정정보 공동이용사전동의서를 작성해 주시기 바랍니다.</div>
+                        </li>
+                        <li class="color-error">
+                            <div>사전동의서 미작성시 보정처리 될 수 있으므로 유의하시기 바랍니다.</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sec-body">
+                <div class="table-head">
+                    <div class="left-con">
+                        <span class="fs-14 color-86">전체 3건</span>
+                    </div>
+                    <div class="right-con">
+                        <div class="dropdown-wrap">
+                            <button type="button" class="current-item">데이터 정렬옵션값</button>
+                            <ul class="dropdown-con">
+                                <li class="dropdown-item">
+                                    <button type="button">30개 보기</button>
+                                </li>
+                                <li class="dropdown-item">
+                                    <button type="button">50개 보기</button>
+                                </li>
+                                <li class="dropdown-item">
+                                    <button type="button">100개 보기</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn">모듈버튼/부가 단위처리</button>
+                        <button type="button" class="btn color-main">주요 단위처리</button>
+                        <button type="button" class="btn-solid">선택처리</button>
+                    </div>
+                </div>
+                <div class="table-body">
+                    <table class="table-list" summary="테이블 설명">
+                        <caption>테이블 타이틀</caption>
+                        <colgroup>
+                            <col style="width: 60px;">
+                            <col style="width: 80px;">
+                            <col style="width: 220px;">
+                            <col style="width: auto;">
+                            <col style="width: 140px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col" class="has-element">
+                                    <span class="checkbox-con only-box">
+                                        <input type="checkbox" name="" id="cbox0"><label for="cbox0"></label>
+                                    </span>
+                                </th>
+                                <th scope="col" class="ff-roboto">NO</th>
+                                <th scope="col">성명 (등록번호)</th>
+                                <th scope="col">주소</th>
+                                <th scope="col">등기필 정보</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="has-element">
+                                    <span class="checkbox-con only-box">
+                                        <input type="checkbox" name="" id="cbox1"><label for="cbox1"></label>
+                                    </span>
+                                </td>
+                                <td class="ff-roboto">1</td>
+                                <td>김등기 (719191-1234567)</td>
+                                <td class="left">서울특별시 영등포구 여의나루로 57</td>
+                                <td>
+                                    <span class="status-blue">검증완료</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="has-element">
+                                    <span class="checkbox-con only-box">
+                                        <input type="checkbox" name="" id="cbox2"><label for="cbox2"></label>
+                                    </span>
+                                </td>
+                                <td class="ff-roboto">2</td>
+                                <td>김등기 (719191-1234567)</td>
+                                <td class="left">서울특별시 영등포구 여의나루로 57</td>
+                                <td class="has-element">
+                                    <button type="button" class="btn">단일처리버튼</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row-btn-wrap">
+                    <div class="inline-wrap">
+                        <span class="select-con w62">
+                            <label for="smallsel0">
+                                <select name="" id="smallsel0" class="">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </label>
+                        </span>
+                        <span class="slash">
+                            <img src="../../img/ico_read_perline.svg" alt="/">
+                        </span>
+                        <span class="fs-15">5</span>
+                    </div>
+                    <button type="button" class="btn-row">
+                        <span>'테이블타이틀' 추가</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <section class="content-sec">
+            <div class="sec-head">
+                <h4>List</h4>
+            </div>
+            <div class="sec-body">
+                <div class="table-head">
+                    <div class="left-con">
+                        <span class="fs-14 color-86">전체 1,300건</span>
+                    </div>
+                    <div class="right-con" id="go-table-btn0">
+                        <div class="dropdown-wrap">
+                            <button type="button" class="current-item">최신 순</button>
+                            <ul class="dropdown-con">
+                                <li class="dropdown-item">
+                                    <button type="button">최신 순</button>
+                                </li>
+                                <li class="dropdown-item">
+                                    <button type="button">제목 순</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn">관련기능수행</button>
+                        <button type="button" class="btn">관련기능수행</button>
+                    </div>
+                </div>
+                <div class="table-body">
+                    <table class="table-list">
+                        <caption>게시물 리스트</caption>
+                        <colgroup>
+                            <col style="width: 120px;">
+                            <col style="width: auto;">
+                            <col style="width: 120px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">번호</th>
+                                <th scope="col">제목</th>
+                                <th scope="col">날짜</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="ff-roboto">15</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">DB금융투자 결재서비스 일시 중단 안내DB금융투자 결재서비스 일시 중단 안내DB금융투자 결재서비스 일시 중단 안내DB금융투자 결재서비스 일시 중단 안내DB금융투자 결재서비스 일시 중단 안내</a>
+                                </td>
+                                <td class="ff-roboto">2021-05-06</td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">14</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">DB금융투자 결재서비스 일시 중단 안내</a>
+                                </td>
+                                <td class="ff-roboto">2021-05-06</td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">13</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">DB금융투자 결재서비스 일시 중단 안내</a>
+                                </td>
+                                <td class="ff-roboto">2021-05-06</td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">12</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">DB금융투자 결재서비스 일시 중단 안내</a>
+                                </td>
+                                <td class="ff-roboto">2021-05-06</td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">11</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">DB금융투자 결재서비스 일시 중단 안내</a>
+                                </td>
+                                <td class="ff-roboto">2021-05-06</td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">10</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">DB금융투자 결재서비스 일시 중단 안내</a>
+                                </td>
+                                <td class="ff-roboto">2021-05-06</td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">9</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">DB금융투자 결재서비스 일시 중단 안내</a>
+                                </td>
+                                <td class="ff-roboto">2021-05-06</td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">8</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">DB금융투자 결재서비스 일시 중단 안내</a>
+                                </td>
+                                <td class="ff-roboto">2021-05-06</td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">7</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">DB금융투자 결재서비스 일시 중단 안내</a>
+                                </td>
+                                <td class="ff-roboto">2021-05-06</td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">6</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">DB금융투자 결재서비스 일시 중단 안내</a>
+                                </td>
+                                <td class="ff-roboto">2021-05-06</td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">5</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">DB금융투자 결재서비스 일시 중단 안내</a>
+                                </td>
+                                <td class="ff-roboto">2021-05-06</td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">4</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">DB금융투자 결재서비스 일시 중단 안내</a>
+                                </td>
+                                <td class="ff-roboto">2021-05-06</td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">3</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">DB금융투자 결재서비스 일시 중단 안내</a>
+                                </td>
+                                <td class="ff-roboto">2021-05-06</td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">2</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">DB금융투자 결재서비스 일시 중단 안내</a>
+                                </td>
+                                <td class="ff-roboto">2021-05-06</td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">1</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">DB금융투자 결재서비스 일시 중단 안내</a>
+                                </td>
+                                <td class="ff-roboto">2021-05-06</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="table-btn-focus">
+                        <a href="#go-table-btn0">테이블 기능 버튼으로 이동</a>
+                    </div>
+                </div>
+                
+                <div class="paging-wrap">
+                    <ul class="paging-con">
+                        <li class="paging-item first"><a href="#none"><img src="../../img/btn_paging_prev_2.svg" alt="go first"></a></li>
+                        <li class="paging-item prev"><a href="#none"><img src="../../img/btn_paging_prev.svg" alt="go prev"></a></li>
+                        <li class="paging-item num"><a href="#none">1</a></li>
+                        <li class="paging-item num active"><a href="#none">2</a></li>
+                        <li class="paging-item num"><a href="#none">3</a></li>
+                        <li class="paging-item num"><a href="#none">4</a></li>
+                        <li class="paging-item num"><a href="#none">5</a></li>
+                        <li class="paging-item num"><a href="#none">6</a></li>
+                        <li class="paging-item num"><a href="#none">7</a></li>
+                        <li class="paging-item num"><a href="#none">8</a></li>
+                        <li class="paging-item num"><a href="#none">9</a></li>
+                        <li class="paging-item num"><a href="#none">10</a></li>
+                        <li class="paging-item next"><a href="#none"><img src="../../img/btn_paging_next.svg" alt="go next"></a></li>
+                        <li class="paging-item last"><a href="#none"><img src="../../img/btn_paging_next_2.svg" alt="go last"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <section class="content-sec">
+            <div class="sec-head">
+                <h4>View</h4>
+            </div>
+            <div class="sec-body">
+                <div class="board-detail-wrap">
+                    <div class="title-con">
+                        <p class="title">
+                            DB금융투자 결제 서비스 일시 중단 안내DB금융투자 결제 서비스 일시 중단 안내DB금융투자 결제 서비스 일시 중단 안내DB금융투자 결제 서비스 일시 중단 안내
+                        </p>
+                        <span class="reg-date">2021-12-31</span>
+                    </div>
+                    <div class="cont-con">
+                        <!-- pre태그는 내려쓰기와 공백을 있는 그대로 표현합니다. -->
+                        <!-- DB에서 값을 가져오는 형태에 따라 pre, p 태그 중 선택해서 사용하시면 됩니다. -->
+                        <pre>대한민국 법원 인터넷등기소를 이용해 주셔서 감사합니다.
+
+DB금융투자 시스템 작업으로 인하여 해당 금융기관의 계좌이체 및 체크카드 결제 서비스가 아래와 같이 중단될 예정입니다.
+해당 기간에는 다른 결제 수단을 이용해 주시기 바랍니다.
+
+                                 - 아     래 -
+○ 중단 대상
+  - DB금융투자의 계좌이체 및 체크카드 결제 서비스
+
+○ 중단 일시
+  - 2021. 3. 20.(토) 08:00 ~ 19:30 (약 12시간)
+  - 2021. 3. 27.(토) 08:00 ~ 19:30 (약 12시간)
+  ※ 해당 금융기관의 계좌이체 및 체크카드 결제를 제외한 다른 금융기관의 계좌이체 및 체크카드 또는 신용카드, 휴대폰, 선불지급수단 결제 서비스는 이용 가능합니다.
+
+감사합니다.</pre>
+                    </div>
+                    <div class="file-con">
+                        <a href="#none" class="text-btn fw-bold color-1d icon-down-pdf">
+                            첨부파일abcdefg.pdf
+                        </a>
+                    </div>
+                </div>
+                <div class="board-btn-con">
+                    <button type="button" class="btn medium">목록으로</button>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <section class="content-sec">
+            <div class="sec-head">
+                <div class="flex-wrap">
+                    <div class="left-con">
+                        <h4>Table List</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="sec-body">
+                <div class="table-head">
+                    <div class="left-con">
+                        <span class="fs-14 color-86">전체 1,300건</span>
+                    </div>
+                    <div class="right-con">
+                        <div class="dropdown-wrap right">
+                            <button type="button" class="current-item">최신 순</button>
+                            <ul class="dropdown-con">
+                                <li class="dropdown-item">
+                                    <button type="button">최신 순</button>
+                                </li>
+                                <li class="dropdown-item">
+                                    <button type="button">제목 순</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-body">
+                    <table class="table-list">
+                        <caption>등기 신청양식 첨부파일 다운로드</caption>
+                        <colgroup>
+                            <col style="width: 200px;">
+                            <col style="width: 120px;">
+                            <col style="width: auto;">
+                            <col style="width: 180px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">구분</th>
+                                <th scope="col">서식</th>
+                                <th scope="col">제목</th>
+                                <th scope="col">다운로드</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="ff-roboto">부동산등기</td>
+                                <td>등기신청</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">
+                                        해지 증서해지
+                                    </a>
+                                </td>
+                                <td class="has-element">
+                                    <div class="icon-btn-con">
+                                        <button><img src="../../img/ico_list_han.svg" alt="한글파일다운로드"></button>
+                                        <button><img src="../../img/ico_list_exel.svg" alt="워드파일다운로드"></button>
+                                        <button><img src="../../img/ico_list_pdf.svg" alt="PDF파일다운로드"></button>
+                                        <button><img src="../../img/ico_list_office.svg" alt="Office파일다운로드"></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">동산 &#183; 채권담보등기</td>
+                                <td>등기신청</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">
+                                        01. 동산근담보권설정등기신청
+                                    </a>
+                                </td>
+                                <td class="has-element">
+                                    <div class="icon-btn-con">
+                                        <button><img src="../../img/ico_list_han.svg" alt="한글파일다운로드"></button>
+                                        <button><img src="../../img/ico_list_exel.svg" alt="워드파일다운로드"></button>
+                                        <button><img src="../../img/ico_list_pdf.svg" alt="PDF파일다운로드"></button>
+                                        <button><img src="../../img/ico_list_office.svg" alt="Office파일다운로드"></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">법인등기</td>
+                                <td>첨부서면</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">
+                                        취임 승낙서
+                                    </a>
+                                </td>
+                                <td class="has-element">
+                                    <div class="icon-btn-con">
+                                        <button><img src="../../img/ico_list_han.svg" alt="한글파일다운로드"></button>
+                                        <button><img src="../../img/ico_list_exel.svg" alt="워드파일다운로드"></button>
+                                        <button><img src="../../img/ico_list_pdf.svg" alt="PDF파일다운로드"></button>
+                                        <button><img src="../../img/ico_list_office.svg" alt="Office파일다운로드"></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">부동산등기</td>
+                                <td>등기신청</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">
+                                        저당권 설정 계약서
+                                    </a>
+                                </td>
+                                <td class="has-element">
+                                    <div class="icon-btn-con">
+                                        <button><img src="../../img/ico_list_han.svg" alt="한글파일다운로드"></button>
+                                        <button><img src="../../img/ico_list_exel.svg" alt="워드파일다운로드"></button>
+                                        <button><img src="../../img/ico_list_pdf.svg" alt="PDF파일다운로드"></button>
+                                        <button><img src="../../img/ico_list_office.svg" alt="Office파일다운로드"></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">법인등기</td>
+                                <td>첨부서면</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">
+                                        이사회의사록
+                                    </a>
+                                </td>
+                                <td class="has-element">
+                                    <div class="icon-btn-con">
+                                        <button><img src="../../img/ico_list_han.svg" alt="한글파일다운로드"></button>
+                                        <button><img src="../../img/ico_list_exel.svg" alt="워드파일다운로드"></button>
+                                        <button><img src="../../img/ico_list_pdf.svg" alt="PDF파일다운로드"></button>
+                                        <button><img src="../../img/ico_list_office.svg" alt="Office파일다운로드"></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">부동산등기</td>
+                                <td>등기신청</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">
+                                        해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서
+                                        해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서
+                                        해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서해지 증서
+                                    </a>
+                                </td>
+                                <td class="has-element">
+                                    <div class="icon-btn-con">
+                                        <button><img src="../../img/ico_list_han.svg" alt="한글파일다운로드"></button>
+                                        <button><img src="../../img/ico_list_exel.svg" alt="워드파일다운로드"></button>
+                                        <button><img src="../../img/ico_list_pdf.svg" alt="PDF파일다운로드"></button>
+                                        <button><img src="../../img/ico_list_office.svg" alt="Office파일다운로드"></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">동산 &#183; 채권담보등기</td>
+                                <td>등기신청</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">
+                                        01. 동산근담보권설정등기신청
+                                    </a>
+                                </td>
+                                <td class="has-element">
+                                    <div class="icon-btn-con">
+                                        <button><img src="../../img/ico_list_han.svg" alt="한글파일다운로드"></button>
+                                        <button><img src="../../img/ico_list_exel.svg" alt="워드파일다운로드"></button>
+                                        <button><img src="../../img/ico_list_pdf.svg" alt="PDF파일다운로드"></button>
+                                        <button><img src="../../img/ico_list_office.svg" alt="Office파일다운로드"></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">법인등기</td>
+                                <td>첨부서면</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">
+                                        취임 승낙서
+                                    </a>
+                                </td>
+                                <td class="has-element">
+                                    <div class="icon-btn-con">
+                                        <button><img src="../../img/ico_list_han.svg" alt="한글파일다운로드"></button>
+                                        <button><img src="../../img/ico_list_exel.svg" alt="워드파일다운로드"></button>
+                                        <button><img src="../../img/ico_list_pdf.svg" alt="PDF파일다운로드"></button>
+                                        <button><img src="../../img/ico_list_office.svg" alt="Office파일다운로드"></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">부동산등기</td>
+                                <td>등기신청</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">
+                                        저당권 설정 계약서
+                                    </a>
+                                </td>
+                                <td class="has-element">
+                                    <div class="icon-btn-con">
+                                        <button><img src="../../img/ico_list_han.svg" alt="한글파일다운로드"></button>
+                                        <button><img src="../../img/ico_list_exel.svg" alt="워드파일다운로드"></button>
+                                        <button><img src="../../img/ico_list_pdf.svg" alt="PDF파일다운로드"></button>
+                                        <button><img src="../../img/ico_list_office.svg" alt="Office파일다운로드"></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">법인등기</td>
+                                <td>첨부서면</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">
+                                        이사회의사록
+                                    </a>
+                                </td>
+                                <td class="has-element">
+                                    <div class="icon-btn-con">
+                                        <button><img src="../../img/ico_list_han.svg" alt="한글파일다운로드"></button>
+                                        <button><img src="../../img/ico_list_exel.svg" alt="워드파일다운로드"></button>
+                                        <button><img src="../../img/ico_list_pdf.svg" alt="PDF파일다운로드"></button>
+                                        <button><img src="../../img/ico_list_office.svg" alt="Office파일다운로드"></button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="paging-wrap">
+                    <ul class="paging-con">
+                        <li class="paging-item first"><a href="#none"><img src="../../img/btn_paging_prev_2.svg" alt="go first"></a></li>
+                        <li class="paging-item prev"><a href="#none"><img src="../../img/btn_paging_prev.svg" alt="go prev"></a></li>
+                        <li class="paging-item num"><a href="#none">1</a></li>
+                        <li class="paging-item num active"><a href="#none">2</a></li>
+                        <li class="paging-item num"><a href="#none">3</a></li>
+                        <li class="paging-item num"><a href="#none">4</a></li>
+                        <li class="paging-item num"><a href="#none">5</a></li>
+                        <li class="paging-item num"><a href="#none">6</a></li>
+                        <li class="paging-item num"><a href="#none">7</a></li>
+                        <li class="paging-item num"><a href="#none">8</a></li>
+                        <li class="paging-item num"><a href="#none">9</a></li>
+                        <li class="paging-item num"><a href="#none">10</a></li>
+                        <li class="paging-item next"><a href="#none"><img src="../../img/btn_paging_next.svg" alt="go next"></a></li>
+                        <li class="paging-item last"><a href="#none"><img src="../../img/btn_paging_next_2.svg" alt="go last"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <section class="content-sec">
+            <div class="sec-head">
+                <div class="flex-wrap">
+                    <div class="left-con">
+                        <h4>Table Accordion</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="sec-body">
+                <div class="table-head">
+                    <div class="left-con">
+                        <span class="fs-14 color-86">전체 1,300건</span>
+                    </div>
+                    <div class="right-con">
+                        <div class="dropdown-wrap right">
+                            <button type="button" class="current-item">최신 순</button>
+                            <ul class="dropdown-con">
+                                <li class="dropdown-item">
+                                    <button type="button">최신 순</button>
+                                </li>
+                                <li class="dropdown-item">
+                                    <button type="button">제목 순</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-body">
+                    <table class="table-accordion">
+                        <caption>등기용어해설</caption>
+                        <colgroup>
+                            <col style="width: 80px;">
+                            <col style="width: auto;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">번호</th>
+                                <th scope="col">제목</th>
+                            </tr>
+                        </thead>
+                        <tbody data-accordion="container">
+                            <tr class="title-row" data-accordion="item">
+                                <td>01</td>
+                                <td>
+                                    <button type="button" class="title-con" data-accordion="trigger">가등기</button>
+                                </td>
+                            </tr>
+                            <tr class="cont-row">
+                                <td colspan="2">
+                                    <div class="cont-con">
+                                        권리의 설정, 이전, 변경, 소멸의 청구권을 보전하려고 할 때 또는 그 청구권이 시기부, 조건부이거나 장래에 있어서 확정할 것인 때에 그 본등기의 순위보전을 위하여 하는 예비등기이다 .권리의 
+                                        설정, 이전, 변경, 소멸의 청구권을 보전하려고 할 때 또는 그 청구권이 시기부, 조건부이거나 장래에 있어서 확정할 것인 때에 그 본등기의 순위보전을 위하여 하는 예비등기이다.
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="title-row" data-accordion="item">
+                                <td>02</td>
+                                <td>
+                                    <button type="button" class="title-con" data-accordion="trigger">가등기 가처분</button>
+                                </td>
+                            </tr>
+                            <tr class="cont-row">
+                                <td colspan="2">
+                                    <div class="cont-con">
+                                        가등기 가처분
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="title-row" data-accordion="item">
+                                <td>03</td>
+                                <td>
+                                    <button type="button" class="title-con" data-accordion="trigger">가등기 및 본등기말소</button>
+                                </td>
+                            </tr>
+                            <tr class="cont-row">
+                                <td colspan="2">
+                                    <div class="cont-con">
+                                        가등기 및 본등기말소
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="title-row" data-accordion="item">
+                                <td>04</td>
+                                <td>
+                                    <button type="button" class="title-con" data-accordion="trigger">가등기 말소</button>
+                                </td>
+                            </tr>
+                            <tr class="cont-row">
+                                <td colspan="2">
+                                    <div class="cont-con">
+                                        가등기 말소
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="title-row" data-accordion="item">
+                                <td>05</td>
+                                <td>
+                                    <button type="button" class="title-con" data-accordion="trigger">가등기 담보</button>
+                                </td>
+                            </tr>
+                            <tr class="cont-row">
+                                <td colspan="2">
+                                    <div class="cont-con">
+                                        가등기 담보
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="paging-wrap">
+                    <ul class="paging-con">
+                        <li class="paging-item first"><a href="#none"><img src="../../img/btn_paging_prev_2.svg" alt="go first"></a></li>
+                        <li class="paging-item prev"><a href="#none"><img src="../../img/btn_paging_prev.svg" alt="go prev"></a></li>
+                        <li class="paging-item num"><a href="#none">1</a></li>
+                        <li class="paging-item num active"><a href="#none">2</a></li>
+                        <li class="paging-item num"><a href="#none">3</a></li>
+                        <li class="paging-item num"><a href="#none">4</a></li>
+                        <li class="paging-item num"><a href="#none">5</a></li>
+                        <li class="paging-item num"><a href="#none">6</a></li>
+                        <li class="paging-item num"><a href="#none">7</a></li>
+                        <li class="paging-item num"><a href="#none">8</a></li>
+                        <li class="paging-item num"><a href="#none">9</a></li>
+                        <li class="paging-item num"><a href="#none">10</a></li>
+                        <li class="paging-item next"><a href="#none"><img src="../../img/btn_paging_next.svg" alt="go next"></a></li>
+                        <li class="paging-item last"><a href="#none"><img src="../../img/btn_paging_next_2.svg" alt="go last"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <hr />
+    </main>
+</body>
+
+</html>

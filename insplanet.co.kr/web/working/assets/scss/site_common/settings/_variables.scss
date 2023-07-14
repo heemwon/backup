@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+// ---------------------------------- Site variables ---------------------------------- //
+
+$psd-pc-width : 1920px;
+$psd-mobile-width : 640px;
+//$psd-pixel : 1920px;
+
+$screen-mobile-max:640px;
+
+
+// breakpoint
+$xs-break:0;
+$sm-break:480px;
+$md-break:640px;
+$lg-break:1200px;
+$xl-break:1440px;
+
+$xs-max:($sm-break)-1;
+$sm-max:($md-break)-1;
+$md-max:($lg-break)-1;
+$lg-max:($xl-break)-1;
+$xl-max:$lg-max;
+
+// reset Grid
+$grid-breakpoints: (
+        sm: $sm-break,
+        md: $md-break,
+        lg: $lg-break,
+        xl: $xl-break
+);
+
+// color
+$base-color:#222;
+$gray-lv1:#666;
+
+
+// font-weight
+$fw-regular:300;
+$fw-medium:500;
+$fw-bold: 700;
+$fw-black: 900;
+
+// font-family
+$font-kr: 'Noto Sans KR';
+$font-en: Lato;
+$site-font: $font-en, $font-kr;
+

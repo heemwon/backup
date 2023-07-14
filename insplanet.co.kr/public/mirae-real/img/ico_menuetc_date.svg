@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+    <defs>
+        <style>
+            .cls-3{stroke:#000;stroke-width:2px}.cls-3,.cls-7{fill:none}.cls-6{stroke:none}
+        </style>
+    </defs>
+    <g id="ico_menuetc_date" transform="translate(-7.406 -10.304)">
+        <g id="사각형_1464" fill="#fff" stroke="#000" stroke-width="2px">
+            <path d="M0 0H55V46H0z" class="cls-6" transform="translate(8.406 16.344)"/>
+            <path d="M1 1H54V45H1z" class="cls-7" transform="translate(8.406 16.344)"/>
+        </g>
+        <g id="사각형_1487" fill="#f4c215" stroke="#000" stroke-width="2px">
+            <path d="M0 0H55V13H0z" class="cls-6" transform="translate(8.406 16.344)"/>
+            <path d="M1 1H54V12H1z" class="cls-7" transform="translate(8.406 16.344)"/>
+        </g>
+        <path id="선_349" d="M0 0L0 8.824" class="cls-3" transform="translate(21.441 13.304)"/>
+        <path id="선_350" d="M0 0L0 8.824" class="cls-3" transform="translate(49.996 13.304)"/>
+        <text id="_31" font-family="NotoSansCJKkr-Bold, Noto Sans CJK KR" font-size="18px" font-weight="700" letter-spacing="-0.04em" transform="translate(26.545 51.191)">
+            <tspan x="0" y="0">31</tspan>
+        </text>
+    </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#fff}
+        </style>
+    </defs>
+    <g id="btn_sicon_add" transform="translate(-874.5 -658.5)">
+        <path id="선_80" data-name="선 80" class="cls-2" transform="translate(876.5 665.258)" d="M10 0H0"/>
+        <path id="선_81" data-name="선 81" class="cls-2" transform="rotate(90 110.44 770.94)" d="M9.758 0H0"/>
+    </g>
+</svg>

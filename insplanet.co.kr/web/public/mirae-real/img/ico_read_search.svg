@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.207" height="17.207" viewBox="0 0 17.207 17.207">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#1d1d1d;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="ico_read_search" transform="translate(-1015 -3291)">
+        <g id="타원_207" class="cls-1" transform="translate(1015 3291)">
+            <circle cx="7" cy="7" r="7"/>
+            <circle cx="7" cy="7" r="6" fill="none"/>
+        </g>
+        <path id="선_357" d="M0 0L6 6" class="cls-1" transform="translate(1025.5 3301.5)"/>
+    </g>
+</svg>

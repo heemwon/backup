@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="btn_search_s" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-1{fill:none}
+        </style>
+    </defs>
+    <path id="Container" d="M0 0H24V24H0z" class="cls-1"/>
+    <g id="그룹_2709" fill="none" stroke="#5a5a5a" stroke-width="1.5px" transform="translate(4 3)">
+        <path id="패스_3562" stroke-linecap="round" d="M1 1l4 4" transform="translate(9.963 9.963)"/>
+        <g id="타원_221" transform="translate(1 1)">
+            <circle cx="6.075" cy="6.075" r="6.075" stroke="none"/>
+            <circle cx="6.075" cy="6.075" r="5.325" class="cls-1"/>
+        </g>
+    </g>
+</svg>

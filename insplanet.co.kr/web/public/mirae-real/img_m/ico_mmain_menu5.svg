@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45">
+    <defs>
+        <style>
+            .cls-1{fill:red;opacity:0}.cls-3{stroke-width:1.5px;fill:none;stroke:#000;stroke-miterlimit:10}
+        </style>
+    </defs>
+    <g id="첨부서면확인" transform="translate(-3.405 -4.569)">
+        <g id="ico_main_service1_list" transform="translate(8.405 6.884)">
+            <g id="사각형_1812" data-name="사각형 1812" style="stroke-width:1.5px;stroke:#1d1d1d;fill:#fff">
+                <path style="stroke:none" d="M0 0h27v36H0z" transform="translate(1 2.686)"/>
+                <path style="fill:none" d="M.75.75h25.5v34.5H.75z" transform="translate(1 2.686)"/>
+            </g>
+            <path id="Stroke_17" data-name="Stroke 17" class="cls-3" d="M0 .391h10" transform="translate(5.87 19.209)"/>
+            <path id="Stroke_19" data-name="Stroke 19" class="cls-3" d="M0 .391h10" transform="translate(5.87 23.122)"/>
+            <g id="그룹_3640" data-name="그룹 3640" transform="translate(0 2)">
+                <path id="Stroke_7" data-name="Stroke 7" d="M8.5 0A8.5 8.5 0 1 1 0 8.5 8.5 8.5 0 0 1 8.5 0z" transform="translate(19.085 19.186)" style="fill:#f4c215;stroke-miterlimit:10;stroke:#000;stroke-width:1.5px"/>
+                <path id="Stroke_23" data-name="Stroke 23" d="M0 0v6.359l4.546-2.038" transform="translate(27.205 22.186)" style="stroke-linejoin:round;stroke-miterlimit:10;fill:none;stroke-width:1.5px;stroke:#1d1d1d"/>
+            </g>
+            <path id="패스_3240" data-name="패스 3240" d="M339.708 408.554v12.615l3.5-1.709 3.5 1.709v-12.615z" transform="translate(-333.323 -406.868)" style="stroke:#070203;stroke-width:1.5px;fill:#fff"/>
+        </g>
+    </g>
+</svg>

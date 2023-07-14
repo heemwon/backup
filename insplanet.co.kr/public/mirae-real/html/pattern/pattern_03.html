@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../../js/libs/jquery.min.js"></script>
+    <script src="../../js/libs/jquery-ui.min.js"></script>
+    <script src="../../js/libs/jquery.selectric.js"></script>
+    <script src="../../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../../js/sub.js"></script>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/guide.css">
+    <link rel="stylesheet" href="../../css/sub.css">
+    <title>패턴</title>
+</head>
+
+<body>
+    <div class="apply-wrap">
+        
+        <!-- 3-1. 항목별 총액 -->
+        <div class="title-content-wrap">
+            <div class="title-wrap">
+                <h2>3-1. 항목별 총액</h2>
+            </div>
+            <div class="cont-wrap">
+                <!-- 인지세 정보 -->
+                <section class="form-sec">
+                    <div class="sec-body">
+                        <div class="table-head">
+                            <div class="left-con">
+                                <div class="inline-wrap">
+                                    <h4>인지세 정보</h4>
+                                    <span class="checkbox-con ml25">
+                                        <input type="checkbox" name="" id="cb0">
+                                        <label for="cb0">인지세 면세</label>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="right-con">
+                                <button type="button" class="btn color-main">전자수입인지구매</button>
+                            </div>
+                        </div>
+                        <div class="table-body">
+                            <table class="table-list">
+                                <caption>인지세 정보</caption>
+                                <colgroup>
+                                    <col style="width: 130px;">
+                                    <col style="width: auto;">
+                                    <col style="width: 276px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">차수</th>
+                                        <th scope="col">납세번호</th>
+                                        <th scope="col">금액</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="ff-roboto">1</td>
+                                        <td class="ff-roboto">
+                                            315-333-3-44-245-40-333-33-3-31892-1
+                                        </td>
+                                        <td class="right">
+                                            1,000,000원
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="3" class="total-row">
+                                            <span class="title">인지세 총액</span>
+                                            <span class="cont">60,000원</span>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <div class="table-foot">
+                            <div class="border-box-wrap mt25 fs-15">
+                                <p>
+                                    관련 규정 등을 통하여 전자수입인지 구매 금액 및 면제 대상을 확인하시기 바랍니다.
+                                </p>
+                                <p>
+                                    <a href="#none" class="text-btn icon-next">국민주택채권 매입대상금액조회 바로가기</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- // 인지세 정보 -->
+
+                <!-- 등기수수료 -->
+                <section class="form-sec">
+                    <div class="sec-body">
+                        <div class="table-head">
+                            <div class="left-con">
+                                <div class="inline-wrap">
+                                    <h4>등기수수료</h4>
+                                    <span class="checkbox-con ml25">
+                                        <input type="checkbox" name="" id="cb1">
+                                        <label for="cb1">등기수수료 면세</label>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="right-con">
+                                <span class="required-info"><span class="star">*</span> 표시 필수입력사항</span>
+                            </div>
+                        </div>
+                        <div class="table-body">
+                            <table class="table-detail">
+                                <caption>등기수수료</caption>
+                                <colgroup>
+                                    <col style="width: 166px;">
+                                    <col style="width: 50%;">
+                                    <col style="width: 166px;">
+                                    <col style="width: 50%;">
+                                </colgroup>
+                                <tbody>
+                                    <tr class="element-row">
+                                        <th scope="row">
+                                            구분<span class="required">필수</span>
+                                        </th>
+                                        <td colspan="3">
+                                            <div class="inline-wrap">
+                                                <span class="radio-con">
+                                                    <input type="radio" name="emdrl" id="emdrl0" checked="">
+                                                    <label for="emdrl0">등기수수료 일괄납부 (은행납부인 경우)</label>
+                                                </span>
+                                                <span class="radio-con ml40">
+                                                    <input type="radio" name="emdrl" id="emdrl1">
+                                                    <label for="emdrl1">전 사건에 일괄납부</label>
+                                                </span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="element-row">
+                                        <th scope="row">
+                                            <label for="price0">수수료<span class="required">필수</span></label>
+                                        </th>
+                                        <td>
+                                            <span class="input-unit-wrap">
+                                                <input type="text" name="" id="price0" class="w295" placeholder="">
+                                                <span class="unit-right">원</span>
+                                            </span>
+                                        </td>
+                                        <th scope="row">
+                                            <label for="price1">예상수수료</label>
+                                        </th>
+                                        <td>
+                                            <span class="input-unit-wrap">
+                                                <input type="text" name="" id="price1" class="w295" placeholder="" readonly>
+                                                <span class="unit-right">원</span>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="element-row">
+                                        <th scope="row">
+                                            <label for="count0">일괄납부건수</label>
+                                        </th>
+                                        <td>
+                                            <span class="input-unit-wrap">
+                                                <input type="text" name="" id="count0" class="w295" placeholder="">
+                                                <span class="unit-right">건</span>
+                                            </span>
+                                        </td>
+                                        <th scope="row">
+                                            <label for="price2">일괄납부금액</label>
+                                        </th>
+                                        <td>
+                                            <span class="input-unit-wrap">
+                                                <input type="text" name="" id="price2" class="w295" placeholder="">
+                                                <span class="unit-right">원</span>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="4" class="total-row">
+                                            <span class="title">등기수수료 총액</span>
+                                            <span class="cont">15,000원</span>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <div class="table-foot">
+                            <div class="border-box-wrap fs-15 mt25">
+                                <p>
+                                    예상수수료는 참조용으로 제시하는 금액입니다. 정확한 등기수수료에 대한 문의는 관할등기소를 통해 확인하시기 바랍니다.
+                                </p>
+                                <p>
+                                    <a href="#none" class="text-btn icon-next">국민주택채권 매입대상금액조회 바로가기</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- // 등기수수료 -->
+            </div>
+        </div>
+        <!-- // 3-1. 항목별 총액 -->
+
+        <!-- 3-1. 항목별 총액+추가(팝업) -->
+        <div class="title-content-wrap">
+            <div class="title-wrap">
+                <h2>3-1. 항목별 총액+추가(팝업)</h2>
+            </div>
+            <div class="cont-wrap">
+                <div class="popup-head"></div>
+                <div class="popup-body">
+                    <div class="popup-cont">
+                        <!-- 부동산 목록 -->
+                        <section class="form-sec depth-2">
+                            <div class="sec-head">
+                                <p class="fs-15 color-41">해당되는 부동산의 시가표준액 및 국민주택채권매입액을 입력하세요.</p>
+                            </div>
+                            <div class="sec-body mt25">
+                                <div class="table-head">
+                                    <div class="left-con">
+                                        <h5>부동산 목록</h5>
+                                    </div>
+                                    <div class="right-con" id="go-table-btn0">
+                                        <button type="button" class="btn">추가입력부동산</button>
+                                        <button type="button" class="btn-solid">삭제</button>
+                                    </div>
+                                </div>
+                                <div class="table-body">
+                                    <table class="table-list">
+                                        <caption>부동산 목록</caption>
+                                        <colgroup>
+                                            <col style="width: 60px;">
+                                            <col style="width: auto;">
+                                            <col style="width: 220px;">
+                                            <col style="width: 220px;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="has-element">
+                                                    <span class="checkbox-con only-box">
+                                                        <input type="checkbox" name="" id="cbox3"><label for="cbox3"></label>
+                                                    </span>
+                                                </th>
+                                                <th scope="col">부동산</th>
+                                                <th scope="col">시가표준액</th>
+                                                <th scope="col">국민주택채권매입액</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="has-element">
+                                                    <span class="checkbox-con only-box">
+                                                        <input type="checkbox" name="" id="cbox4"><label for="cbox4"></label>
+                                                    </span>
+                                                </td>
+                                                <td class="has-element">
+                                                    <div class="inline-wrap">
+                                                        <span class="select-con w120">
+                                                            <label for="">
+                                                                <select name="" id="" class="">
+                                                                    <option value="">토지</option>
+                                                                    <option value="1">option1</option>
+                                                                    <option value="2">option2</option>
+                                                                    <option value="3">option3</option>
+                                                                    <option value="4">option4</option>
+                                                                </select>
+                                                            </label>
+                                                        </span>
+                                                        <label for="">
+                                                            <input type="text" name="" id="" class="w330">
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td class="has-element">
+                                                    <span class="input-unit-wrap">
+                                                        <label for="">
+                                                            <input type="text" name="" id="" class="w150" placeholder="">
+                                                        </label>
+                                                        <span class="unit-right">원</span>
+                                                    </span>
+                                                </td>
+                                                <td class="has-element">
+                                                    <span class="input-unit-wrap">
+                                                        <label for="">
+                                                            <input type="text" name="" id="" class="w150" placeholder="">
+                                                        </label>
+                                                        <span class="unit-right">원</span>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="has-element">
+                                                    <span class="checkbox-con only-box">
+                                                        <input type="checkbox" name="" id="cbox5"><label for="cbox5"></label>
+                                                    </span>
+                                                </td>
+                                                <td class="has-element">
+                                                    <div class="inline-wrap">
+                                                        <span class="select-con w120">
+                                                            <label for="">
+                                                                <select name="" id="" class="">
+                                                                    <option value="">토지</option>
+                                                                    <option value="1">option1</option>
+                                                                    <option value="2">option2</option>
+                                                                    <option value="3">option3</option>
+                                                                    <option value="4">option4</option>
+                                                                </select>
+                                                            </label>
+                                                        </span>
+                                                        <label for="">
+                                                            <input type="text" name="" id="" class="w330">
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td class="has-element">
+                                                    <span class="input-unit-wrap">
+                                                        <label for="">
+                                                            <input type="text" name="" id="" class="w150" placeholder="">
+                                                        </label>
+                                                        <span class="unit-right">원</span>
+                                                    </span>
+                                                </td>
+                                                <td class="has-element">
+                                                    <span class="input-unit-wrap">
+                                                        <label for="">
+                                                            <input type="text" name="" id="" class="w150" placeholder="">
+                                                        </label>
+                                                        <span class="unit-right">원</span>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="has-element">
+                                                    <span class="checkbox-con only-box">
+                                                        <input type="checkbox" name="" id="cbox6"><label for="cbox6"></label>
+                                                    </span>
+                                                </td>
+                                                <td class="has-element">
+                                                    <div class="inline-wrap">
+                                                        <span class="select-con w120">
+                                                            <label for="">
+                                                                <select name="" id="" class="">
+                                                                    <option value="">토지</option>
+                                                                    <option value="1">option1</option>
+                                                                    <option value="2">option2</option>
+                                                                    <option value="3">option3</option>
+                                                                    <option value="4">option4</option>
+                                                                </select>
+                                                            </label>
+                                                        </span>
+                                                        <label for="">
+                                                            <input type="text" name="" id="" class="w330">
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td class="has-element">
+                                                    <span class="input-unit-wrap">
+                                                        <label for="">
+                                                            <input type="text" name="" id="" class="w150" placeholder="">
+                                                        </label>
+                                                        <span class="unit-right">원</span>
+                                                    </span>
+                                                </td>
+                                                <td class="has-element">
+                                                    <span class="input-unit-wrap">
+                                                        <label for="">
+                                                            <input type="text" name="" id="" class="w150" placeholder="">
+                                                        </label>
+                                                        <span class="unit-right">원</span>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td colspan="4" class="total-row">
+                                                    <div class="inline-wrap">
+                                                        <span class="title">국민주택채권매입액 총액</span>
+                                                        <div class="ml0">
+                                                            <p class="cont">110,000,000원</p>
+                                                            <p class="kr">일억일천만 원</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                    <div class="table-btn-focus">
+                                        <a href="#go-table-btn0">테이블 기능 버튼으로 이동</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 부동산 목록 -->
+    
+                        <!-- 채권정보입력 -->
+                        <section class="form-sec depth-3 mb16">
+                            <div class="sec-body">
+                                <div class="table-body">
+                                    <table class="table-detail">
+                                        <caption>채권정보입력</caption>
+                                        <colgroup>
+                                            <col style="width: 166px;">
+                                            <col style="width: auto;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="element-row">
+                                                <th scope="row">
+                                                    <label for="bondnum">
+                                                        국민주택채권발행번호
+                                                    </label>
+                                                </th>
+                                                <td class="pr-none">
+                                                    <div class="inline-wrap">
+                                                        <input type="text" name="" id="bondnum" class="w717" placeholder="국민주택채권발행번호 입력">
+                                                        <button type="button" class="btn-solid">채권추가</button>
+                                                    </div>
+                                                    <div class="bg-box-wrap bg-f8 mt10">
+                                                        <ul class="list-bullet fs-15 color-86">
+                                                            <li>
+                                                                <div class="inline-wrap">
+                                                                    <span class="fs-15 color-86">국민주택채권발행번호1</span>
+                                                                    <span class="fs-15 color-1d ff-roboto ml25">2745-56-5974-8120</span>
+                                                                    <button type="button" class="ml4">
+                                                                        <img src="../../img/btn_form_clear.svg" alt="Clear">
+                                                                    </button>
+                                                                </div>
+                                                            </li>
+                                                            <li class="mt15">
+                                                                <div class="inline-wrap">
+                                                                    <span class="fs-15 color-86">국민주택채권발행번호2</span>
+                                                                    <span class="fs-15 color-1d ff-roboto ml25">2745-56-5974-8120</span>
+                                                                    <button type="button" class="ml4">
+                                                                        <img src="../../img/btn_form_clear.svg" alt="Clear">
+                                                                    </button>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 채권정보입력 -->
+                        
+                    </div>
+                </div>
+                <div class="popup-foot">
+                    <div class="left-con">
+                        <button type="button" class="btn medium">보조버튼</button>
+                    </div>
+                    <div class="right-con">
+                        <button type="button" class="btn-solid medium color-4d">등록취소</button>
+                        <button type="button" class="btn-solid medium">등록완료</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // 3-1. 항목별 총액+추가(팝업) -->
+
+        <!-- 항목별 총액+내역 -->
+        <div class="title-content-wrap">
+            <div class="title-wrap">
+                <h2>항목별 총액+내역</h2>
+            </div>
+            <div class="cont-wrap">
+                <div class="popup-head"></div>
+                <div class="popup-body">
+                    <div class="popup-cont">
+                        
+                        <!-- 신청등기소 선택 -->
+                        <section class="form-sec">
+                            <div class="sec-body">
+                                <div class="table-head">
+                                    <div class="left-con">
+                                        <h4>신청등기소 선택</h4>
+                                    </div>
+                                </div>
+                                <div class="table-body">
+                                    <table class="table-detail">
+                                        <caption>신청등기소 선택</caption>
+                                        <colgroup>
+                                            <col style="width: 190px;">
+                                            <col style="width: 50%;">
+                                            <col style="width: 190px;">
+                                            <col style="width: 50%;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="element-row">
+                                                <th scope="row">
+                                                    <label for="tax">
+                                                        과세표준액
+                                                    </label>
+                                                </th>
+                                                <td colspan="3">
+                                                    <span class="input-unit-wrap">
+                                                        <input type="text" name="" id="tax" class="w226" placeholder="">
+                                                        <span class="unit-right">원</span>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr class="element-row">
+                                                <th scope="row">
+                                                    <label for="regisel">신청등기소 선택</label>
+                                                </th>
+                                                <td>
+                                                    <span class="select-con w260">
+                                                        <select name="" id="regisel" class="">
+                                                            <option value="">서울중앙지방법원 등기국</option>
+                                                            <option value="1">option1</option>
+                                                            <option value="2">option2</option>
+                                                        </select>
+                                                    </span>
+                                                </td>
+                                                <th scope="row">본지점 구분</th>
+                                                <td>
+                                                    본점
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 신청등기소 선택 -->
+    
+                        <!-- 납입금액 및 납세번호 입력 -->
+                        <section class="form-sec">
+                            <div class="sec-body">
+                                <div class="table-head">
+                                    <div class="left-con">
+                                        <h4>납입금액 및 납세번호 입력</h4>
+                                    </div>
+                                    <div class="right-con" id="go-table-btn1">
+                                        <button type="button" class="btn">납세번호 추가</button>
+                                        <button type="button" class="btn-solid">선택삭제</button>
+                                    </div>
+                                </div>
+                                <div class="table-body">
+                                    <table class="table-list">
+                                        <caption>납입금액 및 납세번호 입력</caption>
+                                        <colgroup>
+                                            <col style="width: 60px;">
+                                            <col style="width: auto;">
+                                            <col style="width: 220px;">
+                                            <col style="width: 455px;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="has-element">
+                                                    <span class="checkbox-con only-box">
+                                                        <input type="checkbox" name="" id="cbox7"><label for="cbox7"></label>
+                                                    </span>
+                                                </th>
+                                                <th scope="col">납입지역</th>
+                                                <th scope="col">납입금액</th>
+                                                <th scope="col">납세번호</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="has-element">
+                                                    <span class="checkbox-con only-box">
+                                                        <input type="checkbox" name="" id="cbox8"><label for="cbox8"></label>
+                                                    </span>
+                                                </td>
+                                                <td class="has-element">
+                                                    <div class="inline-wrap">
+                                                        <span class="select-con w223">
+                                                            <label for="">
+                                                                <select name="" id="" class="">
+                                                                    <option value="">전체</option>
+                                                                    <option value="1">option1</option>
+                                                                    <option value="2">option2</option>
+                                                                    <option value="3">option3</option>
+                                                                    <option value="4">option4</option>
+                                                                </select>
+                                                            </label>
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="has-element">
+                                                    <span class="input-unit-wrap">
+                                                        <label for="">
+                                                            <input type="text" name="" id="" class="w150" placeholder="">
+                                                        </label>
+                                                        <span class="unit-right">원</span>
+                                                    </span>
+                                                </td>
+                                                <td class="has-element">
+                                                    <label for="">
+                                                        <input type="text" name="" id="" class="w414" placeholder="'-'없이 입력(7자리)">
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="has-element">
+                                                    <span class="checkbox-con only-box">
+                                                        <input type="checkbox" name="" id="cbox9"><label for="cbox9"></label>
+                                                    </span>
+                                                </td>
+                                                <td class="has-element">
+                                                    <div class="inline-wrap">
+                                                        <span class="select-con w223">
+                                                            <label for="">
+                                                                <select name="" id="" class="">
+                                                                    <option value="">전체</option>
+                                                                    <option value="1">option1</option>
+                                                                    <option value="2">option2</option>
+                                                                    <option value="3">option3</option>
+                                                                    <option value="4">option4</option>
+                                                                </select>
+                                                            </label>
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="has-element">
+                                                    <span class="input-unit-wrap">
+                                                        <label for="">
+                                                            <input type="text" name="" id="" class="w150" placeholder="">
+                                                        </label>
+                                                        <span class="unit-right">원</span>
+                                                    </span>
+                                                </td>
+                                                <td class="has-element">
+                                                    <label for="">
+                                                        <input type="text" name="" id="" class="w414" placeholder="'-'없이 입력(7자리)">
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="table-btn-focus">
+                                        <a href="#go-table-btn1">테이블 기능 버튼으로 이동</a>
+                                    </div>
+                                </div>
+                                <div class="table-foot">
+                                    <div class="additional-field-wrap">
+                                        <ul>
+                                            <li>
+                                                <div class="title">
+                                                    등록면허세
+                                                </div>
+                                                <div class="cont">
+                                                    <div class="inline-wrap">
+                                                        <span class="checkbox-con">
+                                                            <input type="checkbox" name="" id="prc0">
+                                                            <label for="prc0">면제</label>
+                                                        </span>
+                                                        <span class="input-unit-wrap ml37">
+                                                            <label for="">
+                                                                <input type="text" name="" id="" class="w257" placeholder="">
+                                                            </label>
+                                                            <span class="unit-right">원</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="title">
+                                                    지방교육세
+                                                </div>
+                                                <div class="cont">
+                                                    <div class="inline-wrap">
+                                                        <span class="input-unit-wrap">
+                                                            <label for="prc1"><input type="text" name="" id="prc1" class="w257" placeholder=""></label>
+                                                            <span class="unit-right">원</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="title">
+                                                    농어촌특별세
+                                                </div>
+                                                <div class="cont">
+                                                    <div class="inline-wrap">
+                                                        <span class="checkbox-con">
+                                                            <input type="checkbox" name="" id="prc3">
+                                                            <label for="prc3">면제</label>
+                                                        </span>
+                                                        <span class="input-unit-wrap ml37">
+                                                            <label for="">
+                                                                <input type="text" name="" id="" class="w257" placeholder="">
+                                                            </label>
+                                                            <span class="unit-right">원</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="table-util-con">
+                                        <div class="left-con">
+                                            <button type="button" class="btn icon-reset">다시 작성하기</button>
+                                        </div>
+                                        <div class="right-con">
+                                            <button type="button" class="btn-solid">저장</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 납입금액 및 납세번호 입력 -->
+    
+    
+                        <!-- 등록면허세 납입금액 확인 -->
+                        <section class="form-sec mb16">
+                            <div class="sec-body">
+                                <div class="table-head">
+                                    <div class="left-con">
+                                        <h4>등록면허세 납입금액 확인</h4>
+                                    </div>
+                                    <div class="right-con" id="go-table-btn2">
+                                        <button type="button" class="btn-solid">선택삭제</button>
+                                    </div>
+                                </div>
+                                <div class="table-body">
+                                    <table class="table-list">
+                                        <caption>등록면허세 납입금액 확인</caption>
+                                        <colgroup>
+                                            <col style="width: 60px;">
+                                            <col style="width: 33.3%;">
+                                            <col style="width: 33.3%;">
+                                            <col style="width: 33.3%;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="has-element">
+                                                    <span class="checkbox-con only-box">
+                                                        <input type="checkbox" name="" id="check0"><label for="check0"></label>
+                                                    </span>
+                                                </th>
+                                                <th scope="col">신청등기소</th>
+                                                <th scope="col">본지점 구분</th>
+                                                <th scope="col">등록면허세 납입금액</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="has-element">
+                                                    <span class="checkbox-con only-box">
+                                                        <input type="checkbox" name="" id="check1"><label for="check1"></label>
+                                                    </span>
+                                                </td>
+                                                <td>서울중앙지방법원 등기국</td>
+                                                <td>본점</td>
+                                                <td class="right">
+                                                    127,500원
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td colspan="4" class="total-row">
+                                                    <span class="title">등록면허세 총액</span>
+                                                    <span class="cont">127,500원</span>
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                    <div class="table-btn-focus">
+                                        <a href="#go-table-btn2">테이블 기능 버튼으로 이동</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 등록면허세 납입금액 확인 -->
+    
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- // 항목별 총액+내역 -->
+        
+    </div>
+</body>
+
+</html>

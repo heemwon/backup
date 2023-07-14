@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../../js/libs/jquery.min.js"></script>
+    <script src="../../js/libs/jquery-ui.min.js"></script>
+    <script src="../../js/libs/jquery.selectric.js"></script>
+    <script src="../../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../../js/sub.js"></script>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/guide.css">
+    <link rel="stylesheet" href="../../css/sub.css">
+    <title>패턴</title>
+</head>
+
+<body>
+    <div class="apply-wrap">
+        
+        <!-- 1depth -->
+        <div class="flex-between-wrap">
+            <div class="title-wrap">
+                <h2>1depth</h2>
+                <p class="desc-con">
+                    테이블타이틀 24pt Bold #1d1d1d<br/>
+                    타이틀 언더라인 2px #1d1d1d
+                </p>
+            </div>
+            <div class="cont-wrap">
+                <section class="form-sec">
+                    <div class="sec-body">
+                        <div class="table-head">
+                            <div class="left-con">
+                                <h4>1뎁스 테이블 타이틀</h4>
+                            </div>
+                            <div class="right-con" id="go-table-btn0">
+                                <button type="button" class="btn-solid">선택삭제</button>
+                            </div>
+                        </div>
+                        <div class="table-body">
+                            <table class="table-list">
+                                <caption>1뎁스 테이블 타이틀</caption>
+                                <colgroup>
+                                    <col style="width: 60px;">
+                                    <col style="width: 103px;">
+                                    <col style="width: auto;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbox0"><label for="cbox0"></label>
+                                            </span>
+                                        </th>
+                                        <th scope="col">구분</th>
+                                        <th scope="col">주소</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbox1"><label for="cbox1"></label>
+                                            </span>
+                                        </td>
+                                        <td>구분값</td>
+                                        <td class="left">
+                                            경기도 광명시 도덕공원로59 광명 푸르지오 제100동 제2층
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbox2"><label for="cbox2"></label>
+                                            </span>
+                                        </td>
+                                        <td>구분값</td>
+                                        <td class="left">
+                                            경기도 광명시 도덕공원로59 광명 푸르지오 제100동 제2층
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="table-btn-focus">
+                                <a href="#go-table-btn0">테이블 기능 버튼으로 이동</a>
+                            </div>
+                        </div>
+                        <div class="row-btn-wrap">
+                            <div class="inline-wrap">
+                                <span class="select-con w62">
+                                    <label for="smallsel0">
+                                        <select name="" id="smallsel0" class="">
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                        </select>
+                                    </label>
+                                </span>
+                                <span class="slash">
+                                    <img src="../../img/ico_read_perline.svg" alt="/">
+                                </span>
+                                <span class="fs-15">5</span>
+                            </div>
+                            <button type="button" class="btn-row">
+                                <span>'테이블타이틀' 추가</span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- // 1depth -->
+        
+        <!-- 2depth -->
+        <div class="flex-between-wrap">
+            <div class="title-wrap">
+                <h2>2depth</h2>
+                <p class="desc-con">
+                    테이블타이틀 20pt Bold #414141<br/>
+                    타이틀 언더라인 1px #1d1d1d
+                </p>
+            </div>
+            <div class="cont-wrap">
+                <section class="form-sec depth-2">
+                    <div class="sec-body">
+                        <div class="table-head">
+                            <div class="left-con">
+                                <h5>2뎁스 테이블타이틀</h5>
+                            </div>
+                            <!-- <div class="right-con" id="go-table-btn1">
+                                <button type="button" class="btn-solid">삭제</button>
+                            </div> -->
+                        </div>
+                        <div class="table-body">
+                            <table class="table-list">
+                                <caption>2뎁스 테이블타이틀</caption>
+                                <colgroup>
+                                    <col style="width: 60px;">
+                                    <col style="width: auto;">
+                                    <col style="width: auto;">
+                                    <col style="width: 245px;">
+                                    <col style="width: 210px;">
+                                    <col style="width: 120px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbox3"><label for="cbox3"></label>
+                                            </span>
+                                        </th>
+                                        <th scope="col">성명</th>
+                                        <th scope="col">주민등록번호</th>
+                                        <th scope="col">전화번호</th>
+                                        <th scope="col">작성여부</th>
+                                        <th scope="col">승인여부</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbox4"><label for="cbox4"></label>
+                                            </span>
+                                        </td>
+                                        <td>김일동</td>
+                                        <td class="ff-roboto">123456-1234567</td>
+                                        <td class="has-element">
+                                            <label for=""><input type="text" name="" id="" class="w204" placeholder="'-'없이 입력"></label>
+                                        </td>
+                                        <td class="has-element">
+                                            <div class="inline-wrap">
+                                                <button type="button" class="btn">동의서작성</button>
+                                                <button type="button" class="btn">스캔제출</button>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            미승인
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbox5"><label for="cbox5"></label>
+                                            </span>
+                                        </td>
+                                        <td>김일동</td>
+                                        <td class="ff-roboto">123456-1234567</td>
+                                        <td class="has-element">
+                                            <label for=""><input type="text" name="" id="" class="w204" placeholder="'-'없이 입력"></label>
+                                        </td>
+                                        <td>
+                                            작성완료
+                                        </td>
+                                        <td>
+                                            <span class="status-blue">승인</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- <div class="table-btn-focus">
+                                <a href="#go-table-btn1">테이블 기능 버튼으로 이동</a>
+                            </div> -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- // 2depth -->
+        
+        <!-- 3depth -->
+        <div class="flex-between-wrap">
+            <div class="title-wrap">
+                <h2>3depth</h2>
+                <p class="desc-con">
+                    테이블타이틀 18pt Medium #414141<br/>
+                    타이틀 언더라인 1px #a8a8a8
+                </p>
+            </div>
+            <div class="cont-wrap">
+                <section class="form-sec depth-3">
+                    <div class="sec-body">
+                        <div class="table-head">
+                            <div class="left-con">
+                                <h6>3뎁스 테이블타이틀</h6>
+                            </div>
+                            <div class="right-con" id="go-table-btn2">
+                                <button type="button" class="btn">단위업무버튼</button>
+                                <button type="button" class="btn-solid">선택삭제</button>
+                            </div>
+                        </div>
+                        <div class="table-body">
+                            <table class="table-list">
+                                <caption>3뎁스 테이블타이틀</caption>
+                                <colgroup>
+                                    <col style="width: 60px;">
+                                    <col style="width: 200px;">
+                                    <col style="width: auto;">
+                                    <col style="width: 210px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbox6"><label for="cbox6"></label>
+                                            </span>
+                                        </th>
+                                        <th scope="col">부동산 고유번호</th>
+                                        <th scope="col">주소</th>
+                                        <th scope="col">상태</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbox7"><label for="cbox7"></label>
+                                            </span>
+                                        </td>
+                                        <td class="ff-roboto">2149-2021-000013</td>
+                                        <td class="left">
+                                            전라북도 익산시 어양동 20210312-13 대 100㎡
+                                        </td>
+                                        <td class="has-element">
+                                            <div class="btn-multi-wrap">
+                                                <div class="btn-multi-con">
+                                                    <button type="button" onclick="alert('기능 1번')" class="btn-multi">기능 1번</button>
+                                                    <button type="button" onclick="alert('기능 2번')" class="btn-multi">기능 2번</button>
+                                                    <button type="button" onclick="alert('기능 3번')" class="btn-multi active">기능 3번</button>
+                                                    <button type="button" onclick="alert('기능 4번')" class="btn-multi">기능 4번</button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbox8"><label for="cbox8"></label>
+                                            </span>
+                                        </td>
+                                        <td class="ff-roboto">2149-2021-000013</td>
+                                        <td class="left">
+                                            전라북도 익산시 어양동 20210312-13 대 100㎡
+                                        </td>
+                                        <td>
+                                            요청중
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="table-btn-focus">
+                                <a href="#go-table-btn2">테이블 기능 버튼으로 이동</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- // 3depth -->
+
+    </div>
+</body>
+
+</html>

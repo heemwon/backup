@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="65" height="150" viewBox="0 0 65 150">
+    <defs>
+        <clipPath id="pno43q01pa">
+            <path fill="red" d="M0 0H65V150H0z" opacity="0.367" transform="translate(1855 379)"/>
+        </clipPath>
+        <filter id="oqec33qyib" width="125.89" height="170.408" x="-15.5" y="-10.003" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur" stdDeviation="15"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g clip-path="url(#pno43q01pa)" transform="translate(-1855 -379)">
+        <g>
+            <g filter="url(#oqec33qyib)" transform="rotate(-90 1167.612 -329.746) rotate(90 50.615 408.255)">
+                <path fill="#fff" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" d="M6425.959 3273.533zm68.612 0v-23.373c0 23.458 11.792 23.373 11.792 23.373zm-56.8 0v-21.883c0-7.183 4.195-13.008 9.371-13.008h38.037c5.174 0 9.37 5.824 9.37 13.008v21.882zm-11.764 0c.828-.01 11.745-.575 11.745-23.373v23.373z" transform="rotate(-90 1666.36 4875)"/>
+            </g>
+            <path fill="none" stroke="#222b46" stroke-linecap="round" stroke-width="2px" d="M-6068.5-2817.458l-6 6 6 6" transform="rotate(-90 1167.612 -329.746) rotate(90 -4451.064 2022.97)"/>
+        </g>
+    </g>
+</svg>

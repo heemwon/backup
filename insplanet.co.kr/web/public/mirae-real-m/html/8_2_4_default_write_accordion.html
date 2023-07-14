@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../js/libs/jquery.min.js"></script>
+    <script src="../js/libs/jquery-ui.min.js"></script>
+    <script src="../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../js/sub.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <title>인터넷 등기소</title>
+</head>
+<body>
+    <header class="area-header">
+        <div class="area-inner">
+            <span class="btn-historyback"><button>뒤로</button></span>
+            <h1 class="title">메뉴명 영역</h1>
+            <span class="btn-navigation"><button>메뉴</button></span>
+        </div>
+    </header>
+    <div class="area-content">
+        <div class="area-inner">
+            <div class="content-wrap">
+                <!-- 기본 확인사항 - 아코디언 -->
+                <section class="accordion-sec">
+                    <div class="sec-head">
+                        <p class="title">아코디언 타이틀</p>
+                    </div>
+                    <div class="sec-body">
+                        <div class="accordion-wrap">
+                            <ul class="accordion-con" data-accordion="container">
+                                <li class="active" data-accordion="item">
+                                    <button type="button" class="title-con" data-accordion="trigger">
+                                        <p>아코디언 타이틀</p>
+                                    </button>
+                                    <div class="cont-wrap">
+                                        <div class="cont-con">
+                                            <!-- 회원정보수정 -->
+                                            <dl class="form-item">
+                                                <dt class="item-head">
+                                                    <div class="left-con">
+                                                        <label for="name" class="item-title">항목명</label>
+                                                        <div class="tooltip-wrap">
+                                                            <button type="button" class="tooltip-btn" data-tooltip="trigger"><img src="../img/m_ico_qmark@3x.png" alt="도움말"></button>
+                                                            <div class="msg-con" data-tooltip="container">
+                                                                <div class="inner-con">
+                                                                    <p>
+                                                                        항목명 툴팁
+                                                                    </p>
+                                                                    <button type="button" class="close-btn" onclick="tooltipHandler.closeTooltip()">
+                                                                        <img src="../img/btn_tooltips_close.svg" alt="도움말 닫기">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <span class="required">필수</span>
+                                                    </div>
+                                                    <div class="right-con">
+                                                        <span class="required-info"><span class="star">*</span> 필수입력</span>
+                                                    </div>
+                                                </dt>
+                                                <dd class="item-body">
+                                                    <div class="flex-wrap even">
+                                                        <span class="radio-con">
+                                                            <input type="radio" name="radio1" id="radio1-1">
+                                                            <label for="radio1-1">선택 1</label>
+                                                        </span>
+                                                        <span class="radio-con">
+                                                            <input type="radio" name="radio1" id="radio1-2">
+                                                            <label for="radio1-2">선택 2</label>
+                                                        </span>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                            <dl class="form-item">
+                                                <dt class="item-head">
+                                                    <div class="left-con">
+                                                        <label for="name" class="item-title">항목명</label>
+                                                        <div class="tooltip-wrap">
+                                                            <button type="button" class="tooltip-btn" data-tooltip="trigger"><img src="../img/m_ico_qmark@3x.png" alt="도움말"></button>
+                                                            <div class="msg-con" data-tooltip="container">
+                                                                <div class="inner-con">
+                                                                    <p>
+                                                                        항목명 툴팁
+                                                                    </p>
+                                                                    <button type="button" class="close-btn" onclick="tooltipHandler.closeTooltip()">
+                                                                        <img src="../img/btn_tooltips_close.svg" alt="도움말 닫기">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <span class="required">필수</span>
+                                                    </div>
+                                                </dt>
+                                                <dd class="item-body">
+                                                    <div class="flex-wrap even">
+                                                        <span class="radio-con">
+                                                            <input type="radio" name="radio2" id="radio2-1">
+                                                            <label for="radio2-1">선택 1</label>
+                                                        </span>
+                                                        <span class="radio-con">
+                                                            <input type="radio" name="radio2" id="radio2-2">
+                                                            <label for="radio2-2">선택 2</label>
+                                                        </span>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                            <div class="info-box-con mt40 mb10">
+                                                <div class="date-con">
+                                                    <span class="date">2021-04-19</span>
+                                                    <span class="pipe"></span>
+                                                    <span class="number">1109</span>
+                                                </div>
+                                                <div class="addr-con">서울시 양천구 목동 21-1</div>
+                                                <div class="info-text-con">전자<span class="pipe"></span>근저당권설정</div>
+                                                <div class="btn-con">
+                                                    <button type="button" class="btn small">가져오기</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-accordion="item">
+                                    <button type="button" class="title-con" data-accordion="trigger">
+                                        <p>아코디언 타이틀</p>
+                                    </button>
+                                    <div class="cont-wrap">
+                                        <div class="cont-con">
+                                            <div class="cont-body">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-accordion="item">
+                                    <button type="button" class="title-con" data-accordion="trigger">
+                                        <p>아코디언 타이틀</p>
+                                    </button>
+                                    <div class="cont-wrap">
+                                        <div class="cont-con">
+                                            <div class="cont-body">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- button -->
+                <section class="bottom-button-sec flex-between" data-fixed-btn>
+                    <button type="button" class="btn-solid color-4d">목록</button>
+                    <button type="button" class="btn-solid color-52">확인</button>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer class="area-footer">
+        <div class="area-inner">
+            <div class="box-privite">
+                <a href="">이용약관</a>
+                <a href=""><strong>개인정보처리방침</strong></a>
+                <a href="">원격지원</a>
+                
+            </div>
+            <p class="text-copyright">Copyright © Supreme Court of Korea.<br > All right reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

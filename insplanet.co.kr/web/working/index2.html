@@ -1,0 +1,381 @@
+<!doctype html>
+<html class="no-js" lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no viewport-fit=cover user-scalable=no">
+    <meta >
+
+    <!-- Default Site info -->
+    <title>Ins'planet Website</title>
+    <meta name="title" content="">
+    <meta name="description" content="This is designfever!"/>
+    <meta name="keywords" content="df, design, fever, designfever, IX, good"/>
+    <meta name="apple-mobile-web-app-title" content="dev.designfever">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicons/favicon.ico">
+
+    <!-- Favorites Thumbnails -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="image_src" href="share-thumb_200x200.png">
+
+    <!-- for SNS -->
+    <!-- *********************************************************************************************** -->
+    <!-- todo 쉐어 이미지 경로는 full-url경로로 작성할 것 -->
+
+    <!-- FB -->
+    <meta property="og:site_name" content="dev.designfever">
+    <meta property="og:title" content="dev.designfever">
+    <meta property="og:description" content="This is designfever!">
+    <meta property="og:url" content="http://dev.designfever.com/">
+    <meta property="og:image" content="http://dev.designfever.com/share-thumb_200x200.png">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko_KR"/>
+
+    <!-- TW -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="dev.designfever">
+    <meta name="twitter:description" content="This is designfever!">
+    <meta name="twitter:url" content="http://dev.designfever.com/">
+    <meta name="twitter:image" content="http://dev.designfever.com/share-thumb_200x200.png">
+
+
+    <!-- common stylesheet -->
+    <!--<link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>-->
+    <!--<link rel="preload" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&family=Noto+Sans+KR:wght@100;400;700;900" as="style" crossorigin>-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./assets/css/common.css">
+    <!-- common JS -->
+    <script src="./assets/vendors/modernizr-detectizr.js"></script>
+    <script type="text/javascript" src="./assets/vendors/jquery-3.4.1.min.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script type="text/javascript" src="./assets/js/common/GA_TrackingCode.js"></script>
+    <script type="text/javascript">
+        TrackingCode.pageTagging('main');
+    </script>
+
+    <!-- sns share API FN -->
+    <script type="text/javascript" src="./assets/js/common/share.api.js"></script>
+    <script type="text/javascript">
+        function share_to_TW() {
+            callShare('TW');
+        }		// twitter
+        function share_to_FB() {
+            callShare('FB');
+        }		// Facebook
+        function share_to_PR() {
+            callShare('PR');
+        }		// pinterest
+        function share_to_GL() {
+            callShare('GL');
+        }		// google plus
+        function callShare($sns_id) {
+            var TITLE = $('meta[name=title]').attr('content');
+            var DEC = $('meta[name=description]').attr('content');
+            var THUMB_BIG = 'http://dev.designfever.com/share-thumb-big_400x400.png';
+            var URL = "http://dev.designfever.com/";
+            share_contents($sns_id, URL, TITLE, DEC, THUMB_BIG);
+        }
+    </script>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- work area -------------------------------------------------------------------------------------------- -->
+
+    <!-- CSS for page -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/vendors/swiper/swiper.min.css">
+</head>
+
+<body class="pg-work">
+<!-- Skip Nav -->
+<div id="skip-navi">
+    <a href="#main"><span>본문 바로가기</span></a>
+</div>
+
+<div id="app">
+    <div class="wrapper">
+        <!-- Page Content -->
+        <header>
+            <div class="inner-wrap">
+                <div class="inner-content">
+                    <a href="/" class="hlogo">
+                        <img src="assets/images/common/ci.png"
+                             srcset="assets/images/common/ci@2x.png 2x, assets/images/common/ci@3x.png 3x"
+                             alt="ins'planet CI logo">
+                    </a>
+                    <nav class="gnb">
+                        <ul class="nav-bar">
+                            <li class="nav-item">
+                                <a href="#work" class="nav-link active">
+                                    <span class="icon icon-work"></span>
+                                    <span class="txt"><span>Work</span></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#company" class="nav-link">
+                                    <span class="icon icon-company"></span>
+                                    <span class="txt"><span>Company</span></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#about" class="nav-link">
+                                    <span class="icon icon-about"></span>
+                                    <span class="txt"><span>Why In’s Planet</span></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contact-us" class="nav-link">
+                                    <span class="icon icon-contact"></span>
+                                    <span class="txt"><span>Contact us</span></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main id="main">
+            <div class="inner-wrap">
+                <div class="cont-sec sec-1">
+                    <div class="inner-sec">
+                        <div class="content-top">
+                            <div class="txt-holder">
+                                <h1>In’s Planet </h1>
+                                <p class="desc">
+                                    언제나 흥미로운 아이디어와 격이 다른 아름다운 디자인을 통해<br>
+                                    조금 더 즐겁고 진화된 디지털 환경을 만들어 가는데 긍정적인 영향력을 제공하고자 합니다.
+                                </p>
+                                <a href="#" class="btn btn-next no-pd">
+                                    <span class="txt">More About Us</span>
+                                    <span class="icon icon-next"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content-btm">
+                            <div class="gallery-list-wrap swiper-container">
+                                <ul class="gallery-list swiper-wrapper">
+                                    <li class="list-item swiper-slide">
+                                        <a href="http://www.naver.com" target="_blank" class="list-link">
+                                            <figure class="img-holder image-cover">
+                                                <div class="img"></div>
+                                                <figcaption>
+                                                    <div class="txt-holder">
+                                                        <strong class="cap">Mobile APP</strong>
+                                                        <span class="title">KIA Motors UI. UX Project</span>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                        </a>
+                                    </li>
+                                    <li class="list-item swiper-slide">
+                                        <a href="#" class="list-link">
+                                            <figure class="img-holder image-cover">
+                                                <div class="img"></div>
+                                                <figcaption>
+                                                    <div class="txt-holder">
+                                                        <strong class="cap">Mobile APP</strong>
+                                                        <span class="title">KIA Motors UI. UX Project</span>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                        </a>
+                                    </li>
+                                    <li class="list-item swiper-slide">
+                                        <a href="#" class="list-link">
+                                            <figure class="img-holder image-cover">
+                                                <div class="img"></div>
+                                                <figcaption>
+                                                    <div class="txt-holder">
+                                                        <strong class="cap">Mobile APP</strong>
+                                                        <span class="title">KIA Motors UI. UX Project KIA Motors UI. UX Project</span>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                        </a>
+                                    </li>
+                                    <li class="list-item swiper-slide">
+                                        <a href="#" class="list-link">
+                                            <figure class="img-holder image-cover">
+                                                <div class="img"></div>
+                                                <figcaption>
+                                                    <div class="txt-holder">
+                                                        <strong class="cap">Mobile APP</strong>
+                                                        <span class="title">KIA Motors 4</span>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                        </a>
+                                    </li>
+                                    <li class="list-item swiper-slide">
+                                        <a href="#" class="list-link">
+                                            <figure class="img-holder image-cover">
+                                                <div class="img"></div>
+                                                <figcaption>
+                                                    <div class="txt-holder">
+                                                        <strong class="cap">Mobile APP</strong>
+                                                        <span class="title">KIA Motors 5</span>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                        </a>
+                                    </li>
+                                    <li class="list-item swiper-slide">
+                                        <a href="#" class="list-link">
+                                            <figure class="img-holder image-cover">
+                                                <div class="img"></div>
+                                                <figcaption>
+                                                    <div class="txt-holder">
+                                                        <strong class="cap">Mobile APP 7</strong>
+                                                        <span class="title">KIA Motors UI 7</span>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                        </a>
+                                    </li>
+                                    <li class="list-item swiper-slide">
+                                        <a href="#" class="list-link">
+                                            <figure class="img-holder image-cover">
+                                                <div class="img"></div>
+                                                <figcaption>
+                                                    <div class="txt-holder">
+                                                        <strong class="cap">Mobile APP</strong>
+                                                        <span class="title">KIA Motors 8 </span>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                        </a>
+                                    </li>
+                                    <li class="list-item swiper-slide">
+                                        <a href="#" class="list-link">
+                                            <figure class="img-holder image-cover">
+                                                <div class="img"></div>
+                                                <figcaption>
+                                                    <div class="txt-holder">
+                                                        <strong class="cap">Mobile APP</strong>
+                                                        <span class="title">KIA Motors 9</span>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                            <script>
+                                $(function(){
+                                    var mySwiper = new Swiper ('.swiper-container', {
+                                        slidesPerView: 3,
+                                        slidesPerGroup: 3,
+                                        mousewheel: true,
+                                        navigation: {
+                                            nextEl: '.swiper-button-next',
+                                            prevEl: '.swiper-button-prev',
+                                        },
+
+                                        // And if we need scrollbar
+                                        scrollbar: {
+                                            el: '.swiper-scrollbar',
+                                        },
+                                    })
+                                });
+                            </script>
+                            <!-- 포트폴리오 상세 페이지 -->
+                            <aside class="pop-gallery-detail">
+                                <div class="inner-detail">
+                                    <section class="dtail-sec-kv">
+                                        <div class="inner-sec">
+                                            <figure class="img-holder image-cover">
+                                                <div class="img"></div>
+                                            </figure>
+                                            <div class="txt-holder">
+                                                <div class="inner-box">
+                                                    <strong class="cap">Mobile APP</strong>
+                                                    <h1 class="title">KIA Motors UI. UX Project</h1>
+
+                                                    <a href="#" class="btn btn-next btn-white no-pd">
+                                                        <span class="txt">More About Us</span>
+                                                        <span class="icon icon-next icon-white"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="dtail-sec-1">
+                                        <div class="inner-sec">
+                                            <div class="detail-content-wrap">
+                                                <h2 class="detail-title">About</h2>
+                                                <div class="detail-content">
+                                                    <div class="desc-box">
+                                                        <p>기아자동차의 차량시승 신청 서비스 개선을 진행하였습니다.</p>
+
+                                                        <p>기존의 사용자 경험 분석을 통해, 모바일을 중심으로 하는 변화하는 환경에 맞춰
+                                                            일관성 있고 유연한 프로세스를 경험을 제공하고, 감각적인 브랜드 이미지를 제공하는 방향으로 개선하였습니다.</p>
+
+                                                        <p>PC 중심으로 설계된 나열식 정보 제공방식에서 벗어나, 명확하고 일관성 있는 구성과 빠르게 접근할 수 있는 UI로 구성하여
+                                                            사용자가 빠르고 간편하게 정보를 얻고, 서비스를 이용할 수 있도록 하였습니다.</p>
+
+                                                        <p>마이크로 인터랙션 요소를 적용하여 긍정적인 사용자 경험을 유도하고, 소통을 통한 채널 확대 및 허브 역할을 강화하였습니다.</p>
+                                                    </div>
+
+                                                    <h3 class="sub-title">SERVICES</h3>
+                                                    <div class="desc">
+                                                        Website, Mobile
+                                                    </div>
+
+                                                    <h3 class="sub-title">SERVICES</h3>
+                                                    <div class="desc">
+                                                        Stragety, UX research, concepts, messaging hierarchy,<br>
+                                                        web design (IA, IxD, design, UX/UI design, prototyping,, animation), TOV, content definition.
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <div class="btn-area">
+                                        <a href="" class="btn btn-circle big-size">
+                                            <span class="txt">Go To List</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="inner-wrap">
+                <div class="inner-content">
+                    <p class="copyright">
+                        COPYRIGHT 2020 In’s Planet, ALL RIGHTS RESERVED.
+                    </p>
+                    <div class="etc-menu">
+                        <a href="#" class="btn btn-download">
+                            <span class="txt">BUSINESS BORCHURE</span>
+                            <span class="icon icon-download"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- //Page Content -->
+    </div>
+</div>
+
+<!-- VendorJS -->
+<script src="assets/vendors/jquery.easing-1.3.min.js"></script>
+<script src="assets/vendors/jquery.mousewheel.js"></script>
+<script src="assets/vendors/swiper/swipe.js"></script>
+
+<!-- App JS -->
+<script src="assets/js/interactive/App.js"></script>
+</body>
+</html>

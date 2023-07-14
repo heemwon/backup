@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <g data-name="사각형 1814" style="stroke-width:1.5px;stroke:#1d1d1d;fill:#fff">
+        <path style="stroke:none" d="M0 0h27v22H0z" transform="translate(7 1)"/>
+        <path style="fill:none" d="M.75.75h25.5v20.5H.75z" transform="translate(7 1)"/>
+    </g>
+    <path data-name="Stroke 3" d="M0 .367h6.956" transform="translate(23 7.633)" style="stroke:#000;stroke-miterlimit:10;fill:none;stroke-width:1.5px"/>
+    <path data-name="Stroke 5" d="M0 .367h6.956" transform="translate(23 11.307)" style="stroke:#000;stroke-miterlimit:10;fill:none;stroke-width:1.5px"/>
+    <path data-name="Stroke 9" d="M0 7.417h6.82V0H0z" transform="translate(11.659 6.103)" style="fill:#4b6ceb;stroke-linecap:round;stroke:#000;stroke-miterlimit:10;stroke-width:1.5px"/>
+    <path data-name="Stroke 10" d="M31 22.041H0V2h10.749l4.007 2.939H31v17.1z" transform="translate(4.5 17.062)" style="stroke:#000;stroke-miterlimit:10;stroke-width:1.5px;fill:#fff"/>
+</svg>

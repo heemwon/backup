@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../js/libs/jquery.min.js"></script>
+    <script src="../js/libs/jquery-ui.min.js"></script>
+    <script src="../js/libs/jquery.selectric.js"></script>
+    <script src="../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../js/sub.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    
+    <link rel="stylesheet" href="../css/simple.css">
+    <script src="../js/simple.js"></script>
+    <title>수수료결제</title>
+</head>
+
+<body>
+
+    <!-- 본문영역 -->
+    <div class="area-content">
+        <div class="area-inner">
+
+            <div class="content-wrap">
+
+                <!-- 타이틀, indicator -->
+                <section class="page-title-sec">
+                    <div class="title-btn-con">
+                        <div class="title-con">
+                            <h3>간편등기 신청</h3>
+                        </div>
+                        <!-- 간편등기 step indicator -->
+                        <div class="indicator-wrap" data-slide="indiCon">
+                            <ul class="indicator-con">
+                                <li>
+                                    <button type="button">
+                                        <span class="num">1</span>
+                                        <span class="title">등기대상 선택</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button">
+                                        <span class="num">2</span>
+                                        <span class="title">신청서 작성</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button">
+                                        <span class="num">3</span>
+                                        <span class="title">작성내역 확인</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="active">
+                                        <span class="num">4</span>
+                                        <span class="title">수수료결제</span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <span class="active-bar" style="width: 93px; right: 0;"></span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 간편등기 slider 컨테이너 -->
+                <div class="slide-wrap">
+                    <!-- slider -->
+                    <div class="slide-con" data-slide="slideCon">
+                        <div class="content-wrap active" data-slide="slide">
+                            <div class="content-con">
+                                <!-- 내용영역 -->
+                                <section class="simple-sec full">
+                                    <div class="complete-msg-con">
+                                        <p class="title">
+                                            <span class="color-main">신청서 작성이 완료</span>되었습니다.
+                                        </p>
+                                        <p class="desc">
+                                            등기신청 수수료 <span class="ff-roboto color-1d">1,000</span>원을 결제합니다.
+                                        </p>
+                                    </div>
+                                    <div class="sec-body">
+                                        <div class="accordion-wrap">
+                                            <ul class="accordion-con">
+                                                <li class="active">
+                                                    <p class="title-con no-bg">
+                                                        <span class="title">결제 수단</span>
+                                                    </p>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con payment">
+                                                            <div class="cont-body">
+                                                                <ul class="tabmenu-con" data-tab="container" id="tabmenu0">
+                                                                    <li class="tabmenu-item active">
+                                                                        <a href="#none">
+                                                                            <div class="inline-wrap">
+                                                                                <img src="../img/ico_payment_credit.svg" alt="card">
+                                                                                <span class="fs-18">신용카드 결제</span>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="tabmenu-item">
+                                                                        <a href="#none">
+                                                                            <div class="inline-wrap">
+                                                                                <img src="../img/ico_payment_advance.svg" alt="advance">
+                                                                                <span class="fs-18">선불전자지급수단</span>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="tabmenu-item">
+                                                                        <a href="#none">
+                                                                            <div class="inline-wrap">
+                                                                                <img src="../img/ico_payment_mobile.svg" alt="mobile">
+                                                                                <span class="fs-18">모바일 결제</span>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                                <div class="tabchild-con" data-tab-bind="tabmenu0">
+                                                                    <!-- 신용카드 결제 -->
+                                                                    <div class="tabchild-item active">
+                                                                        <!-- 카드종류 선택 -->
+                                                                        <section class="content-sec">
+                                                                            <div class="sec-head">
+                                                                                <h4>카드종류 선택</h4>
+                                                                            </div>
+                                                                            <div class="sec-body">
+                                                                                <div class="card-wrap">
+                                                                                    <div class="card-con">
+                                                                                        <span class="item-con">
+                                                                                            <input type="radio" name="card" id="nh">
+                                                                                            <label for="nh" class="icon-nh">
+                                                                                                <span>NH농협</span>
+                                                                                            </label>
+                                                                                        </span>
+                                                                                        <span class="item-con">
+                                                                                            <input type="radio" name="card" id="shinhan">
+                                                                                            <label for="shinhan" class="icon-shinhan">
+                                                                                                <span>신한카드 (구LG 카드)</span>
+                                                                                            </label>
+                                                                                        </span>
+                                                                                        <span class="item-con">
+                                                                                            <input type="radio" name="card" id="bc">
+                                                                                            <label for="bc" class="icon-bc">
+                                                                                                <span>비씨카드</span>
+                                                                                            </label>
+                                                                                        </span>
+                                                                                        <span class="item-con">
+                                                                                            <input type="radio" name="card" id="kb">
+                                                                                            <label for="kb" class="icon-kb">
+                                                                                                <span>KB카드</span>
+                                                                                            </label>
+                                                                                        </span>
+                                                                                        <span class="item-con">
+                                                                                            <input type="radio" name="card" id="hyundai">
+                                                                                            <label for="hyundai" class="icon-hyundai">
+                                                                                                <span>현대카드</span>
+                                                                                            </label>
+                                                                                        </span>
+                                                                                        <span class="item-con">
+                                                                                            <input type="radio" name="card" id="hana">
+                                                                                            <label for="hana" class="icon-hana">
+                                                                                                <span>하나카드(구 외환)</span>
+                                                                                            </label>
+                                                                                        </span>
+                                                                                        <span class="item-con">
+                                                                                            <input type="radio" name="card" id="samsung">
+                                                                                            <label for="samsung" class="icon-samsung">
+                                                                                                <span>삼성카드</span>
+                                                                                            </label>
+                                                                                        </span>
+                
+                                                                                        <span class="item-con">
+                                                                                            <input type="radio" name="card" id="lotte">
+                                                                                            <label for="lotte" class="icon-lotte">
+                                                                                                <span>롯데카드</span>
+                                                                                            </label>
+                                                                                        </span>
+                                                                                        <span class="item-con">
+                                                                                            <input type="radio" name="card" id="citi">
+                                                                                            <label for="citi" class="icon-citi">
+                                                                                                <span>citi(한미)카드</span>
+                                                                                            </label>
+                                                                                        </span>
+                                                                                        <span class="item-con">
+                                                                                            <input type="radio" name="card" id="woori">
+                                                                                            <label for="woori" class="icon-woori">
+                                                                                                <span>우리카드</span>
+                                                                                            </label>
+                                                                                        </span>
+                                                                                        <span class="item-con">
+                                                                                            <input type="radio" name="card" id="hana2">
+                                                                                            <label for="hana2" class="icon-hana">
+                                                                                                <span>하나카드(구 하나SK)</span>
+                                                                                            </label>
+                                                                                        </span>
+                                                                                        <span class="item-con">
+                                                                                            <input type="radio" name="card" id="jb">
+                                                                                            <label for="jb" class="icon-jb">
+                                                                                                <span>전북JB카드</span>
+                                                                                            </label>
+                                                                                        </span>
+                                                                                        <span class="item-con">
+                                                                                            <input type="radio" name="card" id="jb2">
+                                                                                            <label for="jb2" class="icon-jb">
+                                                                                                <span>KJB광주카드</span>
+                                                                                            </label>
+                                                                                        </span>
+                                                                                        <span class="item-con">
+                                                                                            <input type="radio" name="card" id="suhyup">
+                                                                                            <label for="suhyup" class="icon-suhyup">
+                                                                                                <span>수협카드</span>
+                                                                                            </label>
+                                                                                        </span>
+                
+                                                                                        <span class="item-con">
+                                                                                            <input type="radio" name="card" id="mg">
+                                                                                            <label for="mg" class="icon-mg">
+                                                                                                <span>MG새마을체크</span>
+                                                                                            </label>
+                                                                                        </span>
+                                                                                        <span class="item-con">
+                                                                                            <input type="radio" name="card" id="epost">
+                                                                                            <label for="epost" class="icon-epost">
+                                                                                                <span>우체국카드</span>
+                                                                                            </label>
+                                                                                        </span>
+                                                                                        <span class="item-con">
+                                                                                            <input type="radio" name="card" id="sb">
+                                                                                            <label for="sb" class="icon-sb">
+                                                                                                <span>상호저축은행</span>
+                                                                                            </label>
+                                                                                        </span>
+                                                                                        <span class="item-con">
+                                                                                            <input type="radio" name="card" id="kdb">
+                                                                                            <label for="kdb" class="icon-kdb">
+                                                                                                <span>KDB산업은행카드</span>
+                                                                                            </label>
+                                                                                        </span>
+                                                                                        <span class="item-con">
+                                                                                            <input type="radio" name="card" id="jeju">
+                                                                                            <label for="jeju" class="icon-shinhan">
+                                                                                                <span>제주은행</span>
+                                                                                            </label>
+                                                                                        </span>
+                                                                                        <span class="item-con">
+                                                                                            <input type="radio" name="card" id="shinhyup">
+                                                                                            <label for="shinhyup" class="icon-shinhyup">
+                                                                                                <span>신협체크</span>
+                                                                                            </label>
+                                                                                        </span>
+                                                                                        <span class="item-con">
+                                                                                            <input type="radio" name="card" id="kb2">
+                                                                                            <label for="kb2" class="icon-kb">
+                                                                                                <span>KB증권(현대증권)</span>
+                                                                                            </label>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </section>
+                
+                                                                        <!-- 서비스 이용방법 -->
+                                                                        <section class="content-sec">
+                                                                            <div class="sec-head">
+                                                                                <h4>서비스 이용방법</h4>
+                                                                            </div>
+                                                                            <div class="sec-body">
+                                                                                <div class="border-box-wrap tarea fs-15 fw-500">
+                                                                                    <p class="">카드종류를 선택하신 후</p>
+                                                                                    <ul class="list-number color-1d mt10">
+                                                                                        <li><div>일반결제(ISP) 카드의  경우 ISP인증서를 선택하신 후 ISP비밀번호를 입력하여 인증</div></li>
+                                                                                        <li>
+                                                                                            <div>
+                                                                                                그외 카드의 경우 해당 카드사에서 제공하는 결제방법(앱, 간편결제 등)을 선택하신 후 관련 정보를 입력하여 인증
+                                                                                                <ul class="list-bullet color-86">
+                                                                                                    <li><div>기발급된 구)LG카드를 소지하신 고객께서는 신한카드 선택</div></li>
+                                                                                                    <li><div>구)외환카드 또는 구)하나SK카드를 소지하신 고객께서는 하나카드 선택</div></li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                    <p class=" color-dc mt10">&#42; 해외에서 발행한 카드는 사용이 불가능합니다.</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </section>
+                                                                    </div>
+                                                                    <!-- 선불전자지급수단 -->
+                                                                    <div class="tabchild-item">
+                                                                        <section class="content-sec mt25 mb16">
+                                                                            <div class="border-box-wrap">
+                                                                                <ul class="list-bullet fs-15 color-41">
+                                                                                    <li>
+                                                                                        <div>선불전자지급수단번호 12자리에 알파벳이 포함된 경우는 대/소문자를 구분해서 입력해 주시기 바랍니다.</div>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <div>선불전자지급수단의 구입, 충전 사용방법 <a href="#none" class="text-btn icon-next ml20">전자민원캐시</a></div>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                            <ul class="form-wrap mt25">
+                                                                                <li>
+                                                                                    <div class="title">
+                                                                                        <label for="prepaid">선불전자지급수단번호</label>
+                                                                                    </div>
+                                                                                    <div class="cont">
+                                                                                        <div class="inline-wrap">
+                                                                                            <input type="text" name="" id="prepaid" class="w240" placeholder="">
+                                                                                            <span class="hyphen"></span>
+                                                                                            <label for="">
+                                                                                                <input type="text" name="" id="" class="w240" placeholder="">
+                                                                                            </label>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <div class="title">
+                                                                                        <label for="pass">비밀번호</label>
+                                                                                    </div>
+                                                                                    <div class="cont">
+                                                                                        <input type="text" name="" id="pass" class="w510" placeholder="">
+                                                                                    </div>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </section>
+                                                                    </div>
+                                                                    <!-- 휴대폰 결제 -->
+                                                                    <div class="tabchild-item">
+                                                                        <section class="content-sec mt25 mb16">
+                                                                            <div class="border-box-wrap">
+                                                                                <ul class="list-star fs-15 color-41">
+                                                                                    <li>
+                                                                                        <div>보유하고 게신 휴대폰의 휴대폰 번호와 명의인의 생년월일-성별을 입력합니다.</div>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <div>인증번호가 휴대폰 문자 메시지로 전송된 것을 확인하신 후 전송된 인증번호를 입력합니다.</div>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <div>열람 및 발급 서비스를 이용하면 추후 휴대폰 통화료에 열람/발급 수수료가 포함되어 청구됩니다.</div>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <div>3분이내에 결제 혹은 재전송하지 않을 경우 다시 인증을 받아야 합니다.</div>
+                                                                                    </li>
+                                                                                    <li class="color-86">
+                                                                                        <div>2006년 9월 24일 주민등록법 시행으로인하여 타인의 주민등록법에 대한 단순 도용도 처벌이 되므로 유의바랍니다.</div>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                            <ul class="form-wrap mt25">
+                                                                                <li>
+                                                                                    <div class="title">
+                                                                                        제공기간
+                                                                                    </div>
+                                                                                    <div class="cont">
+                                                                                        <span class="color-1d">월 자동결제</span>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <div class="title">
+                                                                                        <label for="phone">휴대폰 번호</label>
+                                                                                    </div>
+                                                                                    <div class="cont">
+                                                                                        <div class="inline-wrap">
+                                                                                            <span class="select-con w116">
+                                                                                                <select name="" id="phone">
+                                                                                                    <option value="SKT">SKT</option>
+                                                                                                    <option value="KT">KT</option>
+                                                                                                    <option value="LG">LG</option>
+                                                                                                </select>
+                                                                                            </span>
+                                                                                            <label for="">
+                                                                                                <input type="text" name="" id="" class="w116" placeholder="">
+                                                                                            </label>
+                                                                                            <span class="hyphen"></span>
+                                                                                            <label for="">
+                                                                                                <input type="text" name="" id="" class="w116" placeholder="">
+                                                                                            </label>
+                                                                                            <span class="hyphen"></span>
+                                                                                            <label for="">
+                                                                                                <input type="text" name="" id="" class="w116" placeholder="">
+                                                                                            </label>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <div class="title">
+                                                                                        <label for="iden">명의인 주민등록번호</label>
+                                                                                    </div>
+                                                                                    <div class="cont">
+                                                                                        <div class="inline-wrap">
+                                                                                            <input type="text" name="" id="iden" class="w240" placeholder="">
+                                                                                            <span class="hyphen"></span>
+                                                                                            <label for="">
+                                                                                                <input type="text" name="" id="" class="w47 disable-clear-btn" placeholder="">
+                                                                                            </label>
+                                                                                            <span class="fs-14 color-1d">●●●●●●</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </section>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="active">
+                                                    <p class="title-con no-bg">
+                                                        <span class="title">이용동의</span>
+                                                    </p>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con payment">
+                                                            <div class="cont-body">
+                                                                <div>
+                                                                    <span class="checkbox-con">
+                                                                        <input type="checkbox" name="" id="total-agree">
+                                                                        <label for="total-agree" class="fw-bold">아래의 주요 안내 및 약관을 확인하고 모두 동의합니다.</label>
+                                                                    </span>
+                                                                </div>
+                                                                <div class="terms-agree-wrap">
+                                                                    <ul class="list-bullet color-41">
+                                                                        <li><div>결제정보는 대법원 인터넷등기소 시스템에 저장되어 결제취소 및 수수료결제내역 조회 시 이용되며 재판 및 수사를 위한 자료로도 활용될 수 있습니다.</div></li>
+                                                                        <li><div>해당 정보는 영구적으로 보관되며 수집 및 이용에 동의하지 않을 경우 열람&middot;발급 서비스를 이용할 수 없습니다.</div></li>
+                                                                    </ul>
+                                                                    <ul class="checkbox-wrap">
+                                                                        <li>
+                                                                            <span class="checkbox-con only-box">
+                                                                                <input type="checkbox" name="" id="payment"><label for="payment"></label>
+                                                                            </span>
+                                                                            <a href="#none" class="text-btn color-1d icon-next">전자지급결제대행 서비스 이용 약관 동의</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="checkbox-con only-box">
+                                                                                <input type="checkbox" name="" id="privacy"><label for="privacy"></label>
+                                                                            </span>
+                                                                            <a href="#none" class="text-btn color-1d icon-next">개인정보 수집 및 이용 약관 동의</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="checkbox-con only-box">
+                                                                                <input type="checkbox" name="" id="privacy2"><label for="privacy2"></label>
+                                                                            </span>
+                                                                            <a href="#none" class="text-btn color-1d icon-next">개인정보 제3자 제공 및 위탁 약관 동의</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- // 내용영역 -->
+
+                                <!-- 버튼영역 -->
+                                <section class="button-sec">
+                                    <div class="flex-wrap">
+                                        <div class="left-con">
+                                            <button type="button" class="btn large" onclick="popupManager.openPopup('#popup-apply-stop')">취소</button>
+                                        </div>
+                                        <div class="right-con">
+                                            <button type="button" class="btn-solid large color-4d prev-btn" data-slide="prev">이전</button>
+                                            <button type="button" class="btn-solid large color-52" onclick="popupManager.openPopup('#popup-payment-complete')">결제 후 신청서 제출</button>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- // 버튼영역 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- 도움말 -->
+        <div class="contain-help"><!-- area-content에 'help'클래스 추가/삭제 -->
+            <div class="contain-inner">
+
+                <h1 class="title">간편도움말</h1>
+                <div class="tab-anchor">
+                    <button class="on">이용안내</button>
+                    <button>이용절차</button>
+                    <button>용어해설</button>
+                    <button>오류시 조치</button>
+                </div>
+                <div class="box-body tab-help1 on">
+                    <dl class="help-define">
+                        <dt>신청서 기재사항 입력1</dt>
+                        <dd>신청서 작성은 전체 5개의 화면으로 구성되어 있으며 제출방식을 전자로 선택하고, 부동산표시, 등기의무자정보, 등기권리자정보, 신청인정보 등을 입력합니다.
+                            <p class="text-em">자주쓰는 유형 등록 버튼을 눌러 자주 이용하는 유형을 저
+                                장해두면,  ‘등기유형 선택’ 목록에 반영되어 신청서 작성
+                                시 쉽게 이용할 수 있습니다.</p>
+                                <ul class="list-em">
+                                    <li>자주쓰는 유형 등록 버튼을 눌러 자주 이용하는 유형을 저
+                                        장해두면,  ‘등기유형 선택’ 목록에 반영되어 신청서 작성
+                                        시 쉽게 이용할 수 있습니다.</li>
+                                </ul>
+                        </dd>
+                    </dl>
+                    <span class="link-more"><a href="">더보기</a></span>
+                </div>
+                <div class="box-body tab-help2">
+                    <dl class="help-define">
+                        <dt>신청서 기재사항 입력2</dt>
+                        <dd>신청서 작성은 전체 5개의 화면으로 구성되어 있으며 제출방식을 전자로 선택하고, 부동산표시, 등기의무자정보, 등기권리자정보, 신청인정보 등을 입력합니다.
+                            <p class="text-em"></p>
+                        </dd>
+                    </dl>
+                    <span class="link-more"><a href="">더보기</a></span>
+                </div>
+                <div class="box-body tab-help3">
+                    <dl class="help-define">
+                        <dt>신청서 기재사항 입력3</dt>
+                        <dd>신청서 작성은 전체 5개의 화면으로 구성되어 있으며 제출방식을 전자로 선택하고, 부동산표시, 등기의무자정보, 등기권리자정보, 신청인정보 등을 입력합니다.
+                            <p class="text-em"></p>
+                        </dd>
+                    </dl>
+                    <span class="link-more"><a href="">더보기</a></span>
+                </div>
+                <div class="box-body tab-help4">
+                    <dl class="help-define">
+                        <dt>신청서 기재사항 입력4</dt>
+                        <dd>신청서 작성은 전체 5개의 화면으로 구성되어 있으며 제출방식을 전자로 선택하고, 부동산표시, 등기의무자정보, 등기권리자정보, 신청인정보 등을 입력합니다.
+                            <p class="text-em"></p>
+                        </dd>
+                    </dl>
+                    <span class="link-more"><a href="">더보기</a></span>
+                </div>
+                <span class="btn-close"><button>닫기</button></span>
+
+            </div>
+        </div>
+        <!-- //도움말 -->
+    </div>
+    <!-- //본문영역 -->
+
+    <!-- 결제완료 -->
+    <div class="popup-wrap" id="popup-payment-complete">
+        <div class="content-wrap payment">
+            <div class="popup-body">
+                <div class="popup-cont">
+                    
+                    <!-- 승인 메세지 -->
+                    <section class="payment-complete-sec">
+                        <div class="sec-head">
+                            <div class="lottie-con">
+                                <!-- <img src="../img/ico_commit.svg" alt="Confirm"> -->
+                                <span id="lottie-checked"></span>
+                            </div>
+                            <p class="msg">
+                                <span class="color-main">신청서가 정상적으로 제출</span>되었습니다.
+                            </p>
+                            <!-- <p class="fs-18 color-86 mt10">
+                                - 작성번호 : 33110<br/>
+                                - 작성일자 : 2021-08-10
+                            </p> -->
+                        </div>
+                        <div class="sec-body mt40">
+                            <h4 class="title">등기신청정보</h4>
+                            <div class="table-body">
+                                <table class="table-detail">
+                                    <caption>신청정보</caption>
+                                    <colgroup>
+                                        <col style="width: 116px;">
+                                        <col style="width: auto;">
+                                        <col style="width: 116px;">
+                                        <col style="width: auto;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                신청구분
+                                            </th>
+                                            <td class="ff-roboto">
+                                                등기명의인표시변경
+                                            </td>
+                                            <th scope="row">
+                                                등기원인
+                                            </th>
+                                            <td class="ff-roboto">
+                                                주소변경
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                신청일시
+                                            </th>
+                                            <td>
+                                                2021-11-02 15:25:20
+                                            </td>
+                                            <th scope="row">
+                                                처리결과
+                                            </th>
+                                            <td>
+                                                <strong class="color-error">정상</strong>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="sec-body mt24">
+                            <h4 class="title">결제정보</h4>
+                            <div class="table-body">
+                                <table class="table-detail">
+                                    <caption>결제정보</caption>
+                                    <colgroup>
+                                        <col style="width: 116px;">
+                                        <col style="width: auto;">
+                                        <col style="width: 116px;">
+                                        <col style="width: auto;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                거래번호
+                                            </th>
+                                            <td class="ff-roboto">
+                                                YES123987465651
+                                            </td>
+                                            <th scope="row">
+                                                거래일시
+                                            </th>
+                                            <td class="ff-roboto">
+                                                2021-11-02 15:24:11
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                승인번호
+                                            </th>
+                                            <td>
+                                                0S21031023012304923
+                                            </td>
+                                            <th scope="row">
+                                                결제금액
+                                            </th>
+                                            <td>
+                                                <span class="fs-16 fw-bold color-error">
+                                                    <span class="ff-roboto">1,000</span>원
+                                                </span> &nbsp;
+                                                (우리카드)
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 버튼 -->
+                    <section class="button-sec mt40">
+                        <div class="tc">
+                            <button type="button" class="btn-solid large color-4d" onclick="popupManager.closePopup(); simpleSlide.moveTo(3)">확인</button>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+        <div class="dim-wrap" data-prevent-close></div>
+    </div>
+
+</body>
+</html>

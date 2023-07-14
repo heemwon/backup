@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#707070;stroke-linecap:round;stroke-linejoin:round}
+        </style>
+    </defs>
+    <g id="btn_ico_trash_bk" transform="translate(-2 -1.222)">
+        <path id="패스_4088" data-name="패스 4088" class="cls-1" d="M4.5 9h9.4" transform="translate(0 -3.911)"/>
+        <path id="패스_4089" data-name="패스 4089" class="cls-1" d="M14.811 5.089V12.4a1.044 1.044 0 0 1-1.044 1.044H8.544A1.044 1.044 0 0 1 7.5 12.4V5.089m1.567 0V4.044A1.044 1.044 0 0 1 10.111 3H12.2a1.044 1.044 0 0 1 1.044 1.044v1.045" transform="translate(-1.956)"/>
+        <path id="패스_4090" data-name="패스 4090" class="cls-1" d="M15 16.5v3.133" transform="translate(-6.844 -8.8)"/>
+        <path id="패스_4091" data-name="패스 4091" class="cls-1" d="M21 16.5v3.133" transform="translate(-10.755 -8.8)"/>
+    </g>
+</svg>

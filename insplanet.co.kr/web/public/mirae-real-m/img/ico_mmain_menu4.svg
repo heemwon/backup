@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45">
+    <defs>
+        <style>
+            .cls-1{fill:#fff;stroke:#000;stroke-width:1.5px}
+        </style>
+    </defs>
+    <g id="부동산계약정보" transform="translate(3.027 5)">
+        <path id="Op_component_2" data-name="Op component 2" class="cls-1" d="M20.972 0H4C1.791 0 0 2.279 0 5.091V28h20.972V0z" transform="translate(8 7.5)"/>
+        <path id="Op_component_2-2" data-name="Op component 2" class="cls-1" d="M22.972 0H0v35h22.972V0z" transform="translate(.473 .5)"/>
+        <path id="Op_component_1" data-name="Op component 1" class="cls-1" transform="translate(5.44 6.47)" d="M0 0h5.046v5.046H0z"/>
+        <path id="Op_component_3" data-name="Op component 3" class="cls-1" transform="translate(5.44 15.707)" d="M0 0h5.046v5.046H0z"/>
+        <g id="Group_23" data-name="Group 23" transform="translate(.473 -6)">
+            <path id="Fill_5" data-name="Fill 5" d="M6.78 0A6.779 6.779 0 1 1 0 6.78 6.779 6.779 0 0 1 6.78 0" transform="translate(19.509 20.339)" style="fill:#f4c215;stroke:#000;stroke-width:1.5px"/>
+            <path id="Stroke_21" data-name="Stroke 21" d="m0 0 4.222 4.788" transform="translate(30.978 32.012)" style="fill:none;stroke-miterlimit:10;stroke:#000;stroke-width:1.5px"/>
+        </g>
+    </g>
+</svg>

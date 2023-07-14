@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#1d1d1d}
+        </style>
+    </defs>
+    <g id="ico_apply_filter_close" transform="translate(-1286 -1331)">
+        <path id="선_472" d="M0 0L14 0" class="cls-1" transform="translate(1287 1339)"/>
+        <path id="선_476" d="M0 14L0 0" class="cls-1" transform="translate(1294 1332)"/>
+    </g>
+</svg>

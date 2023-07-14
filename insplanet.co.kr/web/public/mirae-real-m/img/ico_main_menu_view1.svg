@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41">
+    <defs>
+        <style>
+            .cls-4{stroke:none}
+        </style>
+    </defs>
+    <g id="ico_main_menu_view1" transform="translate(0.116 -0.02)">
+        <g id="합치기_62" fill="none">
+            <path d="M0 35V14.583L17.177 0l17.177 14.583V35z" class="cls-4" transform="translate(3.655 3.02)"/>
+            <path fill="#fff" d="M32.854 33.5V15.277L17.177 1.967 1.5 15.278V33.5h31.354m1.5 1.5H0V14.583L17.177 0l17.177 14.583V35z" transform="translate(3.655 3.02)"/>
+        </g>
+        <g id="사각형_707" fill="none" stroke="#fff" stroke-width="1.5px">
+            <path d="M5.5 0A5.5 5.5 0 0 1 11 5.5V14H0V5.5A5.5 5.5 0 0 1 5.5 0z" class="cls-4" transform="translate(14.884 24.02)"/>
+            <path d="M5.5.75a4.75 4.75 0 0 1 4.75 4.75v7.365a.385.385 0 0 1-.385.385h-8.73a.385.385 0 0 1-.385-.385V5.5A4.75 4.75 0 0 1 5.5.75z" transform="translate(14.884 24.02)"/>
+        </g>
+    </g>
+</svg>

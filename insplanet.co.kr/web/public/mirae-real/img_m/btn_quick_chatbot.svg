@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <clipPath id="clip-path">
+            <ellipse id="타원_239" cx="14" cy="13.5" fill="#fff" stroke="#101010" stroke-width="1.2px" rx="14" ry="13.5" transform="translate(54 -36)"/>
+        </clipPath>
+        <style>
+            .cls-5{stroke:#101010;fill:#fec867}.cls-12{fill:none}.cls-11{stroke:none}
+        </style>
+    </defs>
+    <g id="btn_quick_chatbot" transform="translate(-15 48)">
+        <g id="그룹_3607" transform="translate(-33)">
+            <circle id="타원_235" cx="14" cy="14" r="14" fill="#e0e0e0" transform="translate(54 -37)"/>
+            <g id="마스크_그룹_50" clip-path="url(#clip-path)">
+                <g id="사각형_1788" class="cls-5" transform="translate(56 -18)">
+                    <rect width="24" height="20" class="cls-11" rx="8"/>
+                    <rect width="23" height="19" x=".5" y=".5" class="cls-12" rx="7.5"/>
+                </g>
+            </g>
+            <g id="사각형_1787" fill="#fff" stroke="#000" transform="translate(53 -32)">
+                <rect width="30" height="9" class="cls-11" rx="4"/>
+                <rect width="29" height="8" x=".5" y=".5" class="cls-12" rx="3.5"/>
+            </g>
+            <rect id="사각형_1785" width="24" height="20" fill="#4a5dc6" rx="10" transform="translate(56 -39)"/>
+            <rect id="사각형_1786" width="16" height="12" fill="#fff" rx="4" transform="translate(60 -34)"/>
+            <circle id="타원_236" cx="1.5" cy="1.5" r="1.5" transform="translate(62 -31)"/>
+            <circle id="타원_237" cx="1.5" cy="1.5" r="1.5" transform="translate(71 -31)"/>
+            <g id="타원_238" class="cls-5" transform="translate(66 -46)">
+                <circle cx="2.5" cy="2.5" r="2.5" class="cls-11"/>
+                <circle cx="2.5" cy="2.5" r="2" class="cls-12"/>
+            </g>
+            <path id="선_480" fill="none" stroke="#000" d="M0 0L0 3" transform="translate(68.5 -41.5)"/>
+            <path id="패스_4082" fill="none" stroke="#000" stroke-linecap="round" d="M32.8-26.578s.039 1 3.081 1 2.987-1 2.987-1" transform="translate(32.135)"/>
+        </g>
+    </g>
+</svg>

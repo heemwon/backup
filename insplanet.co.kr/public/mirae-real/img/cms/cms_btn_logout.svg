@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+    <g data-name="ico / logout">
+        <path style="opacity:.2;fill:none" d="M0 0h18v18H0z"/>
+        <path data-name="패스 253" d="M870 636.143h6.716a1.669 1.669 0 0 1 1.279 1.8v10.026s.157 2.17-1.279 2.17H870" transform="translate(-862.564 -634.74)" style="stroke:#fff;stroke-width:1.5px;fill:none"/>
+        <path data-name="패스 254" d="M863 643.144h6.191" transform="translate(-858.659 -634.796)" style="stroke:#fff;stroke-width:1.5px;fill:none"/>
+        <path data-name="다각형 3" d="M2.251 0 4.5 3.752H0z" transform="rotate(-90 5.751 4.751)" style="fill:#fff"/>
+    </g>
+</svg>

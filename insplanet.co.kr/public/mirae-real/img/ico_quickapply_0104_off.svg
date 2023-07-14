@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="패스_4108" data-name="패스 4108" d="M0 0h23s1.731 4-.553 4.841A20.573 20.573 0 0 0 17.759 7.6L5.994 19.191 5.063 25H0z" transform="translate(452 842.717)" style="fill:#303871"/>
+        </clipPath>
+        <style>
+            .cls-3,.cls-7{fill:none}.cls-3{stroke:#fff;stroke-width:2px}.cls-6{stroke:none}
+        </style>
+    </defs>
+    <g id="ico_quickapply_0104" transform="translate(-1139 -413)">
+        <g id="그룹_4039" data-name="그룹 4039" transform="translate(691 -414.717)">
+            <g id="사각형_1906" data-name="사각형 1906" class="cls-3" transform="translate(458 827.717)">
+                <rect class="cls-6" width="11" height="13" rx="5.5"/>
+                <rect class="cls-7" x="1" y="1" width="9" height="11" rx="4.5"/>
+            </g>
+            <path id="빼기_14" data-name="빼기 14" d="M7818.5 6429.716a14.4 14.4 0 0 1-10.253-4.248 14.674 14.674 0 0 1-1.748-2.107v-16.291a14.647 14.647 0 0 1 1.748-2.107 14.5 14.5 0 1 1 10.253 24.753zm-2.66-12.013v5.238h2.07v-.956h6.139v.737h2.05v-7.146h-6.352a20.481 20.481 0 0 0 5.416-5.453l-1.3-1.134h-4.394c.126-.2.267-.424.454-.741l.042-.069.027-.045.071-.118-2.087-.845a14.76 14.76 0 0 1-5.667 5.579l1.457 1.586c.625-.362 1.2-.768 1.757-1.16l.014-.01.155-.11a18.288 18.288 0 0 1 1.909 1.439 28 28 0 0 1-5.709 2.376l.9 2a31.209 31.209 0 0 0 3.04-1.169zm8.209 2.43h-6.139v-2.7h6.139v2.7zm-4.627-6.839a18.242 18.242 0 0 0-2.2-1.584c.35-.345.627-.633.847-.881h3.8a12.737 12.737 0 0 1-2.447 2.465z" transform="translate(-7339 -5554)" style="opacity:.25;fill:#fff"/>
+            <g id="마스크_그룹_54" data-name="마스크 그룹 54" style="clip-path:url(#clip-path)">
+                <g id="사각형_1907" data-name="사각형 1907" class="cls-3" transform="translate(452 842.717)">
+                    <rect class="cls-6" width="22" height="22" rx="5"/>
+                    <rect class="cls-7" x="1" y="1" width="20" height="20" rx="4"/>
+                </g>
+            </g>
+            <path id="선_622" data-name="선 622" class="cls-3" transform="translate(457.368 849.744)" d="M0 0v25.473"/>
+            <path id="선_623" data-name="선 623" class="cls-3" transform="translate(468.285 849.744)" d="M0 0v25.473"/>
+            <path id="선_624" data-name="선 624" class="cls-3" transform="translate(462.827 862.48)" d="M0 0v12.737"/>
+        </g>
+    </g>
+</svg>

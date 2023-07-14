@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../../js/libs/jquery.min.js"></script>
+    <script src="../../js/libs/jquery-ui.min.js"></script>
+    <script src="../../js/libs/jquery.selectric.js"></script>
+    <script src="../../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../../js/sub.js"></script>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/guide.css">
+    <link rel="stylesheet" href="../../css/sub.css">
+    <title>Popup Style Guide</title>
+</head>
+
+<body>
+    <main>
+        <!-- Popup -->
+        <h1>Popup Style Guide</h1>
+        <hr />
+        <section id="default-sec">
+            <h2>Default Popup</h2>
+            <p>
+                - min-Width: 400px / max-Width: 1024px / min-Height: Flexible / Max-Height: 753px
+            </p>
+            <p>
+                <button type="button" class="btn-solid" onclick="popupManager.openPopup('#popup-default')">Default Popup</button>
+                <button type="button" class="btn-solid" onclick="popupManager.openPopup('#popup-no-footer')">Default Popup - footer 고정 영역 없음</button>
+                <a href="../window_popup/popup_7_1_1.html" title="정관작성" class="btn-solid" onclick="popupManager.openWindowPopup(this); return false;">Sample Popup - 정관작성</a>
+            </p>
+        </section>
+        <hr />
+        <section id="message-sec">
+            <h2>Message Popup</h2>
+            <p>
+                - Width: 400px / min-Height: 227px
+            </p>
+            <p>
+                <button type="button" class="btn-solid" onclick="popupManager.openPopup('#popup-confirm')">Confirm</button>
+                <button type="button" class="btn-solid" onclick="popupManager.openPopup('#popup-alert')">Alert</button>
+                <button type="button" class="btn-solid" onclick="popupManager.openPopup('#popup-alert2')">Alert2</button>
+                <!-- <button type="button" class="btn-solid" onclick="popupManager.openPopup('#popup-text')">Text</button>
+                <button type="button" class="btn-solid" onclick="popupManager.openPopup('#popup-message')">Message</button> -->
+            </p>
+        </section>
+        <hr />
+        <section id="emergency-sec">
+            <h2>Emergency Popup</h2>
+            <p>
+                사용자에게 전달할 주요 공지(긴급)의 경우 사용되며, 가급적 세로 스크롤 사용하는 것을 지양한다.<br/><br/>
+                - 일반공지는 메인 상단에 띠배너 형식으로 제공한다.<br/><br/>
+                - dimmed #000000 60%  위에 팝업 호출
+            </p>
+            <p>
+                <button type="button" class="btn-solid" onclick="popupManager.openPopup('#popup-emergency')">Emergency</button>
+            </p>
+        </section>
+        <hr />
+    </main>
+
+    <!-- default popup -->
+    <div class="popup-wrap" id="popup-default">
+        <div class="content-wrap">
+            <div class="popup-head">
+                <div class="popup-title">
+                    <h4>팝업 타이틀 영역 <button type="button" class="btn-solid" onclick="popupManager.openPopup('#popup-no-footer')">이중팝업</button></h4>
+                </div>
+                <div class="close-btn">
+                    <button type="button" onclick="popupManager.closePopup();"><img src="../../img/btn_gnb_close.svg" alt="close"></button>
+                </div>
+            </div>
+            <div class="popup-body">
+                <div class="popup-cont">
+                    <p class="fs-15">
+                        국민주택사업에 필요한 자금을 조달하기 위하여 국민주택기금의 부담으로 발행되는 채권을 말합니다.<br/>
+소유권의 보존&middot;이전등기, 저당권의 설정&middot;이전등기를 신청하는 경우에는 주택법 제68조(국민주택채권의 매입)에 의하여 일정액의 국민주택채권을 매입하여야 합니다.(아래 국민주택채권매입대상 및 금액표 참조) 국민주택채권은 시가표준액을 기준으로 매입할 금액이 결정됩니다.<br/>
+채권매입내역 등과 관련된 사항은 등기신청사건처리현황 화면에서 확인할 수 있으며, 기타 자세한 사항은 채권매입 금융기관의 해당 지점에 문의하시기 바랍니다.<br/><br/>
+
+국가 또는 지방자치단체로부터 면허, 허가, 인가를 받거나 등기, 등록을 신청하는 자와 국가, 지방자치단체 또는 정부투자기관과 건설공사의 도급계약을 체결하는 자 중 대통령령이 정하는 자는 국민주택채권을 매입하여야 한다.(주택법 제68조)<br/><br/>
+                        국민주택사업에 필요한 자금을 조달하기 위하여 국민주택기금의 부담으로 발행되는 채권을 말합니다.<br/>
+소유권의 보존&middot;이전등기, 저당권의 설정&middot;이전등기를 신청하는 경우에는 주택법 제68조(국민주택채권의 매입)에 의하여 일정액의 국민주택채권을 매입하여야 합니다.(아래 국민주택채권매입대상 및 금액표 참조) 국민주택채권은 시가표준액을 기준으로 매입할 금액이 결정됩니다.<br/>
+채권매입내역 등과 관련된 사항은 등기신청사건처리현황 화면에서 확인할 수 있으며, 기타 자세한 사항은 채권매입 금융기관의 해당 지점에 문의하시기 바랍니다.<br/><br/>
+
+국가 또는 지방자치단체로부터 면허, 허가, 인가를 받거나 등기, 등록을 신청하는 자와 국가, 지방자치단체 또는 정부투자기관과 건설공사의 도급계약을 체결하는 자 중 대통령령이 정하는 자는 국민주택채권을 매입하여야 한다.(주택법 제68조)<br/><br/>
+
+국민주택사업에 필요한 자금을 조달하기 위하여 국민주택기금의 부담으로 발행되는 채권을 말합니다.<br/>
+소유권의 보존&middot;이전등기, 저당권의 설정&middot;이전등기를 신청하는 경우에는 주택법 제68조(국민주택채권의 매입)에 의하여 일정액의 국민주택채권을 매입하여야 합니다.(아래 국민주택채권매입대상 및 금액표 참조) 국민주택채권은 시가표준액을 기준으로 매입할 금액이 결정됩니다.<br/>
+채권매입내역 등과 관련된 사항은 등기신청사건처리현황 화면에서 확인할 수 있으며, 기타 자세한 사항은 채권매입 금융기관의 해당 지점에 문의하시기 바랍니다.<br/><br/>
+
+국가 또는 지방자치단체로부터 면허, 허가, 인가를 받거나 등기, 등록을 신청하는 자와 국가, 지방자치단체 또는 정부투자기관과 건설공사의 도급계약을 체결하는 자 중 대통령령이 정하는 자는 국민주택채권을 매입하여야 한다.(주택법 제68조)<br/><br/>
+
+국민주택사업에 필요한 자금을 조달하기 위하여 국민주택기금의 부담으로 발행되는 채권을 말합니다.<br/>
+소유권의 보존&middot;이전등기, 저당권의 설정&middot;이전등기를 신청하는 경우에는 주택법 제68조(국민주택채권의 매입)에 의하여 일정액의 국민주택채권을 매입하여야 합니다.(아래 국민주택채권매입대상 및 금액표 참조) 국민주택채권은 시가표준액을 기준으로 매입할 금액이 결정됩니다.
+                    </p>
+                </div>
+            </div>
+            <div class="popup-foot">
+                <div class="left-con">
+                    <button type="button" class="btn medium">보조 버튼이에요</button>
+                </div>
+                <div class="right-con">
+                    <button type="button" class="btn-solid medium color-4d">추가 주요버튼</button>
+                    <button type="button" class="btn-solid medium color-main">중요 버튼 영역이에요</button>
+                </div>
+            </div>
+        </div>
+        <div class="dim-wrap"></div>
+    </div>
+
+    <!-- default popup - no footer -->
+    <div class="popup-wrap" id="popup-no-footer">
+        <div class="content-wrap no-footer">
+            <div class="popup-head">
+                <div class="popup-title">
+                    <h4>팝업 타이틀 영역</h4>
+                </div>
+                <div class="close-btn">
+                    <button type="button" onclick="popupManager.closePopup();"><img src="../../img/btn_gnb_close.svg" alt="close"></button>
+                </div>
+            </div>
+            <div class="popup-body">
+                <div class="popup-cont">
+                    <p class="fs-15">
+                        국민주택사업에 필요한 자금을 조달하기 위하여 국민주택기금의 부담으로 발행되는 채권을 말합니다.<br/>
+소유권의 보존&middot;이전등기, 저당권의 설정&middot;이전등기를 신청하는 경우에는 주택법 제68조(국민주택채권의 매입)에 의하여 일정액의 국민주택채권을 매입하여야 합니다.(아래 국민주택채권매입대상 및 금액표 참조) 국민주택채권은 시가표준액을 기준으로 매입할 금액이 결정됩니다.<br/>
+채권매입내역 등과 관련된 사항은 등기신청사건처리현황 화면에서 확인할 수 있으며, 기타 자세한 사항은 채권매입 금융기관의 해당 지점에 문의하시기 바랍니다.<br/><br/>
+
+국가 또는 지방자치단체로부터 면허, 허가, 인가를 받거나 등기, 등록을 신청하는 자와 국가, 지방자치단체 또는 정부투자기관과 건설공사의 도급계약을 체결하는 자 중 대통령령이 정하는 자는 국민주택채권을 매입하여야 한다.(주택법 제68조)<br/><br/>
+
+국민주택사업에 필요한 자금을 조달하기 위하여 국민주택기금의 부담으로 발행되는 채권을 말합니다.<br/>
+소유권의 보존&middot;이전등기, 저당권의 설정&middot;이전등기를 신청하는 경우에는 주택법 제68조(국민주택채권의 매입)에 의하여 일정액의 국민주택채권을 매입하여야 합니다.(아래 국민주택채권매입대상 및 금액표 참조) 국민주택채권은 시가표준액을 기준으로 매입할 금액이 결정됩니다.<br/>
+채권매입내역 등과 관련된 사항은 등기신청사건처리현황 화면에서 확인할 수 있으며, 기타 자세한 사항은 채권매입 금융기관의 해당 지점에 문의하시기 바랍니다.<br/><br/>
+
+국가 또는 지방자치단체로부터 면허, 허가, 인가를 받거나 등기, 등록을 신청하는 자와 국가, 지방자치단체 또는 정부투자기관과 건설공사의 도급계약을 체결하는 자 중 대통령령이 정하는 자는 국민주택채권을 매입하여야 한다.(주택법 제68조)<br/><br/>
+
+국민주택사업에 필요한 자금을 조달하기 위하여 국민주택기금의 부담으로 발행되는 채권을 말합니다.<br/>
+소유권의 보존&middot;이전등기, 저당권의 설정&middot;이전등기를 신청하는 경우에는 주택법 제68조(국민주택채권의 매입)에 의하여 일정액의 국민주택채권을 매입하여야 합니다.(아래 국민주택채권매입대상 및 금액표 참조) 국민주택채권은 시가표준액을 기준으로 매입할 금액이 결정됩니다.
+
+국민주택사업에 필요한 자금을 조달하기 위하여 국민주택기금의 부담으로 발행되는 채권을 말합니다.<br/>
+소유권의 보존&middot;이전등기, 저당권의 설정&middot;이전등기를 신청하는 경우에는 주택법 제68조(국민주택채권의 매입)에 의하여 일정액의 국민주택채권을 매입하여야 합니다.(아래 국민주택채권매입대상 및 금액표 참조) 국민주택채권은 시가표준액을 기준으로 매입할 금액이 결정됩니다.<br/>
+채권매입내역 등과 관련된 사항은 등기신청사건처리현황 화면에서 확인할 수 있으며, 기타 자세한 사항은 채권매입 금융기관의 해당 지점에 문의하시기 바랍니다.<br/><br/>
+
+국가 또는 지방자치단체로부터 면허, 허가, 인가를 받거나 등기, 등록을 신청하는 자와 국가, 지방자치단체 또는 정부투자기관과 건설공사의 도급계약을 체결하는 자 중 대통령령이 정하는 자는 국민주택채권을 매입하여야 한다.(주택법 제68조)<br/><br/>
+
+국민주택사업에 필요한 자금을 조달하기 위하여 국민주택기금의 부담으로 발행되는 채권을 말합니다.<br/>
+소유권의 보존&middot;이전등기, 저당권의 설정&middot;이전등기를 신청하는 경우에는 주택법 제68조(국민주택채권의 매입)에 의하여 일정액의 국민주택채권을 매입하여야 합니다.(아래 국민주택채권매입대상 및 금액표 참조) 국민주택채권은 시가표준액을 기준으로 매입할 금액이 결정됩니다.
+                    </p>
+
+                    <!-- 안쪽 버튼 -->
+                    <div class="inner-btn-con flex-wrap">
+                        <div class="left-con">
+                            <button type="button" class="btn medium">보조 버튼이에요</button>
+                        </div>
+                        <div class="right-con">
+                            <button type="button" class="btn-solid medium color-4d">추가 주요버튼</button>
+                            <button type="button" class="btn-solid medium color-main">중요 버튼 영역이에요</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dim-wrap"></div>
+    </div>
+
+    <!-- confirm popup -->
+    <div class="popup-wrap" id="popup-confirm">
+        <div class="content-wrap small">
+            <div class="popup-body">
+                <div class="popup-cont">
+                    <p class="fs-18 icon-confirm">
+                        첨부로 전환하시겠습니까?
+                    </p>
+                </div>
+            </div>
+            <div class="popup-foot">
+                <div class="center-con">
+                    <button type="button" class="btn medium" onclick="popupManager.closePopup()">아니오</button>
+                    <button type="button" class="btn-solid medium color-main">예</button>
+                </div>
+            </div>
+        </div>
+        <div class="dim-wrap"></div>
+    </div>
+
+    <!-- alert popup -->
+    <div class="popup-wrap" id="popup-alert">
+        <div class="content-wrap small">
+            <div class="popup-head">
+                <div class="close-btn">
+                    <button type="button" onclick="popupManager.closePopup();"><img src="../../img/btn_gnb_close.svg" alt="close"></button>
+                </div>
+            </div>
+            <div class="popup-body">
+                <div class="popup-cont">
+                    <p class="fs-18 icon-alert">
+                        비밀번호는 영문, 숫자, 특수기호를 혼합하여 8자 이상 입력이 필수입니다.
+                    </p>
+                </div>
+            </div>
+            <div class="popup-foot">
+                <div class="center-con">
+                    <button type="button" class="btn-solid medium color-main">확인</button>
+                </div>
+            </div>
+        </div>
+        <div class="dim-wrap"></div>
+    </div>
+
+    <!-- alert popup -->
+    <div class="popup-wrap" id="popup-alert2">
+        <div class="content-wrap small">
+            <div class="popup-head">
+                <div class="close-btn">
+                    <button type="button" onclick="popupManager.closePopup();"><img src="../../img/btn_gnb_close.svg" alt="close"></button>
+                </div>
+            </div>
+            <div class="popup-body">
+                <div class="popup-cont">
+                    <p class="fs-18">
+                        비밀번호는 영문, 숫자, 특수기호를 혼합하여 8자 이상 입력이 필수입니다.
+                    </p>
+                </div>
+            </div>
+            <div class="popup-foot">
+                <div class="center-con">
+                    <button type="button" class="btn-solid medium color-main">확인</button>
+                </div>
+            </div>
+        </div>
+        <div class="dim-wrap"></div>
+    </div>
+
+    <!-- text popup -->
+    <div class="popup-wrap" id="popup-text">
+        <div class="content-wrap small">
+            <div class="popup-head">
+                <div class="close-btn">
+                    <button type="button" onclick="popupManager.closePopup();"><img src="../../img/btn_gnb_close.svg" alt="close"></button>
+                </div>
+            </div>
+            <div class="popup-body text-center">
+                <div class="popup-cont">
+                    <p class="fs-18">
+                        비밀번호는 영문, 숫자, 특수기호를 혼합하여 8자 이상 입력이 필수입니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="dim-wrap"></div>
+    </div>
+
+    <!-- message popup -->
+    <div class="popup-wrap" id="popup-message">
+        <div class="content-wrap small">
+            <div class="popup-head">
+                <div class="popup-title">
+                    <h4 class="fs-18">팝업 타이틀 영역</h4>
+                </div>
+                <div class="close-btn">
+                    <button type="button" onclick="popupManager.closePopup();"><img src="../../img/btn_gnb_close.svg" alt="close"></button>
+                </div>
+            </div>
+            <div class="popup-body message-center">
+                <div class="popup-cont">
+                    <p class="fs-18">
+                        비밀번호는 영문, 숫자, 특수기호를 혼합하여 8자 이상 입력이 필수입니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="dim-wrap"></div>
+    </div>
+
+    <!-- emergency popup -->
+    <div class="popup-wrap" id="popup-emergency">
+        <div class="content-wrap emergency">
+            <div class="popup-body">
+                <div class="popup-title">
+                    <span>긴급공지</span>
+                </div>
+                <div class="content-title">인터넷등기소<br/>정기 점검 및 변경</div>
+                <div class="content-cont">인터넷등기소 정기 점검 및 변경으로<br/>일부 서비스가 중단됩니다.</div>
+                <div class="content-img">
+                    <img src="../../img/img_notice_emergency.svg" alt="emergency">
+                </div>
+            </div>
+            <div class="popup-foot">
+                <div class="cookie-btn">
+                    오늘 다시 보지 않기
+                </div>
+                <div class="close-btn">
+                    <button type="button" onclick="popupManager.closePopup();"><img src="../../img/ico_notice_emergency_close.svg" alt="close"></button>
+                </div>
+            </div>
+        </div>
+        <div class="dim-wrap"></div>
+    </div>
+</body>
+
+</html>

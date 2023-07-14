@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="312" height="182" viewBox="0 0 312 182">
+    <defs>
+        <filter id="Path" width="78.22" height="82.973" x="166.39" y="30.651" filterUnits="userSpaceOnUse">
+            <feOffset dx="-3" dy="5"/>
+            <feGaussianBlur result="blur" stdDeviation="4"/>
+            <feFlood flood-color="#e6b04e" flood-opacity=".302"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="사각형_1508" width="71.316" height="56.18" x="56.939" y="125.82" filterUnits="userSpaceOnUse">
+            <feOffset dx="3" dy="3"/>
+            <feGaussianBlur result="blur-2" stdDeviation="3"/>
+            <feFlood flood-color="#4b6ceb" flood-opacity=".302"/>
+            <feComposite in2="blur-2" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <linearGradient id="linear-gradient" x1=".341" x2=".871" y1=".335" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#fec867"/>
+            <stop offset="1" stop-color="#ffa30f"/>
+        </linearGradient>
+        <style>
+            .cls-3,.cls-7{fill:none}.cls-2{fill:#ebf0ff}.cls-3{stroke:#dedede;stroke-width:2px;stroke-dasharray:4 3;stroke-miterlimit:10}.cls-12,.cls-14{fill:#fff}.cls-12,.cls-7{stroke-width:1.5px;stroke:#1d1d1d}.cls-7{stroke-linecap:round}
+        </style>
+    </defs>
+    <g id="visual_certi_nodata" transform="translate(-24 -75)">
+        <path id="guide" fill="none" d="M0 0H312V180H0z" opacity="0.1" transform="translate(24 75)"/>
+        <path id="사각형_1502" d="M52.727 0h8.545A52.727 52.727 0 0 1 114 52.727V58H5.273A5.273 5.273 0 0 1 0 52.727 52.727 52.727 0 0 1 52.727 0z" class="cls-2" transform="translate(200 197)"/>
+        <path id="사각형_1503" d="M88.182 0h10.636A88.182 88.182 0 0 1 187 88.182 8.818 8.818 0 0 1 178.182 97H8.818A8.818 8.818 0 0 1 0 88.182 88.182 88.182 0 0 1 88.182 0z" class="cls-2" transform="translate(38 158)"/>
+        <path id="Path_6" d="M0 86.977V8.82A8.82 8.82 0 0 1 8.82 0H91.9" class="cls-3" transform="translate(113.782 90.651)"/>
+        <path id="Path_6_Copy" d="M135.264 0H0v140.459a8.82 8.82 0 0 0 8.82 8.82h11.31" class="cls-3" transform="rotate(180 122.473 119.827)"/>
+        <g id="icn" transform="translate(101.345 -332)">
+            <path id="Rectangle" fill="#fff" stroke="#161616" stroke-width="1.5px" d="M441.347 568.541V422.035a5.483 5.483 0 0 0-5.483-5.483H341.83a5.483 5.483 0 0 0-5.483 5.483v146.506" transform="translate(-310.192 18.104)"/>
+            <path id="Path-2" fill="#1d1d1d" d="M0 0h29.931l-2.406 5.4a3.309 3.309 0 0 1-2.975 2.06H5.381A3.309 3.309 0 0 1 2.406 5.4z" transform="translate(63.655 434.656)"/>
+            <path id="사각형_1507" fill="#f7f7f7" d="M5 0h75a5 5 0 0 1 5 5v133H0V5a5 5 0 0 1 5-5z" transform="translate(35.655 449)"/>
+            <path id="패스_4051" d="M51.473 524.42h17.07" class="cls-7" transform="translate(21.682 -24)"/>
+            <path id="패스_4052" d="M51.473 524.42h35.768" class="cls-7" transform="translate(21.682 -16.77)"/>
+        </g>
+        <g id="security" transform="translate(95.91 -331.669)">
+            <g filter="url(#Path)" transform="translate(-71.91 406.67)">
+                <path id="Path-3" fill="url(#linear-gradient)" d="M.146 11.616a5.306 5.306 0 0 1 4.619-4.8 74.038 74.038 0 0 0 9.075-1.93A97.359 97.359 0 0 0 24.637.542a5.913 5.913 0 0 1 4.946 0 97.359 97.359 0 0 0 10.8 4.348 74.038 74.038 0 0 0 9.075 1.93 5.306 5.306 0 0 1 4.619 4.8c.687 10.7-.058 38.74-25.406 47.109a5.03 5.03 0 0 1-3.117 0C.2 50.356-.542 22.321.146 11.616z" transform="translate(181.39 37.65)"/>
+            </g>
+            <path id="Shape" fill="#fff" d="M12.073 42.855a25.271 25.271 0 0 1-3.3-1.8L18.631.747c1.215.562 2.35 1.063 3.376 1.488l-9.933 40.618zm-6.445-4.23A26 26 0 0 1 0 31.061L6.817 3.182C8.9 2.455 11.376 1.344 13.09.54A5.991 5.991 0 0 1 15.074 0L5.629 38.622z" opacity="0.35" transform="translate(120.951 451.868)"/>
+            <path id="Path-4" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5px" d="M.05 9.578a5.3 5.3 0 0 1 4.555-4.859 46.608 46.608 0 0 0 5.416-1.249 64.075 64.075 0 0 0 7.061-2.9 6.011 6.011 0 0 1 5.1 0 64.075 64.075 0 0 0 7.061 2.9 46.608 46.608 0 0 0 5.416 1.249 5.3 5.3 0 0 1 4.555 4.859c.364 8.606-.837 27.9-17.986 34.1a4.724 4.724 0 0 1-3.19 0C.887 37.481-.314 18.184.05 9.578z" transform="translate(116.959 451.841)"/>
+        </g>
+        <ellipse id="Oval_5" cx="4.723" cy="4.746" fill="#fff" stroke="#1d1d1d" stroke-miterlimit="10" stroke-width="1.5px" rx="4.723" ry="4.746" transform="translate(154.658 165)"/>
+        <path id="Combined_Shape" d="M17.316 7.91A8.782 8.782 0 0 0 8.658 0 8.782 8.782 0 0 0 0 7.91z" class="cls-12" transform="translate(150.46 178.047)"/>
+        <path id="Shape-2" fill="#4d546c" d="M14.338 34.274l-.906-4.349a13.336 13.336 0 0 1-2.642-1.089l-3.725 2.436-4.052-4.04 2.447-3.71a13.191 13.191 0 0 1-1.093-2.631L0 19.993v-5.712l4.367-.9a13.174 13.174 0 0 1 1.093-2.634l-2.447-3.71L7.07 3l3.724 2.437a13.336 13.336 0 0 1 2.642-1.089L14.338 0h5.735l.907 4.349a13.336 13.336 0 0 1 2.642 1.089L27.345 3 31.4 7.041l-2.449 3.709a13.229 13.229 0 0 1 1.094 2.632l4.367.9v5.711l-4.367.9a13.2 13.2 0 0 1-1.094 2.632l2.448 3.71-4.057 4.036-3.724-2.436a13.336 13.336 0 0 1-2.642 1.089l-.9 4.349z" transform="translate(257.976 179.333)"/>
+        <path id="Path-5" d="M5.926 0A5.9 5.9 0 1 1 0 5.9 5.915 5.915 0 0 1 5.926 0z" class="cls-14" transform="translate(269.256 190.567)"/>
+        <g id="padlock" transform="translate(27.594 175.594)">
+            <path id="패스_4053" d="M148.308 31.225v-11.2a20.028 20.028 0 1 0-40.057 0v11.2m7.222 0v-11.2a12.806 12.806 0 1 1 25.612 0v11.2" class="cls-12" transform="translate(-42.276)"/>
+            <g filter="url(#사각형_1508)" transform="translate(-3.59 -100.59)">
+                <rect id="사각형_1508-2" width="53.316" height="38.18" fill="#4b6ceb" rx="5" transform="translate(62.94 131.82)"/>
+            </g>
+            <path id="패스_4056" d="M222.227 306.7a4.267 4.267 0 1 0-6.294 3.756l-.687 5.253h5.427l-.687-5.253a4.266 4.266 0 0 0 2.241-3.756z" class="cls-14" transform="translate(-131.956 -258.75)"/>
+        </g>
+    </g>
+</svg>

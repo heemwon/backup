@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+    <defs>
+        <style>
+            .cls-2{fill:#fff}.cls-2,.cls-3{stroke:#1d1d1d;stroke-width:3px}.cls-3,.cls-8{fill:none}.cls-3{stroke-miterlimit:10}.cls-7{stroke:none}
+        </style>
+    </defs>
+    <g id="ico_main_menu_list" transform="translate(4 2.813)">
+        <g id="사각형_1806" class="cls-2">
+            <path d="M0 0H39V48H0z" class="cls-7" transform="translate(-1 4.187)"/>
+            <path d="M1.5 1.5H37.5V46.5H1.5z" class="cls-8" transform="translate(-1 4.187)"/>
+        </g>
+        <path id="Stroke_17" d="M0 .391h16.385" class="cls-3" transform="translate(6.164 27.765)"/>
+        <path id="Stroke_19" d="M0 .391h16.385" class="cls-3" transform="translate(6.164 32.985)"/>
+        <g id="사각형_1807" class="cls-2">
+            <path d="M0 0H25V8H0z" class="cls-7" transform="translate(6 15.187)"/>
+            <path d="M1.5 1.5H23.5V6.5H1.5z" class="cls-8" transform="translate(6 15.187)"/>
+        </g>
+        <path id="Stroke_15" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3px" d="M17.178 10.865H0v-6.7h4.9s.922-2.978 5.3-2.978 5.715 2.978 5.715 2.978h4.9v6.7z" transform="translate(7.244 -2)"/>
+        <g id="그룹_3617" stroke="#000" stroke-miterlimit="10" stroke-width="3px" transform="translate(1 1)">
+            <path id="Stroke_7" fill="#f4c215" d="M10.834 0A10.835 10.835 0 1 1 0 10.834 10.835 10.835 0 0 1 10.834 0z" transform="translate(25.463 25.503)"/>
+            <path id="Stroke_23" fill="none" stroke-linecap="round" stroke-linejoin="round" d="M0 0v5.816l4.158-1.864" transform="translate(36.297 30.941)"/>
+        </g>
+    </g>
+</svg>

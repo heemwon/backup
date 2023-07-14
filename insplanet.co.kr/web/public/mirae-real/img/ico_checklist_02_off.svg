@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+    <defs>
+        <style>
+            .cls-1{fill:red;opacity:0}.cls-2{fill:#fff}.cls-6,.cls-7{stroke:none}.cls-7{fill:#000}
+        </style>
+    </defs>
+    <g id="ico_checklist_02_off" transform="translate(7.192 10)">
+        <path id="guide" d="M0 0H56V56H0z" class="cls-1" transform="translate(-7.192 -10)"/>
+        <path id="guide-2" d="M0 0H40V40H0z" class="cls-1" transform="translate(0.808 -2)"/>
+        <g id="ico_checklist_02_off-2" transform="translate(-16 28.001)">
+            <g id="그룹_3635" transform="translate(-3 -23.321)">
+                <g id="패스_3521" class="cls-2">
+                    <path d="M41.047 53.465H10.838V36.223l15.105-12.937 15.104 12.937v17.242z" class="cls-6" transform="translate(11.721 -21.895)"/>
+                    <path d="M25.943 24.274L11.588 36.569v16.146h28.709V36.57L25.943 24.274m-.244-1.767h.487l15.61 13.371v18.337H10.089V35.878L25.7 22.508z" class="cls-7" transform="translate(11.721 -21.895)"/>
+                </g>
+                <g id="패스_3522" fill="#f4c215">
+                    <path d="M8.576 12.306H.75V4.91C.75 2.616 2.505.75 4.663.75s3.913 1.866 3.913 4.16v7.396z" class="cls-6" transform="translate(32.999 19.264)"/>
+                    <path d="M4.663 1.5C2.919 1.5 1.5 3.03 1.5 4.91v6.646h6.326V4.91c0-1.88-1.419-3.41-3.163-3.41m0-1.5c2.575 0 4.663 2.198 4.663 4.91v8.146H0V4.91C0 2.198 2.088 0 4.663 0z" class="cls-7" transform="translate(32.999 19.264)"/>
+                </g>
+                <path id="패스_4086" fill="none" stroke="#1d1d1d" stroke-width="1.5px" d="M22.643 15.182L38.41 1.319l15.942 13.863" transform="translate(-0.834 -6)"/>
+            </g>
+            <path id="선_359" fill="none" stroke="#000" stroke-width="1.5px" d="M0 9L0 0" transform="translate(53.309)"/>
+            <g id="패스_4087" class="cls-2">
+                <path d="M6.985 15.441H1.752C1.462 13.987.75 10.195.75 7.905c0-1.983.435-3.836 1.224-5.218C2.687 1.438 3.589.75 4.514.75c.926 0 1.828.688 2.542 1.937.789 1.382 1.223 3.235 1.223 5.218 0 3.31-.91 6.384-1.294 7.536z" class="cls-6" transform="translate(47.809 -11.754)"/>
+                <path d="M4.515 1.5c-.635 0-1.324.568-1.89 1.56C1.91 4.31 1.5 6.076 1.5 7.904c0 1.96.544 5.09.87 6.786h4.068c.417-1.356 1.091-3.982 1.091-6.786 0-1.828-.41-3.594-1.125-4.846C5.838 2.07 5.15 1.5 4.514 1.5m0-1.5C7.009 0 9.03 3.54 9.03 7.905c0 4.366-1.513 8.286-1.513 8.286H1.14S0 10.883 0 7.905C0 3.54 2.021 0 4.515 0z" class="cls-7" transform="translate(47.809 -11.754)"/>
+            </g>
+        </g>
+    </g>
+</svg>

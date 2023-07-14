@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../js/libs/jquery.min.js"></script>
+    <script src="../js/libs/jquery-ui.min.js"></script>
+    <script src="../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../js/sub.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <title>인터넷 등기소</title>
+</head>
+<body>
+    <header class="area-header">
+        <div class="area-inner">
+            <span class="btn-historyback"><button>뒤로</button></span>
+            <h1 class="title">부동산 정보요약</h1>
+            <span class="btn-navigation"><button>메뉴</button></span>
+        </div>
+    </header>
+    <div class="area-content">
+        <div class="area-inner">
+            <div class="content-wrap">
+                <p>
+                    <button type="button" class="btn-solid" onclick="popupManager.openPopup('#popup-property')">부동산 정보요약 Popup</button>
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer class="area-footer">
+        <div class="area-inner">
+            <div class="box-privite">
+                <a href="">이용약관</a>
+                <a href=""><strong>개인정보처리방침</strong></a>
+                <a href="">원격지원</a>
+                
+            </div>
+            <p class="text-copyright">Copyright © Supreme Court of Korea.<br > All right reserved.</p>
+        </div>
+    </footer>
+
+    <!-- property popup -->
+    <div class="popup-wrap" id="popup-property">
+        <div class="content-wrap full">
+            <div class="popup-head">
+                <div class="popup-title">
+                    <p class="title">부동산 정보요약</p>
+                </div>
+                <div class="close-btn">
+                    <button type="button" onclick="popupManager.closePopup();"><img src="../img/btn_popup_close.svg" alt="close"></button>
+                </div>
+            </div>
+            <div class="popup-body">
+                <div class="popup-cont">
+                    <!-- 팝업 log -->
+                    <section class="content-sec">
+                        <div class="log-date">열람일시 : 2021년 04월 19일 09시 33분 50초</div>
+                        <p class="fs-24 fw-bold">매매 관련 주요 점검사항</p>
+                    </section>
+                    <!-- 기본 확인사항 - 아코디언 -->
+                    <section class="accordion-sec">
+                        <div class="sec-body">
+                            <div class="accordion-wrap">
+                                <div class="accordion-con title-list-type" data-accordion="container">
+                                    <div class="accordion-head">
+                                        <div class="flex-wrap between">
+                                            <div class="left-con">
+                                                <p class="title">권리 취득 시 확인해야 할 사항</p>
+                                            </div>
+                                            <div class="right-con">
+                                                <button type="button" class="btn accordion-total-btn" data-accordion="totalTrigger"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li data-accordion="item">
+                                            <button type="button" class="title-con" data-accordion="trigger">
+                                                <p>거래자의 진정성 확인 체크리스트</p>
+                                            </button>
+                                            <div class="cont-wrap">
+                                                <div class="cont-con">
+                                                    <div class="cont-body">
+                                                        <p class="title">1. 신분증진위확인 (주민등록증, 운전면허증)</p>
+                                                        <p class="cont">
+                                                            거래자가 정당한 거래상대방인지 여부를 주민등록증은 실지명의 확인 가능한 전자서명 인증서로 ⎡민원 24⎦에서 본인 확인 후, 운전면허증은⎡안전운전 통합민원⎦에서 해당사항 입력 후 확인하실 수 있습니다.
+                                                        </p>
+                                                        <div class="btn-con">
+                                                            <button type="button" class="btn small new-window">주민등록증확인</button>
+                                                            <button type="button" class="btn small new-window">운전면허증확인</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li data-accordion="item">
+                                            <button type="button" class="title-con" data-accordion="trigger">
+                                                <p>거래자의 진정성 확인 체크리스트</p>
+                                            </button>
+                                            <div class="cont-wrap">
+                                                <div class="cont-con">
+                                                    <div class="cont-body">
+                                                        <p class="title">1. 신분증진위확인 (주민등록증, 운전면허증)</p>
+                                                        <p class="cont">
+                                                            거래자가 정당한 거래상대방인지 여부를 주민등록증은 실지명의 확인 가능한 전자서명 인증서로 ⎡민원 24⎦에서 본인 확인 후, 운전면허증은⎡안전운전 통합민원⎦에서 해당사항 입력 후 확인하실 수 있습니다.
+                                                        </p>
+                                                        <div class="btn-con">
+                                                            <button type="button" class="btn small new-window">주민등록증확인</button>
+                                                            <button type="button" class="btn small new-window">운전면허증확인</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                </div>
+            </div>
+            <div class="popup-foot">
+                <section class="button-sec mt20">
+                    <div class="btn-con flex-between">
+                        <button type="button" class="btn color-41">취소</button>
+                        <button type="button" class="btn-solid">확인</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="dim-wrap"></div>
+    </div>
+</body>
+</html>

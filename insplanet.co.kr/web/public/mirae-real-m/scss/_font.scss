@@ -1,0 +1,38 @@
+@charset "utf-8";
+@import '_color.scss';
+@import '_mixin.scss';
+
+/*-------------------------------------------------------------------
+    @Font
+-------------------------------------------------------------------*/
+/* Font-family */
+
+
+/* Heading */
+h1 { @include fontStyler(24px, bold, 1.42, -0.96px, $color-1d) }
+h2 { @include fontStyler(21px, 500, 1.43, -0.84px, $color-1d) }
+h1, h2 {
+    &.ff-roboto {
+        font-weight: bold;
+    }
+}
+
+/* Body */
+.fs-24 { @include fontStyler(24px, bold, 1.42, -0.96px, $color-1d) }
+.fs-18 { @include fontStyler(18px, normal, 1.56, -0.72px, $color-1d) }
+.fs-16 { @include fontStyler(16px, normal, 1.56, -0.72px, $color-1d) }
+.fs-15 { @include fontStyler(15px, normal, 1.6, -0.6px, $color-1d) }
+.fs-14 { @include fontStyler(14px, normal, 1.57, -0.56px, $color-5a) }
+.fs-24, .fs-18, .fs-16, .fs-15, .fs-14 {
+    &.ff-roboto {
+        font-weight: normal;
+    }
+}
+
+.ff-roboto {font-family: "Roboto" !important;}
+
+/* Font-weight */
+.fw-500 {font-weight: 500 !important;}
+.fw-normal {font-weight: normal !important;}
+.fw-bold {font-weight: bold !important;}
+

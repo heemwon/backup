@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#a8a8a8;stroke-linecap:round;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="ico_read_chceck_disabled" transform="translate(-193.614 -852.076)">
+        <g id="_1_form_checkbox" transform="rotate(45 -935.794 667.032)">
+            <path id="선_354" d="M0 0L17.026 0" class="cls-1"/>
+        </g>
+        <g id="_1_form_checkbox-2" transform="rotate(135 -72.699 471.95)">
+            <path id="선_354-2" d="M0 0L17.026 0" class="cls-1"/>
+        </g>
+        <path id="사각형_1728" fill="rgba(255,0,0,0.97)" d="M0 0H21V21H0z" opacity="0.005" transform="translate(193.614 852.076)"/>
+    </g>
+</svg>

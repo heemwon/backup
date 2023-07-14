@@ -1,0 +1,78 @@
+@charset "utf-8";
+@import '_color.scss';
+@import '_mixin.scss';
+
+/*-------------------------------------------------------------------
+    @Font
+-------------------------------------------------------------------*/
+/* Font-family */
+.ff-noto { font-family: "Noto Sans KR" !important; }
+.ff-roboto { font-family: "Roboto" !important; letter-spacing: normal !important; }
+
+/* Heading */
+/*
+h1 { @include fontStyler(48px, bold, 1.25, -2.4px, $color-1d) }
+h2 { @include fontStyler(40px, bold, 1.38, -2px, $color-1d) }
+h3 { @include fontStyler(32px, 500, 1.5, -1.6px, $color-1d) }
+h4 { @include fontStyler(24px, 500, 1.5, -1.2px, $color-1d) }
+h5 { @include fontStyler(20px, 500, 1.5, -0.8px, $color-41) }
+h6 { @include fontStyler(18px, 500, 1.56, -0.36px, $color-41) }
+*/
+h1 { @include fontStyler(48px, 700, 1.25, -0.5px, $color-1d) }
+h2 { @include fontStyler(40px, 700, 55px, -0.5px, $color-1d) }
+h3 { @include fontStyler(32px, 700, 48px, -0.5px, $color-1d) }
+h4 { @include fontStyler(24px, 700, 36px, -0.5px, $color-1d) }
+h5 { @include fontStyler(20px, 700, 36px, -0.5px, $color-1d) }
+h6 { @include fontStyler(18px, 500, 34px, -0.5px, $color-1d) }
+h1, h2, h3, h4, h5, h6 {
+    &.ff-roboto {
+        font-weight: bold;
+    }
+    &.head-line {
+        margin : 0 0 20px 0;
+        padding: 0 0 5px 0;
+        border-bottom: 2px solid #414141;
+    }
+}
+
+/* Body */
+/*
+.fs-18 { @include fontStyler(18px, normal, 1.56, -0.36px, $color-00) }
+.fs-16 { @include fontStyler(16px, normal, 1.56, -0.32px, $color-00) }
+.fs-15 { @include fontStyler(15px, normal, 1.6, -0.3px, $color-00) }
+.fs-14 { @include fontStyler(14px, normal, 1.57, -0.28px, $color-00) }
+.fs-12 { @include fontStyler(12px, normal, 1.67, -0.24px, $color-00) }
+*/
+.fs-18 { @include fontStyler(18px, normal, 28px, -0.5px, $color-41) }
+.fs-16 { @include fontStyler(16px, normal, 25px, -0.5px, $color-41) }
+.fs-15 { @include fontStyler(15px, normal, 24px, -0px, $color-41) }
+.fs-14 { @include fontStyler(14px, normal, 22px, -0.5px, $color-41) }
+.fs-12 { @include fontStyler(12px, normal, 20px, 0px, $color-41) }
+/* Button */
+/*
+.fs-btn-19 { @include fontStyler(19px, normal, 1.58, -0.38px, $color-00) }
+.fs-btn-16 { @include fontStyler(16px, normal, 1.56, -0.32px, $color-00) }
+.fs-btn-14 { @include fontStyler(14px, normal, 1.57, -0.28px, $color-00) }
+*/
+.fs-btn-19 { @include fontStyler(19px, 700, 30px, -0.5px, $color-41) }
+.fs-btn-16 { @include fontStyler(16px, 700, 25px, -0.5px, $color-41) }
+.fs-btn-14 { @include fontStyler(14px, 700, 22px, -0.5px, $color-41) }
+.fs-18, .fs-15, .fs-16, .fs-14, .fs-12, 
+.fs-btn-19, .fs-btn-16, .fs-btn-14 {
+    &.ff-roboto {
+        font-weight: normal;
+    }
+}
+
+
+/* Font-weight */
+.fw-100 {font-weight: 100 !important;}
+.fw-300 {font-weight: 300 !important;}
+.fw-400 {font-weight: 400 !important;}
+.fw-500 {font-weight: 500 !important;}
+.fw-700 {font-weight: 700 !important;}
+.fw-normal {font-weight: normal !important;}
+.fw-bold {font-weight: bold !important;}
+
+
+.under {text-decoration: underline;}
