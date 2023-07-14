@@ -1,0 +1,151 @@
+[
+  "detail_meatbox",
+  {
+    "category": "all commerce retail mobileService startUp",
+    "slug": "detail_meatbox",
+    "type": {
+      "protect": false
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_meatbox.jpg",
+      "title": {
+        "lang": "ko",
+        "content": "고깃집 사장님의 미트 큐레이터, 미트박스"
+      },
+      "client": "(주)글로벌네트웍스"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "",
+        "bgColor": "linear-gradient(to right, #d33434, #f24949)",
+        "pc": "img_meatbox_cover.png",
+        "mobile": "img_meatbox_cover_m.png",
+        "alt": ""
+      },
+      "logo": {
+        "img": "logo_meatbox.png",
+        "alt": "MEATBOX Shopping mall / Mobile Service"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "ko",
+        "content": "고깃집 사장님의 미트 큐레이터, 미트박스"
+      },
+      "year": "2019",
+      "client": "Global Networks",
+      "service": "UX Strategy Consulting, UI / GUI Design"
+    },
+    "desc": [
+      {
+        "title": "Overview",
+        "desc": "미트박스는 축산물 생산자와 식당, 정육점이 직접 거래할 수 있도록 만든 도매 오픈마켓 플랫폼입니다. 복잡한 유통 단계를 획기적으로 줄여 일반 도매가 대비 20~30% 이상 저렴하게 구매할 수 있습니다. 우리는 고객의 다양한 목적과 용도에 맞는 효율적인 상품 추천이 이루어질 수 있도록 모바일 사용 환경의 전반적인 개선을 진행했습니다. 또한 연령대가 높은 미트박스 고객층을 고려하여, 알아보기 쉬운 정보 시각화를 목표로 비주얼 개선을 진행했습니다.",
+        "pc": {
+          "img": "img_meatbox_01.jpg"
+        },
+        "mobile": {
+          "img": "img_meatbox_01_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "Walk Through . 미트박스만의 추천 시스템"
+        },
+        "desc": "미트박스 앱 최초 진입 시 입력하는 정보에 따라, 메뉴에 가장 잘 맞는 가성비 좋은 고기를 추천합니다. 누적 판매량 207억의 데이터를 기반으로 정확도 높은 추천을 제공합니다.",
+        "pc": {
+          "img": "img_meatbox_02.jpg"
+        },
+        "mobile": {
+          "img": "img_meatbox_02_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "Main Page . 메인에서 바로, 나에게 필요한 맞춤 상품 추천"
+        },
+        "desc": "미트박스의 고객은 식당을 운영하기 때문에 항상 동일한 품목을 구매합니다. 매번 구매하는 품목의 최저가 상품을 메인화면에서 빠르게 구매할 수 있고, 때에 따라 더 좋은 대안 상품도 함께 살펴볼 수 있습니다.",
+        "pc": {
+          "img": "img_meatbox_03.jpg"
+        },
+        "mobile": {
+          "img": "img_meatbox_03_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "Main Page . 딱 맞는 고기를 찾도록 도와주는 용도별 상품 추천"
+        },
+        "desc": "용도별 상품 탐색을 통해 메뉴에 맞는 상품을 추천합니다. 각 용도에 해당하는 가성비, 최다 판매 상품 등을 제공합니다.",
+        "pc": {
+          "img": "img_meatbox_04.jpg"
+        },
+        "mobile": {
+          "img": "img_meatbox_04_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "Product Info / Order . 상품 탐색부터 주문, 결제까지 한눈에 보이는 스펙 정보"
+        },
+        "desc": "고기를 도매로 구매하기 위해 고객이 확인해야 하는 정보는 상당히 복잡합니다. 여러 계량 단위와 숫자들이 복잡하게 얽혀있는 상품 정보를 정리하여, 상품을 탐색하고 구매하는 과정에서 가장 중요한 정보들을 우선적으로 볼 수 있게 하였습니다. 사용자는 다양한 카테고리와 필터로 원하는 상품을 빠르게 찾을 수 있으며 주문과 결제 과정에서 무엇을 해야 하는지 명확하게 인지할 수 있습니다.",
+        "pc": {
+          "img": "img_meatbox_05.jpg"
+        },
+        "mobile": {
+          "img": "img_meatbox_05_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "desc": "우리는 모바일 리뉴얼을 통해 미트박스의 가치와 장점을 명확하게 드러내어 신뢰 가는 첫인상을 전달하고자 합니다. 사용자들이 필요로 하는 상품을 즉각적으로 추천하며 상품 탐색과 주문/결제 과정까지 일관된 UI를 통해 각 사용자에게 맞는 최적의 경험을 제공합니다.",
+        "pc": {
+          "img": "img_meatbox_06.jpg"
+        },
+        "mobile": {
+          "img": "img_meatbox_06_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "UX DESIGN",
+        "members": "정다영, 조영인, 김희웅"
+      },
+      {
+        "team": "GUI DESIGN",
+        "members": "김유경, 한수영, 강유정, 구자헌"
+      },
+      {
+        "team": "COACH",
+        "members": "전성진, 김다운"
+      }
+    ]
+  }
+]

@@ -1,0 +1,151 @@
+[
+  "detail_cafe",
+  {
+    "category": "all commerce mobileService dataAnalysis userResearch",
+    "slug": "detail_cafe",
+    "type": {
+      "protect": true
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_cafe.jpg",
+      "title": {
+        "lang": "en",
+        "content": "Cafe App UX Consulting"
+      },
+      "client": "Starbucks Korea"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "",
+        "bgColor": "linear-gradient(to right, #005a39, #006242)",
+        "pc": "img_starbucks_cover.png",
+        "mobile": "img_starbucks_cover_m.png",
+        "alt": ""
+      },
+      "logo": {
+        "img": "logo_starbucks.png",
+        "alt": "Starbucks O2O / Mobile App"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "ko",
+        "content": "고객의 편의성에 집중한 커머스 중심 개편, 스타벅스"
+      },
+      "year": "2019.03 ~ 2019.06",
+      "client": "Starbucks Korea",
+      "service": "UX / UI / GUI Consulting"
+    },
+    "desc": [
+      {
+        "title": "Overview",
+        "desc": "사이렌 오더 중심의 스타벅스 앱을 커머스 앱으로 확장하기 위한 컨설팅을 진행했습니다. 커머스로 확장하기 위해 전반적인 앱 구조를 변경하면서 고객 데이터 기반의 Journey Map에 따라 사용자 상황에 필요한 기능을 제공하여 주문 프로세스 편의성을 개선했습니다.",
+        "pc": {
+          "img": "img_starbucks_01.jpg"
+        },
+        "mobile": {
+          "img": "img_starbucks_01_m.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "커머스 강화, 고객데이터 기반의 커머스 중심 구조개편, 주문 프로세스 개선을 통해 모바일 경험 및 고객 편의가 확장됩니다."
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "주문 과정이 더욱 간편해진 사이렌오더"
+        },
+        "desc": "메인화면에서 고객의 주문 이력을 기반으로 메뉴를 추천하고, 결제까지 원활한 구조로 연결하여 더욱 빠른 주문이 가능합니다. 상세 페이지에서는 제조 과정을 영상으로 제공하여 감각적인 인상을 극대화했습니다.",
+        "pc": {
+          "img": "img_starbucks_02.jpg"
+        },
+        "mobile": {
+          "img": "img_starbucks_02_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "오프라인 매장의 경험을 극대화한 리저브"
+        },
+        "desc": "스타벅스 리저브의 차별화 된 경험을 모바일에서도 전달받을 수 있도록 리저브 특화모드를 제공합니다. 옵션을 선택하는 과정은 대화형 문구를 통해 마치 파트너를 통한 주문과정과 유사한 수준의 친절함으로 다가갑니다. 또한 추출방식과 같이 어려운 전문용어는 영상으로 제공되어 구매자의 이해를 돕고, 커피의 풍미를 시각적으로 연상할 수 있게 합니다.",
+        "pc": {
+          "img": "img_starbucks_03.jpg"
+        },
+        "mobile": {
+          "img": "img_starbucks_03_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "나를 위한 맞춤형 콘텐츠 추천"
+        },
+        "desc": "메인화면에서는 고객 유형 분류를 통해 각 고객에게 맞는 최적의 모듈을 제공합니다. 사용 유형, 주문 이력, 선택 매장, 그리고 DT 사용 여부 등 유형별로 맞춤형 콘텐츠 추천이 이루어집니다.",
+        "pc": {
+          "img": "img_starbucks_04.jpg"
+        },
+        "mobile": {
+          "img": "img_starbucks_04_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "스타벅스 모바일 경험의 확장"
+        },
+        "desc": "고객의 지속 방문을 위해 Gamification 등의 흥미로운 콘텐츠를 제공하고 멤버십 및 리워드 프로그램의 고객 커뮤니케이션을 강화하여 고객 Retention 추가향상을 위한 다양한 아이디어 제안을 진행했습니다.",
+        "pc": {
+          "img": "img_starbucks_05.jpg"
+        },
+        "mobile": {
+          "img": "img_starbucks_05_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "desc": "우리는 매장이 익숙한 고객들에게 대면에서의 감성적인 인상이 모바일에서도 전해질 수 있도록 매체 특성을 고려한 다양한 방안을 제안했습니다. 이번 컨설팅을 통해 스타벅스의 브랜드 지향점인 Connecting Humanity의 가치를 일관되게 전달하고자 합니다.",
+        "pc": {
+          "img": "img_starbucks_06.jpg"
+        },
+        "mobile": {
+          "img": "img_starbucks_06_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "UX DESIGN",
+        "members": "양정윤, 김선기, 우종희, 이재이"
+      },
+      {
+        "team": "GUI DESIGN",
+        "members": "김혜림, 정소영, 류지현, 김희진"
+      },
+      {
+        "team": "COACH",
+        "members": "박기혁, 김다운"
+      }
+    ]
+  }
+]

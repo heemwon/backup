@@ -1,0 +1,164 @@
+[
+  "detail_meatbox",
+  {
+    "category": "commerce retail mobileService startUp",
+    "slug": "detail_meatbox",
+    "type": {
+      "protect": false
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_meatbox.jpg",
+      "title": {
+        "lang": "ko",
+        "content": "고깃집 사장님의 미트 큐레이터, 미트박스"
+      },
+      "client": "(주)글로벌네트웍스"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "",
+        "bgColor": "",
+        "pc": "img_meatbox_cover.png",
+        "mobile": "img_meatbox_cover_m.png",
+        "alt": ""
+      },
+      "logo": {
+        "img": "logo_meatbox.png",
+        "alt": "MEATBOX Shopping mall / Mobile Service"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "ko",
+        "content": "고깃집 사장님의 미트 큐레이터, 미트박스"
+      },
+      "year": "2019",
+      "client": "Global Networks",
+      "service": "UX Strategy Consulting, UI / GUI Design"
+    },
+    "desc": [
+      {
+        "title": "",
+        "desc": "",
+        "pc": {
+          "img": "img_meatbox_01.jpg"
+        },
+        "mobile": {
+          "img": "img_meatbox_01_m.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "",
+            "li": [
+              {
+                "liContent": ""
+              },
+              {
+                "liContent": ""
+              },
+              {
+                "liContent": ""
+              }
+            ]
+          }
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": ""
+        },
+        "desc": "",
+        "pc": {
+          "img": "img_meatbox_02.jpg"
+        },
+        "mobile": {
+          "img": "img_meatbox_02_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": ""
+        },
+        "desc": "",
+        "pc": {
+          "img": "img_meatbox_03.jpg"
+        },
+        "mobile": {
+          "img": "img_meatbox_03_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": ""
+        },
+        "desc": "",
+        "pc": {
+          "img": "img_meatbox_04.jpg"
+        },
+        "mobile": {
+          "img": "img_meatbox_04_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": ""
+        },
+        "desc": "",
+        "pc": {
+          "img": "img_meatbox_05.jpg"
+        },
+        "mobile": {
+          "img": "img_meatbox_05_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "desc": "",
+        "pc": {
+          "img": "img_meatbox_06.jpg"
+        },
+        "mobile": {
+          "img": "img_meatbox_06_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "UX DESIGN",
+        "members": "정다영, 조영인, 김희웅"
+      },
+      {
+        "team": "GUI DESIGN",
+        "members": "김유경, 한수영, 강유정, 구자헌"
+      },
+      {
+        "team": "COACH",
+        "members": "전성진, 김다운"
+      }
+    ]
+  }
+]

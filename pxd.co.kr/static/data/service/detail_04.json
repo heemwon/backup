@@ -1,0 +1,35 @@
+[
+  "detail_04",
+  {
+    "index": 3,
+    "slug": "detail_04",
+    "meta": {
+      "onedepth": "service",
+      "descripton": "사람에 대한 이해와 공감으로부터 문제를 발견합니다."
+    },
+    "outVisual": {
+      "thumbnail": "ico_service_main_04.svg",
+      "title": {
+        "main": "Rapid UX Design Process"
+      }
+    },
+    "pageVisual": {
+      "cover": {
+        "pc": "img_service_04.png",
+        "alt": ""
+      },
+      "banner": {
+        "pc": {
+          "img": "img_service_04_01.png"
+        },
+        "mobile": {
+          "img": "img_service_04_01_m.png"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "Rapid UX Design Process는 Hypothesis, Strategy, Build의 과정을 거쳐 탄생합니다."
+        }
+      }
+    }
+  }
+]

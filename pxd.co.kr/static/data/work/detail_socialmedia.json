@@ -1,0 +1,123 @@
+[
+  "detail_socialmedia",
+  {
+    "category": "all usabilityTest sns userResearch",
+    "slug": "detail_socialmedia",
+    "type": {
+      "protect": true
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_socialmedia.jpg",
+      "title": {
+        "lang": "en",
+        "content": "Social Media UT"
+      },
+      "client": "Facebook"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "full",
+        "bgColor": "",
+        "pc": "img_socialmedia_cover.jpg",
+        "mobile": "img_socialmedia_cover.jpg",
+        "alt": ""
+      },
+      "logo": {
+        "img": "logo_socialmedia.png",
+        "alt": "facebook Social Media Usability Test"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "en",
+        "content": "Social Media UT"
+      },
+      "year": "2018.03 ~ 2018.04",
+      "client": "Facebook",
+      "service": "Usability Test / UI Ideation"
+    },
+    "desc": [
+      {
+        "pc": {
+          "img": "img_socialmedia_02.jpg"
+        },
+        "mobile": {
+          "img": "img_socialmedia_02.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "project goal",
+            "li": [
+              {
+                "liContent": "현 페이스북 앱의 사용성 문제 발굴"
+              },
+              {
+                "liContent": "페이스북 진입장벽 및 이탈 요인 파악"
+              },
+              {
+                "liContent": "도출된 문제에 대한 개선안 제시"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_socialmedia_03.jpg"
+        },
+        "mobile": {
+          "img": "img_socialmedia_03.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "research result/key findings 12",
+            "li": [
+              {
+                "liContent": "01.compose: 기존 페이스북 사용자가 아니면 익숙하지 않은 컴포넌트로 인해, 40-50대 사용자의 75%가 compose를 다른 버전으로 오인"
+              },
+              {
+                "liContent": "02.settings: 명확하지 않은 메뉴 레이블과 메뉴 구조로 인해 20-30대 사용자의 97%가 한 번에 메뉴를 찾지 못함"
+              },
+              {
+                "liContent": "03.live video: 동영상 시청을 방해하는 리액션에 대해 부정적인 반응을 보였으며 리액션을 가리는"
+              },
+              {
+                "liContent": "04.profileupdate: 정보 업데이트와 관련된 메뉴 항목이 분산되어있어, 40-50대 사용자의 77%가 메뉴를 한 번에 찾지 못함"
+              },
+              {
+                "liContent": "05.privacy: 개별 친구와 그룹 친구와의 구분이 명확하지 않아 잘못 선택하거나,찾는데 오랜 시간이 걸림"
+              },
+              {
+                "liContent": "06.find friends: 동명이인이 많은 것으로 고려하여 중복어 검색을 시도하다 해당 기능을"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_socialmedia_04.jpg"
+        },
+        "mobile": {
+          "img": "img_socialmedia_04.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "develop ideation: key findings을 통해 해당 문제에 관한 개선 아이데이션을 진행"
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "UX DESIGN",
+        "members": "진예송, 진현정, 오진옥"
+      },
+      {
+        "team": "COACH",
+        "members": "한상택"
+      }
+    ]
+  }
+]

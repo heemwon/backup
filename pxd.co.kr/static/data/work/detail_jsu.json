@@ -1,0 +1,170 @@
+[
+  "detail_jsu",
+  {
+    "category": "all ebook mobileService",
+    "slug": "detail_jsu",
+    "headerType": "black",
+    "type": {
+      "protect": false
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_jsu.jpg",
+      "title": {
+        "lang": "ko",
+        "content": "모이는 순간 독서가 시작된다. Just Show Up"
+      },
+      "client": "지앤엠글로벌문화재단"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "",
+        "bgColor": "linear-gradient(to right, #ffe345, #d7b43d)",
+        "pc": "img_jsu_cover.png",
+        "mobile": "img_jsu_cover_m.png",
+        "alt": ""
+      },
+      "logo": {
+        "img": "log_jsu.png",
+        "alt": "JUST SHOW UP Audio Book & Book Club Service"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "ko",
+        "content": "모이는 순간 독서가 시작된다. \nJust Show Up"
+      },
+      "year": "2018.12 ~ 2019.04",
+      "client": "Grace and Mercy Korea",
+      "service": "GUI Design (Mobile App, PC Web)"
+    },
+    "desc": [
+      {
+        "title": "Overview",
+        "desc": "Just Show Up은 기존 북클럽과 달리 숙제 없이 모여서 함께 ‘오디오북’을 들으면서 책을 읽고, 그날 읽은 내용을 함께 나누는 북클럽 서비스입니다.",
+        "pc": {
+          "img": "img_jsu_01.jpg"
+        },
+        "mobile": {
+          "img": "img_jsu_01_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "Home . 내가 가입한 북클럽 모아보기"
+        },
+        "desc": "내가 가입한 북클럽을 모아보는 공간으로써 북클럽의 그룹핑을 잘 보일 수 있도록 카드 UI를 활용하였습니다. 카드 스타일은 북클럽의 무드를 느껴질 수 있도록 일러스트 스타일을 사용하였습니다.",
+        "pc": {
+          "img": "img_jsu_02.jpg"
+        },
+        "mobile": {
+          "img": "img_jsu_02_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "Library . 다양한 분야의 오디오북을 큐레이션 해주는 라이브러리"
+        },
+        "desc": "큰 썸네일과 그림자로 책 표지를 강조하고 프로모션, 도서 목록, 큐레이션 블록의 시각적 표현을 다양하게 하여 콘텐츠 탐색과정에서 흥미를 유발합니다.",
+        "pc": {
+          "img": "img_jsu_03.jpg"
+        },
+        "mobile": {
+          "img": "img_jsu_03_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "Review . 쉽게 쓰고 간편하게 나누는 도서 리뷰"
+        },
+        "desc": "다소 부담일 수 있는 리뷰 작성 과정은 단계별로 나누어 도서별 특징을 리뷰로 작성하기 쉽도록 디자인을 진행하였습니다.",
+        "pc": {
+          "img": "img_jsu_04.jpg"
+        },
+        "mobile": {
+          "img": "img_jsu_04_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "Player . 간편한 오디오북 플레이어"
+        },
+        "desc": "플레이어와 콘텐츠 영역을 명확히 분리하고, 원하는 챕터로의 이동이 쉽도록 설계되었습니다. 사용자가 다른 활동을 하더라도 재생목록이 플로팅 되어 언제든지, 어디서나 재생이 가능하도록 합니다.",
+        "pc": {
+          "img": "img_jsu_05.jpg"
+        },
+        "mobile": {
+          "img": "img_jsu_05_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "Book Club . 초대하고 모이고 나누는 북클럽"
+        },
+        "desc": "북클럽 안내, 멤버 초대, 모임 설정, 리뷰 등의 다양한 기능을 제공하고 정보 위계가 효과적으로 표현되도록 요소별 컬러/크기/여백/타이포그래피 등 시각 요소별 규칙을 명확히 정의하였습니다.        ",
+        "pc": {
+          "img": "img_jsu_06.jpg"
+        },
+        "mobile": {
+          "img": "img_jsu_06_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": "Desktop Web",
+        "desc": "모바일에서 사용된 모듈을 동일하게 적용하여 어떠한 환경에서도 직관적으로 서비스를 이용할 수 있게 합니다. 동일한 UI의 사용을 통해 사용자에게 보다 명확한 서비스 사용 경험을 제공할 수 있습니다.",
+        "pc": {
+          "img": "img_jsu_07.jpg"
+        },
+        "mobile": {
+          "img": "img_jsu_07_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "GUI DESIGN",
+        "members": "정소영, 안진언, 김지현"
+      },
+      {
+        "team": "ILLUSTRATION",
+        "members": "곽명주, 안진언"
+      },
+      {
+        "team": "COACH",
+        "members": "천민희"
+      }
+    ]
+  }
+]

@@ -1,0 +1,262 @@
+[
+  "detail_iptv",
+  {
+    "category": "all tvMediaVod",
+    "slug": "detail_iptv",
+    "type": {
+      "protect": true
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_iptv.jpg",
+      "title": {
+        "lang": "en",
+        "content": "IPTV UX/UI/GUI Renewal"
+      },
+      "client": "SKB"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "",
+        "bgColor": "linear-gradient(to right, #363541, #2c2b38)",
+        "pc": "img_iptv_cover.png",
+        "mobile": "img_iptv_cover.png",
+        "alt": ""
+      },
+      "logo": {
+        "img": "logo_iptv.png",
+        "alt": "B tv SK B TV UX / UI / GUI Renewal"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "en",
+        "content": "IPTV UX/UI/GUI"
+      },
+      "year": "2018",
+      "client": "SKB",
+      "service": "UX / UI / GUI Design"
+    },
+    "desc": [
+      {
+        "pc": {
+          "img": "img_iptv_02.jpg"
+        },
+        "mobile": {
+          "img": "img_iptv_02.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "다양한 블록 유형으로 콘텐츠 큐레이션",
+            "li": [
+              {
+                "liContent": "서비스 feature / 콘텐츠 장르에 따라 다양한 형태의 블록 정의"
+              },
+              { "liContent": "사용자의 이용패턴에 따라 변화하는 구조 제안" },
+              { "liContent": "이미지 중심으로 직관적인 탐색 유도" },
+              { "liContent": "한 화면에서 다양한 콘텐츠와 기능을 직관적으로 확인" },
+              { "liContent": "이용 depth를 줄이고 단순하게 탐색하도록 설계" }
+            ]
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_iptv_03.jpg"
+        },
+        "mobile": {
+          "img": "img_iptv_03.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "pc": {
+          "img": "img_iptv_04.jpg"
+        },
+        "mobile": {
+          "img": "img_iptv_04.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "home",
+            "li": [
+              {
+                "liContent": "콘텐츠 중심의 full-screen 탐색 공간"
+              },
+              {
+                "liContent": "b tv 콘텐츠 운영 전략과 사용자별 패턴/타켓 세그먼트에 따라 블록 큐레이션의 유연한 변화"
+              },
+              {
+                "liContent": "인기, 최신 콘텐츠/시청중인 콘텐츠/가입한 월정액 콘텐츠/추천 프로모션/추천 콘텐츠 등 사용자 이력 기반의 콘텐츠 큐레이션"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_iptv_05.jpg"
+        },
+        "mobile": {
+          "img": "img_iptv_05.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "pc": {
+          "img": "img_iptv_06.jpg"
+        },
+        "mobile": {
+          "img": "img_iptv_06.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "시놉시스",
+            "li": [
+              { "liContent": "콘텐츠 무드를 극대화시켜 몰입을 유도하는 콘텐츠 시놉시스" },
+              {
+                "liContent": "다양한 상품 옵션을 한번에 확인하고 직관적으로 선택할 수 있는 ui설계"
+              },
+              {
+                "liContent": "콘텐츠 선택에 도움이 되는 다양한 정보"
+              },
+              {
+                "liContent": "나의 평가/전체 b tv 평점/씨네21, 왓챠 평점 분포와 리뷰/수상정보/제작진, 출연진과 필모그래피/유사 장르 추천/관련 콘텐츠 추천 정보 등 풍부한 콘텐츠 정보를 제공"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_iptv_07.jpg"
+        },
+        "mobile": {
+          "img": "img_iptv_07.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "pc": {
+          "img": "img_iptv_08.jpg"
+        },
+        "mobile": {
+          "img": "img_iptv_08.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "b tv 키즈: 아이들이 좋아하는 캐릭터 중심으로 탐색하는 새로운 b tv 키즈 홈/놀이학습, 살아있는 동화, 키즈채널 등 아이와 부모를 위한 키즈 전용 메뉴로 구성"
+        }
+      },
+      {
+        "pc": {
+          "img": "img_iptv_09.jpg"
+        },
+        "mobile": {
+          "img": "img_iptv_09.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "pc": {
+          "img": "img_iptv_10.jpg"
+        },
+        "mobile": {
+          "img": "img_iptv_10.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "line tv: 언제든 고객의 선호 및 장르별로 채널을 탐색할 수 있는 편성표"
+        }
+      },
+      {
+        "pc": {
+          "img": "img_iptv_11.jpg"
+        },
+        "mobile": {
+          "img": "img_iptv_11.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "vod 시청: vod 시청 중에도 장면탐색, 구간반복, 자막과 음성 설정 등의 시청옵션을 일관성있는 ui로 구성"
+        }
+      },
+      {
+        "pc": {
+          "img": "img_iptv_12.jpg"
+        },
+        "mobile": {
+          "img": "img_iptv_12.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "my b tv: 다양한 할인수단을 한번에 확인하고 쉽게 등록할 수 있는 혜택 집중형 메뉴 제공, 고객의 최근 시청내역과 가입/소장하고 있는 콘텐츠들을 쉽게 탐색할 수 있는 구조, b tv와 연결중인 고객의 기기정보와 설정까지 함께 관리할 수 있는 고객용 홈화면"
+        }
+      },
+      {
+        "pc": {
+          "img": "img_iptv_13.jpg"
+        },
+        "mobile": {
+          "img": "img_iptv_13.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "pc": {
+          "img": "img_iptv_14.jpg"
+        },
+        "mobile": {
+          "img": "img_iptv_14.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "음성검색: 음성만으로 tv 제어 및 복합어 발화를 통한 정확도 높은 콘텐츠 추천, nugu 연결을 통한 편리한 콘텐츠 탐색과 서비스 이용"
+        }
+      },
+      {
+        "pc": {
+          "img": "img_iptv_15.jpg"
+        },
+        "mobile": {
+          "img": "img_iptv_15.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "UX DESIGN",
+        "members": "노미연, 조준희, 이주형, 김준, 김수향, 문현석, 정다영, 조영인"
+      },
+      {
+        "team": "GUI DESIGN",
+        "members": "천민희, 김다운, 김유경, 김선경, 황소현, 안진언, 한지희, 류지현"
+      },
+      {
+        "team": "COACH",
+        "members": "박기혁"
+      }
+    ]
+  }
+]

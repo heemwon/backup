@@ -1,0 +1,23 @@
+[
+  "detail_03",
+  {
+    "index": 2,
+    "slug": "detail_03",
+    "meta": {
+      "onedepth": "service",
+      "descripton": "사람에 대한 이해와 공감으로부터 문제를 발견합니다."
+    },
+    "outVisual": {
+      "thumbnail": "ico_service_main_03.svg",
+      "title": {
+        "main": "UX Tech Lab"
+      }
+    },
+    "pageVisual": {
+      "cover": {
+        "pc": "img_service_03.png",
+        "alt": ""
+      }
+    }
+  }
+]

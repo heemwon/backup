@@ -1,0 +1,259 @@
+[
+  "detail_jeju",
+  {
+    "category": "all userResearch space",
+    "slug": "detail_jeju",
+    "type": {
+      "protect": true
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_jeju.jpg",
+      "title": {
+        "lang": "en",
+        "content": "Jeju Working Platform Service Design"
+      },
+      "client": "제주시"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "full",
+        "bgColor": "",
+        "pc": "img_jeju_cover.jpg",
+        "mobile": "img_jeju_cover.jpg",
+        "alt": ""
+      },
+      "logo": {
+        "img": "logo_jeju.png",
+        "alt": "w360 Service UX Consulting"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "en",
+        "content": "Jeju Working Platform- Service Design"
+      },
+      "year": "2018.04",
+      "client": "제주시",
+      "service": "Service Design / UX Consulting / User Interview / Scenario"
+    },
+    "desc": [
+      {
+        "pc": {
+          "img": "img_jeju_02.jpg"
+        },
+        "mobile": {
+          "img": "img_jeju_02.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "프로젝트 개요",
+            "li": [
+              {
+                "liContent": "1. 원도심의 구기상정 부지를 활용하여 문화재 가치 보존 및 원도심 지역 활성화"
+              },
+              {
+                "liContent": "2. 세 기관의 사업간 연계 및 협업을 통해 도내외 인재유입 및 발굴과 양질의 스타트업 육성"
+              },
+              {
+                "liContent": "3. 기상기후 정보 활용 및 도시재생에 참여할 수 있는 창업 지원 프로그램 운영"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_jeju_03.jpg"
+        },
+        "mobile": {
+          "img": "img_jeju_03.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "컨소시엄을 통한 협업으로 서비스 디자인과 공간디자인 전문성을 활용하고 시너지 강화",
+            "li": [
+              {
+                "liContent": "서비스 디자인: 사용자 조사를 통한 기회요소 발굴, 서비스 사용 시나리오 도출, 운영 프로그램 제안 > pxd"
+              },
+              {
+                "liContent": "공간 디자인: 공간 컨셉 및 기본 계획, 공간 컬러 계획, 공간 레이아웃 및 디자인 가이드 > seetion.b"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_jeju_04.jpg"
+        },
+        "mobile": {
+          "img": "img_jeju_04.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "공간 스토리텔링",
+            "li": [
+              {
+                "liContent": "과거: 공신정/별을 보다/제주성/기원/경관"
+              },
+              {
+                "liContent": "현재: 기상기후/융합/빅데이터/예보/바람"
+              },
+              {
+                "liContent": "미래: 네트워크/도전/창업/협업/창의"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_jeju_05.jpg"
+        },
+        "mobile": {
+          "img": "img_jeju_05.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "플랫폼 네이밍 space w360",
+            "li": [
+              {
+                "liContent": "s: 워킹 플랫폼/업무 공간"
+              },
+              {
+                "liContent": "w: 제주와 연결된 세상을 바라보는 곳(watch)"
+              },
+              {
+                "liContent": "w: 제주의 새로운 바람이 불어오는 곳(wind)"
+              },
+              {
+                "liContent": "w: 사람들의 소망이 이루어지는 곳(wish)"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_jeju_06.jpg"
+        },
+        "mobile": {
+          "img": "img_jeju_06.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "history, vision, people",
+            "li": [
+              {
+                "liContent": "history: 제주에서 세상을 바라봅니다"
+              },
+              {
+                "liContent": "vision: 새로운 바람이 붑니다"
+              },
+              {
+                "liContent": "people: 사람들의 바람이 이루어집니다"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_jeju_07.jpg"
+        },
+        "mobile": {
+          "img": "img_jeju_07.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "synergy, culture",
+            "li": [
+              {
+                "liContent": "synergy: space w360은 원도심으로 이어집니다"
+              },
+              {
+                "liContent": "culture: 제주의 스타트업 문화를 만듭니다"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_jeju_08.jpg"
+        },
+        "mobile": {
+          "img": "img_jeju_08.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "pc": {
+          "img": "img_jeju_09.jpg"
+        },
+        "mobile": {
+          "img": "img_jeju_09.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "pc": {
+          "img": "img_jeju_10.jpg"
+        },
+        "mobile": {
+          "img": "img_jeju_10.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "pc": {
+          "img": "img_jeju_11.jpg"
+        },
+        "mobile": {
+          "img": "img_jeju_11.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "pc": {
+          "img": "img_jeju_12.jpg"
+        },
+        "mobile": {
+          "img": "img_jeju_12.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "UX DESIGN",
+        "members": "양정윤, 김서연"
+      },
+      {
+        "team": "COACH",
+        "members": "박기혁"
+      }
+    ]
+  }
+]

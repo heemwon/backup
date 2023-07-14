@@ -1,0 +1,202 @@
+[
+  "detail_smartneo",
+  {
+    "category": "all mobileService userResearch",
+    "slug": "detail_smartneo",
+    "type": {
+      "protect": false
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_daewoo.jpg",
+      "title": {
+        "lang": "ko",
+        "content": "모바일 투자경험에 집중한 가장 간편한 MTS, Smart Neo"
+      },
+      "client": "KDB Daewoo"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "",
+        "bgColor": "linear-gradient(to right, #1a3a71, #1d286e)",
+        "pc": "img_smartneo_cover.png",
+        "mobile": "img_smartneo_cover_m.png",
+        "alt": ""
+      },
+      "logo": {
+        "img": "logo_smartneo.png",
+        "alt": "대우증권 Smart Neo MTS UX/ UI Design"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "ko",
+        "content": "모바일 투자경험에 집중한 가장 간편한 MTS, Smart Neo"
+      },
+      "year": "2015.05 ~ 2016.01",
+      "client": "KDB Daewoo",
+      "service": "UX Strategy, UI / GUI Design"
+    },
+    "desc": [
+      {
+        "title": "Overview",
+        "desc": "대우증권의 온라인 서비스들을 MTS 중심의 채널 일원화하면서 주거래 매체를 HTS에서 MTS로 확장시키는 것이 프로젝트의 목표였습니다. 초기의 많은 MTS들은 PC 환경에서 개발된 화면을 그대로 모바일의 작은 화면에 녹여 넣는 방식의 복잡하고 사용하기 어려운 UI를 갖고 있었는데, 이는 주식을 처음 접하거나 모바일 간편 투자를 원하는 사용자를 만족시키지 못했습니다. 또한 많은 메뉴와 화면이 사용 흐름을 고려하지 못한 채 서로 단절된 모습으로 서비스되곤 했습니다. pxd는 대우증권의 Smart Neo 3.0 리뉴얼 프로젝트를 맡아, MTS 분석과 사용자 조사를 진행하며 발견한 인사이트를 기반으로 모바일에 최적화된 투자 경험을 제시하였습니다.",
+        "pc": {
+          "img": "img_smartneo_01.jpg"
+        },
+        "mobile": {
+          "img": "img_smartneo_01_m.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "as/is 분석 및 방향설정, 자산관리/니즈확인, mts 사용경험 및 행태조사를 통해 탄생한 대우증권 smart neo 3.0"
+        }
+      },
+      {
+        "title": "User Research",
+        "desc": "사용자들의 주요 자산관리 형태 및 주식거래 경험을 수집하고 MTS 이용 패턴을 파악하기 위해 사용자 조사를 진행했습니다. 초기 투자 입문자, 개인 분석 가능 투자자, 간접투자 중심의 자산관리자로 크게 3가지의 고객 유형을 분류하여 현재 MTS 사용의 패턴과 Pain Point를 중심으로 인사이트를 정리하였습니다. 인터뷰 결과를 바탕으로 As-is 상태의 문제점을 파악하여 개선 방향 도출에 활용될 수 있도록 To-be Customer Journey Map을 작성하였습니다.",
+        "pc": {
+          "img": "img_smartneo_02.jpg"
+        },
+        "mobile": {
+          "img": "img_smartneo_02_m.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "정리된 인사이트",
+            "li": [
+              {
+                "liContent": "첫 화면의 중요성"
+              },
+              {
+                "liContent": "관심종목 화면과 검색기능 결합"
+              },
+              {
+                "liContent": "현재가 화면 가시성"
+              },
+              {
+                "liContent": "투자정보 컨텐츠들간의 유기적인 연결"
+              },
+              {
+                "liContent": "잔고확인과 매도매수의 기능결합"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "title": "UX/UI Direction",
+        "desc": "개개인의 로그데이터를 이용해 개별 사용자에게 필요한 정보만을 모아서 카드 형태로 제공하여 관심종목부터 자산현황, 종목뉴스까지 한 화면에서 모니터링을 할 수 있는 홈화면을 제안하였습니다. 또한 주식 매매시 상승과 하락의 원인을 쉽게 판단할 수 있도록 종목 뉴스들을 날짜별로 쉽게 트래킹할 수 있는 UI를 기획하여 클라이언트의 긍정적인 평가를 얻었습니다. 주식 종목과 투자정보 그리고 내 자산현황까지 연결해 원하는 정보를 쉽게 확인할 수 있는 차별화된 MTS를 제시하였습니다.",
+        "pc": {
+          "img": "img_smartneo_03.jpg"
+        },
+        "mobile": {
+          "img": "img_smartneo_03_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "GUI Draft 시안"
+        },
+        "desc": "쉽고 간편한 모바일 사용 경험을 제공하기 위해 금융 서비스가 갖는 무거운 이미지를 매력적이고 친근한 이미지로 바꾸고자 하였습니다. 따라서 기존의 대우증권의 기업 이미지를 내세우며 트렌디한 인상을 가미하는 방향과 스마트네오의 새로운 서비스의 브랜드를 새롭게 확립하는 두 가지의 방향을 제안하였습니다.",
+        "pc": {
+          "img": "img_smartneo_04.jpg"
+        },
+        "mobile": {
+          "img": "img_smartneo_04_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": "GUI Keyscreen Design",
+        "desc": "오랫동안 사용해온 기존 대우증권의 블루 컬러를 세련되게 재정의하여 업계를 선도하는 젊은 이미지를 내세우면서 상승을 나타내는 마운틴 이미지를 UI 전반에 가미하여 깊이 있는 고급스러움을 강조하여 디자인을 전개했습니다.",
+        "pc": {
+          "img": "img_smartneo_05.jpg"
+        },
+        "mobile": {
+          "img": "img_smartneo_05_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "간편한 모바일 주식매매"
+        },
+        "desc": "모바일로 주식을 매매할 때 오류없이 가격과 수량을 입력 후 빠르게 주문을 완료하는 시나리오에 가장 집중했습니다. 매매 시 불필요한 정보들은 없애고 시점에 맞는 정보 위주로 구성하였으며, 직접 입력보다는 단위별로 빠르게 선택해 입력할 수 있도록 모바일 입력환경에 최적화된 컴포넌트를 사용했습니다.",
+        "pc": {
+          "img": "img_smartneo_06.jpg"
+        },
+        "mobile": {
+          "img": "img_smartneo_06_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "pc": {
+          "img": "img_smartneo_07.jpg"
+        },
+        "mobile": {
+          "img": "img_smartneo_07_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "pc": {
+          "img": "img_smartneo_08.jpg"
+        },
+        "mobile": {
+          "img": ""
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "IF 디자인 어워드 수상"
+        },
+        "desc": "프로젝트 종료 후 대우증권 MTS는 2017 IF 디자인 어워드를 수상하며 노력한 결과를 인정받았습니다.",
+        "pc": {
+          "img": "img_smartneo_09.jpg"
+        },
+        "mobile": {
+          "img": ""
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "UX DESIGN",
+        "members": "전성진, 김동후, 이채민, 노미연, 신유민, 성희정"
+      },
+      {
+        "team": "GUI DESIGN",
+        "members": "김다운, 양정연, 김유경, 김현우, 김혜림, 신한솔"
+      }
+    ]
+  }
+]

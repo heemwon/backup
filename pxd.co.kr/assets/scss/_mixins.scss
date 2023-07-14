@@ -1,0 +1,147 @@
+@mixin clear {
+  display: none;
+  content: '';
+  clear: both;
+}
+
+@mixin max-1920 {
+  margin: 0 auto;
+  padding: 0 92px;
+  width: 100%;
+  max-width: 1920px;
+}
+
+@mixin max-pc {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 92px;
+  width: 100%;
+  max-width: 1920px;
+}
+
+@mixin font-heading1 {
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 1.1;
+  letter-spacing: -1.4px;
+}
+@mixin font-heading2 {
+  font-size: 68px;
+  font-weight: bold;
+  line-height: 1.24;
+  letter-spacing: -1.4px;
+}
+@mixin font-heading3 {
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 1.43;
+  letter-spacing: -2px;
+}
+@mixin font-heading4 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.33;
+  letter-spacing: -0.2px;
+  // tablet ~ mo
+  @media (max-width: 1439px) {
+    font-size: 24px;
+    line-height: 1.33;
+    letter-spacing: -0.4px;
+  }
+}
+@mixin font-heading5 {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.43;
+  letter-spacing: -0.2px;
+  // mo
+  @media (max-width: 768px) {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.45;
+    letter-spacing: -0.1px;
+  }
+}
+@mixin font-heading6 {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.5;
+  letter-spacing: -0.1px;
+}
+@mixin font-heading7 {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.64;
+  letter-spacing: -0.2px;
+}
+@mixin font-heading8 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.4;
+  letter-spacing: -0.2px;
+}
+@mixin font-heading9 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.43;
+  letter-spacing: -0.1px;
+}
+@mixin font-heading10 {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: -0.1px;
+}
+@mixin font-body1 {
+  font-size: 36px;
+  line-height: 1.5;
+  letter-spacing: -1.2px;
+}
+@mixin font-body2 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.43;
+  letter-spacing: -0.4px;
+}
+@mixin font-body3 {
+  font-size: 18px;
+  line-height: 1.78;
+  letter-spacing: -0.4px;
+}
+@mixin font-body4 {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.1px;
+  // mo
+  @media (max-width: 768px) {
+    font-size: 13px;
+    line-height: 1.54;
+    letter-spacing: normal;
+  }
+}
+@mixin font-body5 {
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: -0.1px;
+}
+
+@mixin hoverLine {
+  display: inline-block;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 0;
+  height: 1px;
+  background-color: $color-line-04;
+  transition: width 0.3s linear;
+}
+
+@mixin textOverflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}

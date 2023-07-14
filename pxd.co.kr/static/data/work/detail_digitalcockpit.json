@@ -1,0 +1,181 @@
+[
+  "detail_digitalcockpit",
+  {
+    "category": "all autoMobility",
+    "slug": "detail_digitalcockpit",
+    "type": {
+      "protect": true
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_digitalcockpit.jpg",
+      "title": {
+        "lang": "en",
+        "content": "Digital Cockpit"
+      },
+      "client": "LG 전자"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "full",
+        "bgColor": "",
+        "pc": "img_digitalcockpit_cover.png",
+        "mobile": "img_digitalcockpit_cover_m.jpg",
+        "alt": ""
+      },
+      "logo": {
+        "img": "logo_digitalcockpit.png",
+        "alt": "LG전자 Digital Cockpit UX Concept / UX Scenarios / UI / GUI"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "en",
+        "content": "Digital Cockpit"
+      },
+      "year": "2017.05 ~ 2017.07",
+      "client": "LG 전자",
+      "service": "UX Scenarios / UI / GUI"
+    },
+    "desc": [
+      {
+        "pc": {
+          "img": "img_digitalcockpit_02.jpg"
+        },
+        "mobile": {
+          "img": "img_digitalcockpit_02.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "project goals",
+            "li": [
+              {
+                "liContent": "데모시나리오 설계 - 기능 컨셉 도출과 이해를 돕기 위한 일르스트레이션 수행"
+              },
+              {
+                "liContent": "CES 2018에 시연할 수 있는 구체적인 UI 및 GUI 디자인 수행"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_digitalcockpit_03.jpg"
+        },
+        "mobile": {
+          "img": "img_digitalcockpit_03.jpg"
+        },
+        "alt": {
+          "type": "title",
+          "content": {
+            "title": "process",
+            "desc": "자동차 내부 인테리어, 그래픽 스타일, 콘티 스타일 리서치를 통해 ux demo sceanarios 설계 > force touch, air gesture, haptic feedback 리서치를 통해 결과 도출"
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_digitalcockpit_04.jpg"
+        },
+        "mobile": {
+          "img": "img_digitalcockpit_04.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "ux design concept",
+            "li": [
+              {
+                "liContent": "reliable hmi: 자율주행 lv.3에 적합한 sape hmi 신뢰감 형성 및 안전한 제어권 전환"
+              },
+              {
+                "liContent": "intelligent assistant: 차량용 지능형 에이전트, 탑승자/상황 맞춤 가이드와 서비스 제공"
+              },
+              {
+                "liContent": "felxible & realistic: 차량 이용 목적에 따른 공간 변화, 입체적이고 실제감 있는 인터페이스"
+              },
+              {
+                "liContent": "connectivity: 실시간 고용량 live 서비스 이용, 편의 차량 내의 원활한 커뮤니케이션 지원"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_digitalcockpit_05.jpg"
+        },
+        "mobile": {
+          "img": "img_digitalcockpit_05.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "pc": {
+          "img": "img_digitalcockpit_06.jpg"
+        },
+        "mobile": {
+          "img": "img_digitalcockpit_06.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "demo scenarios",
+            "li": [
+              {
+                "liContent": "탑승/준비"
+              },
+              {
+                "liContent": "출발/수동 주행"
+              },
+              {
+                "liContent": "자율 주행"
+              },
+              {
+                "liContent": "수동 전환/목적지 도착"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_digitalcockpit_07.jpg"
+        },
+        "mobile": {
+          "img": "img_digitalcockpit_07.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "gui - key screens"
+        }
+      },
+      {
+        "pc": {
+          "img": "img_digitalcockpit_08.jpg"
+        },
+        "mobile": {
+          "img": "img_digitalcockpit_08.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "UI DESIGN",
+        "members": "문한별, 위승용, 최동우"
+      },
+      {
+        "team": "GUI DESIGN",
+        "members": "박영은, 서윤희, 조은산"
+      }
+    ]
+  }
+]

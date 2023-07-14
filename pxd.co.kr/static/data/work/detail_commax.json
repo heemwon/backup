@@ -1,0 +1,154 @@
+[
+  "detail_commax",
+  {
+    "category": "all iot mobileService tvMediaVod",
+    "slug": "detail_commax",
+    "type": {
+      "protect": true
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_closed_03.jpg",
+      "title": {
+        "lang": "en",
+        "content": "COMMAX IoT"
+      },
+      "client": "COMMAX"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "full",
+        "bgColor": "",
+        "pc": "img_commax_cover.jpg",
+        "mobile": "img_commax_cover.jpg",
+        "alt": ""
+      },
+      "logo": {
+        "img": "logo_commax.png",
+        "alt": "COMMAX 2016 UX Renewal"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "ko",
+        "content": "일관된 사용성을 경험할 수 있는 코맥스 홈 IoT 디자인 시스템"
+      },
+      "year": "2016.01 ~ 2016.06",
+      "client": "COMMAX",
+      "service": "UX / UI / GUI Consulting"
+    },
+    "desc": [
+      {
+        "title": "Overview",
+        "desc": "COMMAX 1차 프로젝트에서 UX 방향성으로 내세운 3개의 전략을 실제 코맥스 제품에 구현할 수 있는 UI 및 GUI 디자인으로 좋은 선례를 만들어 추후 제품 Renewal에 적용할 수 있는 결과물을 만드는 것에 중점을 두었습니다. 대표 서비스로 WALL PAD와 SMART PHONE APP 두 가지를 선정하여 다른 과제에서도 적용할 수 있도록 하였습니다.",
+        "pc": {
+          "img": "img_commax_01.jpg"
+        },
+        "mobile": {
+          "img": "img_commax_01_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": "Interior Decoration & Life Helper",
+        "desc": "코맥스의 Home IoT의 3가지 UX 전략 키워드인 Reporter, Orchestrator, Coach를 구체화한 Wallpad는 집안 분위기를 살려주는 분위기 메이커이자 사용자의 생활을 도와주는 Life Helper 역할을 합니다.",
+        "pc": {
+          "img": "img_commax_02.jpg"
+        },
+        "mobile": {
+          "img": "img_commax_02_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": "10-Foot Reporter",
+        "desc": "먼 거리에서도 한 눈에 볼 수 있는 ‘가치정보’들을 표시하여 집안 내부 어디에서라도 사용자의 주변 환경정보들을 빠르고 명확하게 알려주도록 설계하였습니다.",
+        "pc": {
+          "img": "img_commax_03.jpg"
+        },
+        "mobile": {
+          "img": "img_commax_03_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": "1-Foot Orchestrator (Set control)",
+        "desc": "집안에 연결된 IoT 기기들을 손쉽게 조작하여 실내환경을 원하는 모드로 섬세하게 세팅할 수 있습니다.",
+        "pc": {
+          "img": "img_commax_04.jpg"
+        },
+        "mobile": {
+          "img": "img_commax_04_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": "Coach (Apps & Functions)",
+        "desc": "사용 환경에 이상이 있을 때 해결 방법을 제공하고 제어할 수 있도록 도움을 줍니다. 사용자가 더 절약하고, 보안을 강화하는 등 사용 환경을 개선할 수 있도록 집안의 코치 역할을 합니다.",
+        "pc": {
+          "img": "img_commax_05.jpg"
+        },
+        "mobile": {
+          "img": "img_commax_05_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": "Mobile App",
+        "desc": "집 밖에서도 집안의 현재 상황을 파악할 수 있으며 필요한 경우 연결된 기기를 직접 제어할 수 있습니다.",
+        "pc": {
+          "img": "img_commax_06.jpg"
+        },
+        "mobile": {
+          "img": "img_commax_06_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": "Other Screen",
+        "desc": "사용자의 주거환경을 편리하게 만드는데 필요한 세심한 기능까지 디자인했습니다.",
+        "pc": {
+          "img": "img_commax_07.jpg"
+        },
+        "mobile": {
+          "img": "img_commax_07_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "UX DESIGN",
+        "members": "장수길, 김한웅, 정유리, 정다영, 이가현, 임혜진"
+      },
+      {
+        "team": "GUI DESIGN",
+        "members": "오은주, 황소현, 김유경, 김혜림, 오현아, 신한솔"
+      },
+      {
+        "team": "COACH",
+        "members": "허유리, 김다운"
+      }
+    ]
+  }
+]

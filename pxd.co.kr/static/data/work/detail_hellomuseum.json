@@ -1,0 +1,219 @@
+[
+  "detail_hellomuseum",
+  {
+    "category": "all userResearch, space",
+    "slug": "detail_hellomuseum",
+    "headerType": "black",
+    "type": {
+      "protect": true
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_hellomuseum.jpg",
+      "title": {
+        "lang": "en",
+        "content": "Hello Museum Service Design"
+      },
+      "client": "C-program & HelloMuseum"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "",
+        "bgColor": "linear-gradient(to right, #ff7519, #f46a0d)",
+        "pc": "img_hellomuseum_cover.png",
+        "mobile": "img_hellomuseum_cover_m.png",
+        "alt": ""
+      },
+      "logo": {
+        "img": "logo_hellomuseum.png",
+        "alt": "C_program x 헬로우 뮤지움 User Experience Design for Art Museum"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "ko",
+        "content": "미술관 경험 여정을 구조화하다. 헬로우뮤지움 동네미술관"
+      },
+      "year": "2015.10 ~ 2016.04",
+      "client": "C-program & HelloMuseum",
+      "service": "User Research / Survey, Space"
+    },
+    "desc": [
+      {
+        "title": "Overview",
+        "desc": "헬로우뮤지움은 어린이를 위한 동네 미술관으로써 여러 예술 교육 활동과 체험학습을 제공합니다. 우리는 우선적으로, 어린이 관람객의 미술관 경험을 구조화하여 미술관이 고객에게 제공하는 경험요소를 파악하고자 하였습니다. 또한, 헬로우뮤지움이 어린이를 먼저 생각하는 관객 중심의 미술관이 될 수 있도록 Pain-point 및 Unmet Needs를 도출하여 사용자 관점에서 서비스를 개선하고 프로토타입을 제시하고자 하였습니다.",
+        "pc": {
+          "img": "img_hellomuseum_01.jpg"
+        },
+        "mobile": {
+          "img": "img_hellomuseum_01_m.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "미술관 경험을 구조화하기 위한 방법",
+            "li": [
+              {
+                "liContent": "01. Basic Research Specialist Interview User Research"
+              },
+              {
+                "liContent": "02. Contextual Modeling User Modeling"
+              },
+              {
+                "liContent": "03. Ideation Workshop"
+              },
+              {
+                "liContent": "04. Prototyping"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "title": "Our Approach",
+        "desc": "인사이트를 도출하기 위해서는 미술관 경험에 대한 사용자의 Needs를 파악해야 했는데, 어린이 관람객을 관찰 조사하는 것만으로는 한계가 있었습니다. 따라서 우리는 미술관 방문 전 - 관람 - 관람 후의 각 3가지 시점이 어린이 관람객에게 어떠한 영향을 미치는지 포커스를 맞추고 그 맥락을 파악하고자 하였습니다.",
+        "pc": {
+          "img": "img_hellomuseum_02.jpg"
+        },
+        "mobile": {
+          "img": "img_hellomuseum_02_m.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "미술관 방문 전-관람-관람 후의 3가지 시점",
+            "li": [
+              {
+                "liContent": "방문 전: 미술관 방문에 대한 인지와 기대가 어떻게 이루어질까?"
+              },
+              {
+                "liContent": "관람: 작품 및 부모, 에듀케이터, 관람객 사이의 상호작용이 어떻게 이루어질까?"
+              },
+              {
+                "liContent": "관람 후: 어린이 관람객은 동네미술관에서 어떤 기억을 갖고 돌아갈까?"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "title": "User Modeling",
+        "desc": "여러 어린이 관람객 뿐만 아니라, 미술관 유입에 영향을 미치는 부모님들도 함께 만나 인터뷰를 진행하고 유저 모델링을 실시하였습니다. 동네 미술관의 유입은 부모님의 동행이 필요하고 따라서 부모님의 미술관 방문 목적이나 그 의도에 따라 유형이 3가지로 나뉘는 것을 발견했습니다. 어린이 관람객의 경우 미술관 내 작품, 공간, 에듀케이터, 관람객 등의 경험요소와 어떻게 상호작용을 하느냐에 따라서 총 4가지의 관람객 유형을 도출할 수 있었습니다.",
+        "pc": {
+          "img": "img_hellomuseum_03.jpg"
+        },
+        "mobile": {
+          "img": "img_hellomuseum_03_m.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "관람객 유형",
+            "li": [
+              {
+                "liContent": "참여적 따름형"
+              },
+              {
+                "liContent": "놀이 중심 활동형"
+              },
+              {
+                "liContent": "관계기반 활동형"
+              },
+              {
+                "liContent": "주체적 팀"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "title": "Journey Map",
+        "desc": "리서치 데이터를 기반으로 주요 인사이트를 시퀀스에 맵핑하여 어린이 관람객이 미술관을 오면서부터 관람 후의 전체적인 경험 여정과 관람 형태별로 미술관 경험 차이를 시각화하였습니다. 해당 저니맵을 통해 미술관이 사용자에게 주는 자극 요소를 특정할 수 있었고, 동네 미술관이 어린이 관람객에게 줄 수 있는 가치(인사이트)를 도출할 수 있었습니다.",
+        "pc": {
+          "img": "img_hellomuseum_04.jpg"
+        },
+        "mobile": {
+          "img": "img_hellomuseum_04_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": "Service Co-Creation Workshop",
+        "desc": "모델링에서 도출한 동네 미술관에서의 경험 요소를 바탕으로 더 좋은 경험을 위해 Co-Creation Workshop을 진행하였습니다. 워크숍에서 pxd는 그동안의 사용자 조사, 헬로우뮤지움은 직접 현장에서 느낀 인사이트, 그리고 C-program은 놀이나 어린이 관련 프로젝트의 다양한 경험들을 통해서 많은 아이디어들을 도출할 수 있었습니다. Idea Seed와 이를 구체화한 아이디어를 Idea Library로 정리하여 공유하고, Prototype 과정을 위해 아이디어를 고도화하는 과정을 진행하였습니다.",
+        "pc": {
+          "img": "img_hellomuseum_05.jpg"
+        },
+        "mobile": {
+          "img": "img_hellomuseum_05_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": "Service Visual Scenario",
+        "desc": "아이데이션을 바탕으로 설계된 서비스를 시각화하는 작업을 진행하였습니다. 우리는 체험 전시 관람객과 일반 전시 관람객에게 방문 전부터 전시 관람 중까지 헬로우의 가치를 담은 정보를 효과적으로 제공하고 일반 전시 관람객의 미술관 경험의 질을 높여주기 위한 가이드라인에 중점을 두었습니다.",
+        "pc": {
+          "img": "img_hellomuseum_06.jpg"
+        },
+        "mobile": {
+          "img": "img_hellomuseum_06_m.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "가이드 라인",
+            "li": [
+              {
+                "liContent": "시나리오.1 일반 전시 관람객: 인지 > 입장 > 관람준비 전시 > 미리보기 > 관람 > 환기 > 재방문안내 > 퇴장"
+              },
+              {
+                "liContent": "시나리오.2 체험 전시 관람객: 체험 프로그램 예약 > 사전 정보 확인 > 입장 > 관람준비 > 관람 > 마무리 > 퇴장"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "title": "Information Design",
+        "desc": "서비스 시나리오의 특정 순간마다 사용자가 필요로 하는 Information을 디자인하였습니다. 최종 산출물로써 예약 관람객을 위한 문자메시지 서비스 / 인포데스크 관람객 안내 메뉴얼 / 관람 형태별 안내 리플렛을 제안드렸습니다. 또한 실제 관람객에게 Prototype Test를 진행하여 발견된 문제에 대해서는 수정 반영하여 마무리하였습니다.",
+        "pc": {
+          "img": "img_hellomuseum_07.jpg"
+        },
+        "mobile": {
+          "img": "img_hellomuseum_07_m.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "Information 최종 산출물",
+            "li": [
+              {
+                "liContent": "message: 관람객을 위한 문자메세지 서비스"
+              },
+              {
+                "liContent": "manual: 인포데스크 관람객 안내 메뉴얼"
+              },
+              {
+                "liContent": "leaflet: 관람 형태별 안내 리플렛"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "UX DESIGN",
+        "members": "양정연, 진현정, 이소현, 이수현"
+      },
+      {
+        "team": "COACH",
+        "members": "조준희, 송영일"
+      }
+    ]
+  }
+]

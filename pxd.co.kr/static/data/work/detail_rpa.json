@@ -1,0 +1,102 @@
+[
+  "detail_rpa",
+  {
+    "category": "all frontEnd uiDevelop",
+    "slug": "detail_rpa",
+    "headerType": "black",
+    "type": {
+      "bg":true,
+      "protect": true
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_rpa.jpg",
+      "title": {
+        "lang": "en",
+        "content": "RPA WEB UI"
+      },
+      "client": "포스코ICT"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "",
+        "bgColor": "linear-gradient(to right, #8f8f8f, #f3f3f3)",
+        "pc": "img_rpa_cover.png",
+        "mobile": "img_rpa_cover_m.png",
+        "alt": ""
+      },
+      "logo": {
+        "img": "logo_rpa.png",
+        "alt": "POSCO RPA Web UI, PC Service"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "ko",
+        "content": "RPA Web UI 개발"
+      },
+      "year": "2018.10 ~ 2019.02 / 2020.02 ~ 2020.04",
+      "client": "포스코ICT",
+      "service": "Front-End / UI Develop (PC Service)"
+    },
+    "desc": [
+      {
+        "title": "Overview",
+        "desc": "사무 업무가 있는 모든 곳에서 사용할 수 있는 업무 자동화 시스템을 개발했습니다. SPA(Single Page Application) 웹 앱 프레임워크를 이용해 관리자에게는 유연한 개발 확장을, 사용자에게는 만족스러운 사용자 경험을 제공했습니다.",
+        "pc": {
+          "img": "img_rpa_01.jpg"
+        },
+        "mobile": {
+          "img": "img_rpa_01.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "a.works center 메인 화면"
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "컴포넌트 최적화 작업"
+        },
+        "desc": "사용자의 상태에 따른 화면 변화를 Vue.js를 활용하여 용도별 컴포넌트화하여 코드 재사용성을 높였고, 개발 확장성 및 운영, 관리가 수월하도록 고려해 기능별 모듈화를 세분화하여 개발하였습니다.",
+        "pc": {
+          "img": "img_rpa_02.jpg"
+        },
+        "mobile": {
+          "img": "img_rpa_02.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "사용자 로그인 화면"
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "더욱 편리해진 사용자 경험(UX) 구현"
+        },
+        "desc": "사용자의 화면 이동 최소화를 위해 메뉴 내 모든 기능은 한 화면에서 노출되도록 사용성을 고려해 구현했습니다. 자주 쓰는 캘린더, 차트 등의 중요 정보는 빠른 확인 및 제어를 할 수 있어졌으며, 테이블 그리드, 멀티셀렉트 등은 키보드로도 접근할 수 있도록 웹 접근성을 준수해 구현했습니다. 다양한 사용자들의 디바이스와 해상도를 고려해 UI를 구성하고 개발했습니다.",
+        "pc": {
+          "img": "img_rpa_03.jpg"
+        },
+        "mobile": {
+          "img": "img_rpa_03_m.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "RPA Web 대시보드"
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "UI Develop",
+        "members": "백내영"
+      },
+      {
+        "team": "Front-End Develop",
+        "members": "홍도영"
+      }
+    ]
+  }
+]

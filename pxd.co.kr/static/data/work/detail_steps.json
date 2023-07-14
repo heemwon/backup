@@ -1,0 +1,164 @@
+[
+  "detail_steps",
+  {
+    "category": "all financialService mobileService userResearch usabilityTest",
+    "slug": "detail_steps",
+    "headerType": "black",
+    "type": {
+      "protect": false
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_steps.jpg",
+      "title": {
+        "lang": "ko",
+        "content": "올바른 투자습관을 길러주는 주식투자 스타터"
+      },
+      "client": "Hanwha Investment & Securities Co"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "",
+        "bgColor": "linear-gradient(to right, #e6ebf2, #c3cbd9)",
+        "pc": "img_steps_cover.png",
+        "mobile": "img_steps_cover_m.png",
+        "alt": ""
+      },
+      "logo": {
+        "img": "logo_steps.png",
+        "alt": "한화투자증권 STEPS MTS UX/UI Design"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "ko",
+        "content": "올바른 투자습관을 길러주는 주식투자 스타터"
+      },
+      "year": "2016.10 ~ 2017.03",
+      "client": "Hanwha Investment & Securities Co",
+      "service": "UX / UI / GUI Design (Mobile App)"
+    },
+    "desc": [
+      {
+        "title": "Overview",
+        "desc": "모바일 환경에는 익숙하지만 주식 경험이 없는 사용자를 타깃으로하여 ‘간편 주식 앱’ 서비스입니다. 기존 MTS를 탈피한 형태를 지향하였기 때문에 SNS 로그인, 토스 같은 단순하고 가벼운 모습으로 디자인 되었습니다.",
+        "pc": {
+          "img": "img_steps_01.jpg"
+        },
+        "mobile": {
+          "img": "img_steps_01_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": "Graphic Concept",
+        "desc": "단계를 의미하는 Block Stacking과 사선 shape을 디자인 모티브로 정의했고, 이를 시각적 요소 및 인터렉션으로 활용하여 일관성있는 아이덴티티를 부여하고자 했습니다.",
+        "pc": {
+          "img": "img_steps_02.jpg"
+        },
+        "mobile": {
+          "img": "img_steps_02_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": "Card UI",
+        "desc": "메인화면에서는 Today / Favorite / Discovery 를 좌우 플릭으로 탐색하며 시장 정보를 습득할 수 있습니다. 종목 상세 화면에서 종목 뉴스 / 종목 현재가 / 종목 정보를 좌우플릭으로 기업가치 분석을 쉽게 이해할 수 있도록 디자인했습니다.",
+        "pc": {
+          "img": "img_steps_03.jpg"
+        },
+        "mobile": {
+          "img": "img_steps_03_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "숨은영역"
+        },
+        "desc": "사용자들의 프라이빗한 정보를 카드게임에서 내 패를 슬쩍 쪼아보며 확인하는 재미를 차용한 인터렉션으로 풀어냈습니다. 이 구조는 어느 화면에서든지 접근하여 사용자의 자산을 확인할 수 있게 했습니다.",
+        "pc": {
+          "img": "img_steps_04.jpg"
+        },
+        "mobile": {
+          "img": "img_steps_04_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": "Key Screen",
+        "desc": "메인화면에서는 Today / Favorite / Discovery 를 좌우 플릭으로 탐색하며 시장 정보를 습득할 수 있습니다. 좌우 플릭되는 카드 UI를 기본으로 아주 간결하고 깔끔하게 정보를 보여줄 수 있도록 디자인했습니다.",
+        "pc": {
+          "img": "img_steps_05.jpg"
+        },
+        "mobile": {
+          "img": "img_steps_05_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "pc": {
+          "img": "img_steps_06.jpg"
+        },
+        "mobile": {
+          "img": "img_steps_06_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "pc": {
+          "img": "img_steps_07.jpg"
+        },
+        "mobile": {
+          "img": "img_steps_07_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": "Other Pages",
+        "desc": "기존 MTS에서 사용하던 복잡한 수치 정보들을 단순하고 이해하기 쉽게 재구성하여 초보 주식 투자자들이 더 많은 정보를 습득할 수 있도록 디자인했습니다.",
+        "pc": {
+          "img": "img_steps_08.jpg"
+        },
+        "mobile": {
+          "img": "img_steps_08_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "UX DESIGN",
+        "members": "진현정, 장수길, 김준, 이가현"
+      },
+      {
+        "team": "GUI DESIGN",
+        "members": "권소정, 오은주, 양정연, 신한솔, 김혜림, 송미나"
+      }
+    ]
+  }
+]

@@ -1,0 +1,193 @@
+[
+  "detail_wearabledevice",
+  {
+    "category": "all guideline wearable",
+    "slug": "detail_wearabledevice",
+    "type": {
+      "protect": true
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_wearabledevice.jpg",
+      "title": {
+        "lang": "en",
+        "content": "Wearable Device Design Guidelines"
+      },
+      "client": "삼성전자"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "full",
+        "bgColor": "",
+        "pc": "img_wearabledevice_cover.png",
+        "mobile": "img_wearabledevice_cover.png",
+        "alt": ""
+      },
+      "logo": {
+        "img": "logo_wearabledevice.png",
+        "alt": "SAMSUNG Developers Gear Design Guideline Wearable Device Design UX Guidelines"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "en",
+        "content": "Wearable Device Design Guidelines"
+      },
+      "year": "2016.11 ~ 2017.02",
+      "client": "삼성전자",
+      "service": "UX Guideline"
+    },
+    "desc": [
+      {
+        "pc": {
+          "img": "img_wearabledevice_01.jpg"
+        },
+        "mobile": {
+          "img": "img_wearabledevice_01.jpg"
+        },
+        "alt": {
+          "type": "title",
+          "content": {
+            "title": "For Developers",
+            "desc": "wearable device disign guidelines 2017"
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_wearabledevice_02.jpg"
+        },
+        "mobile": {
+          "img": "img_wearabledevice_02.jpg"
+        },
+        "alt": {
+          "type": "title",
+          "content": {
+            "title": "challenges",
+            "desc": "wearable smart watch를 위한 새로운 디자인 가이드라인 개발, 웨어러블 디바이스를 위한 가이드라인에 어울리는 글을 구성하고 문장의 톤 & 매너 재정의 글의 맥락을 쉽게 이해할 수 있도록 시각요소 규칙 정의"
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_wearabledevice_03.jpg"
+        },
+        "mobile": {
+          "img": "img_wearabledevice_03.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "discover+define: 고객사/경쟁사 분석을 통해 삼성 웨어러블 가이드라인이 지녀야 할 가치와 방향을 모색, 사용자가 새로운 서비스의 기획과 디자인에 대한 인사이트를 얻을 수 있는 방식 제시",
+            "li": [
+              {
+                "liContent": "ia storyline: 군더더기 없는 구조로 원칙의 개연성을 확보한다. 쉽게 따라가면 읽을 수 있도록 연결성을 고려한다."
+              },
+              {
+                "liContent": "contents structure: ux 구성요소를 목차로 나열하여 개념을 자연스럽게 익히도록 한다. 개념 부분과 가이드 부분의 차이를 명확히 하여 특성 및 활용법을 쉽게 파악할 수 있도록 한다."
+              },
+              {
+                "liContent": "tone&manner: 읽는 이를 주어로 두는 능동적 서술방식으로 사용자가 적극적으로 정보를 이해할 수 있게 한다. 청유/명령형, 두괄식 서술, 짧은 문장을 활용하여 맥락에 따라 전달한다."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_wearabledevice_04.jpg"
+        },
+        "mobile": {
+          "img": "img_wearabledevice_04.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "develop: 목차/콘텐츠 구조에 따라 개념설명 부분과 상세한 가이드를 제시하는 부분을 시각요소에서도 명확하게 구분해 쉽게 이해할 수 있도록 정의",
+            "li": [
+              {
+                "liContent": "concopt: 제목, 개념 등 핵심 콘셉트 시각화, 다크테마 스크린을 중심으로 다양한 색상을 사용, 배경에 설명을 위한 그래픽과 배경색상 사용"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_wearabledevice_05.jpg"
+        },
+        "mobile": {
+          "img": "img_wearabledevice_05.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "li": [
+              {
+                "liContent": "infographic: 글로 이해하기 어려운 구조를 설명"
+              },
+              {
+                "liContent": "wireframe: 대표 레이아웃이나 공통 구성요소들을 단순하고 쉽게 설명"
+              },
+              {
+                "liContent": "real screen: 상위 뎁스에서 제시된 개념이 실제로 적용된 모습을 제시, 실제 디자인으로 쉽게 연결할 수 있도록 함"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_wearabledevice_06.jpg"
+        },
+        "mobile": {
+          "img": "img_wearabledevice_06.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "li": [
+              {
+                "liContent": "icons/elements: 내용과 관련된 요소 단위의 이미지를 그대로 사용"
+              },
+              {
+                "liContent": "common components: 주요요소와 명확히 구분될 수 있는 형태 및 컬러와 효과를 적용"
+              },
+              {
+                "liContent": "illustration style"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_wearabledevice_07.jpg"
+        },
+        "mobile": {
+          "img": "img_wearabledevice_07.jpg"
+        },
+        "alt": {
+          "type": "title",
+          "content": {
+            "title": "Deliver",
+            "desc": "Samsung Developers Gear Design Guideline"
+          }
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "UI DESIGN",
+        "members": "정유리, 이승윤, 정다영"
+      },
+      {
+        "team": "VISUAL COMMUNICATION",
+        "members": "천민희"
+      },
+      {
+        "team": "COACH",
+        "members": "박기혁"
+      }
+    ]
+  }
+]

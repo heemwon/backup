@@ -1,0 +1,179 @@
+[
+  "detail_theater",
+  {
+    "category": "all userResearch",
+    "slug": "detail_theater",
+    "type": {
+      "protect": true
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_closed_02.jpg",
+      "title": {
+        "lang": "en",
+        "content": "Theater Management System"
+      },
+      "client": "CJ CGV"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "",
+        "bgColor": "linear-gradient(to right, #23242f, #181923)",
+        "pc": "img_cgv_cover.png",
+        "mobile": "img_cgv_cover_m.png",
+        "alt": ""
+      },
+      "logo": {
+        "img": "logo_cgv.png",
+        "alt": "CGV SCREEN X Theater Management System"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "ko",
+        "content": "CGV ScreenX의 완벽한 운영 방법 Prism Player"
+      },
+      "year": "2016.12 ~ 2017.04",
+      "client": "CJ CGV",
+      "service": "UI / GUI Consulting"
+    },
+    "desc": [
+      {
+        "title": "Overview",
+        "desc": "ScreenX는 양쪽 벽면까지 3면을 스크린으로 활용하는 미래형 다면 상영관으로써, 국내 시장이 포화되면서 중국 진출에 대한 목표가 수립되었습니다. 또한 영사기사들이 사라져가는 추세 속에 영사 지식이 부족한 영화관 매니저나 중국인 기사들도 쉽게 ScreenX 영화를 상영할 수 있도록 사용성을 개선하여 웹사이트로 재정비하는 것이 프로젝트의 중요한 목표였습니다.",
+        "pc": {
+          "img": "img_cgv_01.jpg"
+        },
+        "mobile": {
+          "img": "img_cgv_01_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": "UX Strategy & Concept",
+        "desc": "UX 전략 및 콘셉트는 모델링에서 정의한 핵심 문제들을 기반으로 수립하였습니다. ‘사용자 - ScreenX - 서비스 운영’ 이 3가지 요소들 간의 관계에서 전략 포커스와 방향성을 찾고자 하였으며, 현재 시스템에서 개선해야 할 핵심 사항을 3가지로 정의하였습니다.",
+        "pc": {
+          "img": "img_cgv_02.jpg"
+        },
+        "mobile": {
+          "img": "img_cgv_02_m.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "현재 시스템에서 개선해야 할 핵심 사항",
+            "li": [
+              {
+                "liContent": "1. 사용흐름 각인: 전문성이 없어도 사용 가능한 시스템"
+              },
+              {
+                "liContent": "2. 담당자별 핵심 화면 개선: 사용자 중심 우선순위 재정립"
+              },
+              {
+                "liContent": "3. 시스템 간소화: 최종 자동화를 목표를 위한 간소화 단계"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "전문성이 없어도 사용 가능한 시스템"
+        },
+        "desc": "명확한 Color Scheme과 정보를 통해 현재 상영 상태를 쉽게 파악하고 오류 상황에 대비한 기능들의 그래픽으로 직관적인 하드웨어 조작이 가능합니다. 영사 지식이 없는 초보자도 매뉴얼 없이 윙 파일 제작이 가능합니다.",
+        "pc": {
+          "img": "img_cgv_03.jpg"
+        },
+        "mobile": {
+          "img": "img_cgv_03_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "사용자 중심 우선순위 재정립"
+        },
+        "desc": "상영 상태에 따른 사용자별 핵심 정보를 정의하고 각 사용자의 목적과 수준에 맞는 화면을 구성하고 기능을 선별합니다.",
+        "pc": {
+          "img": "img_cgv_04.jpg"
+        },
+        "mobile": {
+          "img": "img_cgv_04_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "최종 자동화 목표를 위한 간소화 단계"
+        },
+        "desc": "기계적으로 반복되는 설정 단계를 간소화하였으며, 메인 화면에서 바로 자동 재생 생성을 지원합니다.",
+        "pc": {
+          "img": "img_cgv_05.jpg"
+        },
+        "mobile": {
+          "img": "img_cgv_05_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "다국어 지원"
+        },
+        "desc": "지금까지 ScreenX는 국내 중심으로 3~4년간 시행착오를 거치며 운영해왔는데, 국내뿐 아니라 중국 시장 진출을 고려하면서 다국어 지원에 대한 가능성을 열어두게 되었습니다.",
+        "pc": {
+          "img": "img_cgv_06.jpg"
+        },
+        "mobile": {
+          "img": "img_cgv_06_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": "Prototype",
+        "desc": "보고를 위해 프로토타입을 제작하였으며 프로토파이의 ~.pie 형태의 파일과 사용 과정을 기술한 시나리오를 함께 전달하였습니다. 또한 사용 과정을 레코딩하여 mov 파일도 전달하였습니다.",
+        "pc": {
+          "img": "img_cgv_07.jpg"
+        },
+        "mobile": {
+          "img": "img_cgv_07_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "UI DESIGN",
+        "members": "노미연, 이가현, 김수향, 이주형"
+      },
+      {
+        "team": "GUI DESIGN",
+        "members": "김선경, 김혜림, 송미나"
+      },
+      {
+        "team": "COACH",
+        "members": "박기혁"
+      }
+    ]
+  }
+]

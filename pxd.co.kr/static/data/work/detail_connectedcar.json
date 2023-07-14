@@ -1,0 +1,104 @@
+[
+  "detail_connectedcar",
+  {
+    "category": "all autoMobility",
+    "slug": "detail_connectedcar",
+    "type": {
+      "protect": true
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_connectedcar.jpg",
+      "title": {
+        "lang": "en",
+        "content": "Luxury Sedan Infotainment System"
+      },
+      "client": "LG U+"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "full",
+        "bgColor": "",
+        "pc": "img_connectedcar_cover.jpg",
+        "mobile": "img_connectedcar_cover_m.jpg",
+        "alt": ""
+      },
+      "logo": {
+        "img": "logo_connectedcar.png",
+        "alt": "LG U+ Connected Car Luxury Sedan Infotainment System Design"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "en",
+        "content": "Luxury Sedan Infotainment System"
+      },
+      "year": "2019.06 ~ 2019.12",
+      "client": "LG U+",
+      "service": "GUI Design (AVN, Mobile App)"
+    },
+    "desc": [
+      {
+        "title": "Overview",
+        "desc": "Connected Car is a service that LG U + provides a total of 15 services to AVN of the future luxury sedan. Considering the limitations of providing day and night in one mode and not disturbing the user while driving, the information required for Dark Mode is designed to be shown in priority order. To create a futuristic and luxurious feel, we used a delicate pattern on a dark background and glow effect with luminance contrast. The project was carried out with a focus on information delivery and as simply as possible to avoid the trend.",
+        "pc": {
+          "img": "img_connectedcar_01.jpg"
+        },
+        "mobile": {
+          "img": "img_connectedcar_01_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": "Final Design",
+        "desc": "Considering the successful middle-aged tastes of the main target audience, we reduced the saturation of blue tones and used gold color and glowing effects to emphasize. In addition, we made sure there the fonts and spacing were big enough for easy operation while driving.",
+        "pc": {
+          "img": "img_connectedcar_02.jpg"
+        },
+        "mobile": {
+          "img": "img_connectedcar_02_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "pc": {
+          "img": "img_connectedcar_03.jpg"
+        },
+        "mobile": {
+          "img": "img_connectedcar_03_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "pc": {
+          "img": "img_connectedcar_04.jpg"
+        },
+        "mobile": {
+          "img": "img_connectedcar_04_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "UI DESIGN",
+        "members": "정명희, 문한별"
+      },
+      {
+        "team": "GUI DESIGN",
+        "members": "오은주, 고혜주, 엄지혜, 엄예진, 김신환, 남현아"
+      }
+    ]
+  }
+]

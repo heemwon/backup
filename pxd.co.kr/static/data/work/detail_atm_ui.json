@@ -1,0 +1,104 @@
+[
+  "detail_atm_ui",
+  {
+    "category": "all frontEnd",
+    "slug": "detail_atm_ui",
+    "type": {
+      "bg":true,
+      "protect": true
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_atm_ui.jpg",
+      "title": {
+        "lang": "en",
+        "content": "ATM UI"
+      },
+      "client": "효성티앤에스"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "",
+        "bgColor": "#0033a0",
+        "pc": "img_atm_ui_cover.jpg",
+        "mobile": "img_atm_ui_cover_m.jpg",
+        "alt": ""
+      },
+      "logo": {
+        "img": "logo_atm_ui.png",
+        "alt": "hyosungTNS, ATM UI"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "ko",
+        "content": "ATM UI Front-End 개발"
+      },
+      "year": "2020.05 ~",
+      "client": "효성티앤에스",
+      "service": "Front-End"
+    },
+    "desc": [
+      {
+        "title": "Overview",
+        "desc": "단종된 기술을 대신하여 최신 SPA(Single Page Application) 웹앱 프레임워크를 채택하고 HTML5 표준 문법과 API를 활용하여 ATM UI를 개발했습니다. 기기 관리자는 개발 확장성을 확보해 업무 효율성을 높였으며, ATM 사용자는 이전보다 편리하고 부드러운 화면 UI를 경험하게 됩니다.",
+        "pc": {
+          "img": "img_atm_ui_01.jpg"
+        },
+        "mobile": {
+          "img": "img_atm_ui_01.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "은행별 ATM 메인 화면"
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "컴포넌트 최적화 작업"
+        },
+        "desc": "은행별, 기종별 차별화 요소에 편리하게 대응할 수 있도록 구조의 분리를 시행하여 공통요소의 컴포넌트화로 재사용성을 높이고 CSS3 표준 명세를 적극적으로 도입하여 레이아웃 시스템을 최적화/표준화하여 개발 시간을 단축했습니다. 하드웨어 가속 기능이 적용된 Transition Effect로 사용자는 더욱더 부드러운 애니메이션 효과를 경험하도록 구현하였습니다.",
+        "pc": {
+          "img": "img_atm_ui_02.jpg"
+        },
+        "mobile": {
+          "img": "img_atm_ui_02.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "그리드 레이아웃을 이용한 화면"
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "실시간 모니터링으로 오류 상황 완벽 대비"
+        },
+        "desc": "실시간 로그 기록 기능으로 ATM의 모든 상황을 모니터링할 수 있습니다. 오류가 발견되더라도 로그 기록을 통해 상황에 대한 추적 및 빠른 대응 조치가 가능합니다."
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "주 고객층을 배려한 익숙한 사용자경험"
+        },
+        "desc": "기기 화면의 UI가 크게 변경될 경우, 기존의 주 이용 고객인 시니어층은 익숙하지 않은 화면 변화에 대응하기 어려울 수 있습니다. 갑작스러운 UI의 변화로 인해 당혹감이나 불편함을 느끼지 않도록 기존의 UI/UX를 해치지 않는 범위를 고려해 개발을 진행했습니다.",
+        "pc": {
+          "img": "img_atm_ui_03.jpg"
+        },
+        "mobile": {
+          "img": "img_atm_ui_03.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "변경되기 전후의 UX ATM 화면 비교"
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "Front-End Develop",
+        "members": "백내영, 홍도영, 이선주, 강은영, 이희원"
+      }
+    ]
+  }
+]

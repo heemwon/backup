@@ -1,0 +1,230 @@
+[
+  "detail_jb",
+  {
+    "category": "all guideline mobileService financialService",
+    "slug": "detail_jb",
+    "headerType": "black",
+    "type": {
+      "protect": true
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_jb.png",
+      "title": {
+        "lang": "en",
+        "content": "금융을 위한 UX 공통 Guideline"
+      },
+      "client": "JB금융"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "full",
+        "bgColor": "linear-gradient(to right, #254388 50%, #5F87D7 100%)",
+        "pc": "img_jb_cover.png",
+        "mobile": "img_jb_cover_m.png",
+        "alt": ""
+      },
+      "logo": {
+        "img": "logo_jb.png",
+        "alt": "JB금융지주 Financial Design System"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "ko",
+        "content": "편리한 금융을 위한 \nJB금융 UX 공통 Guideline"
+      },
+      "year": "2020.05 ~ 2020.08",
+      "client": "JB금융",
+      "service": "UX Strategy / UI,GUI Design",
+      "aos": {
+        "ani": "fade-up",
+        "duration": "500",
+        "offset": "100"
+      }
+    },
+    "desc": [
+      {
+        "title": "Overview",
+        "desc": "JB금융지주의 모든 디지털 채널에서 사용자가 일원화된 브랜드를 경험할 수 있도록 하는 것이 프로젝트의 목표였습니다. 기존의 JB금융지주는 계열사마다 독립적인 디지털 채널을 운영하며 상이한 UX를 제공하였기 때문에 일관된 규칙으로 JB의 서비스가 디자인될 수 있도록 통합 UX 가이드라인을 제시했습니다. 가이드라인은 명확한 Principle과 재사용하고 조합 가능한 Design system, 대표 프로세스의 Ideal screen으로 구성해 서비스의 확장성과 운영의 편의성까지 고려했습니다.",
+        "pc": {
+          "img": "img_jb_01.jpg"
+        },
+        "mobile": {
+          "img": "img_jb_01_m.png"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        },
+        "aos": {
+          "title": "fade-up",
+          "desc": "fade-up",
+          "img": "fade-up",
+          "duration": "500",
+          "offset": "200"
+        }
+      },
+      {
+        "title": {
+          "lang": "en",
+          "content": "Main Principle"
+        },
+        "desc": "공통 UX 원칙은 디자인 가이드라인의 전체적인 방향성을 제시하고, 각 계열사가 올바르고 효율적인 디자인 의사결정을 할 수 있도록 안내하는 역할을 합니다.  금융 서비스의 특성을 파악하고 이를 바탕으로 UX Principle을 수립하여 JB 계열사의 디지털 채널이 사용자에게 일관된 가치를 제공할 수 있는 토대를 마련하였습니다.",
+        "pc": {
+          "img": "img_jb_02.png"
+        },
+        "mobile": {
+          "img": "img_jb_02_m.png"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "JB UX Principle > JB 금융지주(광북은행, 전북은행, JB 우리캐피탈, JB 우리캐피탈 Sub APP)"
+        },
+        "aos": {
+          "title": "fade-up",
+          "desc": "fade-up",
+          "img": "fade-up",
+          "duration": "500",
+          "offset": "200"
+        }
+      },
+      {
+        "title": {
+          "lang": "en",
+          "content": "Foundation"
+        },
+        "desc": "금융 콘텐츠 정보 전달과 JB 브랜드 인상을 효과적으로 전달할 수 있는 디자인 언어의 규칙을 정의했습니다. 컬러, 타이포, 아이콘, 일러스트, 레이아웃등 가장 기본적인 시각 요소를 규정하였고, JB 계열사 채널은 이러한 Foundation을 토대로 JB만의 디자인 언어를 형성할 수 있습니다.",
+        "pc": {
+          "img": "img_jb_03.png"
+        },
+        "mobile": {
+          "img": "img_jb_03_m.png"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        },
+        "aos": {
+          "title": "fade-up",
+          "desc": "fade-up",
+          "img": "fade-up",
+          "duration": "500",
+          "offset": "200"
+        }
+      },
+      {
+        "title": {
+          "lang": "en",
+          "content": "Component"
+        },
+        "desc": "화면 구성에 필요한 UI Component를 규정하고 상세 케이스를 정의하였습니다. 정의된 UI Component를 사용하여 쉽고 빠르게 일관된 화면을 그려나갈 수 있어 불필요한 디자인 프로세스를 줄일 수 있고, 일관된 화면을 제공하여 사용자에게 편의를 제공할 수 있습니다.",
+        "pc": {
+          "img": "img_jb_04.png"
+        },
+        "mobile": {
+          "img": "img_jb_04_m.png"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        },
+        "aos": {
+          "title": "fade-up",
+          "desc": "fade-up",
+          "img": "fade-up",
+          "duration": "500",
+          "offset": "200"
+        }
+      },
+      {
+        "title": {
+          "lang": "en",
+          "content": "Ideal Process"
+        },
+        "desc": "JB 가이드라인 컴포넌트로 구성된 Ideal Process 화면은 각 계열사의 핵심 Flow를 이상적인 UI로 보여줍니다. 이는 향후 화면 설계 기준이 되는 레퍼런스로 활용하기 적합하며 온보딩부터 메인 Task인 계좌 개설, 이체, 조회로 구성되었습니다. 단순 화면 정의로 끝나는 것이 아닌, 사용성평가와 심층 인터뷰를 통해 Ideal Process 화면의 UI 사용성을 검증하였고 화면 및 가이드라인에 이를 적극적으로 반영하여 완성도를 높혔습니다.",
+        "pc": {
+          "img": "img_jb_05.png"
+        },
+        "mobile": {
+          "img": "img_jb_05_m.png"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "금융서비스 및 자사서비스 이용 경험 공유 > Working Prototype 사용 피드백 수집 > 화면 및 프로세스 검토"
+        },
+        "aos": {
+          "title": "fade-up",
+          "desc": "fade-up",
+          "img": "fade-up",
+          "duration": "500",
+          "offset": "200"
+        }
+      },
+      {
+        "pc": {
+          "img": "img_jb_06.png"
+        },
+        "mobile": {
+          "img": "img_jb_06_m.png"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        },
+        "aos": {
+          "img": "fade-up",
+          "duration": "500",
+          "offset": "200"
+        }
+      },
+      {
+        "pc": {
+          "img": "img_jb_07.png"
+        },
+        "mobile": {
+          "img": "img_jb_07_m.png"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        },
+        "aos": {
+          "img": "fade-up",
+          "duration": "500",
+          "offset": "200"
+        }
+      },
+      {
+        "pc": {
+          "img": "img_jb_08.png"
+        },
+        "mobile": {
+          "img": "img_jb_08_m.png"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        },
+        "aos": {
+          "img": "fade-up",
+          "duration": "500",
+          "offset": "200"
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "UI",
+        "members": "이준, 이재이, 김소명, 강다연, 신은비"
+      },
+      {
+        "team": "GUI",
+        "members": "김혜림, 정소영, 안선영, 안진언, 남현아, 고성주, 김혜연"
+      },
+      {
+        "team": "COACH",
+        "members": "이범진, 천민희"
+      }
+    ]
+  }
+]

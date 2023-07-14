@@ -1,0 +1,152 @@
+[
+  "detail_korailtalk",
+  {
+    "category": "all usabilityTest userResearch",
+    "slug": "detail_korailtalk",
+    "type": {
+      "protect": false
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_korailTalk.jpg",
+      "title": {
+        "lang": "ko",
+        "content": "코레일톡 사용성평가"
+      },
+      "client": "KORAIL 한국철도공사"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "full",
+        "bgColor": "",
+        "pc": "img_korailtalk_cover.jpg",
+        "mobile": "img_korailtalk_cover_m.jpg",
+        "alt": ""
+      },
+      "logo": {
+        "img": "logo_korailtalk.png",
+        "alt": "코레일톡 사용성평가 Mobile Service / Usabillity Test / User Research / Survey"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "ko",
+        "content": "서비스 이슈와 개선 포인트를 찾다. 코레일톡 사용성 평가"
+      },
+      "year": "2019.06 ~ 2019.07",
+      "client": "KORAIL 한국철도공사",
+      "service": "Usability Test / User Research"
+    },
+    "desc": [
+      {
+        "title": "Overview",
+        "desc": "사용성 평가와 심층 인터뷰를 통한 서비스 이슈 및 개선 포인트를 확인하는 프로젝트였습니다. 코레일톡 앱 서비스를 대상으로 사용성 평가 및 검증 진행, 사용자 여정에 기반한 사용자행태 및 니즈 확인, 도출된 문제점 및 이슈의 유형화를 목표로 UT를 진행하였습니다.",
+        "pc": {
+          "img": "img_korailtalk_01.jpg"
+        },
+        "mobile": {
+          "img": "img_korailtalk_01_m.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "sub": "UT",
+            "li": [
+              {
+                "liContent": "1. 기획단계: user profile 구체화, user journey 중심 실제 사용 행태이해, task 설계, 사용성 평가지 작성, task 기반 ut 수행순서 및 세부사항 작성"
+              },
+              {
+                "liContent": "2. 수행 준비단계: ut 참가자 채용, pilot ut"
+              },
+              {
+                "liContent": "3. 수행단계: usability test, interview"
+              },
+              {
+                "liContent": "4. 정리 및 분석단계: 결과정리 및 분석(정성/정량)"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "UT 진행방법"
+        },
+        "desc": "헤비 사용자, 이벤트형 사용자, 잠재 사용자로 UT대상자를 세분화하였고 코레일톡 사용성 평가는 서비스 이유와 개선 포인트를 찾기 위해 In-depth Interview와 Usability Test를 같이 진행하였습니다.",
+        "pc": {
+          "img": "img_korailtalk_02.jpg"
+        },
+        "mobile": {
+          "img": "img_korailtalk_02_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "UT 진행방법"
+        },
+        "desc": "코레이톡 서비스 전반의 중심 Task와 순차적 사용 흐름을 기반으로 주요 테스크를 도출하였습니다.",
+        "pc": {
+          "img": "img_korailtalk_03.jpg"
+        },
+        "mobile": {
+          "img": "img_korailtalk_03_m.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "주요 테스크는 계기발생, 탐색/비교, 예매/결정, 승차대기, 승차, 이동 중, 목적지 도착이 있습니다."
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "UT 평가기준"
+        },
+        "desc": "휴리스틱 평가 척도를 기반으로 코레일톡 사용성 진단에 적합한 평가 기준을 선정하였습니다. 각 Task마다 해당 기준으로 점수를 측정하고 인터뷰를 통해 점수에 대한 의견을 조사했습니다.",
+        "pc": {
+          "img": "img_korailtalk_04.jpg"
+        },
+        "mobile": {
+          "img": "img_korailtalk_04_m.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "각 task마다의 점수 측정 기준",
+            "li": [
+              { "liContent": "종합: 디자인 만족도, 컨텐츠 품질, 안정성, 시스템 성능" },
+              { "liContent": "task: 일관성, 가독성, 조직성, 직관성, 학습성" }
+            ]
+          }
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "주요 발견점 도출"
+        },
+        "desc": "사용성문제에 대한 빠른 이해를 돕기 위해 문제의 유형을 구분하여 정리하였고 평가지표를 중심으로 그룹화하여 사용성문제 전반을 꿰뚫는 대표 문제를 파악하였습니다. ‘그래픽적 측면’, ‘화면구성적 측면’, ‘정보전달의 적합성 측면’, ‘상호작용 측면’, ‘텍스트의 적합성 측면’으로 구분하여 문제에 대한 무분별한 접근이 아니라 이해와 분석을 바탕으로 접근할 수 있도록 유형을 정리했습니다. 그 결과, 주요 발견점은 각 평가지표 (일관성, 학습성, 직관성, 조작성, 가독성) 별 사용성 문제 중 문제의 원인이 유사한 것을 그룹핑하여 총 12개의 주요 문제점을 도출하였습니다.",
+        "pc": {
+          "img": "img_korailtalk_05.jpg"
+        },
+        "mobile": {
+          "img": "img_korailtalk_05_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "UX DESIGN",
+        "members": "민경보, 김성경, 이재이"
+      }
+    ]
+  }
+]

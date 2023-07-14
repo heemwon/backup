@@ -1,0 +1,87 @@
+[
+  "detail_global_promotion",
+  {
+    "category": "all promotion uiDevelop",
+    "slug": "detail_global_promotion",
+    "headerType": "black",
+    "type": {
+      "protect": true
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_global_promotion.jpg",
+      "title": {
+        "lang": "en",
+        "content": "Global Promotion Web Publish"
+      },
+      "client": "펑타이코리아"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "",
+        "bgColor": "linear-gradient(to right, #8f8f8f, #f3f3f3)",
+        "pc": "img_samsung_promotion_cover.png",
+        "mobile": "img_samsung_promotion_cover_m.png",
+        "alt": ""
+      },
+      "logo": {
+        "img": "logo_samsung.png",
+        "alt": "SAMSUNG, PC/Mobile Service"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "ko",
+        "content": "Global Promotion Web UI 개발"
+      },
+      "year": "2021.07 ~ 2021.09",
+      "client": "펑타이코리아",
+      "service": "UI Develop (PC / Mobile Service)"
+    },
+    "desc": [
+      {
+        "title": "Overview",
+        "desc": "삼성전자 공식 사이트에 신규 추가되는 제품들의 Un-pack 행사 프로모션 화면 개발을 진행한 프로젝트입니다. 기존 사이트에서 제공된 가이드를 바탕으로 PC/Mobile 상의 모든 해상도를 지원할 수 있도록 반응형으로 제작했으며, 서비스 오픈과 운영 업무를 진행했습니다.",
+        "pc": {
+          "img": "img_samsung_promotion_01.jpg"
+        },
+        "mobile": {
+          "img": "img_samsung_promotion_01_m.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "갤럭시 Z 플립3 메인 화면"
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "다양한 사용자를 고려한 웹 접근성 준수"
+        },
+        "desc": "퍼블리싱, UI 개발 단계부터 웹 접근성을 준수하고 슬라이드와 같은 라이브러리 또한 키보드 접근 및 동작 제어가 가능하도록 구현했습니다.",
+        "pc": {
+          "img": "img_samsung_promotion_02.jpg"
+        },
+        "mobile": {
+          "img": "img_samsung_promotion_02_m.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "좌측 상단 갤럭시 Z 플립3 팬텀블랙 컬러 옵션에 선택된 화면, 우측 하단 갤러시 와치 체험단 슬라이드 다음 버튼 선택된 화면"
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "쉽고 간편한 운영 및 관리"
+        },
+        "desc": "유지 보수 및 관리가 쉽도록 Gulp와 Sass로 작업 되어있는 제작 가이드를 준수하고, 추가 영역 및 기능들을 모듈화해 수정/변경 시 해당 모듈만 변경하면 공통 적용될 수 있도록 구현했습니다. 모든 작업에 대한 히스토리 관리를 통해 담당자 간 커뮤니케이션이 원활해졌으며, 담당자 변경 시 업무 공백 최소화 및 관리가 수월하도록 작업했습니다."
+      }
+    ],
+    "credits": [
+      {
+        "team": "UI Develop",
+        "members": "류중열, 김태용, 백내영, 이선주"
+      }
+    ]
+  }
+]

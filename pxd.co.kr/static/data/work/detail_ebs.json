@@ -1,0 +1,193 @@
+[
+  "detail_ebs",
+  {
+    "category": "all tvMediaVod mobileService",
+    "slug": "detail_ebs",
+    "type": {
+      "protect": false
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_ebs.jpg",
+      "title": {
+        "lang": "ko",
+        "content": "고품격 교육/교양 콘텐츠의 차별화된 서비스 EBS Play"
+      },
+      "client": "EBS"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "",
+        "bgColor": "linear-gradient(to right, #007cde, #125abf)",
+        "pc": "img_ebs_cover.png",
+        "mobile": "img_ebs_cover_m.png",
+        "alt": ""
+      },
+      "logo": {
+        "img": "logo_ebs.png",
+        "alt": "EBS play VOD Contents service application"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "ko",
+        "content": "고품격 교육/교양 콘텐츠의 차별화된 서비스 EBS Play"
+      },
+      "year": "2016.04 ~ 2016.08",
+      "client": "EBS",
+      "service": "UX Strategy, UI / GUI Design"
+    },
+    "desc": [
+      {
+        "title": "Overview",
+        "desc": "EBS의 다양한 콘텐츠들을 모바일을 통해 이용하면서 얻게 되는 사용 경험을 일관성 있게 제공하기 위해, EBS 콘텐츠 및 유사 콘텐츠를 즐겨 이용하는 사용자들의 모바일 콘텐츠 시청 패턴을 분석하여 EBS만의 차별화된 Mobile UX Guideline을 제작하였습니다. 그리고 제작된 EBS Mobile UX Guideline을 기반으로 기존 EBS TV 앱을 개선하여 'EBS play'라는 새로운 앱으로 개발하였습니다.",
+        "pc": {
+          "img": "img_ebs_01.jpg"
+        },
+        "mobile": {
+          "img": "img_ebs_01_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": "Design Keyword",
+        "desc": "사용자가 생각하는 EBS 브랜드의 이미지와 인상을 확인하고, 실제 EBS 모바일 웹/앱 서비스들을 이용하면서 느껴지는 EBS의 이미지와 인상에 대한 간극을 통해 사용자가 기대하고 바라는 EBS 브랜드 이미지를 확인하여 4가지 Design Keyword를 도출하였습니다.",
+        "pc": {
+          "img": "img_ebs_02.jpg"
+        },
+        "mobile": {
+          "img": "img_ebs_02_m.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "Design Keyword",
+            "li": [
+              {
+                "liContent": "prestige: 믿음이 가는"
+              },
+              {
+                "liContent": "contemporary: 젊고 유연한"
+              },
+              {
+                "liContent": "well-organized: 잘 정돈된"
+              },
+              {
+                "liContent": "alive: 시선을 사로잡는"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "title": "Graphic Motif",
+        "desc": "심벌 원형 Shape을 모바일에 맞게 심플하고 절제된 형태와 단순한 컬러로 재해석하여 모바일 서비스 내에 EBS의 Identity를 효과적으로 구현하였습니다.",
+        "pc": {
+          "img": "img_ebs_03.jpg"
+        },
+        "mobile": {
+          "img": "img_ebs_03_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "EBS play App 설계"
+        },
+        "desc": "'확장'이라는 Key Strategy를 바탕으로 사용자의 관심 주제를 기반으로 볼만한 양질의 콘텐츠들을 지속적으로 제공하고, 이를 통해 새로운 주제의 콘텐츠로 자연스럽게 확장하며 가치 있는 콘텐츠 감상을 이어갈 수 있도록 설계하였습니다.",
+        "pc": {
+          "img": "img_ebs_04.jpg"
+        },
+        "mobile": {
+          "img": "img_ebs_04_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": "Home Mode Settings",
+        "desc": "일반교양이나 교육/다큐 콘텐츠를 쉽게 접근하여 감상할 수 있는 '일반 모드'와 유아/어린이 콘텐츠만을 제공하여 자녀들이 좋아하는 캐릭터만으로도 쉽게 콘텐츠를 선택하고 감상할 수 있는 '키즈존 모드'로 구분하여, EBS play 앱을 사용하는 사용자의 취향과 특성에 맞춰 홈 모드를 설정하여 이용할 수 있도록 설계하였습니다.",
+        "pc": {
+          "img": "img_ebs_05.jpg"
+        },
+        "mobile": {
+          "img": "img_ebs_05_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "교육 콘텐츠에 최적화된 VOD Player"
+        },
+        "desc": "영상에 몰입할 수 있도록 다양한 기능들과 연관/추천 콘텐츠를 바로 이어볼 수 있도록 구성하였고, 책갈피 기능을 통해 교양 프로그램 시청 중 간직하고 싶은 영상 구간을 저장하고 개인 콘텐츠로의 재편집도 가능하도록 하였습니다.",
+        "pc": {
+          "img": "img_ebs_06.jpg"
+        },
+        "mobile": {
+          "img": "img_ebs_06_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "영상 콘텐츠에 접근성을 더한 화면 설계"
+        },
+        "desc": "사용자가 원하는 콘텐츠에 자연스럽게 다가갈 수 있도록 카테고리 홈을 제공하였고, 사용자의 이전 감상 이력들을 마이페이지 화면에 저장하여 기존에 감상하던 영상을 쉽고 빠르게 접근하여 이어서 감상할 수 있도록 하였습니다.",
+        "pc": {
+          "img": "img_ebs_07.jpg"
+        },
+        "mobile": {
+          "img": "img_ebs_07_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": "Smart Phone + Tablet + Smart Watch",
+        "desc": "EBS play 앱은 사용자들의 다양한 모바일 시청 환경에 맞춰 iOS와 Android OS의 스마트폰/태블릿 등 모든 모바일 플랫폼에서 최적화된 EBS VOD 콘텐츠를 감상할 수 있도록 디자인하였고, 사용자가 예약해놓은 방송 시청 예약 알림을 스마트 워치를 통해 확인하고 편리하게 콘텐츠를 감상할 수 있도록 설계하였습니다.",
+        "pc": {
+          "img": "img_ebs_08.jpg"
+        },
+        "mobile": {
+          "img": "img_ebs_08_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "UX DESIGN",
+        "members": "이주형, 이채민, 김서연"
+      },
+      {
+        "team": "GUI DESIGN",
+        "members": "권소정, 김선경, 오현아, 안진언"
+      },
+      {
+        "team": "COACH",
+        "members": "조준희"
+      }
+    ]
+  }
+]

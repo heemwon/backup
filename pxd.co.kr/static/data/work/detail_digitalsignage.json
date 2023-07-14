@@ -1,0 +1,168 @@
+[
+  "detail_digitalsignage",
+  {
+    "category": "all etc",
+    "slug": "detail_digitalsignage",
+    "type": {
+      "protect": true
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_digitalsignage.jpg",
+      "title": {
+        "lang": "en",
+        "content": "Digital Signage"
+      },
+      "client": "LG 전자"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "full",
+        "bgColor": "",
+        "pc": "img_digitalsignage_cover.jpg",
+        "mobile": "img_digitalsignage_cover.jpg",
+        "alt": ""
+      },
+      "logo": {
+        "img": "logo_digitalsignage.png",
+        "alt": "LG전자 Digital Signage UX Scenario / GUI / Motion / HTML5 CSS Javascript"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "en",
+        "content": "Digital Signage"
+      },
+      "year": "2017.10 ~ 2017.12",
+      "client": "LG 전자",
+      "service": "UX Scenaroio / GUI / HTML5 CSS Javascript Motion"
+    },
+    "desc": [
+      {
+        "pc": {
+          "img": "img_digitalsignage_02.jpg"
+        },
+        "mobile": {
+          "img": "img_digitalsignage_02.jpg"
+        },
+        "alt": {
+          "type": "title",
+          "content": {
+            "title": "project goals&design outputs",
+            "desc": "고해상도 사이니지의 성능에 걸맞는 모션 디자인 테스트 및 다양한 비율의 스크린에 적용 가능한 광고안 개발을 목표로, 일방향의 비주얼 스토리 전개안(type a)과 화면 터치방식으로 사용자에 의해 직조작이 가능한 안(type b)을 실제 상업적 환경에 적용하여 시나리오 기확, 그래픽 디자인, 웹기반 모션 개발을 완료함"
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_digitalsignage_03.jpg"
+        },
+        "mobile": {
+          "img": "img_digitalsignage_03.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "pc": {
+          "img": "img_digitalsignage_04.jpg"
+        },
+        "mobile": {
+          "img": "img_digitalsignage_04.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "pc": {
+          "img": "img_digitalsignage_05.jpg"
+        },
+        "mobile": {
+          "img": "img_digitalsignage_05.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "desc": "",
+        "pc": {
+          "img": "img_digitalsignage_06.jpg"
+        },
+        "mobile": {
+          "img": "img_digitalsignage_06.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "desc": "",
+        "pc": {
+          "img": "img_digitalsignage_07.jpg"
+        },
+        "mobile": {
+          "img": "img_digitalsignage_07.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "desc": "",
+        "pc": {
+          "img": "img_digitalsignage_08.jpg"
+        },
+        "mobile": {
+          "img": "img_digitalsignage_08.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "desc": "",
+        "pc": {
+          "img": "img_digitalsignage_09.jpg"
+        },
+        "mobile": {
+          "img": "img_digitalsignage_09.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "desc": "",
+        "pc": {
+          "img": "img_digitalsignage_10.jpg"
+        },
+        "mobile": {
+          "img": "img_digitalsignage_10.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "GUI DESIGN",
+        "members": "서윤희, 안진언"
+      },
+      {
+        "team": "COACH",
+        "members": "임호"
+      }
+    ]
+  }
+]

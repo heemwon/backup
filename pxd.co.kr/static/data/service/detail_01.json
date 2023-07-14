@@ -1,0 +1,51 @@
+[
+  "detail_01",
+  {
+    "index": 0,
+    "slug": "detail_01",
+    "meta": {
+      "onedepth": "service",
+      "descripton": "사람에 대한 이해와 공감으로부터 문제를 발견합니다."
+    },
+    "outVisual": {
+      "thumbnail": "ico_service_main_01.svg",
+      "title": {
+        "main": "UX / CX / SX Consulting"
+      }
+    },
+    "pageVisual": {
+      "cover": {
+        "pc": "img_service_01.png",
+        "alt": ""
+      },
+      "banner": {
+        "pc": {
+          "img": "img_service_01_01.png"
+        },
+        "mobile": {
+          "img": "img_service_01_01_m.png"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "제품이 나아갈 방향을 찾기위한 카테고리",
+            "li": [
+              {
+                "liContent": "UX/CX/SX Consilting"
+              },
+              {
+                "liContent": "Data Analysis"
+              },
+              {
+                "liContent": "UI/GUI/Interaction Design"
+              },
+              {
+                "liContent": "Prototyping/Evaluation"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+]

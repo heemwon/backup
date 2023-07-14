@@ -1,0 +1,97 @@
+@keyframes diagonalLine {
+  100% {
+    width: 24px;
+  }
+}
+
+@keyframes reverseDiagonalLine {
+  0% {
+    width: 24px;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes circleRight {
+  0% {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  50% {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+}
+
+@keyframes circleLeft {
+  0% {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  50% {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  100% {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+}
+
+@keyframes diagonalLine {
+  100% {
+    width: 24px;
+  }
+}
+
+@keyframes titlePopIn {
+  0% {
+    opacity: 0;
+  }
+  88% {
+    opacity: 1;
+  }
+}
+@keyframes circleRight {
+  0% {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  50%,
+  100% {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+}
+
+@keyframes circleLeft {
+  0%,
+  50% {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  100% {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+}
+
+@keyframes BounceUpDown {
+  0% {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+}

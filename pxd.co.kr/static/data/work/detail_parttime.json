@@ -1,0 +1,186 @@
+[
+  "detail_parttime",
+  {
+    "category": "all userResearch usabilityTest",
+    "slug": "detail_parttime",
+    "headerType": "black",
+    "type": {
+      "protect": true
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_parttime.jpg",
+      "title": {
+        "lang": "en",
+        "content": "Part Time Job App UT"
+      },
+      "client": "알바천국"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "full",
+        "bgColor": "",
+        "pc": "img_alba_cover.jpg",
+        "mobile": "img_alba_cover.jpg",
+        "alt": ""
+      },
+      "logo": {
+        "img": "logo_alba.png",
+        "alt": "알바천국 Sercvice Usability Test"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "en",
+        "content": "Part Time Job App UT"
+      },
+      "year": "2018.01 ~ 2018.03",
+      "client": "알바천국",
+      "service": "Usability Test / 사용자 조사 및 서비스 개선 방향 제시"
+    },
+    "desc": [
+      {
+        "pc": {
+          "img": "img_albaheaven_02.jpg"
+        },
+        "mobile": {
+          "img": "img_albaheaven_02.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "알바천국은 사용성 평가와 심층 인터뷰를 통해서 서비스에 대한 이슈 및 개선포인트 확인하고자 해당 프로젝트를 발주하였습니다. 전체 과정으로는 알바천국 모바일 앱과 pc 웹 서비스를 대상으로 사용성 평가 및 검증 과정을 가졌고, 알바천국과 경쟁서비스(알바몬)의 비교평가를 통해 우위/열위 항목을 확인하여 문제점 및 이슈에 대한 인사이트 도출하여 진행하였습니다."
+        }
+      },
+      {
+        "pc": {
+          "img": "img_albaheaven_03.jpg"
+        },
+        "mobile": {
+          "img": "img_albaheaven_03.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "project process",
+            "li": [
+              {
+                "liContent": "평가 설계: 평가 대상자 리크루팅, 평가 frame 초안 설계, pilot test 진행, 평가 frame 검증 및 보안"
+              },
+              {
+                "liContent": "구직자 사용성 평가 및 그룹 인터뷰: 주요 task 수행, 지면 평가, 그룹 인터뷰"
+              },
+              {
+                "liContent": "구직자 인뎁스 인터뷰: 심층 인터뷰(사용맥락 및 행동패턴 파악/pain-point 및 니즈 확인/추가 의견 수집)"
+              },
+              {
+                "liContent": "구인사 사용성 평가 및 인뎁스 인터뷰: 주요 task 수행, 지면 평가, pain-point 및 니즈 확인, 심층 인터뷰(사용맥락 및 행동패턴 파악/pain-point, 니즈확인/의견 수집)"
+              },
+              {
+                "liContent": "전문가 평가: 서비스 주요 기능 사용, 지면 평가, 전문가 견해 수집"
+              },
+              {
+                "liContent": "평가 분석 및 결과 도출: 정량 데이터 분석, 주요 발견점 및 인사이트 도출, 서비스 개선 방향 도출"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_albaheaven_04.jpg"
+        },
+        "mobile": {
+          "img": "img_albaheaven_04.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "평가의 유형: 두가지 디바이스(모바일 앱, pc 웹)기준으로 평가기준(유용성, 직관성, 조작성, 심미성, 만족도)에 따라 사용자와 전문가 견해를 참고하여 진행하였으며, 구직자, 구인사 심층 인터뷰를 통해 서비스 사용의 주기를 파악하여 서비스 이용시 주요한 특정시점을 3가지 도출해 낼 수 있었습니다."
+        }
+      },
+      {
+        "pc": {
+          "img": "img_albaheaven_05.jpg"
+        },
+        "mobile": {
+          "img": "img_albaheaven_05.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "서비스 분석 point",
+            "li": [
+              { "liContent": "1. 이미지 형성 및 인상 결정" },
+              { "liContent": "2. 공고 부족: 지원자 부족의 부정적인 순환" },
+              { "liContent": "3. 전반적이 서비스 사용에 대한 부정적 의견" }
+            ]
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_albaheaven_06.jpg"
+        },
+        "mobile": {
+          "img": "img_albaheaven_06.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "서비스 개선방향",
+            "li": [
+              {
+                "liContent": "1. 서비스 유입: 사람들은 검색이나 광고, 지인의 추천등의 방식으로 서비스를 처음 접하게 됨. 굳이 다양한 서비스를 탐색하려고 노력하지 않고, 처음 사용하여 익숙해진 서비스를 계속 사용하려는 경향보임. 알바천국은 주요 구직 타켓층인 20대 사용자들에게 오래된 서비스의 이미지로 각인되어 있음(이미지 개선을 통해 새로운 사용자를 유입 시켜야 함)"
+              },
+              {
+                "liContent": "2. 구인/구직 서비스 순환: 구직자는 공고가 많을수록 자신이 원하는 알바를 찾을 가능성이 커진다고 생각하므로, 공고의 양이 많은 서비스를 신뢰함. 하지만 중복되거나 조건에 맞지 않는 공고 노출시 신뢰도 하락함. 구인사는 지원자가 많을수록 자신이 원하는 구직자를 뽑을 가능성이 커진다고 생각하므로, 사용자 수가 많은 서비스를 신뢰함(양질의 공고를 다량 생산해 구직자를 모으고, 만족한 구인사가 재공고를 올리는 선순환 구조를 제작해야 함)"
+              },
+              {
+                "liContent": "3. 서비스 이용: 사용성이 서비스 사용 여부를 결정하는 결정적인 요인은 아니지만, 지속해서 사용에 불편함을 느끼는 경우 전반적인 만족도가 낮아지게 됨(사용성 개선을 통해 전반적인 서비스 만족도를 향상시켜야 함)"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_albaheaven_07.jpg"
+        },
+        "mobile": {
+          "img": "img_albaheaven_07.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "전문가 주요견해",
+            "li": [
+              {
+                "liContent": "상품 안내 페이지 리디자인: 쇼핑몰처럼 매력적인 차별점이나 효과, 비슷한 사람의 사용 후기 등을 통해서 상품의 가치를 느끼게 해줘야 한다."
+              },
+              {
+                "liContent": "기본적인 정보설계에 대한 관점 전환 필요: 지역별, 단기, 급구 메뉴들이 서로 전혀 다른 기능인지에 대한 설득력이 높지 않다."
+              },
+              {
+                "liContent": "브랜드 아이덴티티 강화: 알바천국만의 기억 장치, 디자인 아이덴티티가 필요"
+              },
+              {
+                "liContent": "구직/구인 사이드의 확실한 분리: 구직, 구인을 하는 사람을 전혀 다른 사이트로 분리해서 디자인 하거나 표현해도 좋을 것 같다."
+              },
+              {
+                "liContent": "사용자를 이해하고 맞춰주는 서비스: 서비스를 처음 쓰던, 오래 쓰던 홈이 항상 똑같은 정보를 제공하는 느낌이다."
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "UI DESIGN",
+        "members": "진현정, 이윤재, 박재현, 임수현"
+      },
+      {
+        "team": "COACH",
+        "members": "양정윤"
+      }
+    ]
+  }
+]

@@ -1,0 +1,153 @@
+[
+  "detail_happyroom",
+  {
+    "category": "all b2b",
+    "slug": "detail_happyroom",
+    "headerType": "black",
+    "type": {
+      "protect": false
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_happyroom.jpg",
+      "title": {
+        "lang": "ko",
+        "content": "SK 행복공간"
+      },
+      "client": "SK C&C"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "",
+        "bgColor": "linear-gradient(to right, #c8512d, #ff774e)",
+        "pc": "img_happyroom_cover.png",
+        "mobile": "img_happyroom_cover_m.png",
+        "alt": ""
+      },
+      "logo": {
+        "img": "log_happyroom.png",
+        "alt": "SK 행복공간 Life Style Class Platform"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "ko",
+        "content": "도심 속 직장인을 위한 작은 휴양지 SK 행복공간"
+      },
+      "year": "2019.11 ~ 2019.12",
+      "client": "SK C&C",
+      "service": "UI / GUI Design (Mobile App / PC Web)"
+    },
+    "desc": [
+      {
+        "title": "Overview",
+        "desc": "SK행복공간은 개방형 오피스로 변화하고 있는 SK서린사옥에서 구성원들의 쉼과 교류, 성장을 위해 시작된 프로젝트입니다. SK의 공간예약시스템인 On space의 연계 서비스로 구성원들의 가치 있는 성장이 행복과 연결되고 그 행복이 기업의 지속적인 성장과 안정 유지의 원동력이 된다는 SK그룹의 경영철학을 담아 만든 구성원들의 행복을 위한 취미 클래스 플랫폼 서비스입니다.",
+        "pc": {
+          "img": "img_happyroom_01.jpg"
+        },
+        "mobile": {
+          "img": "img_happyroom_01_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": "Design Direction",
+        "desc": "취미 클래스 서비스로서 SK행복공간이 지향하고자는 바를 시각적인 단어와 매칭하여 구성원들이 행복해질 수 있는 공간으로 느낄 수 있도록 디자인 방향을 제시하였습니다.",
+        "pc": {
+          "img": "img_happyroom_02.jpg"
+        },
+        "mobile": {
+          "img": "img_happyroom_02_m.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "디자인 방향",
+            "li": [
+              {
+                "liContent": "에너제틱하고 성취적인 - 선명한 컬러 볼드한 타이틀"
+              },
+              {
+                "liContent": "행복하고 밝은 - 리듬감 있는 재미 요소"
+              },
+              {
+                "liContent": "유연하고 감각적인 - 트렌디한 감성적인"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "title": "GUI Keyscreen Design",
+        "desc": "취미 클래스 서비스로서 SK행복공간이 지향하고자는 바를 시각적인 단어와 매칭하여 구성원들이 행복해질 수 있는 공간으로 느낄 수 있도록 디자인 방향을 제시하였습니다.",
+        "pc": {
+          "img": "img_happyroom_03.jpg"
+        },
+        "mobile": {
+          "img": "img_happyroom_03_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "구매 시스템"
+        },
+        "desc": "편안하게 다가갈 수 있는 구어체로 가이드 문구를 제공하여 사용자들이 친근함을 느낄 수 있도록 하고, 단계별로 하나의 액션에 집중할 수 있도록 구성하였습니다.",
+        "pc": {
+          "img": "img_happyroom_04.jpg"
+        },
+        "mobile": {
+          "img": "img_happyroom_04_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": "Graphic Concept",
+        "desc": "밝은 분위기의 컬러와 도형 사용, 난해하지 않은 그래픽 요소로써 최대한 쉽고 편안하게 사용할 수 있도록 하였습니다.",
+        "pc": {
+          "img": "img_happyroom_05.jpg"
+        },
+        "mobile": {
+          "img": "img_happyroom_05_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": "Desktop Web",
+        "desc": "모바일에서 사용된 모듈을 동일하게 적용하여 어떠한 환경에서도 이질감 없이 서비스를 이용할 수 있게 합니다. 동일한 UI의 사용을 통해 사용자에게 보다 명확한 서비스 사용 경험을 제공하고자 했습니다.",
+        "pc": {
+          "img": "img_happyroom_06.jpg"
+        },
+        "mobile": {
+          "img": "img_happyroom_06_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "UI DESIGN",
+        "members": "김희웅"
+      },
+      {
+        "team": "GUI DESIGN",
+        "members": "허미진, 엄예진"
+      }
+    ]
+  }
+]

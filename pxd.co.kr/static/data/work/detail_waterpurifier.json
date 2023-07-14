@@ -1,0 +1,254 @@
+[
+  "detail_waterpurifier",
+  {
+    "category": "all userResearch",
+    "slug": "detail_waterpurifier",
+    "type": {
+      "protect": true
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_waterpurifier.jpg",
+      "title": {
+        "lang": "en",
+        "content": "Water Purifier UX"
+      },
+      "client": "Coway"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "full",
+        "bgColor": "",
+        "pc": "img_waterpurifier_cover.png",
+        "mobile": "img_waterpurifier_cover.png",
+        "alt": ""
+      },
+      "logo": {
+        "img": "logo_waterpurifier.png",
+        "alt": "Coway New Concept / UX Consulting / UX Scenario"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "en",
+        "content": "Water Purifier UX"
+      },
+      "year": "2017.12 ~ 2018.04",
+      "client": "Coway",
+      "service": "New Concept / UX Consutlting / UX Scenario"
+    },
+    "desc": [
+      {
+        "pc": {
+          "img": "img_waterpurifier_02.jpg"
+        },
+        "mobile": {
+          "img": "img_waterpurifier_02.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "project goal: 정수기 제품/서비스에 대한 개념 및 사용과정 분석을 통해 신규 정수기 제품/서비스의 사용 경험 제안",
+            "li": [
+              {
+                "liContent": "background: 순신규 시장에서 코웨이 정수기의 시장점유율 하락"
+              },
+              {
+                "liContent": "coway as-is: 정수기의 제한적 기능, 방판 비즈니스가 주요 인프라이자 한계"
+              },
+              {
+                "liContent": "코웨이가 접근하지 못하고 있는 고객군 경험 분석-사용자 특성 파악, 정수기 경험 분석"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_waterpurifier_03.jpg"
+        },
+        "mobile": {
+          "img": "img_waterpurifier_03.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "process",
+            "li": [
+              {
+                "liContent": "discover: 사용자 특성 파악, 정수기 경험 진단"
+              },
+              {
+                "liContent": "define: customer modeling, ux concept"
+              },
+              {
+                "liContent": "develop: ideation workshop, context development"
+              },
+              {
+                "liContent": "deliver: product/service offerings, to-be journey"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_waterpurifier_04.jpg"
+        },
+        "mobile": {
+          "img": "img_waterpurifier_04.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "customer define",
+            "li": [
+              {
+                "liContent": "조사 대상: 순신규 시장상황을 고려하여 [미혼독립], [기혼-무자녀], [기혼-예비부모] 중심으로 구성"
+              },
+              {
+                "liContent": "조사 범위: 정수기 이영[탐색-구입-설치-사용-해지]의 전 과정 확인"
+              },
+              {
+                "liContent": "조사 방법: 직접 정수기 이용 과정을 체험해 볼 수 있도록 'a day in the life', 'diary study'를 점목한 contextual inquiry 진행"
+              },
+              {
+                "liContent": "조사 내용: 조사 대상이 바라본 정수기 이용 과정의 pain-point 수집과 생활 가치관을 바탕으로 정수기 제품/서비스의 기회 요소 확인"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_waterpurifier_05.jpg"
+        },
+        "mobile": {
+          "img": "img_waterpurifier_05.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "research frame: 기존 정수기 인식, 정수기 사용 및 관리서비스 과정에서의 니즈를 5a 관점에서 파악, 사용자의 가치관과 라이프 스타일을 확인하여 니즈의 맥락 파악"
+        }
+      },
+      {
+        "pc": {
+          "img": "img_waterpurifier_06.jpg"
+        },
+        "mobile": {
+          "img": "img_waterpurifier_06.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "our insights: 조사 대상자가 기존 사용자층과 다르게 정수기의 구매-사용 과정에서 느끼는 불만은[렌탈, 제품기능 파악, 음용수 소비방식, 서비스 제공]에 대한 관점의 차이 때문"
+        }
+      },
+      {
+        "pc": {
+          "img": "img_waterpurifier_07.jpg"
+        },
+        "mobile": {
+          "img": "img_waterpurifier_07.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "어떻게 하면 새로운 사용자군을 위해 코웨이가 변화할 수 있을까?",
+            "li": [
+              {
+                "liContent": "어떻게 하면 코웨이 제품 이용 방식을 부담스럽지 않게 느끼게 할 수 있을까? > 렌탈/약정 플랜의 변화 > use coway not rent a 정수기"
+              },
+              {
+                "liContent": "어떻게 하면 정수기가 음용수 '공급'기기를 넘어선 제품으로 인식 될 수 있을까? > 제품 사용 목적의 변화 > life-time mate not a functuinal product"
+              },
+              {
+                "liContent": "어떻게 하면 디지털 경험을 통해 관리서비스의 이미지를 새롭게 만들 수 있을까? > 코디서비스 제공 방식의 변화 > un-tact not in person"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_waterpurifier_08.jpg"
+        },
+        "mobile": {
+          "img": "img_waterpurifier_08.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "customer modeling",
+            "li": [
+              {
+                "liContent": "더 나은 삶을 원하는 프로 독립러"
+              },
+              {
+                "liContent": "편하게 살고 싶은 살림새내기"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_waterpurifier_09.jpg"
+        },
+        "mobile": {
+          "img": "img_waterpurifier_09.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "customer journey",
+            "li": [
+              {
+                "liContent": "morning mate: 프로 독립러의 정수기 사용 경험 중 'morning mate'로 인한 wow moment는 코웨이 멤버십으로 관리에 대한 부담을 덜고, 드립커피, 얼음 등 부가기능 활용 영역으로 예상됨"
+              },
+              {
+                "liContent": "cooking mate: 살림새내기의 정수기 사용 경험 중'cooking mate'로 인한 wow moment는 인테리어에 빌트인된 디자인, 레시피 연동 기능 및 필터 관리 등으로 예상됨"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_waterpurifier_10.jpg"
+        },
+        "mobile": {
+          "img": "img_waterpurifier_10.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "생활과 환경의 영역에서 가전(새로운 기능)을 만들어 나가는 상품기획에서, 소비자의 생활과 맥락을 연구하여 환경을 만들어 나가는 상품기획으로"
+        }
+      },
+      {
+        "pc": {
+          "img": "img_waterpurifier_11.jpg"
+        },
+        "mobile": {
+          "img": "img_waterpurifier_11.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "context based transformation for our new customers coway"
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "UX DESIGN",
+        "members": "이채민, 홍성진, 김성경"
+      },
+      {
+        "team": "GUI DESIGN",
+        "members": "천민희, 김다운, 김유경, 김선경, 황소현, 안진언, 한지희, 류지현"
+      },
+      {
+        "team": "COACH",
+        "members": "이승윤"
+      }
+    ]
+  }
+]

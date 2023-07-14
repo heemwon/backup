@@ -1,0 +1,151 @@
+[
+  "detail_kb",
+  {
+    "category": "all financialService mobileService userResearch",
+    "slug": "detail_kb",
+    "headerType": "black",
+    "type": {
+      "protect": false
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_kb.jpg",
+      "title": {
+        "lang": "ko",
+        "content": "흩어진 내 자산을 한눈에, KB my money"
+      },
+      "client": "KB Kookmin Bank"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "",
+        "bgColor": "linear-gradient(to right, #fbdd22, #ffdd00)",
+        "pc": "img_kb_cover.png",
+        "mobile": "img_kb_cover_m.png",
+        "alt": ""
+      },
+      "logo": {
+        "img": "logo_kb.png",
+        "alt": "KB My money Financial Service, Web & Mobile Service"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "ko",
+        "content": "흩어진 내 자산을 한눈에, KB my money"
+      },
+      "year": "2016.05 ~ 2016.09",
+      "client": "KB Kookmin Bank",
+      "service": "UX Strategy, UI / GUI Design"
+    },
+    "desc": [
+      {
+        "title": "Overview",
+        "desc": "은행, 카드, 보험, 증권 등 다수의 금융기관에 분산된 자산현황을 한 번에 모아서 관리하는 통합자산 조회 서비스입니다. 자산과 거래 정보뿐만 아니라 소비·지출 조회 기능을 제공하여 종합적인 지출 관리 및 금융 목표를 설정할 수 있습니다.",
+        "pc": {
+          "img": "img_kb_01.jpg"
+        },
+        "mobile": {
+          "img": "img_kb_01_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "공간의 연결"
+        },
+        "desc": "흩어진 자산정보를 하나의 공간에 통합하고 유형과 용도에 따라 관리할 수 있도록 제공하고, 하나의 금융 목표에 여러 계좌를 연결하여 목표금액과 기간에 따라 달성률을 체크할 수 있습니다.",
+        "pc": {
+          "img": "img_kb_02.jpg"
+        },
+        "mobile": {
+          "img": "img_kb_02_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "시간의 연결"
+        },
+        "desc": "시간 흐름에 따라 자산 변동 추이를 쉽게 파악할 수 있도록 다양한 차트를 제공합니다. 관리비, 통신비 등의 반복적 지출을 예상 지출로 지정하여 계획적인 지출을 유도합니다.",
+        "pc": {
+          "img": "img_kb_03.jpg"
+        },
+        "mobile": {
+          "img": "img_kb_03_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "채널의 연결"
+        },
+        "desc": "금융 목표에 연결 가능한 예금, 적금, 펀드 상품을 추천합니다. 유사 고객 군과의 자산 비율 비교를 통해 자산설계 서비스와의 연결을 강화합니다.",
+        "pc": {
+          "img": "img_kb_04.jpg"
+        },
+        "mobile": {
+          "img": "img_kb_04_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "도와주는 목표관리"
+        },
+        "desc": "목표금액을 입력하고 계좌를 연결하면 포기하지 않고 관리할 수 있도록 실시간 달성률을 제공합니다.",
+        "pc": {
+          "img": "img_kb_05.jpg"
+        },
+        "mobile": {
+          "img": "img_kb_05_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "pc": {
+          "img": "img_kb_06.jpg"
+        },
+        "mobile": {
+          "img": ""
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "UI DESIGN",
+        "members": "이승윤, 허유리, 노미연, 홍희승, 허조강, 성희정"
+      },
+      {
+        "team": "GUI DESIGN",
+        "members": "천민희, 양정연, 황소현, 조은산, 김유경, 정소영"
+      },
+      {
+        "team": "COACH",
+        "members": "전성진, 박기혁, 노경완"
+      }
+    ]
+  }
+]

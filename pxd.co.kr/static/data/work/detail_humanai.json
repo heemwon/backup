@@ -1,0 +1,230 @@
+[
+  "detail_humanai",
+  {
+    "category": "all aiRobotics userResearch",
+    "slug": "detail_humanai",
+    "type": {
+      "protect": true
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_humanai.jpg",
+      "title": {
+        "lang": "en",
+        "content": "Human AI Interaction Research"
+      },
+      "client": "Dell"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "full",
+        "bgColor": "",
+        "pc": "img_humanai_cover.jpg",
+        "mobile": "img_humanai_cover_m.jpg",
+        "alt": ""
+      },
+      "logo": {
+        "img": "logo_humanai.png",
+        "alt": "Dell Smart I/O Interactive H/W / User Research / Scenario / Prototyping"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "ko",
+        "content": "새로운 경험과 기회요소를 발견하기 위한 UX방법론 선행리서치"
+      },
+      "year": "2019.03 ~ 2019.06",
+      "client": "Dell",
+      "service": "Interactive H/W / AI / User Research / Prototyping / Scenario"
+    },
+    "desc": [
+      {
+        "title": "Overview",
+        "desc": "Dell에서는 현재 AI를 기반으로한 통합된 에코시스템 형성을 향후 중요한 비즈니스 전략 중 하나로 바라보고 있습니다. 이에 사람과 사람, 사람과 기계 그리고 기계와 기계 사이에 다양한 상호작용이 발생될 것으로 예상하고 있으며, 특히 스마트 어시스턴트와 Interactive HW(Hardware)의 결합을 중요한 기회로 보고 있습니다. 따라서, 다음 세대의 Interactive HW의 기회요소와 새로운 경험을 발굴하기 위해 UX방법론을 통한 선행리서치를 의뢰 받았습니다. 프로젝트 기간 동안 업무환경에서의 Interactive HW 와 스마트 어시스턴트의 결합의 기회요소를 발굴하고 다양한 센소리(Sensory) 기반의 인터랙션과 이의 새로운 인터페이스를 설정하여 총체적인 업무 경험을 제공할 수 있는 디바이스 형태와 이의 시나리오를 도출하는 것을 목표로 프로젝트가 진행되었습니다.",
+        "pc": {
+          "img": "img_humanai_01.jpg"
+        },
+        "mobile": {
+          "img": "img_humanai_01_m.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "Project Goal",
+            "li": [
+              {
+                "liContent": "01: Interactive HW와 스마트 어시스턴트 결합의 기회 요소를 발굴"
+              },
+              {
+                "liContent": "02: Sound/Vision/Gesture/Haptic 기반의 새로운 인터페이스&하이어라키 아이데이션"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "title": "Desk Research",
+        "desc": "진보된 AI기술을 기반으로한 새로운 세대의 컴퓨팅 환경이 다가옴에 따라 스마트 어시스턴트를 기반으로 하는 새로운 타입의 입출력 기기의 개발이 요구되고 있습니다. 이를 위해 스마트 어시스턴트, 스마트기기 그리고 이를 기반으로하는 스마트 환경관점에서의 데스크 리서치를 진행하였습니다. 그 결과 다가올 스마트 어시스턴트 주도의 Cognitive Computing 환경에서 스마트 어시스턴트는 사용자의 의도를 이해하여 단순히 사용자의 업무를 돕는것이 아닌 사용자가 목적을 이루는데에 도움을 줄 수 있을것이라는 인사이트를 얻었습니다.",
+        "pc": {
+          "img": "img_humanai_02.jpg"
+        },
+        "mobile": {
+          "img": "img_humanai_02_m.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "Desk Research",
+            "li": [
+              {
+                "liContent": "More Abilities: Provide information, Perform simple work, Carry out more complex work"
+              },
+              {
+                "liContent": "Smart Sensor, Smart Actuator, Smart Appliance"
+              },
+              {
+                "liContent": "Smart Assistant > Smart Device > Smart Environment"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "title": "User Research",
+        "desc": "사용자 조사 대상을 선정하기 위해, 업무 공간의 성격과 업무에서 사용되는 디바이스의 성격을 분류하여 프레임을 만들었으며 Dell에서 중요하게 생각하는 퍼소나를 참고하여 4타입의 대표 그룹을 선정하였습니다. 대표 그룹의 조사 대상자들을 선정하여 업무중의 디바이스 사용 행태와 컴퓨팅 환경을 촬영하여 관찰조사를 수행하였습니다. 이후 관찰조사의 결과를 기반으로 인뎁스 인터뷰를 진행하였습니다. 또한 익스트림 사용자와 전문가 인터뷰를 통해 여러관점에서의 의견을 얻었습니다. 그리고 Video Ethnography 기법을 사용하여 브이로그(Vlog)의 관찰을 통해 자연스럽게 다양한 기기들을 사용하는 행태를 관찰하고 다양한 아이디어를 얻을 수 있었습니다.",
+        "pc": {
+          "img": "img_humanai_03.jpg"
+        },
+        "mobile": {
+          "img": "img_humanai_03_m.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "Video Ethnography, User Research Frame, User VOC, Sequence Map & Artifact Model"
+        }
+      },
+      {
+        "title": "Modeling & UX Concept",
+        "desc": "사용자 모델링을 진행하기 앞서, 각 사용자들에게서 공통적으로 발견되는 사항들을 종합하고 분류하여 10개의 Key Finding들을 도출했습니다. 그리고 이를 업무 전/중/후와 업무환경/디바이스 성격의 틀에 맞춰 구조화시키는 작업을 진행하였습니다. 이 과정을 통해 4가지의 UX 컨셉을 도출할 수 있었습니다.",
+        "pc": {
+          "img": "img_humanai_04.jpg"
+        },
+        "mobile": {
+          "img": "img_humanai_04_m.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "UX 컨셉(Multi-modality Zone, Routine Manager, Sensory Enhancer, Hierarchy Coordinator) 도출 과정",
+            "li": [
+              {
+                "liContent": "Before: Arriving, H/W Setting, S/W Setting"
+              },
+              {
+                "liContent": "During: Disturbing, Working, Moving, Outside Working, Disturbing"
+              },
+              {
+                "liContent": "Preparing to leave, Deactivate Devices, Leaving"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "title": "Ideation",
+        "desc": "도출된 4가지의 컨셉을 기반으로 5단계의 걸친 아이데이션을 작업을 진행하였습니다. 이를 통해 선정된 10개의 핵심 아이디어를 기능의 목적, 사용환경, 인터랙션에 활용되는 센소리 타입에 따라 유사 아이디어를 통합하였고 최종적으로 2개안을 선정하여 아이디어 검증 및 이를 구체화하는 과정을 진행하였습니다.",
+        "pc": {
+          "img": "img_humanai_05.jpg"
+        },
+        "mobile": {
+          "img": "img_humanai_05_m.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "10개의 핵심 아이디어",
+            "li": [
+              {
+                "liContent": "Holophonic Portal"
+              },
+              {
+                "liContent": "Detective Sound Balance"
+              },
+              {
+                "liContent": "Air Spoide"
+              },
+              {
+                "liContent": "Unified Format Experience"
+              },
+              {
+                "liContent": "Reactive perspective contents"
+              },
+              {
+                "liContent": "gesture mouse"
+              },
+              {
+                "liContent": "air mouse"
+              },
+              {
+                "liContent": "a.i terminal"
+              },
+              {
+                "liContent": "vision-detective security"
+              },
+              {
+                "liContent": "ebvuribnebtal detection"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "title": "Wizard of OZ prototyping",
+        "desc": "도출한 아이디어 방향이 사용자에게 유용한지를 검증하고, 개선 피드백을 얻기 위해 잠재적 사용자를 대상으로 위자드 오브 오즈 방식의 프로토타이핑을 진행하였습니다. 참가자는 사용자로 예상되는 Desk-Centric 사용자 3명, Co-Working Space 사용자 3명을 선정하여 실험을 진행하였습니다. 실험에서 참가자들에게 선정된 아이디어의 컨셉과 기능을 잘 경험할 수 있도록 시나리오 기반의 Task를 참가자들에게 부여한 훈, 혁신성, 매력도, 실용성, 사용의향 평가지표와 SUS(System Usability Scale)기반으로 설문, 평가 및 의견을 얻었습니다. 위자드 오브 오즈 프로토타이핑을 통해 새로운 경험을 제공함으로써, 이에 대한 평가 및 의견들은 각 솔루션의 세부적인 폼 팩터, 기능요소, 추가기회요소로 적용되었고 시나리오에 까지 반영되어 시나리오가 작성되었습니다.",
+        "pc": {
+          "img": "img_humanai_06.jpg"
+        },
+        "mobile": {
+          "img": "img_humanai_06_m.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "system output > user input"
+        }
+      },
+      {
+        "title": "Key Experience & Scenario",
+        "desc": "잠재적 사용자와의 위자드 오브 오즈 프로토타이핑 실험을 통해 개선된 솔루션은 컨셉의 의도와 가능한 디바이스의 형태 그리고 사용상의 경험을 잘 표현 할 수 있는 스토리텔링 형식의 시나리오로 정리되었습니다.",
+        "pc": {
+          "img": "img_humanai_07.jpg"
+        },
+        "mobile": {
+          "img": "img_humanai_07_m.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "스토리텔링 형식의 시나리오",
+            "li": [
+              {
+                "liContent": "solution1: integrated fluid interface"
+              },
+              {
+                "liContent": "solution2: immersive meeting devices"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "UX DESIGN",
+        "members": "홍성진, 민경보, 김민우, 오윤정"
+      },
+      {
+        "team": "COACH",
+        "members": "한상택"
+      }
+    ]
+  }
+]

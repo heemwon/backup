@@ -1,0 +1,100 @@
+[
+  "detail_kiosk",
+  {
+    "category": "all frontEnd",
+    "slug": "detail_kiosk",
+    "type": {
+      "bg":true,
+      "protect": true
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_kiosk.jpg",
+      "title": {
+        "lang": "en",
+        "content": "Unmanned Order Kiosk"
+      },
+      "client": "효성티앤에스"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "",
+        "bgColor": "#0033a0",
+        "pc": "img_kiosk_cover.jpg",
+        "mobile": "img_kiosk_cover_m.jpg",
+        "alt": ""
+      },
+      "logo": {
+        "img": "logo_kiosk.png",
+        "alt": "hyosungTNS, KIOSK UI"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "ko",
+        "content": "무인주문 KIOSK Front-End 개발"
+      },
+      "year": "2019.11 ~ 2020.02",
+      "client": "효성티앤에스",
+      "service": "Front-End"
+    },
+    "desc": [
+      {
+        "title": "Overview",
+        "desc": "매장 내 무인주문 KIOSK 도입은 트렌드로 자리를 잡고 있습니다. 무인주문 KIOSK 내 S/W 및 UX/UI를 고도화해 관리가 편리한 KIOSK 시스템을 구현했습니다. 그뿐만 아니라 향후 KIOSK의 개발 확장성 및 가격 경쟁력을 고려해 윈도우/안드로이드 외 다양한 운영체제 기반에서 구동할 수 있는 Electron 기반의 Hybrid APP(Native App + Web UI) 구조로 개발했습니다."
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "직관적인 화면 구성 및 개발"
+        },
+        "desc": "업종에 따라 관리자(Admin)가 쉽게 메뉴를 구성할 수 있도록 직관적인 화면을 구성하고 주문/영업 관리 표준 서비스 및 거래 별 템플릿을 제공했습니다.",
+        "pc": {
+          "img": "img_kiosk_01.jpg"
+        },
+        "mobile": {
+          "img": "img_kiosk_01_m.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "좌측부터 무인 KIOSK 메인, 주문, 주문 옵션, 주문 완료 화면"
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "KIOSK 시스템 구성"
+        },
+        "desc": "무인주문 KIOSK 시스템은 효성의 WARP V2.0 Package Base를 Customizing 하여 개발했습니다. 이는 Web Server(Node.js)를 통한 중앙 배포(Web Socket)로 KIOSK 서비스에 신속하게 적용할 수 있습니다.",
+        "pc": {
+          "img": "img_kiosk_02.jpg"
+        },
+        "mobile": {
+          "img": "img_kiosk_02_m.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "Warp Package 구성"
+        }
+      },
+      {
+        "desc": "범용 Web 표준 기술(HTML5/CSS/Javasciprt)을 사용해 Interactive 한 UX/UI를 개발했습니다. 관리자 관리 기능 이력 및 데이터 조회, 분석 기본 기능을 구현했으며, 관리자는 해당 기능을 이용해 고객서비스 패턴 분석 및 매장 관리를 쉽고 편리하게 할 수 있습니다.",
+        "pc": {
+          "img": "img_kiosk_03.jpg"
+        },
+        "mobile": {
+          "img": "img_kiosk_03_m.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "Warp Server Architecture"
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "Front-End Develop",
+        "members": "김태용"
+      }
+    ]
+  }
+]

@@ -1,0 +1,112 @@
+[
+  "detail_gsfresh",
+  {
+    "category": "all frontEnd commerce",
+    "slug": "detail_gsfresh",
+    "type": {
+      "protect": false
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_gsfresh.jpg",
+      "title": {
+        "lang": "ko",
+        "content": "GS Retail 온라인 통합 커머스 구축 Front-End 개발"
+      },
+      "client": "GS Retail"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "",
+        "bgColor": "#396f7e",
+        "pc": "img_gsfresh_cover.jpg",
+        "mobile": "img_gsfresh_cover_m.jpg",
+        "alt": ""
+      },
+      "logo": {
+        "img": "logo_gsfresh.png",
+        "alt": "GS Retail 온라인 통합 커머스 구축 Front-End 개발, PC/Mobile/App Service"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "ko",
+        "content": "GS Retail 온라인 통합 커머스 구축 Front-End 개발"
+      },
+      "year": "2019.11 ~ 2020.09",
+      "client": "GS Retail",
+      "service": "Front-End Develop (PC / Mobile / App Service)"
+    },
+    "desc": [
+      {
+        "title": "Overview",
+        "desc": "GS fresh mall은 신선 제품을 온라인에서 당일, 익일 배송을 해주는 서비스를 제공하는 사이트입니다. 기존의 GS fresh mall에 자사 서비스인 오가닉 라이프 스토어 ‘달리살다’, ‘새벽배송’, ‘와인25’ 등을 추가해 하나의 앱에서 쇼핑할 수 있도록 온라인 통합 커머스를 구축하는데 Front-End 개발 부문을 담당해 진행했습니다. 서비스 추가를 고려한 개발환경의 확장성과 운영 관리가 쉽도록 각 서비스 몰별로 컬러 테마를 적용했습니다. Vue 프레임워크 환경에서 구조별 컴포넌트 작업 및 SASS 활용으로 서비스 운영 유지보수 관리가 쉽도록 Hybrid App (Native App + Web UI)으로 개발했습니다.",
+        "pc": {
+          "img": "img_gsfresh_01.jpg"
+        },
+        "mobile": {
+          "img": "img_gsfresh_01_m.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "좌측부터 gsfresh, 새벽배송, 달리살다 메인 화면"
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "모든 사용자를 고려한 웹 접근성 준수"
+        },
+        "desc": "키보드만으로 접근해 서비스를 이용할 수 있도록 함으로써 시각 장애인들도 서비스를 이용할 수 있도록 웹 접근성을 준수해 구현했습니다.",
+        "pc": {
+          "img": "img_gsfresh_02.jpg"
+        },
+        "mobile": {
+          "img": "img_gsfresh_02_m.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "좌측 상단 팝업 버튼 포커스 활성화 화면, 우측 하단 팝업 내 포커스 활성화 화면"
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "손쉽게 쇼핑할 수 있는 UI 인터랙션 구현"
+        },
+        "desc": "소비자는 하단 주메뉴 바에서 몰 선택 시 곧바로 다른 서비스 몰로 이동할 수 있습니다. 메뉴바를 몰과 브랜드 두 단으로 작업해, 한 손으로 자유롭게 몰과 서비스를 선택할 수도 있습니다. 왼손 사용자를 위해서 몰 이동 주메뉴의 위치는 스와이프 시 좌우로 이동할 수 있도록 사용성을 고려해 구현했습니다. 또한 소비자의 동일한 쇼핑 경험을 위해 PC에 최적화된 사이트도 함께 개발했습니다.",
+        "pc": {
+          "img": "img_gsfresh_03.jpg"
+        },
+        "mobile": {
+          "img": "img_gsfresh_03_m.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "하단 메뉴바의 동작 화면. 자사 서비스 몰과 브랜드로 이동하는 화면"
+        }
+      },
+      {
+        "pc": {
+          "img": "img_gsfresh_04.jpg"
+        },
+        "mobile": {
+          "img": "img_gsfresh_04_m.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "gsfresh PC 사이트 메인 화면"
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "Front-End Develop",
+        "members": "이슬비, 이선주, 강은영, 최진아, 류중열, 김태용"
+      },
+      {
+        "team": "COACH",
+        "members": "강재삼"
+      }
+    ]
+  }
+]

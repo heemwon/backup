@@ -1,0 +1,139 @@
+[
+  "detail_powderroom",
+  {
+    "category": "all mobileService startUp",
+    "slug": "detail_powderroom",
+    "headerType": "black",
+    "type": {
+      "protect": false
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_powderroom.jpg",
+      "title": {
+        "lang": "ko",
+        "content": "세상의 모든 뷰티 이슈를 모았다. 파우더룸"
+      },
+      "client": "(주)파우컴퍼니"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "",
+        "bgColor": "linear-gradient(to right, #ffacc0, #ffd2c7)",
+        "pc": "img_powderroom_cover.png",
+        "mobile": "img_powderroom_cover_m.png",
+        "alt": ""
+      },
+      "logo": {
+        "img": "logo_powderroom.png",
+        "alt": "POWDER ROOM Beauty Community / Mobile Consulting"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "ko",
+        "content": "세상의 모든 뷰티 이슈를 모았다. 파우더룸"
+      },
+      "year": "2018.04 ~ 2018.06",
+      "client": "Pawcompany",
+      "service": "UI / GUI Consulting / Keyscreen Design"
+    },
+    "desc": [
+      {
+        "title": "Overview",
+        "desc": "파우더룸은 네이버 카페로 시작한 뷰티 커뮤니티로써 410,000명 이상 사용자들이 활동하고 있는 브랜드입니다. 장수 커뮤니티라는 점과 많은 사용자들을 보유하고 있는 장점을 가지고 있지만, PC커뮤니티와 다르게 앱서비스에 대한 사용성과 활용성이 미미한 부분이 있었습니다. 활발한 카페 커뮤니티 사용자들을 앱으로까지 연결하고자 하는 내부 니즈와 서비스 전반적인 개선을 목표로 프로젝트를 진행하였습니다.",
+        "pc": {
+          "img": "img_powderroom_01.jpg"
+        },
+        "mobile": {
+          "img": "img_powderroom_01_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "콘텐츠와 커뮤니티 카드가 함께 나열되어 다양한 상세로의 진입을 유도하는 Home"
+        },
+        "desc": "처음 진입한 사용자가 보기에 유도할 진입점이 다양하고, 풍성해보일 수 있도록 커뮤니티 카드와 뷰티 콘텐츠 카드를 섞어서 배치합니다. 각 카드의 특성에 따라 디자인이 다르게 적용되어 카드성격이 같더라도 컨텐츠를 다양하게 보여줄 수 있게 합니다.",
+        "pc": {
+          "img": "img_powderroom_02.jpg"
+        },
+        "mobile": {
+          "img": "img_powderroom_02_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "사용자들과 함께 보고, 활성화된 콘텐츠의 느낌을 전달하는 Beauty TIP"
+        },
+        "desc": "뷰티팁 내용을 통해 함께 이 내용에 공감하고 있고, 활성화된 컨텐츠의 느낌을 주기 위해 댓글이 달리는 실시간의 느낌을 토스트로 적극적이게 노출하였습니다.",
+        "pc": {
+          "img": "img_powderroom_03.jpg"
+        },
+        "mobile": {
+          "img": "img_powderroom_03_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "필요없는 뷰티 제품을 쉽게 나눠주고, 나눠받는 재미를 주는 ‘이거나눔’"
+        },
+        "desc": "사용자들끼리 쓰지 않는 뷰티제품들을 더 쉽게 나눠 줄 수 있도록 등록하는 페이지와 나눠받고자 하는 뷰티제품에 줄을 서서 제품을 나눠받는 재미를 주는 메뉴입니다.",
+        "pc": {
+          "img": "img_powderroom_04.jpg"
+        },
+        "mobile": {
+          "img": "img_powderroom_04_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "내 뷰티 성향과 나의 활동을 탐색하는 마이페이지"
+        },
+        "desc": "뷰티성향에 대한 정보표현과 그동안의 나의 활동에 따라 레벨을 차등지급합니다. 활동량에 따라 레벨의 아이콘을 파우더룸 패턴에 맞게 적용하여 디자인합니다.",
+        "pc": {
+          "img": "img_powderroom_05.jpg"
+        },
+        "mobile": {
+          "img": "img_powderroom_05_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "UX DESIGN",
+        "members": "김서연, 허조강"
+      },
+      {
+        "team": "GUI DESIGN",
+        "members": "정소영, 성아람"
+      },
+      {
+        "team": "COACH",
+        "members": "허유리, 김다운"
+      }
+    ]
+  }
+]

@@ -1,0 +1,215 @@
+[
+  "detail_vux",
+  {
+    "category": "all voiceUx userResearch, usabilityTest, dataAnalysis",
+    "slug": "detail_vux",
+    "type": {
+      "protect": true
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_vux.jpg",
+      "title": {
+        "lang": "en",
+        "content": "VUX Strategy"
+      },
+      "client": "삼성전자"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "full",
+        "bgColor": "",
+        "pc": "img_vux_cover.png",
+        "mobile": "img_vux_cover_m.jpg",
+        "alt": ""
+      },
+      "logo": {
+        "img": "logo_vux.png",
+        "alt": "삼성전자 VUX Strategy User Research / UT / Data Analysis"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "en",
+        "content": "VUX Strategy"
+      },
+      "year": "2018.04 ~ 2018.09",
+      "client": "삼성전자",
+      "service": "Voice UX / Strategy / User Research / UT / Data Analysis"
+    },
+    "desc": [
+      {
+        "pc": {
+          "img": "img_vux_02.jpg"
+        },
+        "mobile": {
+          "img": "img_vux_02.jpg"
+        },
+        "alt": {
+          "type": "title",
+          "content": {
+            "title": "project goal",
+            "desc": "사용자가 대화형 에이전트와 이전보다 더 자주, 더 오래 대화할 수 있는 서비스로 진화하기 위해 사용자 발화와 감정 기반의 대화전략을 설계"
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_vux_03.jpg"
+        },
+        "mobile": {
+          "img": "img_vux_03.jpg"
+        },
+        "alt": {
+          "type": "title",
+          "content": {
+            "title": "user research",
+            "desc": "잠재사용자를 통해 미사용자가 가지는 에이전트 역할수준에 대한 순수한 기대사항 확인, 실사용자를 통해 일반적인 에이전트 사용패턴과 구매 전, 기대수준 vs 실제 사용에서 발생하는 차이 및 원인 파악"
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_vux_04.jpg"
+        },
+        "mobile": {
+          "img": "img_vux_04.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "대화전략 direction",
+            "li": [
+              {
+                "liContent": "관계형성을 위한 대화전략: 초기 사용시점에 voice command의 허들을 넘어 '나만의 에이전트'로 느낄 수 있어야 한다."
+              },
+              {
+                "liContent": "관계심화를 위한 대화전략: 사용자의 맥락과 의도를 반영한 대화가 이루어져야 한다."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_vux_05.jpg"
+        },
+        "mobile": {
+          "img": "img_vux_05.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "대화 framework 구성",
+            "li": [
+              {
+                "liContent": "발화유형: 발화 유형에 따른 대응대화"
+              },
+              {
+                "liContent": "감정 파악: 감정별 대응기조 체계화"
+              },
+              {
+                "liContent": "대응: 사용자에게 적합한 응답의 구성"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_vux_06.jpg"
+        },
+        "mobile": {
+          "img": "img_vux_06.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "ut 진행과정: 가설의 방향성과 대화 방식의 고도화를 확인하고 대화전략을 점검하기 위해 세가지 user test를 진행",
+            "li": [
+              {
+                "liContent": "1차 ut(verification test): 가설의 확인"
+              },
+              {
+                "liContent": "2차 ut(rapid user test): 대화 방식의 확인"
+              },
+              {
+                "liContent": "최종 ut(user test): 대화 전략 점검"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_vux_07.jpg"
+        },
+        "mobile": {
+          "img": "img_vux_07.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "최종 user test: 80명(2~40대)을 대상으로 프로토타입을 활용한 task 기반 테스트와 온라인 설문 진행"
+        }
+      },
+      {
+        "pc": {
+          "img": "img_vux_08.jpg"
+        },
+        "mobile": {
+          "img": "img_vux_08.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "대화전략 검증결과: 향후 에이전트의 감정대화는 개인화 정보에 기반하여 사용자의 상황을 보다 세밀하게 파악하고, 그에 맞는 유용하고 실질적인 대화를 제공하기 위한 방향으로 개선되어야 한다."
+        }
+      },
+      {
+        "pc": {
+          "img": "img_vux_09.jpg"
+        },
+        "mobile": {
+          "img": "img_vux_09.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "project 산출물",
+            "li": [
+              {
+                "liContent": "vux 가이드라인"
+              },
+              {
+                "liContent": "vui 시나리오"
+              },
+              {
+                "liContent": "ut report"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pc": {
+          "img": "img_vux_10.jpg"
+        },
+        "mobile": {
+          "img": "img_vux_10.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "UX DESIGN",
+        "members": "허유리, 김서연, 박정현, 김성경, 장성진"
+      },
+      {
+        "team": "PROTOTYPE",
+        "members": "이준"
+      }
+    ]
+  }
+]

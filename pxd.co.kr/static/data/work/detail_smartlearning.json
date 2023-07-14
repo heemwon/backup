@@ -1,0 +1,189 @@
+[
+  "detail_smartlearning",
+  {
+    "category": "all ebook mobileService",
+    "slug": "detail_smartlearning",
+    "type": {
+      "protect": true
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_closed_01.jpg",
+      "title": {
+        "lang": "en",
+        "content": "Smart Learning Platform"
+      },
+      "client": "Samsung SDS"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "",
+        "bgColor": "linear-gradient(to right, #253680, #0d1b5d)",
+        "pc": "img_slp_cover.png",
+        "mobile": "img_slp_cover_m.png",
+        "alt": ""
+      },
+      "logo": {
+        "img": "logo_slp.png",
+        "alt": "Link Square Designing E-learning Service Smarter"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "ko",
+        "content": "직장인들의 학습 코디네이터 \nLink Square"
+      },
+      "year": "2018.08 ~ 2019.02",
+      "client": "Samsung SDS",
+      "service": "UX Strategy, UI / GUI Design"
+    },
+    "desc": [
+      {
+        "title": "Overview",
+        "desc": "링크스퀘어는 이러닝 사용자에게 필요한 맞춤 콘텐츠를 제공해주는 스마트 러닝 플랫폼입니다. 지식 확장의 플랫폼으로써, 학습에 대한 몰입과 참여를 유도하여 수동적 학습 형태에서 벗어나 능동적 학습을 할 수 있게 도와줍니다.",
+        "pc": {
+          "img": "img_slp_01.jpg"
+        },
+        "mobile": {
+          "img": "img_slp_01_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "학습 사이클 형성을 도와주는 시간 관리 플랫폼"
+        },
+        "desc": "학습 사이클 형성을 도와주는 큐레이션 된 콘텐츠와 개별 사용자에 맞춘 유연하고 다양한 포틀릿 구조로 몰입과 참여를 유도하여 학습 시간 관리를 도와줍니다.",
+        "pc": {
+          "img": "img_slp_02.jpg"
+        },
+        "mobile": {
+          "img": "img_slp_02_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "지식의 연결과 확장을 도와주는 집합 플랫폼"
+        },
+        "desc": "관심 키워드, 강사/지식인, 내/외부 서비스 구독과 같이 직무와 연관된 전문가 추천의 다양한 카테고리의 콘텐츠를 구독하고 공유하여 오픈 플랫폼으로써 지식을 확장하게 만듭니다.",
+        "pc": {
+          "img": "img_slp_03.jpg"
+        },
+        "mobile": {
+          "img": "img_slp_03_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "참여와 활동을 지원하는 리워드 시스템"
+        },
+        "desc": "참여 및 활동 시 제공되는 리워드를 나의 학습 현황에서 확인할 수 있어, 사용자의 몰입과 참여를 유도하고 효율적인 학습 진행을 도와줍니다.",
+        "pc": {
+          "img": "img_slp_04.jpg"
+        },
+        "mobile": {
+          "img": "img_slp_04_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "몰입과 참여를 유도하는 커뮤니케이션 플랫폼"
+        },
+        "desc": "사용자별 학습 유형에 맞춘 맞춤형 콘텐츠를 제공하고, 같은 코스를 수강하는 학습자 사이 커뮤니케이션을 지원하여, 학습에 대한 지속적 참여를 유도합니다.",
+        "pc": {
+          "img": "img_slp_05.jpg"
+        },
+        "mobile": {
+          "img": "img_slp_05_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "학습자 친화적인 플레이어 환경 제공"
+        },
+        "desc": "학습 중 편의성을 제공해주는 플레이어로 학습 흐름을 방해하지 않고, 온라인/오프라인 간 연결성을 개선하여 학습에 몰입할 수 있는 환경을 제공합니다.",
+        "pc": {
+          "img": "img_slp_06.jpg"
+        },
+        "mobile": {
+          "img": "img_slp_06_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "atorm . 나만의 강의를 쉽고 빠르게 만들 수 있는 콘텐츠 메이킹 서비스"
+        },
+        "desc": "atorm을 활용한 콘텐츠 제작과 제작된 콘텐츠의 승인 및 운영 관리를 통해 콘텐츠 관리자의 제작 편의성을 증대시킵니다.",
+        "pc": {
+          "img": "img_slp_07.jpg"
+        },
+        "mobile": {
+          "img": "img_slp_07_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "멀티 디바이스를 통한 이어 학습 제공"
+        },
+        "desc": "구독 중인 강의를 Mobile, Tablet, PC에 모두 지원하여 듣던 강의도 끊김 없이, 언제 어디서나 시청할 수 있는 환경을 제공합니다.",
+        "pc": {
+          "img": "img_slp_08.jpg"
+        },
+        "mobile": {
+          "img": "img_slp_08_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "UX DESIGN",
+        "members": "허유리, 양정윤, 홍성진, 이준, 김우성, 임수현, 김소명, 장성진"
+      },
+      {
+        "team": "GUI DESIGN",
+        "members": "김혜림, 김신환, 김현우, 최이슬, 박나영, 류지현, 한수영"
+      },
+      {
+        "team": "COACH",
+        "members": "박기혁, 노경완"
+      }
+    ]
+  }
+]

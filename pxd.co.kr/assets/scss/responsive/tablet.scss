@@ -1,0 +1,367 @@
+@media (min-width: 769px) and (max-width: 1439px) {
+  .margin + .margin {
+    margin-top: 200px;
+  }
+  .title-wrap {
+    padding: 180px 92px 80px;
+    > div {
+      font-size: 40px;
+      line-height: 60px;
+    }
+    &.en {
+      padding: 120px 92px 100px;
+      > div {
+        max-width: 584px;
+        font-size: 54px;
+        line-height: 68px;
+      }
+    }
+  }
+  .koTitle .main .title-wrap,
+  .enTitle .main .title-wrap {
+    > div {
+      max-width: 840px;
+    }
+  }
+  .enTitle .work .title-wrap,
+  .enTitle .story .title-wrap,
+  .enTitle .service .title-wrap,
+  .enTitle .people .title-wrap,
+  .enTitle .jobs .title-wrap {
+    padding: 180px 92px 80px;
+    > div {
+      strong {
+        font-size: 40px;
+      }
+    }
+  }
+  .enTitle .story .title-wrap {
+    padding: 180px 92px 0;
+  }
+  .enTitle .story .content .margin:last-child {
+    margin-top: 0;
+  }
+  .enTitle .people .title-wrap {
+    padding-bottom: 160px;
+  }
+  // header
+  header {
+    .wrap-inner dl {
+      width: 80%;
+    }
+  }
+  // footer
+  footer {
+    .section:not(.full) {
+      flex-direction: column;
+    }
+    .section .section-contents {
+      margin-top: 40px;
+      padding-left: 0;
+      width: 100%;
+    }
+    .section .section-contents {
+      bottom: 198px;
+    }
+  }
+  .section-grid {
+    .section-title {
+      width: 100%;
+    }
+    .section-contents {
+      width: 100%;
+      .card-wrap1 {
+        justify-content: space-between;
+        margin-top: 60px;
+        .card-type1 {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+  // 보호된 글
+  .area-enter-pw {
+    .title {
+      font-size: 36px;
+    }
+  }
+  // work
+  .work {
+    .content {
+      margin-top: 80px;
+      .section-contents {
+        margin-bottom: 0;
+        .btn-more-big {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  // work detail
+  .work-detail {
+    .work-visual {
+      height: 460px;
+      .inform .logo {
+        bottom: 24px;
+        width: 350px;
+      }
+    }
+    .section-detail {
+      &.txt-box {
+        padding: 120px 92px 80px;
+      }
+      &.headline {
+        .title {
+          font-size: 52px;
+          line-height: 76px;
+        }
+      }
+    }
+    .section.next {
+      flex-direction: column;
+      .section-title {
+        min-height: auto;
+      }
+      .section-contents {
+        margin-top: 60px;
+        padding-left: 0;
+        width: 100%;
+        > a {
+          width: 100%;
+        }
+        .cover-img {
+          height: 35vw;
+          .badge-detail {
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+    }
+  }
+  // contact
+  .contact {
+    .section {
+      display: block;
+    }
+    .section .section-contents {
+      width: 100%;
+      .list-contact:not(.inquire) {
+        display: block;
+        margin-top: 60px;
+      }
+    }
+    .section .section-contents .list-contact:not(.inquire) li {
+      margin: 0;
+      width: 100%;
+      font-size: 0;
+      & + li {
+        margin: 60px 0 0;
+      }
+      .title {
+        display: inline-block;
+        width: 148px;
+        vertical-align: top;
+      }
+      .art-1 {
+        display: inline-block;
+        margin: 0;
+        width: calc(100% - 148px);
+        max-width: none;
+        vertical-align: top;
+        word-break: keep-all;
+      }
+      > a {
+        display: inline-block;
+        margin-left: 148px;
+      }
+    }
+    .wrap-map {
+      height: 360px;
+    }
+  }
+  // main
+  .main {
+    .wrap-insta {
+      margin-top: 100px;
+    }
+    .btn-more {
+      position: absolute;
+      top: 98px;
+    }
+    .section .section-title {
+      min-height: auto;
+    }
+    .list-menu-explain {
+      flex-wrap: wrap;
+      > li {
+        width: calc(50% - 28px);
+      }
+    }
+    .main-component {
+      flex-direction: column;
+      .section-contents {
+        padding-left: 0;
+        width: 100%;
+        .inner-section-list {
+          margin-top: 128px;
+        }
+      }
+    }
+    .card-wrap1.work li:first-child {
+      padding-right: 0;
+    }
+    .card-wrap1.stories li:first-child {
+      padding-right: 12.42%;
+    }
+  }
+  // service
+  .service {
+    .wrap-list-service a {
+      padding: 40px 92px;
+      .card-type2 {
+        .inner {
+          margin-left: 20px;
+        }
+        img {
+          min-width: 148px;
+        }
+        .title {
+          font-size: 32px;
+          line-height: 44px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  // service-detail
+  .service-detail {
+    .content {
+      margin-top: 120px;
+      .sub-box .sub-title {
+        font-size: 32px;
+      }
+    }
+    .service-visual {
+      img {
+        min-height: 460px;
+      }
+      .title {
+        font-size: 56px;
+        line-height: 68px;
+      }
+      .inform {
+        margin-top: 20px;
+        p {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+      .cover-txt {
+        bottom: 60px;
+        max-width: 500px;
+      }
+    }
+    .content .sub-box {
+      padding: 120px 92px;
+      width: auto;
+      max-width: 1024px;
+      .sub-desc {
+        margin-top: 12px;
+      }
+      li + li {
+        margin-top: 120px;
+      }
+    }
+  }
+  // Jobs
+  // 아코디언
+  .wrap-notice {
+    li[data-accord='item close'] {
+      .notice-content {
+        padding: 0;
+      }
+    }
+    li[data-accord='item open'] {
+      .notice-content {
+        padding: 80px 0;
+      }
+    }
+  }
+  // jobs common
+  .tab-sorting-list {
+    &.recruit {
+      margin-top: 60px;
+    }
+  }
+  .section-contents {
+    .h4-desc {
+      &.type-large {
+        padding: 20px 0 20px;
+        max-width: 584px;
+        font-size: 24px;
+        line-height: 40px;
+      }
+    }
+  }
+  .jobs {
+    .content {
+      .margin:last-child {
+        margin-top: 90px;
+        margin-bottom: 120px;
+      }
+    }
+  }
+  // Jobs 목록
+  .wrap-notice {
+    .notice-button > button {
+      padding: 40px 16px 40px 82px;
+      .title {
+        overflow: hidden;
+        margin-right: 10px;
+        width: calc(80% - 10px);
+        font-size: 24px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .process {
+        width: 57px;
+        font-size: 20px;
+      }
+      .period {
+        width: 20%;
+        font-size: 20px;
+      }
+    }
+  }
+  //jobs 입력페이지
+  .job-detail {
+    .section-grid {
+      .section-title {
+        width: 100%;
+      }
+      .section-contents {
+        width: 100%;
+        .card-wrap1 {
+          justify-content: space-between;
+          margin-top: 60px;
+          .card-type1 {
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+  // story-detail
+  .story-wrap .section-detail.related {
+    .inner-section-list.sub ul.pc-view li .img-box + div .title {
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 500;
+    }
+  }
+  // jobs
+  .wrap-jobs-table .wrap-jobs-form li.left .fileReset {
+    right: 0;
+  }
+}

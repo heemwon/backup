@@ -1,0 +1,193 @@
+[
+  "detail_handysoft",
+  {
+    "category": "all b2b",
+    "slug": "detail_handysoft",
+    "type": {
+      "protect": true
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_handysoft.jpg",
+      "title": {
+        "lang": "en",
+        "content": "Handysoft Groupware"
+      },
+      "client": "HandySoft"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "",
+        "bgColor": "linear-gradient(to right, #163ec1, #2038a7)",
+        "pc": "img_handysoft_cover.png",
+        "mobile": "img_handysoft_cover_m.png",
+        "alt": ""
+      },
+      "logo": {
+        "img": "logo_handysoft.png",
+        "alt": "Handy Groupware UX Design Consulting"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "ko",
+        "content": "최상의 스마트 오피스 협업솔루션, Handy Groupware"
+      },
+      "year": "2017.07 ~ 2017.10",
+      "client": "HandySoft",
+      "service": "UX Strategy, UI / GUI Design"
+    },
+    "desc": [
+      {
+        "title": "Overview",
+        "desc": "핸디소프트 그룹웨어는 스마트오피스로의 업무 환경 변화에 따라 시장 변화에 대응하고 스마트한 협업 솔루션으로써의 아이덴티티를 확립하려는 목적으로 시작되었습니다. 따라서 플랫폼의 확장성을 고려한 표준을 정립하고, 기능 중심의 그룹웨어에서 사용자의 업무 흐름(시작-진행-종료-관리)를 고려한 사용자 중심의 UX/UI로 개선하고자 하였습니다.",
+        "pc": {
+          "img": "img_handysoft_01.jpg"
+        },
+        "mobile": {
+          "img": "img_handysoft_01_m.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "목적",
+            "li": [
+              {
+                "liContent": "신규시장의 개척필요"
+              },
+              {
+                "liContent": "그룹웨어의 표준화/구조화"
+              },
+              {
+                "liContent": "사용자 중심의 ux개선과 경쟁력 강화"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "title": "Our Approach",
+        "desc": "우리는 핸디소프트 EGW의 UX를 개선하기 위해 현재 시스템의 각 서비스의 성격을 재정의 할 필요가 있었습니다. 이후 각 기능의 특성별로 메뉴를 그룹핑하고 메뉴 구조와 IA를 개선하여, 구성요소를 고려한 Framework 및 Layout을 새롭게 정의하였습니다.",
+        "pc": {
+          "img": "img_handysoft_02.jpg"
+        },
+        "mobile": {
+          "img": "img_handysoft_02_m.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "project process",
+            "li": [
+              {
+                "liContent": "research: basic/visual research와 함께 사용자 인터뷰를 실시하여 이슈도출"
+              },
+              {
+                "liContent": "analysis: 사용자 조사 등을 통해 도출된 공통의 요구사항을 정리하여 summary 작성"
+              },
+              {
+                "liContent": "concept design: 분석한 자료에 근거한 to-be 전략을 반영하여 ux/ui의 일관성 및 사용성을 고려한 화면 기획"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "title": "UX Concept Insight",
+        "desc": "핸디소프트 EGW는 Main menu와 System Menu, Support Area, Contents Area가 결합된 Structure구조로써 콘텐츠에 집중할 수 있도록 시스템 개선이 이루어졌습니다.",
+        "pc": {
+          "img": "img_handysoft_03.jpg"
+        },
+        "mobile": {
+          "img": "img_handysoft_03_m.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "to-be groupware",
+            "li": [
+              {
+                "liContent": "workspace: 내 업무의 시작-진행-완료-관리를 도와주는 업무 공간"
+              },
+              {
+                "liContent": "communicator: 업무 특성 및 사용 맥락에 맞춘 커뮤니케이션 공간"
+              },
+              {
+                "liContent": "assistant: 내 업무의 흐름이 끊기지 않고 연결되도록 도와주는 역할"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "title": "Structure UI System",
+        "desc": "용도별 상품 탐색을 통해 메뉴에 맞는 상품을 추천합니다. 각 용도에 해당하는 가성비, 최다 판매 상품 등을 제공합니다.",
+        "pc": {
+          "img": "img_handysoft_04.jpg"
+        },
+        "mobile": {
+          "img": "img_handysoft_04_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": "Workspace",
+        "desc": "그룹웨어의 워크스페이스(Workspace) 기능을 수행하기 위해 우리는 업무의 흐름과 사용자의 시선을 고려하여 직관적으로 UI/GUI를 개선하고자 하였습니다. 업무의 시작-진행-완료-관리를 도와줌으로써, 개인/그룹의 업무 관리를 도와주거나 업무의 진행상태와 이력을 모니터링 할 수 있습니다.",
+        "pc": {
+          "img": "img_handysoft_05.jpg"
+        },
+        "mobile": {
+          "img": "img_handysoft_05_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": "Communicator",
+        "desc": "커뮤니케이터(Communicator)의 역할을 하는 핸디소프트 그룹웨어는 다양한 업무특성과 환경을 고려하여 제작되었습니다. 토픽과 사람중심의 커뮤니케이션을 가능하게 하면서 다양한 형태의 그룹협업을 지원합니다. 사용의도를 고려하여 메뉴 역할을 정의하고자 하였습니다.",
+        "pc": {
+          "img": "img_handysoft_06.jpg"
+        },
+        "mobile": {
+          "img": "img_handysoft_06_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": "Assistant",
+        "desc": "또 하나의 기능으로서 어시스턴트(Assistant)의 역할을 수행하는 핸디소프트 EGW는 업무 흐름이 자연스럽게 연결이 되도록 서포트해줍니다. 다양한 연계 기능을 제공하거나 흩어져있는 콘텐츠를 통합하고, 주요 관심사와 우선순위를 관리해 줍니다.",
+        "pc": {
+          "img": "img_handysoft_07.jpg"
+        },
+        "mobile": {
+          "img": "img_handysoft_07_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "UX DESIGN",
+        "members": "양정윤, 김서연, 김수향, 박정현, 이윤재"
+      },
+      {
+        "team": "GUI DESIGN",
+        "members": "박영은, 정소영, 김혜림, 조은산"
+      },
+      {
+        "team": "COACH",
+        "members": "박기혁, 노경완"
+      }
+    ]
+  }
+]

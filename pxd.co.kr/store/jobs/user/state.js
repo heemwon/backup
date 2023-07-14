@@ -1,0 +1,16 @@
+export default () => ({
+  name: '',
+  group: '',
+  photo: '',
+  career: '',
+  birth: '',
+  phoneFirst: '010',
+  phoneSecond: '',
+  phoneThird: '',
+  mail: '',
+  url: '',
+  postcode: '',
+  address: '',
+  detail: '',
+  applicate: undefined,
+})

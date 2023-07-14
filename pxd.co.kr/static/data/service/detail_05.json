@@ -1,0 +1,35 @@
+[
+  "detail_05",
+  {
+    "index": 4,
+    "slug": "detail_05",
+    "meta": {
+      "onedepth": "service",
+      "descripton": "사람에 대한 이해와 공감으로부터 문제를 발견합니다."
+    },
+    "outVisual": {
+      "thumbnail": "ico_service_main_05.svg",
+      "title": {
+        "main": "XE Group (경험개발그룹)"
+      }
+    },
+    "pageVisual": {
+      "cover": {
+        "pc": "img_service_05.jpg",
+        "alt": ""
+      },
+      "banner": {
+        "pc": {
+          "img": "img_service_05_01.png"
+        },
+        "mobile": {
+          "img": "img_service_05_01_m.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "Front-End 단계는 리서치, 디자인, 백엔드개발의 과정 사이에 있으며, ux/ui, app 개발과도 밀접한 연관성이 있습니다."
+        }
+      }
+    }
+  }
+]

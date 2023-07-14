@@ -1,0 +1,165 @@
+[
+  "detail_avon",
+  {
+    "category": "all commerce ebook mobileService retail",
+    "slug": "detail_avon",
+    "type": {
+      "protect": true
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_avon.jpg",
+      "title": {
+        "lang": "ko",
+        "content": "뷰티 디지털 매거진 UX"
+      },
+      "client": "LG CNS"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "",
+        "bgColor": "linear-gradient(to right, #d03e5b, #e01a7a)",
+        "pc": "img_avon_cover.png",
+        "mobile": "img_avon_cover_m.png",
+        "alt": ""
+      },
+      "logo": {
+        "img": "logo_avon.png",
+        "alt": "AVON Digital Catalog UX"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "ko",
+        "content": "고객데이터와 세일즈를 담은 매거진 \nAvon Digital Catalog"
+      },
+      "year": "2018.08 ~ 2019.02",
+      "client": "LG CNS",
+      "service": "UI / GUI Design"
+    },
+    "desc": [
+      {
+        "title": "Overview",
+        "desc": "AVON은 미국의 글로벌 코스메틱 기업으로서 방문판매(door-to-door sales)를 주력 사업으로 성장해 온 기업입니다. 방문판매원인 ‘Rep’은 종이 카탈로그를 사용하여 화장품 영업 및 판매 활동을 해왔으나, Rep과 소비자간의 효율적인 커뮤니케이션을 이끌어내고 더 나은 판매 및 구매 경험을 제공하기 위해 기존 종이 카탈로그의 디지털라이제이션을 진행하였습니다.",
+        "pc": {
+          "img": "img_avon_01.jpg"
+        },
+        "mobile": {
+          "img": "img_avon_01_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": "Project Goal",
+        "desc": "Rep은 디지털 카탈로그를 통해 효율적으로 고객들을 관리할 수 있도록 도와주고, 고객에게는 개인화된 디지털 매거진의 역할로서 쇼핑에 몰입할 수 있는 환경은 제공하고자 하였습니다.",
+        "pc": {
+          "img": "img_avon_02.jpg"
+        },
+        "mobile": {
+          "img": "img_avon_02_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "개인화된 쇼핑 경험을 도와주는 BOOKMAIN"
+        },
+        "desc": "디지털 카달로그를 통해 AVON에서 판매하는 다양하고 매력적인 상품들을 소비자에게 맞춰진 형태로 제공하며, 전담 판매직원인 Rep과의 연결을 도와 효율적인 쇼핑 흐름을 제공합니다. 또한 각종 할인 혜택들을 제공하여 고객들이 적극적으로 상품 탐색을 할 수 있도록 돕습니다.",
+        "pc": {
+          "img": "img_avon_03.jpg"
+        },
+        "mobile": {
+          "img": "img_avon_03_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "종이 카탈로그의 불편한 점을 뛰어넘은 INDEX"
+        },
+        "desc": "디지털 카탈로그 내 자유롭게 이동이 가능한 INDEX 페이지를 제공하여, 고객이 원하는 상품을 쉽게 탐색할 수 있도록 도와줍니다. 이를 통해 화장품 및 기타 메뉴들과의 연결성을 강화하여 쇼핑에 몰입할 수 있는 환경을 제공합니다.",
+        "pc": {
+          "img": "img_avon_04.jpg"
+        },
+        "mobile": {
+          "img": "img_avon_04_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "관심 상품 및 구입내역에 따라 달라지는 Offer 콘텐츠"
+        },
+        "desc": "소비자가 탐색한 상품 및 구입내역 정보를 기반으로 비디오, AR, 카드뉴스, 제품 디테일, 인스타그램 등 다양한 추천 콘텐츠를 제공합니다.",
+        "pc": {
+          "img": "img_avon_05.jpg"
+        },
+        "mobile": {
+          "img": "img_avon_05_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "상품 혜택 및 할인에 대한 안내가 있는 Detail"
+        },
+        "desc": "디지털 카탈로그는 Rep과의 커뮤니케이션 없이 소비자가 직접 구매도 할 수 있는 환경을 제공합니다. 직구 시 고객이 얻을 수 있는 혜택에 대한 다양한 정보를 직관적으로 제공하여, 상품의 상세화면으로 상품탐색을 유인합니다.",
+        "pc": {
+          "img": "img_avon_06.jpg"
+        },
+        "mobile": {
+          "img": "img_avon_06_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "AR을 통해 미리 체험해 볼 수 있는 제품"
+        },
+        "desc": "AR 기능을 활용해 소비자의 얼굴 사진 및 영상을 기반으로 가상 메이크업을 할 수 있습니다. 다양한 인종이 있는 미국 소비 시장에 맞춰, 소비자들은 자신의 피부 뿐만 아니라 립, 아이 제품도 미리 체험해볼 수 있습니다.",
+        "pc": {
+          "img": "img_avon_07.jpg"
+        },
+        "mobile": {
+          "img": "img_avon_07_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "UX DESIGN",
+        "members": "이주형, 김우성"
+      },
+      {
+        "team": "GUI DESIGN",
+        "members": "최이슬, 김현우, 허미진, 고성주"
+      }
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+@import './responsive/pc.css';
+
+:root {
+  /* color */
+  --title-color: #101112;
+}
+
+span {
+  display: Block;
+}

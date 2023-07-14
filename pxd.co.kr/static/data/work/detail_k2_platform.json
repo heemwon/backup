@@ -1,0 +1,100 @@
+[
+  "detail_k2_platform",
+  {
+    "category": "all frontEnd, backEnd",
+    "slug": "detail_k2_platform",
+    "type": {
+      "protect": false
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_k2_platform.jpg",
+      "title": {
+        "lang": "ko",
+        "content": "K2 코리아 사용성 평가 플랫폼"
+      },
+      "client": "K2코리아"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "",
+        "bgColor": "linear-gradient(to right, #ad0408, #ac0408)",
+        "pc": "img_k2_platform_cover.jpg",
+        "mobile": "img_k2_platform_cover_m.jpg",
+        "alt": ""
+      },
+      "logo": {
+        "img": "logo_k2_platform.png",
+        "alt": "k2 코리아 사용성 평가 플랫폼, PC/Mobile Service"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "ko",
+        "content": "K2 코리아 사용성 평가 플랫폼"
+      },
+      "year": "2021.05 ~ 2021.09",
+      "client": "K2코리아",
+      "service": "Front-End / Back-End (PC / Mobile Service)"
+    },
+    "desc": [
+      {
+        "title": "Overview",
+        "desc": "이전까지 오프라인과 수기로 진행해왔던 제품에 대한 사용자 평가 설문조사를 디지털 방식으로 전환한 사용자 평가 설문 플랫폼입니다. 이번 디지털 변환으로 조사설계자는 설문 평가 상품의 종류를 다양화하고, 개별 조사와 상품에 따라 설문 내용을 변경, 관리하게 편해졌습니다. 또한 설문 결과를 취합하고 평가하는데 기존 방식보다 시간과 인력이 줄어 담당자의 업무효율을 획기적으로 개선할 수 있었습니다.",
+        "pc": {
+          "img": "img_k2_platform_01.jpg"
+        },
+        "mobile": {
+          "img": "img_k2_platform_01.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "k2 설문조사 메인 화면"
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "조사 설계, 응답, 답변 취합 및 분석을 쉽게 해주는 Platform"
+        },
+        "desc": "조사설계자의 조사 목적을 정확하게 반영하고 응답 결과를 빠르고 정확하게 받아낼 수 있도록 개발했습니다. 설계자는 초기 질문설계단계부터 여러 상품을 비교하며 평가할 환경을 구성할 수 있습니다. 이제는 응답 완료된 수많은 평가 설문지 서류 더미에 파묻힐 필요도 없습니다. 관리자 페이지에 접속하면 이미 데이터화된 응답 결과들이 시각화되어 한눈에 볼 수 있게 되었으며 결과 분석에 걸리는 시간을 획기적으로 절약할 수 있게 되었습니다.",
+        "pc": {
+          "img": "img_k2_platform_02.jpg"
+        },
+        "mobile": {
+          "img": "img_k2_platform_02.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "k2 설문조사 항목 등록"
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "더 많은 상품군에 적용 가능해진 diversity"
+        },
+        "desc": "특정 상품군에만 적용할 수 있는 설문조사 플랫폼이 아닌 다양한 상품군에서 사용할 수 있도록 고도화 작업까지 진행했습니다. 기존의 장점은 그대로 유지하면서 조사설계자가 각 상품군에 필요한 조사내용을 손쉽게 설계할 수 있도록 개발했습니다. 조사설계자는 다양한 상품군 내 여러 상품을 필터 기능을 이용해 효율적으로 관리 운영할 수 있습니다.",
+        "pc": {
+          "img": "img_k2_platform_03.jpg"
+        },
+        "mobile": {
+          "img": "img_k2_platform_03.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "k2 설문 항목 분석 및 비교 화면"
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "Front-End Develop",
+        "members": "이혜준"
+      },
+      {
+        "team": "Back-End Develop",
+        "members": "강규영, 김준호"
+      }
+    ]
+  }
+]

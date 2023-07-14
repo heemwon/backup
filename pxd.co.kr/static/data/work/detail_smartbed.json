@@ -1,0 +1,260 @@
+[
+  "detail_smartbed",
+  {
+    "category": "all healthcare userResearch",
+    "slug": "detail_smartbed",
+    "type": {
+      "protect": false
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_smartbed.jpg",
+      "title": {
+        "lang": "ko",
+        "content": "입원 환자들의 똑똑한 개인 비서 Smart Bed Side Station"
+      },
+      "client": "분당서울대학교병원 & Health Connect"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "",
+        "bgColor": "linear-gradient(to right, #5b6a2c, #89a23c)",
+        "pc": "img_smartbed_cover.png",
+        "mobile": "img_smartbed_cover_m.png",
+        "alt": ""
+      },
+      "logo": {
+        "img": "logo_smartbed.png",
+        "alt": "SNUH x Hearth connect Healthcare Service for Inpatients"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "ko",
+        "content": "입원 환자들의 똑똑한 개인 비서 Smart Bed Side Station"
+      },
+      "year": "2013",
+      "client": "분당서울대학교병원 Health Connect",
+      "service": "User Research, UI / GUI Design"
+    },
+    "desc": [
+      {
+        "title": "Overview",
+        "desc": "스마트 베드사이드 스테이션은 입원 환자의 편의성 증대를 위한 기기로 분당서울대학교병원과 헬스커넥트가 공동 개발하여 2013년 4월 시작한 서비스입니다. 피엑스디는 ‘스마트 베드사이드 스테이션’의 UX 기획, 설계 및 GUI 디자인을 주도적으로 진행하였습니다.",
+        "pc": {
+          "img": "img_smartbed_01.png"
+        },
+        "mobile": {
+          "img": "img_smartbed_01_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "생생한 입원 경험 조사"
+        },
+        "desc": "단기간에 병원의 복합적인 업무 Flow와 이해관계자들의 needs, 환경적인 요소 등의 문제점 및 접근 방향을 파악하기 위해 세 가지의 Research Method를 상호보완적으로 활용하였습니다. 단말이 설치될 각 병실별로 근무하는 간호사를 관찰하고,(Shadowing) 환자의 불편함을 몸소 느끼기 위해 연구원이 직접 입원하기도 했습니다.(A day in the life) 의료진의 진료에 방해되지 않는 범위에서 업무 공간에 함께 하기도 하고 여러 환자와 보호자 그리고 의료진과 대화하며 그들이 필요로 하는 것을 알아봤습니다. (Contextual inquiry)",
+        "pc": {
+          "img": "img_smartbed_02.png"
+        },
+        "mobile": {
+          "img": "img_smartbed_02_m.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "경험 조사",
+            "li": [
+              {
+                "liContent": "shadowing: 스마트 베드 스테이션이 설치될 3개 사이트(외과 병동, 인공 신실, 항암 주사실)에서 간호사 shadowing을 수행"
+              },
+              {
+                "liContent": "a day in the life: 환자 또는 보호자가 되어 입원부터 퇴원까지의 실제 context 경험"
+              },
+              {
+                "liContent": "contextual inquiry: 베드 스테이션이 설치될 사이트에서 환자 및 보호자 인터뷰 진행"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "환자의 보이스를 담다"
+        },
+        "desc": "3가지 다른 관점의 리서치를 통해 얻어진 insight를 재그룹핑하고 필터링하여 문제점을 정의하고 이에 대한 해결책 방향성을 수립하였습니다. 입원부터 퇴원까지의 경험속에서 실제로 환자가 느끼는 입원 절차, 입원 기간, 퇴원 절차 기간을 재정의하고 각 단계에서 환자가 느끼는 불편함을 정의 및 그에 따른 인사이트를 도출하였습니다.",
+        "pc": {
+          "img": "img_smartbed_03.png"
+        },
+        "mobile": {
+          "img": "img_smartbed_03_m.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "입원 과정에서 환자가 느끼는 점",
+            "li": [
+              {
+                "liContent": "입원 절차: 입원 절차 중 병원이라는 낯선 장소에 노출된 환자에게 입실전 너무 많은 정보가 제공된다."
+              },
+              {
+                "liContent": "입원 기간: 입원중 환자는 병동 생활을 어떻게 해야 하는지, 진료과정이 언제 이루어지는지 파악하기 어려워 의료진의 방문을 기다리게 된다."
+              },
+              {
+                "liContent": "퇴원 절차: 퇴원결정이 나는 순간 환자의 마음은 빨리 집에 가길 원하기 때문에 이후 퇴원 절차가 매우 길고 번거롭다고 느낀다."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "사용자 경험에서 서비스 제공자의 경험으로"
+        },
+        "desc": "여러 이해관계자를 만나면서 환자의 편의도 중요하지만, 환자를 제대로 도와주기 위해서는 의료진의 업무를 효율화하는 것이 거꾸로 환자에게 도움이 되는 상황이라는 것을 알게 되었습니다. 우리는 의료진과의 몇 차례 워크숍을 통해 환자와 의료진 모두를 향한 서비스를 기획하고 Smart Bed Sidestation 시스템에 그 경험을 담았습니다. 예를 들면, 증명서 신청, 식사 신청, 편의 서비스 등에 대한 접근성을 높여주는 것들입니다.",
+        "pc": {
+          "img": "img_smartbed_04.jpg"
+        },
+        "mobile": {
+          "img": "img_smartbed_04_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "서비스 시나리오와 핵심 컨셉 선정"
+        },
+        "desc": "앞서 진행되었던 사용자 경험 조사와 이해관계자들과의 워크샵에서 도출된 내용을 바탕으로 7가지 핵심 서비스 시나리오를 설계할 수 있었습니다. 입원 기간동안 환자의 편의를 도와줄 수 있으며 의료진의 효율성을 높힐 수 있는 내용으로 시나리오를 구성하였고 각 시나리오에서 도출될 수 있는 하부기능들을 정리하였습니다.",
+        "pc": {
+          "img": "img_smartbed_05.png"
+        },
+        "mobile": {
+          "img": "img_smartbed_05_m.jpg"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "7가지 핵심 서비스 시나리오",
+            "li": [
+              {
+                "liContent": "bedside check in&out"
+              },
+              {
+                "liContent": "bedside room service"
+              },
+              {
+                "liContent": "bedside scheduler"
+              },
+              {
+                "liContent": "ready for rounds"
+              },
+              {
+                "liContent": "my medical chart"
+              },
+              {
+                "liContent": "featured healthcare content"
+              },
+              {
+                "liContent": "bedside community"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "블루프린트와 핵심기능 도출 및 화면 설계"
+        },
+        "desc": "앞서 진행된 리서치를 종합적으로 돌아보며 새로운 기회영역을 파악하는 블루프린트를 도출하였습니다. 또한 메인 전면에서 환자 맞춤형 정보를 한 눈에 파악할 수 있는 Dash board를 컨셉으로 화면 단위를 설계하고 워크플로우를 작성하였으며, 레고를 이용한 공간과 환경 시뮬레이션으로 사용자 시나리오 30여 Scene을 완성하였습니다.",
+        "pc": {
+          "img": "img_smartbed_06.png"
+        },
+        "mobile": {
+          "img": "img_smartbed_06_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "편안한 환자의 경험을 위한 그래픽 디자인"
+        },
+        "desc": "간결하고 직관적인 인터페이스와 따뜻하고 편안한 그래픽 디자인을 통해 아이에서부터 노인까지 다양한 연령대의 환자들이 쉽고 편리하게 조작하고 병원과의 친밀감을 높일 수 있도록 했습니다. 이를 통해 환자의 입원경험과 보호자의 만족도를 향상시키고 의료서비스의 질을 한 단계 발전시켰습니다.",
+        "pc": {
+          "img": "img_smartbed_07.png"
+        },
+        "mobile": {
+          "img": "img_smartbed_07_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "pc": {
+          "img": "img_smartbed_08.jpg"
+        },
+        "mobile": {
+          "img": "img_smartbed_08_m.jpg"
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "pc": {
+          "img": "img_smartbed_09.png"
+        },
+        "mobile": {
+          "img": ""
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "Reddot Design Award 수상"
+        },
+        "desc": "Smart Bed Sidestation은 세계 3대 디자인 어워드 중 하나인 '레드닷 디자인 어워드(Reddot design award)' 에서 최우수상(Best of the best)을 수상했습니다. 환자를 대상으로 한 병원 솔루션이 '레드닷 디자인 어워드'에 수상된 첫 사례로 큰 의미를 가집니다.",
+        "pc": {
+          "img": "img_smartbed_10.png"
+        },
+        "mobile": {
+          "img": ""
+        },
+        "alt": {
+          "type": "none",
+          "content": ""
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "UX DESIGN",
+        "members": "박기혁, 허유리, 황현호, 진현정"
+      },
+      {
+        "team": "GUI DESIGN",
+        "members": "노경완, 이승우, 강보아, 이봄, 김유리, 김다운"
+      }
+    ]
+  }
+]

@@ -1,0 +1,172 @@
+[
+  "detail_kbmable",
+  {
+    "category": "all financialService userResearch-survey dataAnalysis mobileService",
+    "slug": "detail_kbmable",
+    "headerType": "black",
+    "type": {
+      "protect": false
+    },
+    "outVisual": {
+      "thumbnail": "thumb_work_kbmable.jpg",
+      "title": {
+        "lang": "ko",
+        "content": "쉽고 친절한 내 곁의 금융서비스, KB증권 M-able UX/UI개편"
+      },
+      "client": "KB금융그룹"
+    },
+    "pageVisual": {
+      "cover": {
+        "background": "",
+        "bgColor": "linear-gradient(to right, #fee700, #ffdc00)",
+        "pc": "img_kbmable_cover.png",
+        "mobile": "img_kbmable_cover_m.png",
+        "alt": ""
+      },
+      "logo": {
+        "img": "logo_kbmable.png",
+        "alt": "KB증권 M-able MTS / Mobile App"
+      }
+    },
+    "summary": {
+      "title": {
+        "lang": "ko",
+        "content": "쉽고 친절한 내 곁의 금융 서비스, KB증권 M-able"
+      },
+      "year": "2019.05 ~ 2019.12",
+      "client": "KB증권",
+      "service": "UX Strategy Consulting, UI / GUI Design"
+    },
+    "desc": [
+      {
+        "title": "Overview",
+        "desc": "M-able은 KB금융그룹의 MTS (Mobile Trading System) 서비스 입니다. 이번 프로젝트에서는 어려운 증권 용어들과 복잡한 정보를 초보자도 쉽게 이해할 수 있도록 전반적인 UX 개선을 진행했습니다. 투자에 관심은 있지만 각종 어려움으로 인해 진입장벽을 느끼는 초보 투자자들이 쉽게 사용할 수 있도록 UX를 개선하고, 실제 거래 목적을 가지고 유입되는 신규 고객들이 알아야 할 정보를 적절히 제공하여, 기존 고객과 신규 고객 모두 쉽게 사용할 수 있는 MTS 환경을 제공하고자 합니다.",
+        "pc": {
+          "img": "img_kbmable_01.png"
+        },
+        "mobile": {
+          "img": "img_kbmable_01_m.png"
+        },
+        "alt": {
+          "type": "list",
+          "content": {
+            "title": "01. UX Concept & Strategy",
+            "li": [
+              {
+                "liContent": "흩어진 투자 정보의 불편함 > 콘텐츠 중심 정보탐색"
+              },
+              {
+                "liContent": "금융 상품들의 개별 탐색 > 통합 금융 상품몰"
+              },
+              {
+                "liContent": "너무 많은 옵션 및 선택정보 > 이지 트레이딩"
+              },
+              {
+                "liContent": "MTS와의 소통경로만 존재 > 소셜 투자 콘텐츠"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "주식 거래에 꼭 필요한 정보를 쉽게 확인할 수 있는 통합된 홈 화면"
+        },
+        "desc": "많은 페이지에 분산되어 있는 주식 정보를 하나의 홈 화면에 모아 쉽게 파악할 수 있도록 구성했습니다. 국내 주식 뿐만 아니라 해외 주식, 투자 동향등 주요 금융 정보를 쉽게 습득할 수 있으며, 고객의 투자 성향에 맞춘 금융 상품들을 추천받을 수 있습니다.",
+        "pc": {
+          "img": "img_kbmable_02.png"
+        },
+        "mobile": {
+          "img": "img_kbmable_02_m.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "02. mash-up home"
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "초보자의 눈높이에 맞춘 이지 트레이딩"
+        },
+        "desc": "초보 투자자들의 성공적인 첫 주식 거래를 도와주기 위해, 쉬운 트레이딩 환경을 제공합니다. M-able의 이지 모드에서는 어려운 주식 용어를 순화하여 쉬운 사용을 도와주며, 꼭 필요한 정보를 익숙한 스크롤 방식으로 제공하여 주식 거래의 진입 장벽을 낮췄습니다.",
+        "pc": {
+          "img": "img_kbmable_03.jpg"
+        },
+        "mobile": {
+          "img": "img_kbmable_03_m.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "03. pro & easy mode"
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "쉽고 간편한 비대면 계좌개설"
+        },
+        "desc": "주식 거래의 원활한 시작을 위해 복잡하고 길었던 기존 계좌개설 프로세스를 최소화 시켰습니다. 총 23단계였던 계좌 개설 단계를 16단계로 간소화하고, 마치 대화하는 것 처럼 진행되는 인터페이스를 통해 쉽고 친근한 계좌 개설 경험을 제공합니다.",
+        "pc": {
+          "img": "img_kbmable_04.jpg"
+        },
+        "mobile": {
+          "img": "img_kbmable_04_m.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "04. 간편 계좌 개설을 시작해볼까요?"
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "펀드의 쉬운 구매 및 투자를 돕는 서비스"
+        },
+        "desc": "펀드를 구매하기 위해서 꼭 알아야 할 정보들을 쉽게 재구성했습니다. 이를 통해 고객들은 펀드 상품의 특징과 매매 방법 등의 정보를 쉽게 파악할 수 있습니다. 또한 과거의 수익률을 기반으로 가상 투자를 할 수 있는 환경을 제공해 펀드 구매의 의사결정을 도와줄 수 있는 장치를 제공합니다.",
+        "pc": {
+          "img": "img_kbmable_05.jpg"
+        },
+        "mobile": {
+          "img": "img_kbmable_05_m.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "05. easy & learn"
+        }
+      },
+      {
+        "title": {
+          "lang": "ko",
+          "content": "손쉬운 자산관리를 돕는 플랫폼"
+        },
+        "desc": "흩어져 있던 내 정보를 한 곳에 모아 현 상황에 따른 적절한 가이드를 제공하고 자산 현황을 손쉽게 확인할 수 있도록 구성했습니다. 나의 총 자산현황을 통해 내 포트폴리오를 관리하고 더 나은 대안을 발견하도록 도와줍니다.",
+        "pc": {
+          "img": "img_kbmable_06.jpg"
+        },
+        "mobile": {
+          "img": "img_kbmable_06_m.jpg"
+        },
+        "alt": {
+          "type": "normal",
+          "content": "06. my portfolio"
+        }
+      }
+    ],
+    "credits": [
+      {
+        "team": "UX DESIGN",
+        "members": "허유리, 김준, 노미연, 류정우, 김우성, 박정현, 장성진, 김소명"
+      },
+      {
+        "team": "GUI DESIGN",
+        "members": "양정연, 정소영, 김혜림, 김신환, 안진언, 류지현, 구자헌, 강유정 , 한나래, 김희진"
+      },
+      {
+        "team": "COACH",
+        "members": "박기혁, 천민희"
+      }
+    ]
+  }
+]
