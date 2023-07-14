@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41">
+    <defs>
+        <style>
+            .cls-2,.cls-5{fill:none}.cls-2{stroke:#fff;stroke-width:1.5px}.cls-3{fill:#fff}.cls-4{stroke:none}
+        </style>
+    </defs>
+    <g id="ico_main_menu_view2" transform="translate(0.415 -0.02)">
+        <g id="사각형_1801" class="cls-2">
+            <path d="M0 0H12V25H0z" class="cls-4" transform="translate(24.585 16.02)"/>
+            <path d="M0.75 0.75H11.25V24.25H0.75z" class="cls-5" transform="translate(24.585 16.02)"/>
+        </g>
+        <g id="사각형_1800" class="cls-2">
+            <path d="M0 0H21V37H0z" class="cls-4" transform="translate(4.585 4.02)"/>
+            <path d="M0.75 0.75H20.25V36.25H0.75z" class="cls-5" transform="translate(4.585 4.02)"/>
+        </g>
+        <path id="Op_component_1" d="M0 0H3V3H0z" class="cls-3" transform="translate(10.585 16.02)"/>
+        <path id="Op_component_2" d="M0 0H3V3H0z" class="cls-3" transform="translate(16.585 10.02)"/>
+        <path id="Op_component_3" d="M0 0H3V3H0z" class="cls-3" transform="translate(10.585 10.02)"/>
+    </g>
+</svg>

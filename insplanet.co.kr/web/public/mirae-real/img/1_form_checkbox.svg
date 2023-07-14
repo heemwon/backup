@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="_1_form_checkbox" width="21" height="21" viewBox="0 0 21 21">
+    <defs>
+        <style>
+            .cls-3{fill:none}.cls-2{fill:red;opacity:0}.cls-3{stroke:#fff;stroke-linecap:round;stroke-width:2px}
+        </style>
+    </defs>
+    <rect id="사각형_304" width="21" height="21" fill="none" rx="5"/>
+    <g id="ico_form_checkbox" transform="translate(0 -1)">
+        <path id="사각형_1213" d="M0 0H15V15H0z" class="cls-2" transform="translate(3 4)"/>
+        <path id="패스_2463" d="M5.333 8.751l3.828 4.2 4.961-6.008" class="cls-3" transform="translate(.923 1.38)"/>
+        <path id="사각형_1340" d="M0 0H15V15H0z" class="cls-2" transform="translate(3 4)"/>
+        <path id="패스_2465" d="M5.333 8.751l3.828 4.2 4.961-6.008" class="cls-3" transform="translate(.923 1.38)"/>
+    </g>
+    <path id="패스_2462" d="M5.333 8.751l3.828 4.2 4.961-6.008" class="cls-3" transform="translate(.923 .38)"/>
+</svg>

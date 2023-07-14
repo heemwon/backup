@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../../js/libs/jquery.min.js"></script>
+    <script src="../../js/libs/jquery-ui.min.js"></script>
+    <script src="../../js/libs/jquery.selectric.js"></script>
+    <script src="../../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../../js/sub.js"></script>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/guide.css">
+    <link rel="stylesheet" href="../../css/sub.css">
+    <title>패턴</title>
+</head>
+
+<body>
+    <div class="apply-wrap">
+        
+        <!-- 1-1. 데이터 입력 (조회결과+추가등록) -->
+        <div class="title-content-wrap">
+            <div class="title-wrap">
+                <h2>1-1. 데이터 입력 (조회결과+추가등록)</h2>
+            </div>
+            <div class="cont-wrap">
+                <!-- 테이블 없을 경우 -->
+                <section class="form-sec">
+                    <div class="sec-body">
+                        <div class="table-head">
+                            <div class="left-con">
+                                <h4>‘테이블 타이틀’</h4>
+                            </div>
+                        </div>
+                        <div class="row-btn-wrap">
+                            <button type="button" class="btn-row">
+                                <span>‘테이블 타이틀’ 입력</span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <!-- // 테이블 없을 경우 -->
+
+                <!-- 테이블 추가 후 - table-body 다음에 오늘 row-btn-wrap은 border-top 없음 -->
+                <section class="form-sec">
+                    <div class="sec-body">
+                        <div class="table-head">
+                            <div class="left-con">
+                                <h4>‘테이블 타이틀’</h4>
+                            </div>
+                            <div class="right-con" id="go-table-btn0">
+                                <button type="button" class="btn-solid">선택삭제</button>
+                            </div>
+                        </div>
+                        <div class="table-body">
+                            <table class="table-list">
+                                <caption>테이블 타이틀</caption>
+                                <colgroup>
+                                    <col style="width: 60px;">
+                                    <col style="width: 100px;">
+                                    <col style="width: 100px;">
+                                    <col style="width: 120px;">
+                                    <col style="width: 170px;">
+                                    <col style="width: auto;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbox0"><label for="cbox0"></label>
+                                            </span>
+                                        </th>
+                                        <th scope="col">구분</th>
+                                        <th scope="col">성명</th>
+                                        <th scope="col">상호명</th>
+                                        <th scope="col">자격자등록번호</th>
+                                        <th scope="col">주소</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbox1"><label for="cbox1"></label>
+                                            </span>
+                                        </td>
+                                        <td>법무사</td>
+                                        <td>이일순</td>
+                                        <td>법무법인 길</td>
+                                        <td class="ff-roboto">111111-1111111</td>
+                                        <td class="left">
+                                            경기도 광명시 도덕공원로59 광명 푸르지오 제100동 제2층
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbox2"><label for="cbox2"></label>
+                                            </span>
+                                        </td>
+                                        <td>법무사</td>
+                                        <td>이일순</td>
+                                        <td>법무법인 길</td>
+                                        <td class="ff-roboto">111111-1111111</td>
+                                        <td class="left">
+                                            경기도 광명시 도덕공원로59 광명 푸르지오 제100동 제2층
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="table-btn-focus">
+                                <a href="#go-table-btn0">테이블 기능 버튼으로 이동</a>
+                            </div>
+                        </div>
+                        <div class="row-btn-wrap">
+                            <button type="button" class="btn-row">
+                                <span>‘테이블 타이틀’ 추가</span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <!-- // 테이블 추가 후 -->
+            </div>
+        </div>
+        <!-- // 1-1. 데이터 입력 (조회결과+추가등록) -->
+
+        <!-- 1-2-1. 데이터 입력+목록(팝업) -->
+        <div class="title-content-wrap">
+            <div class="title-wrap">
+                <h2>1-2-1. 데이터 입력+목록(팝업)</h2>
+            </div>
+            <div class="cont-wrap">
+                <div class="popup-head"></div>
+                <div class="popup-body">
+                    <div class="popup-cont">
+
+                        <!-- 등록정보입력 - 1depth 테이블 -->
+                    <section class="form-sec depth-2">
+                        <div class="sec-body">
+                            <div class="table-head">
+                                <div class="left-con inline-wrap">
+                                    <h5>등록정보입력</h5>
+                                    <span class="checkbox-con ml25">
+                                        <input type="checkbox" name="" id="regiinfocheck0">
+                                        <label for="regiinfocheck0">신청서 정보 이용</label>
+                                    </span>
+                                    <span class="checkbox-con ml25">
+                                        <input type="checkbox" name="" id="regiinfocheck1">
+                                        <label for="regiinfocheck1">신청사항승인자 지정</label>
+                                    </span>
+                                </div>
+                                <div class="right-con">
+                                    <span class="required-info"><span class="star">*</span> 표시 필수입력사항</span>
+                                </div>
+                            </div>
+                            <div class="table-body">
+                                <table class="table-detail">
+                                    <caption>등록정보입력</caption>
+                                    <colgroup>
+                                        <col style="width: 166px;">
+                                        <col style="width: auto;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr class="element-row">
+                                            <th scope="row">
+                                                신청인 구분<span class="required">필수</span>
+                                            </th>
+                                            <td>
+                                                <span class="radio-con">
+                                                    <input type="radio" name="type" id="tr0">
+                                                    <label for="tr0">신청인</label>
+                                                </span>
+                                                <span class="radio-con ml40">
+                                                    <input type="radio" name="type" id="tr1">
+                                                    <label for="tr1">공인중개사</label>
+                                                </span>
+                                                <span class="radio-con ml40">
+                                                    <input type="radio" name="type" id="tr2">
+                                                    <label for="tr2">(담당)법무사/변호사</label>
+                                                </span>
+                                                <span class="radio-con ml40">
+                                                    <input type="radio" name="type" id="tr3">
+                                                    <label for="tr3">법무법인</label>
+                                                </span>
+                                                <span class="radio-con ml40">
+                                                    <input type="radio" name="type" id="tr4">
+                                                    <label for="tr4">법무사법인</label>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr class="element-row">
+                                            <th scope="row">
+                                                <label for="cate">등록 구분<span class="required">필수</span></label>
+                                            </th>
+                                            <td>
+                                                <span class="select-con w290">
+                                                    <select name="" id="cate" class="">
+                                                        <option value="">선택하세요</option>
+                                                        <option value="1">option1</option>
+                                                        <option value="2">option2</option>
+                                                        <option value="3">option3</option>
+                                                        <option value="4">option4</option>
+                                                    </select>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr class="element-row">
+                                            <th scope="row">
+                                                <label for="name">성명<span class="required">필수</span></label>
+                                            </th>
+                                            <td>
+                                                <input type="text" name="" id="name" class="w290" placeholder="">
+                                            </td>
+                                        </tr>
+                                        <tr class="element-row">
+                                            <th scope="row">
+                                                주소<span class="required">필수</span>
+                                            </th>
+                                            <td>
+                                                <div class="address-wrap">
+                                                    <div class="address-con">
+                                                        <label for="addr0"><input type="text" name="" id="addr0" class="" placeholder="" readonly value="(04182) 서울특별시 동작구 신대방 1동 72-2"></label>
+                                                        <button type="button" class="btn-solid color-4d">주소검색</button>
+                                                    </div>
+                                                    <div class="detail-con">
+                                                        <label for="addr1"><input type="text" name="" id="addr1" class="" placeholder="상세주소를 입력해주세요."></label>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="element-row">
+                                            <th scope="row">
+                                                <label for="tel">전화번호</label>
+                                            </th>
+                                            <td>
+                                                <div class="block-wrap">
+                                                    <input type="text" name="" id="tel" class="w290" placeholder="'-' 제외 입력">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="element-row">
+                                            <th scope="row">
+                                                <label for="email">이메일</label>
+                                            </th>
+                                            <td>
+                                                <div class="email-wrap">
+                                                    <div class="input-con">
+                                                        <input type="text" name="" id="email" class="w130" placeholder="">
+                                                        <span class="at">@</span>
+                                                        <label for="domain"><input type="text" name="" id="domain" class="w130" placeholder=""></label>
+                                                        <span class="select-con w130">
+                                                            <label for="domainsel">
+                                                                <select name="" id="domainsel" class="">
+                                                                    <option value="">직접입력</option>
+                                                                    <option value="gmail.com">gmail.com</option>
+                                                                    <option value="naver.com">naver.com</option>
+                                                                    <option value="nate.com">nate.com</option>
+                                                                </select>
+                                                            </label>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="element-row">
+                                            <th scope="row">
+                                                <label for="reginum">자격자등록번호<span class="required">필수</span></label>
+                                            </th>
+                                            <td>
+                                                <input type="text" name="" id="reginum" class="w290" placeholder="자격자등록번호 입력">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="table-foot">
+                                <div class="table-util-con">
+                                    <div class="left-con">
+                                        <button type="button" class="btn icon-reset">다시 작성하기</button>
+                                    </div>
+                                    <div class="right-con">
+                                        <button type="button" class="btn-solid color-4d">저장</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- // 등록정보입력 - 1depth 테이블 -->
+
+                    <hr class="seperate-line" />
+
+                    <!-- 신청인/대리인 목록 - 2depth 테이블 -->
+                    <section class="form-sec depth-3 mb0">
+                        <div class="sec-body">
+                            <div class="table-head">
+                                <div class="left-con">
+                                    <h6>신청인/대리인 목록</h6>
+                                </div>
+                                <div class="right-con" id="go-table-btn1">
+                                    <button type="button" class="btn-solid">선택삭제</button>
+                                </div>
+                            </div>
+                            <div class="table-body">
+                                <table class="table-list">
+                                    <caption>신청인/대리인 목록</caption>
+                                    <colgroup>
+                                        <col style="width: 60px;">
+                                        <col style="width: 85px;">
+                                        <col style="width: 85px;">
+                                        <col style="width: 115px;">
+                                        <col style="width: 160px;">
+                                        <col style="width: auto;">
+                                        <col style="width: 172px;">
+                                        <col style="width: 140px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="has-element">
+                                                <span class="checkbox-con only-box">
+                                                    <input type="checkbox" name="" id="cbox3"><label for="cbox3"></label>
+                                                </span>
+                                            </th>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">성명</th>
+                                            <th scope="col">상호명</th>
+                                            <th scope="col">자격자등록번호</th>
+                                            <th scope="col">주소</th>
+                                            <th scope="col">이메일</th>
+                                            <th scope="col">전화번호</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="has-element">
+                                                <span class="checkbox-con only-box">
+                                                    <input type="checkbox" name="" id="cbox4"><label for="cbox4"></label>
+                                                </span>
+                                            </td>
+                                            <td>법무사</td>
+                                            <td>이일순</td>
+                                            <td>법무법인 길</td>
+                                            <td class="ff-roboto">111111-1111111</td>
+                                            <td class="left">
+                                                서울특별시 동작구 신대방1동 72-2
+                                            </td>
+                                            <td class="ff-roboto">abc1234@iros.go.kr</td>
+                                            <td class="ff-roboto">02-1234-5678</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="has-element">
+                                                <span class="checkbox-con only-box">
+                                                    <input type="checkbox" name="" id="cbox5"><label for="cbox5"></label>
+                                                </span>
+                                            </td>
+                                            <td>법무사</td>
+                                            <td>이일순</td>
+                                            <td>법무법인 길</td>
+                                            <td class="ff-roboto">111111-1111111</td>
+                                            <td class="left">
+                                                서울특별시 동작구 신대방1동 72-2
+                                            </td>
+                                            <td class="ff-roboto">abc1234@iros.go.kr</td>
+                                            <td class="ff-roboto">02-1234-5678</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="table-btn-focus">
+                                    <a href="#go-table-btn1">테이블 기능 버튼으로 이동</a>
+                                </div>
+                            </div>
+                            <div class="table-foot">
+                                <div class="table-util-con">
+                                    <div class="inline-wrap">
+                                        <span class="select-con w62">
+                                            <label for="smallsel1">
+                                                <select name="" id="smallsel1" class="">
+                                                    <option value="">1</option>
+                                                    <option value="">2</option>
+                                                </select>
+                                            </label>
+                                        </span>
+                                        <span class="slash">
+                                            <img src="../../img/ico_read_perline.svg" alt="/">
+                                        </span>
+                                        <span class="fs-15">5</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    </div>
+                </div>
+                <div class="popup-foot">
+                    <div class="left-con"></div>
+                    <div class="right-con">
+                        <button type="button" class="btn-solid medium">확인</button>
+                    </div>
+                </div>
+                <!-- // 신청인/대리인 목록 - 2depth 테이블 -->
+            </div>
+        </div>
+        <!-- // 1-2-1. 데이터 입력+목록(팝업) -->
+
+        <!-- 1-2-2. 데이터 입출력+목록(팝업) -->
+        <div class="title-content-wrap">
+            <div class="title-wrap">
+                <h2>1-2-2. 데이터 입출력+목록(팝업)</h2>
+            </div>
+            <div class="cont-wrap">
+                <div class="popup-head"></div>
+                <div class="popup-body">
+                    <div class="popup-cont">
+                        <!-- 상단 설명박스 -->
+                        <section class="form-sec">
+                            <div class="sec-body">
+                                <div class="bg-box-wrap">
+                                    <ul class="list-bullet fs-15 color-1d">
+                                        <li>
+                                            <div>전자수입인지 발급시에는 첨부하신 매매게약서의 계약체결일, 계약금액을 동일하게 입력하신 후 예상인지세를 조회하시기 바랍니다.</div>
+                                        </li>
+                                        <li>
+                                            <div>매매게약서 변경 첨부 시에만 변경 계약정보를 입력하고 전자수입인지를 변경발급하실 수 있습니다.</div>
+                                        </li>
+                                        <li>
+                                            <div>미사용 처리된 납부번호는 직접 세무서를 방문하여 환급절차를 문의하시기 바랍니다.</div>
+                                        </li>
+                                        <li>
+                                            <div>금융결제원 및 기획재정부 구매정보 수신 후 게약문서 전자수입인지 소인이 진행되므로 처리시간이 지연될 수 있습니다.</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+    
+                        <!-- 정보입력 -->
+                        <section class="form-sec depth-2">
+                            <div class="sec-body">
+                                <div class="table-head">
+                                    <div class="left-con">
+                                        <h5>정보입력</h5>
+                                    </div>
+                                    <div class="right-con">
+                                        <span class="required-info"><span class="star">*</span> 표시 필수입력사항</span>
+                                    </div>
+                                </div>
+                                <div class="table-body">
+                                    <table class="table-detail">
+                                        <caption>정보입력</caption>
+                                        <colgroup>
+                                            <col style="width: 166px;">
+                                            <col style="width: auto;">
+                                            <col style="width: 166px;">
+                                            <col style="width: auto;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">
+                                                    부동산 표시<span class="required">필수</span>
+                                                </th>
+                                                <td colspan="3">
+                                                    경기도 용인시 기흥구 동백동 7000 100동 1층 1호
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    매매계약명<span class="required">필수</span>
+                                                </th>
+                                                <td>
+                                                    부동산매매계약
+                                                </td>
+                                                <th scope="row">
+                                                    신청서 작성번호<span class="required">필수</span>
+                                                </th>
+                                                <td class="ff-roboto">
+                                                    201
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    등기 유형<span class="required">필수</span>
+                                                </th>
+                                                <td>
+                                                    소유권이전
+                                                </td>
+                                                <th scope="row">
+                                                    등기 권리자<span class="required">필수</span>
+                                                </th>
+                                                <td>
+                                                    이일순
+                                                </td>
+                                            </tr>
+                                            <tr class="element-row">
+                                                <th scope="row">
+                                                    <label for="dday0">
+                                                        계약체결일<span class="required">필수</span>
+                                                    </label>
+                                                </th>
+                                                <td>
+                                                    <span class="datepicker-con">
+                                                        <input type="text" name="" id="dday0" class="datepicker w260" placeholder="">
+                                                    </span>
+                                                </td>
+                                                <th scope="row">
+                                                    <label for="price0">
+                                                        계약금액<span class="required">필수</span>
+                                                    </label>
+                                                </th>
+                                                <td>
+                                                    <div class="inline-wrap">
+                                                        <input type="text" name="" id="price0" class="w163 tr" placeholder="0">
+                                                        <button type="button" class="btn">예상인지세조회</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="element-row">
+                                                <th scope="row">
+                                                    <label for="price1">납부 인지세액<span class="required">필수</span></label>
+                                                </th>
+                                                <td colspan="3">
+                                                    <input type="text" name="" id="price1" class="w260 tr" placeholder="0">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="table-foot">
+                                    <div class="table-util-con">
+                                        <div class="left-con">
+                                            <button type="button" class="btn icon-reset">다시 작성하기</button>
+                                        </div>
+                                        <div class="right-con">
+                                            <button type="button" class="btn-solid color-4d">신규발급</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 정보입력 -->
+    
+                        <hr class="seperate-line" />
+    
+                        <!-- 전자수입인지 발급 정보 -->
+                        <section class="form-sec depth-3 mb0">
+                            <div class="sec-body">
+                                <div class="table-head">
+                                    <div class="left-con">
+                                        <h6>전자수입인지 발급 정보</h6>
+                                    </div>
+                                </div>
+                                <div class="table-body">
+                                    <table class="table-list">
+                                        <caption>전자수입인지 발급 정보</caption>
+                                        <colgroup>
+                                            <col style="width: 66px;">
+                                            <col style="width: 150px;">
+                                            <col style="width: 150px;">
+                                            <col style="width: auto;">
+                                            <col style="width: 150px;">
+                                            <col style="width: 140px;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">차수</th>
+                                                <th scope="col">계약체결일</th>
+                                                <th scope="col">매매(거래)가액</th>
+                                                <th scope="col">납세번호</th>
+                                                <th scope="col">납부금액</th>
+                                                <th scope="col">상태</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td class="ff-roboto">2021-05-01</td>
+                                                <td>5,000,000원</td>
+                                                <td class="ff-roboto">111-111-1-11-111-111-1111-11-1-11111-1</td>
+                                                <td>5,000,000원</td>
+                                                <td>사용/구매/소인</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 전자수입인지 발급 정보 -->
+                        
+                    </div>
+                </div>
+                <div class="popup-foot">
+                    <div class="left-con"></div>
+                    <div class="right-con">
+                        <button type="button" class="btn-solid medium">확인</button>
+                    </div>
+                </div>
+                <!-- // 신청인/대리인 목록 - 2depth 테이블 -->
+            </div>
+        </div>
+        <!-- // 1-2-2. 데이터 입출력+목록(팝업) -->
+
+        <!-- 1-3. 입력패턴 추가 -->
+        <h2 class="mt100">1-3. 입력패턴 추가</h2>
+        <!-- 1-3-1. 텍스트+인풋혼합 -->
+        <div class="flex-between-wrap">
+            <div class="title-wrap">
+                <h3>1-3-1. 텍스트+인풋혼합</h3>
+            </div>
+            <div class="cont-wrap">
+                <section class="form-sec depth-2">
+                    <div class="sec-body">
+                        <div class="table-head">
+                            <div class="left-con">
+                                <h5>공고방법 선택</h5>
+                            </div>
+                            <div class="right-con">
+                                <span class="required-info"><span class="star">*</span> 표시 필수입력사항</span>
+                            </div>
+                        </div>
+                        <div class="table-body">
+                            <table class="table-detail">
+                                <caption>공고방법 선택</caption>
+                                <colgroup>
+                                    <col style="width: 166px;">
+                                    <col style="width: auto;">
+                                </colgroup>
+                                <tbody>
+                                    <tr class="element-row">
+                                        <th scope="row">
+                                            공고방법 선택<span class="required">필수</span>
+                                        </th>
+                                        <td>
+                                            <div class="inline-wrap">
+                                                <span class="radio-con">
+                                                    <input type="radio" name="announce0" id="anno0" checked>
+                                                    <label for="anno0">전자공고</label>
+                                                </span>
+                                                <span class="radio-con ml40">
+                                                    <input type="radio" name="announce0" id="anno1">
+                                                    <label for="anno1">서면공고</label>
+                                                </span>
+                                                <span class="radio-con ml40">
+                                                    <input type="radio" name="announce0" id="anno2">
+                                                    <label for="anno2">직접입력</label>
+                                                </span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="element-row">
+                                        <th scope="row">
+                                            공고내용<span class="required">필수</span>
+                                        </th>
+                                        <td>
+                                            <div class="block-wrap">
+                                                <p>당 회사의 공고는 회사의 인터넷 홈페이지 ( &nbsp;<label for="homepage"><input type="text" name="" id="homepage" class="w226" placeholder="예시)http://www.iros.or.kr"></label>&nbsp; )에 게재한다.</p>
+                                                <p>다만, 전산장애 또는 그 밖의 부득이한 사유로 회사의 인터넷 홈페이지에 공고를 할 수 없는 때에는</p>
+                                                <p>
+                                                    <span class="select-con w226">
+                                                        <label for="area0">
+                                                            <select name="" id="area0" class="">
+                                                                <option value="">공고발행지역 선택</option>
+                                                                <option value="1">option1</option>
+                                                                <option value="2">option2</option>
+                                                            </select>
+                                                        </label>
+                                                    </span>&nbsp; 에서 발행되는&nbsp;
+                                                    <span class="select-con w226">
+                                                        <label for="medium0">
+                                                            <select name="" id="medium0" class="">
+                                                                <option value="">공고 매체 선택</option>
+                                                                <option value="1">option1</option>
+                                                                <option value="2">option2</option>
+                                                            </select>
+                                                        </label>
+                                                    </span>&nbsp; 에 게재한다.
+                                                </p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- // 1-3-1. 텍스트+인풋혼합 -->
+
+        <!-- 1-3-2. 텍스트+셀렉트박스혼합 -->
+        <div class="flex-between-wrap">
+            <div class="title-wrap">
+                <h3>1-3-2. 텍스트+셀렉트박스혼합</h3>
+            </div>
+            <div class="cont-wrap">
+                <section class="form-sec depth-2">
+                    <div class="sec-body">
+                        <div class="table-head">
+                            <div class="left-con">
+                                <h5>공고방법 선택</h5>
+                            </div>
+                            <div class="right-con">
+                                <span class="required-info"><span class="star">*</span> 표시 필수입력사항</span>
+                            </div>
+                        </div>
+                        <div class="table-body">
+                            <table class="table-detail">
+                                <caption>공고방법 선택</caption>
+                                <colgroup>
+                                    <col style="width: 166px;">
+                                    <col style="width: auto;">
+                                </colgroup>
+                                <tbody>
+                                    <tr class="element-row">
+                                        <th scope="row">
+                                            공고방법 선택<span class="required">필수</span>
+                                        </th>
+                                        <td>
+                                            <div class="inline-wrap">
+                                                <span class="radio-con">
+                                                    <input type="radio" name="announce1" id="anno3">
+                                                    <label for="anno3">전자공고</label>
+                                                </span>
+                                                <span class="radio-con ml40">
+                                                    <input type="radio" name="announce1" id="anno4" checked>
+                                                    <label for="anno4">서면공고</label>
+                                                </span>
+                                                <span class="radio-con ml40">
+                                                    <input type="radio" name="announce1" id="anno5">
+                                                    <label for="anno5">직접입력</label>
+                                                </span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="element-row">
+                                        <th scope="row">
+                                            공고내용<span class="required">필수</span>
+                                        </th>
+                                        <td>
+                                            <div class="block-wrap">
+                                                <p>
+                                                    본 회사의 공고는&nbsp;
+                                                    <span class="select-con w180">
+                                                        <label for="area1">
+                                                            <select name="" id="area1" class="">
+                                                                <option value="">공고발행지역 선택</option>
+                                                                <option value="1">option1</option>
+                                                                <option value="2">option2</option>
+                                                            </select>
+                                                        </label>
+                                                    </span>&nbsp; 에서 발행되는&nbsp;
+                                                    <span class="select-con w180">
+                                                        <label for="medium1">
+                                                            <select name="" id="medium1" class="">
+                                                                <option value="">공고 매체 선택</option>
+                                                                <option value="1">option1</option>
+                                                                <option value="2">option2</option>
+                                                            </select>
+                                                        </label>
+                                                    </span>&nbsp; 에 게재한다.
+                                                </p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- // 1-3-2. 텍스트+셀렉트박스혼합 -->
+
+        <!-- 1-3-3. 직접입력 -->
+        <div class="flex-between-wrap">
+            <div class="title-wrap">
+                <h3>1-3-3. 직접입력</h3>
+            </div>
+            <div class="cont-wrap">
+                <section class="form-sec depth-2">
+                    <div class="sec-body">
+                        <div class="table-head">
+                            <div class="left-con">
+                                <h5>공고방법 선택</h5>
+                            </div>
+                            <div class="right-con">
+                                <span class="required-info"><span class="star">*</span> 표시 필수입력사항</span>
+                            </div>
+                        </div>
+                        <div class="table-body">
+                            <table class="table-detail">
+                                <caption>공고방법 선택</caption>
+                                <colgroup>
+                                    <col style="width: 166px;">
+                                    <col style="width: auto;">
+                                </colgroup>
+                                <tbody>
+                                    <tr class="element-row">
+                                        <th scope="row">
+                                            공고방법 선택<span class="required">필수</span>
+                                        </th>
+                                        <td>
+                                            <div class="inline-wrap">
+                                                <span class="radio-con">
+                                                    <input type="radio" name="announce2" id="anno6">
+                                                    <label for="anno6">전자공고</label>
+                                                </span>
+                                                <span class="radio-con ml40">
+                                                    <input type="radio" name="announce2" id="anno7">
+                                                    <label for="anno7">서면공고</label>
+                                                </span>
+                                                <span class="radio-con ml40">
+                                                    <input type="radio" name="announce2" id="anno8" checked>
+                                                    <label for="anno8">직접입력</label>
+                                                </span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="element-row">
+                                        <th scope="row">
+                                            <label for="noticont">
+                                                공고내용<span class="required">필수</span>
+                                            </label>
+                                        </th>
+                                        <td>
+                                            <textarea name="" id="noticont" cols="30" rows="10" placeholder="면제사유 입력"></textarea>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- // 1-3-3. 직접입력 -->
+
+        <!-- 1-3-4. 발행주식(케이스별) -->
+        <div class="flex-between-wrap">
+            <div class="title-wrap">
+                <h3>1-3-4. 발행주식(케이스별)</h3>
+            </div>
+            <div class="cont-wrap">
+                <!-- 발행주식 case 1 -->
+                <section class="form-sec depth-2">
+                    <div class="sec-body">
+                        <div class="table-head">
+                            <div class="left-con">
+                                <h5>발행주식</h5>
+                            </div>
+                            <div class="right-con">
+                                <span class="required-info"><span class="star">*</span> 표시 필수입력사항</span>
+                            </div>
+                        </div>
+                        <div class="table-body">
+                            <table class="table-detail">
+                                <caption>발행주식</caption>
+                                <colgroup>
+                                    <col style="width: 166px;">
+                                    <col style="width: auto;">
+                                </colgroup>
+                                <tbody>
+                                    <tr class="element-row">
+                                        <th scope="row">
+                                            1주의 금액<span class="required">필수</span>
+                                        </th>
+                                        <td>
+                                            <div class="inline-wrap">
+                                                <span class="radio-con">
+                                                    <input type="radio" name="stock0" id="scheck0" checked>
+                                                    <label for="scheck0">금액</label>
+                                                </span>
+                                                <span class="radio-con ml40">
+                                                    <input type="radio" name="stock0" id="scheck1">
+                                                    <label for="scheck1">판결내용</label>
+                                                </span>
+                                            </div>
+                                            <div class="inline-wrap mt10">
+                                                <span class="select-con w226">
+                                                    <label for="priceselect0">
+                                                        <select name="" id="priceselect0" class="">
+                                                            <option value="">한국(원)</option>
+                                                            <option value="1">option1</option>
+                                                            <option value="2">option2</option>
+                                                        </select>
+                                                    </label>
+                                                </span>
+                                                <span class="select-con w226">
+                                                    <label for="priceselect1">
+                                                        <select name="" id="priceselect1" class="">
+                                                            <option value="">500</option>
+                                                            <option value="1">option1</option>
+                                                            <option value="2">option2</option>
+                                                        </select>
+                                                    </label>
+                                                </span>
+                                                <span class="input-unit-wrap">
+                                                    <label for="sprice0">
+                                                        <input type="text" name="" id="sprice0" class="w233" placeholder="">
+                                                    </label>
+                                                    <span class="unit-right">원</span>
+                                                </span>
+                                                <span class="checkbox-con ml15">
+                                                    <input type="checkbox" name="" id="nonep0">
+                                                    <label for="nonep0">무액면</label>
+                                                </span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="element-row">
+                                        <th scope="row">
+                                            발행할 주식의 총수
+                                        </th>
+                                        <td>
+                                            <div class="inline-wrap">
+                                                <span class="radio-con">
+                                                    <input type="radio" name="stock1" id="scheck2" checked>
+                                                    <label for="scheck2">총수</label>
+                                                </span>
+                                                <span class="radio-con ml40">
+                                                    <input type="radio" name="stock1" id="scheck3">
+                                                    <label for="scheck3">판결내용</label>
+                                                </span>
+                                                <span class="input-unit-wrap ml50">
+                                                    <label for="scount0">
+                                                        <input type="text" name="" id="scount0" class="w226" placeholder="">
+                                                    </label>
+                                                    <span class="unit-right">주</span>
+                                                </span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+                <!-- // 발행주식 case 1 -->
+
+                <!-- 발행주식 case 2 -->
+                <section class="form-sec depth-2">
+                    <div class="sec-body">
+                        <div class="table-head">
+                            <div class="left-con">
+                                <h5>발행주식</h5>
+                            </div>
+                            <div class="right-con">
+                                <span class="required-info"><span class="star">*</span> 표시 필수입력사항</span>
+                            </div>
+                        </div>
+                        <div class="table-body">
+                            <table class="table-detail">
+                                <caption>발행주식</caption>
+                                <colgroup>
+                                    <col style="width: 166px;">
+                                    <col style="width: auto;">
+                                </colgroup>
+                                <tbody>
+                                    <tr class="element-row">
+                                        <th scope="row">
+                                            1주의 금액<span class="required">필수</span>
+                                        </th>
+                                        <td>
+                                            <div class="inline-wrap">
+                                                <span class="radio-con">
+                                                    <input type="radio" name="stock3" id="scheck4" checked>
+                                                    <label for="scheck4">금액</label>
+                                                </span>
+                                                <span class="radio-con ml40">
+                                                    <input type="radio" name="stock3" id="scheck5">
+                                                    <label for="scheck5">판결내용</label>
+                                                </span>
+                                            </div>
+                                            <div class="inline-wrap mt10">
+                                                <span class="select-con w226">
+                                                    <label for="priceselect2">
+                                                        <select name="" id="priceselect2" class="">
+                                                            <option value="">한국(원)</option>
+                                                            <option value="1">option1</option>
+                                                            <option value="2">option2</option>
+                                                        </select>
+                                                    </label>
+                                                </span>
+                                                <span class="select-con w226">
+                                                    <label for="priceselect3">
+                                                        <select name="" id="priceselect3" class="">
+                                                            <option value="">500</option>
+                                                            <option value="1">option1</option>
+                                                            <option value="2">option2</option>
+                                                        </select>
+                                                    </label>
+                                                </span>
+                                                <span class="input-unit-wrap">
+                                                    <label for="sprice1">
+                                                        <input type="text" name="" id="sprice1" class="w233" placeholder="">
+                                                    </label>
+                                                    <span class="unit-right">원</span>
+                                                </span>
+                                                <span class="checkbox-con ml15">
+                                                    <input type="checkbox" name="" id="nonep1" checked>
+                                                    <label for="nonep1">무액면</label>
+                                                </span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="element-row">
+                                        <th scope="row">
+                                            발행할 주식의 총수
+                                        </th>
+                                        <td>
+                                            <div class="inline-wrap">
+                                                <span class="radio-con">
+                                                    <input type="radio" name="stock4" id="scheck6">
+                                                    <label for="scheck6">총수</label>
+                                                </span>
+                                                <span class="radio-con ml40">
+                                                    <input type="radio" name="stock4" id="scheck7" checked>
+                                                    <label for="scheck7">판결내용</label>
+                                                </span>
+                                                <span class="ml50">
+                                                    <label for="scount1">
+                                                        <input type="text" name="" id="scount1" class="w458" placeholder="">
+                                                    </label>
+                                                </span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+                <!-- // 발행주식 case 2 -->
+
+                <!-- 발행주식 case 3 -->
+                <section class="form-sec depth-2">
+                    <div class="sec-body">
+                        <div class="table-head">
+                            <div class="left-con">
+                                <h5>발행주식</h5>
+                            </div>
+                            <div class="right-con">
+                                <span class="required-info"><span class="star">*</span> 표시 필수입력사항</span>
+                            </div>
+                        </div>
+                        <div class="table-body">
+                            <table class="table-detail">
+                                <caption>발행주식</caption>
+                                <colgroup>
+                                    <col style="width: 166px;">
+                                    <col style="width: auto;">
+                                </colgroup>
+                                <tbody>
+                                    <tr class="element-row">
+                                        <th scope="row">
+                                            1주의 금액<span class="required">필수</span>
+                                        </th>
+                                        <td>
+                                            <div class="inline-wrap">
+                                                <span class="radio-con">
+                                                    <input type="radio" name="stock5" id="scheck8">
+                                                    <label for="scheck8">금액</label>
+                                                </span>
+                                                <span class="radio-con ml40">
+                                                    <input type="radio" name="stock5" id="scheck9" checked>
+                                                    <label for="scheck9">판결내용</label>
+                                                </span>
+                                                <span class="ml50">
+                                                    <label for="scontent0">
+                                                        <input type="text" name="" id="scontent0" class="w460" placeholder="판결내용">
+                                                    </label>
+                                                </span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="element-row">
+                                        <th scope="row">
+                                            발행할 주식의 총수
+                                        </th>
+                                        <td>
+                                            <div class="inline-wrap">
+                                                <span class="radio-con">
+                                                    <input type="radio" name="stock6" id="scheck10" disabled>
+                                                    <label for="scheck10">총수</label>
+                                                </span>
+                                                <span class="radio-con ml40">
+                                                    <input type="radio" name="stock6" id="scheck11" disabled>
+                                                    <label for="scheck11">판결내용</label>
+                                                </span>
+                                                <span class="input-unit-wrap ml50">
+                                                    <label for="scount2">
+                                                        <input type="text" name="" id="scount2" class="w430" placeholder="" readonly>
+                                                    </label>
+                                                    <span class="unit-right">주</span>
+                                                </span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+                <!-- // 발행주식 case 3 -->
+            </div>
+        </div>
+        <!-- // 1-3-4. 발행주식(케이스별) -->
+        <!-- // 1-3. 입력패턴 추가 -->
+
+        <!-- 1-4. 아코디언형 입력 -->
+        <div class="title-content-wrap">
+            <div class="title-wrap inline-wrap">
+                <h2>1-4. 아코디언형 입력</h2>
+                <a href="../window_popup/popup_1_4.html" title="확인서면 작성" class="btn-solid" onclick="popupManager.openWindowPopup(this); return false;">윈도우팝업</a>
+            </div>
+            <div class="cont-wrap mw1312">
+                <div class="popup-head">
+                    <h4>확인서면 작성</h4>
+                </div>
+                <div class="popup-body">
+                    <div class="popup-cont">
+                        <!-- 정보입력 -->
+                        <section class="form-sec">
+                            <div class="sec-body">
+                                <ul class="fs-16 color-41">
+                                    <li>
+                                        <div>전자확인서면을 이용할 경우 별도의 첨부서면(신분확인 및 우무인⋅필적기재정보)를 스캔하여 등록해야 합니다.</div>
+                                    </li>
+                                    <li>
+                                        <div class="important-bullet">신분확인 및 우무인⋅필적기재정보 안내 : 등기필증 소유자의 신분확인용 문서로 신분증을 복사한 용지에 우무인을 찍고 필적을 기재한 서면 (별도양식 없음)</div>
+                                    </li>
+                                </ul>
+    
+                                <div class="bg-box-wrap no-border mt25">
+                                    <dl class="title-cont-wrap">
+                                        <dt>등기목적</dt>
+                                        <dd>질권설정</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 정보입력 -->
+    
+                        <!-- 아코디언 -->
+                        <section class="form-sec">
+                            <div class="sec-body">
+                                <div class="accordion-wrap">
+                                    <div class="tr mb10">
+                                        <span class="required-info"><span class="star">*</span> 표시 필수입력사항</span>
+                                    </div>
+                                    <ul class="accordion-con" data-accordion="container">
+                                        <li class="active" data-accordion="item">
+                                            <button type="button" class="title-con" data-accordion="trigger">
+                                                <span class="inline-wrap">
+                                                    <span class="title">등기의무자 선택</span>
+                                                    <span class="selected-item-con ml25">
+                                                        <span class="item">김이동</span>
+                                                    </span>
+                                                </span>
+                                            </button>
+                                            <div class="cont-wrap">
+                                                <div class="cont-con">
+                                                    <div class="cont-head mb25">
+                                                        <p class="fs-15 color-5a">- 등록하실 등기의무자를 선택하세요.</p>
+                                                    </div>
+                                                    <div class="cont-body">
+                                                        <table class="table-list-inner">
+                                                            <caption>등기의무자 선택</caption>
+                                                            <colgroup>
+                                                                <col style="width: 60px;">
+                                                                <col style="width: 125px;">
+                                                                <col style="width: 160px;">
+                                                                <col style="width: auto;">
+                                                                <col style="width: 135px;">
+                                                            </colgroup>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col" class="has-element">
+                                                                        <span class="checkbox-con only-box">
+                                                                            <input type="checkbox" name="" id="inner0"><label for="inner0"></label>
+                                                                        </span>
+                                                                    </th>
+                                                                    <th scope="col">성명(명칭)</th>
+                                                                    <th scope="col">(주민)등록번호</th>
+                                                                    <th scope="col">주소</th>
+                                                                    <th scope="col">작성여부</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="has-element">
+                                                                        <span class="checkbox-con only-box">
+                                                                            <input type="checkbox" name="" id="inner2"><label for="inner2"></label>
+                                                                        </span>
+                                                                    </td>
+                                                                    <td>김이동</td>
+                                                                    <td class="ff-roboto">
+                                                                        790101-1234567
+                                                                    </td>
+                                                                    <td class="left">
+                                                                        서울특별시 강남구 역삼동 123
+                                                                    </td>
+                                                                    <td>
+                                                                        <span class="status-grey">미작성</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="has-element">
+                                                                        <span class="checkbox-con only-box">
+                                                                            <input type="checkbox" name="" id="inner3"><label for="inner3"></label>
+                                                                        </span>
+                                                                    </td>
+                                                                    <td>김이동</td>
+                                                                    <td class="ff-roboto">
+                                                                        790101-1234567
+                                                                    </td>
+                                                                    <td class="left">
+                                                                        서울특별시 강남구 역삼동 123
+                                                                    </td>
+                                                                    <td>
+                                                                        <span class="status-blue">작성완료</span>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="cont-foot">
+                                                        <div class="table-util-con">
+                                                            <div class="left-con">
+                                                                <button type="button" class="btn icon-reset">초기화</button>
+                                                            </div>
+                                                            <div class="right-con">
+                                                                <button type="button" class="btn-solid color-4d">선택 완료</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="active" data-accordion="item">
+                                            <button type="button" class="title-con" data-accordion="trigger">
+                                                <span class="inline-wrap">
+                                                    <span class="title">부동산 선택</span>
+                                                    <span class="selected-item-con ml25">
+                                                        <span class="item">전라북소 익산시 어양동 1234423</span>
+                                                        <span class="item">전라북소 익산시 어양동 1234423</span>
+                                                    </span>
+                                                </span>
+                                            </button>
+                                            <div class="cont-wrap">
+                                                <div class="cont-con">
+                                                    <div class="cont-head mb25">
+                                                        <p class="fs-15 color-5a">- 부동산을 선택하세요.</p>
+                                                    </div>
+                                                    <div class="cont-body">
+                                                        <table class="table-list-inner">
+                                                            <caption>부동산 선택</caption>
+                                                            <colgroup>
+                                                                <col style="width: 60px;">
+                                                                <col style="width: auto;">
+                                                            </colgroup>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col" class="has-element">
+                                                                        <span class="checkbox-con only-box">
+                                                                            <input type="checkbox" name="" id="inner4"><label for="inner4"></label>
+                                                                        </span>
+                                                                    </th>
+                                                                    <th scope="col">부동산 표시</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="has-element">
+                                                                        <span class="checkbox-con only-box">
+                                                                            <input type="checkbox" name="" id="inner5"><label for="inner5"></label>
+                                                                        </span>
+                                                                    </td>
+                                                                    <td class="left">
+                                                                        [토지] 전라북소 익산시 어양동 1234423
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="has-element">
+                                                                        <span class="checkbox-con only-box">
+                                                                            <input type="checkbox" name="" id="inner6"><label for="inner6"></label>
+                                                                        </span>
+                                                                    </td>
+                                                                    <td class="left">
+                                                                        [토지] 전라북소 익산시 어양동 1234423
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="has-element">
+                                                                        <span class="checkbox-con only-box">
+                                                                            <input type="checkbox" name="" id="inner7"><label for="inner7"></label>
+                                                                        </span>
+                                                                    </td>
+                                                                    <td class="left">
+                                                                        [토지] 전라북소 익산시 어양동 1234423
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="cont-foot">
+                                                        <div class="table-util-con">
+                                                            <div class="left-con">
+                                                                <button type="button" class="btn icon-reset">초기화</button>
+                                                            </div>
+                                                            <div class="right-con">
+                                                                <button type="button" class="btn-solid color-4d">선택 완료</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="active" data-accordion="item">
+                                            <button type="button" class="title-con" data-accordion="trigger">
+                                                <span class="title">본인확인정보</span>
+                                            </button>
+                                            <div class="cont-wrap">
+                                                <div class="cont-con pad-none">
+                                                    <div class="cont-body">
+                                                        <table class="table-detail-inner">
+                                                            <caption>본인확인정보</caption>
+                                                            <colgroup>
+                                                                <col style="width: 162px;">
+                                                                <col style="width: auto;">
+                                                            </colgroup>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="row">
+                                                                        본인확인정보
+                                                                    </th>
+                                                                    <td>
+                                                                        <div class="block-wrap">
+                                                                            <div class="inline-wrap">
+                                                                                <span class="radio-con">
+                                                                                    <input type="radio" name="idencheck" id="innerradio0">
+                                                                                    <label for="innerradio0">주민등록증</label>
+                                                                                </span>
+                                                                                <span class="radio-con ml25">
+                                                                                    <input type="radio" name="idencheck" id="innerradio1">
+                                                                                    <label for="innerradio1">외국인등록증</label>
+                                                                                </span>
+                                                                                <span class="radio-con ml25">
+                                                                                    <input type="radio" name="idencheck" id="innerradio2">
+                                                                                    <label for="innerradio2">국내거소신고증</label>
+                                                                                </span>
+                                                                                <span class="radio-con ml25">
+                                                                                    <input type="radio" name="idencheck" id="innerradio3">
+                                                                                    <label for="innerradio3">여권</label>
+                                                                                </span>
+                                                                                <span class="radio-con ml25">
+                                                                                    <input type="radio" name="idencheck" id="innerradio4">
+                                                                                    <label for="innerradio4">운전면허증</label>
+                                                                                </span>
+                                                                            </div>
+                                                                            <div class="inline-wrap">
+                                                                                <span class="checkbox-con">
+                                                                                    <input type="checkbox" name="type" id="innercheck0">
+                                                                                    <label for="innercheck0">기타</label>
+                                                                                </span>
+                                                                                <span class="ml18">
+                                                                                    <label for="checkinput">
+                                                                                        <input type="text" name="" id="checkinput" class="w945" placeholder="가이드문구 출력">
+                                                                                    </label>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">
+                                                                        <label for="special">
+                                                                            특기사항<span class="required">필수</span>
+                                                                        </label>
+                                                                    </th>
+                                                                    <td>
+                                                                        <textarea name="" id="special" cols="30" rows="10" placeholder="부가정보 입력"></textarea>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 아코디언 -->
+    
+                        <!-- 하단 정보 -->
+                        <section class="form-sec mb0 mt40">
+                            <div class="sec-body">
+                                <div class="full-bg-wrap">
+                                    <p class="msg">
+                                        위 본인확인정보에 따라 등기의무자 등 본인임을 확인하고 ⎡부동산등기규칙⎦ 제 111조 제3항의 규정에 따라 이 서면을 작성하였습니다.
+                                    </p>
+                                    <p class="date">2020.12.12</p>
+                                    <p class="name">법무사 이이순</p>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 하단 정보 -->
+                    </div>
+                </div>
+                <div class="popup-foot">
+                    <div class="left-con"></div>
+                    <div class="right-con">
+                        <button type="button" class="btn-solid medium color-4d">작성취소</button>
+                        <button type="button" class="btn-solid medium">작성완료</button>
+                    </div>
+                </div>
+                <!-- // 신청인/대리인 목록 - 2depth 테이블 -->
+            </div>
+        </div>
+        <!-- // 1-4. 아코디언형 입력 -->        
+        
+
+
+    </div>
+</body>
+
+</html>

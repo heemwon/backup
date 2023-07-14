@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+    <g transform="translate(18.056 18.062)">
+        <rect width="64" height="64" rx="5" transform="translate(-18.056 -18.062)" style="fill:#f2f4f5"/>
+        <path transform="translate(-2.056 -2.062)" style="opacity:.2;fill:none" d="M0 0h32v32H0z"/>
+        <path data-name="사각형 1331" transform="translate(1.136 1.136)" style="opacity:.126;fill:none" d="M0 0h25.828v25.823H0z"/>
+        <path data-name="패스 4109" d="M3.458-1.062h-4.514v4.515" transform="translate(2.129 2.129)" style="stroke:#000;stroke-width:1.5px;fill:none"/>
+        <path data-name="패스 4112" d="M3.458 3.453h-4.514v-4.515" transform="translate(2.129 23.57)" style="stroke:#000;stroke-width:1.5px;fill:none"/>
+        <path data-name="패스 4110" d="M-1.056-1.062h4.514v4.515" transform="translate(23.443 2.129)" style="stroke:#000;stroke-width:1.5px;fill:none"/>
+        <path data-name="패스 4111" d="M-1.056 3.453h4.514v-4.515" transform="translate(23.443 23.57)" style="stroke:#000;stroke-width:1.5px;fill:none"/>
+        <path data-name="사각형 1931" transform="translate(1.072 10.667)" style="fill:#f4c215" d="M0 0h25.956v6.771H0z"/>
+        <g data-name="사각형 2015" style="stroke:#000;stroke-width:1.5px;fill:none">
+            <path style="stroke:none" d="M0 0h19.051v19.051H0z" transform="translate(4.521 4.522)"/>
+            <path style="fill:none" d="M.75.75h17.551v17.551H.75z" transform="translate(4.521 4.522)"/>
+        </g>
+        <path data-name="선 627" transform="translate(1.7 14.051)" style="stroke:#000;stroke-width:1.5px;fill:none" d="M0 0h24.7"/>
+    </g>
+</svg>

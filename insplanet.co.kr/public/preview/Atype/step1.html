@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1600, maximum-scale=1.0,user-scalable=no">
+    <title>미래등기</title>
+    <script src="lib.js"></script>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body.popup {overflow:hidden;}
+        img {display:block;margin:0 auto;}
+        .navigation {position:fixed;left:0;top:0;right:0;z-index:10;height:96px;background:#fff;}
+        body.active .navigation {top:55px;}
+        .navigation .logo {position:absolute;left:80px;top:20px;}
+        .navigation .nav {padding:36px 0 0 0;}
+        /* .navigation .nav button {display:block;position:absolute;left:50%;top:34px;margin:0 0 0 -318px;width:80px;height:30px;border:none;outline:none;background:none;}
+        .navigation .nav button:hover {background:url(images/dummy_gnb_on1depth01.png) no-repeat 50%;} */
+        .navigation .nav img {margin:0 auto;}
+        .navigation .util {position:absolute;right:80px;top:26px;}
+        .sidebar {display:flex;flex-direction:column;justify-content:center;position:fixed;left:0;top:0;bottom:0;z-index:1;width:80px;text-align:center;background:#fff;}
+        body.small .sidebar {left:-80px;}
+        .quickbar {display:flex;flex-direction:column;justify-content:center;position:fixed;right:0;top:0;bottom:0;z-index:1;width:80px;text-align:center;background:#fff;overflow:hidden;}
+        .quickbar img {transition-property: All;transition-duration: 0.3s;}
+        body.small .quickbar {display:flex;flex-direction:column;justify-content:center;position:fixed;right:0;top:0;bottom:0;z-index:1;width:35pxpx;text-align:center;background:none;}
+        .chatbot {position:fixed;right:100px;bottom:50px;z-index:80;}
+        .btn-cs {position:absolute;top:0;right:0;width:64px;height:64px;border:none;background:none;outline:none;cursor:pointer;}
+        .box-chatbot {display:none;position:absolute;right:-23px;top:-167px;width:270px;height:263px;background:url(images/floating_customer_popup.png) no-repeat 50%;border:none;outline:none;}
+        .box-chatbot.on {display:block;}
+        .box-chatbot .btn-close {position:absolute;right:43px;top:34px;width:20px;height:20px;border:none;outline:none;background:none;cursor:pointer;}
+        body.small .chatbot {right:50px;}
+        .footer {position:relative;z-index:10;height:298px;background:url(images/footer.png) no-repeat 50%;}
+        .nav-drop {display:none;position:absolute;left:0;top:96px;padding:40px 0 0 0;width:100%;height:405px;background:#2e374f;border-bottom-left-radius:30px;border-bottom-right-radius:30px;}
+        .nav-drop.on {display:block;}
+        .wrap {min-width:1330px;}
+        section {position:relative;}
+        .content1 img {margin-top:96px;}
+        body.active .content1 img {margin-top:151px;}
+        .content2 img {margin-top:96px;}
+        body.active .content2 img {margin-top:151px;}
+        .content3 img {margin-top:96px;}
+        body.active .content3 img {margin-top:151px;}
+        .main-cont1-1 {position:absolute;left:0;top:0;right:0;bottom:0;display:flex;flex-direction:column;justify-content:center;}
+        .main-cont1-1 a {display:block;position:absolute;left:50%;top:50%;margin:52px 0 0 -446px;width:145px;height:152px;border:none;outline:none;background:none;}
+        body.active .main-cont1-1 a {margin:79px 0 0 -446px;}
+        .main-cont1-1 .btn-service {display:block;position:absolute;left:50%;top:50%;margin:226px 0 0 -9px;width:105px;height:145px;border:none;cursor:pointer;outline:none;background:none;}
+        body.active .main-cont1-1 .btn-service {margin:253px 0 0 -9px;}
+        .main-cont1-1 a:hover {background:url(images/btn_main_hover.png) no-repeat 50%;}
+        .main-cont1-2 {position:absolute;left:50%;bottom:0;margin:0 0 0 -650px;width:1300px;}
+        .popup-notice {display:none;flex-direction: column;justify-content: center; position:fixed;left:0;top:0;right:0;bottom:0;z-index:99;background:rgba(0, 0, 0, 0.6);}
+        .popup-notice .inner {position:relative;margin:0 auto;width:483px;height:540px;}
+        .popup-notice button {display:block;position:absolute;right:60px;bottom:70px;width:30px;height:30px;border:none;outline:none;background:none;cursor:pointer;}
+        .popup-notice.on {display:flex;}
+
+        .popup-service {display:none;flex-direction: column;justify-content: center; position:fixed;left:0;top:0;right:0;bottom:0;z-index:99;background:rgba(0, 0, 0, 0.6);}
+        .popup-service .inner {position:relative;margin:0 auto;width:860px;height:522px;}
+        .popup-service button {display:block;position:absolute;right:63px;top:43px;width:30px;height:30px;border:none;outline:none;background:none;cursor:pointer;background:none;}
+        .popup-service.on {display:flex;}
+
+        .top-notice {display:block;position:fixed;left:0;top:-55px;right:0;z-index:80;height:55px;background:#4a5dc6 url(images/cont_notice_maintop.png) no-repeat 50%; }
+        body.active .top-notice {top:0;}
+        .top-notice button {display:block;position:absolute;right:20px;top:18px;width:135px;height:20px;border:none;outline:none;cursor:pointer;background:url(images/btn_notice_viewtoday_maintop.png) no-repeat 50%;}
+    </style>
+    <script>
+
+        /* Scroll for main */
+
+        $(window).resize(function(){
+            mainSec();
+            $('html').scrollTop($('.content' + scrollCount).offset().top);
+
+            if($(window).width() < 1480){
+                $('body').addClass('small')
+                $('.quickbar img').attr('src','images/quickbar_small.png');
+            }else{
+                $('body').removeClass('small')
+                $('.quickbar img').attr('src','images/right_menu.png');
+            }
+
+        });
+
+        function  mainSec(){    
+            $('section').css({'height':$(window).height()})
+        }
+
+        $('html, body').css({'overflow': 'hidden', 'height': '100%'});
+        $('#element').on('scroll touchmove mousewheel', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            return false;
+        });
+
+        $(document).on('mousewheel DOMMouseScroll',function(e){
+
+            var mw = e.originalEvent;
+            if (mw.detail) {
+                wDelta = mw.detail * -40;
+            }else{
+                wDelta = mw.wheelDelta;
+            };
+
+            if(wDelta < 0){//wheel up
+                if(scrollCount < 4){
+                    scrollCount = scrollCount + 1
+                }else{
+                    scrollCount = 4
+                    
+                }
+            }else{
+                if(scrollCount > 1){
+                    scrollCount = scrollCount - 1
+                }else{
+                    scrollCount = 1
+                }
+            }
+            //console.log(scrollCount)
+            if(scrollCount < 4){
+                mainScroll(scrollCount);
+            }else{
+                $('html').stop().animate({
+                    scrollTop: $('.footer').offset().top + 'px'
+                });
+            }
+
+            //console.log(scrollCount)
+            if(scrollCount == 4){
+                $('.quickbar img').css({'marginBottom': '150px'})
+            }else{
+                $('.quickbar img').css({'marginBottom': '0px'})
+            }
+
+            return;
+        });
+
+        var scrollCount = 1
+
+        function mainScroll(scrollCount){
+
+            $('html').stop().animate({
+                scrollTop: $('.content' + scrollCount).offset().top + 'px'
+            });
+            $('.sidebar img').attr('src','images/left_indicator' + scrollCount + '.png');
+        }
+
+        $(function(){
+            $('section').css({'height':$(window).height()});
+            $('.popup-notice button').on('click',function(){
+                $('body').removeClass('popup');
+                $('.popup-notice').removeClass('on');
+            })
+
+            $('.navigation .nav img').on('mouseenter',function(){
+                
+                if($('.nav-drop').hasClass == 0){
+                    //console.log('test')
+                    $('.nav-drop').removeClass('on') 
+                }else{
+                    //console.log('test')
+                    $('.nav-drop').addClass('on') 
+                }
+            });
+
+            $('.navigation').on('mouseleave',function(){
+                $('.nav-drop').removeClass('on')
+            });
+
+            $('.top-notice button').on('click',function(){
+                $('body').removeClass('active')
+            });
+
+            $('.btn-service').on('click',function(){
+                $('body').addClass('popup')
+                $('.popup-service').addClass('on')
+            });
+            $('.popup-service button').on('click',function(){
+                $('body').removeClass('popup');
+                $('.popup-service').removeClass('on');
+            });
+
+            $('.btn-cs').on('click',function(){
+                $('.box-chatbot').addClass('on')
+            });
+            $('.box-chatbot .btn-close').on('click',function(){
+                $('.box-chatbot').removeClass('on')
+            });
+
+        });
+        $(window).on('load',function(){
+            contSectionHeight = $(window).innerHeight();
+            contSectionCount = 1;
+        });
+        $(window).on('resize',function(){
+            contSectionHeight = $(window).innerHeight();
+        });
+
+        
+    </script>
+</head>
+<body class="popup active">
+    <div class="wrap">
+        <div class="top-notice"><button></button></div>
+        <div class="navigation">
+            <div class="logo"><a href="../index.html"><img src="images/img_logo.png" alt="" ></a></div>
+            <div class="nav"><img src="images/header_menu.png" alt="" >
+            <button class="btn-gnb"></button>
+            </div>
+            <div class="util"><img src="images/header_util.png" alt="Menu" ></div>
+            <div class="nav-drop">
+                <img src="images/dummy_gnb_on.png" alt="" >
+            </div>
+        </div>
+
+        <section class="content1" style="background:#f5f9fb;">
+            <div class="main-cont1-1"><img src="images/dummy_cont_main01.png" alt="" ><a href="step2.html"></a><button class="btn-service"></button></div>
+        </section>
+        <section class="content2"><div class="main-cont1-1"><img src="images/dummy_cont_main02.png" alt="" ></div></section>
+        <section class="content3" style="background:#f5f9fb;"><div class="main-cont1-1"><img src="images/dummy_cont_main03.png" alt="" ></div></section>
+
+        <div class="footer"></div>
+
+        <div class="sidebar"><img src="images/left_indicator1.png" alt="side" ></div>
+
+        <div class="quickbar"><img src="images/right_menu.png" alt="quick" ></div>
+        <div class="chatbot"><img src="images/main_floating.png" alt="" ><button class="btn-cs"></button><div class="box-chatbot on"><button class="btn-close"></button></div></div>
+    </div>
+
+    <div class="popup-notice on">
+        <div class="inner">
+            <img src="images/popup_notice_emergency.png" alt="" >
+            <button></button>
+        </div>
+    </div>
+
+    <div class="popup-service">
+        <div class="inner">
+            <img src="images/@popup.png" alt="" >
+            <button></button>
+        </div>
+    </div>
+
+</body>
+</html>

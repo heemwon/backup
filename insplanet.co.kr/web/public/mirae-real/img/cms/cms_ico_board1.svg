@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <g data-name="ico / 40 / biz">
+        <path style="opacity:.2;fill:none" d="M0 0h40v40H0z"/>
+        <g data-name="사각형 1801" style="stroke:#1d1d1d;stroke-width:2px;fill:#f4c215">
+            <path style="stroke:none" d="M0 0h22v24H0z" transform="translate(14 15.999)"/>
+            <path style="fill:none" d="M1 1h20v22H1z" transform="translate(14 15.999)"/>
+        </g>
+        <g data-name="사각형 1800" style="fill:#fff;stroke:#1d1d1d;stroke-width:2px">
+            <path style="stroke:none" d="M0 0h23v40H0z" transform="translate(5)"/>
+            <path style="fill:none" d="M1 1h21v38H1z" transform="translate(5)"/>
+        </g>
+        <path data-name="Op component 1" transform="translate(12.586 13.613)" style="fill:#1d1d1d" d="M0 0h2.866v2.866H0z"/>
+        <path data-name="Op component 2" transform="translate(18.318 8.881)" style="fill:#1d1d1d" d="M0 0h2.866v2.866H0z"/>
+        <path data-name="Op component 3" transform="translate(12.586 7.881)" style="fill:#1d1d1d" d="M0 0h2.866v2.866H0z"/>
+    </g>
+</svg>

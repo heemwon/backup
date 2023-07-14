@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../js/libs/jquery.min.js"></script>
+    <script src="../js/libs/jquery-ui.min.js"></script>
+    <script src="../js/libs/jquery.selectric.js"></script>
+    <script src="../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../js/sub.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/guide.css">
+    <link rel="stylesheet" href="../css/sub.css">
+
+    <link rel="stylesheet" href="../css/simple.css">
+    <script src="../js/simple.js"></script>
+    <title>Popup Style Guide</title>
+</head>
+
+<body>
+    <main>
+        <!-- Tooltip -->
+        <h1>Popup Tooltip Style Guide - 간편등기</h1>
+        <hr />
+        <section id="default-sec">
+            <h2>Tooltip</h2>
+            <p>
+                <p class="fs-16">화면 좌측에 있을 경우 .tooltip-btn 에 .right 클래스 붙여주면 오른쪽에, .top 클래스 붙여주면 위쪽에 툴팁 노출됨<br/> default는 아래 노출<br/><br/></p>
+
+                <div class="inline-wrap">
+                    <!-- 등록면허세영수필확인서 -->
+                    <label for="bill" class="fs-14 color-5a">등록면허세영수필확인서 - 부동산</label>
+                    <div class="tooltip-wrap ml10">
+                        <span class="tooltip-btn right" data-tooltip="trigger" tabindex="0"><img src="../img/ico_qmark@2x.png" alt="Question mark"></span>
+                        <div class="tooltip-cont-con" data-tooltip="container">
+                            <div class="tooltip-head">
+                                <p class="title">등록면허세 납세번호 확인 안내</p>
+                                <button type="button" class="close-btn" onclick="tooltipHandler.closeTooltip()">
+                                    <img src="../img/btn_tooltips_close.svg" alt="닫기">
+                                </button>
+                            </div>
+                            <div class="tooltip-body">
+                                <p>등록면허세 납부 통지서 또는 등록면허세영수증에 기재되어 있는 ‘납세번호’ 를 입력해 주시기 바랍니다.</p>
+                                <div class="mt15">
+                                    <img src="../img/img_tooltip_fee.jpg" alt="등록면허세 영수증">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 사업목적 입력 안내 -->
+                    <label for="purpose" class="fs-14 color-5a" style="margin-left: 50px;">목적</label>
+                    <div class="tooltip-wrap">
+                        <span class="tooltip-btn top" data-tooltip="trigger" tabindex="0"><img src="../img/ico_qmark@2x.png" alt="Question mark"></span>
+                        <div class="tooltip-cont-con" data-tooltip="container">
+                            <div class="tooltip-head">
+                                <p class="title">사업목적 입력 안내</p>
+                                <button type="button" class="close-btn" onclick="tooltipHandler.closeTooltip()">
+                                    <img src="../img/btn_tooltips_close.svg" alt="닫기">
+                                </button>
+                            </div>
+                            <div class="tooltip-body">
+                                <p>하나의 목적번호에는 하나의 목적만 입력해야 하며, 목적번호는 모두 ‘1’ 로 입력합니다.</p>
+                                <p class="mt20 fw-bold">
+                                    예) 입력할 목적이 운수업, 유통업, 각 호에 부대하는 사업인 경우
+                                </p>
+                                <p class="mt10">
+                                    목적 입력란에 ‘1 운수업’ 입력 후 우측 하단의 [입력] 버튼을 선택하고<br/>
+                                    다시 입력란에 ‘1 유통업‘ 입력 후 우측 하단의 [입력] 버튼을 선택하고<br/>
+                                    마지막으로 ‘1 각 호에 부대하는 사업‘ 입력 후 우측 하단의 [입력] 버튼 선택
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 등기원인일자 -->
+                    <label for="datepicker0" class="fs-14 color-5a" style="margin-left: 50px;">등기원인일자</label>
+                    <div class="tooltip-wrap ml10">
+                        <span class="tooltip-btn" data-tooltip="trigger" tabindex="0"><img src="../img/ico_qmark@2x.png" alt="Question mark"></span>
+                        <div class="tooltip-cont-con" data-tooltip="container">
+                            <div class="tooltip-head">
+                                <p class="title">등기원인일자 확인 안내</p>
+                                <button type="button" class="close-btn" onclick="tooltipHandler.closeTooltip()">
+                                    <img src="../img/btn_tooltips_close.svg" alt="닫기">
+                                </button>
+                            </div>
+                            <div class="tooltip-body">
+                                <p>주민등록 초본에 기재되어 있는  ‘신고일’ 의 날짜를 입력해 주시기 바랍니다.</p>
+                                <div class="mt15">
+                                    <img src="../img/img_tooltip_info.jpg" alt="등록면허세 영수증">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inline-wrap mt20">
+                    <!-- 등록면허세 영수필 확인서 -->
+                    <label for="bill" class="fs-14 color-5a">등록면허세영수필확인서 - 법인</label>
+                    <div class="tooltip-wrap ml10">
+                        <span class="tooltip-btn" data-tooltip="trigger" tabindex="0"><img src="../img/ico_qmark@2x.png" alt="Question mark"></span>
+                        <div class="tooltip-cont-con" data-tooltip="container">
+                            <div class="tooltip-head">
+                                <p class="title">등록면허세 납세번호 확인 안내</p>
+                                <button type="button" class="close-btn" onclick="tooltipHandler.closeTooltip()">
+                                    <img src="../img/btn_tooltips_close.svg" alt="닫기">
+                                </button>
+                            </div>
+                            <div class="tooltip-body">
+                                <p>영수필확인서 또는 납부내역서에 기재되어 있는 ‘납세번호’ 를 입력해 주시기 바랍니다.</p>
+                                <div class="mt15">
+                                    <img src="../img/img_tooltip_fee2.jpg" alt="등록면허세(등록분) 납부확인서">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </p>
+        </section>
+        <hr />
+        <!-- Popup -->
+        <section id="default-sec">
+            <h2>Popup</h2>
+            <p>공통</p>
+            <p>
+                <button type="button" class="btn-solid" onclick="popupManager.openPopup('#popup-license')">등록면허세 신고</button>
+                <button type="button" class="btn-solid" onclick="popupManager.openPopup('#popup-pre-agree')">EST_01_1_04 행정정보 공동이용 사전동의서</button>
+                <button type="button" class="btn-solid" onclick="popupManager.openPopup('#popup-payment-complete')">EST_04_1_02 신청서 작성완료</button>
+            </p>
+            <p>법인</p>
+            <p>
+                <button type="button" class="btn-solid" onclick="popupManager.openPopup('#popup-file')">COP_02_2_02 파일업로드</button>
+                <br/><br/>
+                <button type="button" class="btn-solid" onclick="popupManager.openPopup('#popup-resolution')">COP_02_2_03 주주전원의 서면결의서 작성</button>
+                <br/><br/>
+                <button type="button" class="btn-solid" onclick="popupManager.openPopup('#popup-reappoint')">COP_02_2_04 중임승낙서 작성</button>
+                <br/><br/>
+                <button type="button" class="btn-solid" onclick="popupManager.openPopup('#popup-decision')">COP_02_3_02 대표이사의결정서 작성</button>
+                <br/><br/>
+                <button type="button" class="btn-solid" onclick="popupManager.openPopup('#popup-purpose')">COP_02_4_02 사업목적등록/수정</button>
+                <br/><br/>
+                <button type="button" class="btn-solid" onclick="popupManager.openPopup('#popup-list')">COP_02_4_03 주주명부 작성</button>
+                <br/><br/>
+                <button type="button" class="btn-solid" onclick="popupManager.openPopup('#popup-resolution2')">COP_02_4_04 주주전원의 서면결의서 작성</button>
+            </p>
+        </section>
+        <hr />
+        <section id="message-sec">
+            <h2>Message Popup</h2>
+            <p>
+                <button type="button" class="btn-solid" onclick="popupManager.openPopup('#popup-apply-stop')">신청중단 메시지</button>
+            </p>
+        </section>
+        <hr />
+        <section id="toast-sec">
+            <h2>Toast Popup</h2>
+            <p>
+                <button type="button" class="btn-solid" onclick="popupManager.openToastPopup('#popup-toast')">토스트팝업</button>
+            </p>
+        </section>
+        <hr />
+
+        <!-- 210824 삭제 -->
+        <!-- 
+        <button type="button" class="btn-solid" onclick="popupManager.openPopup('#popup-apply')">EST_04_1_02 신청서 작성완료</button>
+        <button type="button" class="btn-solid" onclick="popupManager.openPopup('#popup-file-confirm')">첨부파일 메시지</button>
+        <button type="button" class="btn-solid" onclick="popupManager.openPopup('#popup-attach-confirm')">첨부서면 메시지</button>
+        -->
+    </main>
+
+
+    <!-- ///////////// 공통 ///////////// -->
+
+    <!-- 등록면허세 신고 -->
+    <div class="popup-wrap" id="popup-license">
+        <div class="content-wrap mw730 no-footer">
+            <div class="popup-head">
+                <div class="popup-title">
+                    <h4>등록면허세 정액분 신고</h4>
+                </div>
+                <div class="close-btn">
+                    <button type="button" onclick="popupManager.closePopup();"><img src="../img/btn_gnb_close.svg" alt="close"></button>
+                </div>
+            </div>
+            <div class="popup-body">
+                <div class="popup-cont">
+                    
+                    <!-- 임시 - iframe 로드 -->
+                    <div>
+                        iframe 로드
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="dim-wrap"></div>
+    </div>
+
+    <!-- EST_01_1_04 행정정보 공동이용 사전동의서 -->
+    <div class="popup-wrap" id="popup-pre-agree">
+        <div class="content-wrap mw515">
+            <div class="popup-head only-title">
+                <div class="popup-only-title">
+                    <h4>행정정보 공동이용 사전동의서</h4>
+                </div>
+            </div>
+            <div class="popup-body">
+                <div class="popup-cont">
+                    <ul class="list-number title-cont">
+                        <li>
+                            <div>
+                                <span class="title">민원사무의 명칭 :</span>
+                                <span class="cont">부동산등기신청</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span class="title">공동이용 행정정보(구비서류) :</span>
+                                <span class="cont">주민등록사항정보 (주민등록등본·초본)</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span class="title">이용기관의 명칭 :</span>
+                                <span class="cont">대법원</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="fs-15 color-41 mt30">
+                        본인은 위 사무의 처리를 위하여 전자정부법 제 36조에 따른 행정정보의 공동이용을 통해 이용기관의 업무처리담당자가 전자적으로 본인의 구비서류를 확인하는 것에 동의합니다.
+                    </p>
+                    <div class="bg-box-wrap no-border mt20">
+                        <p class="fs-14 color-41 tc">2021년 08월 20일</p>
+                        <div class="profile-wrap">
+                            <span class="fs-14 color-41">동의인</span>
+                            <div class="profile-con">
+                                <dl class="profile-list">
+                                    <dt>성 &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;명 :&nbsp; </dt>
+                                    <dd>김이동</dd>
+                                </dl>
+                                <dl class="profile-list">
+                                    <dt>주민등록번호 :&nbsp; </dt>
+                                    <dd>720505-1067747</dd>
+                                </dl>
+                                <dl class="profile-list">
+                                    <dt>전 &nbsp; 화 &nbsp; 번 &nbsp; 호 :&nbsp; </dt>
+                                    <dd>010-7601-1324</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-foot">
+                <div class="left-con"></div>
+                <div class="right-con">
+                    <button type="button" class="btn-solid medium color-4d" onclick="popupManager.closePopup();">미동의</button>
+                    <button type="button" class="btn-solid medium color-main" onclick="popupManager.closePopup();">동의</button>
+                </div>
+            </div>
+        </div>
+        <div class="dim-wrap"></div>
+    </div>
+
+    <!-- EST_04_1_02 신청서 작성완료 -->
+    <div class="popup-wrap" id="popup-payment-complete">
+        <div class="content-wrap payment">
+            <div class="popup-body">
+                <div class="popup-cont">
+                    
+                    <!-- 승인 메세지 -->
+                    <section class="payment-complete-sec">
+                        <div class="sec-head">
+                            <div class="lottie-con">
+                                <!-- <img src="../img/ico_commit.svg" alt="Confirm"> -->
+                                <span id="lottie-checked"></span>
+                            </div>
+                            <p class="msg">
+                                <span class="color-main">신청서가 정상적으로 제출</span>되었습니다.
+                            </p>
+                            <p class="fs-18 color-86 mt10">
+                                - 작성번호 : 33110<br/>
+                                - 작성일자 : 2021-08-10
+                            </p>
+                        </div>
+                        <div class="sec-body mt40">
+                            <div class="table-body">
+                                <table class="table-detail">
+                                    <caption>결제정보</caption>
+                                    <colgroup>
+                                        <col style="width: 116px;">
+                                        <col style="width: auto;">
+                                        <col style="width: 116px;">
+                                        <col style="width: auto;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                거래번호
+                                            </th>
+                                            <td class="ff-roboto">
+                                                YES123987465651
+                                            </td>
+                                            <th scope="row">
+                                                거래일시
+                                            </th>
+                                            <td class="ff-roboto">
+                                                2020-12-22 09:27
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                결제금액
+                                            </th>
+                                            <td>
+                                                <span class="fs-16 fw-bold color-error">
+                                                    <span class="ff-roboto">1,800</span>원
+                                                </span> &nbsp;
+                                                (우리카드)
+                                            </td>
+                                            <th scope="row">
+                                                승인번호
+                                            </th>
+                                            <td>
+                                                0s21031023012304923
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 버튼 -->
+                    <section class="button-sec mt40">
+                        <div class="tc">
+                            <button type="button" class="btn-solid large color-4d" onclick="popupManager.closePopup();">확인</button>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+        <div class="dim-wrap" data-prevent-close></div>
+    </div>
+
+
+    <!-- ///////////// 법인 ///////////// -->
+
+    <!-- COP_02_2_02 파일업로드 -->
+    <div class="popup-wrap" id="popup-file">
+        <div class="content-wrap mw730">
+            <div class="popup-head">
+                <div class="popup-title">
+                    <h4>파일등록</h4>
+                </div>
+                <div class="close-btn">
+                    <button type="button" onclick="popupManager.closePopup();"><img src="../img/btn_gnb_close.svg" alt="close"></button>
+                </div>
+            </div>
+            <div class="popup-body">
+                <div class="popup-cont">
+                    <section class="form-sec">
+                        <ul class="list-bullet fs-15 color-41">
+                            <li>
+                                <div>하나의 신청서에 등록 가능한 첨부서면 용량은 최대 20Mbyte입니다.</div>
+                            </li>
+                            <li>
+                                <div>첨부서면을 서버변환할 경우 파일명은 공백이 없는 영문명으로 등록하시기 바랍니다.</div>
+                            </li>
+                            <li>
+                                <div>오픈오피스(.odt)파일과 일부 MS오피스(.pptx, .docx, .xlsx)파일은 서버변환기능을 제공하지 않습니다.</div>
+                            </li>
+                        </ul>
+                        <div class="table-head mt40">
+                            <div class="left-con">
+                                <span class="checkbox-con">
+                                    <input type="checkbox" name="" id="convert">
+                                    <label for="convert">첨부서면 서버변환</label>
+                                </span>
+                                <div class="tooltip-wrap ml10">
+                                    <span class="tooltip-btn top" data-tooltip="trigger" tabindex="0"><img src="../img/ico_qmark@2x.png" alt="Question mark"></span>
+                                    <div class="msg-con" data-tooltip="container">
+                                        <div class="inner-con">
+                                            <p>
+                                                첨부한 서면을 서버에서 전자화문서(.pdf)로 변환하여 등록합니다.
+                                            </p>
+                                            <button type="button" class="close-btn" onclick="tooltipHandler.closeTooltip()">
+                                                <img src="../img/btn_tooltips_close_bk.svg" alt="도움말 닫기">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-body">
+                            <table class="table-detail">
+                                <caption>대표이사의결정서 첨부</caption>
+                                <colgroup>
+                                    <col style="width: 162.5px;">
+                                    <col style="width: auto;">
+                                </colgroup>
+                                <tbody>
+                                    <tr class="element-row">
+                                        <th scope="row">
+                                            대표이사의결정서
+                                        </th>
+                                        <td>
+                                            <div class="file-wrap" data-file="container">
+                                                <input type="file" id="file" class="real-file" data-file="file">
+                                                <span class="file-name" data-file="name"></span>
+                                                <label for="file" class="file-btn">파일찾기</label>
+                                                <button type="button" class="delete-btn" data-file="delete-btn">삭제</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="popup-foot">
+                <div class="left-con"></div>
+                <div class="right-con">
+                    <button type="button" class="btn-solid medium color-4d" onclick="popupManager.closePopup()">등록취소</button>
+                    <button type="button" class="btn-solid medium color-main">등록완료</button>
+                </div>
+            </div>
+        </div>
+        <div class="dim-wrap"></div>
+    </div>
+
+    <!-- COP_02_2_03 주주전원의 서면결의서 작성 -->
+    <div class="popup-wrap" id="popup-resolution">
+        <div class="content-wrap">
+            <div class="popup-head">
+                <div class="popup-title">
+                    <h4>주주전원의 서면결의서 작성</h4>
+                </div>
+                <div class="close-btn">
+                    <button type="button" onclick="popupManager.closePopup();"><img src="../img/btn_gnb_close.svg" alt="close"></button>
+                </div>
+            </div>
+            <div class="popup-body">
+                <div class="popup-cont">
+                    <section class="form-sec">
+                        <div class="fs-15 color-5a">
+                            <p>주식회사 원스톱컴퍼니</p>
+                            <p class="mt15">
+                                위 회사는 상법 제 363조 제5항 및  제6항에 근거하여 주주전원의 동의로써 주주총회 소집절차를 생략하고 <br/>
+                                임시주주총회의 결의에 갈음하여 주주 전원 서면 동의로써 다음사항을 결정한다.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="form-sec">
+                        <div class="list-border-wrap">
+                            <p class="list-title">결의사항</p>
+                            <ul class="list-border">
+                                <li>
+                                    <p>1.   본 회사 사내이사 황보주주의 중임을 결정하며 이에 수반하여 내용을 변경한다.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="form-sec">
+                        <div class="sec-body">
+                            <div class="full-bg-wrap">
+                                <p class="msg">
+                                    위 결의 사항에 대하여 이의없이 동의하며, 결의 사항을 명확히 하기 위하여 <br/>
+                                    주주전원이 기명하고 인감을 날인한다.
+                                </p>
+                                <span class="datepicker-con">
+                                    <label for="">
+                                        <input type="text" name="" id="" class="datepicker" placeholder="날짜선택">
+                                    </label>
+                                </span>
+                                <div class="bottom-con mt0">
+                                    <span class="initiator">대표이사 김이동</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="popup-foot">
+                <div class="left-con"></div>
+                <div class="right-con">
+                    <button type="button" class="btn-solid medium color-4d" onclick="popupManager.closePopup()">취소</button>
+                    <button type="button" class="btn-solid medium color-main">전자서명</button>
+                </div>
+            </div>
+        </div>
+        <div class="dim-wrap"></div>
+    </div>
+    
+    <!-- COP_02_2_04 중임승낙서 작성 -->
+    <div class="popup-wrap" id="popup-reappoint">
+        <div class="content-wrap mw730">
+            <div class="popup-head">
+                <div class="popup-title">
+                    <h4>중임승낙서작성</h4>
+                </div>
+                <div class="close-btn">
+                    <button type="button" onclick="popupManager.closePopup();"><img src="../img/btn_gnb_close.svg" alt="close"></button>
+                </div>
+            </div>
+            <div class="popup-body">
+                <div class="popup-cont pdt-none">
+                    <section class="form-sec">
+                        <div class="sec-body">
+                            <div class="full-bg-wrap">
+                                <p class="msg">
+                                    본인은 주식회사 원스톱컴퍼니의 대표이사로 중임되었으므로 그 중임을 승낙합니다.
+                                </p>
+                                <!-- <p class="date">
+                                    2021.08.20
+                                </p> -->
+                                <span class="datepicker-con">
+                                    <label for="">
+                                        <input type="text" name="" id="" class="datepicker" placeholder="날짜선택">
+                                    </label>
+                                </span>
+                                <p class="name">
+                                    주식회사 원스톱컴퍼니
+                                </p>
+                                <div class="bottom-con">
+                                    <span class="initiator">사내이사  김이동</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="popup-foot">
+                <div class="left-con"></div>
+                <div class="right-con">
+                    <button type="button" class="btn-solid medium color-4d" onclick="popupManager.closePopup()">취소</button>
+                    <button type="button" class="btn-solid medium color-main">전자서명</button>
+                </div>
+            </div>
+        </div>
+        <div class="dim-wrap"></div>
+    </div>
+
+    <!-- COP_02_3_02 대표이사의결정서 작성 -->
+    <div class="popup-wrap" id="popup-decision">
+        <div class="content-wrap">
+            <div class="popup-head">
+                <div class="popup-title">
+                    <h4>대표이사의 결정서(본점이전 결정서) 작성</h4>
+                </div>
+                <div class="close-btn">
+                    <button type="button" onclick="popupManager.closePopup();"><img src="../img/btn_gnb_close.svg" alt="close"></button>
+                </div>
+            </div>
+            <div class="popup-body">
+                <div class="popup-cont">
+                    <section class="form-sec">
+                        <div>
+                            <p class="fs-15 fw-500 tc">
+                                본인은 주식회사 원스톱컴퍼니의 대표이사로서 회사의 본점소재지를<br/> 다음과 같이 이전하기로 결정한다.
+                            </p>
+                        </div>
+                        <div class="table-body mt30">
+                            <table class="table-detail">
+                                <caption>대표이사의 결정서</caption>
+                                <colgroup>
+                                    <col style="width: 230px;">
+                                    <col style="width: auto;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">
+                                            현재 본점소재지
+                                        </th>
+                                        <td>
+                                            서울특별시 종로구 수표로18가길 23 제2동 제1층 [관수동 102-3]
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            변경 본점소재지
+                                        </th>
+                                        <td>
+                                            서울특별시 중구 수표로23 영락빌딩주건축물 제1동 [저동2가 50-1외 1필지
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            이전일시
+                                        </th>
+                                        <td>
+                                            2020년 12월 20일
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    <section class="form-sec">
+                        <div class="sec-body">
+                            <div class="full-bg-wrap">
+                                <span class="datepicker-con mt0">
+                                    <label for="">
+                                        <input type="text" name="" id="" class="datepicker" placeholder="날짜선택">
+                                    </label>
+                                </span>
+                                <p class="name">
+                                    주식회사 원스톱컴퍼니
+                                </p>
+                                <div class="bottom-con">
+                                    <span class="initiator">대표이사 김이동</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="popup-foot">
+                <div class="left-con"></div>
+                <div class="right-con">
+                    <button type="button" class="btn-solid medium color-4d" onclick="popupManager.closePopup()">취소</button>
+                    <button type="button" class="btn-solid medium color-main">전자서명</button>
+                </div>
+            </div>
+        </div>
+        <div class="dim-wrap"></div>
+    </div>
+
+    <!-- COP_02_4_01 사업목적 등록/수정 -->
+    <div class="popup-wrap" id="popup-purpose">
+        <div class="content-wrap">
+            <div class="popup-head">
+                <div class="popup-title">
+                    <h4>사업목적 등록/변경/수정</h4>
+                </div>
+                <div class="close-btn">
+                    <button type="button" onclick="popupManager.closePopup();"><img src="../img/btn_gnb_close.svg" alt="close"></button>
+                </div>
+            </div>
+            <div class="popup-body">
+                <div class="popup-cont">
+                    
+                    <section class="form-sec">
+                        <div class="bg-box-wrap">
+                            <ul class="list-bullet fs-15">
+                                <li>
+                                    <div>사업목적은 ⎡한국표준산업분류표⎦의 분류내용을 참고하여 작성해 주시기 바랍니다.</div>
+                                </li>
+                                <li class="color-error">
+                                    <div>포괄적이거나 추상적인 목적을 입력하시면 안되며 사업의 구체적인 목적을 입력하시기 바랍니다.</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="table-body mt40">
+                            <table class="table-detail">
+                                <caption>사업목적</caption>
+                                <colgroup>
+                                    <col style="width: 250px;">
+                                    <col style="width: auto;">
+                                </colgroup>
+                                <tbody>
+                                    <tr class="element-row">
+                                        <th scope="row">
+                                            <div class="inline-wrap">
+                                                <label for="purpose" class="fs-14 color-5a">사업목적</label>
+                                                <div class="tooltip-wrap">
+                                                    <span class="tooltip-btn right" data-tooltip="trigger" tabindex="0"><img src="../img/ico_qmark@2x.png" alt="Question mark"></span>
+                                                    <div class="tooltip-cont-con" data-tooltip="container">
+                                                        <div class="tooltip-head">
+                                                            <p class="title">사업목적 입력 안내</p>
+                                                            <button type="button" class="close-btn" onclick="tooltipHandler.closeTooltip()">
+                                                                <img src="../img/btn_tooltips_close.svg" alt="닫기">
+                                                            </button>
+                                                        </div>
+                                                        <div class="tooltip-body">
+                                                            <p>하나의 목적번호에는 하나의 목적만 입력해야 하며, 목적번호는 모두 ‘1’ 로 입력합니다.</p>
+                                                            <p class="mt20 fw-bold">
+                                                                예) 입력할 목적이 운수업, 유통업, 각 호에 부대하는 사업인 경우
+                                                            </p>
+                                                            <p class="mt10">
+                                                                목적 입력란에 ‘1 운수업’ 입력 후 우측 하단의 [입력] 버튼을 선택하고<br/>
+                                                                다시 입력란에 ‘1 유통업‘ 입력 후 우측 하단의 [입력] 버튼을 선택하고<br/>
+                                                                마지막으로 ‘1 각 호에 부대하는 사업‘ 입력 후 우측 하단의 [입력] 버튼 선택
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <td class="pr-none">
+                                            <div class="flex-wrap">
+                                                <div class="left-con">
+                                                    <span class="fs-15 fw-bold color-1d">1.</span>
+                                                </div>
+                                                <div class="right-con inline-wrap">
+                                                    <input type="text" name="" id="purpose" class="w308" placeholder="목적입력">
+                                                    <label for="">
+                                                        <input type="text" name="" id="" class="w380" placeholder="영문목적 입력">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="element-row">
+                                        <th scope="row">
+                                            <label for="datepicker0">등기원인일자</label>
+                                        </th>
+                                        <td class="pr-none">
+                                            <span class="datepicker-con">
+                                                <input type="text" name="" id="datepicker0" class="datepicker w336" placeholder="이전일자 선택">
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="element-row">
+                                        <th scope="row">
+                                            <label for="reason">등기원인</label>
+                                        </th>
+                                        <td class="pr-none">
+                                            <div class="inline-wrap">
+                                                <span class="select-con w336">
+                                                    <select name="" id="reason">
+                                                        <option value="">전체</option>
+                                                    </select>
+                                                </span>
+                                                <label for="">
+                                                    <input type="text" name="" id="" class="w380" placeholder="추가원인 입력">
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+            <!-- 등록 -->
+            <div class="popup-foot">
+                <div class="left-con">
+                </div>
+                <div class="right-con">
+                    <button type="button" class="btn-solid medium color-4d">등록취소</button>
+                    <button type="button" class="btn-solid medium">등록 후 계속입력</button>
+                    <button type="button" class="btn-solid medium">등록완료</button>
+                </div>
+            </div>
+            <!-- 변경 -->
+            <div class="popup-foot">
+                <div class="left-con">
+                </div>
+                <div class="right-con">
+                    <button type="button" class="btn-solid medium color-4d">변경취소</button>
+                    <button type="button" class="btn-solid medium">변경완료</button>
+                </div>
+            </div>
+            <!-- 수정 -->
+            <div class="popup-foot">
+                <div class="left-con">
+                </div>
+                <div class="right-con">
+                    <button type="button" class="btn-solid medium color-4d">수정취소</button>
+                    <button type="button" class="btn-solid medium">수정완료</button>
+                </div>
+            </div>
+        </div>
+        <div class="dim-wrap"></div>
+    </div>
+    
+    <!-- COP_02_4_03 주주명부 작성 -->
+    <div class="popup-wrap" id="popup-list">
+        <div class="content-wrap">
+            <div class="popup-head">
+                <div class="popup-title">
+                    <h4>주주명부 작성</h4>
+                </div>
+                <div class="close-btn">
+                    <button type="button" onclick="popupManager.closePopup();"><img src="../img/btn_gnb_close.svg" alt="close"></button>
+                </div>
+            </div>
+            <div class="popup-body">
+                <div class="popup-cont">
+                    <section class="form-sec">
+                        <div class="sec-body">
+                            <div class="table-body">
+                                <table class="table-list">
+                                    <caption>주주명부</caption>
+                                    <colgroup>
+                                        <col style="width: 100px;">
+                                        <col style="width: 180px;">
+                                        <col style="width: auto;">
+                                        <col style="width: 108px;">
+                                        <col style="width: 108px;">
+                                        <col style="width: 108px;">
+                                        <col style="width: 145px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">주주명</th>
+                                            <th scope="col">주민등록번호</th>
+                                            <th scope="col">주소</th>
+                                            <th scope="col">주식의종류</th>
+                                            <th scope="col">1주의금액</th>
+                                            <th scope="col">인구주식수</th>
+                                            <th scope="col">납입금액</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>김이동</td>
+                                            <td class="ff-roboto">720505-1●●●●●●</td>
+                                            <td class="tl">서울특별시 마포구 대흥로6길 11</td>
+                                            <td>보통주</td>
+                                            <td>
+                                                <span class="ff-roboto">1,000</span>원
+                                            </td>
+                                            <td>
+                                                <span class="ff-roboto">50,000</span>주
+                                            </td>
+                                            <td>
+                                                <span class="ff-roboto">50,000,000</span>원
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr class="has-bg-row">
+                                            <td colspan="5" class="tr">
+                                                <span class="fs-14 fw-bold color-1d">합계</span> &nbsp; &nbsp;
+                                            </td>
+                                            <td class="fs-16 fw-bold">
+                                                <span class="color-error">
+                                                    <span class="ff-roboto">50,000</span>주
+                                                </span>
+                                            </td>
+                                            <td class="fs-16 fw-bold">
+                                                <span class="color-error">
+                                                    <span class="ff-roboto">50,000,000</span>원
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="form-sec">
+                        <div class="sec-body">
+                            <div class="full-bg-wrap">
+                                <p class="msg">
+                                    위 주주명부는 본사에 비치된 주주명부와 대조하여 틀림없음을 증명합니다.
+                                </p>
+                                <span class="datepicker-con">
+                                    <label for="">
+                                        <input type="text" name="" id="" class="datepicker" placeholder="날짜선택">
+                                    </label>
+                                </span>
+                                <p class="name">
+                                    주식회사 원스톱컴퍼니
+                                </p>
+                                <div class="bottom-con">
+                                    <span class="initiator">대표이사 김이동</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="popup-foot">
+                <div class="left-con"></div>
+                <div class="right-con">
+                    <button type="button" class="btn-solid medium color-4d" onclick="popupManager.closePopup()">작성취소</button>
+                    <button type="button" class="btn-solid medium color-main">전자서명</button>
+                </div>
+            </div>
+        </div>
+        <div class="dim-wrap"></div>
+    </div>
+
+    <!--COP_02_4_04 주주전원의 서면결의서 작성 -->
+    <div class="popup-wrap" id="popup-resolution2">
+        <div class="content-wrap">
+            <div class="popup-head">
+                <div class="popup-title">
+                    <h4>주주전원의 서면결의서 작성</h4>
+                </div>
+                <div class="close-btn">
+                    <button type="button" onclick="popupManager.closePopup();"><img src="../img/btn_gnb_close.svg" alt="close"></button>
+                </div>
+            </div>
+            <div class="popup-body">
+                <div class="popup-cont">
+                    <section class="form-sec">
+                        <div class="fs-15 color-5a">
+                            <p>주식회사 원스톱컴퍼니</p>
+                            <p class="mt15">
+                                위 회사는 상법 제 363조 제5항 및  제6항에 근거하여 주주전원의 동의로써 주주총회 소집절차를 생략하고 <br/>
+                                임시주주총회의 결의에 갈음하여 주주 전원 서면 동의로써 다음사항을 결정한다.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="form-sec">
+                        <div class="list-border-wrap">
+                            <p class="list-title">결의사항</p>
+                            <p class="list-head">
+                                아래와 같이 목적을 변경(추가)한다
+                            </p>
+                            <ul class="list-border">
+                                <li>
+                                    <p>1.   통신판매업 및 서비스업 (Service)</p>
+                                    <span class="date">2021.08.10</span>
+                                </li>
+                                <li>
+                                    <p>1.   비주거용 건물 임대업 및 전대업</p>
+                                    <span class="date">2021.08.10</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="form-sec">
+                        <div class="sec-body">
+                            <div class="full-bg-wrap">
+                                <p class="msg">
+                                    위 결의 사항에 대하여 이의없이 동의하며, 결의 사항을 명확히 하기 위하여 <br/>
+                                    주주전원이 기명하고 인감을 날인한다.
+                                </p>
+                                <span class="datepicker-con">
+                                    <label for="">
+                                        <input type="text" name="" id="" class="datepicker" placeholder="날짜선택">
+                                    </label>
+                                </span>
+                                <div class="bottom-con mt0">
+                                    <span class="initiator">대표이사 김이동</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="popup-foot">
+                <div class="left-con"></div>
+                <div class="right-con">
+                    <button type="button" class="btn-solid medium color-4d" onclick="popupManager.closePopup()">취소</button>
+                    <button type="button" class="btn-solid medium color-main">전자서명</button>
+                </div>
+            </div>
+        </div>
+        <div class="dim-wrap"></div>
+    </div>
+
+
+
+
+
+
+
+    <!-- 신청중단 메시지 -->
+    <div class="popup-wrap" id="popup-apply-stop">
+        <div class="content-wrap small">
+            <div class="popup-body">
+                <div class="popup-cont">
+                    <p class="fs-18 icon-confirm">
+                        신청을 중단하시겠습니까?
+                    </p>
+                    <p class="fs-15 color-86 mt8">
+                        등록 중인 정보는 자동 저장됩니다.
+                    </p>
+                </div>
+            </div>
+            <div class="popup-foot">
+                <div class="center-con">
+                    <button type="button" class="btn medium" onclick="popupManager.closePopup()">아니오</button>
+                    <button type="button" class="btn-solid medium color-main">예</button>
+                </div>
+            </div>
+        </div>
+        <div class="dim-wrap"></div>
+    </div>
+
+    <!-- Toast 팝업 -->
+    <div class="toast-wrap" id="popup-toast">
+        <div class="toast-con">
+            <p>
+                등기의무자의 전자서명 후 신청서 제출이 가능합니다.<br/>
+                제출 대기 신청서는 3개월까지 보관 가능합니다. (제출가능기한: 2021-12-20)
+            </p>
+        </div>
+    </div>
+
+
+
+
+    <!-- 210824 삭제 -->
+    <!-- 첨부파일 메시지 -->
+    <!-- <div class="popup-wrap" id="popup-file-confirm">
+        <div class="content-wrap small">
+            <div class="popup-body">
+                <div class="popup-cont">
+                    <p class="fs-18 icon-confirm">
+                        첨부로 전환하시겠습니까?
+                    </p>
+                    <p class="fs-15 color-86 mt8">
+                        첨부서면을 업로드할 경우 작성된 서식은 삭제됩니다.<br/>
+                        파일을 등록하시겠습니까?
+                    </p>
+                </div>
+            </div>
+            <div class="popup-foot">
+                <div class="center-con">
+                    <button type="button" class="btn medium" onclick="popupManager.closePopup()">아니오</button>
+                    <button type="button" class="btn-solid medium color-main">예</button>
+                </div>
+            </div>
+        </div>
+        <div class="dim-wrap"></div>
+    </div> -->
+    <!-- 첨부서면 메시지 -->
+    <!-- <div class="popup-wrap" id="popup-attach-confirm">
+        <div class="content-wrap small">
+            <div class="popup-body">
+                <div class="popup-cont">
+                    <p class="fs-18 icon-confirm">
+                        등록된 첨부서면이 있습니다
+                    </p>
+                    <p class="fs-15 color-86 mt8">
+                        서식을 작성할 경우 등록된 첨부서면은 삭제됩니다.<br/>
+                        작성하시겠습니까?
+                    </p>
+                </div>
+            </div>
+            <div class="popup-foot">
+                <div class="center-con">
+                    <button type="button" class="btn medium" onclick="popupManager.closePopup()">아니오</button>
+                    <button type="button" class="btn-solid medium color-main">예</button>
+                </div>
+            </div>
+        </div>
+        <div class="dim-wrap"></div>
+    </div> -->
+    <!-- 신청서 보기 -->
+    <!-- <div class="popup-wrap" id="popup-apply">
+        <div class="content-wrap no-footer">
+            <div class="popup-head">
+                <div class="popup-title">
+                    <h4>신청서 보기</h4>
+                </div>
+                <div class="close-btn">
+                    <button type="button" onclick="popupManager.closePopup();"><img src="../img/btn_gnb_close.svg" alt="close"></button>
+                </div>
+            </div>
+            <div class="popup-body">
+                <div class="popup-cont">
+                    <section>
+                        <div class="popup-only-title">
+                            <h4>주식회사본점이전(관할내)등기신청</h4>
+                        </div>
+                        <div class="table-body mt40">
+                            <table class="table-apply">
+                                <caption>등록정보입력</caption>
+                                <colgroup>
+                                    <col style="width: auto;">
+                                    <col style="width: auto;">
+                                    <col style="width: auto;">
+                                    <col style="width: auto;">
+                                    <col style="width: auto;">
+                                    <col style="width: auto;">
+                                    <col style="width: auto;">
+                                </colgroup>
+                                <tbody class="td-batang">
+                                    <tr>
+                                        <th scope="row">상호</th>
+                                        <td colspan="4">인스플래닛 주식회사 (Insplanet Corp.)</td>
+                                        <th scope="row">등기번호</th>
+                                        <td>123456호</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">본점</th>
+                                        <td colspan="6">서울특별시 중구 수표로 23, 9층 902호(저동2가, 인농빌딩)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">등기의 목적</th>
+                                        <td colspan="6">주식회사 본점이전(관할내)등기</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">등기의 사유</th>
+                                        <td colspan="6">2021년 4월 8일 이사회의 결의에 의하여 2021년 4월 12일 본점을 이전하였으므로 다음 사항의 등기를 구함</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">본/지정신청구분</th>
+                                        <td colspan="6">
+                                            <div class="apply-type-con">
+                                                <span class="selected">1. 본점신청 ▣</span>
+                                                <span>2. 지점신청 □</span>
+                                                <span>3. 본지점일괄신청 □</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" colspan="7" class="inner-title">등기할 사항</th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">본점</th>
+                                        <td colspan="6">
+                                            서울특별시 중구 퇴계로27길 28, 601호 (충무로3가, 한영빌딩)<br/>
+                                            2021년 4월 8일 변경
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <th scope="col" colspan="7" class="inner-title">신청등기소 및 등록면허세/수수료</th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" rowspan="2">순번</th>
+                                        <th scope="col" rowspan="2">신청등기소</th>
+                                        <th scope="col" rowspan="2">구분</th>
+                                        <th scope="col">등록면허세</th>
+                                        <th scope="col" rowspan="2">농어촌특별세</th>
+                                        <th scope="col" rowspan="2">세액합계</th>
+                                        <th scope="col" rowspan="2">등기신청수수료</th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">지방교육세</th>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2">1</td>
+                                        <td rowspan="2">서울중앙지방법원등기국</td>
+                                        <td rowspan="2">본점</td>
+                                        <td>금 112,500원</td>
+                                        <td rowspan="2">금 0원</td>
+                                        <td rowspan="2">금 135,000원</td>
+                                        <td rowspan="2">금 2,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <td>금 22,500원</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" colspan="4">등기신청수수료 납부번호</th>
+                                        <td colspan="3">-</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" colspan="4">첨부서면</th>
+                                        <td colspan="3">행정정보 공동이용 신청 및 정보이용 동의</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="dim-wrap"></div>
+    </div> -->
+
+</body>
+
+</html>

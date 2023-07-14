@@ -1,0 +1,189 @@
+@charset "utf-8";
+
+/*-------------------------------------------------------------------
+    @Accordion
+-------------------------------------------------------------------*/
+.accordion-sec {
+    .sec-head {
+        padding: 15px 24px 12px;
+        border-bottom: 1px solid $color-c3;
+        .title {
+            @include fontDefault(18px, 700, $color-1d);
+        }
+    }
+}
+.accordion-wrap {
+    .accordion-con {
+        > ul > li, > li {
+            border-bottom: 1px solid $color-ed;
+            &.has-title-border {
+                border-bottom: none;
+                .title-con {
+                    border-bottom: 1px solid $color-ed;
+                }
+            }
+            &.has-top-border {
+                border-top: 7px solid $color-f7;
+            }
+            &.active {
+                .title-con {
+                    > p, > h2{
+                        background-image: url("../img/btn_arrow_close.svg");
+                    }
+                }
+                .cont-wrap {
+                    display: block;
+                }
+            }
+        }
+        .title-con {
+            display: block;
+            width: 100%;
+            padding: 15px 24px;
+            cursor: pointer;
+            text-align: left;
+            &-top{
+                display:flex;
+                justify-content: space-between;
+                align-items:center;
+                margin-bottom:6px;
+                .number{
+                    font-family: "Roboto";
+                    @include fontDefault(14px, normal, $color-86);
+                }
+                .date{
+                    @include fontDefault(14px, normal, $color-86);
+                }
+                .count{
+                    min-width:38px;height:24px;
+                    padding:0 9px;
+                    border-radius:14px;
+                    border:1px solid $color-c3;
+                    text-align: center;
+                    @include fontStyler(12px, normal, 24px, normal, $color-1d);
+                }
+            }
+            > p, > h2 {
+                position:relative;
+                padding-right:30px;
+                background: url("../img/btn_arrow_open.svg") no-repeat right center;
+                @include fontDefault(16px, 500, $color-1d);
+                &.bold-title {
+                    @include fontStyler(18px, bold, 1.67, -0.72px, $color-1d);
+                }
+            }
+            span.address {
+                display: inline-block;
+                width: 74%;
+                margin-top: 8px;
+                @include fontStyler(14px, normal, normal, -0.28px, $color-86);
+            }
+        }
+        .cont-wrap {
+            display: none;
+            & + .btn-con {
+                margin: 0 24px 25px;
+            }
+        }
+        .cont-con {
+            padding: 15px 24px 24px;
+            .cont-body {
+                > .title {
+                    margin-bottom:10px;
+                    @include fontDefault(15px, 700, $color-1d);
+                }
+                > .cont {
+                    @include fontDefault(15px, normal, $color-5a);
+                }
+                .detail-info-con {
+                    margin-bottom:25px;
+                }
+                .btn-con {
+                    margin-top: 20px;
+                }
+            }
+        }
+        
+        &.board-type {
+            .cont-con {
+                padding: 0 24px;
+            }
+            .title-con {
+                padding: 24px 24px 25px 24px;
+                > p {
+                    background-position: right 2px;
+                    @include fontDefault(18px, 500, $color-1d);
+                }
+            }
+            > li.active {
+                .title-con {
+                    padding-bottom: 20px;
+                }
+            }
+        }
+        /* 제목 + 버튼 + 리스트형 */
+        &.title-list-type {
+            .accordion-head {
+                padding:24px 24px 12px;
+                border-bottom: 1px solid $color-c3;
+                
+                .accordion-total-btn {
+                    min-width:77px;
+                    height:30px;
+                    border: none;
+                    background:$color-4d;
+                    @include fontDefault(14px, 500, $color-ff); 
+                    &::before {
+                        content: "전체 펼침";
+                        display: inline-block;
+                    }
+                }
+                .title {
+                    @include fontStyler(18px, bold, 1.67, -0.72px, $color-1d);
+                }
+            }
+        }
+        &.is-total-opened {
+            .accordion-head {
+                .accordion-total-btn {
+                    &::before {
+                        content: "전체 닫힘";
+                    }
+                }
+            }
+        }
+        /* 제목 + 버튼형 */
+        &.title-type {
+            .accodion-head {
+                .accodion-btn {
+                    width: 24px;
+                    height: 24px;
+                    background: url("../img/btn_tsicon_arrow_close.svg") no-repeat center;
+                    &::before {
+                        content: "상세보기";
+                        text-indent: -9999px;
+                        display: inline-block;
+                    }
+                }
+            }
+            .accodion-body {
+                margin-top: 10px;
+                display: none;
+                &.active {
+                    display: block;
+                }
+            }
+            .accodion-head.active {
+                & + .accodion-body {
+                    display: block;
+                }
+                .accodion-btn {
+                    background-image: url("../img/btn_tsicon_arrow_open.svg");
+                    &::before {
+                        content: "상세닫기";
+                    }
+                }
+            }
+        }
+    }
+}

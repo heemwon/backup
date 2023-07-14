@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#fff}
+        </style>
+    </defs>
+    <g id="btn_file_delete" transform="translate(-490 2)">
+        <circle id="타원_256" cx="9" cy="9" r="9" fill="#d0d0d0" transform="translate(490 -2)"/>
+        <path id="선_625" d="M0 7L7 0" class="cls-2" transform="translate(495.5 3.5)"/>
+        <path id="선_626" d="M7 7L0 0" class="cls-2" transform="translate(495.5 3.5)"/>
+    </g>
+</svg>

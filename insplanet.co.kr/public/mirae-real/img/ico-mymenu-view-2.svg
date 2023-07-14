@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+    <defs>
+        <style>
+            .cls-2,.cls-3{fill:#fff;stroke:#000;stroke-width:1.5px}.cls-3{fill:#fec867}.cls-6{fill:none}.cls-5{stroke:none}
+        </style>
+    </defs>
+    <g id="ico_mymenu_view2" transform="translate(-1639.027 -586.311)">
+        <path id="Op_component_2" d="M0 0h16.972a4 4 0 0 1 4 4v18H0V0z" class="cls-2" transform="translate(1651.027 610.311)"/>
+        <path id="Op_component_2-2" d="M0 0h22.972v35H0V0z" class="cls-2" transform="translate(1657.027 597.311)"/>
+        <g id="Op_component_1" class="cls-3">
+            <path d="M0 0H5.046V5.046H0z" class="cls-5" transform="translate(1662.513 603.781)"/>
+            <path d="M0.75 0.75H4.295999999999999V4.295999999999999H0.75z" class="cls-6" transform="translate(1662.513 603.781)"/>
+        </g>
+        <g id="Op_component_3" class="cls-3">
+            <path d="M0 0H5.046V5.046H0z" class="cls-5" transform="translate(1662.513 613.018)"/>
+            <path d="M0.75 0.75H4.295999999999999V4.295999999999999H0.75z" class="cls-6" transform="translate(1662.513 613.018)"/>
+        </g>
+        <g id="Group_23" transform="translate(1655.5 583.311)">
+            <path id="Fill_5" d="M6.78 0A6.779 6.779 0 1 1 0 6.78 6.779 6.779 0 0 1 6.78 0" class="cls-2" transform="translate(19.509 20.339)"/>
+            <path id="Stroke_21" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5px" d="M0 0l4.222 4.788" transform="translate(30.978 32.012)"/>
+        </g>
+    </g>
+</svg>

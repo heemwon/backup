@@ -1,0 +1,11 @@
+<svg data-name="ico / 40 / request" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <path style="opacity:.2;fill:none" d="M0 0h40v40H0z"/>
+    <g data-name="Group 19">
+        <path data-name="Stroke 1" d="M0 36V0h30v36z" transform="translate(5 2)" style="stroke:#000;stroke-miterlimit:10;stroke-width:1.5px;fill:#fff"/>
+        <path data-name="Stroke 3" d="M0 .5h8.75" transform="translate(12.666 26.153)" style="stroke:#000;stroke-miterlimit:10;stroke-width:1.5px;fill:none"/>
+        <path data-name="Stroke 5" d="M0 .5h8.75" transform="translate(12.666 30.778)" style="stroke:#000;stroke-miterlimit:10;stroke-width:1.5px;fill:none"/>
+        <path data-name="Stroke 7" d="M2.312 0A2.312 2.312 0 1 1 0 2.312 2.312 2.312 0 0 1 2.312 0z" transform="translate(17.805 6.589)" style="stroke:#000;stroke-miterlimit:10;stroke-width:1.5px;fill:none"/>
+        <path data-name="Stroke 9" d="M0 6.474V4.452A4.454 4.454 0 0 1 4.448 0H8.49a4.453 4.453 0 0 1 4.448 4.452v2.022" transform="translate(13.647 14.913)" style="stroke:#000;stroke-miterlimit:10;stroke-width:1.5px;fill:none"/>
+    </g>
+    <path data-name="Stroke 10" d="M4.831 14.891 0 15.857l.966-4.831L11.593.4a1.366 1.366 0 0 1 1.932 0l1.932 1.931a1.368 1.368 0 0 1 0 1.932z" transform="translate(22.243 22.143)" style="fill:#fec867;stroke-linecap:round;stroke-linejoin:round;stroke:#000;stroke-miterlimit:10;stroke-width:1.5px"/>
+</svg>

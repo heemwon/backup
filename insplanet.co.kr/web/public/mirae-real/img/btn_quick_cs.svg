@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .cls-4{fill:none}.cls-5{fill:#4a5dc6}
+        </style>
+    </defs>
+    <g id="btn_quick_cs" transform="translate(-15 118)">
+        <path id="Container" transform="translate(15 -118)" style="opacity:.135;fill:none" d="M0 0h40v40H0z"/>
+        <circle id="타원_246" data-name="타원 246" cx="20" cy="20" r="20" transform="translate(15 -118)" style="fill:#fff;opacity:.8"/>
+        <g id="Group_10" data-name="Group 10" transform="translate(23 -113)">
+            <path id="Stroke_1" data-name="Stroke 1" d="M0 17.287V9.821A9.891 9.891 0 0 1 9.959 0h3.906a9.891 9.891 0 0 1 9.959 9.821v7.466a9.891 9.891 0 0 1-9.959 9.821H9.959" transform="translate(.573 .602)" style="stroke-miterlimit:10;stroke:#000;stroke-width:1.2px;fill:none"/>
+            <path id="Clip_4" data-name="Clip 4" class="cls-4" d="M0 30.723h25V0H0z"/>
+            <path id="사각형_1246" data-name="사각형 1246" class="cls-5" d="M0 0h3.5A3.5 3.5 0 0 1 7 3.5v3A3.5 3.5 0 0 1 3.5 10 3.5 3.5 0 0 1 0 6.5V0z" transform="translate(0 11.412)"/>
+            <path id="사각형_1247" data-name="사각형 1247" class="cls-5" d="M3.5 0H7v6.5A3.5 3.5 0 0 1 3.5 10 3.5 3.5 0 0 1 0 6.5v-3A3.5 3.5 0 0 1 3.5 0z" transform="translate(18 11.412)"/>
+            <g id="사각형_1248" data-name="사각형 1248" transform="translate(9.715 24.356)" style="fill:#999;stroke-linecap:round;stroke:#000;stroke-width:1.2px">
+                <rect width="6" height="5" rx="2" style="stroke:none"/>
+                <rect class="cls-4" x=".6" y=".6" width="4.8" height="3.8" rx="1.4"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,30 @@
+@charset "utf-8";
+@import "_font.scss";
+
+section {
+    &.title-sec {
+        padding: 0 24px;
+        margin: 20px 0 24px;
+    }
+    &.guide-sec {
+        padding: 0 24px;
+        margin: 40px 0;
+    }
+    &.full {
+        padding: 0;
+    }
+    &.title-sec, &.guide-sec {
+        > div, > p {
+            margin-top: 10px;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+hr.guide-line {
+    margin: 40px 0;
+    border: none;
+    border: 1px solid $color-ed;
+}

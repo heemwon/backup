@@ -1,0 +1,168 @@
+{
+    "portfolio_data" : [
+        {
+            "project_code": 1,
+            "category":"APP / Back office",
+            "title":"국내 최초 AI기반 자동 세무관리 시스템, <strong>세친구</strong>",
+            "thumb_src":{
+                "mobile": "./assets/images/contents/portfolio/m_img_project1_head.png",
+                "pc": "./assets/images/contents/portfolio/img_project1_head.png"
+            },
+            "site_url":"#none",
+            "detail":{
+                "hero_them":"white",
+                "hero_img":{
+                    "mobile": "./assets/images/contents/portfolio/m_img_project1_head.png",
+                    "pc": "./assets/images/contents/portfolio/img_project1_head.png"
+                },
+                "desc":{
+                        "about":"<p>개인사업자를 대상으로 국내 최초로 AI 기반으로 자동 수집된 매출 및 매입정보를 기반으로 재무,세무 관리 서비스를 제공하는 APP 서비스를 분석하여 문서화 업무를 진행하였습니다.</p><p>분석된 내용을 기반으로 신규로 적용되는 모니터링 서비스에 대한 서비스 기획업무가 수행되었습니다.</p>",
+                        "service":"APP / Back office / 내부시스템 문서화 및 모니터링 서비스 기획",
+                        "date":"2021.02 ~ 2021.05",
+                        "device": [0,1,2]
+                    },
+                "body_img":{
+                    "mobile": [],
+                    "pc": []
+                }
+            }
+        },
+        {
+            "project_code": 2,
+            "category":"Website, UI/UX",
+            "title":"신한 금융 그룹의 핀테크 오픈 플랫폼, <strong>신한금융그룹 OPENAPI</strong>",
+            "thumb_src":{
+                "mobile": "./assets/images/contents/portfolio/m_img_project2_head.png",
+                "pc": "./assets/images/contents/portfolio/img_project2_head.png"
+            },
+            "site_url":"https://openapi.shinhan.com/",
+            "detail":{
+                "hero_them":"black",
+                "hero_img":{
+                    "mobile": "./assets/images/contents/portfolio/m_img_project2_head.png",
+                    "pc": "./assets/images/contents/portfolio/img_project2_head.png"
+                },
+                "desc":{
+                    "about":"<p>핀테크 기업 및 일반 개발자들이 금융서비스를 편리하게 개발할 수 있도록 신한 금융 그룹의 금융서비스 API를 제공하는 Market입니다.</p><p>재 수립된 회원 정책을 기반으로 서비스를 재 구성하고 API 사용량 등 다양한 통계 데이터를 시각화 하여 대시보드서비스를 제공하였으며 사용자 편의성이 강화된 UI/UX 개선 업무를 진행하였습니다.</p>",
+                    "service":"Website / Mobile",
+                    "date":"2020.11 ~ 2021.05",
+                    "device": [2]
+                },
+                "body_img":{
+                    "mobile": [
+                        "./assets/images/contents/portfolio/m_img_project2_detail1.png",
+                        "./assets/images/contents/portfolio/m_img_project2_detail2.png",
+                        "./assets/images/contents/portfolio/m_img_project2_detail3.png"
+                    ],
+                    "pc": [
+                        "./assets/images/contents/portfolio/img_project2_detail1.png",
+                        "./assets/images/contents/portfolio/img_project2_detail2.png",
+                        "./assets/images/contents/portfolio/img_project2_detail3.png"
+                    ]
+                }
+            }
+        },
+        {
+            "project_code": 3,
+            "category":"Web site / Mobile 적응형 UI/UX ",
+            "title":"AI가 찾아주는 신개념 기업전용 B2B구매몰, <strong>업무마켓 캐스팅엔</strong>",
+            "thumb_src":{
+                "mobile": "./assets/images/contents/portfolio/m_img_project3_head.png",
+                "pc": "./assets/images/contents/portfolio/img_project3_head.png"
+            },
+            "site_url":"https://mall.castingn.com/casting/",
+            "detail":{
+                "hero_them":"white",
+                "hero_img":{
+                    "mobile": "./assets/images/contents/portfolio/m_img_project3_head.png",
+                    "pc": "./assets/images/contents/portfolio/img_project3_head.png"
+                },
+                "desc":{
+                    "about":"<p>B2B 소싱 플랫폼 캐스팅에서 제공하는 AI 기반 최저가 업무마켓 서비스의 디자인 디렉팅 업무를 진행하였습니다.</p><p>새로운 개념의 업무마켓 서비스를 브랜딩하기 위한 디자인 방향성을 설정하고, 디자인 컨셉 수립 및 주요 화면에 대한 디자인 작업 및 가이드 작업이 진행되었습니다.</p><p>기업구매의 특성을 고려한 사용성이 적용된 UIUX가 반영되었습니다.</p>",
+                    "service":"Website / Mobile / Desktop",
+                    "date":"2020. 12 ~ 2021.01",
+                    "device": [0,1,2]
+                },
+                "body_img":{
+                    "mobile": [
+                        "./assets/images/contents/portfolio/m_img_project3_detail1.png",
+                        "./assets/images/contents/portfolio/m_img_project3_detail2.png"
+                    ],
+                    "pc": [
+                        "./assets/images/contents/portfolio/img_project3_detail1.png",
+                        "./assets/images/contents/portfolio/img_project3_detail2.png"
+                    ]
+                }
+            }
+        },
+        {
+            "project_code": 4,
+            "category":"Web site / Mobile 적응형 UI/UX",
+            "title":"대한민국 군인 복지기관, <strong>군인공제회 자금관리 시스템</strong>",
+            "thumb_src":{
+                "mobile": "./assets/images/contents/portfolio/m_img_project4_head.png",
+                "pc": "./assets/images/contents/portfolio/img_project4_head.png"
+            },
+            "site_url":"#none",
+            "detail":{
+                "hero_them":"white",
+                "hero_img":{
+                    "mobile": "./assets/images/contents/portfolio/m_img_project4_head.png",
+                    "pc": "./assets/images/contents/portfolio/img_project4_head.png"
+                },
+                "desc":{
+                    "about":"<p>대한민국 최고의 군 복지기관인 군인공제의 자금관리시스템 UIUX 업무를 One Source Multi Platform 을 지원하는 xframe 기반으로 진행하였습니다.</p><p>기업의 자금을 관리하는 업무의 특성을 고려하여 다량의 데이터를 제공할 수 있는 UI 를 적용하였으며,<br >데이터 제공 및 처리가능 시점에 따라 유연하게 대응할 수 있도록 설계되었습니다.</p><p>서비스 별로 사용자의 이용률 및 이용빈도, 이용방식이 상이한 특이점을 고려하여 차별화된 UIUX를 제공하였습니다.</p>",
+                    "service":"Website / Mobile",
+                    "date":"2020. 08 ~ 2020.10",
+                    "device": [0,1,2]
+                },
+                "body_img":{
+                    "mobile": [
+                        "./assets/images/contents/portfolio/img_project4_detail1.png"
+                    ],
+                    "pc": [
+                        "./assets/images/contents/portfolio/img_project4_detail1.png"
+                    ]
+                }
+            }
+        },
+        {
+            "project_code": 5,
+            "category":"Website / Mobile Web 반응형 UI/UX",
+            "title":"믿을 수 있는 여행 지식 공유 플랫폼, <strong>트래멘토</strong>",
+            "thumb_src":{
+                "mobile": "./assets/images/contents/portfolio/m_img_project5_head.png",
+                "pc": "./assets/images/contents/portfolio/img_project5_head.png"
+            },
+            "site_url":"http://www.tramentor.com/",
+            "detail":{
+                "hero_them":"white",
+                "hero_img":{
+                    "mobile": "./assets/images/contents/portfolio/m_img_project5_head.png",
+                    "pc": "./assets/images/contents/portfolio/img_project5_head.png"
+                },
+                "desc":{
+                    "about":"<p>모든 회원들은 자유롭게 여행정보를 공유하는 자유여행을 위한 지식공유 커뮤니티 플랫폼인 트래멘토 사이트 구축을 진행하였습니다.</p><p>회원정책 및 수익금 배분 정책 등을 수립하고, 사용자와 관리자 등급에 따른 서비스 차등 제공에 기반한 서비스 기획을 진행하였으며, 여행지식 공유라는 서비스 컨셉을 보다 효과적으로 브랜드 포지셔닝하기 위한 디자인 방향성 수립 및 BI 제작을 진행하였습니다.</p><p>다양한 연령대의 사용자를 고려한 직관적인 UI/UX를 적용하였습니다.</p>",
+                    "service":"Website / Mobile",
+                    "date":"2020. 03 ~ 2020.07",
+                    "device": [0,1,2]
+                },
+                "body_img":{
+                    "mobile": [
+                        "./assets/images/contents/portfolio/m_img_project5_detail1.png",
+                        "./assets/images/contents/portfolio/m_img_project5_detail2.png",
+                        "./assets/images/contents/portfolio/m_img_project5_detail3.png",
+                        "./assets/images/contents/portfolio/m_img_project5_detail4.png"
+                    ],
+                    "pc": [
+                        "./assets/images/contents/portfolio/img_project5_detail1.png",
+                        "./assets/images/contents/portfolio/img_project5_detail2.png",
+                        "./assets/images/contents/portfolio/img_project5_detail3.png",
+                        "./assets/images/contents/portfolio/img_project5_detail4.png"
+                    ]
+                }
+            }
+        }
+    ]
+
+}

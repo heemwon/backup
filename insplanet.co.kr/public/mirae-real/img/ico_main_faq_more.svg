@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-2{fill:#414141}
+        </style>
+    </defs>
+    <g id="ico_main_faq_more" transform="translate(-495 -2)">
+        <path id="Shape" d="M0 1v14a1 1 0 0 0 2 0V1a1 1 0 0 0-2 0z" class="cls-2" transform="translate(506 6)"/>
+        <path id="Shape-2" d="M1 2h14a1 1 0 0 0 0-2H1a1 1 0 0 0 0 2z" class="cls-2" transform="translate(499 13)"/>
+    </g>
+</svg>

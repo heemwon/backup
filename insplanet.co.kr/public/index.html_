@@ -1,0 +1,452 @@
+<!doctype html>
+<html class="no-js" lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no viewport-fit=cover user-scalable=no">
+    <meta >
+
+    <!-- Default Site info -->
+    <title>In's planet Website</title>
+    <meta name="title" content="">
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="apple-mobile-web-app-title" content="">
+
+    <!-- Favicon -->
+
+
+    <!-- Favorites Thumbnails -->
+    <link rel="apple-touch-icon" href="./assets/images/common/hlogo.png">
+    <link rel="image_src" href="./assets/images/common/hlogo.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/insplanet.ico" />
+
+    <!-- for SNS -->
+    <!-- *********************************************************************************************** -->
+
+
+
+    <!-- *********************************************************************************************** -->
+
+    <!-- common CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./assets/css/common.css">
+
+    <!-- CSS for page -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/vendors/swiper/swiper.min.css">
+</head>
+
+<body>
+<!-- Skip Nav -->
+<div id="skip-navi">
+    <a href="#main"><span>본문 바로가기</span></a>
+</div>
+
+<div id="app">
+    <div class="wrapper">
+        <!-- Page Content -->
+        <!-- default theme color: theme-black, white-theme-color: theme-white, *main's white theme: add class 'main'  -->
+        <header>
+            <div class="inner-wrap">
+                <div class="inner-content">
+                    <a href="/" class="hlogo">
+                        <span class="blind">ins'planet logo</span>
+                        <span class="img-logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="196" height="63" viewBox="0 0 196 63">
+                                <defs>
+                                    <path id="prefix__a" d="M60.292 41.885c1.964 0 3.641.706 5.032 2.117 1.39 1.41 2.085 3.113 2.085 5.108 0 1.981-.695 3.677-2.085 5.087-1.39 1.411-3.068 2.117-5.032 2.117-1.644 0-3.128-.55-4.451-1.648v8.018h-2.647V49.11c0-1.995.695-3.697 2.085-5.108 1.39-1.41 3.061-2.117 5.013-2.117zm-57.646.034v14.429H0V41.919h2.646zm12.948 0c1.965 0 3.642.705 5.032 2.117 1.39 1.41 2.086 3.113 2.086 5.107v7.205h-2.647v-7.205c0-1.247-.44-2.32-1.323-3.215-.869-.881-1.918-1.323-3.148-1.323-1.229 0-2.279.442-3.147 1.323-.869.896-1.304 1.968-1.304 3.215v7.205H8.497v-7.205c0-1.994.695-3.696 2.085-5.107 1.39-1.412 3.06-2.117 5.012-2.117zm30.003 0v2.686H38.2c-.428 0-.796.157-1.102.468-.309.312-.462.685-.462 1.12 0 .448.153.828.462 1.14.306.312.674.468 1.102.468h4.852c1.163 0 2.158.414 2.987 1.24.815.842 1.223 1.852 1.223 3.033 0 1.18-.408 2.191-1.223 3.033-.829.827-1.824 1.24-2.987 1.24h-8.56v-2.686h8.56c.427 0 .795-.155 1.102-.468.308-.312.462-.685.462-1.119 0-.448-.154-.827-.462-1.14-.307-.298-.675-.448-1.102-.448l-4.852-.02c-1.163 0-2.152-.413-2.967-1.24-.829-.842-1.243-1.853-1.243-3.033s.414-2.185 1.243-3.012c.815-.842 1.804-1.262 2.967-1.262h7.398zm30.259-5.853v16.008c0 .434.153.807.46 1.119.308.313.676.468 1.103.468h.12v2.687h-.12c-1.162 0-2.152-.414-2.967-1.241-.829-.842-1.243-1.853-1.243-3.033V36.066h2.647zm14.441 5.853c1.964 0 3.642.705 5.032 2.116 1.39 1.412 2.085 3.114 2.085 5.108v7.184h-2.646V54.7c-1.324 1.098-2.815 1.647-4.471 1.647-1.952 0-3.623-.705-5.012-2.116-1.39-1.41-2.085-3.107-2.085-5.088 0-1.994.695-3.696 2.085-5.108 1.39-1.41 3.06-2.116 5.012-2.116zm20.015 0c1.964 0 3.641.705 5.032 2.117 1.39 1.41 2.085 3.113 2.085 5.107v7.205h-2.647v-7.205c0-1.247-.44-2.32-1.323-3.215-.868-.881-1.918-1.323-3.147-1.323-1.23 0-2.28.442-3.148 1.323-.869.896-1.303 1.968-1.303 3.215v7.205h-2.647v-7.205c0-1.994.695-3.696 2.085-5.107 1.39-1.412 3.06-2.117 5.013-2.117zm20.035 0c1.95 0 3.622.705 5.011 2.117 1.39 1.41 2.085 3.113 2.085 5.107 0 .448-.04.889-.12 1.324l-11.227.02c.294.922.822 1.682 1.584 2.28.789.596 1.677.894 2.667.894.788 0 1.576-.183 2.365-.55.829-.378 1.436-.86 1.825-1.444l2.185 1.506c-.628.95-1.544 1.717-2.747 2.3-1.19.583-2.399.875-3.628.875-1.966 0-3.644-.706-5.032-2.117-1.391-1.41-2.086-3.107-2.086-5.088 0-1.994.695-3.696 2.086-5.107 1.388-1.412 3.066-2.117 5.032-2.117zm15.543-5.853v5.853h3.28v2.686h-3.28v7.469c0 .434.154.807.462 1.12.306.311.68.467 1.122.467h4.29v2.686h-4.29c-1.163 0-2.158-.413-2.987-1.24-.816-.842-1.223-1.853-1.223-3.033l-.02-16.008h2.646zm-55.593 8.54c-1.23 0-2.28.44-3.148 1.322-.869.896-1.304 1.968-1.304 3.215 0 1.249.435 2.314 1.304 3.196.869.882 1.918 1.322 3.148 1.322 1.23 0 2.285-.44 3.167-1.322.869-.882 1.304-1.947 1.304-3.196 0-1.247-.435-2.32-1.304-3.215-.882-.881-1.938-1.323-3.167-1.323zm-30.005-.035c-1.23 0-2.28.442-3.148 1.323-.868.896-1.303 1.968-1.303 3.216 0 1.248.435 2.313 1.303 3.195.869.882 1.918 1.322 3.148 1.322 1.23 0 2.286-.44 3.168-1.322.868-.882 1.303-1.947 1.303-3.195 0-1.248-.435-2.32-1.303-3.216-.882-.881-1.938-1.323-3.168-1.323zm70.055.034c-.99 0-1.878.299-2.667.896-.762.597-1.29 1.363-1.584 2.3h8.48c-.294-.937-.822-1.703-1.583-2.3-.79-.597-1.672-.896-2.646-.896zm-97.875-8.539l-3.11 8.6h-2.336l2.785-8.6h2.66zM174.712.7C185.917.7 195 9.92 195 21.294c0 11.373-9.083 20.593-20.288 20.593s-20.288-9.22-20.288-20.593C154.424 9.92 163.507.7 174.712.7zM2.646 36.066v2.903H0v-2.903h2.646zm172.066-17.699c-1.592 0-2.883 1.31-2.883 2.927 0 1.616 1.291 2.926 2.883 2.926s2.882-1.31 2.882-2.926-1.29-2.927-2.882-2.927z"/>
+                                </defs>
+                                <g fill="none" fill-rule="evenodd">
+                                    <mask id="prefix__b" fill="#fff">
+                                        <use xlink:href="#prefix__a"/>
+                                    </mask>
+                                    <use fill="#fff" xlink:href="#prefix__a"/>
+                                    <g fill="#fff" mask="url(#prefix__b)">
+                                        <path d="M0 0H196V63H0z"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </span>
+                    </a>
+
+                    <nav class="gnb">
+                        <div class="nav-bar-wrap">
+                            <div class="main-nav-box">
+                                <ul class="nav-bar">
+                                    <li class="nav-item">
+                                        <a href="#work" class="nav-link active">
+                                            <span class="txt"><span>Work</span></span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#company" class="nav-link">
+                                            <span class="txt"><span>Company</span></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                            <div class="mobile-etc-menu">
+                                <a href="#" class="btn btn-download">
+                                    <span class="txt">Company Brochure</span>
+                                    <span class="icon icon-download"></span>
+                                </a>
+                                <dl class="inquiry-info">
+                                    <dt><span class="txt">채용문의 / 프로젝트 문의</span></dt>
+                                    <dd class="contact">
+                                        <p class="mail"><a href="mailto:hello@insplanet.co.kr">hello@insplanet.co.kr</a></p>
+                                        <p class="tel"><a href="tel:02-2088-5084">Tel 02-2088-5084 (FAX 02-2088-5184)</a></p>
+                                    </dd>
+                                </dl>
+                            </div>
+
+                        </div>
+                    </nav>
+                    <button id="mobile-menu" class="btn-mobile-menu" type="button">
+                        <span class="blind">메뉴보기</span>
+                        <span class="icon-box">
+                            <span class="def">
+                                <svg width="40" height="40" viewBox="0 0 40 40">
+                                    <g fill-rule="evenodd">
+                                        <path d="M6 14H34V16H6zM18 24H34V26H18z"/>
+                                    </g>
+                                </svg>
+                            </span>
+                            <span class="xclose">
+                                <svg width="40" height="40" viewBox="0 0 40 40">
+                                    <g fill-rule="evenodd">
+                                        <path d="M6 19H34V21H6z" transform="rotate(45 20 20)"/>
+                                        <path d="M6 19H34V21H6z" transform="rotate(135 20 20)"/>
+                                    </g>
+                                </svg>
+                            </span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main id="main">
+            <div class="inner-wrap">
+                <div id="work" class="content-section sec-1">
+                    <div class="inner-sec">
+                        <div id="gallery-list-swiper" class="gallery-list-wrap swiper-container">
+                            <ul class="gallery-list swiper-wrapper" style="transform:none">
+                                <!--<li class="list-item swiper-slide">
+                                    <a href="#" class="list-link">
+                                        <figure class="img-holder image-cover">
+                                            <div class="img"></div>
+                                            <figcaption>
+                                                <div class="txt-holder">
+                                                    <strong class="cap"><span>Mobile APP</span></strong>
+                                                    <span class="title"><span>KIA Motors 9</span></span>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>-->
+                            </ul>
+                            <div class="swiper-button-next">
+                                <span class="txt"></span>
+                                <span class="icon"></span>
+                            </div>
+                            <div class="swiper-button-prev">
+                                <span class="txt"></span>
+                                <span class="icon"></span>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="scroll-guide"><span><span>SCROLL</span><span class="line"></span></span></div>
+                    </div>
+                </div>
+                <div id="company" class="content-section sec-2">
+                    <div class="inner-sec">
+                        <div id="parallax1" class="sec-content sec-cont-intro">
+                            <div class="inner-section">
+                                <div class="inner-content-wrap">
+                                    <div class="top-content">
+                                        <div class="txt-holder">
+                                            <h1 class="title">다른 관점에서 더 깊게,<br class="_m"> 새로운 가치를 제공합니다.</h1>
+                                        </div>
+                                    </div>
+                                    <figure class="bg-holder">
+                                        <div class="img-holder image-cover">
+                                            <div class="img"></div>
+                                            <div class="video-box">
+                                                <video playsinline loop preload muted>
+                                                    <!--<source src="http://insplanet.co.kr/dev_ins/assets/images/contents/company/bg-vod-1.mp4"
+                                                            type="video/mp4">-->
+                                                    <source src="./assets/images/contents/company/bg-vod.mp4"
+                                                            type="video/mp4">
+                                                    Sorry, your browser doesn't support embedded videos.
+                                                </video>
+                                            </div>
+                                        </div>
+                                        <figcaption class="blind">배경용 비디오 이미지입니다.</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="scroll-guide"><span><span>SCROLL</span><span class="line"></span></span></div>
+                            </div>
+                        </div>
+                        <div id="parallax2" class="sec-content sec-cont-1">
+                            <div class="inner-section">
+                                <div class="inner-content-wrap">
+                                    <div class="top-content">
+                                        <div class="txt-holder">
+                                            <strong class="cap motion">About In’s Planet</strong>
+                                            <h2 class="title motion">
+                                                새롭고 독창적인 탐색,<br>
+                                                인스플래닛은 경험을 만들어 갑니다.
+                                            </h2>
+                                            <p class="desc motion">
+                                                언제나 흥미로운 아이디어와 격이 다른 아름다운 디자인을 통해<br class="_pc">
+                                                조금 더 즐겁고 진화된 디지털 환경을 만들어 가는데 긍정적인 영향력을 제공하고자 합니다.
+                                            </p>
+                                            <a href="#" class="btn btn-download motion">
+                                                <span class="txt">Company Brochure</span>
+                                                <span class="icon icon-download"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <figure class="img-holder image-contain motion">
+                                        <div class="img"></div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="parallax3" class="sec-content full-bleed-card sec-cont-2">
+                            <div class="inner-section">
+                                <div class="inner-content-wrap">
+                                    <div class="top-content">
+                                        <div class="txt-holder">
+                                            <h3 class="title strip motion">Insight</h3>
+                                            <h4 class="sub-title motion">본질에 대한 이해와 유연한 사고를 통한 무한상상</h4>
+                                            <div class="desc motion">
+                                                브랜드와 서비스의 이해를 기반으로 제공되는 전략적인 UX/UI 컨설팅<br>
+                                                젊은 시각과 논리적 사고에 입각한 서비스 기획과 UI/UX설계로<br>
+                                                일관된 e-Business환경을 지원합니다.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <figure class="img-holder image-cover">
+                                        <div class="img"></div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="parallax4" class="sec-content full-bleed-card sec-cont-3">
+                            <div class="inner-section">
+                                <div class="inner-content-wrap">
+                                    <div class="top-content">
+                                        <div class="txt-holder">
+                                            <h3 class="title strip motion">Interest</h3>
+                                            <h4 class="sub-title motion">독창적인 탐색을 통한 새로운 경험</h4>
+                                            <div class="desc motion">
+                                                고객과의 공감을 바탕으로 한 독창적인 시선으로<br >
+                                                새로운 경험을 제시합니다.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <figure class="img-holder image-cover">
+                                        <div class="img"></div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="parallax5" class="sec-content full-bleed-card sec-cont-4">
+                            <div class="inner-section">
+                                <div class="inner-content-wrap">
+                                    <div class="top-content">
+                                        <div class="txt-holder">
+                                            <h3 class="title strip motion">Innovation</h3>
+                                            <h4 class="sub-title motion">과감한 시도를 통한 놀라운 변화</h4>
+                                            <div class="desc motion">
+                                                고객과 비지니스에 대한 본질적인 이해로<br >
+                                                새로운 가치를 만들어 갑니다.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <figure class="img-holder image-cover">
+                                        <div class="img"></div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="parallax6" class="sec-content sec-cont-5">
+                            <div class="inner-section">
+                                <div class="inner-content-wrap">
+                                <div class="top-content" >
+                                    <div class="txt-holder">
+                                        <h3 class="title motion">
+                                            고객이 생각하는 그 이상을<br class="_m"> 연구하고 고민합니다
+                                        </h3>
+                                        <p class="desc motion">
+                                            인스플래닛은 서비스 전략과 실행 그리고 운영까지<br class="_m"> 일관된 사용자 경험을 제공합니다.<br>
+                                            축적된 경험과 인사이트를 통한 넓은 시야로 고객의<br class="_m"> 가치실현과 모두가 사용하기 편리한 디지털 경험을<br class="_m"> 위해 노력합니다.
+                                        </p>
+                                    </div>
+                                    <div class="img-circles" id="sec-5-top-content">
+                                        <div class="bg-circle img-holder image-contain motion"><div class="img"></div></div>
+
+                                        <div class="circle-wrap">
+                                            <div class="inner-circle-wrap motion">
+                                                <div class="circle circle-1">
+                                                    <div class="inner-circle">
+                                                        <span class="txt">
+                                                        VISUAL<br> STRATEGY
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="circle circle-2">
+                                                    <div class="inner-circle">
+                                                        <span class="txt">
+                                                            WEB/APP<br> SERVICE
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="circle circle-3">
+                                                    <div class="inner-circle">
+                                                        <span class="txt">
+                                                            UI/UX<br> CONSULTING
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="circle circle-4">
+                                                    <div class="inner-circle">
+                                                        <span class="txt">
+                                                            STRATEGY<br> PLANNING
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <figure class="bg-holder">
+                                    <div class="img-holder image-contain motion">
+                                        <div class="img"></div>
+                                        <div class="video-box">
+                                            <video playsinline loop preload muted>
+                                                <!--<source src="http://insplanet.co.kr/dev_ins/assets/images/contents/company/bg-vod-1.mp4"
+                                                        type="video/mp4">-->
+                                                <source src="./assets/images/contents/company/bg-vod.mp4"
+                                                        type="video/mp4">
+                                                Sorry, your browser doesn't support embedded videos.
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <figcaption class="blind">배경용 비디오 이미지입니다.</figcaption>
+                                </figure>
+                            </div>
+                            </div>
+                        </div>
+                        <div id="parallax7" class="sec-content sec-cont-6">
+                            <div class="inner-section">
+                                <div class="inner-content-wrap">
+                                <div class="top-content">
+                                    <div class="txt-holder">
+                                        <h2 class="title motion">
+                                            인스플래닛과 함께하세요
+                                        </h2>
+                                        <p class="desc motion">
+                                            프로젝트를 계획중이시면 언제든 문의 하세요.<br>
+                                            인스플래닛이 함께 고민하겠습니다.
+                                        </p>
+                                        <div class="btm-cont">
+                                            <ul class="company-info motion">
+                                                <li class="list-item">
+                                                    <span class="icon icon-map"></span>
+                                                    <span class="txt"><a href="mailto:hello@insplanet.co.kr">hello@insplanet.co.kr</a></span>
+                                                </li>
+                                                <li class="list-item">
+                                                    <span class="icon icon-navigation"></span>
+                                                    <span class="txt">서울특별시 중구 퇴계로27길 28, 한영빌딩 6F,<br class="_m"> 인스플래닛(주)</span>
+                                                </li>
+                                                <li class="list-item">
+                                                    <span class="icon icon-phone"></span>
+                                                    <span class="txt"><a class="tel" href="tel:02-2088-5084">Tel 02-2088-5084 (FAX 02-2088-5184)</a></span>
+                                                </li>
+                                            </ul>
+                                            <!-- 지도 -->
+                                            <a href="https://www.google.co.kr/maps/place/%EC%9D%B8%EC%8A%A4%ED%94%8C%EB%9E%98%EB%8B%9B/@37.5623372,126.989451,17z/data=!3m1!4b1!4m5!3m4!1s0x357ca3c1e8ddf719:0xacdcd80b4b572316!8m2!3d37.562333!4d126.9916397?hl=ko" target="_blank" class="btn btn-goto-map motion">
+                                                <span class="txt">View google Map</span>
+                                                <span class="icon icon-arr-right"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- 포트폴리오 상세 페이지 -->
+        <aside id="popup-gallery-detail" class="pop-gallery-detail">
+            <div class="pop-overlay">
+                <div class="loader-spinner"><div class="loader"></div></div>
+            </div>
+            <div class="inner-detail">
+                <button class="btn btn-close btn-back-list">
+                    <span class="wrap"></span>
+                    <span class="blind">Go To List</span>
+                </button>
+
+                <div class="dtail-sec-1">
+                    <div class="inner-dtsec">
+                        <div class="detail-content-wrap">
+                            <div class="detail-head">
+                                <h1 class="title"><!-- title --></h1>
+                                <p class="service"><!-- category --></p>
+                                <p class="date"><!-- date --></p>
+                            </div>
+                            <div class="detail-body">
+                                <div class="desc"><!-- project description about --></div>
+                                <ul class="device-list"><!-- device list --></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dtail-sec-2">
+                    <div class="inner-dtsec">
+                        <figure class="img-holder"><!-- images --></figure>
+                    </div>
+                </div>
+
+                <div class="btn-area">
+                    <button class="btn btn-circle big-size btn-back-list">
+                        <span class="txt">Go To List</span>
+                    </button>
+                </div>
+                <!-- 빠르게 다음 페이지이동 안내 -->
+                <div class="next-page-title">
+                    <h2 class="title">
+                        <button type="button"></button>
+                    </h2>
+                </div>
+            </div>
+        </aside>
+
+        <footer>
+            <div class="inner-wrap">
+                <div class="inner-content">
+                    <p class="copyright">©  2020 Ins Planet Inc.</p>
+                </div>
+            </div>
+        </footer>
+
+        <a href="#app" id="goto-top" class="btn-goto-top"><span class="blind">Top</span><span class="icon"></span></a>
+        <!-- //Page Content -->
+    </div>
+</div>
+
+<!-- App JS -->
+<script data-main="assets/js/index" src="./assets/vendors/require.js"></script>
+
+
+</body>
+</html>

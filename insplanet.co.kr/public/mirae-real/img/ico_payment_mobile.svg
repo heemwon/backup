@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#151833;stroke-width:1.5px}
+        </style>
+    </defs>
+    <g id="ico_payment_mobile" transform="translate(-1100.5 -434.999)">
+        <g id="사각형_1844" class="cls-2">
+            <path d="M0 0H16V24H0z" transform="translate(1104.5 434.999)"/>
+            <path fill="none" d="M0.75 0.75H15.25V23.25H0.75z" transform="translate(1104.5 434.999)"/>
+        </g>
+        <path id="선_566" d="M0 0L4 0" class="cls-2" transform="translate(1110.5 439.499)"/>
+        <path id="선_567" d="M0 0L14 0" class="cls-2" transform="translate(1105 454.499)"/>
+    </g>
+</svg>

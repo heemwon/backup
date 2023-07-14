@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <g data-name="사각형 1819" style="stroke-width:1.5px;stroke:#1d1d1d;fill:#fff">
+        <path style="stroke:none" d="M0 0h24v32H0z" transform="translate(7 8)"/>
+        <path style="fill:none" d="M.75.75h22.5v30.5H.75z" transform="translate(7 8)"/>
+    </g>
+    <g data-name="사각형 1818" style="stroke-width:1.5px;stroke:#1d1d1d;fill:#fff">
+        <path style="stroke:none" d="M0 0h24v40H0z" transform="translate(1)"/>
+        <path style="fill:none" d="M.75.75h22.5v38.5H.75z" transform="translate(1)"/>
+    </g>
+    <path data-name="Op component 1" transform="translate(6.967 6.47)" style="stroke:#000;stroke-width:1.5px;fill:#fff" d="M0 0h5v5H0z"/>
+    <path data-name="Op component 3" transform="translate(6.967 15.707)" style="stroke:#000;stroke-width:1.5px;fill:#fff" d="M0 0h5v5H0z"/>
+    <g data-name="그룹 3649">
+        <g data-name="타원 215" transform="translate(17)" style="fill:#33386f;stroke:#000;stroke-width:1.5px">
+            <circle cx="11.5" cy="11.5" r="11.5" style="stroke:none"/>
+            <circle cx="11.5" cy="11.5" r="10.75" style="fill:none"/>
+        </g>
+        <path data-name="패스 3526" d="m24.9 3.6 2.281 7.474L29.442 3.6l2.325 7.474 1.9-7.474" transform="translate(-.618 4.693)" style="stroke-linejoin:round;stroke:#fff;stroke-linecap:round;fill:none;stroke-width:1.5px"/>
+        <path data-name="선 296" transform="translate(23.5 10.642)" style="stroke:#fff;stroke-linecap:round;fill:none;stroke-width:1.5px" d="M0 0h10.18"/>
+    </g>
+</svg>

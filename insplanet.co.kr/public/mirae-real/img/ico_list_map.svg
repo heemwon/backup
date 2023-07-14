@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="사각형_1439" fill="red" d="M0 0H24V24H0z" opacity="0.2" transform="translate(1273 232)"/>
+        </clipPath>
+        <style>
+            .cls-3{fill:#ebe6d3}
+        </style>
+    </defs>
+    <g id="ico_list_map" clip-path="url(#clip-path)" transform="translate(-1273 -232)">
+        <g id="ico">
+            <g id="map" transform="translate(1273.748 236.48)">
+                <path id="패스_3635" d="M329.9 102.6v14.061l7.291 3.643v-14.056z" class="cls-3" transform="translate(-329.9 -102.344)"/>
+                <path id="패스_3638" fill="#d8d1b9" d="M179.5 101.5l7.547-3.9v13.981l-7.547 3.969V101.5z" transform="translate(-172.208 -97.595)"/>
+                <path id="패스_3645" d="M36.8 97.505V111.5l7.161 3.638v-14.055L36.8 97.5z" class="cls-3" transform="translate(-21.961 -97.5)"/>
+                <g id="그룹_2827" transform="rotate(-14.98 14.306 -2.006)">
+                    <path id="패스_3646" fill="none" stroke="#868fad" stroke-linecap="round" stroke-width="2px" d="M17.252 3.324l-.625 5.748" transform="rotate(30 15.578 2.372)"/>
+                    <g id="타원_234" fill="#fff" stroke="#dc3636" stroke-width="2.5px" transform="rotate(30 15.078 29.706)">
+                        <circle cx="4" cy="4" r="4" stroke="none"/>
+                        <circle cx="4" cy="4" r="2.75" fill="none"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

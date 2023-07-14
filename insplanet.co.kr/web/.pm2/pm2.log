@@ -1,0 +1,705 @@
+2020-05-22T15:50:08: PM2 log: ===============================================================================
+2020-05-22T15:50:08: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2020-05-22T15:50:08: PM2 log: Time                 : Fri May 22 2020 15:50:08 GMT+0900 (GMT+09:00)
+2020-05-22T15:50:08: PM2 log: PM2 version          : 4.4.0
+2020-05-22T15:50:08: PM2 log: Node.js version      : 12.13.1
+2020-05-22T15:50:08: PM2 log: Current arch         : x64
+2020-05-22T15:50:08: PM2 log: PM2 home             : /web/.pm2
+2020-05-22T15:50:08: PM2 log: PM2 PID file         : /web/.pm2/pm2.pid
+2020-05-22T15:50:08: PM2 log: RPC socket file      : /web/.pm2/rpc.sock
+2020-05-22T15:50:08: PM2 log: BUS socket file      : /web/.pm2/pub.sock
+2020-05-22T15:50:08: PM2 log: Application log path : /web/.pm2/logs
+2020-05-22T15:50:08: PM2 log: Worker Interval      : 30000
+2020-05-22T15:50:08: PM2 log: Process dump file    : /web/.pm2/dump.pm2
+2020-05-22T15:50:08: PM2 log: Concurrent actions   : 2
+2020-05-22T15:50:08: PM2 log: SIGTERM timeout      : 1600
+2020-05-22T15:50:08: PM2 log: ===============================================================================
+2020-05-22T15:50:08: PM2 log: App [index:0] starting in -fork mode-
+2020-05-22T15:50:08: PM2 log: App [index:0] online
+2020-05-22T15:55:45: PM2 log: Stopping app:index id:0
+2020-05-22T15:55:45: PM2 log: App [index:0] exited with code [0] via signal [SIGINT]
+2020-05-22T15:55:45: PM2 log: pid=2719 msg=process killed
+2020-05-22T15:55:50: PM2 log: App [index:0] starting in -fork mode-
+2020-05-22T15:55:51: PM2 log: App [index:0] online
+2020-05-22T16:00:01: PM2 log: Stopping app:index id:0
+2020-05-22T16:00:01: PM2 log: App [index:0] exited with code [0] via signal [SIGINT]
+2020-05-22T16:00:01: PM2 log: pid=2807 msg=process killed
+2020-05-22T16:00:36: PM2 log: App [index:0] starting in -fork mode-
+2020-05-22T16:00:36: PM2 log: App [index:0] online
+2020-05-22T16:01:23: PM2 log: Stopping app:index id:0
+2020-05-22T16:01:23: PM2 log: App [index:0] exited with code [0] via signal [SIGINT]
+2020-05-22T16:01:23: PM2 log: pid=3055 msg=process killed
+2020-05-22T16:02:19: PM2 log: App [index:0] starting in -fork mode-
+2020-05-22T16:02:19: PM2 log: App [index:0] online
+2020-05-22T16:03:18: PM2 log: Stopping app:index id:0
+2020-05-22T16:03:18: PM2 log: App [index:0] exited with code [0] via signal [SIGINT]
+2020-05-22T16:03:18: PM2 log: pid=3105 msg=process killed
+2020-05-22T16:11:16: PM2 log: App [www:1] starting in -fork mode-
+2020-05-22T16:11:16: PM2 log: App [www:1] online
+2020-05-22T16:11:52: PM2 log: Stopping app:www id:1
+2020-05-22T16:11:52: PM2 log: App [www:1] exited with code [0] via signal [SIGINT]
+2020-05-22T16:11:52: PM2 log: pid=3431 msg=process killed
+2020-05-22T16:12:06: PM2 log: App [www:1] starting in -fork mode-
+2020-05-22T16:12:06: PM2 log: App [www:1] online
+2020-05-22T16:21:14: PM2 log: Stopping app:www id:1
+2020-05-22T16:21:14: PM2 log: App [www:1] exited with code [0] via signal [SIGINT]
+2020-05-22T16:21:14: PM2 log: pid=3480 msg=process killed
+2020-05-22T16:21:36: PM2 log: App [www:1] starting in -fork mode-
+2020-05-22T16:21:36: PM2 log: App [www:1] online
+2020-08-18T15:49:18: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-08-18T15:49:18: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-08-19T15:49:18: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-08-19T15:49:18: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-08-20T15:49:17: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-08-20T15:49:17: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-08-21T15:49:17: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-08-21T15:49:17: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-08-22T15:49:16: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-08-22T15:49:16: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-08-23T15:49:15: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-08-23T15:49:15: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-08-24T15:49:15: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-08-24T15:49:15: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-08-25T15:49:14: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-08-25T15:49:14: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-08-26T15:49:13: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-08-26T15:49:13: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-08-27T15:49:13: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-08-27T15:49:13: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-08-28T15:49:12: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-08-28T15:49:12: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-08-29T15:49:12: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-08-29T15:49:12: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-08-30T15:49:12: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-08-30T15:49:12: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-08-31T15:49:12: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-08-31T15:49:12: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-09-01T15:49:11: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-09-01T15:49:11: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-09-02T15:49:11: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-09-02T15:49:11: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-09-03T15:49:10: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-09-03T15:49:10: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-09-04T15:49:10: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-09-04T15:49:10: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-09-05T15:49:10: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-09-05T15:49:10: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-09-06T15:49:09: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-09-06T15:49:09: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-09-07T15:49:08: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-09-07T15:49:08: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-09-08T15:49:08: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-09-08T15:49:08: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-09-09T15:49:07: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-09-09T15:49:07: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-09-10T15:49:06: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-09-10T15:49:06: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-09-11T15:49:06: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-09-11T15:49:06: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-09-12T15:49:06: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-09-12T15:49:06: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-09-13T15:49:06: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-09-13T15:49:06: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-09-14T15:49:05: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-09-14T15:49:05: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-09-15T15:49:05: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-09-15T15:49:05: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-09-16T15:49:05: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-09-16T15:49:05: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-09-17T15:49:04: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-09-17T15:49:04: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-09-18T15:49:03: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-09-18T15:49:03: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-09-19T15:49:02: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-09-19T15:49:02: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-09-20T15:49:02: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-09-20T15:49:02: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-09-21T15:49:01: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-09-21T15:49:01: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-09-22T15:49:01: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-09-22T15:49:01: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-09-23T15:49:01: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-09-23T15:49:01: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-09-24T15:49:01: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-09-24T15:49:01: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-09-25T15:49:00: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-09-25T15:49:00: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-09-26T15:49:00: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-09-26T15:49:00: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-09-27T15:49:00: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-09-27T15:49:00: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-09-28T15:48:59: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-09-28T15:48:59: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-09-29T15:48:58: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-09-29T15:48:58: PM2 log: [PM2] Upgrade to version 4.4.1
+2020-09-30T15:48:58: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-09-30T15:48:58: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-10-01T15:48:58: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-10-01T15:48:58: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-10-02T15:48:57: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-10-02T15:48:57: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-10-03T15:48:57: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-10-03T15:48:57: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-10-04T15:48:57: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-10-04T15:48:57: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-10-05T15:48:56: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-10-05T15:48:56: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-10-06T15:48:55: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-10-06T15:48:55: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-10-07T15:48:55: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-10-07T15:48:55: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-10-08T15:48:54: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-10-08T15:48:54: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-10-09T15:48:54: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-10-09T15:48:54: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-10-10T15:48:53: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-10-10T15:48:53: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-10-11T15:48:52: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-10-11T15:48:52: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-10-12T15:48:51: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-10-12T15:48:51: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-10-13T15:48:51: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-10-13T15:48:51: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-10-14T15:48:51: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-10-14T15:48:51: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-10-15T15:48:50: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-10-15T15:48:50: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-10-16T15:48:49: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-10-16T15:48:49: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-10-17T15:48:49: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-10-17T15:48:49: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-10-18T15:48:48: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-10-18T15:48:48: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-10-19T15:48:48: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-10-19T15:48:48: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-10-20T15:48:47: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-10-20T15:48:47: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-10-21T15:48:46: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-10-21T15:48:46: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-10-22T15:48:45: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-10-22T15:48:45: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-10-23T15:48:45: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-10-23T15:48:45: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-10-24T15:48:44: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-10-24T15:48:44: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-10-25T15:48:43: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-10-25T15:48:43: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-10-26T15:48:43: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-10-26T15:48:43: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-10-27T15:48:42: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-10-27T15:48:42: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-10-28T15:48:41: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-10-28T15:48:41: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-10-29T15:48:41: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-10-29T15:48:41: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-10-30T15:48:40: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-10-30T15:48:40: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-10-31T15:48:40: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-10-31T15:48:40: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-11-01T15:48:39: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-11-01T15:48:39: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-11-02T15:48:39: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-11-02T15:48:39: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-11-03T15:48:39: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-11-03T15:48:39: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-11-04T15:48:38: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-11-04T15:48:38: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-11-05T15:48:37: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-11-05T15:48:37: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-11-06T15:48:37: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-11-06T15:48:37: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-11-07T15:48:36: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-11-07T15:48:36: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-11-08T15:48:35: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-11-08T15:48:35: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-11-09T15:48:35: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-11-09T15:48:35: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-11-10T15:48:35: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-11-10T15:48:35: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-11-11T15:48:34: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-11-11T15:48:34: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-11-12T15:48:34: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-11-12T15:48:34: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-11-13T15:48:33: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-11-13T15:48:33: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-11-14T15:48:32: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-11-14T15:48:32: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-11-15T15:48:32: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-11-15T15:48:32: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-11-16T15:48:32: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-11-16T15:48:32: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-11-17T15:48:31: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-11-17T15:48:31: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-11-18T15:48:30: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-11-18T15:48:30: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-11-19T15:48:29: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-11-19T15:48:29: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-11-20T15:48:29: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-11-20T15:48:29: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-11-21T15:48:28: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-11-21T15:48:28: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-11-22T15:48:27: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-11-22T15:48:27: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-11-23T15:48:26: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-11-23T15:48:26: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-11-24T15:48:27: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-11-24T15:48:27: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-11-25T15:48:26: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-11-25T15:48:26: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-11-26T15:48:26: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-11-26T15:48:26: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-11-27T15:48:25: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-11-27T15:48:25: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-11-28T15:48:25: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-11-28T15:48:25: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-11-29T15:48:24: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-11-29T15:48:24: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-11-30T15:48:25: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-11-30T15:48:25: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-12-01T15:48:24: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-12-01T15:48:24: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-12-02T15:48:23: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-12-02T15:48:23: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-12-03T15:48:23: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-12-03T15:48:23: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-12-04T15:48:22: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-12-04T15:48:22: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-12-05T15:48:21: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-12-05T15:48:21: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-12-06T15:48:20: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-12-06T15:48:20: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-12-07T15:48:20: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-12-07T15:48:20: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-12-08T15:48:19: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-12-08T15:48:19: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-12-09T15:48:18: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-12-09T15:48:18: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-12-10T15:48:18: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-12-10T15:48:18: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-12-11T15:48:17: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-12-11T15:48:17: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-12-12T15:48:16: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-12-12T15:48:16: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-12-13T15:48:16: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-12-13T15:48:16: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-12-14T15:48:16: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-12-14T15:48:16: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-12-15T15:48:15: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-12-15T15:48:15: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-12-16T15:48:14: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-12-16T15:48:14: PM2 log: [PM2] Upgrade to version 4.5.0
+2020-12-17T15:48:13: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-12-17T15:48:13: PM2 log: [PM2] Upgrade to version 4.5.1
+2020-12-18T15:48:13: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-12-18T15:48:13: PM2 log: [PM2] Upgrade to version 4.5.1
+2020-12-19T15:48:12: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-12-19T15:48:12: PM2 log: [PM2] Upgrade to version 4.5.1
+2020-12-20T15:48:12: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-12-20T15:48:12: PM2 log: [PM2] Upgrade to version 4.5.1
+2020-12-21T15:48:11: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-12-21T15:48:11: PM2 log: [PM2] Upgrade to version 4.5.1
+2020-12-22T15:48:10: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-12-22T15:48:10: PM2 log: [PM2] Upgrade to version 4.5.1
+2020-12-23T15:48:09: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-12-23T15:48:09: PM2 log: [PM2] Upgrade to version 4.5.1
+2020-12-24T15:48:09: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-12-24T15:48:09: PM2 log: [PM2] Upgrade to version 4.5.1
+2020-12-25T15:48:08: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-12-25T15:48:08: PM2 log: [PM2] Upgrade to version 4.5.1
+2020-12-26T15:48:07: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-12-26T15:48:07: PM2 log: [PM2] Upgrade to version 4.5.1
+2020-12-27T15:48:07: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-12-27T15:48:07: PM2 log: [PM2] Upgrade to version 4.5.1
+2020-12-28T15:48:06: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-12-28T15:48:06: PM2 log: [PM2] Upgrade to version 4.5.1
+2020-12-29T15:48:05: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-12-29T15:48:05: PM2 log: [PM2] Upgrade to version 4.5.1
+2020-12-30T15:48:05: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-12-30T15:48:05: PM2 log: [PM2] Upgrade to version 4.5.1
+2020-12-31T15:48:04: PM2 log: [PM2] This PM2 is not UP TO DATE
+2020-12-31T15:48:04: PM2 log: [PM2] Upgrade to version 4.5.1
+2021-01-01T15:48:03: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-01-01T15:48:03: PM2 log: [PM2] Upgrade to version 4.5.1
+2021-01-02T15:48:03: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-01-02T15:48:03: PM2 log: [PM2] Upgrade to version 4.5.1
+2021-01-03T15:48:02: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-01-03T15:48:02: PM2 log: [PM2] Upgrade to version 4.5.1
+2021-01-04T15:48:02: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-01-04T15:48:02: PM2 log: [PM2] Upgrade to version 4.5.1
+2021-01-05T15:48:01: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-01-05T15:48:01: PM2 log: [PM2] Upgrade to version 4.5.1
+2021-01-06T15:48:00: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-01-06T15:48:00: PM2 log: [PM2] Upgrade to version 4.5.1
+2021-01-07T15:48:00: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-01-07T15:48:00: PM2 log: [PM2] Upgrade to version 4.5.1
+2021-01-08T15:47:59: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-01-08T15:47:59: PM2 log: [PM2] Upgrade to version 4.5.1
+2021-01-09T15:47:58: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-01-09T15:47:58: PM2 log: [PM2] Upgrade to version 4.5.1
+2021-01-10T15:47:58: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-01-10T15:47:58: PM2 log: [PM2] Upgrade to version 4.5.1
+2021-01-11T15:47:57: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-01-11T15:47:57: PM2 log: [PM2] Upgrade to version 4.5.1
+2021-01-12T15:47:56: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-01-12T15:47:56: PM2 log: [PM2] Upgrade to version 4.5.1
+2021-01-13T15:47:56: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-01-13T15:47:56: PM2 log: [PM2] Upgrade to version 4.5.1
+2021-01-14T15:47:55: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-01-14T15:47:55: PM2 log: [PM2] Upgrade to version 4.5.1
+2021-01-15T15:47:55: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-01-15T15:47:55: PM2 log: [PM2] Upgrade to version 4.5.1
+2021-01-16T15:47:55: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-01-16T15:47:55: PM2 log: [PM2] Upgrade to version 4.5.1
+2021-01-17T15:47:54: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-01-17T15:47:54: PM2 log: [PM2] Upgrade to version 4.5.1
+2021-01-18T15:47:54: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-01-18T15:47:54: PM2 log: [PM2] Upgrade to version 4.5.1
+2021-01-19T15:47:54: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-01-19T15:47:54: PM2 log: [PM2] Upgrade to version 4.5.1
+2021-01-20T15:47:53: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-01-20T15:47:53: PM2 log: [PM2] Upgrade to version 4.5.1
+2021-01-21T15:47:53: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-01-21T15:47:53: PM2 log: [PM2] Upgrade to version 4.5.1
+2021-01-22T15:47:53: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-01-22T15:47:53: PM2 log: [PM2] Upgrade to version 4.5.1
+2021-01-23T15:47:52: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-01-23T15:47:52: PM2 log: [PM2] Upgrade to version 4.5.1
+2021-01-24T15:47:52: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-01-24T15:47:52: PM2 log: [PM2] Upgrade to version 4.5.1
+2021-01-25T15:47:51: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-01-25T15:47:51: PM2 log: [PM2] Upgrade to version 4.5.1
+2021-01-26T15:47:51: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-01-26T15:47:51: PM2 log: [PM2] Upgrade to version 4.5.1
+2021-01-27T15:47:50: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-01-27T15:47:50: PM2 log: [PM2] Upgrade to version 4.5.1
+2021-01-28T15:47:50: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-01-28T15:47:50: PM2 log: [PM2] Upgrade to version 4.5.1
+2021-01-29T15:47:49: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-01-29T15:47:49: PM2 log: [PM2] Upgrade to version 4.5.1
+2021-01-30T15:47:48: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-01-30T15:47:48: PM2 log: [PM2] Upgrade to version 4.5.2
+2021-01-31T15:47:47: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-01-31T15:47:47: PM2 log: [PM2] Upgrade to version 4.5.2
+2021-02-01T15:47:47: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-02-01T15:47:47: PM2 log: [PM2] Upgrade to version 4.5.4
+2021-02-02T15:47:46: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-02-02T15:47:46: PM2 log: [PM2] Upgrade to version 4.5.4
+2021-02-03T15:47:45: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-02-03T15:47:45: PM2 log: [PM2] Upgrade to version 4.5.4
+2021-02-04T15:47:45: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-02-04T15:47:45: PM2 log: [PM2] Upgrade to version 4.5.4
+2021-02-05T15:47:44: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-02-05T15:47:44: PM2 log: [PM2] Upgrade to version 4.5.4
+2021-02-06T15:47:44: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-02-06T15:47:44: PM2 log: [PM2] Upgrade to version 4.5.4
+2021-02-07T15:47:43: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-02-07T15:47:43: PM2 log: [PM2] Upgrade to version 4.5.4
+2021-02-08T15:47:42: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-02-08T15:47:42: PM2 log: [PM2] Upgrade to version 4.5.4
+2021-02-09T15:47:41: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-02-09T15:47:41: PM2 log: [PM2] Upgrade to version 4.5.4
+2021-02-10T15:47:41: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-02-10T15:47:41: PM2 log: [PM2] Upgrade to version 4.5.4
+2021-02-11T15:47:40: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-02-11T15:47:40: PM2 log: [PM2] Upgrade to version 4.5.4
+2021-02-12T15:47:39: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-02-12T15:47:39: PM2 log: [PM2] Upgrade to version 4.5.4
+2021-02-13T15:47:39: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-02-13T15:47:39: PM2 log: [PM2] Upgrade to version 4.5.4
+2021-02-14T15:47:38: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-02-14T15:47:38: PM2 log: [PM2] Upgrade to version 4.5.4
+2021-02-15T15:47:37: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-02-15T15:47:37: PM2 log: [PM2] Upgrade to version 4.5.4
+2021-02-16T15:47:36: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-02-16T15:47:36: PM2 log: [PM2] Upgrade to version 4.5.4
+2021-02-17T15:47:35: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-02-17T15:47:35: PM2 log: [PM2] Upgrade to version 4.5.4
+2021-02-18T15:47:35: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-02-18T15:47:35: PM2 log: [PM2] Upgrade to version 4.5.4
+2021-02-19T15:47:35: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-02-19T15:47:35: PM2 log: [PM2] Upgrade to version 4.5.4
+2021-02-20T15:47:34: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-02-20T15:47:34: PM2 log: [PM2] Upgrade to version 4.5.4
+2021-02-21T15:47:34: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-02-21T15:47:34: PM2 log: [PM2] Upgrade to version 4.5.4
+2021-02-22T15:47:33: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-02-22T15:47:33: PM2 log: [PM2] Upgrade to version 4.5.4
+2021-02-23T15:47:33: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-02-23T15:47:33: PM2 log: [PM2] Upgrade to version 4.5.4
+2021-02-24T15:47:32: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-02-24T15:47:32: PM2 log: [PM2] Upgrade to version 4.5.4
+2021-02-25T15:47:32: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-02-25T15:47:32: PM2 log: [PM2] Upgrade to version 4.5.4
+2021-02-26T15:47:31: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-02-26T15:47:31: PM2 log: [PM2] Upgrade to version 4.5.5
+2021-02-27T15:47:31: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-02-27T15:47:31: PM2 log: [PM2] Upgrade to version 4.5.5
+2021-02-28T15:47:31: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-02-28T15:47:31: PM2 log: [PM2] Upgrade to version 4.5.5
+2021-03-01T15:47:30: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-03-01T15:47:30: PM2 log: [PM2] Upgrade to version 4.5.5
+2021-03-02T15:47:29: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-03-02T15:47:29: PM2 log: [PM2] Upgrade to version 4.5.5
+2021-03-03T15:47:29: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-03-03T15:47:29: PM2 log: [PM2] Upgrade to version 4.5.5
+2021-03-04T15:47:29: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-03-04T15:47:29: PM2 log: [PM2] Upgrade to version 4.5.5
+2021-03-05T15:47:28: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-03-05T15:47:28: PM2 log: [PM2] Upgrade to version 4.5.5
+2021-03-06T15:47:27: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-03-06T15:47:27: PM2 log: [PM2] Upgrade to version 4.5.5
+2021-03-07T15:47:27: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-03-07T15:47:27: PM2 log: [PM2] Upgrade to version 4.5.5
+2021-03-08T15:47:26: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-03-08T15:47:26: PM2 log: [PM2] Upgrade to version 4.5.5
+2021-03-09T15:47:26: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-03-09T15:47:26: PM2 log: [PM2] Upgrade to version 4.5.5
+2021-03-10T15:47:25: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-03-10T15:47:25: PM2 log: [PM2] Upgrade to version 4.5.5
+2021-03-11T15:47:25: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-03-11T15:47:25: PM2 log: [PM2] Upgrade to version 4.5.5
+2021-03-12T15:47:24: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-03-12T15:47:24: PM2 log: [PM2] Upgrade to version 4.5.5
+2021-03-13T15:47:23: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-03-13T15:47:23: PM2 log: [PM2] Upgrade to version 4.5.5
+2021-03-14T15:47:23: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-03-14T15:47:23: PM2 log: [PM2] Upgrade to version 4.5.5
+2021-03-15T15:47:22: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-03-15T15:47:22: PM2 log: [PM2] Upgrade to version 4.5.5
+2021-03-16T15:47:22: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-03-16T15:47:22: PM2 log: [PM2] Upgrade to version 4.5.5
+2021-03-17T15:47:21: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-03-17T15:47:21: PM2 log: [PM2] Upgrade to version 4.5.5
+2021-03-18T15:47:21: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-03-18T15:47:21: PM2 log: [PM2] Upgrade to version 4.5.5
+2021-03-19T15:47:20: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-03-19T15:47:20: PM2 log: [PM2] Upgrade to version 4.5.5
+2021-03-20T15:47:19: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-03-20T15:47:19: PM2 log: [PM2] Upgrade to version 4.5.5
+2021-03-21T15:47:19: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-03-21T15:47:19: PM2 log: [PM2] Upgrade to version 4.5.5
+2021-03-22T15:47:18: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-03-22T15:47:18: PM2 log: [PM2] Upgrade to version 4.5.5
+2021-03-23T15:47:18: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-03-23T15:47:18: PM2 log: [PM2] Upgrade to version 4.5.5
+2021-03-24T15:47:17: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-03-24T15:47:17: PM2 log: [PM2] Upgrade to version 4.5.5
+2021-03-25T15:47:16: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-03-25T15:47:16: PM2 log: [PM2] Upgrade to version 4.5.5
+2021-03-26T15:47:15: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-03-26T15:47:15: PM2 log: [PM2] Upgrade to version 4.5.5
+2021-03-27T15:47:15: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-03-27T15:47:15: PM2 log: [PM2] Upgrade to version 4.5.5
+2021-03-28T15:47:14: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-03-28T15:47:14: PM2 log: [PM2] Upgrade to version 4.5.5
+2021-03-29T15:47:13: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-03-29T15:47:13: PM2 log: [PM2] Upgrade to version 4.5.5
+2021-03-30T15:47:12: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-03-30T15:47:12: PM2 log: [PM2] Upgrade to version 4.5.5
+2021-03-31T15:47:12: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-03-31T15:47:12: PM2 log: [PM2] Upgrade to version 4.5.5
+2021-04-01T15:47:11: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-04-01T15:47:11: PM2 log: [PM2] Upgrade to version 4.5.5
+2021-04-02T15:47:11: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-04-02T15:47:11: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-04-03T15:47:10: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-04-03T15:47:10: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-04-04T15:47:10: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-04-04T15:47:10: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-04-05T15:47:10: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-04-05T15:47:10: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-04-06T15:47:09: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-04-06T15:47:09: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-04-07T15:47:08: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-04-07T15:47:08: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-04-08T15:47:07: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-04-08T15:47:07: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-04-09T15:47:07: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-04-09T15:47:07: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-04-10T15:47:06: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-04-10T15:47:06: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-04-11T15:47:05: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-04-11T15:47:05: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-04-12T15:47:05: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-04-12T15:47:05: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-04-13T15:47:04: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-04-13T15:47:04: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-04-14T15:47:03: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-04-14T15:47:03: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-04-15T15:47:02: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-04-15T15:47:02: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-04-16T15:47:01: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-04-16T15:47:01: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-04-17T15:47:01: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-04-17T15:47:01: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-04-18T15:47:01: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-04-18T15:47:01: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-04-19T15:47:01: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-04-19T15:47:01: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-04-20T15:47:00: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-04-20T15:47:00: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-04-21T15:46:59: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-04-21T15:46:59: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-04-22T15:46:59: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-04-22T15:46:59: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-04-23T15:46:59: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-04-23T15:46:59: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-04-24T15:46:59: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-04-24T15:46:59: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-04-25T15:46:58: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-04-25T15:46:58: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-04-26T15:46:57: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-04-26T15:46:57: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-04-27T15:46:56: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-04-27T15:46:56: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-04-28T15:46:56: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-04-28T15:46:56: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-04-29T15:46:55: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-04-29T15:46:55: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-04-30T15:46:54: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-04-30T15:46:54: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-05-01T15:46:53: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-05-01T15:46:53: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-05-02T15:46:53: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-05-02T15:46:53: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-05-03T15:46:53: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-05-03T15:46:53: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-05-04T15:46:53: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-05-04T15:46:53: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-05-05T15:46:53: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-05-05T15:46:53: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-05-06T15:46:52: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-05-06T15:46:52: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-05-07T15:46:51: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-05-07T15:46:51: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-05-08T15:46:51: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-05-08T15:46:51: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-05-09T15:46:51: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-05-09T15:46:51: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-05-10T15:46:51: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-05-10T15:46:51: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-05-11T15:46:51: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-05-11T15:46:51: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-05-12T15:46:50: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-05-12T15:46:50: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-05-13T15:46:49: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-05-13T15:46:49: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-05-14T15:46:48: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-05-14T15:46:48: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-05-15T15:46:48: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-05-15T15:46:48: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-05-16T15:46:47: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-05-16T15:46:47: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-05-17T15:46:46: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-05-17T15:46:46: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-05-18T15:46:46: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-05-18T15:46:46: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-05-19T15:46:45: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-05-19T15:46:45: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-05-20T15:46:45: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-05-20T15:46:45: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-05-21T15:46:44: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-05-21T15:46:44: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-05-22T15:46:44: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-05-22T15:46:44: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-05-23T15:46:43: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-05-23T15:46:43: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-05-24T15:46:43: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-05-24T15:46:43: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-05-25T15:46:42: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-05-25T15:46:42: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-05-26T15:46:42: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-05-26T15:46:42: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-05-27T15:46:41: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-05-27T15:46:41: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-05-28T15:46:40: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-05-28T15:46:40: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-05-29T15:46:40: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-05-29T15:46:40: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-05-30T15:46:40: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-05-30T15:46:40: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-05-31T15:46:39: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-05-31T15:46:39: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-06-01T15:46:38: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-06-01T15:46:38: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-06-02T15:46:38: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-06-02T15:46:38: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-06-03T15:46:38: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-06-03T15:46:38: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-06-04T15:46:37: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-06-04T15:46:37: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-06-05T15:46:36: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-06-05T15:46:36: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-06-06T15:46:36: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-06-06T15:46:36: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-06-07T15:46:35: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-06-07T15:46:35: PM2 log: [PM2] Upgrade to version 4.5.6
+2021-06-08T15:46:35: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-06-08T15:46:35: PM2 log: [PM2] Upgrade to version 5.0.0
+2021-06-09T15:46:34: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-06-09T15:46:34: PM2 log: [PM2] Upgrade to version 5.0.4
+2021-06-10T15:46:34: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-06-10T15:46:34: PM2 log: [PM2] Upgrade to version 5.0.4
+2021-06-11T15:46:34: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-06-11T15:46:34: PM2 log: [PM2] Upgrade to version 5.1.0
+2021-06-12T15:46:34: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-06-12T15:46:34: PM2 log: [PM2] Upgrade to version 5.1.0
+2021-06-13T15:46:34: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-06-13T15:46:34: PM2 log: [PM2] Upgrade to version 5.1.0
+2021-06-14T15:46:33: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-06-14T15:46:33: PM2 log: [PM2] Upgrade to version 5.1.0
+2021-06-15T15:46:32: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-06-15T15:46:32: PM2 log: [PM2] Upgrade to version 5.1.0
+2021-06-16T15:46:32: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-06-16T15:46:32: PM2 log: [PM2] Upgrade to version 5.1.0
+2021-06-17T15:46:31: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-06-17T15:46:31: PM2 log: [PM2] Upgrade to version 5.1.0
+2021-06-18T15:46:30: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-06-18T15:46:30: PM2 log: [PM2] Upgrade to version 5.1.0
+2021-06-19T15:46:30: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-06-19T15:46:30: PM2 log: [PM2] Upgrade to version 5.1.0
+2021-06-20T15:46:29: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-06-20T15:46:29: PM2 log: [PM2] Upgrade to version 5.1.0
+2021-06-21T15:46:28: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-06-21T15:46:28: PM2 log: [PM2] Upgrade to version 5.1.0
+2021-06-22T15:46:28: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-06-22T15:46:28: PM2 log: [PM2] Upgrade to version 5.1.0
+2021-06-23T15:46:27: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-06-23T15:46:27: PM2 log: [PM2] Upgrade to version 5.1.0
+2021-06-24T15:46:27: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-06-24T15:46:27: PM2 log: [PM2] Upgrade to version 5.1.0
+2021-06-25T15:46:26: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-06-25T15:46:26: PM2 log: [PM2] Upgrade to version 5.1.0
+2021-06-26T15:46:26: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-06-26T15:46:26: PM2 log: [PM2] Upgrade to version 5.1.0
+2021-06-27T15:46:25: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-06-27T15:46:25: PM2 log: [PM2] Upgrade to version 5.1.0
+2021-06-28T15:46:25: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-06-28T15:46:25: PM2 log: [PM2] Upgrade to version 5.1.0
+2021-06-29T15:46:24: PM2 log: [PM2] This PM2 is not UP TO DATE
+2021-06-29T15:46:24: PM2 log: [PM2] Upgrade to version 5.1.0
+2021-06-30T10:32:22: PM2 error: Error: ENOSPC: no space left on device, write
+2021-06-30T10:32:22: PM2 error: Error [ERR_STREAM_DESTROYED]: Cannot call write after a stream was destroyed
+2021-06-30T10:32:22: PM2 error: Error [ERR_STREAM_DESTROYED]: Cannot call write after a stream was destroyed
+2021-06-30T10:32:22: PM2 error: Error [ERR_STREAM_DESTROYED]: Cannot call write after a stream was destroyed
+2021-06-30T10:32:22: PM2 error: Error [ERR_STREAM_DESTROYED]: Cannot call write after a stream was destroyed
+2021-06-30T10:32:22: PM2 error: Error [ERR_STREAM_DESTROYED]: Cannot call write after a stream was destroyed
+2021-06-30T10:32:22: PM2 error: Error [ERR_STREAM_DESTROYED]: Cannot call write after a stream was destroyed
+2021-06-30T10:32:22: PM2 error: Error [ERR_STREAM_DESTROYED]: Cannot call write after a stream was destroyed
+2021-06-30T10:32:22: PM2 error: Error [ERR_STREAM_DESTROYED]: Cannot call write after a stream was destroyed
+2021-06-30T10:32:22: PM2 error: Error [ERR_STREAM_DESTROYED]: Cannot call write after a stream was destroyed
+2021-06-30T10:32:22: PM2 error: Error [ERR_STREAM_DESTROYED]: Cannot call write after a stream was destroyed
+2021-06-30T10:32:22: PM2 error: Error [ERR_STREAM_DESTROYED]: Cannot call write after a stream was destroyed
+2021-06-30T10:32:22: PM2 error: Error [ERR_STREAM_DESTROYED]: Cannot call write after a stream was destroyed
+2021-06-30T10:32:22: PM2 error: Error [ERR_STREAM_DESTROYED]: Cannot call write after a stream was destroyed
+2021-06-30T10:32:22: PM2 error: Error [ERR_STREAM_DESTROYED]: Cannot call write after a stream was destroyed
+2021-06-30T10:32:58: PM2 error: Error [ERR_STREAM_DESTROYED]: Cannot call write after a stream was destroyed
+2021-06-30T10:32:58: PM2 error: Error [ERR_STREAM_DESTROYED]: Cannot call write after a stream was destroyed
+2021-06-30T10:32:58: PM2 error: Error [ERR_STREAM_DESTROYED]: Cannot call write after a stream was destroyed
+2021-06-30T10:32:58: PM2 error: Error [ERR_STREAM_DESTROYED]: Cannot call write after a stream was destroyed
+2021-06-30T10:32:58: PM2 error: Error [ERR_STREAM_DESTROYED]: Cannot call write after a stream was destroyed
+2021-06-30T10:32:58: PM2 error: Error [ERR_STREAM_DESTROYED]: Cannot call write after a stream was destroyed
+2021-06-30T10:32:58: PM2 error: Error [ERR_STREAM_DESTROYED]: Cannot call write after a stream was destroyed
+2021-06-30T10:32:58: PM2 error: Error [ERR_STREAM_DESTROYED]: Cannot call write after a stream was destroyed
+2021-06-30T10:32:58: PM2 error: Error [ERR_STREAM_DESTROYED]: Cannot call write after a stream was destroyed
+2021-06-30T10:32:58: PM2 error: Error [ERR_STREAM_DESTROYED]: Cannot call write after a stream w

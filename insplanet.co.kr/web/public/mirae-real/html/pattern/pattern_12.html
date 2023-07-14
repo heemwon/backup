@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../../js/libs/jquery.min.js"></script>
+    <script src="../../js/libs/jquery-ui.min.js"></script>
+    <script src="../../js/libs/jquery.selectric.js"></script>
+    <script src="../../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../../js/sub.js"></script>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/guide.css">
+    <link rel="stylesheet" href="../../css/sub.css">
+    <title>패턴</title>
+    <style>
+        
+        .area-content .contain-help {display:block;position:relative;margin:30px;}
+        .area-content .contain-help .contain-inner {position:relative;left:0 !important;right:0 !important;top:0 !important;bottom:0 !important;height:500px !important;}
+        .area-content .contain-help .box-body {}
+        .area-content .contain-help .box-body .box-inner.full {max-height:500px !important;}
+    </style>
+</head>
+
+<body>
+    <div class="apply-wrap mb50">
+        
+        
+
+        <div class="title-wrap">
+            <h2 class="mb30">12-1. 간편도움말 - 이용안내</h2>
+        </div>
+        <div class="flex-wrap mb50">
+            
+            <div class="cont-wrap area-content">
+                <h3>12-1-1. 열람∙발급(예시)</h3>
+
+                <div class="contain-help"><!-- area-content에 'help'클래스 추가/삭제 -->
+                    <div class="contain-inner">
+        
+                        <h1 class="title">간편도움말</h1>
+                        <div class="tab-anchor">
+                            <button class="on">이용안내</button>
+                            <button>용어검색</button>
+                            <button>자주묻는질문</button>
+                        </div>
+                        <div class="box-body tab-help1 on">
+                            <div class="box-inner full">
+                                <dl class="help-define">
+                                    <dt>서비스 이용방법</dt>
+                                    <dd>
+                                        <ul class="list-help">
+                                            <li>등기 열람서비스를 이용하시려면 <strong>인터넷등기소 이용약관을 읽으시고 동의</strong>하셔야 합니다.</li>
+                                            <li>비회원은 전화번호와 비밀번호를 입력하여 서비스를 이용하실 수 있습니다.</li>
+                                            <li>서비스 이용은 회원과 비회원 모두 가능하나, 결제방식에 차이가 있습니다.
+                                                <ul>
+                                                    <li><strong>로그인한 회원의 경우 여러 개의 등기기록을 한 번에 결제할 수 있습니다.</strong></li>
+                                                    <li><strong>비회원의 경우 등기기록을 1건씩 결제해야 합니다.</strong></li>
+                                                </ul>
+                                            </li>
+                                            <li>등기 열람서비스를 통해 결제하신 부동산 등기기록은 모바일 기기로도 열람하실 수 있습니다.</li>
+                                            <li><span class="color-04">결제 당일(결제시점~24:00)만 결제취소가 가능하며, 열람 후에는 결제취소가 불가능합니다.</span> <br >
+                                                날짜가 변경되기 직전이나 야간 서비스 중단시간 직전에는 수수료 결제를 최대한 자제해 주시기 바랍니다.</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                                <dl class="help-define">
+                                    <dt>등기 열람서비스 이용시간</dt>
+                                    <dd>
+                                        <ul class="list-help">
+                                            <li><strong class="color-4b">24시간(365일)</strong></li>
+                                            <li>등기업무 전산시스템 정기점검이나 시스템 업그레이드 작업이 있는 날에는 서비스를 일시 중단할 수 있습니다.</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="box-body tab-help2">
+                            <div class="box-inner">
+                                <div class="list-search-con">
+                                    <span class="clear-btn-con"><input type="text" name="" id="total-search2" class="search-input" placeholder="등기용어 검색"><span class="clear-btn" style="display: none;"></span></span>
+                                    <button type="button" class="search-btn">
+                                        <img src="../../img/btn_board_search.svg" alt="search">
+                                    </button>
+                                </div>
+                                <dl class="help-define">
+                                    <dt>자주찾는 등기용어</dt>
+                                    <dd>
+                                        <div class="accordion-wrap">
+                                            <ul class="accordion-con" data-accordion="container">
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">대기사용권(대지권)</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용 
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">갑구</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">을구</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">전세권</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">근저당권</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="box-more">
+                                                <a href="" ><strong>15개</strong>의 결과 더보기</a>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                           </div>
+                            <span class="link-more"><a href="">등기용어해설 바로가기</a></span>
+                        </div>
+                        <div class="box-body tab-help3">
+                            <div class="box-inner">
+                                <div class="list-search-con">
+                                    <span class="clear-btn-con"><input type="text" name="" id="total-search2" class="search-input" placeholder="질문 검색"><span class="clear-btn" style="display: none;"></span></span>
+                                    <button type="button" class="search-btn">
+                                        <img src="../../img/btn_board_search.svg" alt="search">
+                                    </button>
+                                </div>
+                                <dl class="help-define">
+                                    <dt>많이 본 도움말</dt>
+                                    <dd>
+                                        <div class="accordion-wrap">
+                                            <ul class="accordion-con" data-accordion="container">
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">전자신청-인증서 갱신 및 변경</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">전자신청시스템 XecureWeb 설치 관련</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">전자서명 방법</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">전자신청 제출방법</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">승인문서 검색 및 승인 방법</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="box-more">
+                                                <a href="" ><strong>15개</strong>의 결과 더보기</a>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <span class="link-more"><a href="">자주묻는질문 바로가기</a></span>
+                        </div>
+                        <span class="btn-close"><button>닫기</button></span>
+        
+                    </div>
+                </div>
+
+            </div>
+            <div class="cont-wrap area-content">
+                <h3>12-1-2. 신청(예시)</h3>
+
+                <div class="contain-help"><!-- area-content에 'help'클래스 추가/삭제 -->
+                    <div class="contain-inner">
+        
+                        <h1 class="title">간편도움말</h1>
+                        <div class="tab-anchor">
+                            <button class="on">이용안내</button>
+                            <button>용어검색</button>
+                            <button>자주묻는질문</button>
+                        </div>
+                        <div class="box-body tab-help1 on">
+                            <div class="box-inner full">
+                                <dl class="help-define">
+                                    <dt>사전준비사항</dt>
+                                    <dd>
+                                        <p>인터넷등기소를 통해 등기를 신청하시려면 <strong class="color-4b">인증서(범용용도제한용 불문) 발급</strong>과 <strong class="color-4b">사용자 등록</strong>이 필요합니다.</p>
+                                        <div class="mt10 mb30">
+                                            <a href="" class="link-infor">인증서 발급안내</a>
+                                            <a href="" class="link-infor">전자신청 사용자등록 안내</a>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl class="help-define">
+                                    <dt>전자신청 절차</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>❶ 인증서 발급(금융기관 등)</li>
+                                            <li>❷ 사용자 접근번호 발급(등기소 방문)</li>
+                                            <li>❸ 전자신청 사용자등록</li>
+                                            <li>❹ 사용자 인증(로그인)</li>
+                                            <li>❺ 신청서 기재사항 입력(1~3단계)</li>
+                                            <li>❻ 첨부서면 등록 및 행정정보 공동연계 요청</li>
+                                            <li>❼ 등기필정보 입력 또는 전자확인서면 작성</li>
+                                            <li>❽ 전자위임장 작성 및 전자서명</li>
+                                            <li>❾ 신청사항 승인 또는 확인서면 승인</li>
+                                            <li>❿ 신청수수료 전자결제</li>
+                                            <li>⓫ 신청서 전자적 제출</li>
+                                            <li>⓬ 등기신청 처리내역 조회</li>
+                                            <li>⓭ 등기필정보 및 등기완료통지서의 전자수령</li>
+                                        </ul>
+                                        <div class="mt10 mb10">
+                                            <a href="" class="link-infor">전자신청 신청가능 등기유형안내</a>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="box-body tab-help2">
+                            <div class="box-inner">
+                                <div class="list-search-con">
+                                    <span class="clear-btn-con"><input type="text" name="" id="total-search2" class="search-input" placeholder="등기용어 검색"><span class="clear-btn" style="display: none;"></span></span>
+                                    <button type="button" class="search-btn">
+                                        <img src="../../img/btn_board_search.svg" alt="search">
+                                    </button>
+                                </div>
+                                <dl class="help-define">
+                                    <dt>자주찾는 등기용어</dt>
+                                    <dd>
+                                        <div class="accordion-wrap">
+                                            <ul class="accordion-con" data-accordion="container">
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">대기사용권(대지권)</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용 
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">갑구</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">을구</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">전세권</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">근저당권</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="box-more">
+                                                <a href="" ><strong>15개</strong>의 결과 더보기</a>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                           </div>
+                            <span class="link-more"><a href="">등기용어해설 바로가기</a></span>
+                        </div>
+                        <div class="box-body tab-help3">
+                            <div class="box-inner">
+                                <div class="list-search-con">
+                                    <span class="clear-btn-con"><input type="text" name="" id="total-search2" class="search-input" placeholder="질문 검색"><span class="clear-btn" style="display: none;"></span></span>
+                                    <button type="button" class="search-btn">
+                                        <img src="../../img/btn_board_search.svg" alt="search">
+                                    </button>
+                                </div>
+                                <dl class="help-define">
+                                    <dt>많이 본 도움말</dt>
+                                    <dd>
+                                        <div class="accordion-wrap">
+                                            <ul class="accordion-con" data-accordion="container">
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">전자신청-인증서 갱신 및 변경</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">전자신청시스템 XecureWeb 설치 관련</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">전자서명 방법</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">전자신청 제출방법</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">승인문서 검색 및 승인 방법</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="box-more">
+                                                <a href="" ><strong>15개</strong>의 결과 더보기</a>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <span class="link-more"><a href="">자주묻는질문 바로가기</a></span>
+                        </div>
+                        <span class="btn-close"><button>닫기</button></span>
+        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="title-wrap">
+            <h2 class="mb30">12-2. 간편도움말 - 용어검색</h2>
+        </div>
+        <div class="flex-wrap mb50">
+            
+            <div class="cont-wrap area-content">
+                <h3>12-2-1. 검색 전</h3>
+
+                <div class="contain-help"><!-- area-content에 'help'클래스 추가/삭제 -->
+                    <div class="contain-inner">
+        
+                        <h1 class="title">간편도움말</h1>
+                        <div class="tab-anchor">
+                            <button>이용안내</button>
+                            <button class="on">용어검색</button>
+                            <button>자주묻는질문</button>
+                        </div>
+                        <div class="box-body tab-help1">
+                            <div class="box-inner full">
+                                <dl class="help-define">
+                                    <dt>서비스 이용방법</dt>
+                                    <dd>
+                                        <ul class="list-help">
+                                            <li>등기 열람서비스를 이용하시려면 <strong>인터넷등기소 이용약관을 읽으시고 동의</strong>하셔야 합니다.</li>
+                                            <li>비회원은 전화번호와 비밀번호를 입력하여 서비스를 이용하실 수 있습니다.</li>
+                                            <li>서비스 이용은 회원과 비회원 모두 가능하나, 결제방식에 차이가 있습니다.
+                                                <ul>
+                                                    <li><strong>로그인한 회원의 경우 여러 개의 등기기록을 한 번에 결제할 수 있습니다.</strong></li>
+                                                    <li><strong>비회원의 경우 등기기록을 1건씩 결제해야 합니다.</strong></li>
+                                                </ul>
+                                            </li>
+                                            <li>등기 열람서비스를 통해 결제하신 부동산 등기기록은 모바일 기기로도 열람하실 수 있습니다.</li>
+                                            <li><span class="color-04">결제 당일(결제시점~24:00)만 결제취소가 가능하며, 열람 후에는 결제취소가 불가능합니다.</span> <br >
+                                                날짜가 변경되기 직전이나 야간 서비스 중단시간 직전에는 수수료 결제를 최대한 자제해 주시기 바랍니다.</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                                <dl class="help-define">
+                                    <dt>등기 열람서비스 이용시간</dt>
+                                    <dd>
+                                        <ul class="list-help">
+                                            <li><strong class="color-4b">24시간(365일)</strong></li>
+                                            <li>등기업무 전산시스템 정기점검이나 시스템 업그레이드 작업이 있는 날에는 서비스를 일시 중단할 수 있습니다.</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="box-body tab-help2 on">
+                            <div class="box-inner">
+                                <div class="list-search-con">
+                                    <span class="clear-btn-con"><input type="text" name="" id="total-search2" class="search-input" placeholder="등기용어 검색"><span class="clear-btn" style="display: none;"></span></span>
+                                    <button type="button" class="search-btn">
+                                        <img src="../../img/btn_board_search.svg" alt="search">
+                                    </button>
+                                </div>
+                                <dl class="help-define">
+                                    <dt>자주찾는 등기용어</dt>
+                                    <dd>
+                                        <div class="accordion-wrap">
+                                            <ul class="accordion-con" data-accordion="container">
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">대기사용권(대지권)</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용 
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">갑구</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">을구</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">전세권</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">근저당권</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="box-more">
+                                                <a href="" ><strong>15개</strong>의 결과 더보기</a>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                           </div>
+                            <span class="link-more"><a href="">등기용어해설 바로가기</a></span>
+                        </div>
+                        <div class="box-body tab-help3">
+                            <div class="box-inner">
+                                <div class="list-search-con">
+                                    <span class="clear-btn-con"><input type="text" name="" id="total-search2" class="search-input" placeholder="질문 검색"><span class="clear-btn" style="display: none;"></span></span>
+                                    <button type="button" class="search-btn">
+                                        <img src="../../img/btn_board_search.svg" alt="search">
+                                    </button>
+                                </div>
+                                <dl class="help-define">
+                                    <dt>많이 본 도움말</dt>
+                                    <dd>
+                                        <div class="accordion-wrap">
+                                            <ul class="accordion-con" data-accordion="container">
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">전자신청-인증서 갱신 및 변경</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">전자신청시스템 XecureWeb 설치 관련</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">전자서명 방법</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">전자신청 제출방법</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">승인문서 검색 및 승인 방법</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="box-more">
+                                                <a href="" ><strong>15개</strong>의 결과 더보기</a>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <span class="link-more"><a href="">자주묻는질문 바로가기</a></span>
+                        </div>
+                        <span class="btn-close"><button>닫기</button></span>
+        
+                    </div>
+                </div>
+            </div>
+            <div class="cont-wrap area-content">
+                <h3>12-2-2. 검색 후</h3>
+
+                <div class="contain-help"><!-- area-content에 'help'클래스 추가/삭제 -->
+                    <div class="contain-inner">
+        
+                        <h1 class="title">간편도움말</h1>
+                        <div class="tab-anchor">
+                            <button>이용안내</button>
+                            <button class="on">용어검색</button>
+                            <button>자주묻는질문</button>
+                        </div>
+                        <div class="box-body tab-help1">
+                            <div class="box-inner full">
+                                <dl class="help-define">
+                                    <dt>서비스 이용방법</dt>
+                                    <dd>
+                                        <ul class="list-help">
+                                            <li>등기 열람서비스를 이용하시려면 <strong>인터넷등기소 이용약관을 읽으시고 동의</strong>하셔야 합니다.</li>
+                                            <li>비회원은 전화번호와 비밀번호를 입력하여 서비스를 이용하실 수 있습니다.</li>
+                                            <li>서비스 이용은 회원과 비회원 모두 가능하나, 결제방식에 차이가 있습니다.
+                                                <ul>
+                                                    <li><strong>로그인한 회원의 경우 여러 개의 등기기록을 한 번에 결제할 수 있습니다.</strong></li>
+                                                    <li><strong>비회원의 경우 등기기록을 1건씩 결제해야 합니다.</strong></li>
+                                                </ul>
+                                            </li>
+                                            <li>등기 열람서비스를 통해 결제하신 부동산 등기기록은 모바일 기기로도 열람하실 수 있습니다.</li>
+                                            <li><span class="color-04">결제 당일(결제시점~24:00)만 결제취소가 가능하며, 열람 후에는 결제취소가 불가능합니다.</span> <br >
+                                                날짜가 변경되기 직전이나 야간 서비스 중단시간 직전에는 수수료 결제를 최대한 자제해 주시기 바랍니다.</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                                <dl class="help-define">
+                                    <dt>등기 열람서비스 이용시간</dt>
+                                    <dd>
+                                        <ul class="list-help">
+                                            <li><strong class="color-4b">24시간(365일)</strong></li>
+                                            <li>등기업무 전산시스템 정기점검이나 시스템 업그레이드 작업이 있는 날에는 서비스를 일시 중단할 수 있습니다.</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="box-body tab-help2 on">
+                            <div class="box-inner">
+                                <div class="list-search-con">
+                                    <span class="clear-btn-con"><input type="text" name="" id="total-search2" class="search-input" placeholder="등기용어 검색" value="가등기"><span class="clear-btn" style="display: none;"></span></span>
+                                    <button type="button" class="search-btn">
+                                        <img src="../../img/btn_board_search.svg" alt="search">
+                                    </button>
+                                </div>
+                                <dl class="help-define">
+                                    <div class="accordion-wrap">
+                                        <ul class="accordion-con" data-accordion="container">
+                                            <li data-accordion="item" class="active">
+                                                <button type="button" class="title-con" data-accordion="trigger">
+                                                    <span class="title">가등기</span>
+                                                </button>
+                                                <div class="cont-wrap">
+                                                    <div class="cont-con">
+                                                        <div class="cont-body">
+                                                            <p class="cont">
+                                                                권리의 설정, 이전, 변경, 소멸의 청구권을 보전하려고 할 때 또는 그 청구권이 시기부, 조건부이거나 장래에 있어서 확정할 것인 때에 그 본등기의 순위보전을 위하여 하는 예비등기이다.<br >
+                                                                페이징 필요 시 화면 예시
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li data-accordion="item" class="">
+                                                <button type="button" class="title-con" data-accordion="trigger">
+                                                    <span class="title">가등기 가처분</span>
+                                                </button>
+                                                <div class="cont-wrap">
+                                                    <div class="cont-con">
+                                                        <div class="cont-body">
+                                                            <p class="cont">
+                                                                내용
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li data-accordion="item" class="">
+                                                <button type="button" class="title-con" data-accordion="trigger">
+                                                    <span class="title">가등기 및 본등기말소</span>
+                                                </button>
+                                                <div class="cont-wrap">
+                                                    <div class="cont-con">
+                                                        <div class="cont-body">
+                                                            <p class="cont">
+                                                                내용
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li data-accordion="item" class="">
+                                                <button type="button" class="title-con" data-accordion="trigger">
+                                                    <span class="title">가등기 말소</span>
+                                                </button>
+                                                <div class="cont-wrap">
+                                                    <div class="cont-con">
+                                                        <div class="cont-body">
+                                                            <p class="cont">
+                                                                내용
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li data-accordion="item" class="">
+                                                <button type="button" class="title-con" data-accordion="trigger">
+                                                    <span class="title">가등기 담보</span>
+                                                </button>
+                                                <div class="cont-wrap">
+                                                    <div class="cont-con">
+                                                        <div class="cont-body">
+                                                            <p class="cont">
+                                                                내용
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="box-more">
+                                            <a href="" ><strong>15개</strong>의 결과 더보기</a>
+                                        </div>
+                                    </div>
+                           </div>
+                            <span class="link-more"><a href="">등기용어해설 바로가기</a></span>
+                        </div>
+                        <div class="box-body tab-help3">
+                            <div class="box-inner">
+                                <div class="list-search-con">
+                                    <span class="clear-btn-con"><input type="text" name="" id="total-search2" class="search-input" placeholder="질문 검색"><span class="clear-btn" style="display: none;"></span></span>
+                                    <button type="button" class="search-btn">
+                                        <img src="../../img/btn_board_search.svg" alt="search">
+                                    </button>
+                                </div>
+                                <dl class="help-define">
+                                    <dt>많이 본 도움말</dt>
+                                    <dd>
+                                        <div class="accordion-wrap">
+                                            <ul class="accordion-con" data-accordion="container">
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">전자신청-인증서 갱신 및 변경</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">전자신청시스템 XecureWeb 설치 관련</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">전자서명 방법</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">전자신청 제출방법</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">승인문서 검색 및 승인 방법</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="box-more">
+                                                <a href="" ><strong>15개</strong>의 결과 더보기</a>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <span class="link-more"><a href="">자주묻는질문 바로가기</a></span>
+                        </div>
+                        <span class="btn-close"><button>닫기</button></span>
+        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="title-wrap">
+            <h2 class="mb30">12-3. 간편도움말 - 자주묻는질문</h2>
+        </div>
+        <div class="flex-wrap">
+            
+            <div class="cont-wrap area-content">
+                <h3>12-3-1. 검색 전</h3>
+
+                <div class="contain-help"><!-- area-content에 'help'클래스 추가/삭제 -->
+                    <div class="contain-inner">
+        
+                        <h1 class="title">간편도움말</h1>
+                        <div class="tab-anchor">
+                            <button>이용안내</button>
+                            <button>용어검색</button>
+                            <button class="on">자주묻는질문</button>
+                        </div>
+                        <div class="box-body tab-help1">
+                            <div class="box-inner full">
+                                <dl class="help-define">
+                                    <dt>서비스 이용방법</dt>
+                                    <dd>
+                                        <ul class="list-help">
+                                            <li>등기 열람서비스를 이용하시려면 <strong>인터넷등기소 이용약관을 읽으시고 동의</strong>하셔야 합니다.</li>
+                                            <li>비회원은 전화번호와 비밀번호를 입력하여 서비스를 이용하실 수 있습니다.</li>
+                                            <li>서비스 이용은 회원과 비회원 모두 가능하나, 결제방식에 차이가 있습니다.
+                                                <ul>
+                                                    <li><strong>로그인한 회원의 경우 여러 개의 등기기록을 한 번에 결제할 수 있습니다.</strong></li>
+                                                    <li><strong>비회원의 경우 등기기록을 1건씩 결제해야 합니다.</strong></li>
+                                                </ul>
+                                            </li>
+                                            <li>등기 열람서비스를 통해 결제하신 부동산 등기기록은 모바일 기기로도 열람하실 수 있습니다.</li>
+                                            <li><span class="color-04">결제 당일(결제시점~24:00)만 결제취소가 가능하며, 열람 후에는 결제취소가 불가능합니다.</span> <br >
+                                                날짜가 변경되기 직전이나 야간 서비스 중단시간 직전에는 수수료 결제를 최대한 자제해 주시기 바랍니다.</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                                <dl class="help-define">
+                                    <dt>등기 열람서비스 이용시간</dt>
+                                    <dd>
+                                        <ul class="list-help">
+                                            <li><strong class="color-4b">24시간(365일)</strong></li>
+                                            <li>등기업무 전산시스템 정기점검이나 시스템 업그레이드 작업이 있는 날에는 서비스를 일시 중단할 수 있습니다.</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="box-body tab-help2">
+                            <div class="box-inner">
+                                <div class="list-search-con">
+                                    <span class="clear-btn-con"><input type="text" name="" id="total-search2" class="search-input" placeholder="등기용어 검색"><span class="clear-btn" style="display: none;"></span></span>
+                                    <button type="button" class="search-btn">
+                                        <img src="../../img/btn_board_search.svg" alt="search">
+                                    </button>
+                                </div>
+                                <dl class="help-define">
+                                    <dt>자주찾는 등기용어</dt>
+                                    <dd>
+                                        <div class="accordion-wrap">
+                                            <ul class="accordion-con" data-accordion="container">
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">대기사용권(대지권)</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용 
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">갑구</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">을구</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">전세권</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">근저당권</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="box-more">
+                                                <a href="" ><strong>15개</strong>의 결과 더보기</a>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                           </div>
+                            <span class="link-more"><a href="">등기용어해설 바로가기</a></span>
+                        </div>
+                        <div class="box-body tab-help3 on">
+                            <div class="box-inner">
+                                <div class="list-search-con">
+                                    <span class="clear-btn-con"><input type="text" name="" id="total-search2" class="search-input" placeholder="등기용어 검색"><span class="clear-btn" style="display: none;"></span></span>
+                                    <button type="button" class="search-btn">
+                                        <img src="../../img/btn_board_search.svg" alt="search">
+                                    </button>
+                                </div>
+                                <dl class="help-define">
+                                    <dt>많이 본 도움말</dt>
+                                    <dd>
+                                        <div class="accordion-wrap">
+                                            <ul class="accordion-con" data-accordion="container">
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">전자신청-인증서 갱신 및 변경</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">전자신청시스템 XecureWeb 설치 관련</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">전자서명 방법</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">전자신청 제출방법</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">승인문서 검색 및 승인 방법</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="box-more">
+                                                <a href="" ><strong>15개</strong>의 결과 더보기</a>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <span class="link-more"><a href="">자주묻는질문 바로가기</a></span>
+                        </div>
+                        <span class="btn-close"><button>닫기</button></span>
+        
+                    </div>
+                </div>
+            </div>
+            <div class="cont-wrap area-content">
+                <h3>12-3-2. 검색 후</h3>
+
+                <div class="contain-help"><!-- area-content에 'help'클래스 추가/삭제 -->
+                    <div class="contain-inner">
+        
+                        <h1 class="title">간편도움말</h1>
+                        <div class="tab-anchor">
+                            <button>이용안내</button>
+                            <button>용어검색</button>
+                            <button class="on">자주묻는질문</button>
+                        </div>
+                        <div class="box-body tab-help1">
+                            <div class="box-inner full">
+                                <dl class="help-define">
+                                    <dt>서비스 이용방법</dt>
+                                    <dd>
+                                        <ul class="list-help">
+                                            <li>등기 열람서비스를 이용하시려면 <strong>인터넷등기소 이용약관을 읽으시고 동의</strong>하셔야 합니다.</li>
+                                            <li>비회원은 전화번호와 비밀번호를 입력하여 서비스를 이용하실 수 있습니다.</li>
+                                            <li>서비스 이용은 회원과 비회원 모두 가능하나, 결제방식에 차이가 있습니다.
+                                                <ul>
+                                                    <li><strong>로그인한 회원의 경우 여러 개의 등기기록을 한 번에 결제할 수 있습니다.</strong></li>
+                                                    <li><strong>비회원의 경우 등기기록을 1건씩 결제해야 합니다.</strong></li>
+                                                </ul>
+                                            </li>
+                                            <li>등기 열람서비스를 통해 결제하신 부동산 등기기록은 모바일 기기로도 열람하실 수 있습니다.</li>
+                                            <li><span class="color-04">결제 당일(결제시점~24:00)만 결제취소가 가능하며, 열람 후에는 결제취소가 불가능합니다.</span> <br >
+                                                날짜가 변경되기 직전이나 야간 서비스 중단시간 직전에는 수수료 결제를 최대한 자제해 주시기 바랍니다.</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                                <dl class="help-define">
+                                    <dt>등기 열람서비스 이용시간</dt>
+                                    <dd>
+                                        <ul class="list-help">
+                                            <li><strong class="color-4b">24시간(365일)</strong></li>
+                                            <li>등기업무 전산시스템 정기점검이나 시스템 업그레이드 작업이 있는 날에는 서비스를 일시 중단할 수 있습니다.</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="box-body tab-help2">
+                            <div class="box-inner">
+                                <div class="list-search-con">
+                                    <span class="clear-btn-con"><input type="text" name="" id="total-search2" class="search-input" placeholder="등기용어 검색"><span class="clear-btn" style="display: none;"></span></span>
+                                    <button type="button" class="search-btn">
+                                        <img src="../../img/btn_board_search.svg" alt="search">
+                                    </button>
+                                </div>
+                                <dl class="help-define">
+                                    <dt>자주찾는 등기용어</dt>
+                                    <dd>
+                                        <div class="accordion-wrap">
+                                            <ul class="accordion-con" data-accordion="container">
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">대기사용권(대지권)</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용 
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">갑구</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">을구</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">전세권</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-accordion="item" class="">
+                                                    <button type="button" class="title-con" data-accordion="trigger">
+                                                        <span class="title">근저당권</span>
+                                                    </button>
+                                                    <div class="cont-wrap">
+                                                        <div class="cont-con">
+                                                            <div class="cont-body">
+                                                                <p class="cont">
+                                                                    내용
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="box-more">
+                                                <a href="" ><strong>15개</strong>의 결과 더보기</a>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                           </div>
+                            <span class="link-more"><a href="">등기용어해설 바로가기</a></span>
+                        </div>
+                        <div class="box-body tab-help3 on">
+                            <div class="box-inner">
+                                <div class="list-search-con">
+                                    <span class="clear-btn-con"><input type="text" name="" id="total-search2" class="search-input" placeholder="질문 검색" value="부동산"><span class="clear-btn" style="display: none;"></span></span>
+                                    <button type="button" class="search-btn">
+                                        <img src="../../img/btn_board_search.svg" alt="search">
+                                    </button>
+                                </div>
+                                <div class="accordion-wrap">
+                                    <ul class="accordion-con" data-accordion="container">
+                                        <li data-accordion="item" class="active">
+                                            <button type="button" class="title-con" data-accordion="trigger">
+                                                <span class="title">부동산소유현황을 인쇄할 수 있나요?</span>
+                                            </button>
+                                            <div class="cont-wrap">
+                                                <div class="cont-con">
+                                                    <div class="cont-body">
+                                                        <p class="cont">
+                                                            부동산소유현황 열람화면에서 인쇄 기능을 제공합니다.<br >
+                                                            인쇄를 위하여 PDF로 변환이 필요하여 인쇄 창이 열릴 때까지 시간이 소요될 수 있습니다.<br >
+                                                            2줄 화면 예시 - 페이징 15개 기준
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li data-accordion="item" class="">
+                                            <button type="button" class="title-con" data-accordion="trigger">
+                                                <span class="title">부동산소유현황을 파일로 저장할 수 있나요?</span>
+                                            </button>
+                                            <div class="cont-wrap">
+                                                <div class="cont-con">
+                                                    <div class="cont-body">
+                                                        <p class="cont">
+                                                            내용
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li data-accordion="item" class="">
+                                            <button type="button" class="title-con" data-accordion="trigger">
+                                                <span class="title">미열람보기에서 열람은 언제까지 할 수 있나요?</span>
+                                            </button>
+                                            <div class="cont-wrap">
+                                                <div class="cont-con">
+                                                    <div class="cont-body">
+                                                        <p class="cont">
+                                                            내용
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li data-accordion="item" class="">
+                                            <button type="button" class="title-con" data-accordion="trigger">
+                                                <span class="title">결제취소는 언제까지 가능하나요?</span>
+                                            </button>
+                                            <div class="cont-wrap">
+                                                <div class="cont-con">
+                                                    <div class="cont-body">
+                                                        <p class="cont">
+                                                            내용
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li data-accordion="item" class="">
+                                            <button type="button" class="title-con" data-accordion="trigger">
+                                                <span class="title">인터넷등기소에서는 상속인이 피상속인의 자녀와 
+                                                    배우자인 경우만 이용가능하나요?</span>
+                                            </button>
+                                            <div class="cont-wrap">
+                                                <div class="cont-con">
+                                                    <div class="cont-body">
+                                                        <p class="cont">
+                                                            내용
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li data-accordion="item" class="">
+                                            <button type="button" class="title-con" data-accordion="trigger">
+                                                <span class="title">승인번호로 열람하기는 무엇인가요?</span>
+                                            </button>
+                                            <div class="cont-wrap">
+                                                <div class="cont-con">
+                                                    <div class="cont-body">
+                                                        <p class="cont">
+                                                            내용
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li data-accordion="item" class="">
+                                            <button type="button" class="title-con" data-accordion="trigger">
+                                                <span class="title">소유부동산이 없는 경우 어떻게 되나요?</span>
+                                            </button>
+                                            <div class="cont-wrap">
+                                                <div class="cont-con">
+                                                    <div class="cont-body">
+                                                        <p class="cont">
+                                                            내용
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="box-more">
+                                        <a href="" ><strong>15개</strong>의 결과 더보기</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="link-more"><a href="">자주묻는질문 바로가기</a></span>
+                        </div>
+                        <span class="btn-close"><button>닫기</button></span>
+        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>

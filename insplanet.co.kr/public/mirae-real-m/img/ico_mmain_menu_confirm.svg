@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+    <defs>
+        <style>
+            .cls-2,.cls-3{stroke:#000;stroke-miterlimit:10;stroke-width:1.5px;fill:none}.cls-3{stroke-linecap:round}
+        </style>
+    </defs>
+    <g id="ico_mmain_menu_confirm" transform="translate(5.98 4.615)">
+        <path id="Stroke_7" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="1.5px" d="M27.63 35.471H0V0h27.816v31.674" transform="translate(-.075 .195)"/>
+        <path id="Stroke_9" d="M0 .4h7.556" class="cls-2" transform="translate(16.056 8.677)"/>
+        <path id="Stroke_11" d="M0 .4h7.556" class="cls-2" transform="translate(16.056 12.667)"/>
+        <path id="Stroke_15" d="M0 5.624h5.624V0H0z" class="cls-3" transform="translate(5.712 8.256)"/>
+        <path id="Stroke_17" d="M0 5.625h5.624V0H0z" class="cls-3" transform="translate(5.712 19.641)"/>
+        <g id="Stroke_5" fill="#f4c215" stroke="none" stroke-miterlimit="10">
+            <path d="M8.281 15.811c-4.153 0-7.531-3.378-7.531-7.53C.75 4.128 4.128.75 8.281.75s7.531 3.378 7.531 7.531c0 4.152-3.378 7.53-7.53 7.53z" transform="translate(19.387 19.677)"/>
+            <path fill="#1d1d1d" d="M8.281 1.5C4.542 1.5 1.5 4.542 1.5 8.281s3.042 6.78 6.781 6.78c3.74 0 6.781-3.041 6.781-6.78 0-3.739-3.042-6.781-6.78-6.781m0-1.5c4.572 0 8.28 3.708 8.28 8.281s-3.708 8.28-8.28 8.28C3.707 16.561 0 12.854 0 8.281 0 3.708 3.708 0 8.281 0z" transform="translate(19.387 19.677)"/>
+        </g>
+        <path id="Stroke_20" fill="none" stroke="#1d1d1d" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5px" d="M6.513 0L3.057 3.949a.742.742 0 0 1-.532.254H2.5a.738.738 0 0 1-.524-.218L0 2.012" transform="translate(24.217 26.166)"/>
+    </g>
+</svg>

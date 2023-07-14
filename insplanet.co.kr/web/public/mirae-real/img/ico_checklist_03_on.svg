@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="57" height="60" viewBox="0 0 57 60">
+    <defs>
+        <linearGradient id="linear-gradient" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#f88c63"/>
+            <stop offset="1" stop-color="#ed4223"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-2" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#ffea4d"/>
+            <stop offset="1" stop-color="#ffc16e"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-3" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#71d6cf"/>
+            <stop offset="1" stop-color="#1d8981"/>
+        </linearGradient>
+        <filter id="다각형_21" width="52" height="47" x="5" y="13" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <style>
+            .cls-1{fill:red;opacity:0}.cls-3{fill:none;stroke:#f6845c;stroke-miterlimit:10;stroke-width:1.5px}
+        </style>
+    </defs>
+    <g id="ico_checklist_03_on" transform="translate(7.192 10)">
+        <path id="guide" d="M0 0H56V56H0z" class="cls-1" transform="translate(-7.192 -10)"/>
+        <path id="guide-2" d="M0 0H40V40H0z" class="cls-1" transform="translate(0.808 -2)"/>
+        <g id="ico_checklist_03_off" transform="translate(-40 29)">
+            <path id="guide-3" d="M0 0H40V40H0z" class="cls-1" transform="translate(40.809 -31)"/>
+            <g id="그룹_2724" transform="translate(-398.584 -67.96)">
+                <circle id="타원_224" cx="7.5" cy="7.5" r="7.5" fill="url(#linear-gradient)" transform="translate(458.393 42.96)"/>
+                <path id="선_350" d="M0 0L0 3" class="cls-3" transform="translate(465.893 36.96)"/>
+                <path id="선_351" d="M0 0L2.121 2.121" class="cls-3" transform="translate(456.347 40.914)"/>
+                <path id="선_352" d="M0 0L3 0" class="cls-3" transform="translate(452.393 50.46)"/>
+                <path id="선_353" d="M0 2.121L2.121 0" class="cls-3" transform="translate(456.347 57.884)"/>
+                <path id="선_354" d="M0 3L0 0" class="cls-3" transform="translate(465.893 60.96)"/>
+                <path id="선_355" d="M2.121 2.121L0 0" class="cls-3" transform="translate(473.317 57.884)"/>
+                <path id="선_356" d="M3 0L0 0" class="cls-3" transform="translate(476.393 50.46)"/>
+                <path id="선_357" d="M2.121 0L0 2.121" class="cls-3" transform="translate(473.317 40.914)"/>
+            </g>
+            <path id="다각형_20" fill="url(#linear-gradient-2)" d="M11 0l11 20H0z" transform="translate(40.808 -11)"/>
+            <g filter="url(#다각형_21)" transform="matrix(1, 0, 0, 1, 32.81, -39)">
+                <path id="다각형_21-2" fill="url(#linear-gradient-3)" d="M17 0l17 29H0z" transform="translate(14 19)"/>
+            </g>
+        </g>
+    </g>
+</svg>

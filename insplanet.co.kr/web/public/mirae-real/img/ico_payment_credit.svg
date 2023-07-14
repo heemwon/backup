@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24.106" height="24" viewBox="0 0 24.106 24">
+    <defs>
+        <style>
+            .cls-3{stroke:#1d1d1d;stroke-width:1.5px;fill:none;stroke-miterlimit:10}
+        </style>
+    </defs>
+    <g id="ico_pay_credit" transform="translate(-.25)">
+        <path id="Fill_5" fill="#fff" stroke="#1d1d1d" stroke-width="1.5px" d="M2.357 14.727A2.355 2.355 0 0 1 0 12.371V2.356A2.356 2.356 0 0 1 2.357 0h17.082A2.355 2.355 0 0 1 21.8 2.356v10.015a2.355 2.355 0 0 1-2.356 2.356z" transform="translate(1 5.137)"/>
+        <path id="Stroke_11" d="M2.945 4.123H1.179A1.179 1.179 0 0 1 0 2.945V1.178A1.178 1.178 0 0 1 1.179 0h1.766a1.178 1.178 0 0 1 1.179 1.178v1.767a1.179 1.179 0 0 1-1.179 1.178z" class="cls-3" transform="translate(4.535 12.5)"/>
+        <path id="Stroke_17" d="M0 .409h21.8" class="cls-3" transform="translate(1 8.8)"/>
+    </g>
+</svg>

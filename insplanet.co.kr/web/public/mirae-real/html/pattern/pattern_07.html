@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../../js/libs/jquery.min.js"></script>
+    <script src="../../js/libs/jquery-ui.min.js"></script>
+    <script src="../../js/libs/jquery.selectric.js"></script>
+    <script src="../../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../../js/sub.js"></script>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/guide.css">
+    <link rel="stylesheet" href="../../css/sub.css">
+    <title>패턴</title>
+</head>
+
+<body>
+    <div class="apply-wrap">
+        
+        <!-- 7-1. 정관작성 -->
+        <!-- 7-1-1. 정관작성 -->
+        <div class="title-content-wrap">
+            <div class="title-wrap inline-wrap">
+                <h2>7-1-1. 정관작성</h2>
+                <a href="../window_popup/popup_7_1_1.html" title="정관작성" class="btn-solid" onclick="popupManager.openWindowPopup(this); return false;">윈도우팝업</a>
+            </div>
+            <div class="cont-wrap mw1312">
+                <div class="popup-head">
+                    <div class="popup-title">
+                        <div class="inline-wrap">
+                            <h4>정관작성</h4>
+                            <button type="button" class="btn-solid ml15">원인증서 가져오기</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-body">
+                    <div class="popup-cont">
+                        <!-- 정보입력 -->
+                        <section class="form-sec mb30">
+                            <div class="sec-body">
+                                <ul class="list-bullet fs-16 color-41 mb5">
+                                    <li>
+                                        <div>본 정관은 인터넷등기소에서 제공하는 표준정관으로 정관의 조항을 필요에 따라 추가/수정/삭제하여 작성 하실 수 있습니다.</div>
+                                    </li>
+                                    <li class="important">
+                                        <div>정관 조항의 추가/수정/삭제 시 경우에 따라 등기 보정 및 각하 사유가 될 수 있으니, 작성 시 유의하시기 바랍니다.</div>
+                                    </li>
+                                </ul>
+
+                                <div class="article-wrap mb30">
+                                    <div class="article-head">
+                                        <label for="arti1" class="title">제 1장</label>
+                                        <div class="input-con">
+                                            <input type="text" name="" id="arti1" class="input-title" placeholder="입력하세요">
+                                        </div>
+                                    </div>
+                                    <div class="article-body">
+                                        <dl class="article-list-con">
+                                            <dt>
+                                                <div class="left-con">
+                                                    제 1조
+                                                </div>
+                                                <div class="right-con">
+                                                    상호
+                                                </div>
+                                            </dt>
+                                            <dd>
+                                                당 회사는 주식회사 동그라미(이)라 한다.
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="inline-wrap tr mt15">
+                                        <button type="button" class="btn-solid color-4d icon-del-wh">장 삭제</button>
+                                        <button type="button" class="btn-solid color-main icon-add-wh">장 추가</button>
+                                    </div>
+                                </div>
+                                
+                                <hr class="seperate-line margin-none" />
+
+                                <div class="article-wrap">
+                                    <div class="article-head mb10">
+                                        <div class="input-con">
+                                            <label for="">
+                                                <input type="text" name="" id="" class="input-title" placeholder="부칙">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="inline-wrap tr mb10">
+                                        <button type="button" class="btn icon-del-bk">조 삭제</button>
+                                        <button type="button" class="btn icon-add-bk">조 추가</button>
+                                    </div>
+                                    <div class="article-body">
+                                        <dl class="article-list-con">
+                                            <dt>
+                                                <div class="left-con">
+                                                    <label for="arti1-1">제 1조</label>
+                                                </div>
+                                                <div class="right-con">
+                                                    <div class="input-con">
+                                                        <input type="text" name="" id="arti1-1" class="" placeholder="입력하세요" value="입력완료">
+                                                    </div>
+                                                </div>
+                                            </dt>
+                                            <dd>
+                                                <div class="block-wrap">
+                                                    <label for="">
+                                                        <textarea name="" id="" cols="30" rows="10">
+이 정관에 규정되지 않은 사항은 주주총회결의 및 상사에 관한 법규, 기타 법령에 의한다.
+당 회사는 필요에 따라 주주총회 결의로 업무수행 및 경영상 필요한 세칙 등 내규를 정할 수 있다.
+                                                        </textarea>
+                                                    </label>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 정보입력 -->
+                    </div>
+                </div>
+                <div class="popup-foot">
+                    <div class="left-con">
+                        <div class="important-bullet fs-16">
+                            <p>장/조의 순서 변경, 추가/삭제 할 경우 다른 장/조를 올바르게 참조하고 있는지 내용을 확인하시기 바랍니다.</p>
+                        </div>
+                    </div>
+                    <div class="right-con">
+                        <button type="button" class="btn-solid medium color-4d">보조 버튼명</button>
+                        <button type="button" class="btn-solid medium color-4d">보조 버튼명</button>
+                        <button type="button" class="btn-solid medium">주처리 버튼명</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // 7-1-1. 정관작성 -->        
+        
+        <!-- 7-1-2. 정관작성 확인 -->
+        <div class="title-content-wrap">
+            <div class="title-wrap inline-wrap">
+                <h2>7-1-2. 정관작성 확인</h2>
+                <a href="../window_popup/popup_7_1_2.html" title="정관작성 확인" class="btn-solid" onclick="popupManager.openWindowPopup(this); return false;">윈도우팝업</a>
+            </div>
+            <div class="cont-wrap mw1312">
+                <div class="popup-head">
+                    <div class="popup-title">
+                        <h4>정관작성</h4>
+                    </div>
+                </div>
+                <div class="popup-body">
+                    <div class="popup-cont">
+                        <!-- 정관작성 정보 -->
+                        <section class="form-sec mb20">
+                            <div class="sec-body">
+                                <ul class="list-bullet fs-15 color-1d mb30">
+                                    <li>
+                                        <div>본 정관은 인터넷등기소에서 제공하는 표준정관으로 정관의 조항을 필요에 따라 추가/수정/삭제하여 작성 하실 수 있습니다.</div>
+                                    </li>
+                                    <li>
+                                        <div>정관작성 관련한 설명문구가 들어갈 수 있습니다. 2문장부터는 앞에 가운뎃점 들어갑니다.</div>
+                                    </li>
+                                </ul>
+                                <div class="table-body">
+                                    <table class="table-article">
+                                        <caption>정관작성 정보</caption>
+                                        <colgroup>
+                                            <col style="width: 120px;">
+                                            <col style="width: auto;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="row">제 1장</th>
+                                                <td>총칙</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">제 1조</th>
+                                                <td>
+                                                    <p>상호</p>
+                                                    <p class="desc">
+                                                        당 회사는 주식회사 OO(이)라 하며, 영문으로는 XXX(이)라 표기한다
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">제 2조</th>
+                                                <td>
+                                                    <p>목적</p>
+                                                    <p class="desc">
+                                                        당 회사는 다음 사업을 목적으로 한다.<br/>
+                                                        당 회사는 다음 사업을 목적으로 한다. 당 회사는 다음 사업을 목적으로 한다.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 정관작성 정보 -->
+    
+                        <!-- 하단 정보 -->
+                        <section class="form-sec mb0">
+                            <div class="sec-body">
+                                <div class="full-bg-wrap">
+                                    <p class="msg">
+                                        위와 같이 주식회사 가나다라을(를) 설립하기 위하여 이 정관을 발기인 전원이 이에 가명날인한다.
+                                    </p>
+                                    <span class="datepicker-con">
+                                        <label for="">
+                                            <input type="text" name="" id="" class="datepicker">
+                                        </label>
+                                    </span>
+                                    <p class="name">
+                                        주식회사 원스톱컴퍼니<br/>
+                                        서울특별시 동작구 동작대로 59
+                                    </p>
+                                    <div class="bottom-con">
+                                        <div class="inline-wrap">
+                                            <span class="initiator">발기인 김일동</span>
+                                            <button type="button" class="btn color-main icon-sign ml15">전자서명</button>
+                                        </div>
+                                        <p class="address">
+                                            서울특별시 서초구 서초대로 219(서초동)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 하단 정보 -->
+                    </div>
+                </div>
+                <div class="popup-foot">
+                    <div class="left-con"></div>
+                    <div class="right-con">
+                        <button type="button" class="btn-solid medium color-4d">보조 버튼명</button>
+                        <button type="button" class="btn-solid medium color-4d">보조 버튼명</button>
+                        <button type="button" class="btn-solid medium">주처리 버튼명</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // 7-1-2. 정관작성 확인 -->
+        <!-- // 7-1. 정관작성 -->
+        
+
+        <!-- 7-2. 발기인회의사록작성 -->
+        <div class="title-content-wrap">
+            <div class="title-wrap inline-wrap">
+                <h2>7-2. 발기인회의사록작성</h2>
+                <a href="../window_popup/popup_7_2.html" title="발기인회의사록작성" class="btn-solid" onclick="popupManager.openWindowPopup(this); return false;">윈도우팝업</a>
+            </div>
+            <div class="cont-wrap mw1312">
+                <div class="popup-head">
+                    <div class="popup-title">
+                        <h4>발기인회의사록작성</h4>
+                    </div>
+                </div>
+                <div class="popup-body">
+                    <div class="popup-cont">
+                        <!-- 상단 정보 -->
+                        <section class="form-sec">
+                            <div class="sec-body tc">
+                                <div class="inline-wrap mt20">
+                                    <span class="datepicker-con w160">
+                                        <label for="">
+                                            <input type="text" name="" id="" class="datepicker">
+                                        </label>
+                                    </span>
+                                    <span class="input-unit-wrap">
+                                        <label for="">
+                                            <input type="text" name="" id="" class="w100">
+                                        </label>
+                                        <span class="unit-right">시</span>
+                                    </span>
+                                </div>
+                                <p class="fs-15 fw-500 color-1d mt20">
+                                    본 회사 본점사무실에서 다음 발기인전원의 동의로 상법 제 390조 제 2항 소정의 소집 절차를 생략하고 다음 의안을 위하여 발기인 회의를 개최하다.
+                                </p>
+                            </div>
+                        </section>
+                        <!-- // 상단 정보 -->
+    
+                        <!-- 발기인/주식 수 -->
+                        <section class="form-sec mt40">
+                            <div class="sec-body">
+                                <div class="table-body">
+                                    <table class="table-detail">
+                                        <caption>발기인/주식 수</caption>
+                                        <colgroup>
+                                            <col style="width: 200px;">
+                                            <col style="width: 50%;">
+                                            <col style="width: 200px;">
+                                            <col style="width: 50%;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="element-row">
+                                                <th scope="row">
+                                                    <label for="init0">총 발기인 수</label>
+                                                </th>
+                                                <td>
+                                                    <span class="input-unit-wrap">
+                                                        <input type="text" name="" id="init0" class="w230">
+                                                        <span class="unit-right">명</span>
+                                                    </span>
+                                                </td>
+                                                <th scope="row">
+                                                    <label for="init1">인수 주식 수</label>
+                                                </th>
+                                                <td>
+                                                    <span class="input-unit-wrap">
+                                                        <input type="text" name="" id="init1" class="w230">
+                                                        <span class="unit-right">주</span>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="form-sec mt40">
+                            <div class="sec-body">
+                                <div class="table-body">
+                                    <table class="table-detail">
+                                        <caption>발기인/주식 수</caption>
+                                        <colgroup>
+                                            <col style="width: 200px;">
+                                            <col style="width: 50%;">
+                                            <col style="width: 200px;">
+                                            <col style="width: 50%;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="element-row">
+                                                <th scope="row">
+                                                    <label for="init2">총 발기인 수</label>
+                                                </th>
+                                                <td>
+                                                    <span class="input-unit-wrap">
+                                                        <input type="text" name="" id="init2" class="w230">
+                                                        <span class="unit-right">명</span>
+                                                    </span>
+                                                </td>
+                                                <th scope="row">
+                                                    <label for="init3">인수 주식 수</label>
+                                                </th>
+                                                <td>
+                                                    <span class="input-unit-wrap">
+                                                        <input type="text" name="" id="init3" class="w230">
+                                                        <span class="unit-right">주</span>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 발기인/주식 수 -->
+
+                        <hr class="seperate-line mt30 mb30" />
+    
+                        <!-- 조항입력 -->
+                        <section class="form-sec mb40">
+                            <div class="sec-body">
+                                <div class="article-wrap">
+                                    <div class="article-body">
+                                        <div class="inline-wrap tr mb10">
+                                            <button type="button" class="btn icon-del-bk">조 삭제</button>
+                                            <button type="button" class="btn icon-add-bk">조 추가</button>
+                                        </div>
+                                        <dl class="article-list-con">
+                                            <dt>
+                                                <div class="left-con">
+                                                    <label for="arti2">제 1조</label>
+                                                </div>
+                                                <div class="right-con">
+                                                    <div class="input-con">
+                                                        <input type="text" name="" id="arti2" class="" placeholder="입력하세요">
+                                                    </div>
+                                                </div>
+                                            </dt>
+                                            <dd>
+                                                <div class="block-wrap">
+                                                    <label for="">
+                                                        <textarea name="" id="" cols="30" rows="10">
+이 정관에 규정되지 않은 사항은 주주총회결의 및 상사에 관한 법규, 기타 법령에 의한다.
+당 회사는 필요에 따라 주주총회 결의로 업무수행 및 경영상 필요한 세칙 등 내규를 정할 수 있다.
+                                                        </textarea>
+                                                    </label>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 조항입력 -->
+    
+                        <!-- 하단 정보 -->
+                        <section class="form-sec mb0">
+                            <div class="sec-body">
+                                <div class="full-bg-wrap">
+                                    <p class="msg">
+                                        이상으로 금일의 의안은 심의 종료되었으므로 의장은
+                                        &nbsp;<label for="">
+                                            <input type="text" name="" id="" class="w47 disable-clear-btn">
+                                        </label>&nbsp;
+                                        시에 폐회를 선언한다.
+                                    </p>
+                                    <p class="msg mt10">
+                                        위 의사의 경과요청과 그 결과를 명백히 하기 위하여 이 이사록을 작성하고 의장과 출석한 발기인이 기명날인 또는 서명한다.
+                                    </p>
+                                    <span class="datepicker-con">
+                                        <label for="">
+                                            <input type="text" name="" id="dp1644155614957" class="datepicker hasDatepicker"><button type="button" class="ui-datepicker-trigger">...</button>
+                                        </label>
+                                    </span>
+                                    <p class="name">
+                                        주식회사 원스톱컴퍼니
+                                    </p>
+                                    <div class="bottom-con">
+                                        <span class="initiator">의장 김일동</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 하단 정보 -->
+                    </div>
+                </div>
+                <div class="popup-foot">
+                    <div class="left-con"></div>
+                    <div class="right-con">
+                        <button type="button" class="btn-solid medium color-4d">작성취소</button>
+                        <button type="button" class="btn-solid medium">작성완료</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // 7-2. 발기인회의사록작성 -->
+
+
+        <!-- 7-3. 주주명부작성 -->
+        <div class="title-content-wrap">
+            <div class="title-wrap">
+                <h2>7-3. 주주명부작성</h2>
+            </div>
+            <div class="cont-wrap">
+                <div class="popup-head">
+                    <div class="popup-title">
+                        <h4>주주명부 작성</h4>
+                    </div>
+                    <div class="close-btn">
+                        <button type="button" onclick="popupManager.closePopup();"><img src="../../img/btn_gnb_close.svg" alt="close"></button>
+                    </div>
+                </div>
+                <div class="popup-body">
+                    <div class="popup-cont">
+                        <!-- 주주명부 -->
+                        <section class="form-sec">
+                            <div class="sec-body">
+                                <div class="table-head">
+                                    <div class="left-con">
+                                        <h5>주주명부</h5>
+                                    </div>
+                                    <div class="right-con" id="go-table-btn0">
+                                        <button type="button" class="btn icon-del-bk">삭제</button>
+                                        <button type="button" class="btn icon-add-bk">추가</button>
+                                    </div>
+                                </div>
+                                <div class="table-body">
+                                    <table class="table-list">
+                                        <caption>주주명부</caption>
+                                        <colgroup>
+                                            <col style="width: 60px;">
+                                            <col style="width: 157px;">
+                                            <col style="width: auto;">
+                                            <col style="width: 132px;">
+                                            <col style="width: 190px;">
+                                            <col style="width: 190px;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="has-element">
+                                                    <span class="checkbox-con only-box">
+                                                        <input type="checkbox" name="" id="cbox0"><label for="cbox0"></label>
+                                                    </span>
+                                                </th>
+                                                <th scope="col">주주명</th>
+                                                <th scope="col">주소</th>
+                                                <th scope="col">인수주식수</th>
+                                                <th scope="col">1주의금액/발행가액</th>
+                                                <th scope="col">납입금액</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="has-element">
+                                                    <span class="checkbox-con only-box">
+                                                        <input type="checkbox" name="" id="cbox1"><label for="cbox1"></label>
+                                                    </span>
+                                                </td>
+                                                <td class="has-element">
+                                                    <label for="">
+                                                        <input type="text" name="" id="" class="w116">
+                                                    </label>
+                                                </td>
+                                                <td class="has-element">
+                                                    <label for="">
+                                                        <input type="text" name="" id="" class="w230">
+                                                    </label>
+                                                </td>
+                                                <td class="has-element">
+                                                    <span class="input-unit-wrap">
+                                                        <label for="">
+                                                            <input type="text" name="" id="" class="w62 disable-clear-btn">
+                                                        </label>
+                                                        <span class="unit-right">주</span>
+                                                    </span>
+                                                </td>
+                                                <td class="has-element">
+                                                    <span class="input-unit-wrap">
+                                                        <label for="">
+                                                            <input type="text" name="" id="" class="w120">
+                                                        </label>
+                                                        <span class="unit-right">원</span>
+                                                    </span>
+                                                </td>
+                                                <td class="has-element">
+                                                    <span class="input-unit-wrap">
+                                                        <label for="">
+                                                            <input type="text" name="" id="" class="w120">
+                                                        </label>
+                                                        <span class="unit-right">원</span>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="has-element">
+                                                    <span class="checkbox-con only-box">
+                                                        <input type="checkbox" name="" id="cbox2"><label for="cbox2"></label>
+                                                    </span>
+                                                </td>
+                                                <td class="has-element">
+                                                    <label for="">
+                                                        <input type="text" name="" id="" class="w116">
+                                                    </label>
+                                                </td>
+                                                <td class="has-element">
+                                                    <label for="">
+                                                        <input type="text" name="" id="" class="w230">
+                                                    </label>
+                                                </td>
+                                                <td class="has-element">
+                                                    <span class="input-unit-wrap">
+                                                        <label for="">
+                                                            <input type="text" name="" id="" class="w62 disable-clear-btn">
+                                                        </label>
+                                                        <span class="unit-right">주</span>
+                                                    </span>
+                                                </td>
+                                                <td class="has-element">
+                                                    <span class="input-unit-wrap">
+                                                        <label for="">
+                                                            <input type="text" name="" id="" class="w120">
+                                                        </label>
+                                                        <span class="unit-right">원</span>
+                                                    </span>
+                                                </td>
+                                                <td class="has-element">
+                                                    <span class="input-unit-wrap">
+                                                        <label for="">
+                                                            <input type="text" name="" id="" class="w120">
+                                                        </label>
+                                                        <span class="unit-right">원</span>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr class="has-bg-row">
+                                                <th scope="row" colspan="3">합계</th>
+                                                <td class="has-element">
+                                                    <span class="input-unit-wrap">
+                                                        <label for="">
+                                                            <input type="text" name="" id="" class="w62 disable-clear-btn">
+                                                        </label>
+                                                        <span class="unit-right">주</span>
+                                                    </span>
+                                                </td>
+                                                <td colspan="2" class="has-element">
+                                                    <span class="input-unit-wrap">
+                                                        <label for="">
+                                                            <input type="text" name="" id="" class="w310">
+                                                        </label>
+                                                        <span class="unit-right">원</span>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                    <div class="table-btn-focus">
+                                        <a href="#go-table-btn0">테이블 기능 버튼으로 이동</a>
+                                    </div>
+                                </div>
+                                <div class="table-foot">
+                                    <div class="table-util-con">
+                                        <div class="left-con">
+                                            <button type="button" class="btn icon-reset">재작성</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 주주명부 -->
+    
+                        <!-- 하단 정보 -->
+                        <section class="form-sec mb0">
+                            <div class="sec-body">
+                                <div class="full-bg-wrap">
+                                    <p class="msg">
+                                        위 주주명부는 본사에 비치된 주주명부와 대조하여 틀림없음을 증명합니다.
+                                    </p>
+                                    <span class="datepicker-con">
+                                        <label for="">
+                                            <input type="text" name="" id="dp1644155614957" class="datepicker hasDatepicker"><button type="button" class="ui-datepicker-trigger">...</button>
+                                        </label>
+                                    </span>
+                                    <p class="name">
+                                        주식회사 원스톱컴퍼니
+                                    </p>
+                                    <div class="bottom-con">
+                                        <span class="initiator">대표이사 김이동</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 하단 정보 -->
+                    </div>
+                </div>
+                <div class="popup-foot">
+                    <div class="left-con">
+                        <button type="button" class="btn medium">보조버튼</button>
+                    </div>
+                    <div class="right-con">
+                        <button type="button" class="btn-solid medium color-4d">작성취소</button>
+                        <button type="button" class="btn-solid medium">작성완료</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // 7-3. 주주명부작성 -->
+
+
+        <!-- 7-4. 취임승낙서작성 -->
+        <div class="title-content-wrap">
+            <div class="title-wrap">
+                <h2>7-4. 취임승낙서작성</h2>
+            </div>
+            <div class="cont-wrap mw780">
+                <div class="popup-head">
+                    <div class="popup-title">
+                        <h4>취임승낙서작성</h4>
+                    </div>
+                    <div class="close-btn">
+                        <button type="button" onclick="popupManager.closePopup();"><img src="../../img/btn_gnb_close.svg" alt="close"></button>
+                    </div>
+                </div>
+                <div class="popup-body">
+                    <div class="popup-cont">
+                        <!-- 하단 정보 -->
+                        <section class="form-sec mb0">
+                            <div class="sec-body">
+                                <div class="full-bg-wrap top-minus-40">
+                                    <p class="msg">
+                                        본인은 주식회사 움파룸파룸룸파컴퍼니의
+                                        &nbsp;<label for="">
+                                            <input type="text" name="" id="" class="w166">
+                                        </label>&nbsp;
+                                        로
+                                    </p>
+                                    <p class="msg mt10">
+                                        선임되었으므로 그 취임을 승낙합니다.
+                                    </p>
+                                    <span class="datepicker-con">
+                                        <label for="">
+                                            <input type="text" name="" id="dp1644155614957" class="datepicker hasDatepicker"><button type="button" class="ui-datepicker-trigger">...</button>
+                                        </label>
+                                    </span>
+                                    <p class="name">
+                                        주식회사 원스톱컴퍼니
+                                    </p>
+                                    <div class="bottom-con">
+                                        <span class="initiator">사내이사  김이동</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 하단 정보 -->
+                    </div>
+                </div>
+                <div class="popup-foot">
+                    <div class="left-con">
+                        <button type="button" class="btn medium">보조버튼</button>
+                    </div>
+                    <div class="right-con">
+                        <button type="button" class="btn-solid medium color-4d">작성취소</button>
+                        <button type="button" class="btn-solid medium">작성완료</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // 7-4. 취임승낙서작성 -->
+
+
+        <!-- 7-5. 인감신고서 작성 -->
+        <div class="title-content-wrap">
+            <div class="title-wrap">
+                <h2>7-5. 인감신고서 작성</h2>
+            </div>
+            <div class="cont-wrap">
+                <div class="popup-head">
+                    <div class="popup-title">
+                        <h4>인감신고서 작성</h4>
+                    </div>
+                    <div class="close-btn">
+                        <button type="button" onclick="popupManager.closePopup();"><img src="../../img/btn_gnb_close.svg" alt="close"></button>
+                    </div>
+                </div>
+                <div class="popup-body">
+                    <div class="popup-cont">
+                        <!-- 인감신고서 작성 -->
+                        <section class="form-sec">
+                            <div class="sec-body">
+                                <div class="table-body">
+                                    <table class="table-detail">
+                                        <caption>신청등기소 선택</caption>
+                                        <colgroup>
+                                            <col style="width: 170px;">
+                                            <col style="width: 115px;">
+                                            <col style="width: 130px;">
+                                            <col style="width: auto;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="element-row">
+                                                <th scope="row" colspan="3" class="fw-bold">신고하는인감날인란</th>
+                                                <td>
+                                                    <button type="button" class="btn color-main">인감인명 등록</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="rowgroup" rowspan="6" class="fw-bold">인감제출세부사항</th>
+                                                <th scope="row" colspan="2" class="has-bd-left">상호</th>
+                                                <td>
+                                                    주식회사 원스톱컴퍼니
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" colspan="2" class="has-bd-left">본점 주소</th>
+                                                <td>
+                                                    서울특별시 동작구 사당동 123-1
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" colspan="2" class="has-bd-left">등기번호</th>
+                                                <td>
+                                                    4983920
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="rowgroup" rowspan="3" class="has-bd-left">인감제출자</th>
+                                                <th scope="row" class="has-bd-left">자격/성명</th>
+                                                <td>
+                                                    사내이사/김이동
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="has-bd-left">주민등록번호</th>
+                                                <td>
+                                                    720505-2 ●●●●●●
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="has-bd-left">주소</th>
+                                                <td>
+                                                    경기도 김포시 대곶면 천호로 
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 인감신고서 작성 -->
+    
+                        <!-- 하단 정보 -->
+                        <section class="form-sec mb0">
+                            <div class="sec-body">
+                                <div class="full-bg-wrap">
+                                    <p class="msg">
+                                        위와 같이 안감을 신고합니다.
+                                    </p>
+                                    <span class="datepicker-con">
+                                        <label for="">
+                                            <input type="text" name="" id="dp1644155614957" class="datepicker hasDatepicker"><button type="button" class="ui-datepicker-trigger">...</button>
+                                        </label>
+                                    </span>
+                                    <div class="bottom-con">
+                                        <p class="initiator">신고인 성명 김이동</p>
+                                        <p class="initiator mt6">대리인 성명 김일동</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 하단 정보 -->
+                    </div>
+                </div>
+                <div class="popup-foot">
+                    <div class="left-con">
+                        <button type="button" class="btn medium">보조버튼</button>
+                    </div>
+                    <div class="right-con">
+                        <button type="button" class="btn-solid medium color-4d">작성취소</button>
+                        <button type="button" class="btn-solid medium">작성완료</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // 7-5. 인감신고서 작성 -->        
+        
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../js/libs/jquery.min.js"></script>
+    <script src="../js/libs/jquery-ui.min.js"></script>
+    <script src="../js/libs/jquery.selectric.js"></script>
+    <script src="../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../js/sub.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/guide.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <title>통합검색 - 검색어 입력 유형</title>
+</head>
+
+<body>
+            <main>
+                <!-- 통합검색 -->
+                <h1>Search Style Guide</h1>
+                <hr />
+                <section id="search-sec">
+                    <h2>통합검색 - 검색어 입력 유형</h2>
+                    <p>7.4.7_검색어 입력 유형</p>
+                    <p>7.4.7_검색어 입력 유형_자동검색어</p>
+                    <p>
+                        <button type="button" class="btn-solid" onclick="popupManager.openPopup('#popup-search')">통합검색</button>
+                    </p>
+                </section>
+                <hr />
+            </main>
+
+            <!-- confirm popup -->
+            <div class="search-popup-wrap" id="popup-search">
+                <div class="content-wrap">
+                    <div class="popup-head">
+                        <div class="close-btn">
+                            <button type="button" onclick="popupManager.closePopup();"><img src="../img/btn_gnb_close.svg" alt="close"></button>
+                        </div>
+                    </div>
+                    <div class="popup-body">
+                        <h4><label for="total-search-input">통합검색</label></h4>
+                        <div class="search-con">
+                            
+                                <input type="text" name="total-search" id="total-search-input" class="search-input" placeholder="검색어를 입력하시기 바랍니다.">
+                                <button type="button" class="search-btn" onclick="popupManager.closePopup();">
+                                    <img src="../img/btn_search.svg" alt="search">
+                                </button>
+                            
+                        </div>
+                        <p class="recommand-title">추천 검색어</p>
+                        <div class="recommand-word">
+                            <a href="#none">#등록번호입력</a>
+                            <a href="#none">#촉탁</a>
+                            <a href="#none">#대상법인</a>
+                            <a href="#none">#문자전송</a>
+                            <a href="#none">#부동산등기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dim-wrap"></div>
+            </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .cls-3{fill:none;stroke:#fff;stroke-width:1.5px}.cls-4{fill:#fff}
+        </style>
+    </defs>
+    <g id="ico_main_serviece_person" transform="translate(1.344 -2.831)">
+        <g id="Group_19" transform="translate(-.344 8.005)">
+            <path id="Fill_9" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5px" d="M30.505 13.336H3V4.56C3 .492 8.22 0 8.22 0h14.289" transform="translate(-2 16.594)"/>
+            <g id="타원_211" class="cls-3" transform="translate(8.183 -.175)">
+                <circle cx="7" cy="7" r="7"/>
+                <circle cx="7" cy="7" r="6.25" fill="none"/>
+            </g>
+            <path id="Fill_5" d="M8.806 0A8.806 8.806 0 1 1 0 8.806 8.806 8.806 0 0 1 8.806 0" class="cls-3" transform="translate(19.476 12.318)"/>
+            <path id="Fill_13" d="M3.643 6.215H1.961a3.26 3.26 0 0 1 1.487-2.628 1.121 1.121 0 1 0-1.767-.916H0A2.741 2.741 0 0 1 2.8 0a2.742 2.742 0 0 1 2.8 2.671 2.649 2.649 0 0 1-1.128 2.147 1.787 1.787 0 0 0-.829 1.4" class="cls-4" transform="translate(25.248 16.347)"/>
+            <path id="Fill_15" d="M1 0a1 1 0 1 1-1 1 1 1 0 0 1 1-1" class="cls-4" transform="translate(27.057 23.845)"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <rect width="24" height="24" rx="4" style="fill:#586acb"/>
+    <path transform="translate(8 8)" style="fill:#fff" d="M0 0h2v8H0z"/>
+    <path data-name="Rectangle Copy" transform="translate(14 8)" style="fill:#fff" d="M0 0h2v8H0z"/>
+</svg>

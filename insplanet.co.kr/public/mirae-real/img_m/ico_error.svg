@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="104" height="104" viewBox="0 0 104 104">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="패스_4098" fill="#fff" stroke="#707070" d="M34.843 0l32.173 33.7-8.752 10.246-24.046 1.226L6 41.658l-6-10.1z" transform="rotate(180 490.148 169.586)"/>
+        </clipPath>
+        <style>
+            .cls-7{fill:#fff}.cls-10,.cls-7{stroke-width:2px;stroke:#1d1d1d}.cls-10,.cls-12{fill:none}.cls-11{stroke:none}
+        </style>
+    </defs>
+    <g id="ico_error" transform="translate(-908 -274)">
+        <ellipse id="타원_128" cx="50" cy="7" fill="#dedede" rx="50" ry="7" transform="translate(910 359)"/>
+        <g id="마스크_그룹_51" clip-path="url(#clip-path)" transform="translate(14 -13.172)">
+            <g id="타원_243" fill="#fff" stroke="#dedede" stroke-dasharray="3 4" stroke-width="2px" transform="rotate(133 428.552 384.015)">
+                <circle cx="39.778" cy="39.778" r="39.778" class="cls-11"/>
+                <circle cx="39.778" cy="39.778" r="38.778" class="cls-12"/>
+            </g>
+            <g id="타원_242" fill="#fff" stroke="#868686" stroke-width="2px" transform="rotate(135 425.39 372.12)">
+                <circle cx="31.014" cy="31.014" r="31.014" class="cls-11"/>
+                <circle cx="31.014" cy="31.014" r="30.014" class="cls-12"/>
+            </g>
+            <g id="타원_241" class="cls-7" transform="rotate(135 418.715 369.355)">
+                <circle cx="21.575" cy="21.575" r="21.575" class="cls-11"/>
+                <circle cx="21.575" cy="21.575" r="20.575" class="cls-12"/>
+            </g>
+        </g>
+        <g id="그룹_3654" transform="translate(-21.296 35.828)">
+            <path id="선_530" fill="none" stroke="#dedede" stroke-dasharray="3 2" stroke-width="2px" d="M0 0L0 29" transform="translate(981.795 305.672)"/>
+            <g id="사각형_1820" fill="#eb6767" stroke="#1d1d1d" stroke-width="2px" transform="rotate(45 162.691 1321.42)">
+                <rect width="28" height="28" class="cls-11" rx="6"/>
+                <rect width="26" height="26" x="1" y="1" class="cls-12" rx="5"/>
+            </g>
+            <path id="선_527" d="M0 0L0 11.158" class="cls-10" transform="translate(981.795 284.286)"/>
+            <path id="선_528" d="M0 0L0 1.717" class="cls-10" transform="translate(981.795 298.018)"/>
+            <path id="선_529" d="M0 0L79 0" class="cls-10" transform="translate(941.795 326.672)"/>
+        </g>
+        <g id="타원_245" class="cls-7" transform="translate(955 357)">
+            <circle cx="5.5" cy="5.5" r="5.5" class="cls-11"/>
+            <circle cx="5.5" cy="5.5" r="4.5" class="cls-12"/>
+        </g>
+    </g>
+</svg>

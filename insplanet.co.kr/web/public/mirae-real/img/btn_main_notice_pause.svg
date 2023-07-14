@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="btn_main_notice_pause" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-2{fill:#fff}
+        </style>
+    </defs>
+    <path id="사각형_1468" fill="#d3d7dd" d="M0 0H24V24H0z"/>
+    <path id="Rectangle" d="M0 0H2V8H0z" class="cls-2" transform="translate(8 8)"/>
+    <path id="Rectangle_Copy" d="M0 0H2V8H0z" class="cls-2" transform="translate(14 8)"/>
+</svg>

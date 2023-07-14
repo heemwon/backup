@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../../js/libs/jquery.min.js"></script>
+    <script src="../../js/libs/jquery-ui.min.js"></script>
+    <script src="../../js/libs/jquery.selectric.js"></script>
+    <script src="../../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../../js/sub.js"></script>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <!-- <link rel="stylesheet" href="../../css/guide.css"> -->
+    <link rel="stylesheet" href="../../css/sub.css">
+    <title>발기인회의사록작성</title>
+</head>
+
+<body>
+
+        <!-- window popup -->
+        <div class="window-popup-wrap">
+            <div class="content-wrap">
+                <div class="popup-head">
+                    <div class="popup-title">
+                        <div class="inline-wrap">
+                            <h4>발기인회의사록작성</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-body">
+                    <div class="popup-cont">
+                        <!-- 상단 정보 -->
+                        <section class="form-sec">
+                            <div class="sec-body tc">
+                                <div class="inline-wrap mt20">
+                                    <span class="datepicker-con w160">
+                                        <label for="">
+                                            <input type="text" name="" id="" class="datepicker">
+                                        </label>
+                                    </span>
+                                    <span class="input-unit-wrap">
+                                        <label for="">
+                                            <input type="text" name="" id="" class="w100">
+                                        </label>
+                                        <span class="unit-right">시</span>
+                                    </span>
+                                </div>
+                                <p class="fs-15 fw-500 color-1d mt20">
+                                    본 회사 본점사무실에서 다음 발기인전원의 동의로 상법 제 390조 제 2항 소정의 소집 절차를 생략하고 다음 의안을 위하여 발기인 회의를 개최하다.
+                                </p>
+                            </div>
+                        </section>
+                        <!-- // 상단 정보 -->
+    
+                        <!-- 발기인/주식 수 -->
+                        <section class="form-sec mt40">
+                            <div class="sec-body">
+                                <div class="table-body">
+                                    <table class="table-detail">
+                                        <caption>발기인/주식 수</caption>
+                                        <colgroup>
+                                            <col style="width: 200px;">
+                                            <col style="width: 50%;">
+                                            <col style="width: 200px;">
+                                            <col style="width: 50%;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="element-row">
+                                                <th scope="row">
+                                                    <label for="init0">총 발기인 수</label>
+                                                </th>
+                                                <td>
+                                                    <span class="input-unit-wrap">
+                                                        <input type="text" name="" id="init0" class="w230">
+                                                        <span class="unit-right">명</span>
+                                                    </span>
+                                                </td>
+                                                <th scope="row">
+                                                    <label for="init1">인수 주식 수</label>
+                                                </th>
+                                                <td>
+                                                    <span class="input-unit-wrap">
+                                                        <input type="text" name="" id="init1" class="w230">
+                                                        <span class="unit-right">주</span>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="form-sec mt40">
+                            <div class="sec-body">
+                                <div class="table-body">
+                                    <table class="table-detail">
+                                        <caption>발기인/주식 수</caption>
+                                        <colgroup>
+                                            <col style="width: 200px;">
+                                            <col style="width: 50%;">
+                                            <col style="width: 200px;">
+                                            <col style="width: 50%;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="element-row">
+                                                <th scope="row">
+                                                    <label for="init2">총 발기인 수</label>
+                                                </th>
+                                                <td>
+                                                    <span class="input-unit-wrap">
+                                                        <input type="text" name="" id="init2" class="w230">
+                                                        <span class="unit-right">명</span>
+                                                    </span>
+                                                </td>
+                                                <th scope="row">
+                                                    <label for="init3">인수 주식 수</label>
+                                                </th>
+                                                <td>
+                                                    <span class="input-unit-wrap">
+                                                        <input type="text" name="" id="init3" class="w230">
+                                                        <span class="unit-right">주</span>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 발기인/주식 수 -->
+
+                        <hr class="seperate-line mt30 mb30" />
+    
+                        <!-- 조항입력 -->
+                        <section class="form-sec mb40">
+                            <div class="sec-body">
+                                <div class="article-wrap">
+                                    <div class="article-body">
+                                        <div class="inline-wrap tr mb10">
+                                            <button type="button" class="btn icon-del-bk">조 삭제</button>
+                                            <button type="button" class="btn icon-add-bk">조 추가</button>
+                                        </div>
+                                        <dl class="article-list-con">
+                                            <dt>
+                                                <div class="left-con">
+                                                    <label for="arti2">제 1조</label>
+                                                </div>
+                                                <div class="right-con">
+                                                    <div class="input-con">
+                                                        <input type="text" name="" id="arti2" class="" placeholder="입력하세요">
+                                                    </div>
+                                                </div>
+                                            </dt>
+                                            <dd>
+                                                <div class="block-wrap">
+                                                    <label for="">
+                                                        <textarea name="" id="" cols="30" rows="10">
+이 정관에 규정되지 않은 사항은 주주총회결의 및 상사에 관한 법규, 기타 법령에 의한다.
+당 회사는 필요에 따라 주주총회 결의로 업무수행 및 경영상 필요한 세칙 등 내규를 정할 수 있다.
+                                                        </textarea>
+                                                    </label>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 조항입력 -->
+    
+                        <!-- 하단 정보 -->
+                        <section class="form-sec mb0">
+                            <div class="sec-body">
+                                <div class="full-bg-wrap">
+                                    <p class="msg">
+                                        이상으로 금일의 의안은 심의 종료되었으므로 의장은
+                                        &nbsp;<label for="">
+                                            <input type="text" name="" id="" class="w47 disable-clear-btn">
+                                        </label>&nbsp;
+                                        시에 폐회를 선언한다.
+                                    </p>
+                                    <p class="msg mt10">
+                                        위 의사의 경과요청과 그 결과를 명백히 하기 위하여 이 이사록을 작성하고 의장과 출석한 발기인이 기명날인 또는 서명한다.
+                                    </p>
+                                    <span class="datepicker-con">
+                                        <label for="">
+                                            <input type="text" name="" id="dp1644155614957" class="datepicker hasDatepicker"><button type="button" class="ui-datepicker-trigger">...</button>
+                                        </label>
+                                    </span>
+                                    <p class="name">
+                                        주식회사 원스톱컴퍼니
+                                    </p>
+                                    <div class="bottom-con">
+                                        <span class="initiator">의장 김일동</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 하단 정보 -->
+                    </div>
+                </div>
+                <div class="popup-foot">
+                    <div class="left-con"></div>
+                    <div class="right-con">
+                        <button type="button" class="btn-solid medium color-4d">작성취소</button>
+                        <button type="button" class="btn-solid medium">작성완료</button>
+                    </div>
+                </div>
+            </div>
+            <div class="dim-wrap"></div>
+        </div>
+
+</body>
+
+</html>

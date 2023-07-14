@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1600, maximum-scale=1.0,user-scalable=no">
+    <title>미래등기</title>
+    <script src="lib.js"></script>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body.popup {overflow:hidden;}
+        img {display:block;margin:0 auto;}
+        .navigation {position:relative;z-index:10;height:80px;background:#fff;}
+        body.active .navigation {}
+        .navigation .logo {position:absolute;left:30px;top:20px;}
+        .navigation .nav {position:relative;padding:36px 0 0 0;}
+        .navigation .nav img {position:absolute;left:50%;top:28px;margin:0 0 0 -630px;}
+        /* .navigation .nav button {display:block;position:absolute;left:50%;top:34px;margin:0 0 0 -318px;width:80px;height:30px;border:none;outline:none;background:none;}
+        .navigation .nav button:hover {background:url(images/dummy_gnb_on1depth01.png) no-repeat 50%;} */
+        .navigation .util {position:absolute;right:110px;top:26px;}
+        .quickbar {display:flex;flex-direction:column;justify-content:center;position:fixed;right:0;top:80px;bottom:0;z-index:1;width:80px;text-align:center;background:#fff;overflow:hidden;}
+        body.active .quickbar {}
+        .quickbar img {margin-top:-40px;}
+        body.small .quickbar {display:flex;flex-direction:column;justify-content:center;position:fixed;right:0;top:0;bottom:0;z-index:1;width:35pxpx;text-align:center;background:none;}
+        .chatbot {position:fixed;right:100px;bottom:50px;z-index:80;}
+        body.small .chatbot {right:50px;}
+        body.active .quickbar {top:237px}
+        .footer {position:relative;z-index:10;height:301px;background:url(images/footer.png) no-repeat 50%;}
+        .nav-drop {display:none;position:absolute;left:0;top:80px;padding:40px 40px 0 0;width:100%;height:405px;background:#455f9b;}
+        .nav-drop.on {display:block;}
+        .wrap {min-width:1330px;}
+        .menu {position:absolute;right:0;top:0;width:80px;z-index:80;height:80px;background:#2c3957 url(images/guick_hamburger.png) no-repeat 50%;}
+        section {position:relative;}
+        .content1 {}
+        body.active .content1 {}
+        .main-cont1-1 {position:relative;padding:60px 0;}
+        .main-cont1-1 a {display:block;position:absolute;left:50%;top:50%;margin:-228px 0 0 -409px;width:182px;height:247px;border:none;outline:none;background:none;}
+        .main-cont1-1 a
+        .main-cont1-2 {margin:0;height:170px;background:#fff;}
+        .popup-notice {display:none;flex-direction: column;justify-content: center; position:fixed;left:0;top:0;right:0;bottom:0;z-index:99;background:rgba(0, 0, 0, 0.6);}
+        .popup-notice .inner {position:relative;margin:0 auto;width:483px;height:540px;}
+        .popup-notice button {display:block;position:absolute;right:60px;bottom:70px;width:30px;height:30px;border:none;outline:none;background:none;cursor:pointer;}
+        .popup-notice.on {display:flex;}
+
+        .top-notice {display:none;position:relative;;z-index:80;height:157px;background:#219893 url(images/notice_img.png) no-repeat 50%; }
+        body.active .top-notice {display:block;}
+        .top-notice button {display:block;position:absolute;right:40px;top:59px;width:150px;height:30px;border:none;outline:none;cursor:pointer;background:url(images/notice_indicator.png) no-repeat 50%;}
+    </style>
+    <script>
+
+        $(window).resize(function(){
+            if($(window).width() < 1480){
+                $('body').addClass('small')
+                $('.quickbar img').attr('src','images/quickbar_small.png');
+            }else{
+                $('body').removeClass('small')
+                $('.quickbar img').attr('src','images/right_menu.png');
+            }
+
+        });
+
+        $(function(){
+
+            $('.main-cont1-1 a').on('mouseenter',function(){
+                $('.main-cont1-1 > img').attr('src','images/dummy_main_cont_hover.png')
+            })
+            $('.main-cont1-1 a').on('mouseleave',function(){
+                $('.main-cont1-1 > img').attr('src','images/dummy_main_cont.png')
+            })
+
+            
+            $('.popup-notice button').on('click',function(){
+                $('body').removeClass('popup');
+                $('.popup-notice').removeClass('on');
+            })
+
+            $('.navigation .nav img').on('mouseenter',function(){
+                
+                if($('.nav-drop').hasClass == 0){
+                    //console.log('test')
+                    $('.nav-drop').removeClass('on') 
+                }else{
+                    //console.log('test')
+                    $('.nav-drop').addClass('on') 
+                }
+            });
+
+            $('.navigation').on('mouseleave',function(){
+                $('.nav-drop').removeClass('on')
+            });
+
+            $('.top-notice button').on('click',function(){
+                $('body').removeClass('active')
+                $('.quickbar').css({'top': '0px'})
+            });
+
+            tempHeight1 = $('.navigation').offset().top;
+            
+            if($('body').hasClass('active') == 0){
+                $('.quickbar').css({'top': '0px'})
+            }else{
+                $('.quickbar').css({'top': '0px'})
+                $('.active .quickbar').css({'top': '157px'})
+            }
+        });
+
+        $(window).scroll(function(){
+            
+            if($(document).scrollTop() > tempHeight1){
+                $('.quickbar').css({'top': '0px'})
+            }else{
+                if($('.navigation').offset().top - $(window).scrollTop() > 0){
+                    $('.quickbar').css({'top': $('.navigation').offset().top - $(window).scrollTop()})
+                }else{}
+            }
+
+            if($(document).height() - ($(window).scrollTop() + $(window).height()) - 301 < 0){
+                $('.quickbar').css({'bottom': Math.abs( $(document).height() - ($(window).scrollTop() + $(window).height()) - 301 ) })
+            }else{
+
+            }
+
+            //console.log(  Math.abs( $(document).height() - ($(window).scrollTop() + $(window).height()) - 301 )  )
+
+
+        })
+        
+    </script>
+</head>
+<body class="popup active">
+    <div class="wrap">
+        <div class="top-notice"><button></button></div>
+        <div class="navigation">
+            <div class="logo"><a href="../index.html"><img src="images/img_logo.png" alt="" ></a></div>
+            <div class="nav"><img src="images/header_menu.png" alt="" >
+                <div class="menu"></div>
+            </div>
+            <div class="util"><img src="images/gnb_util.png" alt="Menu" ></div>
+            <div class="nav-drop">
+                <img src="images/dummy_gnb_on.png" alt="" >
+            </div>
+        </div>
+
+        <section class="content1" style="background:#f5f9fb;">
+            <div class="main-cont1-1"><img src="images/dummy_main_cont.png" alt="" ><a href="step2.html"></a></div>
+            <div class="main-cont1-2"><img src="images/dummy_main_cont2.png" alt="본문2" ></div>
+        </section>
+
+        <div class="footer"></div>
+        <div class="quickbar"><img src="images/right_menu.png" alt="quick" ></div>
+    </div>
+
+    <div class="popup-notice on">
+        <div class="inner">
+            <img src="images/popup_notice_emergency.png" alt="" >
+            <button></button>
+        </div>
+    </div>
+
+    
+
+</body>
+</html>

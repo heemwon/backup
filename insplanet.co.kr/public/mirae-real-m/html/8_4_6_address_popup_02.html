@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../js/libs/jquery.min.js"></script>
+    <script src="../js/libs/jquery-ui.min.js"></script>
+    <script src="../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../js/sub.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <title>인터넷 등기소</title>
+</head>
+<body>
+    <header class="area-header">
+        <div class="area-inner">
+            <span class="btn-historyback"><button>뒤로</button></span>
+            <h1 class="title">주소검색</h1>
+            <span class="btn-navigation"><button>메뉴</button></span>
+        </div>
+    </header>
+    <div class="area-content">
+        <div class="area-inner">
+            <div class="content-wrap">
+                <!-- 신청부동산 -->
+                <section class="content-sec">
+                    <div class="sec-body">
+                        <div class="mt35 mb35 tc">
+                            <button type="button" class="btn-solid" onclick="popupManager.openPopup('#popup-address')">주소검색</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer class="area-footer">
+        <div class="area-inner">
+            <div class="box-privite">
+                <a href="">이용약관</a>
+                <a href=""><strong>개인정보처리방침</strong></a>
+                <a href="">원격지원</a>
+                
+            </div>
+            <p class="text-copyright">Copyright © Supreme Court of Korea.<br > All right reserved.</p>
+        </div>
+    </footer>
+
+
+    <!-- 팝업 -->
+    <div class="popup-wrap active" id="popup-address">
+        <div class="content-wrap full">
+            <div class="popup-head">
+                <div class="popup-title">
+                    <p class="title">주소검색</p>
+                </div>
+                <div class="close-btn">
+                    <button type="button" onclick="popupManager.closePopup();"><img src="../img/btn_popup_close.svg" alt="close"></button>
+                </div>
+            </div>
+            <div class="popup-body">
+                <div class="popup-cont">
+                    <!-- 탭메뉴 -->
+                    <section class="default-sec">
+                        <ul class="tabmenu-con" data-tab="container" id="tabmenu0">
+                            <li class="tabmenu-item">
+                                <a href="#none">도로명 주소</a>
+                            </li>
+                            <li class="tabmenu-item active">
+                                <a href="#none">소재지번 주소</a>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <div class="tabchild-con" data-tab-bind="tabmenu0">
+                        <div class="tabchild-item">
+                            <!-- 검색 -->
+                            <section class="page-top-sec mt25">
+                                <div class="search-con line-type">
+                                    <label for="">
+                                        <input type="text" id="" placeholder="도로명 입력">
+                                    </label>
+                                    <button type="button" class="search-btn">검색</button>
+                                </div>
+                            </section>
+
+                            <!-- 컨텐츠 -->
+                            <section class="content-sec">
+                                <div class="block-wrap">
+                                    <img src="../img/bul_text_tip.svg" alt="TIP">
+                                    <ul class="list-dot fs-14 color-41">
+                                        <li>
+                                            <div>도로명 외에 시군구 정보와 건물번호를 입력하시면 AND검색이 가능합니다.</div>
+                                        </li>
+                                        <li>
+                                            <div>한 단어 입력 시 도로명으로 검색됩니다.</div>
+                                        </li>
+                                        <li>
+                                            <div>두 단어 이상 입력 시 띄어쓰기에 유의하시기 바랍니다.</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="block-wrap mt25 fs-14 fw-500">
+                                    <div>
+                                        <p>도로명 + 건물번호</p>
+                                        <p class="color-sub1">예) 중앙로, 수표로18가길</p>
+                                    </div>
+                                    <div class="mt25">
+                                        <p>시군구 + 도로명 + 건물번호</p>
+                                        <p class="color-sub1">예) 과천시 중앙로 161-2</p>
+                                    </div>
+                                    <div class="mt25">
+                                        <p>시도 + 시군구 + 도로명</p>
+                                        <p class="color-sub1">예) 경기도 과천시 중앙로</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="tabchild-item active">
+                            <!-- 검색 -->
+                            <section class="page-top-sec mt25">
+                                <div class="search-con line-type">
+                                    <label for="">
+                                        <input type="text" id="" placeholder="리/동 입력">
+                                    </label>
+                                    <button type="button" class="search-btn">검색</button>
+                                </div>
+                            </section>
+
+                            <!-- 컨텐츠 -->
+                            <section class="content-sec">
+                                <div class="block-wrap">
+                                    <img src="../img/bul_text_tip.svg" alt="TIP">
+                                    <ul class="list-dot fs-14 color-41">
+                                        <li>
+                                            <div>리/동까지 입력하시기 바랍니다.</div>
+                                        </li>
+                                        <li>
+                                            <div>명칭이 정확하지 않은 경우 리/동을 제외하고<br>입력하시기 바랍니다.</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="block-wrap mt25 fs-14 fw-500">
+                                    <div>
+                                        <p class="color-sub1">예) 서초동 → 서초</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        
+                        <!-- 버튼 -->
+                        <section class="button-sec mt45">
+                            <div class="btn-con">
+                                <button type="button" class="btn-solid large">조회</button>
+                            </div>
+                        </section>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="dim-wrap"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+    <defs>
+        <style>
+            .cls-2{fill:#707070}
+        </style>
+    </defs>
+    <g id="btn_sicon_link_gr" transform="translate(-10.068 -8)">
+        <path id="사각형_1296" fill="none" d="M0 0H14V14H0z" opacity="0.2" transform="translate(10.068 8)"/>
+        <g id="External-link" transform="translate(11.608 8.96)">
+            <path id="Shape" d="M10 10H1V1h4V0H0v11h11V6h-1v4z" class="cls-2" transform="translate(.46 .54)"/>
+            <path id="Shape-2" d="M3.85 0v1h2.3L0 7.14l.71.71L6.85 1.7V4h1V0z" class="cls-2" transform="translate(3.61 .54)"/>
+        </g>
+    </g>
+</svg>

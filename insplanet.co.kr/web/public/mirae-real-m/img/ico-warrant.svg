@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+    <g transform="translate(6 7.129)">
+        <rect width="64" height="64" rx="5" transform="translate(-6 -7.129)" style="fill:#f2f4f5"/>
+        <path transform="translate(10 8.871)" style="opacity:.2;fill:none" d="M0 0h32v32H0z"/>
+        <path data-name="패스 4127" d="M23.228 32.636H11.333V13.454h25.952v11.488" transform="translate(.795 -.327)" style="stroke-width:1.5px;stroke:#1d1d1d;fill:none"/>
+        <g data-name="Icon feather-mouse-pointer">
+            <path data-name="패스 4125" d="m4.5 4.5 5.416 13 1.923-5.661L17.5 9.916z" transform="translate(23.5 21.371)" style="stroke:#000;stroke-linecap:round;stroke-linejoin:round;fill:#f4c215;stroke-width:1.5px"/>
+            <path data-name="패스 4126" d="m19.5 19.5 4.322 4.322" transform="translate(16.479 14.35)" style="stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;fill:none"/>
+        </g>
+        <path data-name="선 684" transform="translate(16 18.871)" style="stroke-dasharray:1.5 2;stroke-width:1.5px;stroke:#1d1d1d;fill:none" d="M0 0h10"/>
+    </g>
+</svg>

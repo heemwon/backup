@@ -1,0 +1,18 @@
+<svg data-name="ico / 40 / local" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <path style="opacity:.2;fill:none" d="M0 0h40v40H0z"/>
+    <g data-name="그룹 4036">
+        <g data-name="타원 211" transform="translate(12.952 2.373)" style="stroke:#000;stroke-width:1.5px;fill:#fff">
+            <ellipse cx="7.052" cy="7.028" rx="7.052" ry="7.028" style="stroke:none"/>
+            <ellipse cx="7.052" cy="7.028" rx="7.802" ry="7.778" style="fill:none"/>
+        </g>
+        <path data-name="Fill 1" d="M15.522 7.582c-3.528.556-5.686-3.31-5.686-3.31A12.688 12.688 0 0 1 0 7.539 7.863 7.863 0 0 1 7.761 0a7.871 7.871 0 0 1 7.762 7.582" style="stroke-linejoin:round;stroke-linecap:round;stroke:#000;stroke-width:1.5px;fill:#fff" transform="translate(12.267 1.6)"/>
+    </g>
+    <g data-name="패스 4135" style="fill:#fff">
+        <path d="M28.475 17.25H.75V7A6.257 6.257 0 0 1 7 .75h19a6.257 6.257 0 0 1 6.249 6.121L28.475 17.25z" style="stroke:none" transform="translate(3 21)"/>
+        <path d="M7 1.5A5.506 5.506 0 0 0 1.5 7v9.5h26.45l3.544-9.749A5.507 5.507 0 0 0 26 1.5H7M7 0h19a7 7 0 0 1 7 7l-4 11H0V7a7 7 0 0 1 7-7z" style="fill:#000;stroke:none" transform="translate(3 21)"/>
+    </g>
+    <g data-name="그룹 3644">
+        <path data-name="Stroke 5" d="M8.5 0A8.5 8.5 0 1 1 0 8.5 8.5 8.5 0 0 1 8.5 0z" style="stroke-miterlimit:10;fill:#f4c215;stroke:#000;stroke-width:1.5px" transform="translate(22 22)"/>
+        <path data-name="Stroke 7" d="M7.791 0 3.657 4.725a.891.891 0 0 1-.637.3h-.031a.884.884 0 0 1-.626-.26L0 2.406" transform="translate(27 28)" style="stroke-miterlimit:10;stroke-linejoin:round;stroke:#000;stroke-width:1.5px;fill:none"/>
+    </g>
+</svg>

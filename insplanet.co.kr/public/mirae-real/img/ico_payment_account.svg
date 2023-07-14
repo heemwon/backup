@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="사각형_1593" fill="none" d="M0 0H23.5V19.5H0z"/>
+        </clipPath>
+        <style>
+            .cls-5{fill:none}.cls-4{fill:#fff}.cls-5{stroke:#1d1d1d;stroke-miterlimit:10;stroke-width:1.5px}
+        </style>
+    </defs>
+    <g id="ico_payment__account" transform="translate(-480.296 -533)">
+        <g id="ico_payment__account-2" transform="translate(492.046 545.75)">
+            <g id="아트웍_1" clip-path="url(#clip-path)" transform="translate(-11.75 -9.75)">
+                <path id="패스_3881" d="M18.8 14.8h-14a2 2 0 0 1-2-2v-10a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2" class="cls-4"/>
+                <rect id="사각형_1591" width="18" height="14" class="cls-5" rx="2" transform="translate(2.8 .8)"/>
+                <path id="패스_3882" d="M20.8 10.8l2 6.2a1.9 1.9 0 0 1-2 1.8h-18a1.9 1.9 0 0 1-2-1.8l2-6.2" class="cls-4"/>
+                <path id="패스_3883" d="M20.8 10.8l2 6.2a1.9 1.9 0 0 1-2 1.8h-18a1.9 1.9 0 0 1-2-1.8l2-6.2" class="cls-5"/>
+                <path id="선_468" d="M0 0L18 0" class="cls-5" transform="translate(2.8 10.8)"/>
+                <path id="선_469" d="M0 0L4 0" class="cls-5" transform="translate(5.8 7.8)"/>
+                <rect id="사각형_1592" width="3" height="3" class="cls-5" rx="1" transform="translate(14.8 3.8)"/>
+            </g>
+        </g>
+    </g>
+</svg>

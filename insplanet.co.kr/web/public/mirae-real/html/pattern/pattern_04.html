@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../../js/libs/jquery.min.js"></script>
+    <script src="../../js/libs/jquery-ui.min.js"></script>
+    <script src="../../js/libs/jquery.selectric.js"></script>
+    <script src="../../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../../js/sub.js"></script>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/guide.css">
+    <link rel="stylesheet" href="../../css/sub.css">
+    <title>패턴</title>
+</head>
+
+<body>
+    <div class="apply-wrap">
+        
+        <!-- 4-1. 등록면허세 -->
+        <div class="title-content-wrap">
+            <div class="title-wrap">
+                <h2>4-1. 등록면허세</h2>
+            </div>
+            <div class="cont-wrap">
+                <!-- 등록면허세 -->
+                <section class="form-sec">
+                    <div class="sec-head">
+                        <h4>등록면허세</h4>
+                    </div>
+                    <div class="sec-body">
+                        <div class="bg-box-wrap">
+                            <p class="fs-15 color-41">편리하게 등록면허세(취득세) 신고/납부하실 수 있습니다.</p>
+                            <div class="flex-wrap bottom mt8">
+                                <div class="left-con">
+                                    <ul class="list-bullet fs-15 color-41">
+                                        <li>
+                                            <div>취득세 : 토지 및 공동주택 대상, 개인간 유상거래 및 단독취득(취득일로부터 60일 이내 신고분)</div>
+                                        </li>
+                                        <li>
+                                            <div>등록면허세 : 저당권, 전세권, 임차권</div>
+                                        </li>
+                                        <li>
+                                            <div>법인간 거래는 법인장부를 추가로 제출하여야 하는 등 증빙절차가 복잡하므로 제공대상에서 제외됩니다.</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="right-con">
+                                    <button type="button" class="btn medium">등록면허세(취득세) 신고/납부</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- // 등록면허세 -->
+
+                <!-- 등록면허세(취득세) 정보 -->
+                <section class="form-sec depth-2">
+                    <div class="sec-body">
+                        <div class="table-head">
+                            <div class="left-con">
+                                <div class="inline-wrap">
+                                    <h5>등록면허세(취득세) 정보</h5>
+                                    <span class="checkbox-con ml25">
+                                        <input type="checkbox" name="" id="check0">
+                                        <label for="check0">납세면세(비과세 포함)</label>
+                                    </span>
+                                    <span class="checkbox-con ml25">
+                                        <input type="checkbox" name="" id="check1">
+                                        <label for="check1">과세증명서</label>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-body">
+                            <table class="table-list">
+                                <caption>등록면허세(취득세) 정보</caption>
+                                <colgroup>
+                                    <col style="width: 33.3%;">
+                                    <col style="width: 33.3%;">
+                                    <col style="width: 33.3%;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">등록면허세(취득세)</th>
+                                        <th scope="col">지방교육세</th>
+                                        <th scope="col">농어촌 특별세</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="input-unit-wrap">
+                                                <label for="">
+                                                    <input type="text" name="" id="" class="w282" placeholder="" readonly>
+                                                </label>
+                                                <span class="unit-right">원</span>
+                                            </span>
+                                        </td>
+                                        <td class="has-element">
+                                            <span class="input-unit-wrap">
+                                                <label for="">
+                                                    <input type="text" name="" id="" class="w282" placeholder="">
+                                                </label>
+                                                <span class="unit-right">원</span>
+                                            </span>
+                                        </td>
+                                        <td class="has-element">
+                                            <span class="input-unit-wrap">
+                                                <label for="">
+                                                    <input type="text" name="" id="" class="w282" placeholder="">
+                                                </label>
+                                                <span class="unit-right">원</span>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+                <!-- // 등록면허세(취득세) 정보 -->
+
+                <!-- 등록면허세(취득세) 납세액 정보 -->
+                <section class="form-sec depth-2">
+                    <div class="sec-body">
+                        <div class="table-head">
+                            <div class="left-con">
+                                <h5>등록면허세(취득세) 납세액 정보</h5>
+                            </div>
+                            <div class="right-con" id="go-table-btn0">
+                                <button type="button" class="btn-solid">선택삭제</button>
+                            </div>
+                        </div>
+                        <div class="table-body">
+                            <table class="table-list">
+                                <caption>등록면허세(취득세) 납세액 정보</caption>
+                                <colgroup>
+                                    <col style="width: 60px;">
+                                    <col style="width: 145px;">
+                                    <col style="width: auto;">
+                                    <col style="width: 209px;">
+                                    <col style="width: 168px;">
+                                    <col style="width: 88px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="info0"><label for="info0"></label>
+                                            </span>
+                                        </th>
+                                        <th scope="col">기관</th>
+                                        <th scope="col">등록면허세(취득세) 납세번호</th>
+                                        <th scope="col">영수필 종류</th>
+                                        <th scope="col">금액</th>
+                                        <th scope="col">유형</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbond2"><label for="cbond2"></label>
+                                            </span>
+                                        </td>
+                                        <td>서울특별시</td>
+                                        <td class="ff-roboto">
+                                            111-111-1-11-111-111-1111-11-1-11111-1
+                                        </td>
+                                        <td>등록면허세영수필확인서</td>
+                                        <td class="right">
+                                            1,000,000원
+                                        </td>
+                                        <td>연계</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="6" class="total-row">
+                                            <span class="title">등록면허(취득세) 총액</span>
+                                            <span class="cont">60,000원</span>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <div class="table-btn-focus">
+                                <a href="#go-table-btn0">테이블 기능 버튼으로 이동</a>
+                            </div>
+                        </div>
+                        <div class="row-btn-wrap">
+                            <button type="button" class="btn-row">
+                                <span>등록면허세(취득세) 추가</span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <!-- // 등록면허세(취득세) 납세액 정보 -->
+            </div>
+        </div>
+        <!-- // 4-1. 등록면허세 -->
+        
+        <!-- 4-2. 행정기관연계 -->
+        <div class="title-content-wrap">
+            <div class="title-wrap">
+                <h2>4-2. 행정기관연계</h2>
+            </div>
+            <div class="cont-wrap">
+                <!-- 행정기관 연계 -->
+                <section class="form-sec">
+                    <div class="sec-head">
+                        <h4>행정기관 연계</h4>
+                    </div>
+                    <div class="sec-body">
+                        <div class="bg-box-wrap">
+                            <ul class="list-bullet fs-15 color-41">
+                                <li>
+                                    <div>주민등록사항정보(주민등록표등⋅초본)가 필요한 등기유형일 경우에는 반드시 아래 행정정보 공동이용사전동의서를 작성해 주시기 바랍니다.</div>
+                                </li>
+                                <li class="important-bullet">
+                                    <div>사전동의서 미작성시 보정처리 될 수 있으므로 유의하시기 바랍니다.</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-box-wrap no-border mt40">
+                            <dl class="title-cont-wrap">
+                                <dt>연계대상 사전동의서 선택</dt>
+                                <dd>
+                                    <div class="inline-wrap">
+                                        <span class="checkbox-con">
+                                            <input type="checkbox" name="" id="conec0">
+                                            <label for="conec0">주민등록사항 사전동의서</label>
+                                        </span>
+                                        <span class="checkbox-con ml40">
+                                            <input type="checkbox" name="" id="conec1">
+                                            <label for="conec1">임대사업자등록정보 사전동의서</label>
+                                        </span>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+                <!-- // 행정기관 연계 -->
+
+                <!-- 주민등록사항 사전동의서 -->
+                <section class="form-sec depth-2">
+                    <div class="sec-body">
+                        <div class="table-head">
+                            <div class="left-con">
+                                <h5>주민등록사항 사전동의서</h5>
+                            </div>
+                            <div class="right-con" id="go-table-btn1">
+                                <button type="button" class="btn-solid">선택삭제</button>
+                            </div>
+                        </div>
+                        <div class="table-body">
+                            <table class="table-list">
+                                <caption>주민등록사항 사전동의서</caption>
+                                <colgroup>
+                                    <col style="width: 60px;">
+                                    <col style="width: auto;">
+                                    <col style="width: auto;">
+                                    <col style="width: 246px;">
+                                    <col style="width: 209px;">
+                                    <col style="width: 120px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbox3"><label for="cbox3"></label>
+                                            </span>
+                                        </th>
+                                        <th scope="col">성명</th>
+                                        <th scope="col">주민등록번호</th>
+                                        <th scope="col">전화번호</th>
+                                        <th scope="col">작성여부</th>
+                                        <th scope="col">승인여부</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbox4"><label for="cbox4"></label>
+                                            </span>
+                                        </td>
+                                        <td>김일동</td>
+                                        <td class="ff-roboto">111111-1111111</td>
+                                        <td class="has-element">
+                                            <label for="">
+                                                <input type="text" name="" id="" class="w204" placeholder="'-'없이 입력">
+                                            </label>
+                                        </td>
+                                        <td class="has-element">
+                                            <div class="inline-wrap">
+                                                <button type="button" class="btn">동의서작성</button>
+                                                <button type="button" class="btn">스캔제출</button>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            미승인
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="cbox5"><label for="cbox5"></label>
+                                            </span>
+                                        </td>
+                                        <td>김일동</td>
+                                        <td class="ff-roboto">111111-1111111</td>
+                                        <td class="has-element">
+                                            <label for="">
+                                                <input type="text" name="" id="" class="w204" placeholder="'-'없이 입력">
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <span class="status-blue">작성완료</span>
+                                        </td>
+                                        <td>
+                                            <span class="status-blue">승인</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="table-btn-focus">
+                                <a href="#go-table-btn1">테이블 기능 버튼으로 이동</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- // 주민등록사항 사전동의서 -->
+
+                <!-- 임대사업자등록정보 사전동의서 -->
+                <section class="form-sec depth-2">
+                    <div class="sec-body">
+                        <div class="table-head">
+                            <div class="left-con">
+                                <h5>임대사업자등록정보 사전동의서</h5>
+                            </div>
+                            <div class="right-con" id="go-table-btn2">
+                                <button type="button" class="btn-solid">선택삭제</button>
+                            </div>
+                        </div>
+                        <div class="table-body">
+                            <table class="table-list">
+                                <caption>임대사업자등록정보 사전동의서</caption>
+                                <colgroup>
+                                    <col style="width: 60px;">
+                                    <col style="width: auto;">
+                                    <col style="width: 160px;">
+                                    <col style="width: 230px;">
+                                    <col style="width: 230px;">
+                                    <col style="width: 210px;">
+                                    <col style="width: 95px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="dlaeo0"><label for="dlaeo0"></label>
+                                            </span>
+                                        </th>
+                                        <th scope="col">성명</th>
+                                        <th scope="col">주민등록번호</th>
+                                        <th scope="col">임대사업자등록번호</th>
+                                        <th scope="col">전화번호</th>
+                                        <th scope="col">작성여부</th>
+                                        <th scope="col">승인여부</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="dlaeo1"><label for="dlaeo1"></label>
+                                            </span>
+                                        </td>
+                                        <td>김일동</td>
+                                        <td class="ff-roboto">111111-1111111</td>
+                                        <td class="has-element">
+                                            <label for="">
+                                                <input type="text" name="" id="" class="w190" placeholder="'-'없이 입력">
+                                            </label>
+                                        </td>
+                                        <td class="has-element">
+                                            <label for="">
+                                                <input type="text" name="" id="" class="w190" placeholder="'-'없이 입력">
+                                            </label>
+                                        </td>
+                                        <td class="has-element">
+                                            <div class="inline-wrap">
+                                                <button type="button" class="btn">동의서작성</button>
+                                                <button type="button" class="btn">스캔제출</button>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            미승인
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="has-element">
+                                            <span class="checkbox-con only-box">
+                                                <input type="checkbox" name="" id="dlaeo2"><label for="dlaeo2"></label>
+                                            </span>
+                                        </td>
+                                        <td>김일동</td>
+                                        <td class="ff-roboto">111111-1111111</td>
+                                        <td class="has-element">
+                                            <label for="">
+                                                <input type="text" name="" id="" class="w190" placeholder="'-'없이 입력">
+                                            </label>
+                                        </td>
+                                        <td class="has-element">
+                                            <label for="">
+                                                <input type="text" name="" id="" class="w190" placeholder="'-'없이 입력">
+                                            </label>
+                                        </td>
+                                        <td class="has-element">
+                                            <div class="inline-wrap">
+                                                <button type="button" class="btn">동의서작성</button>
+                                                <button type="button" class="btn">스캔제출</button>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="status-blue">승인</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="table-btn-focus">
+                                <a href="#go-table-btn2">테이블 기능 버튼으로 이동</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- // 임대사업자등록정보 사전동의서 -->
+            </div>
+        </div>
+        <!-- // 4-2. 행정기관연계 -->
+        
+    </div>
+</body>
+
+</html>

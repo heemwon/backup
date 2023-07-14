@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../js/libs/jquery.min.js"></script>
+    <script src="../js/libs/jquery-ui.min.js"></script>
+    <script src="../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../js/sub.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <title>인터넷 등기소</title>
+</head>
+<body>
+    <header class="area-header">
+        <div class="area-inner">
+            <span class="btn-historyback"><button>뒤로</button></span>
+            <h1 class="title">위치기반 정보제공</h1>
+            <span class="btn-navigation"><button>메뉴</button></span>
+        </div>
+    </header>
+    <div class="area-content">
+        <div class="area-inner">
+            <div class="content-wrap">
+                <!-- 탭메뉴 -->
+                <section class="content-sec">
+                    <ul class="tabmenu-con" data-tab="container" id="tabmenu0">
+                        <li class="tabmenu-item active">
+                            <a href="#none">등기소</a>
+                        </li>
+                        <li class="tabmenu-item">
+                            <a href="#none">법인인감무인발급기</a>
+                        </li>
+                    </ul>
+                    <div class="tabchild-con" data-tab-bind="tabmenu0">
+                        <div class="tabchild-item active">
+                            <!-- 조건 검색 -->
+                            <section class="default-sec">
+                                <div class="accordion-wrap selected-option-wrap">
+                                    <div class="accordion-con title-type" data-accordion="container">
+                                        <div class="accodion-head" data-accordion="item">
+                                            <button type="button" class="selected-option-btn" data-accordion="trigger">
+                                                <div class="selected-option-con">
+                                                    <span>상세조회</span>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <div class="accodion-body has-padding">
+                                            <div class="form-item">
+                                                <div class="item-body">
+                                                    <div class="block-wrap">
+                                                        <span class="radio-btn-con">
+                                                            <span class="radio-btn-item">
+                                                                <input type="radio" name="radiobtn" id="radiobtn1-1" checked>
+                                                                <label for="radiobtn1-1">등기소명</label>
+                                                            </span>
+                                                            <span class="radio-btn-item">
+                                                                <input type="radio" name="radiobtn" id="radiobtn1-2">
+                                                                <label for="radiobtn1-2">소재지</label>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="block-wrap mt5">
+                                                        <label for="">
+                                                            <input type="text" id="addr2" placeholder="검색어 입력">
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="btn-con flex-between">
+                                                <button type="button" class="btn color-41">초기화</button>
+                                                <button type="button" class="btn-solid large">조회</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+    
+                            <!-- 지도 -->
+                            <section class="content-sec">
+                                <div class="location-wrap">
+                                    <div class="map-con">
+                                        <img src="../img/img_map.jpg" alt="">
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- 아코디언 -->
+                            <section class="content-sec">
+                                <div class="list-head">
+                                    <div class="left-con">
+                                        <span class="fs-14 color-86">전체 24건</span>
+                                    </div>
+                                </div>
+                                <div class="list-body">
+                                    <div class="accordion-wrap">
+                                        <ul class="accordion-con board-type" data-accordion="container">
+                                            <li data-accordion="item">
+                                                <button type="button" class="title-con" data-accordion="trigger">
+                                                    <p>서울중앙지방법원 등기국</p>
+                                                    <span class="address">
+                                                        [06956] 서울특별시 서초구 법원로3길 14 (서초3동 1707-4)
+                                                    </span>
+                                                </button>
+                                                <div class="cont-wrap">
+                                                    <div class="cont-con">
+                                                        <div class="cont-body">
+                                                            <ul class="detail-info-con">
+                                                                <li>
+                                                                    <span class="title">주소</span>
+                                                                    <span class="text">[06956] 서울특별시 서초구 법원로3길 14 (서초3동 1707-4)</span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="title">연락처</span>
+                                                                    <span class="text">1544-0703 (FAX: 02-590-1881)</span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="title">관할구역</span>
+                                                                    <span class="text">서울특별시 전지역의 상법상 법인등기</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li data-accordion="item">
+                                                <button type="button" class="title-con" data-accordion="trigger">
+                                                    <p>서울중앙지방법원 등기국</p>
+                                                    <span class="address">
+                                                        [06956] 서울특별시 서초구 법원로3길 14 (서초3동 1707-4)
+                                                    </span>
+                                                </button>
+                                                <div class="cont-wrap">
+                                                    <div class="cont-con">
+                                                        <div class="cont-body">
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="tabchild-item">
+                            법인인감무인발급기
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer class="area-footer">
+        <div class="area-inner">
+            <div class="box-privite">
+                <a href="">이용약관</a>
+                <a href=""><strong>개인정보처리방침</strong></a>
+                <a href="">원격지원</a>
+                
+            </div>
+            <p class="text-copyright">Copyright © Supreme Court of Korea.<br > All right reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

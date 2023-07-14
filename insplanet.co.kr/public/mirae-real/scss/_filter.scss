@@ -1,0 +1,143 @@
+@charset "utf-8";
+@import '_color.scss';
+@import '_mixin.scss';
+
+/*-------------------------------------------------------------------
+    @Filter
+-------------------------------------------------------------------*/
+.filter-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 35px;
+    border: 2px solid $color-1d;
+    > .form-con {
+        flex-basis: 1000px;
+        @include fontDefault(14px, normal, $color-5a);
+        > li {
+            display: none;
+            justify-content: space-between;
+            &:first-child {
+                margin-top: 0 !important;
+            }
+            &.selected-item {
+                display: block;
+                margin-top: 0 !important;
+                .item-wrap {
+                    margin: -6px -35px;
+                    * {
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                    .item-con {
+                        margin: 6px 35px;
+                        font-size: 0;
+                        * {
+                            @include fontDefault(14px, normal, $color-5a);
+                        }
+                        .label {
+                        }
+                        .value {
+                            padding: 4px 11px 6px;
+                            margin-left: 20px;
+                            color: $color-ff;
+                            border-radius: 5px;
+                            background-color: #6b7083;
+                            max-width: 229px;
+                            @include textEllipsis();
+                        }
+                    }
+                }
+            }
+            .element-con {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                .title-con {
+                    width: 120px;
+                }
+                .cont-con {
+                    flex: 1;
+                    // > *:not(button) {
+                    > .select-con, > .clear-btn-con {
+                        width: 100%;
+                    }
+                    > .checkbox-con, .radio-con {
+                        width: auto;
+                        margin-left: 40px;
+                        &:first-child {
+                            margin-left: 0;
+                        }
+                    }
+                    .flex-wrap {
+                        > *:nth-child(2) {
+                            flex: 1;
+                            margin-left: 8px;
+                        }
+                    }
+                    .filter-value {
+                        display: inline-block;
+                        padding: 4px 11px 6px;
+                        border-radius: 5px;
+                        background-color: $color-sub1;
+                        @include fontStyler(14px, 500, 1.71, normal, $color-ff);
+                    }
+                }
+                &:nth-child(even) {
+                    margin-left: 86px;
+                }
+            }
+        }
+    }
+    > .btn-con {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        .util-btn-con {
+            display: none;
+            font-size: 0;
+            > * {
+                margin-left: 8px;
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+        .fold-btn-con {
+            text-align: right;
+            .fold-btn {
+                display: inline-block;
+                padding-right: 27px;
+                background: url("../img/ico_acco_close.svg") $color-ff no-repeat center right;
+                @include fontDefault(15px, 500, 1d);
+                &::before {
+                    content: "상세조회";
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    &.default, &.active {
+        > .form-con > li {
+            display: flex;
+            margin-top: 25px;
+            &.selected-item {
+                display: none;
+            }
+        }
+        > .btn-con {
+            justify-content: space-between;
+            .util-btn-con {
+                display: block;
+            }
+            .fold-btn {
+                background-image: url("../img/ico_acco_open.svg");
+                &::before {
+                    content: "상세조회";
+                }
+            }
+        }
+    }
+    &.align-center {
+        align-items: center;
+    }
+}

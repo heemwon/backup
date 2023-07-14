@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <clipPath id="clip-path">
+            <ellipse id="타원_239" data-name="타원 239" cx="14" cy="13.5" rx="14" ry="13.5" transform="translate(54 -36)" style="stroke-width:1.2px;stroke:#101010;fill:#fff"/>
+        </clipPath>
+        <style>
+            .cls-6{stroke:#101010}.cls-13{fill:none}.cls-6{fill:#fec867}.cls-12{stroke:none}
+        </style>
+    </defs>
+    <g id="btn_quick_chatbot" transform="translate(-15 49)">
+        <path id="Container" transform="translate(15 -49)" style="opacity:.2;fill:none" d="M0 0h40v40H0z"/>
+        <circle id="타원_247" data-name="타원 247" cx="20" cy="20" r="20" transform="translate(15 -49)" style="opacity:.8;fill:#fff"/>
+        <g id="그룹_3607" data-name="그룹 3607" transform="translate(-33)">
+            <circle id="타원_235" data-name="타원 235" cx="14" cy="14" r="14" transform="translate(54 -37)" style="fill:#e0e0e0"/>
+            <g id="마스크_그룹_50" data-name="마스크 그룹 50" style="clip-path:url(#clip-path)">
+                <g id="사각형_1788" data-name="사각형 1788" class="cls-6" transform="translate(56 -18)">
+                    <rect class="cls-12" width="24" height="20" rx="8"/>
+                    <rect class="cls-13" x=".5" y=".5" width="23" height="19" rx="7.5"/>
+                </g>
+            </g>
+            <g id="사각형_1787" data-name="사각형 1787" transform="translate(53 -32)" style="stroke:#000;fill:#fff">
+                <rect class="cls-12" width="30" height="9" rx="4"/>
+                <rect class="cls-13" x=".5" y=".5" width="29" height="8" rx="3.5"/>
+            </g>
+            <rect id="사각형_1785" data-name="사각형 1785" width="24" height="20" rx="10" transform="translate(56 -39)" style="fill:#4a5dc6"/>
+            <rect id="사각형_1786" data-name="사각형 1786" width="16" height="12" rx="4" transform="translate(60 -34)" style="fill:#fff"/>
+            <circle id="타원_236" data-name="타원 236" cx="1.5" cy="1.5" r="1.5" transform="translate(62 -31)"/>
+            <circle id="타원_237" data-name="타원 237" cx="1.5" cy="1.5" r="1.5" transform="translate(71 -31)"/>
+            <g id="타원_238" data-name="타원 238" class="cls-6" transform="translate(66 -46)">
+                <circle class="cls-12" cx="2.5" cy="2.5" r="2.5"/>
+                <circle class="cls-13" cx="2.5" cy="2.5" r="2"/>
+            </g>
+            <path id="선_480" data-name="선 480" transform="translate(68.5 -41.5)" style="stroke:#000;fill:none" d="M0 0v3"/>
+            <path id="패스_4082" data-name="패스 4082" d="M32.8-26.578s.039 1 3.081 1 2.987-1 2.987-1" transform="translate(32.135)" style="stroke-linecap:round;stroke:#000;fill:none"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+    <defs>
+        <style>
+            .cls-3{fill:#1d1d1d}
+        </style>
+    </defs>
+    <g id="icn_certi_securepc" transform="translate(-148 -211)">
+        <path id="사각형_1498" fill="none" d="M0 0H60V60H0z" opacity="0.1" transform="translate(148 211)"/>
+        <rect id="Rectangle" width="48" height="40" fill="#fff" stroke="#1d1d1d" stroke-width="1.5px" rx="5" transform="translate(154 221)"/>
+        <path id="Path" d="M1.5 3A1.5 1.5 0 1 0 0 1.5 1.5 1.5 0 0 0 1.5 3z" class="cls-3" transform="translate(159 226)"/>
+        <path id="Path-2" d="M1.5 3A1.5 1.5 0 1 0 0 1.5 1.5 1.5 0 0 0 1.5 3z" class="cls-3" transform="translate(164 226)"/>
+        <path id="Path-3" d="M1.5 3A1.5 1.5 0 1 0 0 1.5 1.5 1.5 0 0 0 1.5 3z" class="cls-3" transform="translate(169 226)"/>
+        <path id="Path-4" fill="#fec867" d="M.078 6.213a2.838 2.838 0 0 1 2.47-2.565A39.6 39.6 0 0 0 7.4 2.616 52.073 52.073 0 0 0 13.177.29a3.163 3.163 0 0 1 2.645 0A52.073 52.073 0 0 0 21.6 2.616a39.6 39.6 0 0 0 4.854 1.032 2.838 2.838 0 0 1 2.47 2.565c.368 5.726-.031 20.72-13.589 25.2a2.69 2.69 0 0 1-1.667 0C.109 26.933-.29 11.939.078 6.213z" transform="translate(177 226.334)"/>
+        <path id="Shape" fill="#fff" d="M6.458 22.921a13.516 13.516 0 0 1-1.764-.962L9.965.4c.65.3 1.257.569 1.805.8L6.458 22.92zm-3.447-2.262A13.909 13.909 0 0 1 0 16.613L3.646 1.7C4.758 1.313 6.084.719 7 .289A3.2 3.2 0 0 1 8.062 0L3.011 20.657z" transform="translate(183.135 230.37)"/>
+        <path id="Path-5" fill="none" stroke="#1d1d1d" stroke-miterlimit="10" stroke-width="1.5px" d="M.027 5.123a2.834 2.834 0 0 1 2.436-2.6 24.928 24.928 0 0 0 2.9-.668A34.271 34.271 0 0 0 9.137.3a3.215 3.215 0 0 1 2.726 0 34.271 34.271 0 0 0 3.777 1.556 24.928 24.928 0 0 0 2.9.668 2.834 2.834 0 0 1 2.436 2.6c.195 4.6-.448 14.924-9.62 18.24a2.526 2.526 0 0 1-1.706 0C.474 20.047-.168 9.726.027 5.123z" transform="translate(181 230.356)"/>
+    </g>
+</svg>

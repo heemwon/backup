@@ -1,0 +1,418 @@
+@charset "utf-8";
+@import '_color.scss';
+@import '_mixin.scss';
+
+
+/*-------------------------------------------------------------------
+    @Button 
+    - Size: default: small(50x30) 별도 클래스 없음 / .large, .medium 으로 사이즈 조절
+    - Style: default: line 별도 클래스 없음 / .-solid, .icon- 으로 스타일링
+-------------------------------------------------------------------*/
+/* input button */
+input[type=button][class^=btn],
+button[class^=btn],
+a[class^=btn],
+label[class^=btn] {
+    display: inline-block;
+    min-width: 50px;
+    height: 30px;
+    padding: 0px 10px;
+    border: 1px solid $color-c3;
+    border-radius: 5px;
+    background-color: $color-ff;
+    cursor: pointer;
+    @include fontStyler(14px, 400, 2.14, normal, $color-86);
+    
+    // hover, active
+    @include btnHoverStyler($color-86, $color-41, $color-ff);
+
+    // size
+    &.medium {
+        min-width: 90px;
+        height: 45px;
+        padding: 0px 15px;
+        @include fontStyler(16px, 400, 1.31, normal, $color-41);
+        &:hover {
+            color: $color-41;
+        }
+    }
+    &.large {
+        min-width: 130px;
+        height: 60px;
+        padding: 0px 23px;
+        border-radius: 0;    
+        @include fontStyler(19px, 500, 1.31, normal, $color-41);
+        &:hover {
+            color: $color-41;
+        }
+    }
+
+    // 색상
+    &.color-main {
+        color: $color-main;
+        border-color: $color-main;
+        @include btnHoverStyler($color-main, #102989);
+    }
+    &.color-check {
+        background: #f7faff
+    }
+    &.color-sub1 {
+        color: $color-sub1;
+        border-color: $color-sub1;
+        @include btnHoverStyler($color-sub1, #102989);
+    }
+    // disabled
+    &:disabled {
+        color: $color-c3;
+        border-color: $color-de;
+        pointer-events: none;
+    }
+
+    // style
+    &[class*=-solid] {
+        // 색상 버튼
+        padding-left: 11px;
+        padding-right: 11px;
+        color: $color-ff;
+        border: none;
+        background-color: $color-main;
+        @include btnHoverStyler($color-ff, none, $color-main);
+        &.color-4d {
+            background-color: $color-4d;
+            @include btnHoverStyler($color-ff, none, $color-4d);
+        }
+        &.color-52 {
+            border-color: $color-52;
+            background-color: $color-52;
+            box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+            @include btnHoverStyler($color-ff, $color-52, $color-52);
+        }
+        // disabled
+        &:disabled {
+            color: rgba(255, 255, 255, 0.6);
+            background-color: $color-c3;
+        }
+        &.medium {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        &.large {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+        &.crud {
+            background: #525ec3;
+            box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+            &::before {
+                content: '';
+                display: inline-block;
+                margin: 0 5px -3px 0;
+                width: 18px;
+                height: 18px;
+                background: url(../img/icon_crud.svg) no-repeat 50%;
+            }
+        }
+    }
+
+    //inTable
+    &.intable1 {
+        margin-left: 7px;
+        padding: 0 6px;
+        height: 28px;
+        font-size: 12px;
+        font-weight: 500;
+        vertical-align: top;
+        color: #0e6964;
+        background-color: rgba(14, 105, 100, 0.1);
+        border: 1px solid rgba(14, 105, 100, 0);
+        &:hover {
+            border: solid 1px #d6d6d6;
+            background-color: #fff;
+        }
+    }
+    &.intable2 {
+        margin-left: 7px;
+        padding: 0 6px;
+        height: 28px;
+        font-size: 12px;
+        font-weight: 500;
+        vertical-align: top;
+        color: #4a5dc6;
+        background-color: rgba(74, 93, 198, 0.1);
+        border: 1px solid rgba(74, 93, 198, 0);
+        &:hover {
+            border: solid 1px #d6d6d6;
+            background-color: #fff;
+        }
+    }
+
+    // icon
+    &[class*=icon-] {
+        padding-left: 29px;
+        background-position: 10px center;
+        background-repeat: no-repeat;
+        background-size: 14px 14px;
+        &.medium {
+            padding-left: 38px;
+            background-position: 15px center;
+            background-size: 18px 18px;
+        }
+        &.large {
+            padding-left: 56px;
+            background-position: 23px center;
+            background-size: 24px 24px;
+        }
+    }
+    &.icon-member {
+        background-image: url("../img/btn_micon_person.svg");
+    }
+    &.icon-add {
+        background-image: url("../img/btn_sicon_add.svg");
+    }
+    &.icon-add-bk {
+        background-image: url("../img/btn_sicon_add_bk.svg");
+    }
+    &.icon-add-wh {
+        background-image: url("../img/btn_sicon_add_wh.svg");
+    }
+    &.icon-del-bk {
+        background-image: url("../img/btn_sicon_del_bk.svg");
+    }
+    &.icon-del-wh {
+        background-image: url("../img/btn_sicon_del_wh.svg");
+    }
+    &.icon-trash-wh {
+        background-image: url("../img/btn_ico_trash_wh.svg");
+    }
+    &.icon-trash-bk {
+        background-image: url("../img/btn_ico_trash_bk.svg");
+    }
+    &.icon-download {
+        background-image: url("../img/btn_sicon_download.svg");
+    }
+    &.icon-sign {
+        background-image: url("../img/btn_sicon_sign.svg");
+        background-size: 18px 19px;
+        padding-left: 33px;
+    }
+    &.icon-download-gr {
+        padding-left: 35px;
+        background-image: url("../img/ico_btn_download_gr.svg");
+        background-size: 20px 20px;
+    }
+    &.icon-download-wh {
+        padding-left: 35px;
+        background-image: url("../img/ico_btn_download_wh.svg");
+        background-size: 20px 20px;
+    }
+    &.icon-prev {
+        background-image: url("../img/btn_licon_back.svg");
+    }
+    &.icon-reset {
+        background-image: url("../img/btn_sicon_reset.svg");
+    }
+    &.icon-reset-wh {
+        background-image: url("../img/btn_icon_reset_wh.svg");
+    }
+    &.icon-check-wh {
+        padding-left: 48px;
+        background-image: url("../img/btn_icon_check_wh.svg");
+        background-size: 24px 24px;
+    }
+    &.icon-print-white {
+        background-image: url("../img/ico_btn_print_wh.svg");
+    }
+    &.icon-open-bk {
+        background-image: url("../img/btn_sicon_open_bk.svg");
+    }
+    &.icon-close-bk {
+        background-image: url("../img/btn_sicon_close_bk.svg");
+    }
+    &.icon-issue {
+        background-image: url("../img/btn_sicon_issue.svg");
+    }
+    &.icon-command-save {
+        background-image: url("../img/btn_icon_command_save.svg");
+    }
+    &.icon-form-check {
+        background-image: url("../img/ico_form_checkbox_default.svg");
+    }
+    &.icon-form-check-wh {
+        background-image: url("../img/ico_form_checkbox_wh.svg");
+    }
+    &.icon-join {
+        background-image: url("../img/ico_wholemenu_join.svg");
+    }
+    &.icon-link-bk {
+        padding-left: 15px;
+        padding-right: 38px;
+        background-image: url("../img/icon_btn_outlink.svg") no-repeat right 16px center / 18px 18px;
+    }
+    &.icon-modify {
+        margin: 0 0 0 0;
+        padding: 0;
+        min-width: 20px;
+        height: 22px;
+        color: #4a5dc6;
+        font-weight:500;
+        vertical-align: middle;
+        background: url(../img/icon_modify.svg) no-repeat;
+        background-position: right 1px top 0;
+        border: none;
+        &:hover {
+            background: url(../img/icon_modify_on.svg) no-repeat;
+            background-position: right 1px top 0;
+        }
+    }
+    &.icon-map {
+        background: url(../img/icon_location.svg) no-repeat;
+        background-position: left 9px top 50%;
+    }
+    &.icon-exel {
+        padding-left: 37px;
+        background: url(../img/icon_exel.svg) no-repeat;
+        background-position: left 7px top 50%;
+    }
+    &.fs-btn-19 { @include fontStyler(19px, normal, 1.58, -0.38px) }
+    &.fs-btn-16 { @include fontStyler(16px, normal, 1.56, -0.32px) }
+    &.fs-btn-14 { @include fontStyler(14px, normal, 1.57, -0.28px) }
+}
+/* text button */
+a[class^=text-btn],
+button[class^=text-btn] {
+    display: inline-block;
+    @include fontStyler(14px, normal, 20px, -0.56px, $color-86);
+    &:hover, &.hover {
+        color: $color-41;
+    }
+    &.color-1d {
+        color: $color-1d;
+        &:hover {
+            color: $color-1d;
+        }
+    }
+    &.icon-lock {
+        padding-left: 23px;
+        background: url("../img/btn_tmicon_findaid.svg") no-repeat left center;
+    }
+    &.icon-findid {
+        padding-left: 23px;
+        background: url("../img/icon_login_findaid.svg") no-repeat left center;
+    }
+    &.icon-next {
+        padding-right: 16px;
+        background: url("../img/btn_tsicon_arrow_right.svg") no-repeat right center;
+    }
+    &.icon-reset-wh {
+        padding-left: 23px;
+        color: $color-ff;
+        background: url("../img/btn_icon_reset_wh.svg") no-repeat left center;
+    }
+    &.icon-down-pdf {
+        padding-left: 32px;
+        background: url("../img/ico_list_pdf.svg") no-repeat left center;
+    }
+    &.icon-external-link {
+        padding-right: 19px;
+        background: url("../img/icon_externallink.svg") no-repeat right 4px;
+    }
+    &.icon-setting {
+        padding-left: 27px;
+        @include fontStyler(15px, normal, 1, -0.32px);
+        color: #414141;
+        background: url("../img/ico_main_setting.svg") no-repeat left center;
+    }
+    &.fs-btn-16 { @include fontStyler(16px, normal, 24px, -0.32px) }
+    &.fs-btn-14 { @include fontStyler(14px, normal, 20px, -0.28px) }
+}
+/* multi button */
+.btn-multi-wrap {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    min-width: 97px;
+    height: 30px;
+    .btn-multi-con {
+        display: inline-block;
+        vertical-align: middle;
+        .btn-multi {
+            height: 30px;
+            padding: 0 39px 0 10px;
+            word-break: keep-all;
+            &.hide {
+                display: none;
+            }
+            &.active {
+                display: inline-block;
+                position: relative;
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    width: 28px;
+                    height: 30px;
+                    position: absolute;
+                    top: -1px;
+                    right: 0;
+                    border-left: 1px solid $color-c3;
+                    background: url("../img/btn_form_selelct_arrow.svg") no-repeat 4px center;
+                }
+            }
+        }
+        &.hover {
+            position: absolute;
+            z-index: 10;
+            border: 1px solid $color-c3;
+            border-radius: 5px;
+            .btn-multi {
+                display: inline-block;
+                width: 100%;
+                padding-right: 10px;
+                border: none;
+                text-align: left;
+                &::after {
+                    display: none;
+                }
+                &:hover, &:focus {
+                    font-weight: 500;
+                    color: $color-sub1;
+                }
+            }
+        }
+    }
+}
+
+/* popup 내에 리스트 내에서만 쓰이는 기능버튼 */
+.list-btn {
+    display: inline-block;
+    width: 72px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    span {
+        display: inline-block;
+        text-decoration: underline;
+        @include fontStyler(14px, 500, 30px, -0.28px, $color-4d);
+    }
+    &:hover, &:focus {
+        border: 1px solid #d6d6d6;
+        background-color: $color-ff;
+        span {
+            text-decoration: none;
+        }
+    }
+    &.active {
+        border: 1px solid $color-sub1;
+        background-color: #f8faff;
+        span {
+            color: $color-sub1;
+            text-decoration: none;
+        }
+    }
+    &:disabled {
+        border: none;
+        pointer-events: none;
+        span {
+            color: $color-c3;
+        }
+    }
+}

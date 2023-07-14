@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+/* Font - Noto Sans KR */
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap'); */
+/* Font - Roboto */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'); */
+
+/* local - 웹폰트 로드 못함 */
+@font-face {  
+    font-family: 'Noto Sans KR';  font-style: normal;  font-weight: 100;
+    src: url(../font/NotoSansKR-Thin.woff2) format('woff2'),
+         url(../font/NotoSansKR-Thin.woff) format('woff'),
+         url(../font/NotoSansKR-Thin.otf) format('opentype');}
+@font-face {  
+    font-family: 'Noto Sans KR';  font-style: normal;  font-weight: 300;
+    src: url(../font/NotoSansKR-Light.woff2) format('woff2'),
+         url(../font/NotoSansKR-Light.woff) format('woff'),
+         url(../font/NotoSansKR-Light.otf) format('opentype');}
+@font-face {   
+    font-family: 'Noto Sans KR';   font-style: normal;   font-weight: 400;
+    src: url(../font/NotoSansKR-Regular.woff2) format('woff2'),
+          url(../font/NotoSansKR-Regular.woff) format('woff'),
+          url(../font/NotoSansKR-Regular.otf) format('opentype'); }
+@font-face {   
+    font-family: 'Noto Sans KR';   font-style: normal;   font-weight: 500;
+    src: url(../font/NotoSansKR-Medium.woff2) format('woff2'),
+          url(../font/NotoSansKR-Medium.woff) format('woff'),
+          url(../font/NotoSansKR-Medium.otf) format('opentype'); }
+@font-face {   
+    font-family: 'Noto Sans KR';   font-style: normal;   font-weight: 700;
+    src: url(../font/NotoSansKR-Bold.woff2) format('woff2'),
+          url(../font/NotoSansKR-Bold.woff) format('woff'),
+          url(../font/NotoSansKR-Bold.otf) format('opentype'); }
+
+@font-face {  
+    font-family: 'Roboto';  font-style: normal;  font-weight: 100;
+    src: url(../font/Roboto-Thin.woff2) format('woff2'),
+         url(../font/Roboto-Thin.woff) format('woff'),
+         url(../font/Roboto-Thin.otf) format('opentype');}
+@font-face {  
+    font-family: 'Roboto';  font-style: normal;  font-weight: 300;
+    src: url(../font/Roboto-Light.woff2) format('woff2'),
+         url(../font/Roboto-Light.woff) format('woff'),
+         url(../font/Roboto-Light.otf) format('opentype');}
+@font-face {   
+    font-family: 'Roboto';   font-style: normal;   font-weight: 400;
+    src: url(../font/Roboto-Regular.woff2) format('woff2'),
+          url(../font/Roboto-Regular.woff) format('woff'),
+          url(../font/Roboto-Regular.otf) format('opentype'); }
+@font-face {   
+    font-family: 'Roboto';   font-style: normal;   font-weight: 500;
+    src: url(../font/Roboto-Medium.woff2) format('woff2'),
+          url(../font/Roboto-Medium.woff) format('woff'),
+          url(../font/Roboto-Medium.otf) format('opentype'); }
+@font-face {   
+    font-family: 'Roboto';   font-style: normal;   font-weight: 700;
+    src: url(../font/Roboto-Bold.woff2) format('woff2'),
+          url(../font/Roboto-Bold.woff) format('woff'),
+          url(../font/Roboto-Bold.otf) format('opentype'); } 
+
+/* gate, main에서 사용 */
+@font-face {
+    font-family: 'SCDream1';  font-style: normal;  font-weight: 100;
+    src: url(../font/SCDream1.otf) format('opentype');}
+@font-face {
+    font-family: 'SCDream2';  font-style: normal;  font-weight: 100;
+    src: url(../font/SCDream2.otf) format('opentype');}
+@font-face {
+    font-family: 'SCDream3';  font-style: normal;  font-weight: 100;
+    src: url(../font/SCDream3.otf) format('opentype');}
+@font-face {
+    font-family: 'SCDream4';  font-style: normal;  font-weight: 100;
+    src: url(../font/SCDream4.otf) format('opentype');}
+@font-face {
+    font-family: 'SCDream5';  font-style: normal;  font-weight: 100;
+    src: url(../font/SCDream5.otf) format('opentype');}
+@font-face {
+    font-family: 'SCDream6';  font-style: normal;  font-weight: 100;
+    src: url(../font/SCDream6.otf) format('opentype');}
+@font-face {
+    font-family: 'SCDream7';  font-style: normal;  font-weight: 100;
+    src: url(../font/SCDream7.otf) format('opentype');}
+@font-face {
+    font-family: 'SCDream8';  font-style: normal;  font-weight: 100;
+    src: url(../font/SCDream8.otf) format('opentype');}
+@font-face {
+    font-family: 'SCDream9';  font-style: normal;  font-weight: 100;
+    src: url(../font/SCDream9.otf) format('opentype');}
+
+html, body, div, ul, ol, dl, li, dt, dd, p, h1, h2, h3, h4, h5, h6, table, thead, tbody, tr, th, td, caption, address,
+canvas, details, figure, figcaption, footer, header, menu, nav, section, article, aside,
+form, fieldset, button, select, textarea, input, fieldset, legend, label, a, span, strong, em, address, dfn, small, i, b, pre, ::before, ::after {margin:0; padding:0; border:0; list-style:none; color:inherit; font-style:normal; font-size:100%; font-weight:inherit; font-family:inherit; line-height:inherit; word-break:break-all; word-wrap:inherit; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box;}
+article, aside, canvas, details, figure, figcaption, footer, header, menu, nav, section {display:block;}
+body {font-family: "Noto Sans KR", "Dotum", "Dotumche", "돋움", "돋움체", "Arial"; font-size:14px; font-weight:400; line-height:1; word-break:keep-all; word-wrap:word-break; -webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none;}
+html[lang=ja] body, html[lang=zh] body {word-break:normal;}
+/* [hidden], hr {display:none;} */
+img {vertical-align:middle;}
+button {background-color:transparent; cursor:pointer;}
+b, strong {font-weight:bold;}
+fieldset, iframe {width:100%;}
+img, a, frame, iframe, fieldset {border:0;}
+a {text-decoration:none;}
+table {width:100%; border-spacing:0; border-collapse:collapse; table-layout: fixed;}
+caption {height:0; overflow:hidden;}
+legend {position:absolute; left:-9999em; top:-9999em;}
+button {overflow:hidden; background-color:transparent; cursor:pointer;}
+button::-moz-focus-inner {border:0px; padding:0px;}
+select {appearance:none; -webkit-appearance:none; -moz-appearance:none; -o-appearance:none;}
+select::-ms-expand {display:none;}
+input::-ms-clear,
+input::-ms-reveal {display:none; width:0; height:0;}
+input::search-decoration,
+input::search-cancel-button,
+input::search-results-button,
+input::search-results-decoration {display:none;}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {display:none;}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {-webkit-appearance:none; margin:0;}
+input::-webkit-calendar-picker-indicator {-webkit-appearance:none;}
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {/* outline:0; */}
+.dv-android [tabindex='0']:focus,
+.dv-android a:focus,
+.dv-android button:focus,
+.dv-android input:focus,
+.dv-android textarea:focus,
+.dv-android select:focus {outline:0;}
+.dv-ios [tabindex='0'],
+.dv-ios a,
+.dv-ios button,
+.dv-ios input,
+.dv-ios textarea,
+.dv-ios select {-webkit-tap-highlight-color:transparent;}

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+    <defs>
+        <linearGradient id="linear-gradient" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#ffea4d"/>
+            <stop offset="1" stop-color="#ffc16e"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-2" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#71d6cf"/>
+            <stop offset="1" stop-color="#1d8981"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-7" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#ff793e"/>
+            <stop offset="1" stop-color="#ffc16e"/>
+        </linearGradient>
+        <style>
+            .cls-1{fill:red;opacity:0}.cls-3{fill:url(#linear-gradient-2)}
+        </style>
+    </defs>
+    <g id="ico_checklist_04_on" transform="translate(7.192 10)">
+        <path id="guide" d="M0 0H56V56H0z" class="cls-1" transform="translate(-7.192 -10)"/>
+        <path id="guide-2" d="M0 0H40V40H0z" class="cls-1" transform="translate(0.808 -2)"/>
+        <g id="ico_checklist_04_off" transform="translate(-60.799 33)">
+            <path id="사각형_1340" fill="url(#linear-gradient)" d="M0 0H34V27H0z" transform="translate(65.107 -23)"/>
+            <path id="사각형_1341" d="M0 0h10v3a5 5 0 0 1-5 5 5 5 0 0 1-5-5V0z" class="cls-3" transform="translate(62.607 -23)"/>
+            <path id="사각형_1343" d="M0 0h10v3a5 5 0 0 1-5 5 5 5 0 0 1-5-5V0z" class="cls-3" transform="translate(81.607 -23)"/>
+            <path id="사각형_1342" d="M0 0h10v3a5 5 0 0 1-5 5 5 5 0 0 1-5-5V0z" class="cls-3" transform="translate(72.607 -23)"/>
+            <path id="사각형_1344" d="M0 0h10v3a5 5 0 0 1-5 5 5 5 0 0 1-5-5V0z" class="cls-3" transform="translate(91.607 -23)"/>
+            <path id="패스_3600" d="M5 6h30l5 11H0z" class="cls-3" transform="translate(62.107 -39)"/>
+            <path id="선_358" fill="none" stroke="#000" stroke-width="1.5px" d="M0 0L4 0" opacity="0.217" transform="translate(89.563 -10.5)"/>
+            <path id="패스_4089" fill="url(#linear-gradient-7)" d="M4.663 0a4.791 4.791 0 0 1 4.663 4.91v8.147H0V4.91A4.791 4.791 0 0 1 4.663 0z" transform="translate(77.107 -9)"/>
+        </g>
+    </g>
+</svg>

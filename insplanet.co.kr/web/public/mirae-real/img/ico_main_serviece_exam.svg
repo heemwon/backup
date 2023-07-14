@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .cls-1,.cls-2,.cls-3{fill:none}.cls-2,.cls-3{stroke:#fff;stroke-width:1.5px}.cls-3{stroke-linecap:round}.cls-6{stroke:none}
+        </style>
+    </defs>
+    <g id="ico_main_serviece_exam" transform="translate(1 -2.831)">
+        <path id="guide" d="M0 0H40V40H0z" class="cls-1" transform="translate(-1 2.831)"/>
+        <g id="icn" transform="translate(3 7.831)">
+            <g id="folder" transform="translate(17.095 17.325)">
+                <path id="folder-2" d="M15.244 12.264H0V0h5.06l1.767 2.4s2.692.063 8.416.063V13" class="cls-2" transform="translate(0 .676)"/>
+            </g>
+            <g id="사각형_1207" class="cls-2" transform="translate(3.77 6.94)">
+                <rect width="6.404" height="6.404" class="cls-6" rx="1"/>
+                <rect width="4.904" height="4.904" x=".75" y=".75" class="cls-1" rx=".25"/>
+            </g>
+            <g id="사각형_1255" class="cls-2" transform="translate(3.77 16.325)">
+                <rect width="6.404" height="6.404" class="cls-6" rx="1"/>
+                <rect width="4.904" height="4.904" x=".75" y=".75" class="cls-1" rx=".25"/>
+            </g>
+            <path id="패스_3550" d="M13.687 12.789h2.9" class="cls-3" transform="translate(-.957 -4.43)"/>
+            <path id="패스_3551" d="M13.687 12.789h7.657" class="cls-3" transform="translate(-.957 -.865)"/>
+            <path id="패스_3552" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5px" d="M33.1-9.811v6.391h6.28z" transform="translate(-14.09 9.819)"/>
+            <path id="Stroke_7" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5px" d="M18.553 30.231H0V0h18.553"/>
+            <path id="패스_3553" d="M39.69-2.525V10.6" class="cls-3" transform="translate(-14.397 8.924)"/>
+        </g>
+    </g>
+</svg>

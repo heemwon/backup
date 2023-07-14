@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-6{fill:none}.cls-5{stroke:none}
+        </style>
+    </defs>
+    <g id="ico_pay_credit" transform="translate(-.356)">
+        <g id="사각형_1831" fill="none" stroke="#414141" stroke-width="1.5px" transform="rotate(90 10.178 14.178)">
+            <rect width="17" height="24" class="cls-5" rx="1"/>
+            <rect width="15.5" height="22.5" x=".75" y=".75" class="cls-6" rx=".25"/>
+        </g>
+        <g id="사각형_1832" fill="#fff" stroke="#414141" stroke-width="1.5px" opacity="0.5" transform="translate(5.356 12)">
+            <rect width="5" height="3" class="cls-5" rx="1"/>
+            <rect width="3.5" height="1.5" x=".75" y=".75" class="cls-6" rx=".25"/>
+        </g>
+        <path id="Stroke_17" fill="none" stroke="#414141" stroke-miterlimit="10" stroke-width="1.5px" d="M0 .409h21.8" transform="translate(1 7.8)"/>
+    </g>
+</svg>

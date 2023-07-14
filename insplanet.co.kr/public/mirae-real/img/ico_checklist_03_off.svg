@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+    <defs>
+        <style>
+            .cls-1{fill:red;opacity:0}.cls-3{stroke:#000;stroke-miterlimit:10;stroke-width:1.5px;fill:none}.cls-6,.cls-7{stroke:none}.cls-7{fill:#000}
+        </style>
+    </defs>
+    <g id="ico_checklist_03_off" transform="translate(7.192 10)">
+        <path id="guide" d="M0 0H56V56H0z" class="cls-1" transform="translate(-7.192 -10)"/>
+        <path id="guide-2" d="M0 0H40V40H0z" class="cls-1" transform="translate(0.808 -2)"/>
+        <g id="ico_checklist_03_off-2" transform="translate(-40 29)">
+            <path id="guide-3" d="M0 0H40V40H0z" class="cls-1" transform="translate(40.809 -31)"/>
+            <g id="그룹_2724" transform="translate(-398.584 -67.96)">
+                <circle id="타원_224" cx="7.5" cy="7.5" r="7.5" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="1.5px" transform="translate(458.393 42.96)"/>
+                <path id="선_350" d="M0 0L0 3" class="cls-3" transform="translate(465.893 36.96)"/>
+                <path id="선_351" d="M0 0L2.121 2.121" class="cls-3" transform="translate(456.347 40.914)"/>
+                <path id="선_352" d="M0 0L3 0" class="cls-3" transform="translate(452.393 50.46)"/>
+                <path id="선_353" d="M0 2.121L2.121 0" class="cls-3" transform="translate(456.347 57.884)"/>
+                <path id="선_354" d="M0 3L0 0" class="cls-3" transform="translate(465.893 60.96)"/>
+                <path id="선_355" d="M2.121 2.121L0 0" class="cls-3" transform="translate(473.317 57.884)"/>
+                <path id="선_356" d="M3 0L0 0" class="cls-3" transform="translate(476.393 50.46)"/>
+                <path id="선_357" d="M2.121 0L0 2.121" class="cls-3" transform="translate(473.317 40.914)"/>
+            </g>
+            <g id="다각형_20" fill="#f4c215">
+                <path d="M20.732 19.25H1.268L11 1.556l9.732 17.694z" class="cls-6" transform="translate(40.808 -11)"/>
+                <path d="M11 3.113L2.537 18.5h16.926L11 3.113M11 0l11 20H0L11 0z" class="cls-7" transform="translate(40.808 -11)"/>
+            </g>
+            <g id="다각형_21" fill="#fff">
+                <path d="M32.691 28.25H1.309L17 1.483 32.691 28.25z" class="cls-6" transform="translate(46.808 -20)"/>
+                <path d="M17 2.966L2.618 27.5h28.764L17 2.966M17 0l17 29H0L17 0z" class="cls-7" transform="translate(46.808 -20)"/>
+            </g>
+        </g>
+    </g>
+</svg>

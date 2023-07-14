@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+    <defs>
+        <style>
+            .cls-8{fill:none}.cls-6{stroke:none}
+        </style>
+    </defs>
+    <g id="ico_main_menu_view1" transform="translate(-5.315 -2.651)">
+        <g id="합치기_62" fill="#fff">
+            <path d="M4843.814 5011.15h-44v-25.807l22-18.723 22 18.723v25.808z" class="cls-6" transform="translate(-4793 -4954)"/>
+            <path fill="#1d1d1d" d="M4842.314 5009.65v-23.613l-20.5-17.447-20.5 17.447v23.614h41m3 3h-47v-28l23.5-20 23.5 20v28z" transform="translate(-4793 -4954)"/>
+        </g>
+        <g id="사각형_707" fill="#fff" stroke="#1d1d1d" stroke-width="3px">
+            <path d="M7 0a7 7 0 0 1 7 7v12H0V7a7 7 0 0 1 7-7z" class="cls-6" transform="translate(22.315 39.651)"/>
+            <path d="M7 1.5A5.5 5.5 0 0 1 12.5 7v9.529a.971.971 0 0 1-.971.971H2.471a.971.971 0 0 1-.971-.971V7A5.5 5.5 0 0 1 7 1.5z" class="cls-8" transform="translate(22.315 39.651)"/>
+        </g>
+        <g id="yl" stroke="#1d1d1d" stroke-width="3px" transform="translate(22.951 6.512)">
+            <g id="타원_163" fill="#f4c215" transform="translate(11.364 9.139)">
+                <circle cx="10.181" cy="10.181" r="10.181" class="cls-6"/>
+                <circle cx="10.181" cy="10.181" r="8.681" class="cls-8"/>
+            </g>
+            <path id="선_351" fill="none" d="M10 10L0 0" transform="translate(26.726 24.5)"/>
+        </g>
+    </g>
+</svg>

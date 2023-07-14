@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../../js/libs/jquery.min.js"></script>
+    <script src="../../js/libs/jquery-ui.min.js"></script>
+    <script src="../../js/libs/jquery.selectric.js"></script>
+    <script src="../../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../../js/sub.js"></script>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/guide.css">
+    <link rel="stylesheet" href="../../css/sub.css">
+    <title>패턴</title>
+</head>
+
+<body>
+    <div class="apply-wrap">
+        
+        <!-- 8-1-1 등기유형선택 -->
+        <h2>8-1. 트리구조 데이터 선택</h2>
+        <div class="title-content-wrap">
+            <div class="title-wrap">
+                <h2>8-1-1 등기유형선택</h2>
+            </div>
+            <div class="cont-wrap mw580">
+                <div class="popup-head">
+                    <div class="popup-title">
+                        <h4>등기유형선택</h4>
+                    </div>
+                    <div class="close-btn">
+                        <button type="button" onclick="popupManager.closePopup();"><img src="../../img/btn_gnb_close.svg" alt="close"></button>
+                    </div>
+                </div>
+                <div class="popup-body">
+                    <div class="popup-cont">
+                        <!-- 등기유형선택 -->
+                        <section class="form-sec mb0">
+                            <div class="full-area-wrap">
+                                <div class="tree-wrap has-bg-padding">
+                                    <div class="tr">
+                                        <div class="list-search-con">
+                                            <label for="">
+                                                <input type="text" name="" id="total-search" class="search-input" placeholder="등기유형 검색">
+                                            </label>
+                                            <button type="button" class="search-btn">
+                                                <img src="../../img/btn_board_search.svg" alt="search">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <ul class="tree-con mt15">
+                                        <li class="open">
+                                            <div class="title-btn-con">
+                                                <span class="title">보존/이전/설정</span>
+                                            </div>
+                                            <ul class="tree-depth-2 icon-pipe">    
+                                                <li>
+                                                    <div class="title-btn-con">
+                                                        <span class="title">토지/건물소유권보존</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="title-btn-con">
+                                                        <span class="title">집합건물소유권보존</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="title-btn-con">
+                                                        <span class="title">집합건물의 표시등기에 대한 소유권 보존</span>
+                                                    </div>
+                                                    <ul class="tree-depth-3">    
+                                                        <li>
+                                                            <div class="title-btn-con">
+                                                                <span class="title">토지/건물소유권보존</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="title-btn-con">
+                                                <span class="title">표시변경</span>
+                                            </div>
+                                            <ul class="tree-depth-2 icon-pipe">    
+                                                <li>
+                                                    <div class="title-btn-con">
+                                                        <span class="title">토지/건물소유권보존</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="title-btn-con">
+                                                        <span class="title">집합건물소유권보존</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="title-btn-con">
+                                                        <span class="title">집합건물의 표시등기에 대한 소유권 보존</span>
+                                                    </div>
+                                                    <ul class="tree-depth-3">    
+                                                        <li>
+                                                            <div class="title-btn-con">
+                                                                <span class="title">토지/건물소유권보존</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="title-btn-con">
+                                                <span class="title">표시변경</span>
+                                            </div>
+                                            <ul class="tree-depth-2 icon-pipe">    
+                                                <li>
+                                                    <div class="title-btn-con">
+                                                        <span class="title">토지/건물소유권보존</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="title-btn-con">
+                                                        <span class="title">집합건물소유권보존</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="title-btn-con">
+                                                        <span class="title">집합건물의 표시등기에 대한 소유권 보존</span>
+                                                    </div>
+                                                    <ul class="tree-depth-3">    
+                                                        <li>
+                                                            <div class="title-btn-con">
+                                                                <span class="title">토지/건물소유권보존</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="title-btn-con">
+                                                <span class="title">표시변경</span>
+                                            </div>
+                                            <ul class="tree-depth-2 icon-pipe">    
+                                                <li>
+                                                    <div class="title-btn-con">
+                                                        <span class="title">토지/건물소유권보존</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="title-btn-con">
+                                                        <span class="title">집합건물소유권보존</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="title-btn-con">
+                                                        <span class="title">집합건물의 표시등기에 대한 소유권 보존</span>
+                                                    </div>
+                                                    <ul class="tree-depth-3">    
+                                                        <li>
+                                                            <div class="title-btn-con">
+                                                                <span class="title">토지/건물소유권보존</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 등기유형선택 -->
+                    </div>
+                </div>
+                <div class="popup-foot">
+                    <div class="left-con">
+                        <button type="button" class="btn medium">보조버튼</button>
+                    </div>
+                    <div class="right-con">
+                        <button type="button" class="btn-solid medium color-4d">취소</button>
+                        <button type="button" class="btn-solid medium">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // 8-1-1 등기유형선택 -->
+        
+        <!-- 8-3. 등기필정보 검증 -->
+        <div class="title-content-wrap">
+            <div class="title-wrap">
+                <h2>8-3. 등기필정보 검증</h2>
+            </div>
+            <div class="cont-wrap mw710">
+                <div class="popup-head">
+                    <div class="popup-title">
+                        <h4>등기필정보 검증</h4>
+                    </div>
+                    <div class="close-btn">
+                        <button type="button" onclick="popupManager.closePopup();"><img src="../../img/btn_gnb_close.svg" alt="close"></button>
+                    </div>
+                </div>
+                <div class="popup-body">
+                    <div class="popup-cont">
+                        <!-- 상단정보 -->
+                        <section class="form-sec">
+                            <div class="sec-body">
+                                <div class="bg-box-wrap bd-eb">
+                                    <ul class="list-bullet fs-16 color-e0">
+                                        <li>
+                                            <div>5회 연속 비밀번호 오류 시 등기필 정보를 사용하실 수 없습니다.</div>
+                                        </li>
+                                        <li>
+                                            <div>등기필정보의 재사용 신청을 하시려면 신청인이 직접 등기소를 방문하셔야 합니다.</div>
+                                        </li>
+                                        <li>
+                                            <div>접수번호가 달라 검증이 되지 않으면 접수번호, 접수일자를 수정하여 검증하시기 바랍니다.</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 상단정보 -->
+                        
+                        <!-- 등기필 정보 입력 -->
+                        <section class="form-sec mb0">
+                            <div class="sec-body">
+                                <div class="table-head">
+                                    <div class="left-con">
+                                        <h5>등기필 정보 입력</h5>
+                                    </div>
+                                    <div class="right-con">
+                                        <span class="required-info"><span class="star">*</span> 표시 필수입력사항</span>
+                                    </div>
+                                </div>
+                                <div class="table-body">
+                                    <table class="table-detail">
+                                        <caption>등기필 정보 입력</caption>
+                                        <colgroup>
+                                            <col style="width: 157px;">
+                                            <col style="width: auto;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="element-row">
+                                                <th scope="row">
+                                                    <label for="apply">접수번호<span class="required">필수</span></label>
+                                                </th>
+                                                <td>
+                                                    <input type="text" name="" id="apply" class="w430" placeholder="등기필정보 접수번호 입력">
+                                                </td>
+                                            </tr>
+                                            <tr class="element-row">
+                                                <th scope="row">
+                                                    <label for="date">접수일자<span class="required">필수</span></label>
+                                                </th>
+                                                <td>
+                                                    <span class="datepicker-con w430">
+                                                        <input type="text" name="" id="date" class="datepicker" placeholder="">
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr class="element-row">
+                                                <th scope="row">
+                                                    <label for="serial">일련번호<span class="required">필수</span></label>
+                                                </th>
+                                                <td>
+                                                    <input type="text" name="" id="serial" class="w430" placeholder="등기필정보 일련번호 입력">
+                                                </td>
+                                            </tr>
+                                            <tr class="element-row">
+                                                <th scope="row">
+                                                    <label for="pass">비밀번호<span class="required">필수</span></label>
+                                                </th>
+                                                <td>
+                                                    <div class="flex-wrap">
+                                                        <div class="left-con">
+                                                            <div class="address-wrap">
+                                                                <div class="address-con default-width w314">
+                                                                    <label for="">
+                                                                        <input type="text" name="" id="" class="pl-127" placeholder="-없이 입력">
+                                                                    </label>
+                                                                    <button type="button" class="btn-solid color-4d">비밀번호 조회</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="right-con">
+                                                            <button type="button" class="btn">비밀번호 검증</button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 등기필 정보 입력 -->
+                    </div>
+                </div>
+                <div class="popup-foot">
+                    <div class="left-con">
+                        <button type="button" class="btn medium">보조버튼</button>
+                    </div>
+                    <div class="right-con">
+                        <button type="button" class="btn-solid medium color-4d">버튼명</button>
+                        <button type="button" class="btn-solid medium">버튼명</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // 8-3. 등기필정보 검증 -->
+
+        <!-- 8-4. 위임장 -->
+        <!-- 8-4-1. 위임장 작성 -->
+        <h2>8-4. 위임장</h2>
+        <div class="title-content-wrap">
+            <div class="title-wrap">
+                <h2>8-4-1. 위임장 작성</h2>
+            </div>
+            <div class="cont-wrap">
+                <div class="popup-head">
+                    <div class="popup-title">
+                        <h4>위임장 작성</h4>
+                    </div>
+                    <div class="close-btn">
+                        <button type="button" onclick="popupManager.closePopup();"><img src="../../img/btn_gnb_close.svg" alt="close"></button>
+                    </div>
+                </div>
+                <div class="popup-body">
+                    <div class="popup-cont">
+                        <section class="form-sec mb0">
+                            <div class="sec-body">
+                                <!-- 정보입력 -->
+                                <section class="form-sec">
+                                    <div class="sec-body">
+                                        <div class="bg-box-wrap no-border">
+                                            <dl class="title-cont-wrap">
+                                                <dt>등기목적</dt>
+                                                <dd>질권설정</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- // 정보입력 -->
+    
+                                <!-- 부동산 확인 -->
+                                <section class="form-sec">
+                                    <div class="sec-body">
+                                        <div class="table-head">
+                                            <div class="left-con">
+                                                <h5>부동산 확인</h5>
+                                            </div>
+                                        </div>
+                                        <div class="table-body">
+                                            <table class="table-detail">
+                                                <caption>부동산 확인</caption>
+                                                <colgroup>
+                                                    <col style="width: 190px;">
+                                                    <col style="width: auto;">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            부동산 표시
+                                                        </th>
+                                                        <td>
+                                                            [1.토지] 전라북도 익산시 어양동 20210312012대 100<br/>
+                                                            [1.토지] 전라북도 익산시 어양동 20210312012대 100
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            등기원인 및 연월일
+                                                        </th>
+                                                        <td>
+                                                            사채발행계약 2021년 03월 15일
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- // 부동산 확인 -->
+    
+                                <!-- 위임인선택 -->
+                                <section class="form-sec mb0">
+                                    <div class="sec-body">
+                                        <div class="table-head">
+                                            <div class="left-con">
+                                                <h5>위임인선택</h5>
+                                            </div>
+                                        </div>
+                                        <div class="table-body">
+                                            <table class="table-list">
+                                                <caption>테이블 타이틀</caption>
+                                                <colgroup>
+                                                    <col style="width: 60px;">
+                                                    <col style="width: 140px;">
+                                                    <col style="width: 200px;">
+                                                    <col style="width: auto;">
+                                                    <col style="width: 95px;">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" class="has-element">
+                                                            <span class="checkbox-con only-box">
+                                                                <input type="checkbox" name="" id="cbox0"><label for="cbox0"></label>
+                                                            </span>
+                                                        </th>
+                                                        <th scope="col">성명(명칭)</th>
+                                                        <th scope="col">(주민)등록번호</th>
+                                                        <th scope="col">주소</th>
+                                                        <th scope="col">작성여부</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="has-element">
+                                                            <span class="checkbox-con only-box">
+                                                                <input type="checkbox" name="" id="cbox11"><label for="cbox11"></label>
+                                                            </span>
+                                                        </td>
+                                                        <td>이일순</td>
+                                                        <td class="ff-roboto">850000-1234567</td>
+                                                        <td class="left">
+                                                            경기도 광명시 도덕공원로59 광명 푸르지오 제100동 제2층
+                                                        </td>
+                                                        <td>
+                                                            <span class="status-black">미작성</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="has-element">
+                                                            <span class="checkbox-con only-box">
+                                                                <input type="checkbox" name="" id="cbox22"><label for="cbox22"></label>
+                                                            </span>
+                                                        </td>
+                                                        <td>이일순</td>
+                                                        <td class="ff-roboto">850000-1234567</td>
+                                                        <td class="left">
+                                                            경기도 광명시 도덕공원로59 광명 푸르지오 제100동 제2층
+                                                        </td>
+                                                        <td>
+                                                            <span class="status-blue">작성완료</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- // 위임인선택 -->
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="popup-foot">
+                    <div class="left-con">
+                        <button type="button" class="btn medium">보조버튼</button>
+                    </div>
+                    <div class="right-con">
+                        <button type="button" class="btn-solid medium color-4d">취소</button>
+                        <button type="button" class="btn-solid medium">작성</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // 8-4-1. 위임장 작성 -->
+
+    </div>
+</body>
+
+</html>

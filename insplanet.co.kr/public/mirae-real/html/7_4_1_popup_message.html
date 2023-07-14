@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../js/libs/jquery.min.js"></script>
+    <script src="../js/libs/jquery-ui.min.js"></script>
+    <script src="../js/libs/jquery.selectric.js"></script>
+    <script src="../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../js/sub.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/guide.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <title>메시지 팝업</title>
+</head>
+
+<body>
+    <main>
+        <!-- Popup -->
+        <h1>메시지 팝업</h1>
+        <hr />
+        <section id="message-sec">
+            <h2>Message Popup</h2>
+            <p>
+                - Width: 400px / min-Height: 227px
+            </p>
+            <p>
+                <button type="button" class="btn-solid" onclick="popupManager.openPopup('#popup-confirm')">Confirm</button>
+                <button type="button" class="btn-solid" onclick="popupManager.openPopup('#popup-alert')">Alert</button>
+                <button type="button" class="btn-solid" onclick="popupManager.openPopup('#popup-text')">Text</button>
+                <button type="button" class="btn-solid" onclick="popupManager.openPopup('#popup-message')">Message</button>
+            </p>
+        </section>
+    </main>
+
+    <!-- confirm popup -->
+    <div class="popup-wrap" id="popup-confirm">
+        <div class="content-wrap small">
+            <div class="popup-body">
+                <div class="popup-cont">
+                    <p class="fs-18 icon-confirm">
+                        첨부로 전환하시겠습니까?
+                    </p>
+                </div>
+            </div>
+            <div class="popup-foot">
+                <div class="center-con">
+                    <button type="button" class="btn medium" onclick="popupManager.closePopup()">아니오</button>
+                    <button type="button" class="btn-solid medium color-main">예</button>
+                </div>
+            </div>
+        </div>
+        <div class="dim-wrap"></div>
+    </div>
+
+    <!-- alert popup -->
+    <div class="popup-wrap" id="popup-alert">
+        <div class="content-wrap small">
+            <div class="popup-head">
+                <div class="close-btn">
+                    <button type="button" onclick="popupManager.closePopup();"><img src="../img/btn_gnb_close.svg" alt="close"></button>
+                </div>
+            </div>
+            <div class="popup-body">
+                <div class="popup-cont">
+                    <p class="fs-18 icon-alert">
+                        비밀번호는 영문, 숫자, 특수기호를<br/> 혼합하여 8자 이상 입력이 필수입니다.
+                    </p>
+                </div>
+            </div>
+            <div class="popup-foot">
+                <div class="center-con">
+                    <button type="button" class="btn-solid medium color-main">확인</button>
+                </div>
+            </div>
+        </div>
+        <div class="dim-wrap"></div>
+    </div>
+
+    <!-- text popup -->
+    <div class="popup-wrap" id="popup-text">
+        <div class="content-wrap small">
+            <div class="popup-head">
+                <div class="close-btn">
+                    <button type="button" onclick="popupManager.closePopup();"><img src="../img/btn_gnb_close.svg" alt="close"></button>
+                </div>
+            </div>
+            <div class="popup-body text-center">
+                <div class="popup-cont">
+                    <p class="fs-18">
+                        비밀번호는 영문, 숫자, 특수기호를<br/> 혼합하여 8자 이상 입력이 필수입니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="dim-wrap"></div>
+    </div>
+
+    <!-- message popup -->
+    <div class="popup-wrap" id="popup-message">
+        <div class="content-wrap small">
+            <div class="popup-head">
+                <div class="popup-title">
+                    <h4 class="fs-18">팝업 타이틀 영역</h4>
+                </div>
+                <div class="close-btn">
+                    <button type="button" onclick="popupManager.closePopup();"><img src="../img/btn_gnb_close.svg" alt="close"></button>
+                </div>
+            </div>
+            <div class="popup-body message-center">
+                <div class="popup-cont">
+                    <p class="fs-18">
+                        비밀번호는 영문, 숫자, 특수기호를<br/> 혼합하여 8자 이상 입력이 필수입니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="dim-wrap"></div>
+    </div>
+
+</body>
+
+</html>

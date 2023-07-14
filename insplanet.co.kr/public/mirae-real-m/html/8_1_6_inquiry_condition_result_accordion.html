@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../js/libs/jquery.min.js"></script>
+    <script src="../js/libs/jquery-ui.min.js"></script>
+    <script src="../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../js/sub.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <title>인터넷 등기소</title>
+</head>
+<body>
+    <header class="area-header">
+        <div class="area-inner">
+            <span class="btn-historyback"><button>뒤로</button></span>
+            <h1 class="title">부동산 체크리스트</h1>
+            <span class="btn-navigation"><button>메뉴</button></span>
+        </div>
+    </header>
+    <div class="area-content">
+        <div class="area-inner">
+            <div class="content-wrap">
+                <!-- 조건 검색 -->
+                <section class="default-sec">
+                    <div class="accordion-wrap selected-option-wrap">
+                        <div class="accordion-con title-type" data-accordion="container">
+                            <div class="accodion-head" data-accordion="item">
+                                <button type="button" class="selected-option-btn" data-accordion="trigger">
+                                    <div class="selected-option-con">
+                                        <span>상세조회</span>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="accodion-body has-padding">
+                                <div class="form-item">
+                                    <div class="item-body">
+                                        <div class="block-wrap">
+                                            <span class="select-con">
+                                                <label for="property">
+                                                    <select name="" id="property" class="">
+                                                        <option value="">부동산유형 선택</option>
+                                                    </select>
+                                                </label>
+                                            </span>
+                                        </div>
+                                        <div class="block-wrap">
+                                            <span class="select-con">
+                                                <label for="right">
+                                                    <select name="" id="right" class="">
+                                                        <option value="">권리유형 선택</option>
+                                                    </select>
+                                                </label>
+                                            </span>
+                                        </div>
+                                        <div class="block-wrap">
+                                            <span class="select-con">
+                                                <label for="deal">
+                                                    <select name="" id="deal" class="">
+                                                        <option value="">거래유형 선택</option>
+                                                    </select>
+                                                </label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-con flex-between">
+                                    <button type="button" class="btn color-41">초기화</button>
+                                    <button type="button" class="btn-solid large">조회</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+
+                <!-- 탭메뉴 -->
+                <section class="content-sec mt25">
+                    <ul class="tabmenu-con no-bg" data-tab="container" id="tabmenu0">
+                        <li class="tabmenu-item active">
+                            <a href="#none">권리취득(거래)시<br>확인사항</a>
+                        </li>
+                        <li class="tabmenu-item">
+                            <a href="#none">권리취득(거래) 후<br>확인사항</a>
+                        </li>
+                    </ul>
+                    <div class="tabchild-con" data-tab-bind="tabmenu0">
+                        <div class="tabchild-item active">
+                            <!-- 기본 확인사항 - 아코디언 -->
+                            <section class="accordion-sec">
+                                <div class="sec-head mt10">
+                                    <p class="title">기본 확인사항</p>
+                                </div>
+                                <div class="sec-body">
+                                    <div class="accordion-wrap">
+                                        <ul class="accordion-con" data-accordion="container">
+                                            <li data-accordion="item">
+                                                <button type="button" class="title-con" data-accordion="trigger">
+                                                    <p>등기사항증명서</p>
+                                                </button>
+                                                <div class="cont-wrap">
+                                                    <div class="cont-con">
+                                                        <div class="cont-body">
+                                                            <p class="cont">
+                                                                부동산의 현상과 관리에 관한 사실 등을 부동산 열람을 통하여 확인할 수 있습니다. (계약당일 재 열람 필수) 부동산의 현상과 관리에 관한 사실 등을 부동산 열람을 통하여 확인할 수 있습니다. (계약당일 재 열람 필수) 부동산의 현상과 관리에 관한 사실 등을 부동산 열람을 통하여 확인할 수 있습니다. (계약당일 재 열람 필수) 부동산의 현상과 관리에 관한 사실 등을 부동산 열람을 통하여 확인할 수 있습니다. (계약당일 재 열람 필수) 부동산의 현상과 관리에 관한 사실 등을 부동산 열람을 통하여 확인할 수 있습니다. (계약당일 재 열람 필수) 부동산의 현상과 관리에 관한 사실 등을 부동산 열람을 통하여 확인할 수 있습니다. (계약당일 재 열람 필수) 부동산의 현상과 관리에 관한 사실 등을 부동산 열람을 통하여 확인할 수 있습니다. (계약당일 재 열람 필수) 부동산의 현상과 관리에 관한 사실 등을 부동산 열람을 통하여 확인할 수 있습니다. (계약당일 재 열람 필수) 부동산의 현상과 관리에 관한 사실 등을 부동산 열람을 통하여 확인할 수 있습니다. (계약당일 재 열람 필수) 
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li data-accordion="item">
+                                                <button type="button" class="title-con" data-accordion="trigger">
+                                                    <p>확장일자 열람</p>
+                                                </button>
+                                                <div class="cont-wrap">
+                                                    <div class="cont-con">
+                                                        <div class="cont-body">
+                                                            <p class="cont">
+                                                                확장일자 열람 확장일자 열람 확장일자 열람<br />
+                                                                확장일자 열람 확장일자 열람 확장일자 열람<br />
+                                                                확장일자 열람 확장일자 열람 확장일자 열람
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+    
+                            <!-- 거래자의 진정성 - 아코디언 -->
+                            <section class="accordion-sec">
+                                <div class="sec-head mt20">
+                                    <p class="title">거래자의 진정성 확인사항</p>
+                                </div>
+                                <div class="sec-body">
+                                    <div class="accordion-wrap">
+                                        <ul class="accordion-con" data-accordion="container">
+                                            <li data-accordion="item">
+                                                <button type="button" class="title-con" data-accordion="trigger">
+                                                    <p>신분증진위확인</p>
+                                                </button>
+                                                <div class="cont-wrap">
+                                                    <div class="cont-con">
+                                                        <div class="cont-body">
+                                                            <p class="cont">
+                                                                신분증진위확인
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li data-accordion="item">
+                                                <button type="button" class="title-con" data-accordion="trigger">
+                                                    <p>신분증진위확인</p>
+                                                </button>
+                                                <div class="cont-wrap">
+                                                    <div class="cont-con">
+                                                        <div class="cont-body">
+                                                            <p class="cont">
+                                                                신분증진위확인
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="tabchild-item">
+                            권리 취득(거래) 후 확인사항
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer class="area-footer">
+        <div class="area-inner">
+            <div class="box-privite">
+                <a href="">이용약관</a>
+                <a href=""><strong>개인정보처리방침</strong></a>
+                <a href="">원격지원</a>
+                
+            </div>
+            <p class="text-copyright">Copyright © Supreme Court of Korea.<br > All right reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../../js/libs/jquery.min.js"></script>
+    <script src="../../js/libs/jquery-ui.min.js"></script>
+    <script src="../../js/libs/jquery.selectric.js"></script>
+    <script src="../../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../../js/sub.js"></script>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/guide.css">
+    <link rel="stylesheet" href="../../css/sub.css">
+    <title>패턴</title>
+</head>
+
+<body>
+    <div class="apply-wrap mb50 ml50">
+        
+        <div class="title-wrap mb60">
+            <h2 class="mb30">14-1. 면분할 가이드</h2>
+            <p style="font-size: 24px;"><strong>화면 width에 맞게 %로 분할하여 사용</strong></p>
+        </div>
+
+        
+        <div class="cont-wrap mb60 ml50 w1100">
+            
+            <div class="flex-wrap">
+                <section class="form-sec depth-1" style="width:530px">
+                    <div class="sec-body">
+                        <div class="table-head">
+                            <div class="left-con">
+                                <h4>‘테이블 타이틀’</h4>
+                            </div>
+                        </div>
+                        <div class="table-body">
+                            <table class="table-list">
+                                <caption>테이블타이틀</caption>
+                                <colgroup>
+                                    <col style="width: auto;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">헤더</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>내용</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+                <section class="form-sec depth-1" style="width:530px">
+                    <div class="sec-body">
+                        <div class="table-head">
+                            <div class="left-con">
+                                <h4>‘테이블 타이틀’</h4>
+                            </div>
+                        </div>
+                        <div class="table-body flex-wrap">
+                            <table class="table-list" style="width: 163px">
+                                <caption>테이블타이틀</caption>
+                                <colgroup>
+                                    <col style="width: auto;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">헤더</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>내용</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table-list" style="width: 163px">
+                                <caption>테이블타이틀</caption>
+                                <colgroup>
+                                    <col style="width: auto;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">헤더</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>내용</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table-list" style="width: 163px">
+                                <caption>테이블타이틀</caption>
+                                <colgroup>
+                                    <col style="width: auto;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">헤더</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>내용</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        
+        </div>
+        <h3 class="mb30">14-2. 리스트 상단 재검색 영역 예시</h3>
+        <div class="cont-wrap mb60 ml50 w1100">
+            
+            <section class="content-sec">
+                <div class="sec-body">
+                    <div class="table-head">
+                        <div class="left-con">
+                            <span class="fs-14 color-86">전체 130건</span>
+                        </div>
+                        <div class="right-con">
+                            <div class="dropdown-wrap">
+                                <button type="button" class="current-item">15개씩 보기</button>
+                                <ul class="dropdown-con">
+                                    <li class="dropdown-item">
+                                        <button type="button">옵션값</button>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <button type="button">옵션값</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dropdown-wrap">
+                                <button type="button" class="current-item">집합건물</button>
+                                <ul class="dropdown-con">
+                                    <li class="dropdown-item">
+                                        <button type="button">옵션값</button>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <button type="button">옵션값</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dropdown-wrap">
+                                <button type="button" class="current-item">시/도</button>
+                                <ul class="dropdown-con">
+                                    <li class="dropdown-item">
+                                        <button type="button">옵션값</button>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <button type="button">옵션값</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dropdown-wrap">
+                                <button type="button" class="current-item">현행</button>
+                                <ul class="dropdown-con">
+                                    <li class="dropdown-item">
+                                        <button type="button">옵션값</button>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <button type="button">옵션값</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list-search-con ml10">
+                                <label for=""><span class="clear-btn-con"><input type="text" name="" id="total-search" class="search-input" placeholder="결과 내 재검색"><span class="clear-btn" style="display: none;"></span></span></label>
+                                <button type="button" class="search-btn">
+                                    <img src="../../img/btn_board_search.svg" alt="search">
+                                </button>
+                            </div>
+                            <button type="button" class="btn-solid color-4d">재검색</button>
+                        </div>
+                    </div>
+                    <div class="table-body">
+                        <table class="table-list" summary="테이블 설명">
+                            <caption>테이블 타이틀</caption>
+                            <colgroup>
+                                <col style="width: 60px;">
+                                <col style="width: 70px;">
+                                <col style="width: 180px;">
+                                <col style="width: 120px">
+                                <col style="width: auto;">
+                                <col style="width: 91px;">
+                                <col style="width: 110px;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="has-element">
+                                        <span class="checkbox-con only-box">
+                                            <input type="checkbox" name="" id="cbox0"><label for="cbox0"></label>
+                                        </span>
+                                    </th>
+                                    <th scope="col" class="ff-roboto">번호</th>
+                                    <th scope="col">고유번호</th>
+                                    <th scope="col">구분</th>
+                                    <th scope="col">부동산 표시</th>
+                                    <th scope="col">지도보기</th>
+                                    <th scope="col">등기상태</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="has-element">
+                                        <span class="checkbox-con only-box">
+                                            <input type="checkbox" name="" id="cbox1"><label for="cbox1"></label>
+                                        </span>
+                                    </td>
+                                    <td class="ff-roboto">1</td>
+                                    <td>1101-2013-000043</td>
+                                    <td>집합건물</td>
+                                    <td class="left">서울특별시 서초구 <span class="fw-500 color-main">서초동 100</span></td>
+                                    <td>
+                                        <button type="button" class="btn">보기</button>
+                                    </td>
+                                    <td>
+                                        <span class="color-main"><strong>현행</strong></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="has-element">
+                                        <span class="checkbox-con only-box">
+                                            <input type="checkbox" name="" id="cbox1"><label for="cbox1"></label>
+                                        </span>
+                                    </td>
+                                    <td class="ff-roboto">2</td>
+                                    <td>1101-2021-001430</td>
+                                    <td>집합건물</td>
+                                    <td class="left">서울특별시 서초구 <span class="fw-500 color-main">서초동 100</span>-1</td>
+                                    <td>
+                                        <button type="button" class="btn">보기</button>
+                                    </td>
+                                    <td>
+                                        <span class="color-main"><strong>현행</strong></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="has-element">
+                                        <span class="checkbox-con only-box">
+                                            <input type="checkbox" name="" id="cbox1"><label for="cbox1"></label>
+                                        </span>
+                                    </td>
+                                    <td class="ff-roboto">3</td>
+                                    <td>1101-2021-000092</td>
+                                    <td>집합건물</td>
+                                    <td class="left">서울특별시 서초구 <span class="fw-500 color-main">서초동 100</span>-2</td>
+                                    <td>
+                                        <button type="button" class="btn">보기</button>
+                                    </td>
+                                    <td>
+                                        <span class="color-main"><strong>현행</strong></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="has-element">
+                                        <span class="checkbox-con only-box">
+                                            <input type="checkbox" name="" id="cbox1"><label for="cbox1"></label>
+                                        </span>
+                                    </td>
+                                    <td class="ff-roboto">4</td>
+                                    <td>1101-2020-000043</td>
+                                    <td>집합건물</td>
+                                    <td class="left">서울특별시 서초구 <span class="fw-500 color-main">서초동 100</span>-20</td>
+                                    <td>
+                                        <button type="button" class="btn">보기</button>
+                                    </td>
+                                    <td>
+                                        <span class="color-main"><strong>현행</strong></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="has-element">
+                                        <span class="checkbox-con only-box">
+                                            <input type="checkbox" name="" id="cbox1"><label for="cbox1"></label>
+                                        </span>
+                                    </td>
+                                    <td class="ff-roboto">5</td>
+                                    <td>1101-2021-000233</td>
+                                    <td>집합건물</td>
+                                    <td class="left">서울특별시 서초구 <span class="fw-500 color-main">서초동 100</span>-6, 대우푸르지오 1004동 106호 </td>
+                                    <td>
+                                        <button type="button" class="btn">보기</button>
+                                    </td>
+                                    <td>
+                                        <span class="color-main"><strong>현행</strong></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="has-element">
+                                        <span class="checkbox-con only-box">
+                                            <input type="checkbox" name="" id="cbox1"><label for="cbox1"></label>
+                                        </span>
+                                    </td>
+                                    <td class="ff-roboto">6</td>
+                                    <td>1101-2016-000043</td>
+                                    <td>집합건물</td>
+                                    <td class="left">서울특별시 서초구 <span class="fw-500 color-main">서초동</span> 20071112-<span class="fw-500 color-main">100</span></td>
+                                    <td>
+                                        <button type="button" class="btn">보기</button>
+                                    </td>
+                                    <td>
+                                        <span class="color-main"><strong>현행</strong></span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <h3 class="mb30">14-3. 통수 + 총액</h3>
+        <div class="cont-wrap mb60 ml50 w1100">
+
+            <table class="table-list mb60">
+                <caption>인지세 정보</caption>
+                <colgroup>
+                    <col style="width: 130px;">
+                    <col style="width: 210px;">
+                    <col style="width: auto;">
+                    <col style="width: 110px;">
+                    <col style="width: 110px;">
+                    <col style="width: 130px;">
+                    <col style="width: 160px;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">주주명</th>
+                        <th scope="col">주민등록번호</th>
+                        <th scope="col">주소</th>
+                        <th scope="col">주식의종류</th>
+                        <th scope="col">1주의금액</th>
+                        <th scope="col">인수주식수</th>
+                        <th scope="col">납입금액</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>김이동</td>
+                        <td class="ff-roboto">720505-1●●●●●●</td>
+                        <td>서울특별시 마포구 대흥로6길 11</td>
+                        <td>보통주</td>
+                        <td>1,000원</td>
+                        <td>50,000주</td>
+                        <td>50,000,000원</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5" class="total-row">
+                            <span class="title">합계</span>
+                        </td>
+                        <td class="total-row tc">
+                            <span class="cont ml0">50,000주</span>
+                        </td>
+                        <td class="total-row tc">
+                            <span class="cont ml0">50,000,000원</span>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <table class="table-list">
+                <caption>인지세 정보</caption>
+                <colgroup>
+                    <col style="width: 130px;">
+                    <col style="width: 210px;">
+                    <col style="width: auto;">
+                    <col style="width: 110px;">
+                    <col style="width: 110px;">
+                    <col style="width: 130px;">
+                    <col style="width: 160px;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">주주명</th>
+                        <th scope="col">주민등록번호</th>
+                        <th scope="col">주소</th>
+                        <th scope="col">주식의종류</th>
+                        <th scope="col">1주의금액</th>
+                        <th scope="col">인수주식수</th>
+                        <th scope="col">납입금액</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>김이동</td>
+                        <td class="ff-roboto">720505-1●●●●●●</td>
+                        <td>서울특별시 마포구 대흥로6길 11</td>
+                        <td>보통주</td>
+                        <td>1,000원</td>
+                        <td>50,000주</td>
+                        <td>50,000,000원</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="7" class="total-row">
+                            <span class="title">총</span>
+                            <span class="title ml10">10통</span>
+                            <span class="cont">60,000원</span>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </div>
+
+        <h3 class="mb30">14-4. 테이블 2단 헤더</h3>
+        <div class="cont-wrap mb60 ml50 w1100">
+
+            <section class="form-sec depth-1">
+                <div class="sec-body">
+                    <div class="table-head">
+                        <div class="left-con">
+                            <h4>‘테이블 타이틀’</h4>
+                        </div>
+                    </div>
+                    <div class="table-body">
+                        <table class="table-list">
+                            <caption>테이블타이틀</caption>
+                            <colgroup>
+                                <col style="width: auto;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" rowspan="2">헤더</th>
+                                    <th scope="col" rowspan="2">헤더</th>
+                                    <th scope="col" rowspan="2">헤더</th>
+                                    <th scope="col" rowspan="2">헤더</th>
+                                    <th scope="col" colspan="2">헤더</th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">헤더</th>
+                                    <th scope="col">헤더</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="tr">3,000원</td>
+                                    <td class="tr">600원</td>
+                                    <td class="tr">15,000원</td>
+                                    <td class="tr">0원</td>
+                                    <td class="tr">0원</td>
+                                    <td class="tr">18,600원</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="6" class="total-row">
+                                        <span class="title">총비용</span>
+                                        <span class="cont">60,000원</span>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <h3 class="mb30">14-5. 변형 테이블</h3>
+        <div class="cont-wrap mb60 ml50 w1100">
+
+            <section class="form-sec depth-1">
+                <div class="sec-body">
+                    <div class="table-body">
+                        <table class="table-list indetail">
+                            <caption>테이블타이틀</caption>
+                            <colgroup>
+                                <col style="width: auto;">
+                                <col style="width: 42%;">
+                                <col style="width: 42%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="classfi">구분</th>
+                                    <th scope="col">경정 전 부동산의 표시</th>
+                                    <th scope="col">경정 후 부동산의 표시</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>리/동</th>
+                                    <td><input type="text" value="개신동" class="w420" disabled ></td>
+                                    <td>
+                                        <div class="list-search-con w420">
+                                            <span class="clear-btn-con"><span class="clear-btn-con"><input type="text" name="" id="total-search2" disabled class="search-input" placeholder=""><span class="clear-btn" style="display: none;"></span></span><span class="clear-btn" style="display: none;"></span></span>
+                                            <button type="button" class="search-btn">
+                                                <img src="../../img/btn_board_search.svg" alt="search">
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>항목명 노출</th>
+                                    <td><input type="text" value="1501-51" class="w420" disabled ></td>
+                                    <td><input type="text" value="1501-51" class="w420" ></td>
+                                </tr>
+                                <tr>
+                                    <th>지번</th>
+                                    <td><span class="clear-btn-con"><input type="text" value="대" name="" id="default" class="w420" disabled placeholder="대"><span class="clear-btn" style="display: none;"></span></span></td>
+                                    <td><span class="clear-btn-con"><input type="text" value="대" name="" id="default" class="w420" placeholder="대"><span class="clear-btn" style="display: none;"></span></span></td>
+                                </tr>
+                                <tr>
+                                    <th>면적</th>
+                                    <td>
+                                        <span class="input-unit-wrap">
+                                            <span class="clear-btn-con"><input type="text" name="" id="unit1" class="w390" disabled placeholder=""><span class="clear-btn"></span></span>
+                                            <span class="unit-right">㎡</span>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="input-unit-wrap">
+                                            <span class="clear-btn-con"><input type="text" name="" id="unit1" class="w390" placeholder=""><span class="clear-btn"></span></span>
+                                            <span class="unit-right">㎡</span>
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section class="form-sec depth-1">
+                <div class="sec-body">
+                    <div class="table-body">
+
+                        <div class="grid-table">
+                            <div class="grid-head">
+                                <table class="table-list" summary="테이블 설명">
+                                    <caption>테이블 타이틀</caption>
+                                    <colgroup>
+                                        <col style="width: 60px;">
+                                        <col style="width: 70px;">
+                                        <col style="width: 180px;">
+                                        <col style="width: 120px">
+                                        <col style="width: 470px">
+                                        <col style="width: 91px;">
+                                        <col style="width: auto;;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="has-element">
+                                                <span class="checkbox-con only-box">
+                                                    <input type="checkbox" name="" id="cbox0"><label for="cbox0"></label>
+                                                </span>
+                                            </th>
+                                            <th scope="col" class="ff-roboto">번호</th>
+                                            <th scope="col">고유번호</th>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">부동산 표시</th>
+                                            <th scope="col">지도보기</th>
+                                            <th scope="col">등기상태</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                            <div class="grid-body table-scroll">
+                                <table class="table-list" summary="테이블 설명">
+                                    <caption>테이블 타이틀</caption>
+                                    <colgroup>
+                                        <col style="width: 60px;">
+                                        <col style="width: 70px;">
+                                        <col style="width: 180px;">
+                                        <col style="width: 120px">
+                                        <col style="width: 470px;">
+                                        <col style="width: 91px;">
+                                        <col style="width: auto;;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="has-element">
+                                                <span class="checkbox-con only-box">
+                                                    <input type="checkbox" name="" id="cbox1"><label for="cbox1"></label>
+                                                </span>
+                                            </td>
+                                            <td class="ff-roboto">1</td>
+                                            <td>1101-2013-000043</td>
+                                            <td>집합건물</td>
+                                            <td class="left">서울특별시 서초구 <span class="fw-500 color-main">서초동 100</span></td>
+                                            <td>
+                                                <button type="button" class="btn">보기</button>
+                                            </td>
+                                            <td>
+                                                <span class="color-main"><strong>현행</strong></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="has-element">
+                                                <span class="checkbox-con only-box">
+                                                    <input type="checkbox" name="" id="cbox1"><label for="cbox1"></label>
+                                                </span>
+                                            </td>
+                                            <td class="ff-roboto">2</td>
+                                            <td>1101-2021-001430</td>
+                                            <td>집합건물</td>
+                                            <td class="left">서울특별시 서초구 <span class="fw-500 color-main">서초동 100</span>-1</td>
+                                            <td>
+                                                <button type="button" class="btn">보기</button>
+                                            </td>
+                                            <td>
+                                                <span class="color-main"><strong>현행</strong></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="has-element">
+                                                <span class="checkbox-con only-box">
+                                                    <input type="checkbox" name="" id="cbox1"><label for="cbox1"></label>
+                                                </span>
+                                            </td>
+                                            <td class="ff-roboto">3</td>
+                                            <td>1101-2021-000092</td>
+                                            <td>집합건물</td>
+                                            <td class="left">서울특별시 서초구 <span class="fw-500 color-main">서초동 100</span>-2</td>
+                                            <td>
+                                                <button type="button" class="btn">보기</button>
+                                            </td>
+                                            <td>
+                                                <span class="color-main"><strong>현행</strong></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="has-element">
+                                                <span class="checkbox-con only-box">
+                                                    <input type="checkbox" name="" id="cbox1"><label for="cbox1"></label>
+                                                </span>
+                                            </td>
+                                            <td class="ff-roboto">4</td>
+                                            <td>1101-2020-000043</td>
+                                            <td>집합건물</td>
+                                            <td class="left">서울특별시 서초구 <span class="fw-500 color-main">서초동 100</span>-20</td>
+                                            <td>
+                                                <button type="button" class="btn">보기</button>
+                                            </td>
+                                            <td>
+                                                <span class="color-main"><strong>현행</strong></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="has-element">
+                                                <span class="checkbox-con only-box">
+                                                    <input type="checkbox" name="" id="cbox1"><label for="cbox1"></label>
+                                                </span>
+                                            </td>
+                                            <td class="ff-roboto">5</td>
+                                            <td>1101-2021-000233</td>
+                                            <td>집합건물</td>
+                                            <td class="left">서울특별시 서초구 <span class="fw-500 color-main">서초동 100</span>-6, 대우푸르지오 1004동 106호 </td>
+                                            <td>
+                                                <button type="button" class="btn">보기</button>
+                                            </td>
+                                            <td>
+                                                <span class="color-main"><strong>현행</strong></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="has-element">
+                                                <span class="checkbox-con only-box">
+                                                    <input type="checkbox" name="" id="cbox1"><label for="cbox1"></label>
+                                                </span>
+                                            </td>
+                                            <td class="ff-roboto">6</td>
+                                            <td>1101-2016-000043</td>
+                                            <td>집합건물</td>
+                                            <td class="left">서울특별시 서초구 <span class="fw-500 color-main">서초동</span> 20071112-<span class="fw-500 color-main">100</span></td>
+                                            <td>
+                                                <button type="button" class="btn">보기</button>
+                                            </td>
+                                            <td>
+                                                <span class="color-main"><strong>현행</strong></span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_btn_outlink_gr" width="16" height="16" viewBox="0 0 16 16">
+    <defs>
+        <style>
+            .cls-2{fill:#6d7278}
+        </style>
+    </defs>
+    <path id="Rectangle" fill="none" d="M0 0H16V16H0z"/>
+    <path id="Shape" d="M10 10H1V1h4V0H0v11h11V6h-1v4z" class="cls-2" transform="translate(2.46 2.54)"/>
+    <path id="Shape-2" d="M3.85 0v1h2.3L0 7.14l.71.71L6.85 1.7V4h1V0z" class="cls-2" transform="translate(5.61 2.54)"/>
+</svg>

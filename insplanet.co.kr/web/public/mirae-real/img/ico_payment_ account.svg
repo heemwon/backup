@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-2,.cls-5{fill:none}.cls-2{stroke:#151833;stroke-width:1.5px}.cls-4{stroke:none}
+        </style>
+    </defs>
+    <g id="ico_payment__account" transform="translate(-480.296 -533)">
+        <g id="그룹_3659">
+            <g id="사각형_1842" class="cls-2">
+                <path d="M0 0H20V12H0z" class="cls-4" transform="translate(482.296 535)"/>
+                <path d="M0.75 0.75H19.25V11.25H0.75z" class="cls-5" transform="translate(482.296 535)"/>
+            </g>
+            <g id="패스_4099" fill="none">
+                <path d="M0 0h20l2 9H-2z" class="cls-4" transform="translate(482.296 545.5)"/>
+                <path fill="#151833" d="M1.203 1.5l-1.333 6h20.26l-1.333-6H1.203M0 0h20l2 9H-2l2-9z" transform="translate(482.296 545.5)"/>
+            </g>
+            <g id="사각형_1843" class="cls-2">
+                <path d="M0 0H6V4H0z" class="cls-4" transform="translate(493.296 538)"/>
+                <path d="M0.75 0.75H5.25V3.25H0.75z" class="cls-5" transform="translate(493.296 538)"/>
+            </g>
+            <path id="선_565" d="M0 0L3 0" class="cls-2" transform="translate(485.796 543.5)"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56.708" height="57.616" viewBox="0 0 56.708 57.616">
+    <defs>
+        <linearGradient id="linear-gradient" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#71d6cf"/>
+            <stop offset="1" stop-color="#1d8981"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-2" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#ffea4d"/>
+            <stop offset="1" stop-color="#ffc16e"/>
+        </linearGradient>
+        <filter id="타원_211" width="26.452" height="26.452" x="26.132" y="24.164" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-color="#cc8e3b" flood-opacity=".302"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="사각형_1363" width="34" height="28" x="22.708" y="29.616" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur-2" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur-2" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <style>
+            .cls-1{fill:red;opacity:0}.cls-4{fill:url(#linear-gradient-2)}
+        </style>
+    </defs>
+    <g id="ico_checklist_11_on" transform="translate(7.192 10)">
+        <path id="guide" d="M0 0H56V56H0z" class="cls-1" transform="translate(-7.192 -10)"/>
+        <path id="guide-2" d="M0 0H40V40H0z" class="cls-1" transform="translate(0.808 -2)"/>
+        <g id="ico_checklist_11_off" transform="translate(-120.755 26.999)">
+            <g id="home" transform="translate(66.684 -45.322)">
+                <path id="패스_3512" fill="url(#linear-gradient)" d="M26.592 23.027h1l16.5 14.723v19.983h-34V37.75z" transform="translate(44.787 -3.704)"/>
+                <path id="사각형_1208" fill="#fff" d="M5 0a5 5 0 0 1 5 5v9.257H0V5a5 5 0 0 1 5-5z" transform="translate(66.878 39.772)"/>
+            </g>
+            <g id="people">
+                <g filter="url(#타원_211)" transform="translate(145.219 -8.776) matrix(1, 0, 0, 1, -31.66, -28.22)">
+                    <circle id="타원_211-2" cx="4.226" cy="4.226" r="4.226" class="cls-4" transform="translate(35.13 28.16)"/>
+                </g>
+                <g filter="url(#사각형_1363)" transform="translate(145.219 -8.776) matrix(1, 0, 0, 1, -31.66, -28.22)">
+                    <path id="사각형_1363-2" d="M7 0h2a7 7 0 0 1 7 7v3H0V7a7 7 0 0 1 7-7z" class="cls-4" transform="translate(31.71 35.62)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

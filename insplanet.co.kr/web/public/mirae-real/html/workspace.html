@@ -1,0 +1,1253 @@
+<!doctype html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Work List</title>
+	<style>
+		* {margin:0;padding:0;}
+            h1 {padding:15px 20px 15px 20px;font-size:24px;background:#ececec;}
+            .stat {padding:10px 10px;}
+            .stat p {display:inline-block;margin-left:10px;font-size:12px;}
+            h2 {margin:30px 20px 0px 20px;}
+            table {width:calc(100% - 40px);margin:0 20px 50px 20px;border-collapse:collapse;border-top:2px solid #ccc;}
+            th {padding:10px 20px;font-size:12px;border-bottom:1px solid #ccc;background:#ececec;}
+            td {padding:5px 20px;font-size:12px;border-bottom:1px solid #ccc;}
+            td:nth-child(1),
+            td:nth-child(7)  {text-align:center;}
+            .tr{text-align: right;}
+	</style>
+	<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script> -->
+	<script src="../js/libs/jquery.min.js"></script>
+    <script>
+        $(function() {
+            var trNum = $('table tr').length + 1;
+            for(i = 0; i < trNum; i++){
+                $('table tr:nth-child(' + i + ') td:first-child').text(i-1);
+                linktext = $('table tr:nth-child(' + i + ') td:nth-child(6)').text()
+                if($('table tr:nth-child(' + i + ') td:nth-child(7)').text() == '완료'){
+                    $('table tr:nth-child(' + i + ') td:nth-child(6)').html('<a href="./'+ linktext +'" target="_blank">'+ linktext +'</a>')
+                }
+                if($('table tr:nth-child(' + i + ') td:nth-child(7)').text() == '진행중'){
+                    $('table tr:nth-child(' + i + ') td:nth-child(6)').html('<a href="./'+ linktext +'" target="_blank">'+ linktext +'</a>')
+                }
+            }
+            $('.stat .page-total').text(trNum - 2)
+            $('.stat .page-ing').text($('table td:nth-child(7):contains("진행중")').length)
+            $('.stat .page-comp').text($('table td:nth-child(7):contains("완료")').length)
+
+        });
+    </script>
+</head>
+<body>
+	<h1>HTML Worklist</h1>
+
+	<h2>PC Ver</h2>
+	<div class="stat">
+		<p>총 페이지 : <span class="page-total"></span> 페이지</p>
+		<p>진행중 : <span class="page-ing"></span> 페이지</p>
+		<p>완료 : <span class="page-comp"></span> 페이지</p>
+	</div>
+	<table>
+		<colgroup>
+		<col width="80" >
+		<col width="200" >
+		<col width="150" >
+		<col width="150" >
+		<col width="150" >
+		<col width="auto" >
+		<col width="100" >
+		<col width="auto" >
+		</colgroup>
+		<tr>
+			<th>No.</th>
+			<th>구분</th>
+			<th>DEPTH1</th>
+			<th>DEPTH1</th>
+			<th>DEPTH3</th>
+			<th>파일명</th>
+			<th>작업상황</th>
+			<th>비고</th>
+		</tr>
+		<!-- 
+		<tr>
+			<td></td>
+			<td>Guide</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>guide.html</td>
+			<td>진행중</td>
+			<td>윈도우팝업</td>
+		</tr>
+		 -->
+
+		<!-- 컴포넌트 가이드 -->
+		<tr>
+			<td></td>
+			<td>Component</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>guide/font.html</td>
+			<td>완료</td>
+			<td>폰트</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Component</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>guide/button.html</td>
+			<td>완료</td>
+			<td>버튼</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Component</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>guide/form.html</td>
+			<td>완료</td>
+			<td>폼 Element</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Component</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>guide/popup.html</td>
+			<td>완료</td>
+			<td>팝업</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Component</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>guide/tab_dropdown.html</td>
+			<td>완료</td>
+			<td>탭/드롭다운</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Component</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>guide/accordion.html</td>
+			<td>완료</td>
+			<td>아코디언</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Component</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>guide/progress.html</td>
+			<td>완료</td>
+			<td>Progress</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Component</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>guide/filter.html</td>
+			<td>완료</td>
+			<td>필터</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Component</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>guide/table.html</td>
+			<td>완료</td>
+			<td>테이블</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Component</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>guide/textbox.html</td>
+			<td>완료</td>
+			<td>텍스트박스</td>
+		</tr>
+		<!-- // 컴포넌트 가이드 -->
+
+		<!-- 패턴 -->
+		<tr>
+			<td></td>
+			<td>Pattern</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>pattern/pattern_00.html</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Pattern</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>pattern/pattern_01.html</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Pattern</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>pattern/pattern_02.html</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Pattern</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>pattern/pattern_03.html</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Pattern</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>pattern/pattern_04.html</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Pattern</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>pattern/pattern_05.html</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Pattern</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>pattern/pattern_06.html</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Pattern</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>pattern/pattern_07.html</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Pattern</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>pattern/pattern_08.html</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Pattern</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>pattern/pattern_09.html</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Pattern</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>pattern/pattern_10.html</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Pattern</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>pattern/pattern_11.html</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Pattern</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>pattern/pattern_12.html</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Pattern</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>pattern/pattern_13.html</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Pattern</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>pattern/pattern_14.html</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<!-- // 패턴 -->
+		<!-- 레이아웃 -->
+		<tr>
+			<td></td>
+			<td>Layout</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>layout1.html</td>
+			<td>완료</td>
+			<td>레이아웃 - 일반컨텐츠</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Layout</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>layout2.html</td>
+			<td>완료</td>
+			<td>레이아웃 - 열람발급</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Layout</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>layout3.html</td>
+			<td>완료</td>
+			<td>레이아웃 - 신청</td>
+		</tr>
+		<!-- // 레이아웃 -->
+		<!-- 유형화면 -->
+        <tr>
+			<td></td>
+			<td>인덱스</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>1_1_1_index.html</td>
+			<td>완료</td>
+			<td>
+				1.1.1_인덱스<br/>
+				1.1.2_인덱스_gnb펼침
+			</td>
+		</tr>
+        <tr>
+			<td></td>
+			<td>메인화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>1_2_1_main.html</td>
+			<td>완료</td>
+			<td>
+				1.2.1_메인<br/>
+				1.2.2_메인_GNB펼침<br/>
+				1.2.3_전체메뉴<br/>
+				1.2.4_서비스더보기<br/>
+				1.2.5_나의메뉴설정
+			</td>
+		</tr>
+        <tr>
+			<td></td>
+			<td>메인화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>1_2_1_main_after_login.html</td>
+			<td>완료</td>
+			<td>
+				1.2.1_메인_로그인후<br/>
+				1.2.3_전체메뉴_로그인후
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>3_1_1_login_normal.html</td>
+			<td>완료</td>
+			<td>
+				3.1.1_로그인_일반사용자
+			</td>
+		</tr>
+        <tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>3_1_2_login_elec.html</td>
+			<td>완료</td>
+			<td>
+				3.1.2_로그인_전자신청
+			</td>
+		</tr>
+        <tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>5_1_1_error_404.html</td>
+			<td>완료</td>
+			<td>
+				5.1.1_error_404
+			</td>
+		</tr>
+        <tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>5_1_2_error_service.html</td>
+			<td>완료</td>
+			<td>
+				5.1.2_error_서비스점검
+			</td>
+		</tr>
+        <tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>5_2_2_address_search.html</td>
+			<td>완료</td>
+			<td>
+				5.2.2_주소검색_popup_default<br/>
+				5.2.3_주소검색_popup_검색결과<br/>
+				5.2.4_주소검색_popup_nodata
+			</td>
+		</tr>
+        <tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>7_4_1_popup_message.html</td>
+			<td>완료</td>
+			<td>
+				7.4.1_메시지 팝업
+			</td>
+		</tr>
+        <tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>7_4_6_popup_notice.html</td>
+			<td>완료</td>
+			<td>
+				7.4.6_공지
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>7_4_7_search_type.html</td>
+			<td>완료</td>
+			<td>
+				7.4.7_검색어 입력 유형<br/>
+				7.4.7_검색어 입력 유형_자동검색어
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>7_4_8_search_result_total.html</td>
+			<td>완료</td>
+			<td>
+				7.4.8_검색 결과_전체 분류
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>7_4_8_search_result_detail.html</td>
+			<td>완료</td>
+			<td>
+				7.4.8_검색 결과_세부 분류
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>7_4_8_search_result_no_result.html</td>
+			<td>완료</td>
+			<td>
+				7.4.8_검색 결과 없음
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>7_4_9_type_select.html</td>
+			<td>완료</td>
+			<td>
+				7.4.9_유형 선택/검색 (부동산체크리스트)<br/>
+				7.4.9_유형 선택/검색 (부동산체크리스트)_icon_on
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>7_4_9_type_select_result.html</td>
+			<td>완료</td>
+			<td>
+				7.4.9_유형 선택/검색 결과 (부동산체크리스트)<br/>
+				7.4.9_유형 선택/검색 결과 (부동산체크리스트)_floating
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>7_4_10_board_attach_file.html</td>
+			<td>완료</td>
+			<td>
+				7.4.10_첨부파일 다운로드 게시판 (등기신청양식+첨부서면)
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>7_4_11_board_index.html</td>
+			<td>완료</td>
+			<td>
+				7.4.11_인덱스 게시판 (등기용어해설)
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>7_4_12_program_install.html</td>
+			<td>완료</td>
+			<td>
+				7.4.12_프로그램 설치
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>7_4_13_lessee_info.html</td>
+			<td>완료</td>
+			<td>
+				7.4.13_소액임차인의 범위 등 안내
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>7_4_14_computerization.html</td>
+			<td>완료</td>
+			<td>
+				7.4.14_전산화백서
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>7_4_15_find_register_office.html</td>
+			<td>완료</td>
+			<td>
+				7.4.15_등기소찾기
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>7_4_15_find_register_office_nodata.html</td>
+			<td>완료</td>
+			<td>
+				7.4.15_등기소찾기_nodata
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>7_4_15_popup.html</td>
+			<td>완료</td>
+			<td>
+				7.4.15_등기소찾기_보기팝업
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>7_4_16_registration_cost.html</td>
+			<td>완료</td>
+			<td>
+				7.4.16_설정등기비용계산
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>7_4_16_registration_cost_result.html</td>
+			<td>완료</td>
+			<td>
+				7.4.16_설정등기비용계산_계산결과
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>7_4_17_survey.html</td>
+			<td>완료</td>
+			<td>
+				7.4.17_설문조사조회
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>7_4_18_payment.html</td>
+			<td>완료</td>
+			<td>
+				7.4.18_결제01<br/>
+				7.4.18_결제02수단별케이스
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>7_4_18_payment_complete.html</td>
+			<td>완료</td>
+			<td>
+				7.4.18_결제03승인완료
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>7_4_19_faq_01.html</td>
+			<td>완료</td>
+			<td>자주묻는질문_01</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>7_4_19_faq_02.html</td>
+			<td>완료</td>
+			<td>자주묻는질문_02</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>7_4_19_faq_03.html</td>
+			<td>완료</td>
+			<td>자주묻는질문_03</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>7_4_19_faq_04.html</td>
+			<td>완료</td>
+			<td>자주묻는질문_04</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>7_4_20_basket_list.html</td>
+			<td>완료</td>
+			<td>부동산메가프로세스 - 열람발급 장바구니 리스트</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>7_4_20_basket_detail.html</td>
+			<td>완료</td>
+			<td>부동산메가프로세스 - 열람발급 장바구니 상세 - 팝업</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>7_4_21_property_info.html</td>
+			<td>완료</td>
+			<td>
+				7.4.21_정보고지형팝업
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>7_4_22_regist_user.html</td>
+			<td>완료</td>
+			<td>
+				7.4.22_사용자등록
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>7_4_22_regist_user_complete.html</td>
+			<td>완료</td>
+			<td>
+				7.4.22_사용자등록_완료
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>유형화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>7_4_23_external_link.html</td>
+			<td>완료</td>
+			<td>
+				7.4.23_이미지_외부_링크
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>신청화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>default.html</td>
+			<td>완료</td>
+			<td>신청화면 레이아웃</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>신청화면</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>default_m.html</td>
+			<td>완료</td>
+			<td style="color:red;">신청화면 - 태블릿,모바일 레이아웃 - 수정중</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>header.html</td>
+			<td>완료</td>
+			<td>헤더 레이아웃</td>
+		</tr>
+		<!-- // 유형화면 -->
+
+		<!-- CMS -->
+		<tr>
+			<td></td>
+			<td>CMS</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>../CMS/00.login.html</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>CMS</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>../CMS/main.html</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>CMS</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>../CMS/01.pattern.html</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>CMS</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>../CMS/02.sample1.html</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>CMS</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>../CMS/02.sample2.html</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>CMS</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>../CMS/02.sample3.html</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>CMS</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>sample/01.신청서작성제출(부동산).html</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>CMS</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>sample/02.신청서작성(법인).html</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>CMS</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>sample/03.등기할사항(법인).html</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>CMS</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>sample/04.단일업무화면.html</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>CMS</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>sample/01.간격가이드01.html</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>CMS</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>sample/01.간격가이드02.html</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<!-- //CMS -->
+
+		<!-- 메가프로세스 -->
+<!-- 		
+		<tr>
+			<td></td>
+			<td>메가프로세스 - 열람발급</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>06_property_01_search.html</td>
+			<td>완료</td>
+			<td>부동산 열람⋅발급</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>메가프로세스 - 열람발급</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>06_property_01_search_02_choice.html</td>
+			<td>완료</td>
+			<td>부동산 열람⋅발급_선택</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>메가프로세스 - 열람발급</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>06_property_02_payment_list.html</td>
+			<td>완료</td>
+			<td>부동산 열람⋅발급_결제대상목록</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>메가프로세스 - 열람발급</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>06_property_05_apply_history.html</td>
+			<td>완료</td>
+			<td>부동산 열람⋅발급_신청내역보기</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>메가프로세스 - 열람발급</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>07_corporate_01_search.html</td>
+			<td>완료</td>
+			<td>법인 열람⋅발급_검색</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>메가프로세스 - 열람발급</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>07_corporate_01_search_02_choice.html</td>
+			<td>완료</td>
+			<td>법인 열람⋅발급_검색_등기항목선택</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>메가프로세스 - 열람발급</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>07_corporate_02_issue_01_partial.html</td>
+			<td>완료</td>
+			<td>법인 열람⋅발급_메가프로세스 - 열람발급_일부발급</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>메가프로세스 - 열람발급</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>07_corporate_02_issue_02_check.html</td>
+			<td>완료</td>
+			<td>법인 열람⋅발급_메가프로세스 - 열람발급_등록번호공개여부확인</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>메가프로세스 - 열람발급</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>07_corporate_02_issue_03_result.html</td>
+			<td>완료</td>
+			<td>법인 열람⋅발급_메가프로세스 - 열람발급_선택결과확인</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>메가프로세스 - 열람발급</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>07_corporate_02_issue_04_payment.html</td>
+			<td>완료</td>
+			<td>법인 열람⋅발급_메가프로세스 - 열람발급_결제대상</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>메가프로세스 - 열람발급</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>04_attached_01_search.html</td>
+			<td>완료</td>
+			<td>부동산 첨부서류열람_검색</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>메가프로세스 - 열람발급</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>04_attached_01_search_nodata.html</td>
+			<td>완료</td>
+			<td>부동산 첨부서류열람_검색_nodata</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>메가프로세스 - 열람발급</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>04_attached_02_apply_01_participator.html</td>
+			<td>완료</td>
+			<td>부동산 첨부서류열람_신청_이해관계자확인</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>메가프로세스 - 열람발급</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>04_attached_02_apply_02_attach_doc.html</td>
+			<td>완료</td>
+			<td>부동산 첨부서류열람_신청_열람대상첨부서류_등록번호공개여부</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>메가프로세스 - 열람발급</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>04_attached_02_apply_03_property.html</td>
+			<td>완료</td>
+			<td>부동산 첨부서류열람_신청_신청대상부동산</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>메가프로세스 - 열람발급</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>04_corporate_01_search.html</td>
+			<td>완료</td>
+			<td>법인 첨부서류열람_검색</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>메가프로세스 - 신청</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>01_property_01_apply_01_list.html</td>
+			<td>완료</td>
+			<td>부동산등기신청_신청</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>메가프로세스 - 신청</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>02_corporate_01_apply_search.html</td>
+			<td>완료</td>
+			<td>법인등기신청_신청_검색영역</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>메가프로세스 - 신청</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>02_corporate_01_apply_01_list.html</td>
+			<td>완료</td>
+			<td>법인등기신청_신청_신청서작성</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>메가프로세스 - 신청</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>02_corporate_01_apply_02_write1.html</td>
+			<td>완료</td>
+			<td>법인등기신청_신청_기본정보입력1</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>메가프로세스 - 신청</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>02_corporate_01_apply_02_write1_popup.html</td>
+			<td>완료</td>
+			<td>법인등기신청_신청_기본정보입력_popuup</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>메가프로세스 - 신청</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>02_corporate_01_apply_02_write2.html</td>
+			<td>완료</td>
+			<td>법인등기신청_신청_기본정보입력2</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>메가프로세스 - 신청</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>02_corporate_01_apply_02_write2_popup.html</td>
+			<td>완료</td>
+			<td>법인등기신청_신청_기본정보입력2_popuup</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>메가프로세스 - 신청</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>02_corporate_01_apply_02_write2_rome_popup.html</td>
+			<td>완료</td>
+			<td>법인등기신청_신청_기본정보입력2_rome_popuup</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>메가프로세스 - 신청</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>02_corporate_02_registration.html</td>
+			<td>완료</td>
+			<td>법인등기신청_등기할사항</td>
+		</tr> 
+		-->
+		<!-- // 메가프로세스 -->
+
+	</table>
+</body>
+</html>

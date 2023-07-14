@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#000;stroke-width:1.5px;stroke-miterlimit:10}
+        </style>
+    </defs>
+    <g id="ico_mymenu_register2" transform="translate(8 12.284)">
+        <path id="Stroke_1" d="M34.364 6.752V0H0v24.341h13.259L11.772 26.8l-1.205 1.839h8.262" class="cls-2" transform="translate(.716 .716)"/>
+        <path id="Stroke_3" d="M0 .477l20.673.035" class="cls-2" transform="translate(.804 19.056)"/>
+        <path id="Stroke_3-2" d="M0 .477l5.4.035" class="cls-2" transform="translate(15.122 8.556)"/>
+        <path id="Stroke_3-3" d="M0 .477l5.4.035" class="cls-2" transform="translate(15.122 11.419)"/>
+        <g id="사각형_1488" fill="#fff" stroke="#000" stroke-width="1.5px">
+            <path stroke="none" d="M0 0H6V6H0z" transform="translate(5.5 7)"/>
+            <path fill="none" d="M0.75 0.75H5.25V5.25H0.75z" transform="translate(5.5 7)"/>
+        </g>
+        <path id="Stroke_5" fill="#fec867" stroke="#000" stroke-miterlimit="10" stroke-width="1.5px" d="M9.905 0A9.9 9.9 0 1 1 0 9.905 9.905 9.905 0 0 1 9.905 0z" transform="translate(21.395 11.063)"/>
+        <path id="Stroke_7" fill="none" stroke="#000" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5px" d="M7.791 0L3.657 4.725a.891.891 0 0 1-.637.3h-.031a.884.884 0 0 1-.626-.26L0 2.406" transform="translate(27.003 18.575)"/>
+    </g>
+</svg>

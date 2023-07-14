@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+    <defs>
+        <style>
+            .cls-1{fill:red;opacity:0}.cls-2{fill:#fff}.cls-2,.cls-3,.cls-4{stroke:#000;stroke-width:1.5px}.cls-3{fill:#f4c215}.cls-3,.cls-4{stroke-linecap:round}.cls-4,.cls-6{fill:none}.cls-5{stroke:none}
+        </style>
+    </defs>
+    <g id="ico_checklist_05_off" transform="translate(7.192 10)">
+        <path id="guide" d="M0 0H56V56H0z" class="cls-1" transform="translate(-7.192 -10)"/>
+        <path id="guide-2" d="M0 0H40V40H0z" class="cls-1" transform="translate(0.808 -2)"/>
+        <g id="ico_checklist_05_off-2" transform="translate(1 0.055)">
+            <g id="people" transform="translate(0.755 10.877)">
+                <circle id="타원_211" cx="5.561" cy="5.561" r="5.561" class="cls-2" transform="translate(5.011 -0.924)"/>
+                <path id="Fill_1" d="M11.878 5.9c-2.7.432-4.351-2.574-4.351-2.574A9.6 9.6 0 0 1 0 5.864 6.063 6.063 0 0 1 5.939 0a6.07 6.07 0 0 1 5.94 5.9" class="cls-3" transform="translate(4.633 -1.671)"/>
+                <g id="사각형_1363" class="cls-2">
+                    <path d="M7 0h8a7 7 0 0 1 7 7v4H0V7a7 7 0 0 1 7-7z" class="cls-5" transform="translate(-0.947 11.852)"/>
+                    <path d="M7 .75h8A6.25 6.25 0 0 1 21.25 7v2.5a.75.75 0 0 1-.75.75h-19a.75.75 0 0 1-.75-.75V7A6.25 6.25 0 0 1 7 .75z" class="cls-6" transform="translate(-0.947 11.852)"/>
+                </g>
+            </g>
+            <g id="people-2" transform="translate(18.755 13.877)">
+                <circle id="타원_211-2" cx="5.561" cy="5.561" r="5.561" class="cls-2" transform="translate(5.011 -0.924)"/>
+                <path id="Fill_1-2" d="M11.878 5.9c-2.7.432-4.351-2.574-4.351-2.574A9.6 9.6 0 0 1 0 5.864 6.063 6.063 0 0 1 5.939 0a6.07 6.07 0 0 1 5.94 5.9" class="cls-3" transform="translate(4.633 -1.671)"/>
+                <g id="사각형_1363-2" class="cls-2">
+                    <path d="M7 0h8a7 7 0 0 1 7 7v4H0V7a7 7 0 0 1 7-7z" class="cls-5" transform="translate(-0.947 11.852)"/>
+                    <path d="M7 .75h8A6.25 6.25 0 0 1 21.25 7v2.5a.75.75 0 0 1-.75.75h-19a.75.75 0 0 1-.75-.75V7A6.25 6.25 0 0 1 7 .75z" class="cls-6" transform="translate(-0.947 11.852)"/>
+                </g>
+            </g>
+            <g id="그룹_3636" transform="translate(-1.21)">
+                <path id="패스_3602" d="M26.407.729H45.2" class="cls-4" transform="translate(-15.39 2.216)"/>
+                <path id="패스_3604" d="M30.253-2.945l-3 3 3 3" class="cls-4" transform="translate(58.562 3) rotate(180)"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+    <defs>
+        <style>
+            .cls-3{stroke:#1d1d1d;stroke-width:1.5px}.cls-3,.cls-7{fill:none}.cls-5{fill:red;opacity:0}.cls-6{stroke:none}
+        </style>
+    </defs>
+    <g id="ico_mmain_menu_day" transform="translate(-3.405 -4.569)">
+        <g id="사각형_1464" fill="#fff" stroke="#1d1d1d" stroke-width="1.5px">
+            <path d="M0 0H34.97V29.789H0z" class="cls-6" transform="translate(8.053 14.215)"/>
+            <path d="M0.75 0.75H34.22V29.039H0.75z" class="cls-7" transform="translate(8.053 14.215)"/>
+        </g>
+        <g id="사각형_1475" fill="#f4c215" stroke="#1d1d1d" stroke-width="1.5px">
+            <path d="M0 0H34.97V8.419H0z" class="cls-6" transform="translate(8.053 14.215)"/>
+            <path d="M0.75 0.75H34.22V7.669H0.75z" class="cls-7" transform="translate(8.053 14.215)"/>
+        </g>
+        <path id="선_349" d="M0 0L0 5.714" class="cls-3" transform="translate(16.495 12.247)"/>
+        <path id="선_350" d="M0 0L0 5.714" class="cls-3" transform="translate(34.604 12.247)"/>
+        <text id="_31" fill="#1d1d1d" font-family="NotoSansCJKkr-Black, Noto Sans CJK KR" font-size="11px" font-weight="800" letter-spacing="-0.04em" transform="translate(19.8 36.182)">
+            <tspan x="0" y="0">31</tspan>
+        </text>
+        <path id="사각형_1795" d="M0 0H36V36H0z" class="cls-5" transform="translate(7.405 10.569)"/>
+        <path id="사각형_1823" d="M0 0H45V45H0z" class="cls-5" transform="translate(3.405 4.569)"/>
+    </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="btn_gnb_close" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#151a30;stroke-linecap:round;stroke-width:2.5px}
+        </style>
+    </defs>
+    <path id="Container" fill="none" d="M0 0H40V40H0z"/>
+    <path id="선_318" d="M0 0L23 0" class="cls-2" transform="rotate(45 -8.132 19.632)"/>
+    <path id="선_319" d="M0 0L23 0" class="cls-2" transform="rotate(135 11.5 11.5)"/>
+</svg>

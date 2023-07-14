@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../js/libs/jquery.min.js"></script>
+    <script src="../js/libs/jquery-ui.min.js"></script>
+    <script src="../js/libs/jquery.selectric.js"></script>
+    <script src="../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../js/sub.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    
+    <link rel="stylesheet" href="../css/simple.css">
+    <script src="../js/simple.js"></script>
+    <title>신청서작성완료</title>
+</head>
+
+<body>
+
+    <!-- 본문영역 -->
+    <div class="area-content">
+        <div class="area-inner">
+
+            <div class="content-wrap">
+
+                <!-- 타이틀, indicator -->
+                <section class="page-title-sec">
+                    <div class="title-btn-con">
+                        <div class="title-con">
+                            <h3>간편등기 신청</h3>
+                        </div>
+                        <!-- 간편등기 step indicator -->
+                        <div class="indicator-wrap" data-slide="indiCon">
+                            <ul class="indicator-con">
+                                <li>
+                                    <button type="button">
+                                        <span class="num">1</span>
+                                        <span class="title">등기대상 선택</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button">
+                                        <span class="num">2</span>
+                                        <span class="title">신청서 작성</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="active">
+                                        <span class="num">3</span>
+                                        <span class="title">작성내역 확인</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button">
+                                        <span class="num">4</span>
+                                        <span class="title">수수료결제</span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <span class="active-bar" style="width: 110px; left: 94px;"></span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 간편등기 slider 컨테이너 -->
+                <div class="slide-wrap">
+                    <!-- slider -->
+                    <div class="slide-con" data-slide="slideCon">
+                        <div class="content-wrap active" data-slide="slide">
+                            <div class="content-con">
+
+                                <section>
+                                    <div class="tc">
+                                        <img src="../img/img_documents_area.jpg" alt="주식회사본점이전(관할내)등기신청">
+                                    </div>
+                                </section>
+
+                                <!-- 버튼영역 -->
+                                <section class="button-sec">
+                                    <div class="flex-wrap">
+                                        <div class="left-con">
+                                            <button type="button" class="btn large" onclick="popupManager.openPopup('#popup-apply-stop')">취소</button>
+                                        </div>
+                                        <div class="right-con">
+                                            <button type="button" class="btn-solid large color-4d prev-btn" data-slide="prev">신청서 수정</button>
+                                            <button type="button" class="btn-solid large color-52 next-btn" data-slide="next">다음</button>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- // 버튼영역 -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- 도움말 -->
+        <div class="contain-help"><!-- area-content에 'help'클래스 추가/삭제 -->
+            <div class="contain-inner">
+
+                <h1 class="title">간편도움말</h1>
+                <div class="tab-anchor">
+                    <button class="on">이용안내</button>
+                    <button>이용절차</button>
+                    <button>용어해설</button>
+                    <button>오류시 조치</button>
+                </div>
+                <div class="box-body tab-help1 on">
+                    <dl class="help-define">
+                        <dt>신청서 기재사항 입력1</dt>
+                        <dd>신청서 작성은 전체 5개의 화면으로 구성되어 있으며 제출방식을 전자로 선택하고, 부동산표시, 등기의무자정보, 등기권리자정보, 신청인정보 등을 입력합니다.
+                            <p class="text-em">자주쓰는 유형 등록 버튼을 눌러 자주 이용하는 유형을 저
+                                장해두면,  ‘등기유형 선택’ 목록에 반영되어 신청서 작성
+                                시 쉽게 이용할 수 있습니다.</p>
+                                <ul class="list-em">
+                                    <li>자주쓰는 유형 등록 버튼을 눌러 자주 이용하는 유형을 저
+                                        장해두면,  ‘등기유형 선택’ 목록에 반영되어 신청서 작성
+                                        시 쉽게 이용할 수 있습니다.</li>
+                                </ul>
+                        </dd>
+                    </dl>
+                    <span class="link-more"><a href="">더보기</a></span>
+                </div>
+                <div class="box-body tab-help2">
+                    <dl class="help-define">
+                        <dt>신청서 기재사항 입력2</dt>
+                        <dd>신청서 작성은 전체 5개의 화면으로 구성되어 있으며 제출방식을 전자로 선택하고, 부동산표시, 등기의무자정보, 등기권리자정보, 신청인정보 등을 입력합니다.
+                            <p class="text-em"></p>
+                        </dd>
+                    </dl>
+                    <span class="link-more"><a href="">더보기</a></span>
+                </div>
+                <div class="box-body tab-help3">
+                    <dl class="help-define">
+                        <dt>신청서 기재사항 입력3</dt>
+                        <dd>신청서 작성은 전체 5개의 화면으로 구성되어 있으며 제출방식을 전자로 선택하고, 부동산표시, 등기의무자정보, 등기권리자정보, 신청인정보 등을 입력합니다.
+                            <p class="text-em"></p>
+                        </dd>
+                    </dl>
+                    <span class="link-more"><a href="">더보기</a></span>
+                </div>
+                <div class="box-body tab-help4">
+                    <dl class="help-define">
+                        <dt>신청서 기재사항 입력4</dt>
+                        <dd>신청서 작성은 전체 5개의 화면으로 구성되어 있으며 제출방식을 전자로 선택하고, 부동산표시, 등기의무자정보, 등기권리자정보, 신청인정보 등을 입력합니다.
+                            <p class="text-em"></p>
+                        </dd>
+                    </dl>
+                    <span class="link-more"><a href="">더보기</a></span>
+                </div>
+                <span class="btn-close"><button>닫기</button></span>
+
+            </div>
+        </div>
+        <!-- //도움말 -->
+    </div>
+    <!-- //본문영역 -->
+
+</body>
+</html>

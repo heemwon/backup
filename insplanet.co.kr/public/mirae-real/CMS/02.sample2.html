@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../js/libs/jquery.min.js"></script>
+    <script src="../js/libs/jquery-ui.min.js"></script>
+    <script src="../js/libs/jquery.selectric.js"></script>
+    <script src="../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../js/sub.js"></script>
+    <script src="../js/cms.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/cms.css">
+    <title>대한민국 법원 인터넷 등기소</title>
+</head>
+<body>
+    <!-- Header Area -->
+    <header class="cms-header">
+        <h1 class="cms-title-site">인터넷 등기소</h1>
+        <!-- Global Navigation Bar -->
+        <nav class="cms-navigation-global">
+            <button type="button" class="active">기본정보</button>
+            <button type="button">사이트 관리</button>
+            <button type="button">프로그램 관리</button>
+            <button type="button">사용자 관리</button>
+        </nav>
+        <!-- Global Navigation Bar -->
+        <div class="cms-util">
+
+            <div class="cms-box-drpdown dropdown-wrap">
+                <button type="button" class="cms-title-item current-item">인터넷등기소 선택</button>
+                <ul class="cms-list-item dropdown-con">
+                    <li class="dropdown-item">
+                        <button type="button">등기소</button>
+                    </li>
+                    <li class="dropdown-item">
+                        <button type="button">등기소</button>
+                    </li>
+                </ul>
+            </div>
+            <button type="button" class="cms-btn-logout">로그아웃</button>
+            <div class="cms-link-home"><a href="#none">홈페이지</a></div>
+        </div>
+    </header>
+    <!-- //Header Area -->
+    <div class="cms-wrap">
+        <!-- Side Bar -->
+        <aside class="cms-aside">
+            <h2 class="cms-title-depth">기본정보</h2>
+            <!-- Local Navigation Bar -->
+            <nav class="cms-navigation-local">
+                <ul>
+                    <li class="active">
+                        <button type="button" class="cms-ondepth">2depth 메뉴 선택시</button>
+                        <ul>
+                            <li class="active"><button type="button">3depth 메뉴 선택시</button></li>
+                            <li><button type="button">3depth 메뉴</button></li>
+                            <li><button type="button">3depth 메뉴</button></li>
+                            <li><button type="button">3depth 메뉴</button></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" class="cms-ondepth">2depth 메뉴 하위있음</button>
+                        <ul>
+                            <li><button type="button">3depth 메뉴</button></li>
+                            <li><button type="button">3depth 메뉴</button></li>
+                            <li><button type="button">3depth 메뉴</button></li>
+                            <li><button type="button">3depth 메뉴</button></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" class="cms-ondepth">2depth 메뉴 하위있음</button>
+                        <ul>
+                            <li><button type="button">3depth 메뉴</button></li>
+                            <li><button type="button">3depth 메뉴</button></li>
+                            <li><button type="button">3depth 메뉴</button></li>
+                            <li><button type="button">3depth 메뉴</button></li>
+                        </ul>
+                    </li>
+                    <li><button type="button">2depth 메뉴 hover시</button></li>
+                    <li><button type="button">2depth 메뉴</button></li>
+                    <li><button type="button">2depth 메뉴</button></li>
+                    <li><button type="button">2depth 메뉴</button></li>
+                    <li><button type="button">2depth 메뉴</button></li>
+                </ul>
+            </nav>
+            <!-- //Local Navigation Bar -->
+        </aside>
+        <!-- //Side Bar -->
+        <!-- Content Area -->
+        <main class="cms-content">
+
+            <!-- Page Location -->
+            <div class="cms-box-location">
+                <a href="#none" class="home">홈</a>
+                <button type="button">1depth</button>
+                <button type="button">2depth</button>
+                <span class="current">3depth</span>
+            </div>
+            <!-- //Page Location -->
+
+            <h1 class="cms-title-content">그룹관리</h1><!-- Page Title -->
+
+            <div class="cms-content-wrap aside-open">
+
+                <div class="cms-box-aside">
+                    <p class="cms-title">그룹 선택</p>
+                    <div class="tree-wrap">
+                            <div class="list-search-con">
+                                <label for="">
+                                    <input type="text" name="" id="total-search" class="search-input" placeholder="">
+                                </label>
+                                <button type="button" class="search-btn">
+                                    <img src="../img/btn_board_search.svg" alt="search">
+                                </button>
+                            </div>
+                        <ul class="tree-con">
+                            <li class="open">
+                                <div class="title-btn-con">
+                                    <span class="title">1depth node1</span>
+                                </div>
+                                <ul class="tree-depth-2 icon-pipe">
+                                    <li>
+                                        <div class="title-btn-con">
+                                            <span class="title">2depth node1</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title-btn-con">
+                                            <span class="title">2depth node2</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title-btn-con">
+                                            <span class="title">2depth node3</span>
+                                        </div>
+                                        <ul class="tree-depth-3">
+                                            <li>
+                                                <div class="title-btn-con">
+                                                    <span class="title">3depth node1</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="title-btn-con">
+                                    <span class="title">1depth node2</span>
+                                </div>
+                                <ul class="tree-depth-2 icon-pipe">
+                                    <li>
+                                        <div class="title-btn-con">
+                                            <span class="title">2depth node1</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title-btn-con">
+                                            <span class="title">2depth node2</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title-btn-con">
+                                            <span class="title">2depth node3</span>
+                                        </div>
+                                        <ul class="tree-depth-3">
+                                            <li>
+                                                <div class="title-btn-con">
+                                                    <span class="title">3depth node1</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="title-btn-con">
+                                    <span class="title">1depth node3</span>
+                                </div>
+                                <ul class="tree-depth-2 icon-pipe">
+                                    <li>
+                                        <div class="title-btn-con">
+                                            <span class="title">2depth node1</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title-btn-con">
+                                            <span class="title">2depth node2</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title-btn-con">
+                                            <span class="title">2depth node3</span>
+                                        </div>
+                                        <ul class="tree-depth-3">
+                                            <li>
+                                                <div class="title-btn-con">
+                                                    <span class="title">3depth node1</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="title-btn-con">
+                                    <span class="title">1depth node4</span>
+                                </div>
+                                <ul class="tree-depth-2 icon-pipe">
+                                    <li>
+                                        <div class="title-btn-con">
+                                            <span class="title">2depth node1</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title-btn-con">
+                                            <span class="title">2depth node2</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title-btn-con">
+                                            <span class="title">2depth node3</span>
+                                        </div>
+                                        <ul class="tree-depth-3">
+                                            <li>
+                                                <div class="title-btn-con">
+                                                    <span class="title">3depth node1</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-button">
+                        <button type="button" class="btn-solid add-group">그룹 추가</button>
+                    </div>
+                    <button type="button" class="cms-btn-asideclose">사이드 닫기</button>
+                </div>
+                <button type="button" class="cms-btn-asideopen">사이드 열기</button>
+
+                <section class="cms-section form-sec depth-2">
+                    <div class="sec-body">
+                        <div class="table-head">
+                            <div class="left-con inline-wrap">
+                                <h4>그룹설정</h4>
+                            </div>
+                            <div class="right-con">
+                                
+                            </div>
+                        </div>
+                        <div class="table-body">
+                            <table class="table-detail">
+                                <caption>그룹설정</caption>
+                                <colgroup>
+                                    <col style="width: 208px;">
+                                    <col style="width: auto;">
+                                </colgroup>
+                                <tbody>
+                                    <tr class="element-row">
+                                        <th scope="row">
+                                            그룹명 <span class="required">필수</span>
+                                        </th>
+                                        <td>
+                                            <input type="text" name="" id="name" disabled placeholder="그룹명 등록">
+                                        </td>
+                                    </tr>
+                                    <tr class="element-row">
+                                        <th scope="row">
+                                            그룹명 <span class="required">필수</span>
+                                        </th>
+                                        <td>
+                                            <span class="select-con w290">
+                                                <select name="" id="" disabled>
+                                                    <option value="">관리자</option>
+                                                    <option value="1">option1</option>
+                                                    <option value="2">option2</option>
+                                                    <option value="3">option3</option>
+                                                    <option value="4">option4</option>
+                                                </select>
+                                            </span>
+                                            <span class="select-con w290">
+                                                <select name="" id="" disabled>
+                                                    <option value="">일반관리자</option>
+                                                    <option value="1">option1</option>
+                                                    <option value="2">option2</option>
+                                                    <option value="3">option3</option>
+                                                    <option value="4">option4</option>
+                                                </select>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="element-row">
+                                        <th scope="row">
+                                            <label for="cate">사용여부<span class="required">필수</span></label>
+                                        </th>
+                                        <td>
+                                            <span class="radio-con">
+                                                <input type="radio" name="announce1" id="anno3">
+                                                <label for="anno3">사용</label>
+                                            </span>
+                                            <span class="radio-con ml40">
+                                                <input type="radio" name="announce1" id="anno4" checked>
+                                                <label for="anno4">미사용</label>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="element-row">
+                                        <th scope="row">
+                                            <label for="name">비고</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" name="" id="name" placeholder="내용 입력">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-foot">
+                            <div class="table-util-con">
+                                <div class="left-con">
+                                </div>
+                                <div class="right-con">
+                                    <button type="button" class="btn-solid medium">삭제</button>
+                                    <button type="button" class="btn-solid medium">저장</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="cms-section form-sec depth-2">
+                    <div class="sec-body">
+                        <div class="table-head">
+                            <div class="left-con">
+                                <h4>사용자 목록</h4>
+                            </div>
+                            <div class="right-con" id="go-table-btn0">
+                                
+                            </div>
+                        </div>
+                        <div class="table-head">
+                            <div class="left-con">
+                                <span class="fs-14 color-86">전체 1건</span>
+                            </div>
+                            <div class="right-con">
+                                
+                            </div>
+                        </div>
+                        <div class="table-body">
+                            <table class="table-list">
+                                <caption>1뎁스 테이블 타이틀</caption>
+                                <colgroup>
+                                    <col style="width: 100px;">
+                                    <col style="width: 130px;">
+                                    <col style="width: 150px;">
+                                    <col style="width: auto;">
+                                    <col style="width: 120px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 134px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">이름</th>
+                                        <th scope="col">아이디</th>
+                                        <th scope="col">연락처</th>
+                                        <th scope="col">이메일</th>
+                                        <th scope="col">수정일</th>
+                                        <th scope="col">구분</th>
+                                        <th scope="col">사용</th>
+                                        <th scope="col">처리</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>이삼동</td>
+                                        <td>hong0012</td>
+                                        <td>000-0000-0000</td>
+                                        <td>hong@mail.com</td>
+                                        <td>0000-00-00</td>
+                                        <td>외부</td>
+                                        <td>Y</td>
+                                        <td><button type="button" class="btn">수정/삭제</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>이삼동</td>
+                                        <td>hong0012</td>
+                                        <td>000-0000-0000</td>
+                                        <td>hong@mail.com</td>
+                                        <td>0000-00-00</td>
+                                        <td>외부</td>
+                                        <td>Y</td>
+                                        <td><button type="button" class="btn">수정/삭제</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="table-btn-focus">
+                                <a href="#go-table-btn0">테이블 기능 버튼으로 이동</a>
+                            </div>
+                        </div>
+                        <div class="flex-wrap mt24">
+                            <div class="left-con">
+                                <div class="inline-wrap">
+                                    <span class="select-con w62">
+                                        <label for="smallsel0">
+                                            <select name="" id="smallsel0" class="">
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                            </select>
+                                        </label>
+                                    </span>
+                                    <span class="slash">
+                                        <img src="../img/ico_read_perline.svg" alt="/">
+                                    </span>
+                                    <span class="fs-15">5</span>
+                                </div>
+                            </div>
+                            <div class="right-con">
+                                <button type="button" class="btn-solid medium color-4b">사용자 등록</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- copyright -->
+            <p class="cms-copyright">Copyright © Supreme Court of Korea. All right reserved.</p>
+            <!-- //copyright -->
+        </main>
+        <!-- //Content Area -->
+    </div>
+</body>
+</html>

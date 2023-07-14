@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55">
+    <defs>
+        <style>
+            .cls-2{fill:none}.cls-3{stroke:#000;stroke-width:3px;fill:#f4c215}.cls-6{stroke:none}
+        </style>
+    </defs>
+    <g id="ico_index_cs" transform="translate(-15.891 119.5)">
+        <path id="Stroke_1" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="3px" d="M0 27.375V15.552A15.663 15.663 0 0 1 15.77 0h6.185a15.663 15.663 0 0 1 15.77 15.552v11.823a15.662 15.662 0 0 1-15.77 15.552H15.77" transform="translate(24.837 -115.546)"/>
+        <path id="Clip_4" d="M0 48.65h39.588V0H0z" class="cls-2" transform="translate(23.93 -116.5)"/>
+        <g id="사각형_1246" class="cls-3" transform="translate(19.89 -100.005)">
+            <rect width="10.557" height="15.835" class="cls-6" rx="2"/>
+            <rect width="7.557" height="12.835" x="1.5" y="1.5" class="cls-2" rx=".5"/>
+        </g>
+        <g id="사각형_1247" class="cls-3" transform="translate(57 -100.005)">
+            <rect width="10.557" height="15.835" class="cls-6" rx="2"/>
+            <rect width="7.557" height="12.835" x="1.5" y="1.5" class="cls-2" rx=".5"/>
+        </g>
+        <g id="사각형_1248" fill="#f3f3f1" stroke="#000" stroke-linecap="round" stroke-width="3px" transform="translate(38.676 -78.331)">
+            <rect width="11.876" height="9.355" class="cls-6" rx="2"/>
+            <rect width="8.876" height="6.355" x="1.5" y="1.5" class="cls-2" rx=".5"/>
+        </g>
+    </g>
+</svg>

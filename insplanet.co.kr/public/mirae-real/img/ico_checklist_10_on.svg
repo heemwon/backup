@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="58.11" viewBox="0 0 56 58.11">
+    <defs>
+        <linearGradient id="linear-gradient" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#71d6cf"/>
+            <stop offset="1" stop-color="#1d8981"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-2" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#ffea4d"/>
+            <stop offset="1" stop-color="#ffc16e"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-4" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#f88c63"/>
+            <stop offset="1" stop-color="#ed4223"/>
+        </linearGradient>
+        <filter id="Stroke_6" width="52.838" height="34.411" x="3.145" y="23.698" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="패스_4090" width="41.584" height="28.5" x="4.06" y="18.573" filterUnits="userSpaceOnUse">
+            <feOffset dy="-3"/>
+            <feGaussianBlur result="blur-2" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur-2" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <style>
+            .cls-1{fill:red;opacity:0}.cls-4{fill:url(#linear-gradient-2)}
+        </style>
+    </defs>
+    <g id="ico_checklist_10_on" transform="translate(7.192 10)">
+        <path id="guide" d="M0 0H56V56H0z" class="cls-1" transform="translate(-7.192 -10)"/>
+        <path id="guide-2" d="M0 0H40V40H0z" class="cls-1" transform="translate(0.808 -2)"/>
+        <g id="ico_checklist_10_off" transform="translate(0.874 1.4)">
+            <g id="home" transform="translate(-45.48 -20.723)">
+                <path id="패스_3512" fill="url(#linear-gradient)" d="M23.354 23.027h.8l13.267 11.834v16.061H10.092V34.861z" transform="translate(44.787 -3.704)"/>
+                <path id="사각형_1208" fill="#fff" d="M4.019 0a4.019 4.019 0 0 1 4.019 4.019v7.441H0V4.019A4.019 4.019 0 0 1 4.019 0z" transform="translate(64.524 35.76)"/>
+            </g>
+            <g id="그룹_3639" transform="translate(-0.874 -1.31)">
+                <g filter="url(#Stroke_6)" transform="matrix(1, 0, 0, 1, -7.19, -10.09)">
+                    <path id="Stroke_6-2" d="M9.767.836c.04.015 6.895 1.464 6.895 1.464L26.635 0l4.9 2.642-.513 1.435-16.278 6.277L-.7 5.788-3.3 0l2.063-6.058" class="cls-4" transform="translate(15.45 35.76)"/>
+                </g>
+                <path id="Stroke_7" fill="none" d="M0 0l14.776 3.024 2.787 3.414" transform="translate(11.369 20.639)"/>
+                <g filter="url(#패스_4090)" transform="matrix(1, 0, 0, 1, -7.19, -10.09)">
+                    <path id="패스_4090-2" d="M6.377 26.171c-1.586-3.533.895-5.659 2.576-5.687S26.078 23.8 26.078 23.8l3.375 4.25-9.625 2.938z" class="cls-4" transform="translate(7.19 10.09)"/>
+                </g>
+                <path id="Stroke_5" fill="url(#linear-gradient-4)" d="M5.369 15.342H0V0l9.136 1.946z" transform="translate(1.809 16.366)"/>
+            </g>
+        </g>
+    </g>
+</svg>

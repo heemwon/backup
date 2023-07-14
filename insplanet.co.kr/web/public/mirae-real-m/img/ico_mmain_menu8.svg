@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45">
+    <defs>
+        <style>
+            .cls-3{stroke:#1d1d1d;stroke-width:1.5px}.cls-3,.cls-7{fill:none}.cls-5{fill:red;opacity:0}.cls-6{stroke:none}
+        </style>
+    </defs>
+    <g id="인증보안" transform="translate(-3.405 -4.569)">
+        <g id="사각형_1464" data-name="사각형 1464" style="stroke:#1d1d1d;stroke-width:1.5px;fill:#fff">
+            <path class="cls-6" d="M0 0h34.97v29.789H0z" transform="translate(8.053 14.215)"/>
+            <path class="cls-7" d="M.75.75h33.47v28.289H.75z" transform="translate(8.053 14.215)"/>
+        </g>
+        <g id="사각형_1475" data-name="사각형 1475" style="fill:#f4c215;stroke:#1d1d1d;stroke-width:1.5px">
+            <path class="cls-6" d="M0 0h34.97v8.419H0z" transform="translate(8.053 14.215)"/>
+            <path class="cls-7" d="M.75.75h33.47v6.919H.75z" transform="translate(8.053 14.215)"/>
+        </g>
+        <path id="선_349" data-name="선 349" class="cls-3" transform="translate(16.495 12.247)" d="M0 0v5.714"/>
+        <path id="선_350" data-name="선 350" class="cls-3" transform="translate(34.604 12.247)" d="M0 0v5.714"/>
+        <text id="_31" data-name="31" transform="translate(19.8 36.182)" style="fill:#1d1d1d;font-size:11px;font-family:NotoSansCJKkr-Black,Noto Sans CJK KR;font-weight:800;letter-spacing:-.04em"><tspan x="0" y="0">31</tspan></text>
+    </g>
+</svg>

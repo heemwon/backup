@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../../js/libs/jquery.min.js"></script>
+    <script src="../../js/libs/jquery-ui.min.js"></script>
+    <script src="../../js/libs/jquery.selectric.js"></script>
+    <script src="../../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../../js/sub.js"></script>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/guide.css">
+    <link rel="stylesheet" href="../../css/sub.css">
+    <title>Table Style Guide</title>
+</head>
+
+<body>
+    <main>
+        <!-- Table -->
+        <h1>Table Style Guide</h1>
+        <hr />
+        <section class="content-sec">
+            <div class="sec-head">
+                <h4>List</h4>
+            </div>
+            <div class="sec-body">
+                <div class="table-head">
+                    <div class="left-con">
+                        <span class="fs-14 color-86">전체 1,300건</span>
+                    </div>
+                    <div class="right-con" id="go-table-btn0">
+                        <div class="dropdown-wrap">
+                            <button type="button" class="current-item">최신 순</button>
+                            <ul class="dropdown-con">
+                                <li class="dropdown-item">
+                                    <button type="button">최신 순</button>
+                                </li>
+                                <li class="dropdown-item">
+                                    <button type="button">제목 순</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn">관련기능수행</button>
+                        <button type="button" class="btn">관련기능수행</button>
+                    </div>
+                </div>
+                <script>
+                    $(function(){
+                        if($(".header-fixed")){
+                            $(".header-fixed colgroup col").each(function(i, e){
+                                $(".header-fixed thead th:eq("+i+")").css({"width": $(this).width()+"px"});
+                            })
+                            $(".header-fixed thead").css({"position": "absolute", "top": 0});
+                            $(".header-fixed").css({"padding-top": $(".header-fixed thead").height()+"px"});
+                            $(".header-fixed").on("scroll", function(e){
+                                $(".header-fixed thead").css({"top": $(this).scrollTop()+"px"});
+                            })
+                        }
+                    })
+                </script>
+                <div class="table-body header-fixed" style="position: relative; height: 300px; overflow: auto;">
+                    <table class="table-list">
+                        <caption>게시물 리스트</caption>
+                        <colgroup>
+                            <col style="width: 120px;">
+                            <col style="width: auto;">
+                            <col style="width: 120px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">번호</th>
+                                <th scope="col">제목</th>
+                                <th scope="col">날짜</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="ff-roboto">15</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">DB금융투자 결재서비스 일시 중단 안내DB금융투자 결재서비스 일시 중단 안내DB금융투자 결재서비스 일시 중단 안내DB금융투자 결재서비스 일시 중단 안내DB금융투자 결재서비스 일시 중단 안내</a>
+                                </td>
+                                <td class="ff-roboto">2021-05-06</td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">14</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">DB금융투자 결재서비스 일시 중단 안내</a>
+                                </td>
+                                <td class="ff-roboto">2021-05-06</td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">13</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">DB금융투자 결재서비스 일시 중단 안내</a>
+                                </td>
+                                <td class="ff-roboto">2021-05-06</td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">12</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">DB금융투자 결재서비스 일시 중단 안내</a>
+                                </td>
+                                <td class="ff-roboto">2021-05-06</td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">11</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">DB금융투자 결재서비스 일시 중단 안내</a>
+                                </td>
+                                <td class="ff-roboto">2021-05-06</td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">10</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">DB금융투자 결재서비스 일시 중단 안내</a>
+                                </td>
+                                <td class="ff-roboto">2021-05-06</td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">9</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">DB금융투자 결재서비스 일시 중단 안내</a>
+                                </td>
+                                <td class="ff-roboto">2021-05-06</td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">8</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">DB금융투자 결재서비스 일시 중단 안내</a>
+                                </td>
+                                <td class="ff-roboto">2021-05-06</td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">7</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">DB금융투자 결재서비스 일시 중단 안내</a>
+                                </td>
+                                <td class="ff-roboto">2021-05-06</td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">6</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">DB금융투자 결재서비스 일시 중단 안내</a>
+                                </td>
+                                <td class="ff-roboto">2021-05-06</td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">5</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">DB금융투자 결재서비스 일시 중단 안내</a>
+                                </td>
+                                <td class="ff-roboto">2021-05-06</td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">4</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">DB금융투자 결재서비스 일시 중단 안내</a>
+                                </td>
+                                <td class="ff-roboto">2021-05-06</td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">3</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">DB금융투자 결재서비스 일시 중단 안내</a>
+                                </td>
+                                <td class="ff-roboto">2021-05-06</td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">2</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">DB금융투자 결재서비스 일시 중단 안내</a>
+                                </td>
+                                <td class="ff-roboto">2021-05-06</td>
+                            </tr>
+                            <tr>
+                                <td class="ff-roboto">1</td>
+                                <td class="left">
+                                    <a href="#none" class="long-text">DB금융투자 결재서비스 일시 중단 안내</a>
+                                </td>
+                                <td class="ff-roboto">2021-05-06</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="table-btn-focus">
+                        <a href="#go-table-btn0">테이블 기능 버튼으로 이동</a>
+                    </div>
+                </div>
+                
+                <div class="paging-wrap">
+                    <ul class="paging-con">
+                        <li class="paging-item first"><a href="#none"><img src="../../img/btn_paging_prev_2.svg" alt="go first"></a></li>
+                        <li class="paging-item prev"><a href="#none"><img src="../../img/btn_paging_prev.svg" alt="go prev"></a></li>
+                        <li class="paging-item num"><a href="#none">1</a></li>
+                        <li class="paging-item num active"><a href="#none">2</a></li>
+                        <li class="paging-item num"><a href="#none">3</a></li>
+                        <li class="paging-item num"><a href="#none">4</a></li>
+                        <li class="paging-item num"><a href="#none">5</a></li>
+                        <li class="paging-item num"><a href="#none">6</a></li>
+                        <li class="paging-item num"><a href="#none">7</a></li>
+                        <li class="paging-item num"><a href="#none">8</a></li>
+                        <li class="paging-item num"><a href="#none">9</a></li>
+                        <li class="paging-item num"><a href="#none">10</a></li>
+                        <li class="paging-item next"><a href="#none"><img src="../../img/btn_paging_next.svg" alt="go next"></a></li>
+                        <li class="paging-item last"><a href="#none"><img src="../../img/btn_paging_next_2.svg" alt="go last"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <hr />
+    </main>
+</body>
+
+</html>

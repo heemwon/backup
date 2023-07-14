@@ -1,0 +1,494 @@
+@charset "utf-8";
+// ---------------------------------- Site common classes ---------------------------------- //
+body {
+    font-family: $site-font, "Malgun Gothic", "맑은 고딕", "MS PGothic", "Apple SD Gothic Neo", "Apple SD 고딕 Neo", AppleGothic, "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, arial, Helvetica, sans-serif, "Segoe UI", Roboto, serif, sans-serif, monospace;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+    color: $base-color;
+    overscroll-behavior: none;
+    overflow: hidden;
+
+    button, a, img {
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: none;
+    }
+
+    * {
+        text-rendering: optimizeLegibility;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    //height:10000px;
+
+    #app {
+        // visibility: hidden;
+
+        &.show {
+            visibility: visible;
+        }
+    }
+
+    .wrapper {
+        position: relative;
+    }
+
+    @include break-point-max(sm) {
+        @include vw-converter(font-size, 14, $psd-mobile-width);
+    }
+
+    @include break-point-min(md) {
+        @include vw-converter(font-size, 16, $psd-pc-width);
+    }
+
+    @include break-point-between(md, lg) {
+        @include vw-converter(font-size, 12, $psd-tablet-width);
+    }
+}
+
+// ---------------------------------- helper ---------------------------------- //
+.no-pd {
+    padding: 0 !important;
+}
+
+.no-ma {
+    margin: 0 !important;
+}
+
+// 백그라운드 이미지 처리
+.img-holder {
+    &.image-cover {
+        .img {
+            background: {
+                size: cover;
+            };
+        }
+    }
+
+    &.image-contain {
+        .img {
+            background: {
+                size: contain;
+            };
+        }
+    }
+
+    .img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: {
+            repeat: no-repeat;
+            position: center center;
+        };
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+// ---------------------------------- typography ---------------------------------- //
+$heading-h1: selector-parse('h1, .h1');
+$heading-h2: selector-parse('h2, .h2');
+$heading-h3: selector-parse('h3, .h3');
+
+
+// ---------------------------------- Buttons ---------------------------------- //
+.btn {
+    display: inline-flex;
+    color: #212529;
+    align-items: center;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+    .txt {
+        display: block;
+        color: #222;
+
+        &:before {
+            display: inline-block;
+            vertical-align: middle;
+            width: 0;
+            height: 100%;
+            content: '';
+        }
+    }
+
+    //원형 아이콘
+    .i-arrow {
+        fill: none;
+        overflow: visible;
+        stroke: #000;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        transition: opacity .3s cubic-bezier(.25, .25, .75, .75);
+
+        circle, line {
+            transition: all .3s cubic-bezier(.25, .25, .75, .75);
+        }
+    }
+
+    //
+
+    &.btn-white {
+        .txt {
+            color: #fff;
+        }
+
+        .i-arrow {
+            stroke: #fff;
+        }
+    }
+
+    &.btn-fill {
+        background-color: #000;
+        color: #fff;
+
+        &.btn-circle {
+        }
+    }
+
+    &.btn-circle {
+        position: relative;
+        justify-content: center;
+        overflow: visible;
+
+        &:before, &:after {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            content: '';
+        }
+
+        &:before {
+            background-color: #fff;
+            border: 2px solid #000;
+            transition: all 0.15s ease-out;
+        }
+
+        &:after {
+            background-color: #999;
+            opacity: 0;
+            transform: scale(0.5);
+        }
+
+        .txt {
+            position: relative;
+            z-index: 1;
+            transition: color 0.15s ease-out, font-size 0.15s ease-out;
+        }
+
+        &:active {
+            &:after{
+                animation: clicked-circle 0.3s ease-in-out;
+            }
+        }
+    }
+
+    @keyframes clicked-circle {
+        0%{
+            opacity: 1;
+            transform: scale(1);
+        }
+        100% {
+            opacity: 0;
+            transform: scale(1.1);
+        }
+    }
+
+
+    &:hover {
+        @at-root .desktop & {
+            .i-arrow {
+                circle {
+                    fill: #000;
+                }
+
+                line {
+                    stroke: #fff;
+                }
+            }
+
+            &.btn-white {
+                .i-arrow {
+                    circle {
+                        fill: none;
+                    }
+                }
+            }
+
+            &.btn-circle {
+                &:before {
+                    border-width: 0.05em;
+                    transform: scale(1.03)
+                }
+
+                .txt {
+                    //font-size: 1.25em;
+                }
+            }
+        }
+    }
+
+    @include break-point-max(sm) {
+        @include vw-converter(padding, 10 0, $psd-mobile-width);
+        .txt {
+            @include vw-converter(font-size, 16, $psd-mobile-width);
+        }
+        .i-arrow {
+            @include vw-converter(width, 32, $psd-mobile-width);
+            @include vw-converter(height, 32, $psd-mobile-width);
+        }
+
+        &.btn-circle {
+            &:before {
+                border-width: cal-vw(2, $psd-mobile-width);
+            }
+
+            &.big-size {
+                @include vw-converter(width, 104, $psd-mobile-width);
+                @include vw-converter(height, 104, $psd-mobile-width);
+            }
+        }
+
+        //아이콘 위치
+        & > .icon + .txt,
+        & > .txt + .icon {
+            @include vw-converter(margin-left, 19, $psd-mobile-width);
+        }
+    }
+
+    @include break-point-min(md) {
+        @include vw-converter(padding, 10 0, $psd-pc-width);
+        .txt {
+            @include vw-converter(font-size, 18, $psd-pc-width);
+        }
+
+        .i-arrow {
+            @include vw-converter(width, 32, $psd-pc-width);
+            @include vw-converter(height, 32, $psd-pc-width);
+        }
+
+        &.btn-circle {
+            &:before {
+                border-width: cal-vw(2, $psd-pc-width);
+            }
+
+            &.big-size {
+                @include vw-converter(width, 150, $psd-pc-width);
+                @include vw-converter(height, 150, $psd-pc-width);
+            }
+        }
+
+        //아이콘 위치
+        & > .icon + .txt,
+        & > .txt + .icon {
+            @include vw-converter(margin-left, 19, $psd-pc-width);
+        }
+    }
+
+    @include break-point-between(md, lg) {
+        .txt {
+            @include vw-converter(font-size, 16, $psd-tablet-width);
+        }
+
+        .i-arrow {
+            @include vw-converter(width, 32, $psd-tablet-width);
+            @include vw-converter(height, 32, $psd-tablet-width);
+        }
+
+        &.btn-circle {
+            &.big-size {
+                @include vw-converter(width, 104, $psd-tablet-width);
+                @include vw-converter(height, 104, $psd-tablet-width);
+            }
+        }
+
+        //아이콘 위치
+        & > .icon + .txt,
+        & > .txt + .icon {
+            @include vw-converter(margin-left, 10, $psd-tablet-width);
+        }
+    }
+
+
+}
+
+// ---------------------------------- icon ---------------------------------- //
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+
+    &:before {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: {
+            repeat: no-repeat;
+            position: center center;
+            size: contain;
+        };
+        content: '';
+    }
+
+    &.icon-arr-right {
+        &:before {
+            background: {
+                image: url('../images/common/icon_arr_right.svg');
+            };
+        }
+    }
+
+    //define icons
+    &.icon-next {
+        &:before {
+            background: {
+                image: url('../images/common/icon_next.svg');
+            };
+        }
+
+        &.icon-white {
+            &:before {
+                background: {
+                    image: url('../images/common/icon_next_w.svg');
+                };
+            }
+        }
+    }
+
+    &.icon-download {
+        &:before {
+            background-image: url('../images/common/icon_download.svg');
+        }
+    }
+
+    //device icon
+    &.icon-device {
+        &.android {
+            &:before {
+                background: {
+                    image: url('../images/common/icon_android.svg');
+                };
+            }
+        }
+
+        &.apple {
+            &:before {
+                background: {
+                    image: url('../images/common/icon_apple.svg');
+                };
+            }
+        }
+
+        &.desktop {
+            &:before {
+                background: {
+                    image: url('../images/common/icon_desktop.svg');
+                };
+            }
+        }
+        &.pc {
+            &:before {
+                background: {
+                    image: url('../images/common/icon_pc.svg');
+                };
+            }
+        }
+
+        &.mobile {
+            &:before {
+                background: {
+                    image: url('../images/common/icon_mobile.svg');
+                };
+            }
+        }
+
+        &.consulting {
+            &:before {
+                background: {
+                    image: url('../images/common/icon_consulting.svg');
+                };
+            }
+        }
+    }
+
+
+    @include break-point-max(sm) {
+        &.icon-device {
+            @include vw-converter(width, 24, $psd-mobile-width);
+            @include vw-converter(height, 26, $psd-mobile-width);
+        }
+    }
+
+    @include break-point-min(md) {
+        //define icons
+        &.icon-device {
+            @include vw-converter(width, 32, $psd-pc-width);
+            @include vw-converter(height, 36, $psd-pc-width);
+        }
+    }
+
+    @include break-point-between(md, lg) {
+        &.icon-device {
+            @include vw-converter(width, 17, $psd-tablet-width);
+            @include vw-converter(height, 20, $psd-tablet-width);
+        }
+    }
+}
+
+// ---------------------------------- image-card ---------------------------------- //
+.image-banner {
+
+}
+
+// ---------------------------------- theme Define ---------------------------------- //
+#{$theme-white} {
+    #{$heading-h1},
+    #{$heading-h2},
+    #{$heading-h3} {
+        & {
+            color: #fff;
+        }
+    }
+
+
+    .btn {
+        .txt {
+            color: #fff;
+        }
+
+        .i-arrow {
+            stroke: #fff;
+        }
+
+
+        &.btn-circle {
+
+        }
+
+        &:hover {
+            .i-arrow {
+                circle {
+                    fill: rgba(#000, 0.7);
+                }
+            }
+        }
+    }
+}
+
+
+
+

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../js/libs/jquery.min.js"></script>
+    <script src="../js/libs/jquery-ui.min.js"></script>
+    <script src="../js/libs/lib.js"></script>
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+    
+    <script src="../js/sub.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/guide.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <title>Popup Style</title>
+</head>
+
+<body>
+    <main>
+        <section class="title-sec">
+            <h2>Popup</h2>
+        </section>
+        <section class="guide-sec">
+            <div class="block-wrap">
+                <h3>팝업</h3>
+                <button type="button" class="btn-solid" onclick="popupManager.openPopup('#popup-number')">고유번호 바코드 스캔</button>
+
+                <button type="button" class="btn-solid" onclick="popupManager.openPopup('#popup-pay-complete')">MVIE_05_1<br/>결제완료</button>
+            </div>
+            <div class="block-wrap mt30">
+                <h3>툴팁</h3>
+                <div class="inline-wrap">
+                    <span class="fs-15">주소</span>
+                    <div class="tooltip-wrap">
+                        <button type="button" class="tooltip-btn" data-tooltip="trigger"><img src="../img/m_ico_qmark@3x.png" alt="도움말"></button>
+                        <div class="msg-con" data-tooltip="container">
+                            <div class="inner-con">
+                                <p>
+                                    주소입력 시 반드시 동 이름과 지번, 도로명과 건물번호를 포함하여 검색하시기 바랍니다. 예) 서초동 967, 서초대로 212 
+                                </p>
+                                <button type="button" class="close-btn" onclick="tooltipHandler.closeTooltip()">
+                                    <img src="../img/btn_tooltips_close.svg" alt="도움말 닫기">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="required">필수</span>
+                </div>
+                <div class="inline-wrap">
+                    <span class="fs-15">부동산 구분</span>
+                    <div class="tooltip-wrap">
+                        <button type="button" class="tooltip-btn" data-tooltip="trigger"><img src="../img/m_ico_qmark@3x.png" alt="도움말"></button>
+                        <div class="msg-con" data-tooltip="container">
+                            <div class="inner-con">
+                                <ul class="list-dot mt-none fs-14 color-ff">
+                                    <li>
+                                        <div>집합건물 : 아파트, 연립주택, 오피스텔, 상가 등</div>
+                                    </li>
+                                    <li>
+                                        <div>토지 : 대지, 도로, 전답, 임야 등</div>
+                                    </li>
+                                    <li>
+                                        <div>건물 : 일반주택, 다가구주택, 단일상가 등</div>
+                                    </li>
+                                </ul>
+                                <button type="button" class="close-btn" onclick="tooltipHandler.closeTooltip()">
+                                    <img src="../img/btn_tooltips_close.svg" alt="도움말 닫기">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="required">필수</span>
+                </div>
+                <div class="inline-wrap">
+                    <span class="fs-15">등기기록유형선택 </span>
+                    <div class="tooltip-wrap">
+                        <button type="button" class="tooltip-btn" data-tooltip="trigger"><img src="../img/m_ico_qmark@3x.png" alt="도움말"></button>
+                        <div class="msg-con" data-tooltip="container">
+                            <div class="inner-con">
+                                <ul class="list-dot mt-none fs-14 color-ff">
+                                    <li>
+                                        <div>말소사항포함 : 말소된 사항을 포함한 모든 등기사항이 공시됩니다.</div>
+                                    </li>
+                                    <li>
+                                        <div>현재유효사항 : 등기사항 중 말소된 부분을 제외한 현재 유효한 등기사항만 공시됩니다.</div>
+                                    </li>
+                                </ul>
+                                <button type="button" class="close-btn" onclick="tooltipHandler.closeTooltip()">
+                                    <img src="../img/btn_tooltips_close.svg" alt="도움말 닫기">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="required">필수</span>
+                </div>
+                <div class="inline-wrap">
+                    <span class="fs-15">주민등록번호 공개여부</span>
+                    <div class="tooltip-wrap">
+                        <button type="button" class="tooltip-btn" data-tooltip="trigger"><img src="../img/m_ico_qmark@3x.png" alt="도움말"></button>
+                        <div class="msg-con" data-tooltip="container">
+                            <div class="inner-con">
+                                <ul class="list-dot mt-none fs-14 color-ff">
+                                    <li>
+                                        <div>미공개 : (주민)등록번호는 123456-●●●●●●●형태로 미공개처리 됩니다.</div>
+                                    </li>
+                                    <li>
+                                        <div>특정인공개 : 등기기록상 명의인의 (주민)등록번호와 일치한 경우에만 공개됩니다. 입력한 정보가 3회 연속으로 일치하지 않는 경우 공개대상 추가가 불가능합니다.</div>
+                                    </li>
+                                </ul>
+                                <button type="button" class="close-btn" onclick="tooltipHandler.closeTooltip()">
+                                    <img src="../img/btn_tooltips_close.svg" alt="도움말 닫기">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="required">필수</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 고유번호 바코드 스캔 -->
+    <div class="popup-wrap" id="popup-number">
+        <div class="content-wrap full">
+            <div class="popup-body">
+                <div class="popup-cont">
+                    <section>
+                        <div>
+                            <img src="../img/img_numscan@2x.jpg" alt="고유번호 바코드 스캔" onclick="popupManager.closePopup()">
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="dim-wrap"></div>
+    </div>
+
+    <!-- MVIE_05_1 결제완료 -->
+    <div class="popup-wrap" id="popup-pay-complete">
+        <div class="content-wrap full">
+            <div class="popup-body">
+                <div class="popup-cont">
+                    <section class="payment-complete-sec">
+                        <div class="sec-head">
+                            <div class="lottie-con">
+                                <!-- <img src="../img/ico_commit.svg" alt="Complete"> -->
+                                <span id="lottie-checked"></span>
+                            </div>
+                            <p class="complete-text">
+                                <span class="color-main">결제가 완료</span>되었습니다.
+                            </p>
+                        </div>
+                        <div class="sec-body">
+                            <table class="table-detail" summary="신청내역 상세정보 표입니다.">
+                                <caption>신청내역 상세정보</caption>
+                                <colgroup>
+                                    <col style="width: 34.6%;">
+                                    <col style="width: 65.4%;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">거래번호</th>
+                                        <td>YES123987465651</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">거래일시</th>
+                                        <td>2021-08-10 09:27</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">승인번호</th>
+                                        <td>0S210123456789</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">결제금액</th>
+                                        <td>
+                                            <span class="total-price">700원</span> &nbsp; 
+                                            (우리카드)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="button-sec mb40">
+                        <div class="btn-con">
+                            <button type="button" class="btn-solid large" onclick="popupManager.closePopup()">확인</button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- <div class="popup-foot">
+                <section class="button-sec">
+                    <div class="btn-con">
+                        <button type="button" class="btn-solid large" onclick="popupManager.closePopup()">확인</button>
+                    </div>
+                </section>
+            </div> -->
+        </div>
+        <div class="dim-wrap" data-prevent-close></div>
+    </div>
+
+
+</body>
+
+</html>

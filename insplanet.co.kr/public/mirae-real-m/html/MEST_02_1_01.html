@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../js/libs/jquery.min.js"></script>
+    <script src="../js/libs/jquery-ui.min.js"></script>
+    <script src="../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../js/sub.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <title>인터넷 등기소</title>
+</head>
+<body>
+    <header class="area-header">
+        <div class="area-inner">
+            <span class="btn-historyback"><button onclick="history.back()">뒤로</button></span>
+            <h1 class="title">간편등기 신청</h1>
+            <span class="btn-navigation"><button onclick="location.href='./2_1_1_main.html'">메뉴</button></span>
+        </div>
+    </header>
+    <!-- Contents -->
+    <div class="area-content">
+        <div class="area-inner">
+            <div class="content-wrap">
+                <!-- 인디케이터 -->
+                <section>
+                    <div class="indicator-wrap">
+                        <p class="title">부동산  |  주소변경</p>
+                        <ul class="indicator-con">
+                            <li>Step 1</li>
+                            <li class="active">Step 2</li>
+                            <li>Step 3</li>
+                            <li>Step 4</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 등기할 사항 -->
+                <section class="content-sec">
+                    <!-- 부동산 및 변경해야 할 등기 -->
+                    <div class="sec-body">
+                        <h3 class="title-bg">부동산 및 변경해야 할 등기</h3>
+                        <div class="item-con">
+                            <!-- 부동산 선택 전 -->
+                            <div class="form-item">
+                                <div class="item-body">
+                                    <button type="button" class="btn-solid large" onclick="popupManager.openPopup('#popup-property-result')">부동산 선택</button>
+                                </div>
+                            </div> 
+
+                            <!-- 부동산 선택 후 -->
+                            <!-- 
+                            <div class="form-item">
+                                <div class="item-body">
+                                    <p class="item-cont">
+                                        서울특별시 마포구 대흥로6길 14-11 미래빌 제2층 제 201호 [용당동 149-30]
+                                    </p>
+                                    <button type="button" class="btn small mt15">부동산 다시 검색</button>
+                                </div>
+                            </div> 
+                            -->
+                        </div>
+                    </div>
+
+                    <!-- 변경사항 -->
+                    <div class="sec-body">
+                        <h3 class="title-bg">변경사항</h3>
+                        <div class="item-con">
+                            <dl class="form-item">
+                                <dt class="item-head">
+                                    <span class="item-title">
+                                        등기기록 상 주소
+                                    </span>
+                                </dt>
+                                <dd class="item-body">
+                                    <p class="item-cont">
+                                        서울특별시 종로구 수표로18가길 23 제2동 제1층 [관수동 102-3]
+                                    </p>
+                                </dd>
+                            </dl>
+                            <dl class="form-item">
+                                <dt class="item-head">
+                                    <label for="addr0" class="item-title">
+                                        변경 할 주소
+                                    </label>
+                                </dt>
+                                <dd class="item-body">
+                                    <div class="address-wrap">
+                                        <div class="address-con">
+                                            <input type="text" name="" id="addr0" class="" placeholder="우편번호 입력" value="서울특별시 중구 수표로 23" readonly>
+                                            <button type="button" class="btn-solid small color-4d">주소검색</button>
+                                        </div>
+                                        <div class="detail-con">
+                                            <label for="addr1">
+                                                <input type="text" name="" id="addr1" class="" placeholder="상세주소 입력">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="form-item">
+                                <dt class="item-head">
+                                    <div class="left-con">
+                                        <label for="regidate" class="item-title">
+                                            등기원인일자
+                                        </label>
+                                        <button type="button" class="question-btn" onclick="popupManager.openPopup('#popup-date-check')">
+                                            <img src="../img/m_ico_qmark@3x.png" alt="도움말">
+                                        </button>
+                                    </div>
+                                </dt>
+                                <dd class="item-body">
+                                    <span class="datepicker-con">
+                                        <input type="text" name="" id="regidate" class="datepicker" onfocus="this.blur();">
+                                    </span>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 첨부서면 -->
+                <section class="content-sec">
+                    <div class="sec-body">
+                        <h3 class="title-bg">첨부서면</h3>
+                        <div class="item-con has-bg">
+                            <ul class="list-bullet fs-15">
+                                <li>
+                                    <div>등록면허세영수필확인서 등록을 위해 먼저 등록면허세를 납부해 주시기 바랍니다.</div>
+                                </li>
+                                <li>
+                                    <div>등록면허세를 이미 납부하신 경우 납세번호 입력하고 등록면허세영수필확인서를 연계요청하시기 바랍니다.</div>
+                                </li>
+                            </ul>
+                            <div class="tr mt8">
+                                <a href="#none" class="text-btn color-86 icon-next">등록면허세 신고</a>
+                            </div>
+                        </div>
+                        <div class="item-con">
+                            <dl class="form-item">
+                                <dt class="item-head">
+                                    <div class="left-con">
+                                        <label for="bill0" class="item-title">
+                                            등록면허세영수필확인서
+                                        </label>
+                                        <button type="button" class="question-btn" onclick="popupManager.openPopup('#popup-num-check')">
+                                            <img src="../img/m_ico_qmark@3x.png" alt="도움말">
+                                        </button>
+                                    </div>
+                                </dt>
+                                <dd class="item-body">
+                                    <div class="block-wrap qrcode-wrap">
+                                        <label for="bill1">
+                                            <input type="text" name="" id="bill1" placeholder="납세번호 입력">
+                                        </label>
+                                        <button type="button" class="qrcode-btn" onclick="popupManager.openPopup('#popup-qrcode')">QR스캔</button>
+                                        <button type="button" class="btn-solid large color-4d" onclick="popupManager.openToastPopup('#popup-connect')">연계요청</button>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 등록면허세 -->
+                <section class="content-sec">
+                    <div class="sec-body">
+                        <h3 class="title-bg">등록면허세</h3>
+                        <div class="item-con">
+                            <dl class="title-cont-list">
+                                <dt>등록면허세</dt>
+                                <dd>
+                                    <span class="ff-roboto">6,000</span> 원
+                                </dd>
+                            </dl>
+                            <dl class="title-cont-list">
+                                <dt>지방교육세</dt>
+                                <dd>
+                                    <span class="ff-roboto">1,200</span> 원
+                                </dd>
+                            </dl>
+                            <dl class="title-cont-list">
+                                <dt>농어촌특별세</dt>
+                                <dd>
+                                    <span class="ff-roboto">0</span> 원
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- button -->
+                <section class="bottom-button-sec flex-between" data-fixed-btn>
+                    <button type="button" class="btn-solid color-4d" onclick="location.href='./MEST_01_2.html'">이전</button>
+                    <button type="button" class="btn-solid color-52" onclick="location.href='./MEST_03_1.html'">다음</button>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer class="area-footer">
+        <div class="area-inner">
+            <div class="box-privite">
+                <a href="">이용약관</a>
+                <a href=""><strong>개인정보처리방침</strong></a>
+                <a href="">원격지원</a>
+                
+            </div>
+            <p class="text-copyright">Copyright © Supreme Court of Korea.<br > All right reserved.</p>
+        </div>
+    </footer>
+
+
+    <!-- ////////// 팝업 ////////// -->
+
+    <!-- MEST_02_1_03 부동산 검색 결과 -->
+    <div class="popup-wrap" id="popup-property-result">
+        <div class="content-wrap full">
+            <div class="popup-head">
+                <div class="popup-title">
+                    <p class="title">부동산 검색</p>
+                </div>
+                <div class="close-btn">
+                    <button type="button" onclick="popupManager.closePopup();"><img src="../img/btn_popup_close.svg" alt="close"></button>
+                </div>
+            </div>
+            <div class="popup-body">
+                <div class="popup-cont">
+                    <!-- 검색 -->
+                    <section class="content-sec">
+                        <ul class="tabmenu-con radio-type" data-tab="container" id="tabmenu1">
+                            <li class="tabmenu-item active">
+                                <span class="radio-btn-con">
+                                    <input type="radio" name="type2" id="addr-radio2" checked>
+                                    <label for="addr-radio2">부동산 주소</label>
+                                </span>
+                            </li>
+                            <li class="tabmenu-item">
+                                <span class="radio-btn-con">
+                                    <input type="radio" name="type2" id="addr-radio3">
+                                    <label for="addr-radio3">고유번호</label>
+                                </span>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <div class="tabchild-con" data-tab-bind="tabmenu1">
+                        <div class="tabchild-item active mb0">
+                            <!-- 부동산 주소 -->
+                            <section>
+                                <div class="has-padding">
+                                    <div class="search-con line-type">
+                                        <label for="search">
+                                            <input type="text" id="search" placeholder="부동산 검색" value="서울특별시 대흥로6길">
+                                        </label>
+                                        <button type="button" class="search-btn">검색</button>
+                                    </div>
+                                    <div class="mt10">
+                                        <span class="checkbox-con">
+                                            <input type="checkbox" name="" id="re-search2">
+                                            <label for="re-search2">결과 내 재검색</label>
+                                        </span>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- 부동산 목록 -->
+                            <section class="mt45">
+                                <div class="list-head">
+                                    <div class="left-con">
+                                        <span class="fs-14 color-86">전체 24건</span>
+                                    </div>
+                                </div>
+                                <div class="list-body">
+                                    <ul class="list-con">
+                                        <li class="no-bg">
+                                            <a href="#none" onclick="onSelectList(this);">
+                                                <span class="item-head">
+                                                    <span class="left-con">
+                                                        <span class="radio-con only-box">
+                                                            <input type="radio" name="address" id="radio00">
+                                                            <label for="radio00"></label>
+                                                        </span>
+                                                        <span>1114-1996-130088</span>
+                                                    </span>
+                                                </span>
+                                                <span class="item-body">
+                                                    <span class="title-con">
+                                                        <span class="title fs-16">
+                                                            서울특별시 마포구 대흥로6길 11 [용강동 494-55]
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="no-bg">
+                                            <a href="#none" onclick="onSelectList(this);">
+                                                <span class="item-head">
+                                                    <span class="left-con">
+                                                        <span class="radio-con only-box">
+                                                            <input type="radio" name="address" id="radio01">
+                                                            <label for="radio01"></label>
+                                                        </span>
+                                                        <span>2701-2013-003558</span>
+                                                    </span>
+                                                </span>
+                                                <span class="item-body">
+                                                    <span class="title-con">
+                                                        <span class="title fs-16">
+                                                            서울특별시 마포구 대흥로6길 14-11 미래빌 제2층 제 201호 [용당동 149-30]
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="no-bg">
+                                            <a href="#none" onclick="onSelectList(this);">
+                                                <span class="item-head">
+                                                    <span class="left-con">
+                                                        <span class="radio-con only-box">
+                                                            <input type="radio" name="address" id="radio02">
+                                                            <label for="radio02"></label>
+                                                        </span>
+                                                        <span>2701-2013-003559</span>
+                                                    </span>
+                                                </span>
+                                                <span class="item-body">
+                                                    <span class="title-con">
+                                                        <span class="title fs-16">
+                                                            서울특별시 마포구 대흥로6길 14-11 미래빌 제2층 제 202호 [용당동 149-30]
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="no-bg">
+                                            <a href="#none" onclick="onSelectList(this);">
+                                                <span class="item-head">
+                                                    <span class="left-con">
+                                                        <span class="radio-con only-box">
+                                                            <input type="radio" name="address" id="radio03">
+                                                            <label for="radio03"></label>
+                                                        </span>
+                                                        <span>2701-2013-003560</span>
+                                                    </span>
+                                                </span>
+                                                <span class="item-body">
+                                                    <span class="title-con">
+                                                        <span class="title fs-16">
+                                                            서울특별시 마포구 대흥로6길 14-11 미래빌 제2층 제 203호 [용당동 149-30]
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="no-bg">
+                                            <a href="#none" onclick="onSelectList(this);">
+                                                <span class="item-head">
+                                                    <span class="left-con">
+                                                        <span class="radio-con only-box">
+                                                            <input type="radio" name="address" id="radio04">
+                                                            <label for="radio04"></label>
+                                                        </span>
+                                                        <span>2701-2013-003561</span>
+                                                    </span>
+                                                </span>
+                                                <span class="item-body">
+                                                    <span class="title-con">
+                                                        <span class="title fs-16">
+                                                            서울특별시 마포구 대흥로6길 14-11 미래빌 제3층 제 301호 [용당동 149-30]
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <!-- <li class="no-bg">
+                                            <div class="item-head">
+                                                <div class="left-con">
+                                                    <span class="radio-con only-box">
+                                                        <input type="radio" name="address" id="radio0">
+                                                        <label for="radio0"></label>
+                                                    </span>
+                                                    <span>1114-1996-130088</span>
+                                                </div>
+                                            </div>
+                                            <div class="item-body">
+                                                <div class="title-con">
+                                                    <a href="#" class="title fs-16">
+                                                        서울특별시 마포구 대흥로6길 11 [용강동 494-55]
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="no-bg">
+                                            <div class="item-head">
+                                                <div class="left-con">
+                                                    <span class="radio-con only-box">
+                                                        <input type="radio" name="address" id="radio1">
+                                                        <label for="radio1"></label>
+                                                    </span>
+                                                    <span>1114-1996-130088</span>
+                                                </div>
+                                            </div>
+                                            <div class="item-body">
+                                                <div class="title-con">
+                                                    <a href="#" class="title fs-16">
+                                                        서울특별시 마포구 대흥로6길 14-11 미래빌 제2층 제 201호 [용당동 149-30]
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="no-bg">
+                                            <div class="item-head">
+                                                <div class="left-con">
+                                                    <span class="radio-con only-box">
+                                                        <input type="radio" name="address" id="radio2">
+                                                        <label for="radio2"></label>
+                                                    </span>
+                                                    <span>1114-1996-130088</span>
+                                                </div>
+                                            </div>
+                                            <div class="item-body">
+                                                <div class="title-con">
+                                                    <a href="#" class="title fs-16">
+                                                        서울특별시 마포구 대흥로6길 14-11 미래빌 제2층 제 201호 [용당동 149-30]
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="no-bg">
+                                            <div class="item-head">
+                                                <div class="left-con">
+                                                    <span class="radio-con only-box">
+                                                        <input type="radio" name="address" id="radio3">
+                                                        <label for="radio3"></label>
+                                                    </span>
+                                                    <span>1114-1996-130088</span>
+                                                </div>
+                                            </div>
+                                            <div class="item-body">
+                                                <div class="title-con">
+                                                    <a href="#" class="title fs-16">
+                                                        서울특별시 마포구 대흥로6길 11 [용강동 494-55]
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                         -->
+                                    </ul>
+                                </div>
+                            </section>
+
+                            <!-- button -->
+                            <section class="button-sec mt20">
+                                <button type="button" class="more-btn"><strong>15개</strong>의 결과 더보기</button>
+                            </section>
+
+                            <section id="focus-section" class="mt20">
+                                <div class="section-body">
+                                    <p class="title-bg">변경해야 할 등기</p>
+                                    <div class="item-con has-bg">
+                                        <dl class="form-item">
+                                            <dt class="item-head">
+                                                <div class="left-con">
+                                                    <label for="gu" class="item-title">해당구</label>
+                                                </div>
+                                            </dt>
+                                            <dd class="item-body">
+                                                <span class="select-con">
+                                                    <select name="" id="gu" disabled>
+                                                        <option value="">선택하세요</option>
+                                                        <option value="" selected>경기도</option>
+                                                        <option value="">option2</option>
+                                                    </select>
+                                                </span>
+                                            </dd>
+                                        </dl>
+                                        <dl class="form-item">
+                                            <dt class="item-head">
+                                                <div class="left-con">
+                                                    <label for="order" class="item-title">순위</label>
+                                                </div>
+                                            </dt>
+                                            <dd class="item-body">
+                                                <input type="text" name="" id="order" placeholder="순위번호 입력">
+                                            </dd>
+                                        </dl>
+                                        <dl class="form-item">
+                                            <dt class="item-head">
+                                                <div class="left-con">
+                                                    <label for="name" class="item-title">성명</label>
+                                                </div>
+                                            </dt>
+                                            <dd class="item-body">
+                                                <input type="text" name="" id="name" value="김이동" readonly>
+                                            </dd>
+                                        </dl>
+                                        <div class="btn-con flex-between mt20">
+                                            <button type="button" class="btn color-41" onclick="popupManager.closePopup();">취소</button>
+                                            <button type="button" class="btn-solid color-41" onclick="location.href='./MEST_02_1_01_selected.html'">확인</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="tabchild-item">
+                            <!-- 고유번호 -->
+                            <section>
+                                <div class="has-padding">
+                                    <div class="search-con line-type">
+                                        <label for="">
+                                            <input type="text" id="" class="disable-clear-btn" placeholder="부동산 고유번호 입력">
+                                        </label>
+                                        <div class="tooltip-wrap">
+                                            <button type="button" class="qrcode-btn" onclick="popupManager.openPopup('#popup-number')">고유번호 바코드 스캔</button>
+                                            <div class="msg-con qrcode">
+                                                <div class="inner-con">
+                                                    <p>
+                                                        고유번호 바코드 스캔
+                                                    </p>
+                                                    <button type="button" class="close-btn">
+                                                        <img src="../img/btn_tooltips_close_bk.svg" alt="도움말 닫기">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="search-btn">검색</button>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dim-wrap"></div>
+    </div>
+
+    <!-- MCOP_02_1_04 QR스캔 -->
+    <div class="popup-wrap" id="popup-qrcode">
+        <div class="content-wrap full">
+            <div class="popup-body">
+                <div class="popup-cont">
+                    <section>
+                        <div>
+                            <img src="../img/img_qrcode@2x.jpg" alt="QR스캔" onclick="popupManager.closePopup()">
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="dim-wrap"></div>
+    </div>
+
+    <!-- MEST_02_1_05 고유번호 바코드 스캔 -->
+    <div class="popup-wrap" id="popup-number">
+        <div class="content-wrap full">
+            <div class="popup-body">
+                <div class="popup-cont">
+                    <section>
+                        <div>
+                            <img src="../img/img_numscan@2x.jpg" alt="고유번호 바코드 스캔" onclick="popupManager.closePopup()">
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="dim-wrap"></div>
+    </div>
+
+    <!-- MEST_02_1_06 등기원인일자 확인 안내 -->
+    <div class="popup-wrap" id="popup-date-check">
+        <div class="content-wrap">
+            <div class="popup-head">
+                <div class="popup-title">
+                    <p class="title">등기원인일자 확인 안내</p>
+                </div>
+                <div class="close-btn">
+                    <button type="button" onclick="popupManager.closePopup();"><img src="../img/btn_popup_close.svg" alt="close"></button>
+                </div>
+            </div>
+            <div class="popup-body">
+                <div class="popup-cont">
+                    <section class="content-sec">
+                        <p class="fs-15">
+                            전입일자는 주민등록표 상의 발생일입니다.
+                        </p>
+                        <div class="mt20">
+                            <img src="../img/img_tooltip_info@2x.jpg" alt="등기원인일자 확인 안내를 위한 주민등록표 예시">
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="dim-wrap"></div>
+    </div>
+
+    <!-- MEST_02_1_07 등록면허세 납세번호 확인 안내 -->
+    <div class="popup-wrap" id="popup-num-check">
+        <div class="content-wrap">
+            <div class="popup-head">
+                <div class="popup-title">
+                    <p class="title">등록면허세 납세번호 확인 안내</p>
+                </div>
+                <div class="close-btn">
+                    <button type="button" onclick="popupManager.closePopup();"><img src="../img/btn_popup_close.svg" alt="close"></button>
+                </div>
+            </div>
+            <div class="popup-body">
+                <div class="popup-cont">
+                    <section class="content-sec">
+                        <p class="fs-15">
+                            등록면허세 납부 통지서 또는 등록면허세영수증에 기재되어 있는 ‘납세번호’ 를 입력해 주시기 바랍니다.
+                        </p>
+                        <div class="mt20">
+                            <img src="../img/img_tooltip_fee2@2x.jpg" alt="등록면허세(등록분) 납부확인서 예시">
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="dim-wrap"></div>
+    </div>
+
+    <!-- 연계요청 - Toast Popup -->
+    <div class="toast-wrap" id="popup-connect">
+        <div class="toast-con">
+            <p>연계요청이 완료되었습니다.</p>
+        </div>
+    </div>
+
+</body>
+</html>

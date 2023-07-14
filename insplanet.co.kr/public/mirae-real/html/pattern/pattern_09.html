@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../../js/libs/jquery.min.js"></script>
+    <script src="../../js/libs/jquery-ui.min.js"></script>
+    <script src="../../js/libs/jquery.selectric.js"></script>
+    <script src="../../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../../js/sub.js"></script>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/guide.css">
+    <link rel="stylesheet" href="../../css/sub.css">
+    <title>패턴</title>
+</head>
+
+<body>
+    <div class="apply-wrap">
+        
+        <h2>9-1. 다건신청 UI _ 목록형</h2>
+        <!-- [N] 9-1-1 목록형_입력 -->
+        <div class="title-content-wrap">
+            <div class="title-wrap">
+                <h2>9-1-1 목록형_입력</h2>
+            </div>
+            <div class="cont-wrap">
+                <div class="popup-head">
+                    <div class="popup-title">
+                        <h4>‘타이틀’ 정보 입력</h4>
+                    </div>
+                    <div class="close-btn">
+                        <button type="button" onclick="popupManager.closePopup();"><img src="../../img/btn_gnb_close.svg" alt="close"></button>
+                    </div>
+                </div>
+                <div class="popup-body">
+                    <div class="popup-cont">
+                        <!-- ‘타이틀’ 정보 입력 -->
+                        <section class="form-sec depth-2">
+                            <div class="sec-body">
+                                <div class="table-head">
+                                    <div class="left-con">
+                                        <h5>‘타이틀’ 정보 입력</h5>
+                                    </div>
+                                    <div class="right-con">
+                                        <span class="required-info"><span class="star">*</span> 표시 필수입력사항</span>
+                                    </div>
+                                </div>
+                                <div class="table-body">
+                                    <table class="table-detail">
+                                        <caption>‘타이틀’ 정보 입력</caption>
+                                        <colgroup>
+                                            <col style="width: 150px;">
+                                            <col style="width: auto;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="element-row">
+                                                <th scope="row">
+                                                    <label for="typeradio0">입력방식<span class="required">필수</span></label>
+                                                </th>
+                                                <td>
+                                                    <span class="radio-btn-con">
+                                                        <input type="radio" name="type" id="typeradio0">
+                                                        <label for="typeradio0">고유번호</label>
+                                                        <input type="radio" name="type" id="typeradio1">
+                                                        <label for="typeradio1">소재지번 주소</label>
+                                                        <input type="radio" name="type" id="typeradio2">
+                                                        <label for="typeradio2">도로명 주소</label>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr class="element-row">
+                                                <th scope="row">
+                                                    <label for="regi0">관할등기소<span class="required">필수</span></label>
+                                                </th>
+                                                <td>
+                                                    <div class="flex-wrap">
+                                                        <div class="left-con">
+                                                            <span class="select-con w340">
+                                                                <select name="" id="regi0" class="">
+                                                                    <option value="">선택하세요</option>
+                                                                    <option value="1">option1</option>
+                                                                    <option value="2">option2</option>
+                                                                    <option value="3">option3</option>
+                                                                    <option value="4">option4</option>
+                                                                </select>
+                                                            </span>
+                                                        </div>
+                                                        <div class="right-con">
+                                                            <button type="button" class="btn">자주찾는 등기소 등록</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="address-wrap mt8">
+                                                        <div class="address-con">
+                                                            <label for="">
+                                                                <input type="text" name="" id="" class="disable-clear-btn pl-112" placeholder="" readonly="">
+                                                            </label>
+                                                            <button type="button" class="btn-solid color-4d">등기소 검색</button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="element-row">
+                                                <th scope="row">
+                                                    <label for="regi1">부동산 정보<span class="required">필수</span></label>
+                                                </th>
+                                                <td>
+                                                    <div class="block-wrap">
+                                                        <div class="flex-wrap">
+                                                            <div class="left-con">
+                                                                <div class="inline-wrap">
+                                                                    <span class="select-con w240">
+                                                                        <select name="" id="regi1" class="">
+                                                                            <option value="">선택하세요</option>
+                                                                            <option value="1">option1</option>
+                                                                            <option value="2">option2</option>
+                                                                            <option value="3">option3</option>
+                                                                            <option value="4">option4</option>
+                                                                        </select>
+                                                                    </span>
+                                                                    <span class="checkbox-con ml25">
+                                                                        <input type="checkbox" name="type" id="procheck0">
+                                                                        <label for="procheck0">미등기 혹은 소유권 보존 후 연건 신청</label>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="right-con">
+                                                                <button type="button" class="btn">개별주택가격 조회</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="block-wrap">
+                                                            <label for="">
+                                                                <input type="text" name="" id="">
+                                                            </label>
+                                                        </div>
+                                                        <div class="inline-wrap">
+                                                            <label for="">
+                                                                <input type="text" name="" id="" class="w336" placeholder="건물명칭">
+                                                            </label>
+                                                            <span class="fs-14 color-5a ml29">건물번호</span>
+                                                            <span class="input-unit-wrap ml30">
+                                                                <span class="unit-left">제</span>
+                                                                <label for="">
+                                                                    <input type="text" name="" id="unit1" class="w73 disable-clear-btn" placeholder="">
+                                                                </label>
+                                                                <span class="unit-right">동</span>
+                                                            </span>
+                                                            <span class="fs-15 ml15">내</span>
+                                                            <span class="input-unit-wrap ml15">
+                                                                <span class="unit-left">제</span>
+                                                                <label for="">
+                                                                    <input type="text" name="" id="unit2" class="w73 disable-clear-btn ml15" placeholder="">
+                                                                </label>
+                                                                <span class="unit-right">호</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="table-foot">
+                                    <div class="table-util-con">
+                                        <div class="left-con">
+                                            <button type="button" class="btn icon-reset">다시 작성하기</button>
+                                        </div>
+                                        <div class="right-con">
+                                            <button type="button" class="btn-solid color-4d">저장</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // ‘타이틀’ 정보 입력 -->
+    
+                        <hr class="seperate-line">
+    
+                        <!-- 입력 ‘타이틀’ 목록 -->
+                        <section class="form-sec depth-3 mb0">
+                            <div class="sec-body">
+                                <div class="table-head">
+                                    <div class="left-con">
+                                        <h6>입력 ‘타이틀’ 목록</h6>
+                                    </div>
+                                    <div class="right-con" id="go-table-btn0">
+                                        <button type="button" class="btn">단위 업무버튼</button>
+                                        <button type="button" class="btn-solid">삭제</button>
+                                    </div>
+                                </div>
+                                <div class="table-body">
+                                    <table class="table-list">
+                                        <caption>입력 ‘타이틀’ 목록</caption>
+                                        <colgroup>
+                                            <col style="width: 60px;">
+                                            <col style="width: 175px;">
+                                            <col style="width: 154px;">
+                                            <col style="width: auto;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="has-element">
+                                                    <span class="checkbox-con only-box">
+                                                        <input type="checkbox" name="" id="discbox1"><label for="discbox1"></label>
+                                                    </span>
+                                                </th>
+                                                <th scope="col">고유번호</th>
+                                                <th scope="col">구분</th>
+                                                <th scope="col">부동산 표시</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="has-element">
+                                                    <span class="checkbox-con only-box">
+                                                        <input type="checkbox" name="" id="discbox2"><label for="discbox2"></label>
+                                                    </span>
+                                                </td>
+                                                <td class="ff-roboto">1111-2222-000000</td>
+                                                <td>토지+건물</td>
+                                                <td class="left has-element">
+                                                    <div class="flex-wrap">
+                                                        <div class="left-con">
+                                                            <p class="fs-15">경기도 광명시 도덕공원로59 광명푸르지오 제 100동 제 201호</p>
+                                                        </div>
+                                                        <div class="right-con tc w90">
+                                                            <button type="button" class="list-btn" disabled>
+                                                                <span>수정</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="has-element">
+                                                    <span class="checkbox-con only-box">
+                                                        <input type="checkbox" name="" id="discbox3"><label for="discbox3"></label>
+                                                    </span>
+                                                </td>
+                                                <td class="ff-roboto">1111-2222-000000</td>
+                                                <td>토지+건물</td>
+                                                <td class="left has-element">
+                                                    <div class="flex-wrap">
+                                                        <div class="left-con">
+                                                            <p class="fs-15">경기도 광명시 도덕공원로59 광명푸르지오 제 100동 제 201호</p>
+                                                        </div>
+                                                        <div class="right-con tc w90">
+                                                            <button type="button" class="list-btn">
+                                                                <span>수정</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="table-btn-focus">
+                                        <a href="#go-table-btn0">테이블 기능 버튼으로 이동</a>
+                                    </div>
+                                </div>
+                                <div class="table-foot">
+                                    <div class="table-util-con">
+                                        <div class="inline-wrap">
+                                            <span class="select-con w62">
+                                                <label for="">
+                                                    <select name="" id="" class="">
+                                                        <option value="">1</option>
+                                                        <option value="">2</option>
+                                                    </select>
+                                                </label>
+                                            </span>
+                                            <span class="slash">
+                                                <img src="../../img/ico_read_perline.svg" alt="/">
+                                            </span>
+                                            <span class="fs-15">5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 입력 ‘타이틀’ 목록 -->
+                    </div>
+                </div>
+                <div class="popup-foot">
+                    <div class="left-con"></div>
+                    <div class="right-con">
+                        <button type="button" class="btn-solid medium">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // [N] 9-1-1 목록형_입력 -->
+
+        <!-- [N] 9-1-2 목록형_수정 -->
+        <div class="title-content-wrap">
+            <div class="title-wrap">
+                <h2>9-1-2 목록형_수정</h2>
+            </div>
+            <div class="cont-wrap">
+                <div class="popup-head">
+                    <div class="popup-title">
+                        <h4>‘타이틀’ 정보 수정</h4>
+                    </div>
+                    <div class="close-btn">
+                        <button type="button" onclick="popupManager.closePopup();"><img src="../../img/btn_gnb_close.svg" alt="close"></button>
+                    </div>
+                </div>
+                <div class="popup-body">
+                    <div class="popup-cont">
+                        <!-- ‘타이틀’ 정보 수정 -->
+                        <section class="form-sec depth-2">
+                            <div class="sec-body">
+                                <div class="table-head">
+                                    <div class="left-con">
+                                        <h5>‘타이틀’ 정보 수정</h5>
+                                    </div>
+                                    <div class="right-con">
+                                        <span class="required-info"><span class="star">*</span> 표시 필수입력사항</span>
+                                    </div>
+                                </div>
+                                <div class="table-body">
+                                    <table class="table-detail focused">
+                                        <caption>‘타이틀’ 정보 입력</caption>
+                                        <colgroup>
+                                            <col style="width: 150px;">
+                                            <col style="width: auto;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="element-row">
+                                                <th scope="row">
+                                                    <label for="modradio0">입력방식<span class="required">필수</span></label>
+                                                </th>
+                                                <td>
+                                                    <span class="radio-btn-con">
+                                                        <input type="radio" name="type" id="modradio0">
+                                                        <label for="modradio0">고유번호</label>
+                                                        <input type="radio" name="type" id="modradio1" checked>
+                                                        <label for="modradio1">소재지번 주소</label>
+                                                        <input type="radio" name="type" id="modradio2">
+                                                        <label for="modradio2">도로명 주소</label>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr class="element-row">
+                                                <th scope="row">
+                                                    <label for="modregi0">관할등기소<span class="required">필수</span></label>
+                                                </th>
+                                                <td>
+                                                    <div class="flex-wrap">
+                                                        <div class="left-con">
+                                                            <span class="select-con w340">
+                                                                <select name="" id="modregi0" class="">
+                                                                    <option value="">선택하세요</option>
+                                                                    <option value="1" selected>인천지방법원 부천지원 김포등기소</option>
+                                                                    <option value="2">option2</option>
+                                                                    <option value="3">option3</option>
+                                                                    <option value="4">option4</option>
+                                                                </select>
+                                                            </span>
+                                                        </div>
+                                                        <div class="right-con">
+                                                            <button type="button" class="btn">자주찾는 등기소 등록</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="address-wrap mt8">
+                                                        <div class="address-con">
+                                                            <label for="">
+                                                                <input type="text" name="" id="" class="disable-clear-btn pl-112" placeholder="" readonly="">
+                                                            </label>
+                                                            <button type="button" class="btn-solid color-4d">등기소 검색</button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="element-row">
+                                                <th scope="row">
+                                                    <label for="modregi1">부동산 정보<span class="required">필수</span></label>
+                                                </th>
+                                                <td>
+                                                    <div class="block-wrap">
+                                                        <div class="flex-wrap">
+                                                            <div class="left-con">
+                                                                <div class="inline-wrap">
+                                                                    <span class="select-con w240">
+                                                                        <select name="" id="modregi1" class="">
+                                                                            <option value="">선택하세요</option>
+                                                                            <option value="2" selected>토지+건물</option>
+                                                                            <option value="3">option3</option>
+                                                                            <option value="4">option4</option>
+                                                                        </select>
+                                                                    </span>
+                                                                    <span class="checkbox-con ml25">
+                                                                        <input type="checkbox" name="type" id="modcheck0">
+                                                                        <label for="modcheck0">미등기 혹은 소유권 보존 후 연건 신청</label>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="right-con">
+                                                                <button type="button" class="btn">개별주택가격 조회</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="block-wrap">
+                                                            <label for="">
+                                                                <input type="text" name="" id="" value="경기도 광명시 도덕공원로 59">
+                                                            </label>
+                                                        </div>
+                                                        <div class="inline-wrap">
+                                                            <label for="">
+                                                                <input type="text" name="" id="" class="w336" placeholder="건물명칭" value="가나다빌라">
+                                                            </label>
+                                                            <span class="fs-14 color-5a ml29">건물번호</span>
+                                                            <span class="input-unit-wrap ml30">
+                                                                <span class="unit-left">제</span>
+                                                                <label for="">
+                                                                    <input type="text" name="" id="unit1" class="w73 disable-clear-btn" placeholder="" value="101">
+                                                                </label>
+                                                                <span class="unit-right">동</span>
+                                                            </span>
+                                                            <span class="fs-15 ml15">내</span>
+                                                            <span class="input-unit-wrap ml15">
+                                                                <span class="unit-left">제</span>
+                                                                <label for="">
+                                                                    <input type="text" name="" id="unit2" class="w73 disable-clear-btn ml15" placeholder="" value="601">
+                                                                </label>
+                                                                <span class="unit-right">호</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="table-foot">
+                                    <div class="table-util-con">
+                                        <div class="left-con">
+                                            <button type="button" class="btn icon-reset">다시 작성하기</button>
+                                        </div>
+                                        <div class="right-con">
+                                            <button type="button" class="btn-solid color-4d">수정완료</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // ‘타이틀’ 정보 수정 -->
+    
+                        <hr class="seperate-line">
+    
+                        <!-- 입력 ‘타이틀’ 목록 -->
+                        <section class="form-sec depth-3 mb0">
+                            <div class="sec-body">
+                                <div class="table-head">
+                                    <div class="left-con">
+                                        <h6>입력 ‘타이틀’ 목록</h6>
+                                    </div>
+                                    <div class="right-con" id="go-table-btn0">
+                                        <button type="button" class="btn" disabled>단위 업무버튼</button>
+                                        <button type="button" class="btn-solid" disabled>선택삭제</button>
+                                    </div>
+                                </div>
+                                <div class="table-body">
+                                    <table class="table-list">
+                                        <caption>입력 ‘타이틀’ 목록</caption>
+                                        <colgroup>
+                                            <col style="width: 60px;">
+                                            <col style="width: 175px;">
+                                            <col style="width: 154px;">
+                                            <col style="width: auto;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="has-element">
+                                                    <span class="checkbox-con only-box">
+                                                        <input type="checkbox" name="" id="modcbox1" disabled><label for="modcbox1"></label>
+                                                    </span>
+                                                </th>
+                                                <th scope="col">고유번호</th>
+                                                <th scope="col">구분</th>
+                                                <th scope="col">부동산 표시</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="has-element">
+                                                    <span class="checkbox-con only-box">
+                                                        <input type="checkbox" name="" id="modcbox2" disabled><label for="modcbox2"></label>
+                                                    </span>
+                                                </td>
+                                                <td class="ff-roboto">1111-2222-000000</td>
+                                                <td>토지+건물</td>
+                                                <td class="left has-element">
+                                                    <div class="flex-wrap">
+                                                        <div class="left-con">
+                                                            <p class="fs-15">경기도 광명시 도덕공원로59 광명푸르지오 제 100동 제 201호</p>
+                                                        </div>
+                                                        <div class="right-con tc w90">
+                                                            <button type="button" class="list-btn" disabled>
+                                                                <span>수정</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="has-element">
+                                                    <span class="checkbox-con only-box">
+                                                        <input type="checkbox" name="" id="modcbox3" disabled><label for="modcbox3"></label>
+                                                    </span>
+                                                </td>
+                                                <td class="ff-roboto">1111-2222-000000</td>
+                                                <td>토지+건물</td>
+                                                <td class="left has-element">
+                                                    <div class="flex-wrap">
+                                                        <div class="left-con">
+                                                            <p class="fs-15">경기도 광명시 도덕공원로59 광명푸르지오 제 100동 제 201호</p>
+                                                        </div>
+                                                        <div class="right-con tc w90">
+                                                            <button type="button" class="list-btn active">
+                                                                <span>수정취소</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="table-btn-focus">
+                                        <a href="#go-table-btn0">테이블 기능 버튼으로 이동</a>
+                                    </div>
+                                </div>
+                                <div class="table-foot">
+                                    <div class="table-util-con">
+                                        <div class="inline-wrap">
+                                            <span class="select-con w62">
+                                                <label for="">
+                                                    <select name="" id="" class="">
+                                                        <option value="">1</option>
+                                                        <option value="">2</option>
+                                                    </select>
+                                                </label>
+                                            </span>
+                                            <span class="slash">
+                                                <img src="../../img/ico_read_perline.svg" alt="/">
+                                            </span>
+                                            <span class="fs-15">5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 입력 ‘타이틀’ 목록 -->
+                    </div>
+                </div>
+                <div class="popup-foot">
+                    <div class="left-con"></div>
+                    <div class="right-con">
+                        <button type="button" class="btn-solid medium">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // [N] 9-1-2 목록형_수정 -->
+
+        <h2>9-2. 다건신청 UI _ 계속입력형</h2>
+        <!-- [N] 9-2-1 계속입력형_입력 -->
+        <div class="title-content-wrap">
+            <div class="title-wrap">
+                <h2>9-2-1 계속입력형_입력</h2>
+            </div>
+            <div class="cont-wrap">
+                <div class="popup-head">
+                    <div class="popup-title">
+                        <h4>‘타이틀’ 등록</h4>
+                    </div>
+                    <div class="close-btn">
+                        <button type="button" onclick="popupManager.closePopup();"><img src="../../img/btn_gnb_close.svg" alt="close"></button>
+                    </div>
+                </div>
+                <div class="popup-body">
+                    <div class="popup-cont">
+                        
+                        <section class="form-sec">
+                            <div class="sec-head">
+                                <div class="bg-box-wrap">
+                                    <ul class="list-bullet fs-15">
+                                        <li>
+                                            <div>사업목적은 ⎡한국표준산업분류표⎦의 분류내용을 참고하여 작성해 주시기 바랍니다.</div>
+                                        </li>
+                                        <li class="color-error">
+                                            <div>포괄적이거나 추상적인 목적을 입력하시면 안되며 사업의 구체적인 목적을 입력하시기 바랍니다.</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sec-body mt20">
+                                <div class="table-head">
+                                    <div class="left-con"></div>
+                                    <div class="right-con">
+                                        <span class="required-info"><span class="star">*</span> 표시 필수입력사항</span>
+                                    </div>
+                                </div>
+                                <div class="table-body">
+                                    <table class="table-detail">
+                                        <caption>사업목적</caption>
+                                        <colgroup>
+                                            <col style="width: 250px;">
+                                            <col style="width: auto;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="element-row">
+                                                <th scope="row">
+                                                    <div class="inline-wrap">
+                                                        <label for="purpose" class="fs-14 color-5a">사업목적<span class="required">필수</span></label>
+                                                        <div class="tooltip-wrap">
+                                                            <span class="tooltip-btn right" data-tooltip="trigger" tabindex="0"><img src="../../img/ico_qmark@2x.png" alt="Question mark"></span>
+                                                            <div class="tooltip-cont-con" data-tooltip="container">
+                                                                <div class="tooltip-head">
+                                                                    <p class="title">사업목적 입력 안내</p>
+                                                                    <button type="button" class="close-btn" onclick="tooltipHandler.closeTooltip()">
+                                                                        <img src="../../img/btn_tooltips_close.svg" alt="닫기">
+                                                                    </button>
+                                                                </div>
+                                                                <div class="tooltip-body">
+                                                                    <p>하나의 목적번호에는 하나의 목적만 입력해야 하며, 목적번호는 모두 ‘1’ 로 입력합니다.</p>
+                                                                    <p class="mt20 fw-bold">
+                                                                        예) 입력할 목적이 운수업, 유통업, 각 호에 부대하는 사업인 경우
+                                                                    </p>
+                                                                    <p class="mt10">
+                                                                        목적 입력란에 ‘1 운수업’ 입력 후 우측 하단의 [입력] 버튼을 선택하고<br/>
+                                                                        다시 입력란에 ‘1 유통업‘ 입력 후 우측 하단의 [입력] 버튼을 선택하고<br/>
+                                                                        마지막으로 ‘1 각 호에 부대하는 사업‘ 입력 후 우측 하단의 [입력] 버튼 선택
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                <td class="pr-none">
+                                                    <div class="flex-wrap">
+                                                        <div class="left-con">
+                                                            <span class="fs-15 fw-bold color-1d">1.</span>
+                                                        </div>
+                                                        <div class="right-con inline-wrap">
+                                                            <input type="text" name="" id="purpose" class="w308" placeholder="목적입력">
+                                                            <label for="">
+                                                                <input type="text" name="" id="" class="w380" placeholder="영문목적 입력">
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="element-row">
+                                                <th scope="row">
+                                                    <label for="datepicker0">등기원인일자<span class="required">필수</span></label>
+                                                </th>
+                                                <td class="pr-none">
+                                                    <span class="datepicker-con">
+                                                        <input type="text" name="" id="datepicker0" class="datepicker w336" placeholder="이전일자 선택">
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr class="element-row">
+                                                <th scope="row">
+                                                    <label for="reason">등기원인<span class="required">필수</span></label>
+                                                </th>
+                                                <td class="pr-none">
+                                                    <div class="inline-wrap">
+                                                        <span class="select-con w336">
+                                                            <select name="" id="reason">
+                                                                <option value="">전체</option>
+                                                            </select>
+                                                        </span>
+                                                        <label for="">
+                                                            <input type="text" name="" id="" class="w380" placeholder="등기원인 내용입력">
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </section>
+    
+                    </div>
+                </div>
+                <div class="popup-foot">
+                    <div class="left-con">
+                        <button type="button" class="btn medium">다시 작성하기</button>
+                    </div>
+                    <div class="right-con">
+                        <button type="button" class="btn-solid medium color-4d">등록취소</button>
+                        <button type="button" class="btn-solid medium">저장 후 계속입력</button>
+                        <button type="button" class="btn-solid medium">등록완료</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // [N] 9-2-1 계속입력형_입력 -->
+
+        <!-- [N] 9-2-2 계속입력형_수정 -->
+        <div class="title-content-wrap">
+            <div class="title-wrap">
+                <h2>9-2-2 계속입력형_수정</h2>
+            </div>
+            <div class="cont-wrap">
+                <div class="popup-head">
+                    <div class="popup-title">
+                        <h4>‘타이틀’ 수정</h4>
+                    </div>
+                    <div class="close-btn">
+                        <button type="button" onclick="popupManager.closePopup();"><img src="../../img/btn_gnb_close.svg" alt="close"></button>
+                    </div>
+                </div>
+                <div class="popup-body">
+                    <div class="popup-cont">
+                        
+                        <section class="form-sec">
+                            <div class="sec-head">
+                                <div class="bg-box-wrap">
+                                    <ul class="list-bullet fs-15">
+                                        <li>
+                                            <div>사업목적은 ⎡한국표준산업분류표⎦의 분류내용을 참고하여 작성해 주시기 바랍니다.</div>
+                                        </li>
+                                        <li class="color-error">
+                                            <div>포괄적이거나 추상적인 목적을 입력하시면 안되며 사업의 구체적인 목적을 입력하시기 바랍니다.</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sec-body mt20">
+                                <div class="table-head">
+                                    <div class="left-con"></div>
+                                    <div class="right-con">
+                                        <span class="required-info"><span class="star">*</span> 표시 필수입력사항</span>
+                                    </div>
+                                </div>
+                                <div class="table-body">
+                                    <table class="table-detail focused">
+                                        <caption>사업목적</caption>
+                                        <colgroup>
+                                            <col style="width: 250px;">
+                                            <col style="width: auto;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="element-row">
+                                                <th scope="row">
+                                                    <div class="inline-wrap">
+                                                        <label for="modpurpose" class="fs-14 color-5a">사업목적<span class="required">필수</span></label>
+                                                        <div class="tooltip-wrap">
+                                                            <span class="tooltip-btn right" data-tooltip="trigger" tabindex="0"><img src="../../img/ico_qmark@2x.png" alt="Question mark"></span>
+                                                            <div class="tooltip-cont-con" data-tooltip="container">
+                                                                <div class="tooltip-head">
+                                                                    <p class="title">사업목적 입력 안내</p>
+                                                                    <button type="button" class="close-btn" onclick="tooltipHandler.closeTooltip()">
+                                                                        <img src="../../img/btn_tooltips_close.svg" alt="닫기">
+                                                                    </button>
+                                                                </div>
+                                                                <div class="tooltip-body">
+                                                                    <p>하나의 목적번호에는 하나의 목적만 입력해야 하며, 목적번호는 모두 ‘1’ 로 입력합니다.</p>
+                                                                    <p class="mt20 fw-bold">
+                                                                        예) 입력할 목적이 운수업, 유통업, 각 호에 부대하는 사업인 경우
+                                                                    </p>
+                                                                    <p class="mt10">
+                                                                        목적 입력란에 ‘1 운수업’ 입력 후 우측 하단의 [입력] 버튼을 선택하고<br/>
+                                                                        다시 입력란에 ‘1 유통업‘ 입력 후 우측 하단의 [입력] 버튼을 선택하고<br/>
+                                                                        마지막으로 ‘1 각 호에 부대하는 사업‘ 입력 후 우측 하단의 [입력] 버튼 선택
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                <td class="pr-none">
+                                                    <div class="flex-wrap">
+                                                        <div class="left-con">
+                                                            <span class="fs-15 fw-bold color-1d">1.</span>
+                                                        </div>
+                                                        <div class="right-con inline-wrap">
+                                                            <input type="text" name="" id="modpurpose" class="w308" placeholder="목적입력" value="비주거용 건물 입대업 및 전대업">
+                                                            <label for="">
+                                                                <input type="text" name="" id="" class="w380" placeholder="영문목적 입력">
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="element-row">
+                                                <th scope="row">
+                                                    <label for="moddatepicker0">등기원인일자<span class="required">필수</span></label>
+                                                </th>
+                                                <td class="pr-none">
+                                                    <span class="datepicker-con">
+                                                        <input type="text" name="" id="moddatepicker0" class="datepicker w336" placeholder="이전일자 선택" value="2020-12-12">
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr class="element-row">
+                                                <th scope="row">
+                                                    <label for="modreason">등기원인<span class="required">필수</span></label>
+                                                </th>
+                                                <td class="pr-none">
+                                                    <div class="inline-wrap">
+                                                        <span class="select-con w336">
+                                                            <select name="" id="modreason">
+                                                                <option value="">전체</option>
+                                                            </select>
+                                                        </span>
+                                                        <label for="">
+                                                            <input type="text" name="" id="" class="w380" placeholder="등기원인 내용입력">
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </section>
+    
+                    </div>
+                </div>
+                <div class="popup-foot">
+                    <div class="left-con">
+                        <button type="button" class="btn medium">다시 작성하기</button>
+                    </div>
+                    <div class="right-con">
+                        <button type="button" class="btn-solid medium color-4d">수정취소</button>
+                        <button type="button" class="btn-solid medium">수정완료</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // [N] 9-2-2 계속입력형_수정 -->
+
+        <h2>9-3. 입력상속데이터 / ico버튼 추가</h2>
+        <!-- [N] 9-3 입력상속데이터 -->
+        <div class="title-content-wrap">
+            <div class="title-wrap">
+                <h2></h2>
+            </div>
+            <div class="cont-wrap">
+                <div class="popup-body">
+                    <div class="popup-cont">
+                        <!-- 입력폼 -->
+                        <section class="form-sec depth-2">
+                            <div class="sec-body">
+                                <div class="table-head">
+                                    <div class="left-con">
+                                        <h5>테이블타이틀</h5>
+                                    </div>
+                                    <div class="right-con">
+                                        <span class="required-info"><span class="star">*</span> 표시 필수입력사항</span>
+                                    </div>
+                                </div>
+                                <div class="table-body">
+                                    <table class="table-detail">
+                                        <caption>입력폼</caption>
+                                        <colgroup>
+                                            <col style="width: 166px;">
+                                            <col style="width: auto;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="element-row">
+                                                <th scope="row">
+                                                    <label for="regitype0">항목명<span class="required">필수</span></label>
+                                                </th>
+                                                <td>
+                                                    <div class="inline-wrap">
+                                                        <span class="select-con w290">
+                                                            <select name="" id="regitype0">
+                                                                <option value="">내국인</option>
+                                                                <option value="">option1</option>
+                                                            </select>
+                                                        </span>
+                                                        <button type="button" class="btn">자주 사용하는 권리자</button>
+                                                        <button type="button" class="btn">최근 입력한 권리자</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="element-row">
+                                                <th scope="row">
+                                                    <label for="stake0">항목명<span class="required">필수</span></label>
+                                                </th>
+                                                <td>
+                                                    <input type="text" name="" id="stake0" class="w100">
+                                                    &nbsp;분의&nbsp;
+                                                    <label for="stake1">
+                                                        <input type="text" name="" id="stake1" class="w100">
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr class="element-row">
+                                                <th scope="row">
+                                                    <label for="name1">항목명<span class="required">필수</span></label>
+                                                </th>
+                                                <td>
+                                                    <input type="text" name="" id="name1" class="w290" value="이일순">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="table-foot mt25">
+                                    <span class="checkbox-con">
+                                        <input type="checkbox" name="" id="deputy">
+                                        <label for="deputy">법정대리인/대표자 (선택)</label>
+                                    </span>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 입력폼 -->
+
+                        <!-- 법정대리인/대표자 입력 -->
+                        <section class="form-sec depth-3">
+                            <div class="sec-body">
+                                <div class="table-head">
+                                    <div class="left-con">
+                                        <h6>법정대리인/대표자 입력</h6>
+                                    </div>
+                                    <div class="right-con" id="go-table-btn2">
+                                        <span class="required-info"><span class="star">*</span> 표시 필수입력사항</span>
+                                        <button type="button" class="btn color-main icon-add">법정대리인 추가</button>
+                                    </div>
+                                </div>
+                                <div class="table-body">
+                                    <table class="table-detail">
+                                        <caption>법정대리인/대표자 입력</caption>
+                                        <colgroup>
+                                            <col style="width: 166px;">
+                                            <col style="width: auto;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="element-row">
+                                                <th scope="row">
+                                                    <label for="apptype0">항목명<span class="required">필수</span></label>
+                                                </th>
+                                                <td>
+                                                    <span class="radio-con">
+                                                        <input type="radio" name="apptype" id="apptype0">
+                                                        <label for="apptype0">신청인</label>
+                                                    </span>
+                                                    <span class="radio-con ml40">
+                                                        <input type="radio" name="apptype" id="apptype1">
+                                                        <label for="apptype1">공인중개사</label>
+                                                    </span>
+                                                    <span class="radio-con ml40">
+                                                        <input type="radio" name="apptype" id="apptype2">
+                                                        <label for="apptype2">(담당)법무사/변호사</label>
+                                                    </span>
+                                                    <span class="radio-con ml40">
+                                                        <input type="radio" name="apptype" id="apptype3">
+                                                        <label for="apptype3">법무법인</label>
+                                                    </span>
+                                                    <span class="radio-con ml40">
+                                                        <input type="radio" name="apptype" id="apptype4">
+                                                        <label for="apptype4">법무사법인</label>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr class="element-row">
+                                                <th scope="row">
+                                                    <label for="regitype1">항목명<span class="required">필수</span></label>
+                                                </th>
+                                                <td>
+                                                    <span class="select-con w290">
+                                                        <select name="" id="regitype1">
+                                                            <option value="">내국인</option>
+                                                            <option value="">option1</option>
+                                                        </select>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr class="element-row">
+                                                <th scope="row">
+                                                    <label for="name2">항목명<span class="required">필수</span></label>
+                                                </th>
+                                                <td>
+                                                    <input type="text" name="" id="name2" class="w290" placeholder="이일순">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="table-btn-focus">
+                                        <a href="#go-table-btn2">테이블 기능 버튼으로 이동</a>
+                                    </div>
+                                </div>
+                                <div class="table-foot">
+                                    <div class="table-util-con">
+                                        <div class="left-con">
+                                            <button type="button" class="btn icon-reset">다시 작성하기</button>
+                                        </div>
+                                        <div class="right-con">
+                                            <button type="button" class="btn-solid color-4d">저장</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 법정대리인/대표자 입력 -->
+
+                        <hr class="seperate-line" />
+
+                        <!-- 등기권리자 목록 -->
+                        <section class="form-sec depth-3 mb0">
+                            <div class="sec-body">
+                                <div class="table-head">
+                                    <div class="left-con">
+                                        <h6>등기권리자 목록</h6>
+                                    </div>
+                                    <div class="right-con" id="go-table-btn3">
+                                        <button type="button" class="btn-solid">선택삭제</button>
+                                    </div>
+                                </div>
+                                <div class="table-body">
+                                    <table class="table-list">
+                                        <caption>등기권리자 목록</caption>
+                                        <colgroup>
+                                            <col style="width: 60px;">
+                                            <col style="width: 100px;">
+                                            <col style="width: 155px;">
+                                            <col style="width: auto;">
+                                            <col style="width: 70px;">
+                                            <col style="width: 70px;">
+                                            <col style="width: 160px;">
+                                            <col style="width: 120px;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="has-element">
+                                                    <span class="checkbox-con only-box">
+                                                        <input type="checkbox" name="" id="cbox6"><label for="cbox6"></label>
+                                                    </span>
+                                                </th>
+                                                <th scope="col">성명(명칭)</th>
+                                                <th scope="col">(주민)등록번호</th>
+                                                <th scope="col">주소</th>
+                                                <th scope="col">소유</th>
+                                                <th scope="col">지분</th>
+                                                <th scope="col">대표자/기관</th>
+                                                <th scope="col">처리</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="has-element">
+                                                    <span class="checkbox-con only-box">
+                                                        <input type="checkbox" name="" id="cbox7"><label for="cbox7"></label>
+                                                    </span>
+                                                </td>
+                                                <td>이일순</td>
+                                                <td class="ff-roboto">581021-1022252</td>
+                                                <td class="left">서울특별시 동작구 신대방1동 72-2</td>
+                                                <td>공유</td>
+                                                <td class="ff-roboto">1/2</td>
+                                                <td><span class="color-sub1">나대표</span><button class="btn icon-modify"></button></td>
+                                                <td>
+                                                    <button type="button" class="list-btn">
+                                                        <span>수정</span>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="has-element">
+                                                    <span class="checkbox-con only-box">
+                                                        <input type="checkbox" name="" id="cbox7"><label for="cbox7"></label>
+                                                    </span>
+                                                </td>
+                                                <td>김이동</td>
+                                                <td class="ff-roboto">720505-1067747</td>
+                                                <td class="left">서울특별시 동작구 신대방1동 72-2</td>
+                                                <td>공유</td>
+                                                <td class="ff-roboto">1/2</td>
+                                                <td><span class="color-sub1">나대표</span><button class="btn icon-modify"></button></td>
+                                                <td>
+                                                    <button type="button" class="list-btn">
+                                                        <span>수정</span>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="has-element">
+                                                    <span class="checkbox-con only-box">
+                                                        <input type="checkbox" name="" id="cbox7"><label for="cbox7"></label>
+                                                    </span>
+                                                </td>
+                                                <td>김이동</td>
+                                                <td class="ff-roboto">720505-1067747</td>
+                                                <td class="left">서울특별시 동작구 신대방1동 72-2</td>
+                                                <td>공유</td>
+                                                <td class="ff-roboto">1/2</td>
+                                                <td><button class="btn">법정대리인 입력</button></td>
+                                                <td><button class="btn color-main">수정취소</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="table-btn-focus">
+                                        <a href="#go-table-btn3">테이블 기능 버튼으로 이동</a>
+                                    </div>
+                                </div>
+                                <div class="table-foot">
+                                    <div class="table-util-con">
+                                        <div class="inline-wrap">
+                                            <span class="select-con w62">
+                                                <label for="smallsel0">
+                                                    <select name="" id="smallsel0" class="">
+                                                        <option value="">1</option>
+                                                        <option value="">2</option>
+                                                    </select>
+                                                </label>
+                                            </span>
+                                            <span class="slash">
+                                                <img src="../../img/ico_read_perline.svg" alt="/">
+                                            </span>
+                                            <span class="fs-15">5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 등기권리자 목록 -->
+
+                    </div>
+                </div>
+                <div class="popup-foot">
+                    <div class="left-con">
+                        <button type="button" class="btn medium">보조버튼</button>
+                    </div>
+                    <div class="right-con">
+                        <button type="button" class="btn-solid medium color-4d">버튼명</button>
+                        <button type="button" class="btn-solid medium">버튼명</button>
+                    </div>
+                </div>
+                <!-- // 신청인/대리인 목록 - 2depth 테이블 -->
+            </div>
+        </div>
+        <!-- // [N] 9-3 입력상속데이터 -->
+        
+    </div>
+</body>
+
+</html>

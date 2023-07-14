@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+    <g transform="translate(-406 -70)">
+        <path fill="none" d="M0 0H28V28H0z" opacity="0.2" transform="translate(406 70)"/>
+        <circle cx="10" cy="10" r="10" fill="#a8a8a8" transform="translate(410 74)"/>
+        <text fill="#fff" font-family="Roboto-Medium, Roboto" font-size="14px" font-weight="500" transform="translate(420 89)">
+            <tspan x="-3.404" y="0">?</tspan>
+        </text>
+    </g>
+</svg>

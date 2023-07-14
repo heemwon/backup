@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+    <defs>
+        <style>
+            .cls-1{fill:red;opacity:0}.cls-2{fill:#fff;stroke:#000;stroke-width:1.5px}.cls-4{stroke:none}.cls-5{fill:none}
+        </style>
+    </defs>
+    <g id="ico_checklist_07_off" transform="translate(7.192 10)">
+        <path id="guide" d="M0 0H56V56H0z" class="cls-1" transform="translate(-7.192 -10)"/>
+        <path id="guide-2" d="M0 0H40V40H0z" class="cls-1" transform="translate(0.808 -2)"/>
+        <g id="ico_checklist_07_off-2" transform="translate(-0.184 -1.191)">
+            <g id="사각형_1365" class="cls-2">
+                <path d="M0 0H15.206V8.689H0z" class="cls-4" transform="translate(25.602 16.19)"/>
+                <path d="M0.75 0.75H14.456V7.939H0.75z" class="cls-5" transform="translate(25.602 16.19)"/>
+            </g>
+            <g id="사각형_1366" class="cls-2">
+                <path d="M0 0H15.206V8.689H0z" class="cls-4" transform="translate(25.602 22.707)"/>
+                <path d="M0.75 0.75H14.456V7.939H0.75z" class="cls-5" transform="translate(25.602 22.707)"/>
+            </g>
+            <g id="사각형_1367" class="cls-2">
+                <path d="M0 0H15.206V8.689H0z" class="cls-4" transform="translate(25.602 29.224)"/>
+                <path d="M0.75 0.75H14.456V7.939H0.75z" class="cls-5" transform="translate(25.602 29.224)"/>
+            </g>
+            <g id="key" transform="translate(1.992 0.191)">
+                <path id="패스_3606" d="M29.364 1.428A1.007 1.007 0 0 0 28.349.407L23.393.4a.642.642 0 0 0-.359.2L12.056 11.582A9.27 9.27 0 1 0 14.1 28.377a10.16 10.16 0 0 0 4.283-11.235l.877-1.619a.323.323 0 0 0 .091-.248l-.248-2.687a.314.314 0 0 1 .339-.339l2.46.227a.316.316 0 0 0 .338-.339l-.227-2.46a.313.313 0 0 1 .339-.338l2.46.227a.316.316 0 0 0 .338-.339l-.222-2.47a.308.308 0 0 1 .333-.333l2.7.242a.3.3 0 0 0 .243-.091l1.02-1.051a.513.513 0 0 0 .141-.354z" class="cls-2" transform="translate(-0.048 -0.402)"/>
+                <circle id="타원_226" cx="3.258" cy="3.258" r="3.258" fill="#f4c215" transform="translate(5.231 18.257)"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../js/libs/jquery.min.js"></script>
+    <script src="../js/libs/jquery-ui.min.js"></script>
+    <script src="../js/libs/jquery.selectric.js"></script>
+    <script src="../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../js/sub.js"></script>
+    <script src="../js/cms.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/cms.css">
+    <title>대한민국 법원 인터넷 등기소</title>
+</head>
+<body>
+    <!-- Header Area -->
+    <header class="cms-header">
+        <h1 class="cms-title-site">인터넷 등기소</h1>
+        <!-- Global Navigation Bar -->
+        <nav class="cms-navigation-global">
+            <button type="button" class="active">기본정보</button>
+            <button type="button">사이트 관리</button>
+            <button type="button">프로그램 관리</button>
+            <button type="button">사용자 관리</button>
+        </nav>
+        <!-- Global Navigation Bar -->
+        <div class="cms-util">
+
+            <div class="cms-box-drpdown dropdown-wrap">
+                <button type="button" class="cms-title-item current-item">인터넷등기소 선택</button>
+                <ul class="cms-list-item dropdown-con">
+                    <li class="dropdown-item">
+                        <button type="button">등기소</button>
+                    </li>
+                    <li class="dropdown-item">
+                        <button type="button">등기소</button>
+                    </li>
+                </ul>
+            </div>
+            <button type="button" class="cms-btn-logout">로그아웃</button>
+            <div class="cms-link-home"><a href="#none">홈페이지</a></div>
+        </div>
+    </header>
+    <!-- //Header Area -->
+    <div class="cms-wrap">
+        <!-- Side Bar -->
+        <aside class="cms-aside">
+            <h2 class="cms-title-depth">기본정보</h2>
+            <!-- Local Navigation Bar -->
+            <nav class="cms-navigation-local">
+                <ul>
+                    <li class="active">
+                        <button type="button" class="cms-ondepth">2depth 메뉴 선택시</button>
+                        <ul>
+                            <li class="active"><button type="button">3depth 메뉴 선택시</button></li>
+                            <li><button type="button">3depth 메뉴</button></li>
+                            <li><button type="button">3depth 메뉴</button></li>
+                            <li><button type="button">3depth 메뉴</button></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" class="cms-ondepth">2depth 메뉴 하위있음</button>
+                        <ul>
+                            <li><button type="button">3depth 메뉴</button></li>
+                            <li><button type="button">3depth 메뉴</button></li>
+                            <li><button type="button">3depth 메뉴</button></li>
+                            <li><button type="button">3depth 메뉴</button></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" class="cms-ondepth">2depth 메뉴 하위있음</button>
+                        <ul>
+                            <li><button type="button">3depth 메뉴</button></li>
+                            <li><button type="button">3depth 메뉴</button></li>
+                            <li><button type="button">3depth 메뉴</button></li>
+                            <li><button type="button">3depth 메뉴</button></li>
+                        </ul>
+                    </li>
+                    <li><button type="button">2depth 메뉴 hover시</button></li>
+                    <li><button type="button">2depth 메뉴</button></li>
+                    <li><button type="button">2depth 메뉴</button></li>
+                    <li><button type="button">2depth 메뉴</button></li>
+                    <li><button type="button">2depth 메뉴</button></li>
+                </ul>
+            </nav>
+            <!-- //Local Navigation Bar -->
+        </aside>
+        <!-- //Side Bar -->
+        <!-- Content Area -->
+        <main class="cms-content">
+            <!-- Page Location -->
+            <div class="cms-box-location">
+                <a href="#none" class="home">홈</a>
+                <button type="button">1depth</button>
+                <button type="button">2depth</button>
+                <span class="current">3depth</span>
+            </div>
+            <!-- //Page Location -->
+
+            <h1 class="cms-title-content">화면명</h1><!-- Page Title -->
+
+            <!-- Page Information -->
+            <div class="cms-information-type1">
+                <ul>
+                    <li>･ 서비스 레벨을 선택하실 수 있으며, 선택된 레벨로 자동 설정됩니다.</li>
+                    <li>･ 화면 전체에 대한 서브 카피 영역입니다.  일반 화면 설명글이 있을 시 사용하면 됩니다. (선택)</li>
+                </ul>
+            </div>
+            <!-- //Page Information -->
+
+            <section class="form-sec head-option">
+                <div class="filter-wrap default">
+                    <ul class="form-con">
+                        <li>
+                            <div class="element-con">
+                                <p class="title-con">
+                                    <label for="city1">검색 항목명1</label>
+                                </p>
+                                <div class="cont-con">
+                                    <span class="select-con">
+                                        <select name="" id="city1" class="">
+                                            <option value="1">현행</option>
+                                        </select>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="element-con">
+                                <p class="title-con">
+                                    <label for="city1">검색 항목명2</label>
+                                </p>
+                                <div class="cont-con">
+                                    <span class="select-con">
+                                        <select name="" id="city1" class="">
+                                            <option value="1">전체</option>
+                                        </select>
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="element-con">
+                                <p class="title-con">
+                                    <label for="city1">조회기간</label>
+                                </p>
+                                <div class="cont-con">
+                                    <div class="period-wrap">
+                                        <div class="period-con">
+                                            <span class="datepicker-con">
+                                                <input type="text" name="" id="period0" class="datepicker w136">
+                                            </span>
+                                            <span class="hyphen"></span>
+                                            <span class="datepicker-con">
+                                                <input type="text" name="" id="period1" class="datepicker w136">
+                                            </span>
+                                        </div>
+                                        <div class="btn-con">
+                                            <button type="button" class="btn color-main color-check">최근 1개월</button>
+                                            <button type="button" class="btn">최근 3개월</button>
+                                            <button type="button" class="btn">최근 6개월</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="btn-con">
+                        <div class="util-btn-con">
+                            <button type="button" class="btn-solid medium">조회</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cms-section content-sec">
+                <div class="sec-head">
+                    <h4>설문지 목록</h4>
+                </div>
+                <div class="sec-body">
+                    <div class="table-head">
+                        <div class="left-con">
+                            <span class="fs-14 color-86">전체 130건</span>
+                        </div>
+                        <div class="right-con">
+                            <button type="button" class="btn-solid">선택삭제</button>
+                        </div>
+                    </div>
+                    <div class="table-body">
+                        <table class="table-list" summary="테이블 설명">
+                            <caption>테이블 타이틀</caption>
+                            <colgroup>
+                                <col style="width: 60px;">
+                                <col style="width: auto">
+                                <col style="width: 110px;">
+                                <col style="width: 175px;">
+                                <col style="width: 195px;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="has-element">
+                                        <span class="checkbox-con only-box">
+                                            <input type="checkbox" name="" id="cbox0"><label for="cbox0"></label>
+                                        </span>
+                                    </th>
+                                    <th scope="col">설문지</th>
+                                    <th scope="col">참여자수</th>
+                                    <th scope="col">처리</th>
+                                    <th scope="col">설문결과</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="has-element">
+                                        <span class="checkbox-con only-box">
+                                            <input type="checkbox" name="" id="cbox1"><label for="cbox1"></label>
+                                        </span>
+                                    </td>
+                                    <td class="left">등기안내 관련 설문</td>
+                                    <td>19</td>
+                                     <td>
+                                        <button type="button" class="btn">수정</button>
+                                        <button type="button" class="btn">질문관리</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn">결과보기</button>
+                                        <button type="button" class="btn">다운로드</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="has-element">
+                                        <span class="checkbox-con only-box">
+                                            <input type="checkbox" name="" id="cbox1"><label for="cbox1"></label>
+                                        </span>
+                                    </td>
+                                    <td class="left">등기비용 안내관련 설문</td>
+                                    <td>999999</td>
+                                     <td>
+                                        <button type="button" class="btn">수정</button>
+                                        <button type="button" class="btn">질문관리</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn">결과보기</button>
+                                        <button type="button" class="btn">다운로드</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="has-element">
+                                        <span class="checkbox-con only-box">
+                                            <input type="checkbox" name="" id="cbox1"><label for="cbox1"></label>
+                                        </span>
+                                    </td>
+                                    <td class="left">인터넷등기소 간편길잡이 안내관련 설문</td>
+                                    <td>32</td>
+                                     <td>
+                                        <button type="button" class="btn">수정</button>
+                                        <button type="button" class="btn">질문관리</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn">결과보기</button>
+                                        <button type="button" class="btn">다운로드</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="has-element">
+                                        <span class="checkbox-con only-box">
+                                            <input type="checkbox" name="" id="cbox1"><label for="cbox1"></label>
+                                        </span>
+                                    </td>
+                                    <td class="left">서비스 이용시간 안내관련 설문</td>
+                                    <td>19</td>
+                                     <td>
+                                        <button type="button" class="btn">수정</button>
+                                        <button type="button" class="btn">질문관리</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn">결과보기</button>
+                                        <button type="button" class="btn">다운로드</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="flex-wrap mt24">
+                        <div class="left-con">
+                            <div class="inline-wrap">
+                                <span class="select-con w62">
+                                    <label for="smallsel0">
+                                        <select name="" id="smallsel0" class="">
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                        </select>
+                                    </label>
+                                </span>
+                                <span class="slash">
+                                    <img src="../img/ico_read_perline.svg" alt="/">
+                                </span>
+                                <span class="fs-15">5</span>
+                            </div>
+                        </div>
+                        <div class="right-con">
+                            <button type="button" class="btn-solid medium color-4b">설문지 추가</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cms-section">
+
+                <section class="form-sec depth-2 mb40">
+                    <div class="sec-body">
+                        <div class="table-head">
+                            <div class="left-con">
+                                <h4>설문지 추가</h4>
+                            </div>
+                            <div class="right-con">
+                                
+                            </div>
+                        </div>
+                        <ul class="list-bullet fs-15 color-86 mt10 mb15">
+                            <li>설문지의 기본정보를 등록/수정할 수 있습니다.</li>
+                        </ul>
+                        <div class="table-body">
+                            <table class="table-detail">
+                                <caption>‘타이틀’ 정보 입력</caption>
+                                <colgroup>
+                                    <col style="width: 208px;">
+                                    <col style="width: auto;">
+                                </colgroup>
+                                <tbody>
+                                    <tr class="element-row">
+                                        <th scope="row">
+                                            <label for="regi0">설문지 제목<span class="required">필수</span></label>
+                                        </th>
+                                        <td>
+                                            <input type="text" name="" id="name" placeholder="설문지 제목 입력">
+                                        </td>
+                                    </tr>
+                                    <tr class="element-row">
+                                        <th scope="row">
+                                            <label for="regi0">링크</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" name="" id="name" disabled placeholder="">
+                                        </td>
+                                    </tr>
+                                    <tr class="element-row">
+                                        <th scope="row">
+                                            <label for="regi1">설문 기간<span class="required">필수</span></label>
+                                        </th>
+                                        <td>
+                                            <div class="period-wrap">
+                                                <div class="period-con">
+                                                    <span class="datepicker-con">
+                                                        <input type="text" name="" id="period0" class="datepicker w136">
+                                                    </span>
+                                                    <span class="select-con w100 ml8">
+                                                        <select name="" id="city1" class="">
+                                                            <option value="1">00시</option>
+                                                        </select>
+                                                    </span>
+                                                    <span class="hyphen"></span>
+                                                    <span class="datepicker-con">
+                                                        <input type="text" name="" id="period1" class="datepicker w136">
+                                                    </span>
+                                                    <span class="select-con w100 ml8">
+                                                        <select name="" id="city1" class="">
+                                                            <option value="1">24시</option>
+                                                        </select>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="element-row">
+                                        <th scope="row">
+                                            <label for="regi1">설문지 설명</label>
+                                        </th>
+                                        <td>
+                                            <textarea placeholder="설문지 설명 입력"></textarea>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="flex-wrap mt24">
+                            <div class="left-con">
+                                <button type="button" class="btn medium">설문그룹 관리</button>
+                            </div>
+                            <div class="right-con">
+                                <button type="button" class="btn-solid medium color-4d">등록취소</button>
+                                <button type="button" class="btn-solid medium color-4b">등록완료</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="bg-box-wrap normal">
+                    <ul class="list-bullet fs-15 color-1d">
+                        <li>･ 등기사항 증명서와 함께 열람 발급하고자 하는 공동담보 전세목록을 선택하시기 바랍니다.</li>
+                        <li>･ 아래 목록은 공동담보, 전세목록을 표시한 것이며 전산화 되지 않은 공동담보, 전세목록의 경우 인터넷으로는 내용확인이 불가하며 직접 등기소를 방문하셔야 합니다.</li>
+                        <li>･ 부가설명글이 노출됩니다. (선택)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- copyright -->
+            <p class="cms-copyright">Copyright © Supreme Court of Korea. All right reserved.</p>
+            <!-- //copyright -->
+        </main>
+        <!-- //Content Area -->
+    </div>
+</body>
+</html>

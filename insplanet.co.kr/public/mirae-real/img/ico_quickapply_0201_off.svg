@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+    <defs>
+        <style>
+            .cls-2{fill:#303871}.cls-2,.cls-4{stroke:#fff;stroke-width:2px}.cls-4,.cls-7{fill:none}.cls-6{stroke:none}
+        </style>
+    </defs>
+    <g id="ico_quickapply_0201" transform="translate(-383.002 -528)">
+        <g id="그룹_3898" transform="translate(-62.998 -299.717)">
+            <g id="사각형_1907" class="cls-2" transform="translate(452 842.717)">
+                <rect width="22" height="22" class="cls-6" rx="5"/>
+                <rect width="20" height="20" x="1" y="1" class="cls-7" rx="4"/>
+            </g>
+            <g id="사각형_1906" class="cls-2" transform="translate(458 827.717)">
+                <rect width="11" height="13" class="cls-6" rx="5.5"/>
+                <rect width="9" height="11" x="1" y="1" class="cls-7" rx="4.5"/>
+            </g>
+            <path id="사각형_1908" fill="#303871" d="M0 0H11V9H0z" transform="translate(457 858.717)"/>
+            <path id="선_622" d="M0 0L0 25.473" class="cls-4" transform="translate(457.368 849.744)"/>
+            <path id="선_623" d="M0 0L0 25.473" class="cls-4" transform="translate(468.285 849.744)"/>
+            <path id="선_624" d="M0 0L0 12.737" class="cls-4" transform="translate(462.827 862.48)"/>
+        </g>
+        <path id="빼기_1" fill="#646a95" d="M11483-235l-8.007-9.192-.225-.372a11.108 11.108 0 0 1-2.77-7.35A11.055 11.055 0 0 1 11483-263a11.053 11.053 0 0 1 11 11.082 11.08 11.08 0 0 1-1.021 4.667h.068l-.262.4a11.167 11.167 0 0 1-1.339 2.031l-.118.182L11483-235zm0-23a4.005 4.005 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4z" transform="translate(-11066.999 811.001)"/>
+    </g>
+</svg>

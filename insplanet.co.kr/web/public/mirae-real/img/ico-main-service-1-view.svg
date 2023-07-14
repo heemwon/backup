@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <g data-name="패스 3512" style="fill:#fff">
+        <path d="M43.342 56.983h-32.5V38.086l16.036-14.309h.429l16.035 14.31v18.896z" style="stroke:none" transform="translate(-10.092 -17.734)"/>
+        <path d="m27.092 24.59-15.5 13.832v17.81h31v-17.81l-15.5-13.831m-.5-1.564h1l16.5 14.723v19.983h-34V37.75l16.5-14.723z" style="fill:#000;stroke:none" transform="translate(-10.092 -17.734)"/>
+    </g>
+    <g data-name="사각형 1208" style="stroke:#000;stroke-width:1.5px;fill:#fff">
+        <path d="M5 0a5 5 0 0 1 5 5v9.257H0V5a5 5 0 0 1 5-5z" style="stroke:none" transform="translate(11.996 25.742)"/>
+        <path d="M5 .75A4.25 4.25 0 0 1 9.25 5v8.507H.75V5A4.25 4.25 0 0 1 5 .75z" style="fill:none" transform="translate(11.996 25.742)"/>
+    </g>
+    <path data-name="Fill 5" d="M6.78 0A6.779 6.779 0 1 1 0 6.78 6.779 6.779 0 0 1 6.78 0" transform="translate(23.63 7.309)" style="fill:#4b6ceb;stroke:#000;stroke-width:1.5px"/>
+    <path data-name="Stroke 21" d="m0 0 4.222 4.788" transform="translate(35.099 18.982)" style="stroke-miterlimit:10;fill:none;stroke:#000;stroke-width:1.5px"/>
+</svg>

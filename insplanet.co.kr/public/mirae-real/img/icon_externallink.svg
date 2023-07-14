@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+    <path style="fill:none;opacity:.2" d="M0 0h14v14H0z"/>
+    <path d="M10 9H2V1h3V0H1v10h10V6h-1v3z" transform="translate(.999 2)" style="fill:#414141"/>
+    <path data-name="Shape" d="M3.433 0v.892h2.051L0 6.367.633 7l5.475-5.484v2.051H7V0z" transform="translate(5 2)" style="fill:#414141"/>
+</svg>

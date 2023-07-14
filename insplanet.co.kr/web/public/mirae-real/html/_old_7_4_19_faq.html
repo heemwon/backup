@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../js/libs/jquery.min.js"></script>
+    <script src="../js/libs/jquery-ui.min.js"></script>
+    <script src="../js/libs/jquery.selectric.js"></script>
+    <script src="../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../js/sub.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <title>검색결과 - 전체 분류</title>
+</head>
+
+<body>
+    <!-- 헤더 영역 -->
+    <header class="area-header">
+        <div class="area-inner">
+            <h1 class="title-logo"><a href="./00_main.html">대한민국 법원 인터넷 등기소</a></h1>
+            <!-- 네비게이션 : 글로벌 -->
+            <nav class="navigation-global">
+                <ul>
+                    <li><button type="button"><span>열람/발급</span></button>
+                        <div class="box-depth2">
+                            <ul>
+                                <li><span class="link-depth2"><a href="">1부동산</a></span>
+                                    <div class="box-depth3">
+                                        <ul>
+                                            <li><a href="">등기열람/발급</a></li>
+                                            <li><a href="">이미지폐쇄등기발급</a></li>
+                                            <li><a href="">사전음영화요청</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><span class="link-depth2"><a href="">법인</a></span>
+                                    <div class="box-depth3">
+                                        <ul>
+                                            <li><a href="">등기열람/발급</a></li>
+                                            <li><a href="">이미지폐쇄등기발급</a></li>
+                                            <li><a href="">발급예약</a></li>
+                                            <li><a href="">인감증명서발급증</a></li>
+                                            <li><a href="">인감증명서관리</a></li>
+                                            <li><a href="">사전음영화요청</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><span class="link-depth2"><a href="">동산&middot;채권담보</a></span>
+                                    <div class="box-depth3">
+                                        <ul>
+                                            <li><a href="">열람/발급</a></li>
+                                            <li><a href="">집행관발급</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><span class="link-depth2"><a href="">전자확정일자</a></span>
+                                    <div class="box-depth3">
+                                        <ul>
+                                            <li><a href="">부여현황 열람</a></li>
+                                            <li><a href="">계약증서발급</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><span class="link-depth2"><a href="">등기신청첨부서류열람</a></span>
+                                    <div class="box-depth3">
+                                        <ul>
+                                            <li><a href="">부동산</a></li>
+                                            <li><a href="">법인</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="has-no-child"><span class="link-depth2"><a href="">열람/발급내역보기</a></span></li>
+                                <li class="has-no-child"><span class="link-depth2"><a href="">발급확인</a></span></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><button type="button"><span>등기신청</span></button>
+                        <div class="box-depth2">
+                            <ul>
+                                <li><span class="link-depth2"><a href="">2부동산</a></span>
+                                    <div class="box-depth3">
+                                        <ul>
+                                            <li><a href="">등기열람/발급</a></li>
+                                            <li><a href="">이미지폐쇄등기발급</a></li>
+                                            <li><a href="">사전음영화요청</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><span class="link-depth2"><a href="">법인</a></span>
+                                    <div class="box-depth3">
+                                        <ul>
+                                            <li><a href="">등기열람/발급</a></li>
+                                            <li><a href="">이미지폐쇄등기발급</a></li>
+                                            <li><a href="">발급예약</a></li>
+                                            <li><a href="">인감증명서발급증</a></li>
+                                            <li><a href="">인감증명서관리</a></li>
+                                            <li><a href="">사전음영화요청</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><span class="link-depth2"><a href="">동산&middot;채권담보</a></span>
+                                    <div class="box-depth3">
+                                        <ul>
+                                            <li><a href="">열람/발급</a></li>
+                                            <li><a href="">집행관발급</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><span class="link-depth2"><a href="">전자확정일자</a></span>
+                                    <div class="box-depth3">
+                                        <ul>
+                                            <li><a href="">부여현황 열람</a></li>
+                                            <li><a href="">계약증서발급</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><span class="link-depth2"><a href="">등기신청첨부서류열람</a></span>
+                                    <div class="box-depth3">
+                                        <ul>
+                                            <li><a href="">부동산</a></li>
+                                            <li><a href="">법인</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="has-no-child"><span class="link-depth2"><a href="">열람/발급내역보기</a></span></li>
+                                <li class="has-no-child"><span class="link-depth2"><a href="">발급확인</a></span></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><button type="button"><span>전자납부/결제</span></button>
+                        <div class="box-depth2">
+                            <ul>
+                                <li><span class="link-depth2"><a href="">3부동산</a></span>
+                                    <div class="box-depth3">
+                                        <ul>
+                                            <li><a href="">등기열람/발급</a></li>
+                                            <li><a href="">이미지폐쇄등기발급</a></li>
+                                            <li><a href="">사전음영화요청</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><span class="link-depth2"><a href="">법인</a></span>
+                                    <div class="box-depth3">
+                                        <ul>
+                                            <li><a href="">등기열람/발급</a></li>
+                                            <li><a href="">이미지폐쇄등기발급</a></li>
+                                            <li><a href="">발급예약</a></li>
+                                            <li><a href="">인감증명서발급증</a></li>
+                                            <li><a href="">인감증명서관리</a></li>
+                                            <li><a href="">사전음영화요청</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><span class="link-depth2"><a href="">동산&middot;채권담보</a></span>
+                                    <div class="box-depth3">
+                                        <ul>
+                                            <li><a href="">열람/발급</a></li>
+                                            <li><a href="">집행관발급</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><span class="link-depth2"><a href="">전자확정일자</a></span>
+                                    <div class="box-depth3">
+                                        <ul>
+                                            <li><a href="">부여현황 열람</a></li>
+                                            <li><a href="">계약증서발급</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><span class="link-depth2"><a href="">등기신청첨부서류열람</a></span>
+                                    <div class="box-depth3">
+                                        <ul>
+                                            <li><a href="">부동산</a></li>
+                                            <li><a href="">법인</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="has-no-child"><span class="link-depth2"><a href="">열람/발급내역보기</a></span></li>
+                                <li class="has-no-child"><span class="link-depth2"><a href="">발급확인</a></span></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><button type="button"><span>전자민원센터</span></button>
+                        <div class="box-depth2">
+                            <ul>
+                                <li><span class="link-depth2"><a href="">4부동산</a></span>
+                                    <div class="box-depth3">
+                                        <ul>
+                                            <li><a href="">등기열람/발급</a></li>
+                                            <li><a href="">이미지폐쇄등기발급</a></li>
+                                            <li><a href="">사전음영화요청</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><span class="link-depth2"><a href="">법인</a></span>
+                                    <div class="box-depth3">
+                                        <ul>
+                                            <li><a href="">등기열람/발급</a></li>
+                                            <li><a href="">이미지폐쇄등기발급</a></li>
+                                            <li><a href="">발급예약</a></li>
+                                            <li><a href="">인감증명서발급증</a></li>
+                                            <li><a href="">인감증명서관리</a></li>
+                                            <li><a href="">사전음영화요청</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><span class="link-depth2"><a href="">동산&middot;채권담보</a></span>
+                                    <div class="box-depth3">
+                                        <ul>
+                                            <li><a href="">열람/발급</a></li>
+                                            <li><a href="">집행관발급</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><span class="link-depth2"><a href="">전자확정일자</a></span>
+                                    <div class="box-depth3">
+                                        <ul>
+                                            <li><a href="">부여현황 열람</a></li>
+                                            <li><a href="">계약증서발급</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><span class="link-depth2"><a href="">등기신청첨부서류열람</a></span>
+                                    <div class="box-depth3">
+                                        <ul>
+                                            <li><a href="">부동산</a></li>
+                                            <li><a href="">법인</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="has-no-child"><span class="link-depth2"><a href="">열람/발급내역보기</a></span></li>
+                                <li class="has-no-child"><span class="link-depth2"><a href="">발급확인</a></span></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><button type="button"><span>나의 등기정보</span></button>
+                        <div class="box-depth2">
+                            <ul>
+                                <li><span class="link-depth2"><a href="">5부동산</a></span>
+                                    <div class="box-depth3">
+                                        <ul>
+                                            <li><a href="">등기열람/발급</a></li>
+                                            <li><a href="">이미지폐쇄등기발급</a></li>
+                                            <li><a href="">사전음영화요청</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><span class="link-depth2"><a href="">법인</a></span>
+                                    <div class="box-depth3">
+                                        <ul>
+                                            <li><a href="">등기열람/발급</a></li>
+                                            <li><a href="">이미지폐쇄등기발급</a></li>
+                                            <li><a href="">발급예약</a></li>
+                                            <li><a href="">인감증명서발급증</a></li>
+                                            <li><a href="">인감증명서관리</a></li>
+                                            <li><a href="">사전음영화요청</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><span class="link-depth2"><a href="">동산&middot;채권담보</a></span>
+                                    <div class="box-depth3">
+                                        <ul>
+                                            <li><a href="">열람/발급</a></li>
+                                            <li><a href="">집행관발급</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><span class="link-depth2"><a href="">전자확정일자</a></span>
+                                    <div class="box-depth3">
+                                        <ul>
+                                            <li><a href="">부여현황 열람</a></li>
+                                            <li><a href="">계약증서발급</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><span class="link-depth2"><a href="">등기신청첨부서류열람</a></span>
+                                    <div class="box-depth3">
+                                        <ul>
+                                            <li><a href="">부동산</a></li>
+                                            <li><a href="">법인</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="has-no-child"><span class="link-depth2"><a href="">열람/발급내역보기</a></span></li>
+                                <li class="has-no-child"><span class="link-depth2"><a href="">발급확인</a></span></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <!-- //네비게이션 : 글로벌 -->
+            <!-- 유틸리티 -->
+            <div class="contain-util">
+                <!-- 로그인 전 -->
+                <div class="box-loginfor">
+                    <div class="btn-login">
+                        <button type="button">로그인</button>
+                        <div class="box-link">
+                            <div class="box-inner">
+                                <a href="">로그인</a>
+                                <a href="">인증센터</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-language">
+                        <button type="button">KOR</button>
+                        <div class="box-link">
+                            <div class="box-inner">
+                                <a href="">KOR</a>
+                                <a href="">ENG</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //로그인 전 -->
+                <!-- 로그인 후 -->
+                <!--
+                <div class="box-loginfor">
+                    <span class="btn-logout">00:00<button>로그아웃</button></span>
+                    <span class="btn-workplace"><button>워크플레이스</button></span>
+                </div>
+                -->
+                <!-- //로그인 후 -->
+                <div class="btn-zoom">
+                    <button type="button">확대</button>
+                    <div class="box-link">
+                        <div class="box-inner">
+                            <span class="btn-zoom-small"><button>작게보기</button></span>
+                            <span class="btn-zoom-origin"><button>원본보기</button></span>
+                            <span class="btn-zoom-big"><button>크게보기</button></span>
+                        </div>
+                    </div>
+                </div>
+                <span class="btn-search"><button type="button" onclick="popupManager.openPopup('#popup-search')">검색</button></span>
+                <span class="btn-menuall"><button type="button">메뉴</button></span>
+            </div>
+            <!-- //유틸리티 -->
+        </div>
+    </header>
+    <!-- //헤더 영역 -->
+    <!-- 페이지 로케이션 -->
+    <div class="area-location">
+        <div class="area-inner">
+            <div class="contain-location">
+                <span class="link-home"><a href="">홈</a></span>
+                <div class="box-depth">
+                    <button type="button" class="current">1depth</button>
+                    <div class="box-link">
+                        <div class="box-inner">
+                            <a href="">열람/발급</a>
+                            <a href="">등기신청</a>
+                            <a href="">전자납부/결제</a>
+                            <a href="">전자민원센터</a>
+                            <a href="">나의등기정보</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-depth">
+                    <button type="button" class="current">2depth</button>
+                    <div class="box-link">
+                        <div class="box-inner">
+                            <a href="">부동산 등기신청</a>
+                            <a href="">등기신청</a>
+                            <a href="">전자납부/결제</a>
+                            <a href="">전자민원센터</a>
+                            <a href="">나의등기정보</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-depth">
+                    <button type="button" class="current">3depth</button>
+                    <div class="box-link">
+                        <div class="box-inner">
+                            <a href="">신청서 작성</a>
+                            <a href="">등기신청</a>
+                            <a href="">전자납부/결제</a>
+                            <a href="">전자민원센터</a>
+                            <a href="">나의등기정보</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-depth">
+                    <button type="button" class="current">4depth</button>
+                    <div class="box-link">
+                        <div class="box-inner">
+                            <a href="">신청서 작성</a>
+                            <a href="">등기신청</a>
+                            <a href="">전자납부/결제</a>
+                            <a href="">전자민원센터</a>
+                            <a href="">나의등기정보</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- 페이지 로케이션 -->
+    <!-- 신청 인포메이션 -->
+    <div class="area-progressbar">
+        <div class="area-inner">
+            <p class="text-information"><span>소유권이전 0000000000</span> 경기도 부천시 원미동소유 0000-0 대 1,000㎡</p>
+            <span class="progressbar"></span>
+        </div>
+    </div>
+    <!-- 신청 인포메이션 -->
+    <!-- 사이드 바 -->
+    <div class="area-sidebar">
+        <div class="area-inner">
+            <div class="box-quicklink">
+                <span class="btn-quick1"><a href="">이용시간</a></span>
+                <span class="btn-quick2"><a href="">등기소찾기</a></span>
+                <span class="btn-quick3"><a href="">등기비용</a></span>
+                <span class="btn-quick4"><a href="">등기양식</a></span>
+                <span class="btn-quick5"><a href="">간편길잡이</a></span>
+            </div>
+            <div class="box-cslink">
+                <div class="btn-cscenter"><button type="button">고객센터</button>
+                    <div class="btn-inner">
+                        <dl>
+                            <dt>사용자지원센터</dt>
+                            <dd class="tel ff-roboto">1544-0770</dd>
+                            <dd>단축번호 : T3-1-1</dd>
+                            <dd>상담시간 : 평일 09:00 ~ 18:00</dd>
+                            <dd class="btn-link"><button>원격지원서비스</button></dd>
+                        </dl>
+                        <span class="btn-close"><button>닫기</button></span>
+                    </div>
+                </div>
+                <span class="btn-chatbot"><button type="button">챗봇</button></span>
+                <span class="btn-anchertop"><button type="button">TOP</button></span>
+            </div>
+        </div>
+    </div>
+    <!-- //사이드 바 -->
+
+
+    <!-- 본문영역 -->
+    <div class="area-content">
+        <div class="area-inner">
+
+
+            <div class="content-wrap">
+
+                <!-- 페이지 타이틀, SNS 버튼 -->
+                <section class="page-title-sec">
+                    <div class="title-btn-con">
+                        <div class="title-con">
+                            <h3>자주묻는질문</h3>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 검색 -->
+                <section class="search-sec">
+                    <div class="search-con">
+                        
+                            <label for="page-total-search-input">
+                                <input type="text" name="page-total-search" id="page-total-search-input" class="search-input" placeholder="검색어를 입력하시기 바랍니다.">
+                            </label>
+                            <button type="button" class="search-btn">
+                                <img src="../img/btn_search.svg" alt="search">
+                            </button>
+                        
+                    </div>
+                    <div class="recommand-con">
+                        <p class="recommand-title">인기 검색어</p>
+                        <div class="recommand-word">
+                            <a href="#none">#등기</a>
+                            <a href="#none">#법인</a>
+                            <a href="#none">#변경</a>
+                            <a href="#none">#등기부</a>
+                            <a href="#none">#발급방법</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 탭메뉴 -->
+                <section class="content-sec mt60">
+                    <ul class="tabmenu-con has-child" data-tab="container" id="tabmenu0">
+                        <li class="tabmenu-item active">
+                            <a href="#none">인터넷등기소</a>
+                        </li>
+                        <li class="tabmenu-item">
+                            <a href="#none">부동산 열람/발급</a>
+                        </li>
+                        <li class="tabmenu-item">
+                            <a href="#none">법인 열람/발급</a>
+                        </li>
+                        <li class="tabmenu-item">
+                            <a href="#none">등기신청</a>
+                        </li>
+                        <li class="tabmenu-item">
+                            <a href="#none">영구보존문서</a>
+                        </li>
+                    </ul>
+                    <ul class="tabchild-con" data-tab-bind="tabmenu0">
+                        <li class="tabchild-item active">
+                            <div class="square-tab-wrap">
+                                <div class="square-tab-con flex-con">
+                                    <button type="button" class="square-item active"><span>등기업무</span></button>
+                                    <button type="button" class="square-item"><span>전자민원실</span></button>
+                                    <button type="button" class="square-item"><span>컨텐츠이용</span></button>
+                                    <button type="button" class="square-item"><span>회원가입/정보</span></button>
+                                    <button type="button" class="square-item"><span>기타</span></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tabchild-item">
+                            <div class="square-tab-wrap">
+                                <div class="square-tab-con flex-con">
+                                    <button type="button" class="square-item active"><span>등기업무2</span></button>
+                                    <button type="button" class="square-item"><span>전자민원실</span></button>
+                                    <button type="button" class="square-item"><span>컨텐츠이용</span></button>
+                                    <button type="button" class="square-item"><span>회원가입/정보</span></button>
+                                    <button type="button" class="square-item"><span>기타</span></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tabchild-item">
+                            <div class="square-tab-wrap">
+                                <div class="square-tab-con flex-con">
+                                    <button type="button" class="square-item active"><span>등기업무3</span></button>
+                                    <button type="button" class="square-item"><span>전자민원실</span></button>
+                                    <button type="button" class="square-item"><span>컨텐츠이용</span></button>
+                                    <button type="button" class="square-item"><span>회원가입/정보</span></button>
+                                    <button type="button" class="square-item"><span>기타</span></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tabchild-item">
+                            <div class="square-tab-wrap">
+                                <div class="square-tab-con flex-con">
+                                    <button type="button" class="square-item active"><span>등기업무4</span></button>
+                                    <button type="button" class="square-item"><span>전자민원실</span></button>
+                                    <button type="button" class="square-item"><span>컨텐츠이용</span></button>
+                                    <button type="button" class="square-item"><span>회원가입/정보</span></button>
+                                    <button type="button" class="square-item"><span>기타</span></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tabchild-item">
+                            <div class="square-tab-wrap">
+                                <div class="square-tab-con flex-con">
+                                    <button type="button" class="square-item active"><span>등기업무5</span></button>
+                                    <button type="button" class="square-item"><span>전자민원실</span></button>
+                                    <button type="button" class="square-item"><span>컨텐츠이용</span></button>
+                                    <button type="button" class="square-item"><span>회원가입/정보</span></button>
+                                    <button type="button" class="square-item"><span>기타</span></button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- 리스트 -->
+                <section class="content-sec">
+                    <div class="sec-body">
+                        <div class="table-head">
+                            <div class="left-con">
+                                <span class="fs-14 color-86">전체 228건</span>
+                            </div>
+                            <div class="right-con"></div>
+                        </div>
+                        <div class="table-body">
+                            <table class="table-list">
+                                <caption>자주묻는질문</caption>
+                                <colgroup>
+                                    <col style="width: 100px;">
+                                    <col style="width: auto;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">번호</th>
+                                        <th scope="col">질문</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="ff-roboto">15</td>
+                                        <td class="left">
+                                            <a href="#none" class="long-text">
+                                                담보목적물의 변경등기 신청이 가능한가요?
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ff-roboto">14</td>
+                                        <td class="left">
+                                            <a href="#none" class="long-text">
+                                                [발급사실 증 → 등 문자전송서비스-법인인감카드] 인터넷등기소 문자서비스 등록 절차가 어떻게 되나요?
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ff-roboto">13</td>
+                                        <td class="left">
+                                            <a href="#none" class="long-text">
+                                                신탁원부 등의 보존기간
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ff-roboto">12</td>
+                                        <td class="left">
+                                            <a href="#none" class="long-text">
+                                                [본인서명사실 확인서] 근저당권설정 등기신청 시 소유자(근저당권설정자)가 본인서명사실확인서를 제출할 경우, 채권자(근저당권자)의 정보도 기재해야 하나요?
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ff-roboto">11</td>
+                                        <td class="left">
+                                            <a href="#none" class="long-text">
+                                                상세증명서
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ff-roboto">10</td>
+                                        <td class="left">
+                                            <a href="#none" class="long-text">
+                                                부부재산 약정등기
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ff-roboto">9</td>
+                                        <td class="left">
+                                            <a href="#none" class="long-text">
+                                                [본인서명사실확인서] 협의분할에 의한 상속등기신청 시 공동상속인 중 인감등록을 하지 않았는데 본인서명사실확인서로 제출해도되나요?
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ff-roboto">8</td>
+                                        <td class="left">
+                                            <a href="#none" class="long-text">
+                                                [소유권이전-협의분할 상속] 상속재산분할협의서
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ff-roboto">7</td>
+                                        <td class="left">
+                                            <a href="#none" class="long-text">
+                                                [등기의 효력] 부동산등기사항증명서를 보니 매매계약일과 접수연월일이 기재되어 있는데 소유권을 취득한 일자가 어떻게 하나요?
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ff-roboto">6</td>
+                                        <td class="left">
+                                            <a href="#none" class="long-text">
+                                                [국민주택채권중도상환] 착오로 매입한 채권에 대해 ‘국민주택채권매입중도상환사유사실증명서(신청서)’ 는 어디서 발급받나요?
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ff-roboto">5</td>
+                                        <td class="left">
+                                            <a href="#none" class="long-text">
+                                                [국내거소신고사실증명서] 재외국민이 국내거소신고제도가 폐지되어 주소를 증명하는 서류와 방법이 어떻게 되나요?
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ff-roboto">4</td>
+                                        <td class="left">
+                                            <a href="#none" class="long-text">
+                                                인터넷등기소에 폐쇄등기부 발급예약을 꼭 해야 등기소에서 발급이 가능한가요?
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ff-roboto">3</td>
+                                        <td class="left">
+                                            <a href="#none" class="long-text">
+                                                법인인감증명서를 무인발급기를 통해 발급 받은 경우도 발급사실 등 문자전송을 해주나요?
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ff-roboto">2</td>
+                                        <td class="left">
+                                            <a href="#none" class="long-text">
+                                                문자메시지를 확인해 보니 ‘접수1234167호/인감개인’이라고 접수번호까지 표시되었는데 접수번호는 어떤경우에 표시되나요?
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ff-roboto">1</td>
+                                        <td class="left">
+                                            <a href="#none" class="long-text">
+                                                문자메세지를 확인해 보니 법인 상호가 정확히 표시되지 않습니다.
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="paging-wrap">
+                            <ul class="paging-con">
+                                <li class="paging-item first"><a href="#none"><img src="../img/btn_paging_prev_2.svg" alt="go first"></a></li>
+                                <li class="paging-item prev"><a href="#none"><img src="../img/btn_paging_prev.svg" alt="go prev"></a></li>
+                                <li class="paging-item num"><a href="#none">1</a></li>
+                                <li class="paging-item num active"><a href="#none">2</a></li>
+                                <li class="paging-item num"><a href="#none">3</a></li>
+                                <li class="paging-item num"><a href="#none">4</a></li>
+                                <li class="paging-item num"><a href="#none">5</a></li>
+                                <li class="paging-item num"><a href="#none">6</a></li>
+                                <li class="paging-item num"><a href="#none">7</a></li>
+                                <li class="paging-item num"><a href="#none">8</a></li>
+                                <li class="paging-item num"><a href="#none">9</a></li>
+                                <li class="paging-item num"><a href="#none">10</a></li>
+                                <li class="paging-item next"><a href="#none"><img src="../img/btn_paging_next.svg" alt="go next"></a></li>
+                                <li class="paging-item last"><a href="#none"><img src="../img/btn_paging_next_2.svg" alt="go last"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+        </div>
+        <!-- 도움말 -->
+        <div class="contain-help"><!-- area-content에 'help'클래스 추가/삭제 -->
+            <div class="contain-inner">
+
+                <h1 class="title">간편도움말</h1>
+                <div class="tab-anchor">
+                    <button class="on">이용안내</button>
+                    <button>이용절차</button>
+                    <button>용어해설</button>
+                    <button>오류시 조치</button>
+                </div>
+                <div class="box-body tab-help1 on">
+                    <dl class="help-define">
+                        <dt>신청서 기재사항 입력1</dt>
+                        <dd>신청서 작성은 전체 5개의 화면으로 구성되어 있으며 제출방식을 전자로 선택하고, 부동산표시, 등기의무자정보, 등기권리자정보, 신청인정보 등을 입력합니다.
+                            <p class="text-em">자주쓰는 유형 등록 버튼을 눌러 자주 이용하는 유형을 저
+                                장해두면,  ‘등기유형 선택’ 목록에 반영되어 신청서 작성
+                                시 쉽게 이용할 수 있습니다.</p>
+                                <ul class="list-em">
+                                    <li>자주쓰는 유형 등록 버튼을 눌러 자주 이용하는 유형을 저
+                                        장해두면,  ‘등기유형 선택’ 목록에 반영되어 신청서 작성
+                                        시 쉽게 이용할 수 있습니다.</li>
+                                </ul>
+                        </dd>
+                    </dl>
+                    <span class="link-more"><a href="">더보기</a></span>
+                </div>
+                <div class="box-body tab-help2">
+                    <dl class="help-define">
+                        <dt>신청서 기재사항 입력2</dt>
+                        <dd>신청서 작성은 전체 5개의 화면으로 구성되어 있으며 제출방식을 전자로 선택하고, 부동산표시, 등기의무자정보, 등기권리자정보, 신청인정보 등을 입력합니다.
+                            <p class="text-em"></p>
+                        </dd>
+                    </dl>
+                    <span class="link-more"><a href="">더보기</a></span>
+                </div>
+                <div class="box-body tab-help3">
+                    <dl class="help-define">
+                        <dt>신청서 기재사항 입력3</dt>
+                        <dd>신청서 작성은 전체 5개의 화면으로 구성되어 있으며 제출방식을 전자로 선택하고, 부동산표시, 등기의무자정보, 등기권리자정보, 신청인정보 등을 입력합니다.
+                            <p class="text-em"></p>
+                        </dd>
+                    </dl>
+                    <span class="link-more"><a href="">더보기</a></span>
+                </div>
+                <div class="box-body tab-help4">
+                    <dl class="help-define">
+                        <dt>신청서 기재사항 입력4</dt>
+                        <dd>신청서 작성은 전체 5개의 화면으로 구성되어 있으며 제출방식을 전자로 선택하고, 부동산표시, 등기의무자정보, 등기권리자정보, 신청인정보 등을 입력합니다.
+                            <p class="text-em"></p>
+                        </dd>
+                    </dl>
+                    <span class="link-more"><a href="">더보기</a></span>
+                </div>
+                <span class="btn-close"><button>닫기</button></span>
+
+            </div>
+        </div>
+        <!-- //도움말 -->
+    </div>
+    <!-- //본문영역 -->
+
+
+    <!-- 관련 사이트 -->
+    <div class="area-banner-bottom">
+        <div class="area-inner">
+            <!-- 관련 링크 -->
+            <div class="banner-sec">
+                <div class="contain-banner-control">
+                    <button class="btn-prev">이전</button>
+                    <button class="btn-action stop">멈춤</button>
+                    <button class="btn-next">다음</button>
+                </div>
+                <div class="contain-banner">
+                    <div><a href=""><img src="../img/img_footer_banner1.png" alt="법원경매정보" ></a></div>
+                    <div><a href=""><img src="../img/img_footer_banner2.png" alt="도로명 주소" ></a></div>
+                    <div><a href=""><img src="../img/img_footer_banner3.png" alt="등기정보광장" ></a></div>
+                    <div><a href=""><img src="../img/img_footer_banner4.png" alt="대한민국 법원" ></a></div>
+                    <div><a href=""><img src="../img/img_footer_banner5.png" alt="전자소송" ></a></div>
+                    <div><a href=""><img src="../img/img_footer_banner6.png" alt="전자공탁" ></a></div>
+                </div>
+            </div>
+            <!-- //관련 링크 -->
+            <!-- 사이트 링크 -->
+            <div class="contain-familysite">
+                <button>법원웹사이트</button>
+            </div>
+            <!-- //사이트 링크 -->
+        </div>
+    </div>
+    <!-- //관련 사이트 -->
+    <!-- 푸터 영역 -->
+    <footer class="area-footer">
+        <div class="area-inner">
+            <!-- 안내 및 약관 -->
+            <div class="box-link-etc">
+                <a href="">인터넷등기소 소개</a>
+                <a href="">이용약관</a>
+                <a href="" class="polish-privite">개인정보처리방침</a>
+                <a href="">링크시 전제조건</a>
+                <a href="">저작권보호정책</a>
+                <a href="">공공기관</a>
+                <a href="">RSS서비스안내</a>
+                <div class="infor-informationcontrol">
+                    <a href="">정보보호관리체계 인증서</a>
+                </div>
+            </div>
+            <!-- //안내 및 약관 -->
+            <!-- 상담안내 -->
+            <div class="box-cscenter">
+                <dl>
+                    <dt>상담안내</dt>
+                    <dd class="text-tel">1544-0770</dd>
+                    <dd>단축번호 : T3-1-1</dd>
+                    <dd class="text-worktime">상담시간 : 평일 09:00 ~ 18:00</dd>
+                    <dd class="text-remotesupport"><button>원격지원서비스</button></dd>
+                </dl>
+            </div>
+            <!-- //상담안내 -->
+            <p class="text-copyright">COPYRIGHT&copy;SUPREME COURT OF KOREA. ALL RIGHT RESERVED.</p>
+        </div>
+    </footer>
+    <!-- //푸터 영역 -->
+
+
+    <!-- 통합검색 -->
+    <div class="search-popup-wrap" id="popup-search">
+        <div class="content-wrap">
+            <div class="popup-head">
+                <div class="close-btn">
+                    <button type="button" onclick="popupManager.closePopup();"><img src="../img/btn_gnb_close.svg" alt="close"></button>
+                </div>
+            </div>
+            <div class="popup-body">
+                <h4><label for="total-search-input">통합검색</label></h4>
+                <div class="search-con">
+                    
+                        <input type="text" name="total-search" id="total-search-input" class="search-input" placeholder="검색어를 입력하시기 바랍니다.">
+                        <button type="button" class="search-btn" onclick="popupManager.closePopup();">
+                            <img src="../img/btn_search.svg" alt="search">
+                        </button>
+                    
+                </div>
+                <p class="recommand-title">추천 검색어</p>
+                <div class="recommand-word">
+                    <a href="#none">#등록번호입력</a>
+                    <a href="#none">#촉탁</a>
+                    <a href="#none">#대상법인</a>
+                    <a href="#none">#문자전송</a>
+                    <a href="#none">#부동산등기</a>
+                </div>
+            </div>
+            </div>
+        <div class="dim-wrap"></div>
+    </div>
+    <!-- // 통합검색 -->
+</body>
+</html>

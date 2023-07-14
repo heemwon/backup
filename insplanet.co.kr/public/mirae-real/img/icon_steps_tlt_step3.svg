@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke-width:2px;stroke:#fff}
+        </style>
+    </defs>
+    <g id="ico_steps_tlt_addon" transform="translate(-43.199 -377)">
+        <rect id="사각형_1077" width="21" height="21" fill="#fec16e" rx="3" transform="translate(53.2 385)"/>
+        <path id="패스_2408" d="M56.888 395.313h9.888" class="cls-2" transform="translate(1.813 .188)"/>
+        <path id="패스_2409" d="M56.888 395.313h9.669" class="cls-2" transform="rotate(90 62.7 396.313)"/>
+        <path id="선_278" fill="none" stroke="#f7763c" stroke-linecap="round" stroke-width="2px" d="M0 0L11 0" transform="translate(58.7 409)"/>
+    </g>
+</svg>

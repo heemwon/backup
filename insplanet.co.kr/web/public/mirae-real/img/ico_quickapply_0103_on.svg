@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="사각형_1923" d="M0 0H40V11H0z" class="cls-1" transform="translate(4 -4)"/>
+        </clipPath>
+        <clipPath id="clip-path-2">
+            <path id="사각형_1905" d="M0 0H40V10H0z" class="cls-1" transform="translate(10 33)"/>
+        </clipPath>
+        <style>
+            .cls-1{fill:#303871}.cls-10,.cls-4{fill:none}.cls-4{stroke:#1d1d1d;stroke-width:2px}.cls-9{stroke:none}
+        </style>
+    </defs>
+    <g id="ico_quickapply_0103o" transform="translate(-831 -681.27)">
+        <g id="Icon_feather-refresh-cw" transform="translate(828 685.27)">
+            <g id="마스크_그룹_53" clip-path="url(#clip-path)">
+                <g id="타원_253" class="cls-4" transform="translate(4 -3)">
+                    <circle cx="23" cy="23" r="23" class="cls-9"/>
+                    <circle cx="23" cy="23" r="22" class="cls-10"/>
+                </g>
+            </g>
+            <g id="마스크_그룹_52" clip-path="url(#clip-path-2)">
+                <g id="타원_255" class="cls-4" transform="translate(4 -3)">
+                    <circle cx="23" cy="23" r="23" class="cls-9"/>
+                    <circle cx="23" cy="23" r="22" class="cls-10"/>
+                </g>
+            </g>
+            <path id="패스_4103" fill="none" stroke="#1d1d1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2px" d="M32.864 6v7.364H25.5" transform="translate(11.136 -6.775)"/>
+        </g>
+        <g id="그룹_3895" font-family="NotoSansCJKkr-Bold, Noto Sans CJK KR" font-size="16px" font-weight="700">
+            <text id="샵" fill="#1d1d1d" opacity="0.25" transform="translate(831 712.27)">
+                <tspan x="0" y="0">샵</tspan>
+            </text>
+            <text id="숍" fill="#f4c215" transform="translate(864 712.27)">
+                <tspan x="0" y="0">숍</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

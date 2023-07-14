@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .cls-3{fill:#fff;stroke:#000;stroke-width:1.5px}
+        </style>
+    </defs>
+    <g id="ico_main_more_person" transform="translate(-2.645 1.492)">
+        <g id="그룹_3652">
+            <path id="Fill_9" fill="#fff" stroke="#000" stroke-linecap="round" stroke-width="1.5px" d="M31.954 14.821H3V7.752C3 2.925 6.928 0 11.752 0h17.834" transform="translate(.645 21.194)"/>
+            <circle id="타원_211" cx="8.073" cy="8.073" r="8.073" class="cls-3" transform="translate(11.348 1.508)"/>
+            <path id="Fill_1" fill="#f4c215" stroke="#000" stroke-linecap="round" stroke-width="1.5px" d="M16.146 7.694c-3.67.564-5.915-3.359-5.915-3.359A13.422 13.422 0 0 1 0 7.651a8.083 8.083 0 0 1 16.146.043" transform="translate(11.348 1.508)"/>
+        </g>
+        <g id="그룹_2714" transform="translate(-1.355 -1.973)">
+            <path id="Fill_5" d="M8.5 0A8.5 8.5 0 1 1 0 8.5 8.5 8.5 0 0 1 8.5 0" class="cls-3" transform="translate(26.105 22.48)"/>
+            <path id="Fill_13" d="M3.966 6.766H2.135a3.549 3.549 0 0 1 1.619-2.861 1.22 1.22 0 1 0-1.924-1H0A2.984 2.984 0 0 1 3.05 0 2.985 2.985 0 0 1 6.1 2.908a2.884 2.884 0 0 1-1.231 2.337 1.946 1.946 0 0 0-.9 1.521" transform="translate(31.953 26.259)"/>
+            <path id="Fill_15" d="M1.089 0A1.089 1.089 0 1 1 0 1.089 1.089 1.089 0 0 1 1.089 0" transform="translate(33.923 34.423)"/>
+        </g>
+    </g>
+</svg>

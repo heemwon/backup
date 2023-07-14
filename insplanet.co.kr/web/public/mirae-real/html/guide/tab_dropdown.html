@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../../js/libs/jquery.min.js"></script>
+    <script src="../../js/libs/jquery-ui.min.js"></script>
+    <script src="../../js/libs/jquery.selectric.js"></script>
+    <script src="../../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../../js/sub.js"></script>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/guide.css">
+    <link rel="stylesheet" href="../../css/sub.css">
+    <title>Tab/Dropdown Style Guide</title>
+</head>
+
+<body>
+    <main>
+        <!-- Tab -->
+        <h1>Tab/Dropdown Style Guide</h1>
+        <hr />
+        <section id="default-sec">
+            <h2>Tab</h2>
+            <div>
+                <ul class="tabmenu-con" data-tab="container" id="tabmenu0">
+                    <li class="tabmenu-item"><a href="#none">탭메뉴1 <span class="ff-roboto">(310)</span></a></li>
+                    <li class="tabmenu-item"><a href="#none">탭메뉴2 <span class="ff-roboto">(310)</span></a></li>
+                    <li class="tabmenu-item active"><a href="#none">탭메뉴3 <span class="ff-roboto">(310)</span></a></li>
+                    <li class="tabmenu-item"><a href="#none">탭메뉴4 <span class="ff-roboto">(310)</span></a></li>
+                </ul>
+            </div>
+        </section>
+        <hr />
+        <section id="hover-sec">
+            <h2>Hover</h2>
+            <div>
+                <ul class="tabmenu-con" data-tab="container" id="tabmenu1">
+                    <li class="tabmenu-item"><a href="#none" class="hover">탭메뉴1 <span class="ff-roboto">(310)</span></a></li>
+                    <li class="tabmenu-item"><a href="#none">탭메뉴2 <span class="ff-roboto">(310)</span></a></li>
+                    <li class="tabmenu-item active"><a href="#none">탭메뉴3 <span class="ff-roboto">(310)</span></a></li>
+                    <li class="tabmenu-item"><a href="#none">탭메뉴4 <span class="ff-roboto">(310)</span></a></li>
+                    <li class="tabmenu-item"><a href="#none">탭메뉴5 <span class="ff-roboto">(310)</span></a></li>
+                    <li class="tabmenu-item"><a href="#none">탭메뉴6 <span class="ff-roboto">(310)</span></a></li>
+                </ul>
+            </div>
+        </section>
+        <hr />
+        <section id="search-type-sec">
+            <h2>Tab - menu&child 일체형</h2>
+            <div>
+                <ul class="tabmenu-con has-child" data-tab="container" id="tabmenu2">
+                    <li class="tabmenu-item active"><a href="#none">탭메뉴1 <span class="ff-roboto">(310)</span></a></li>
+                    <li class="tabmenu-item"><a href="#none">탭메뉴2 <span class="ff-roboto">(310)</span></a></li>
+                    <li class="tabmenu-item"><a href="#none">탭메뉴3 <span class="ff-roboto">(310)</span></a></li>
+                    <li class="tabmenu-item"><a href="#none">탭메뉴4 <span class="ff-roboto">(310)</span></a></li>
+                    <li class="tabmenu-item"><a href="#none">탭메뉴5 <span class="ff-roboto">(310)</span></a></li>
+                </ul>
+                <ul class="tabchild-con" data-tab-bind="tabmenu2">
+                    <li class="tabchild-item active">
+                        <div class="square-border-wrap">
+                            <div class="square-tab-wrap">
+                                <div class="square-tab-con">
+                                    <button type="button" class="square-item active"><span>서울특별시</span></button>
+                                    <button type="button" class="square-item"><span>인천광역시</span></button>
+                                    <button type="button" class="square-item"><span>세종특별자치시</span></button>
+                                    <button type="button" class="square-item"><span>대전광역시</span></button>
+                                    <button type="button" class="square-item"><span>광주광역시</span></button>
+                                    <button type="button" class="square-item"><span>대구광역시</span></button>
+                                    <button type="button" class="square-item"><span>울산광역시</span></button>
+                                    <button type="button" class="square-item"><span>부산광역시</span></button>
+                                    <button type="button" class="square-item"><span>경기도</span></button>
+                                    <button type="button" class="square-item"><span>강원도</span></button>
+                                    <button type="button" class="square-item"><span>충청북도</span></button>
+                                    <button type="button" class="square-item"><span>충청남도</span></button>
+                                    <button type="button" class="square-item"><span>전라북도</span></button>
+                                    <button type="button" class="square-item"><span>전라남도</span></button>
+                                    <button type="button" class="square-item"><span>경상북도</span></button>
+                                    <button type="button" class="square-item"><span>경상남도</span></button>
+                                    <button type="button" class="square-item"><span>제주특별자치도</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tabchild-item">
+                        <div class="square-border-wrap">
+                            <div class="square-tab-wrap">
+                                <div class="square-tab-con">
+                                    <button type="button" class="square-item active"><span>서울특별시</span></button>
+                                    <button type="button" class="square-item"><span>인천광역시</span></button>
+                                    <button type="button" class="square-item"><span>세종특별자치시</span></button>
+                                    <button type="button" class="square-item"><span>대전광역시</span></button>
+                                    <button type="button" class="square-item"><span>광주광역시</span></button>
+                                    <button type="button" class="square-item"><span>대구광역시</span></button>
+                                    <button type="button" class="square-item"><span>울산광역시</span></button>
+                                    <button type="button" class="square-item"><span>부산광역시</span></button>
+                                    <button type="button" class="square-item"><span>경기도</span></button>
+                                    <button type="button" class="square-item"><span>강원도</span></button>
+                                    <button type="button" class="square-item"><span>충청북도</span></button>
+                                    <button type="button" class="square-item"><span>충청남도</span></button>
+                                    <button type="button" class="square-item"><span>전라북도</span></button>
+                                    <button type="button" class="square-item"><span>전라남도</span></button>
+                                    <button type="button" class="square-item"><span>경상북도</span></button>
+                                    <button type="button" class="square-item"><span>경상남도</span></button>
+                                    <button type="button" class="square-item"><span>제주특별자치도</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tabchild-item">
+                        <div class="square-border-wrap">
+                            <div class="square-tab-wrap">
+                                <div class="square-tab-con">
+                                    <button type="button" class="square-item active"><span>서울특별시</span></button>
+                                    <button type="button" class="square-item"><span>인천광역시</span></button>
+                                    <button type="button" class="square-item"><span>세종특별자치시</span></button>
+                                    <button type="button" class="square-item"><span>대전광역시</span></button>
+                                    <button type="button" class="square-item"><span>광주광역시</span></button>
+                                    <button type="button" class="square-item"><span>대구광역시</span></button>
+                                    <button type="button" class="square-item"><span>울산광역시</span></button>
+                                    <button type="button" class="square-item"><span>부산광역시</span></button>
+                                    <button type="button" class="square-item"><span>경기도</span></button>
+                                    <button type="button" class="square-item"><span>강원도</span></button>
+                                    <button type="button" class="square-item"><span>충청북도</span></button>
+                                    <button type="button" class="square-item"><span>충청남도</span></button>
+                                    <button type="button" class="square-item"><span>전라북도</span></button>
+                                    <button type="button" class="square-item"><span>전라남도</span></button>
+                                    <button type="button" class="square-item"><span>경상북도</span></button>
+                                    <button type="button" class="square-item"><span>경상남도</span></button>
+                                    <button type="button" class="square-item"><span>제주특별자치도</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tabchild-item">
+                        <div class="square-border-wrap">
+                            <div class="square-tab-wrap">
+                                <div class="square-tab-con">
+                                    <button type="button" class="square-item active"><span>서울특별시</span></button>
+                                    <button type="button" class="square-item"><span>인천광역시</span></button>
+                                    <button type="button" class="square-item"><span>세종특별자치시</span></button>
+                                    <button type="button" class="square-item"><span>대전광역시</span></button>
+                                    <button type="button" class="square-item"><span>광주광역시</span></button>
+                                    <button type="button" class="square-item"><span>대구광역시</span></button>
+                                    <button type="button" class="square-item"><span>울산광역시</span></button>
+                                    <button type="button" class="square-item"><span>부산광역시</span></button>
+                                    <button type="button" class="square-item"><span>경기도</span></button>
+                                    <button type="button" class="square-item"><span>강원도</span></button>
+                                    <button type="button" class="square-item"><span>충청북도</span></button>
+                                    <button type="button" class="square-item"><span>충청남도</span></button>
+                                    <button type="button" class="square-item"><span>전라북도</span></button>
+                                    <button type="button" class="square-item"><span>전라남도</span></button>
+                                    <button type="button" class="square-item"><span>경상북도</span></button>
+                                    <button type="button" class="square-item"><span>경상남도</span></button>
+                                    <button type="button" class="square-item"><span>제주특별자치도</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tabchild-item">
+                        <div class="square-border-wrap">
+                            <div class="square-tab-wrap">
+                                <div class="square-tab-con">
+                                    <button type="button" class="square-item active"><span>서울특별시</span></button>
+                                    <button type="button" class="square-item"><span>인천광역시</span></button>
+                                    <button type="button" class="square-item"><span>세종특별자치시</span></button>
+                                    <button type="button" class="square-item"><span>대전광역시</span></button>
+                                    <button type="button" class="square-item"><span>광주광역시</span></button>
+                                    <button type="button" class="square-item"><span>대구광역시</span></button>
+                                    <button type="button" class="square-item"><span>울산광역시</span></button>
+                                    <button type="button" class="square-item"><span>부산광역시</span></button>
+                                    <button type="button" class="square-item"><span>경기도</span></button>
+                                    <button type="button" class="square-item"><span>강원도</span></button>
+                                    <button type="button" class="square-item"><span>충청북도</span></button>
+                                    <button type="button" class="square-item"><span>충청남도</span></button>
+                                    <button type="button" class="square-item"><span>전라북도</span></button>
+                                    <button type="button" class="square-item"><span>전라남도</span></button>
+                                    <button type="button" class="square-item"><span>경상북도</span></button>
+                                    <button type="button" class="square-item"><span>경상남도</span></button>
+                                    <button type="button" class="square-item"><span>제주특별자치도</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <hr />
+        <!-- Dropdown -->
+        <section id="default-sec">
+            <h2>Dropdown</h2>
+            <div>
+                <div class="dropdown-wrap">
+                    <button type="button" class="current-item">최신 순</button>
+                    <ul class="dropdown-con">
+                        <li class="dropdown-item">
+                            <button type="button">최신 순</button>
+                        </li>
+                        <li class="dropdown-item">
+                            <button type="button">제목 순</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dropdown-wrap">
+                    <button type="button" class="current-item">15개 보기</button>
+                    <ul class="dropdown-con">
+                        <li class="dropdown-item">
+                            <button type="button">30개 보기</button>
+                        </li>
+                        <li class="dropdown-item">
+                            <button type="button">50개 보기</button>
+                        </li>
+                        <li class="dropdown-item">
+                            <button type="button">100개 보기</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dropdown-wrap">
+                    <button type="button" class="current-item">내용이 긴 dropbox 입니다</button>
+                    <ul class="dropdown-con">
+                        <li class="dropdown-item">
+                            <button type="button">내용이 긴 dropbox 입니다</button>
+                        </li>
+                        <li class="dropdown-item">
+                            <button type="button">내용이 긴 dropbox 입니다</button>
+                        </li>
+                        <li class="dropdown-item">
+                            <button type="button">내용이 긴 dropbox 입니다내용이 긴 dropbox 입니다</button>
+                        </li>
+                        <li class="dropdown-item">
+                            <button type="button">내용이 긴 dropbox 입니다</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <!-- Help -->
+        <section id="default-sec" style="margin-bottom: 300px;">
+            <h2>Help</h2>
+            <div>
+                <h4>Click 형</h4>
+                <div class="inline-wrap mt20" style="padding-left: 100px;">
+                    <div class="tooltip-wrap">
+                        <span class="tooltip-btn" data-tooltip="trigger" tabindex="0"><img src="../../img/ico_qmark@2x.png" alt="Question mark"></span>
+                        <div class="msg-con" data-tooltip="container">
+                            <div class="inner-con">
+                                <p>
+                                    width는 고정, 세로 최소 1줄
+                                </p>
+                                <button type="button" class="close-btn" onclick="tooltipHandler.closeTooltip()">
+                                    <img src="../../img/btn_tooltips_close_bk.svg" alt="도움말 닫기">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <span class="fs-14 color-5a ml40">등기신청수수료</span>
+                    <div class="tooltip-wrap">
+                        <span class="tooltip-btn top" data-tooltip="trigger" tabindex="0"><img src="../../img/ico_qmark@2x.png" alt="Question mark"></span>
+                        <div class="msg-con" data-tooltip="container">
+                            <div class="inner-con">
+                                <p>
+                                    가로넓이는 고정이며 세로는 최소 1줄에서 최대 5줄까지만, 그것보다 길어지면 도움말을 이용하거나 안내영역으로 제공하여야 한다 
+                                </p>
+                                <button type="button" class="close-btn" onclick="tooltipHandler.closeTooltip()">
+                                    <img src="../../img/btn_tooltips_close_bk.svg" alt="도움말 닫기">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <span class="fs-14 color-5a ml40">등록면허세영수필확인서(팝업형 툴팁)</span>
+                    <div class="tooltip-wrap">
+                        <span class="tooltip-btn" data-tooltip="trigger" tabindex="0"><img src="../../img/ico_qmark@2x.png" alt="Question mark"></span>
+                        <div class="tooltip-cont-con" data-tooltip="container">
+                            <div class="tooltip-head">
+                                <p class="title">등록면허세 납세번호 확인 안내</p>
+                                <button type="button" class="close-btn" onclick="tooltipHandler.closeTooltip()">
+                                    <img src="../../img/btn_tooltips_close.svg" alt="닫기">
+                                </button>
+                            </div>
+                            <div class="tooltip-body">
+                                <p>등록면허세 납부 통지서 또는 등록면허세영수증에 기재되어 있는 ‘납세번호’ 를 입력해 주시기 바랍니다.</p>
+                                <div class="mt15">
+                                    <img src="../../img/img_tooltip_fee.jpg" alt="등록면허세 영수증">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <h4>단순 hover 형</h4>
+                <div class="inline-wrap mt20" style="padding-left: 100px;">
+                    <div class="tooltip-wrap type-hover">
+                        <button type="button" class="btn">기존 자료 활용하기</button>
+                        <div class="msg-con w90">
+                            <div class="inner-con">
+                                <p>기본정보</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tooltip-wrap type-hover">
+                        <button type="button" class="btn top">기존 자료 활용하기</button>
+                        <div class="msg-con">
+                            <div class="inner-con">
+                                <p>
+                                    기존에 작성 완료된 신청서를
+                                    재사용할 경우 이용하세요.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr />
+    </main>
+</body>
+
+</html>

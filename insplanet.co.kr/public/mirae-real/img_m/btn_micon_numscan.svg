@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35">
+    <defs>
+        <style>
+            .cls-3{fill:none;stroke:#000;stroke-width:2.5px}
+        </style>
+    </defs>
+    <g id="btn_micon_numscan" transform="translate(-43 69)">
+        <g id="btn_micon_numscan-2" data-name="btn_micon_numscan" transform="translate(53 -59)">
+            <path id="사각형_1331" data-name="사각형 1331" transform="translate(-2 -2)" style="opacity:.126;fill:none" d="M0 0h20v20H0z"/>
+            <path id="패스_4109" data-name="패스 4109" class="cls-3" d="M2.944-1.062h-4v4" transform="translate(-1 -1)"/>
+            <path id="패스_4112" data-name="패스 4112" class="cls-3" d="M2.944 2.938h-4v-4" transform="translate(-1 15)"/>
+            <path id="패스_4110" data-name="패스 4110" class="cls-3" d="M-1.056-1.062h4v4" transform="translate(15 -1)"/>
+            <path id="패스_4111" data-name="패스 4111" class="cls-3" d="M-1.056 2.938h4v-4" transform="translate(15 15)"/>
+            <path id="선_627" data-name="선 627" transform="translate(-1.5 8)" style="opacity:.5;stroke:#000;stroke-width:2.5px;fill:none" d="M0 0h19"/>
+            <g id="사각형_1931" data-name="사각형 1931" class="cls-3">
+                <path style="stroke:none" d="M0 0h12v12H0z" transform="translate(2 2)"/>
+                <path style="fill:none" d="M1.25 1.25h9.5v9.5h-9.5z" transform="translate(2 2)"/>
+            </g>
+        </g>
+    </g>
+</svg>

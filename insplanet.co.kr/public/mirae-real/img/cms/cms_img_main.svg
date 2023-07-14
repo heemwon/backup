@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="664" height="140" viewBox="0 0 664 140">
+    <g transform="translate(-56 -73)">
+        <circle data-name="circle / blue" cx="70" cy="70" r="70" transform="translate(56 73)" style="fill:#eaf7ff"/>
+        <circle data-name="circle / yellow" cx="12" cy="12" r="12" transform="translate(627 147)" style="fill:#f7df64"/>
+        <g data-name="circle / pink" transform="translate(670 85)" style="stroke:#fbd6ee;stroke-width:12px;fill:none">
+            <circle cx="25" cy="25" r="25" style="stroke:none"/>
+            <circle cx="25" cy="25" r="19" style="fill:none"/>
+        </g>
+    </g>
+</svg>

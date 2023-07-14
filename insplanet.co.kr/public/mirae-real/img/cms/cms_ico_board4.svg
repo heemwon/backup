@@ -1,0 +1,10 @@
+<svg data-name="ico / 40 / board" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <path style="opacity:.2;fill:none" d="M0 0h40v40H0z"/>
+    <path data-name="Stroke 7" d="M20.262 0H0v36h27.875V7.975" style="stroke-miterlimit:10;stroke:#000;stroke-width:1.5px;fill:#fff" transform="translate(1 2)"/>
+    <path d="M16.159 13.371V2.684H7.416L5.921 0H0v13.371z" transform="translate(22.841 24.629)" style="fill:#f4c215;stroke:#000;stroke-width:1.5px"/>
+    <path data-name="사각형 1207" transform="translate(6.381 11.871)" style="stroke:#000;stroke-width:1.5px;fill:#fff" d="M0 0h5.05v5.143H0z"/>
+    <path data-name="사각형 1255" transform="translate(6.381 21.956)" style="stroke:#000;stroke-width:1.5px;fill:#fff" d="M0 0h5.05v5.143H0z"/>
+    <path data-name="패스 3550" d="M13.687 12.789h3.358" transform="translate(2.073 -.918)" style="stroke:#000;stroke-width:1.5px;fill:none"/>
+    <path data-name="패스 3551" d="M13.687 12.789h7.867" transform="translate(2.073 3.291)" style="stroke:#000;stroke-width:1.5px;fill:none"/>
+    <path data-name="패스 3552" d="M32.1-9.811v6.248h6.035z" transform="translate(-10.247 12.899)" style="stroke-linecap:round;stroke:#000;stroke-width:1.5px;fill:#fff"/>
+</svg>

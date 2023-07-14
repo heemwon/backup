@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../../js/libs/jquery.min.js"></script>
+    <script src="../../js/libs/jquery-ui.min.js"></script>
+    <script src="../../js/libs/jquery.selectric.js"></script>
+    <script src="../../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../../js/sub.js"></script>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <!-- <link rel="stylesheet" href="../../css/guide.css"> -->
+    <link rel="stylesheet" href="../../css/sub.css">
+    <title>정관작성</title>
+</head>
+
+<body>
+
+        <!-- window popup -->
+        <div class="window-popup-wrap">
+            <div class="content-wrap">
+                <div class="popup-head">
+                    <div class="popup-title">
+                        <div class="inline-wrap">
+                            <h4>정관작성</h4>
+                            <button type="button" class="btn-solid ml15">원인증서 가져오기</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-body">
+                    <div class="popup-cont">
+                        <section class="form-sec mb0">
+                            <div class="sec-body">
+                                <ul class="list-bullet fs-16 color-41 mb5">
+                                    <li>
+                                        <div>본 정관은 인터넷등기소에서 제공하는 표준정관으로 정관의 조항을 필요에 따라 추가/수정/삭제하여 작성 하실 수 있습니다.</div>
+                                    </li>
+                                    <li class="important">
+                                        <div>정관 조항의 추가/수정/삭제 시 경우에 따라 등기 보정 및 각하 사유가 될 수 있으니, 작성 시 유의하시기 바랍니다.</div>
+                                    </li>
+                                </ul>
+
+                                <div class="article-wrap mb30">
+                                    <div class="article-head">
+                                        <label for="arti1" class="title">제 1장</label>
+                                        <div class="input-con">
+                                            <input type="text" name="" id="arti1" class="input-title" placeholder="입력하세요">
+                                        </div>
+                                    </div>
+                                    <div class="article-body">
+                                        <dl class="article-list-con">
+                                            <dt>
+                                                <div class="left-con">
+                                                    제 1조
+                                                </div>
+                                                <div class="right-con">
+                                                    상호
+                                                </div>
+                                            </dt>
+                                            <dd>
+                                                당 회사는 주식회사 동그라미(이)라 한다.
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="inline-wrap tr mt15">
+                                        <button type="button" class="btn-solid color-4d icon-del-wh">장 삭제</button>
+                                        <button type="button" class="btn-solid color-main icon-add-wh">장 추가</button>
+                                    </div>
+                                </div>
+                                
+                                <hr class="seperate-line margin-none" />
+
+                                <div class="article-wrap">
+                                    <div class="article-head mb10">
+                                        <div class="input-con">
+                                            <label for="">
+                                                <input type="text" name="" id="" class="input-title" placeholder="부칙">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="inline-wrap tr mb10">
+                                        <button type="button" class="btn icon-del-bk">조 삭제</button>
+                                        <button type="button" class="btn icon-add-bk">조 추가</button>
+                                    </div>
+                                    <div class="article-body">
+                                        <dl class="article-list-con">
+                                            <dt>
+                                                <div class="left-con">
+                                                    <label for="arti1-1">제 1조</label>
+                                                </div>
+                                                <div class="right-con">
+                                                    <div class="input-con">
+                                                        <input type="text" name="" id="arti1-1" class="" placeholder="입력하세요" value="입력완료">
+                                                    </div>
+                                                </div>
+                                            </dt>
+                                            <dd>
+                                                <div class="block-wrap">
+                                                    <label for="">
+                                                        <textarea name="" id="" cols="30" rows="10">
+이 정관에 규정되지 않은 사항은 주주총회결의 및 상사에 관한 법규, 기타 법령에 의한다.
+당 회사는 필요에 따라 주주총회 결의로 업무수행 및 경영상 필요한 세칙 등 내규를 정할 수 있다.
+                                                        </textarea>
+                                                    </label>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- // 정보입력 -->
+                    </div>
+                </div>
+                <div class="popup-foot">
+                    <div class="left-con">
+                        <div class="important-bullet fs-16">
+                            <p>장/조의 순서 변경, 추가/삭제 할 경우 다른 장/조를 올바르게 참조하고 있는지 내용을 확인하시기 바랍니다.</p>
+                        </div>
+                    </div>
+                    <div class="right-con">
+                        <button type="button" class="btn-solid medium color-4d">작성취소</button>
+                        <button type="button" class="btn-solid medium color-4d">임시저장</button>
+                        <button type="button" class="btn-solid medium">저장 후 전자서명</button>
+                    </div>
+                </div>
+            </div>
+            <div class="dim-wrap"></div>
+        </div>
+
+</body>
+
+</html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../js/libs/jquery.min.js"></script>
+    <script src="../js/libs/jquery-ui.min.js"></script>
+    <script src="../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../js/sub.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <title>인터넷 등기소</title>
+</head>
+<body>
+    <header class="area-header">
+        <div class="area-inner">
+            <span class="btn-historyback"><button onclick="history.back()">뒤로</button></span>
+            <h1 class="title">메뉴명 영역</h1>
+            <span class="btn-navigation"><button onclick="location.href='./2_1_1_main.html'">메뉴</button></span>
+        </div>
+    </header>
+    <!-- Contents -->
+    <div class="area-content">
+        <div class="area-inner">
+            <div class="content-wrap">
+                <!-- 결제정보 -->
+                <section class="payment-sec">
+                    <div class="complete-msg-con">
+                        <p class="complete-text">
+                            <span class="color-main">열람신청이 완료</span>되었습니다.
+                        </p>
+                        <p class="desc">
+                            등기열람수수료 700원을 결제합니다.
+                        </p>
+                    </div>
+                    <div class="item-con">
+                        <!-- 탭메뉴 -->
+                        <ul class="tabmenu-con radio-type" data-tab="container" id="tabmenu0">
+                            <li class="tabmenu-item">
+                                <span class="radio-btn-con">
+                                    <input type="radio" name="type" id="credit">
+                                    <label for="credit" class="icon-credit">신용카드</label>
+                                </span>
+                            </li>
+                            <li class="tabmenu-item active">
+                                <span class="radio-btn-con">
+                                    <input type="radio" name="type" id="prepaid" checked>
+                                    <label for="prepaid" class="icon-prepaid">선불전자</label>
+                                </span>
+                            </li>
+                            <li class="tabmenu-item">
+                                <span class="radio-btn-con">
+                                    <input type="radio" name="type" id="phone">
+                                    <label for="phone" class="icon-phone">휴대폰</label>
+                                </span>
+                            </li>
+                        </ul>
+
+                        <div class="tabchild-con mt15" data-tab-bind="tabmenu0">
+                            <div class="tabchild-item">
+                                <!-- 신용카드 -->
+                                <div class="bg-box-wrap has-radius">
+                                    <p class="fw-500">카드종류를 선택하신 후</p>
+                                    <ul class="list-bullet mt8">
+                                        <li>
+                                            <div>일반결제(ISP)카드의 경우 ISP인증서를 선택하신 후 ISP비밀번호를 입력하여 인증</div>
+                                        </li>
+                                        <li class="mt10">
+                                            <div>그 외 카드의 경우 해당 카드사에서 제공하는 결제방법(앱, 간편결제 등)을 선택하신 후 관련정보를 입력하여 인증</div>
+                                        </li>
+                                    </ul>
+                                    <hr class="seperate-line slim">
+                                    <p class="fs-14">
+                                        기발급된 (구)LG카드를 소지하신 고객은 신한카드 선택, (구)외환카드 또는 (구)하나SK카드를 소지하신 고객은 하나카드 선택
+                                    </p>
+                                    <p class="alert-text mt20">
+                                        해외발행카드는 사용이 불가능합니다.
+                                    </p>
+                                </div>
+                                <div class="select-con mt25">
+                                    <label for="">
+                                        <select name="" id="">
+                                            <option value="">카드종류 선택</option>
+                                            <option value="">option1</option>
+                                            <option value="">option2</option>
+                                        </select>
+                                    </label>
+                                </div>
+
+                                <hr class="seperate-line slim mt35" />
+
+                                <div class="mt35">
+                                    <span class="checkbox-con">
+                                        <input type="checkbox" name="" id="agree">
+                                        <label for="agree" class="fw-bold">정보수집 및 이용약관에 모두 동의합니다</label>
+                                    </span>
+                                </div>
+                                <ul class="list-bullet fs-14 mt15">
+                                    <li>
+                                        <div>해당 정보는 영구적으로 보관되며 수집 및 이용에 동의하지 않을 경우 열람서비스를 이용할 수 없습니다.</div>
+                                    </li>
+                                    <li>
+                                        <div>결제정보는 대법원 인터넷등기소 시스템에 저장되어 결제취소 및 수수료결제내역 조회 시 이용되며 재판 및 수사를 위한 자료로도 활용될 수 있습니다.</div>
+                                    </li>
+                                </ul>
+                                <div class="bg-box-wrap has-radius accordion-wrap mt15">
+                                    <div class="accordion-con title-type" data-accordion="container">
+                                        <div class="accodion-head" data-accordion="item">
+                                            <div class="flex-wrap between">
+                                                <div class="left-con">
+                                                    <span class="checkbox-con">
+                                                        <input type="checkbox" name="" id="agree-pay">
+                                                        <label for="agree-pay">결제약관 전체동의</label>
+                                                    </span>
+                                                </div>
+                                                <div class="right-con">
+                                                    <button type="button" class="accodion-btn" data-accordion="trigger"></button>
+                                                </div>
+                                            </div>
+                                            <p class="fs-14 color-86 mt8">
+                                                수수료 결제와 관련하여 결제대행업체의 별도 약관이 존재합니다.
+                                            </p>
+                                        </div>
+                                        <div class="accodion-body">
+                                            <ul class="list-default2">
+                                                <li>
+                                                    <a href="#none" class="text-btn icon-next">전자지급결제대행 서비스 이용 약관</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#none" class="text-btn icon-next">개인정보 수집 및 이용 약관</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#none" class="text-btn icon-next">개인정보 제3자 제공 및 위탁약관</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabchild-item active">
+                                <!-- 선불전자 -->
+                                <div class="bg-box-wrap has-radius">
+                                    <p>
+                                        선불전자지급수단번호 12자리에 알파벳이포함된 경우는 대/소문자를 구분해서 입력해 주시기 바랍니다.
+                                    </p>
+                                    <hr class="seperate-line slim">
+                                    <p class="fs-14">
+                                        선불전자지급수단 구입 및 충전 사용방법 : 전자민원캐시 (http://minwon.cashgate.co.kr)
+                                    </p>
+                                </div>
+                                <dl class="form-item mt25">
+                                    <dt class="item-head">
+                                        <label for="prenum0" class="item-title">
+                                            선불전자지급수단번호
+                                        </label>
+                                    </dt>
+                                    <dd class="item-body">
+                                        <div class="flex-wrap even">
+                                            <input type="text" name="" id="prenum0" placeholder="앞 8자리 입력">
+                                            <label for="">
+                                                <input type="text" name="" id="prenum1" placeholder="뒤 4자리 입력">
+                                            </label>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl class="form-item">
+                                    <dt class="item-head">
+                                        <label for="prepass0" class="item-title">
+                                            선불전자지급수단 비밀번호
+                                        </label>
+                                    </dt>
+                                    <dd class="item-body">
+                                        <input type="password" name="" id="prepass0" placeholder="비밀번호 입력">
+                                    </dd>
+                                </dl>
+
+                                <hr class="seperate-line slim mt35" />
+
+                                <div class="mt35">
+                                    <span class="checkbox-con">
+                                        <input type="checkbox" name="" id="agree-preall">
+                                        <label for="agree-preall" class="fw-bold">정보수집 및 이용약관에 모두 동의합니다</label>
+                                    </span>
+                                </div>
+                                <ul class="list-bullet fs-14 mt15">
+                                    <li>
+                                        <div>해당 정보는 영구적으로 보관되며 수집 및 이용에 동의하지 않을 경우 열람서비스를 이용할 수 없습니다.</div>
+                                    </li>
+                                    <li>
+                                        <div>결제정보는 대법원 인터넷등기소 시스템에 저장되어 결제취소 및 수수료결제내역 조회 시 이용되며 재판 및 수사를 위한 자료로도 활용될 수 있습니다.</div>
+                                    </li>
+                                </ul>
+                                <div class="bg-box-wrap has-radius accordion-wrap mt15">
+                                    <div class="accordion-con title-type" data-accordion="container">
+                                        <div class="accodion-head" data-accordion="item">
+                                            <div class="flex-wrap between">
+                                                <div class="left-con">
+                                                    <span class="checkbox-con">
+                                                        <input type="checkbox" name="" id="agree-prepay">
+                                                        <label for="agree-prepay">결제약관 전체동의</label>
+                                                    </span>
+                                                </div>
+                                                <div class="right-con">
+                                                    <button type="button" class="accodion-btn" data-accordion="trigger"></button>
+                                                </div>
+                                            </div>
+                                            <p class="fs-14 color-86 mt8">
+                                                수수료 결제와 관련하여 결제대행업체의 별도 약관이 존재합니다.
+                                            </p>
+                                        </div>
+                                        <div class="accodion-body">
+                                            <ul class="list-default2">
+                                                <li>
+                                                    <a href="#none" class="text-btn icon-next">전자지급결제대행 서비스 이용 약관</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#none" class="text-btn icon-next">개인정보 수집 및 이용 약관</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#none" class="text-btn icon-next">개인정보 제3자 제공 및 위탁약관</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabchild-item ">
+                                <!-- 휴대폰 결제 -->
+                                <div class="bg-box-wrap has-radius">
+                                    <ul class="list-bullet fs-15">
+                                        <li>
+                                            <div>보유하고 계신 휴대폰의 번호와 휴대폰 명의인의 생년월일, 성별을 입력합니다.</div>
+                                        </li>
+                                        <li>
+                                            <div>휴대폰 문자메시지로 받으신 인증번호를 입력합니다.</div>
+                                        </li>
+                                        <li>
+                                            <div>휴대폰으로 결제하신 금액은 익월 휴대폰요금에 포함되어 청구됩니다.</div>
+                                        </li>
+                                    </ul>
+                                    <hr class="seperate-line slim" />
+                                    <p class="alert-text">
+                                        인증번호 요청 후 3분 이내에 결제하지 않을 경우 다시 인증을 받아야 합니다.
+                                    </p>
+                                </div>
+                                <dl class="form-item mt25">
+                                    <dt class="item-head">
+                                        <label for="phone0" class="item-title">
+                                            휴대폰 번호
+                                        </label>
+                                    </dt>
+                                    <dd class="item-body">
+                                        <div class="fluid-wrap">
+                                            <span class="select-con fix-l">
+                                                <select name="" id="phone0">
+                                                    <option value="">통신사</option>
+                                                    <option value="">SK</option>
+                                                    <option value="">KT</option>
+                                                    <option value="">LG</option>
+                                                </select>
+                                            </span>
+                                            <label for="phone1">
+                                                <input type="text" name="" id="phone1" placeholder="- 없이 입력">
+                                            </label>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl class="form-item">
+                                    <dt class="item-head">
+                                        <label for="iden0" class="item-title">
+                                            명의인 생년월일, 성별
+                                        </label>
+                                    </dt>
+                                    <dd class="item-body">
+                                        <div class="reginumber-wrap">
+                                            <div class="number-con">
+                                                <input type="text" name="" id="iden0" class="" placeholder="생년월일 6자리">
+                                                <span class="hyphen"></span>
+                                                <span>
+                                                    <label for="iden1">
+                                                        <input type="text" name="" id="iden1" class="disable-clear-btn">
+                                                    </label>
+                                                    <span class="enc-text">●●●●●●</span>
+                                                </span>
+                                            </div>
+                                            <div class="desc-con">
+                                                <p>명의인의 주민등록번호 앞 6자리와 뒷 1자리 숫자를 입력하시기 바랍니다. 입력예시) 780101-2, 851010-1</p>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+
+                                <hr class="seperate-line slim mt35" />
+
+                                <div class="mt35">
+                                    <span class="checkbox-con">
+                                        <input type="checkbox" name="" id="agree-phoall">
+                                        <label for="agree-phoall" class="fw-bold">정보수집 및 이용약관에 모두 동의합니다</label>
+                                    </span>
+                                </div>
+                                <ul class="list-bullet fs-14 mt15">
+                                    <li>
+                                        <div>해당 정보는 영구적으로 보관되며 수집 및 이용에 동의하지 않을 경우 열람서비스를 이용할 수 없습니다.</div>
+                                    </li>
+                                    <li>
+                                        <div>결제정보는 대법원 인터넷등기소 시스템에 저장되어 결제취소 및 수수료결제내역 조회 시 이용되며 재판 및 수사를 위한 자료로도 활용될 수 있습니다.</div>
+                                    </li>
+                                </ul>
+                                <div class="bg-box-wrap has-radius accordion-wrap mt15">
+                                    <div class="accordion-con title-type" data-accordion="container">
+                                        <div class="accodion-head" data-accordion="item">
+                                            <div class="flex-wrap between">
+                                                <div class="left-con">
+                                                    <span class="checkbox-con">
+                                                        <input type="checkbox" name="" id="agree-phone">
+                                                        <label for="agree-phone">결제약관 전체동의</label>
+                                                    </span>
+                                                </div>
+                                                <div class="right-con">
+                                                    <button type="button" class="accodion-btn" data-accordion="trigger"></button>
+                                                </div>
+                                            </div>
+                                            <p class="fs-14 color-86 mt8">
+                                                수수료 결제와 관련하여 결제대행업체의 별도 약관이 존재합니다.
+                                            </p>
+                                        </div>
+                                        <div class="accodion-body">
+                                            <ul class="list-default2">
+                                                <li>
+                                                    <a href="#none" class="text-btn icon-next">전자지급결제대행 서비스 이용 약관</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#none" class="text-btn icon-next">개인정보 수집 및 이용 약관</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#none" class="text-btn icon-next">개인정보 제3자 제공 및 위탁약관</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mt25">
+                                    <button type="button" class="btn-solid large">인증번호 요청</button>
+                                </div>
+                                <dl class="form-item">
+                                    <dt class="item-head">
+                                        <label for="cert0" class="item-title">
+                                            인증번호
+                                        </label>
+                                    </dt>
+                                    <dd class="item-body">
+                                        <div class="certnum-wrap">
+                                            <div class="number-con">
+                                                <input type="text" name="" id="cert0" placeholder="4~6자리">
+                                                <span class="count">2:59</span>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bottom-button-sec flex-between" data-fixed-btn="">
+                    <button type="button" class="btn-solid color-4d" onclick="location.href='MVIE_03_1.html'">이전</button>
+                    <button type="button" class="btn-solid color-52" onclick="popupManager.openPopup('#popup-pay-complete')">결제 후 열람</button>
+                </section>
+                
+            </div>
+        </div>
+    </div>
+    <footer class="area-footer">
+        <div class="area-inner">
+            <div class="box-privite">
+                <a href="">이용약관</a>
+                <a href=""><strong>개인정보처리방침</strong></a>
+                <a href="">원격지원</a>
+                
+            </div>
+            <p class="text-copyright">Copyright © Supreme Court of Korea.<br > All right reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

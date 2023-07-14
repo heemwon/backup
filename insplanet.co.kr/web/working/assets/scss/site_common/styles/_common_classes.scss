@@ -1,0 +1,313 @@
+@charset "utf-8";
+// ---------------------------------- Site common classes ---------------------------------- //
+body{
+  font-family:$site-font, "Malgun Gothic","맑은 고딕","MS PGothic","Apple SD Gothic Neo","Apple SD 고딕 Neo",AppleGothic,"Microsoft NeoGothic","Droid sans",Dotum,돋움,굴림,arial,Helvetica,sans-serif, "Segoe UI",Roboto, serif, sans-serif, monospace;
+  font-size: 16px;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  color: $base-color;
+
+  #app{
+   // visibility: hidden;
+
+    &.show{
+      visibility: visible;
+    }
+  }
+
+  .wrapper {
+    overflow: hidden;
+  }
+
+  @include break-point-max(sm){
+    @include vw-converter(font-size, 16, $psd-mobile-width);
+  }
+
+  @include break-point-min(md){
+
+  }
+}
+
+// ---------------------------------- helper ---------------------------------- //
+.no-pd{
+  padding:0 !important;
+}
+.no-ma{
+  margin:0 !important;
+}
+// 백그라운드 이미지 처리
+.img-holder {
+  &.image-cover {
+    .img {
+      background: {
+        size: cover;
+      };
+    }
+  }
+
+  &.image-contain {
+    .img {
+      background: {
+        size: contain;
+      };
+    }
+  }
+
+  .img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: {
+      repeat: no-repeat;
+      position: center center;
+    };
+  }
+}
+
+$theme-class: selector-parse('.theme-black');
+// ---------------------------------- typography ---------------------------------- //
+$heading-h1: selector-parse('h1, .h1');
+$heading-h2: selector-parse('h2, .h2');
+$heading-h3: selector-parse('h3, .h3');
+@include break-point-max(sm){
+  #{$heading-h1}{
+    @include vw-converter(font-size, 180, $psd-mobile-width);
+    letter-spacing: -0.028em;
+    line-height: percentage(74/56);
+  }
+
+  #{$heading-h2}{
+    @include vw-converter(font-size, 26, $psd-mobile-width);
+    letter-spacing: -0.013em;
+    line-height: percentage(36/26);
+  }
+
+  #{$heading-h3}{
+    @include vw-converter(font-size, 18, $psd-mobile-width);
+    letter-spacing: -0.09em;
+    line-height: percentage(30/18);
+  }
+}
+
+@include break-point-min(md){
+  #{$heading-h1}{
+    font-size: 180px;
+    letter-spacing: -0.028em;
+    line-height: percentage(74/56);
+  }
+
+  #{$heading-h2}{
+    font-size: 26px;
+    letter-spacing: -0.013em;
+    line-height: percentage(36/26);
+  }
+
+  #{$heading-h3}{
+    font-size: 18px;
+    letter-spacing: -0.09em;
+    line-height: percentage(30/18);
+  }
+}
+
+// ---------------------------------- Buttons ---------------------------------- //
+.btn{
+  display: inline-flex;
+  color: #212529;
+  align-items: center;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: .375em 0;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+  &.btn-circle{
+    border:2px solid #000;
+    border-radius: 50%;
+    justify-content: center;
+  }
+
+  .txt{
+    display: block;
+    font-size: 1em;
+    line-height: 1.5;
+    color:#222;
+
+    &:before{
+      display: inline-block;
+      vertical-align: middle;
+      width:0;
+      height:100%;
+      content:'';
+    }
+  }
+
+  @include break-point-max(sm){
+    &.btn-circle{
+
+      &.big-size{
+        @include vw-converter(width, 150, $psd-mobile-width);
+        @include vw-converter(height, 150, $psd-mobile-width);
+      }
+    }
+
+    //아이콘 위치
+    & > .icon + .txt,
+    & > .txt + .icon{
+      @include vw-converter(margin-left, 16, $psd-mobile-width);
+    }
+  }
+
+  @include break-point-min(md){
+    .txt{
+      @include vw-converter(font-size, 18, $psd-pc-width);
+    }
+    &.btn-circle{
+      &.big-size{
+        @include vw-converter(width, 150, $psd-pc-width);
+        @include vw-converter(height, 150, $psd-pc-width);
+      }
+    }
+
+    //아이콘 위치
+    & > .icon + .txt,
+    & > .txt + .icon{
+      @include vw-converter(margin-left, 16, $psd-pc-width);
+    }
+  }
+
+  &.btn-white{
+    .txt{
+      color:#fff;
+    }
+  }
+  &.btn-fill{
+    background-color: #000;
+    color:#fff;
+    &.btn-circle{
+    }
+  }
+}
+
+// ---------------------------------- icon ---------------------------------- //
+.icon{
+  &:before{
+    display: block;
+    width:100%; height:100%;
+    background: {
+      repeat: no-repeat;
+      position: center center;
+      size:contain;
+    };
+    content:'';
+  }
+
+  //define icons
+  &.icon-download{
+    &:before{
+      background: {
+        image: url('../images/common/icon_download.svg');
+      };
+    }
+  }
+
+  &.icon-next{
+    &:before{
+      background: {
+        image: url('../images/common/icon_next.svg');
+      };
+    }
+
+    &.icon-white{
+      &:before{
+        background: {
+          image: url('../images/common/icon_next_w.svg');
+        };
+      }
+    }
+  }
+
+  //gnb
+  &.icon-work{
+    &:before{
+      background: {
+        image: url('../images/common/icon_work.svg');
+      };
+    }
+  }
+
+  &.icon-company{
+    &:before{
+      background: {
+        image: url('../images/common/icon_company.svg');
+      };
+    }
+  }
+
+  &.icon-about{
+    &:before{
+      background: {
+        image: url('../images/common/icon_about.svg');
+      };
+    }
+  }
+
+  &.icon-contact{
+    &:before{
+      background: {
+        image: url('../images/common/icon_contact.svg');
+      };
+    }
+  }
+
+
+
+
+
+  @include break-point-max(sm){
+
+  }
+
+  @include break-point-min(min){
+    //define icons
+    &.icon-download{
+      @include vw-converter(width, 24, $psd-pc-width);
+      @include vw-converter(height, 24, $psd-pc-width);
+    }
+
+    &.icon-next{
+
+    }
+  }
+}
+// ---------------------------------- image-card ---------------------------------- //
+.image-banner{
+
+}
+
+// ---------------------------------- theme Define ---------------------------------- //
+#{$theme-class}{
+  #{$heading-h1},
+  #{$heading-h2},
+  #{$heading-h3}{
+    &{
+      color:#fff;
+    }
+  }
+
+  .hlogo{
+    &{
+      colore:red;
+    }
+  }
+
+  .btn{
+    color:gold;
+    &.btn-circle{
+      color:blue;
+    }
+  }
+}
+
+
+
+

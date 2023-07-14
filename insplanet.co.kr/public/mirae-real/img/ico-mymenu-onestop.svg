@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+    <defs>
+        <style>
+            .cls-2,.cls-3{fill:#fff;stroke:#000;stroke-width:1.5px}.cls-3{fill:#fec867}.cls-4{stroke:none}.cls-5{fill:none}
+        </style>
+    </defs>
+    <g id="ico_mymenu_onestop" transform="translate(-1637.027 -586.311)">
+        <path id="Op_component_2" d="M20.972 0H4C1.791 0 0 .02 0 .045v.2h20.972V0z" class="cls-2" transform="translate(1663.027 617.811)"/>
+        <path id="Op_component_2-2" d="M20.972 0H4C1.791 0 0 .02 0 .045v.2h20.972V0z" class="cls-2" transform="translate(1659.027 623.811)"/>
+        <path id="Op_component_2-3" d="M20.972 0H4C1.791 0 0 .02 0 .045v.2h20.972V0z" class="cls-2" transform="translate(1665.027 628.811)"/>
+        <path id="Op_component_2-4" d="M15.328 0H2.923C1.309 0 0 .02 0 .045v.2h15.328V0z" class="cls-2" transform="translate(1665.027 611.811)"/>
+        <g id="그룹_3277" transform="translate(-4)">
+            <path id="Op_component_2-5" d="M0 0h22.972v35H0V0z" class="cls-2" transform="translate(1657.027 597.311)"/>
+            <g id="Op_component_1" class="cls-3">
+                <path d="M0 0H5.046V5.046H0z" class="cls-4" transform="translate(1662.513 603.781)"/>
+                <path d="M0.75 0.75H4.295999999999999V4.295999999999999H0.75z" class="cls-5" transform="translate(1662.513 603.781)"/>
+            </g>
+            <g id="Op_component_3" class="cls-3">
+                <path d="M0 0H5.046V5.046H0z" class="cls-4" transform="translate(1662.513 613.019)"/>
+                <path d="M0.75 0.75H4.295999999999999V4.295999999999999H0.75z" class="cls-5" transform="translate(1662.513 613.019)"/>
+            </g>
+        </g>
+    </g>
+</svg>

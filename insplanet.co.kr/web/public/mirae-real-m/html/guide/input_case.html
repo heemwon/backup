@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../../js/libs/jquery.min.js"></script>
+    <script src="../../js/libs/jquery-ui.min.js"></script>
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+    
+    <script src="../../js/sub.js"></script>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/guide.css">
+    <link rel="stylesheet" href="../../css/sub.css">
+    <title>Input Case Style</title>
+</head>
+
+<body>
+    <main>
+        <section class="title-sec">
+            <h2>Input Case</h2>
+        </section>
+        <section class="guide-sec">
+            <p class="fs-18 fw-500">단위 있음</p>
+            <p class="fs-14">데이터 출력값은 우측정렬을 기본으로함</p>
+            <p>
+                <span class="input-unit-wrap">
+                    <span class="unit-left">제</span>
+                    <input type="text" name="" id="" class="" placeholder="">
+                    <span class="unit-right">호</span>
+                </span>
+            </p>
+        </section>
+        <section class="guide-sec">
+            <p class="fs-18 fw-500">전화번호</p>
+            <p>
+                <div class="block-wrap">
+                    <input type="text" name="" id="" class="tc" placeholder="‘-‘ 제외 입력">
+                    <span class="checkbox-con">
+                        <input type="checkbox" name="" id="agree-sms">
+                        <label for="agree-sms">SMS 수신 동의</label>
+                    </span>
+                </div>
+            </p>
+        </section>
+        <section class="guide-sec">
+            <p class="fs-18 fw-500">이메일</p>
+            <p>
+                <div class="block-wrap">
+                    <input type="text" name="" id="" class="" placeholder="" value="honggildong@email.com">
+                    <span class="checkbox-con">
+                        <input type="checkbox" name="" id="agree-email">
+                        <label for="agree-email">이메일 수신 동의</label>
+                    </span>
+                </div>
+            </p>
+        </section>
+        <section class="guide-sec">
+            <p class="fs-18 fw-500">주소</p>
+            <p>
+                <div class="address-wrap">
+                    <div class="address-con">
+                        <input type="text" name="" id="" class="" placeholder="우편번호 입력" readonly>
+                        <button type="button" class="btn-solid small color-4d">주소검색</button>
+                    </div>
+                    <div class="detail-con">
+                        <input type="text" name="" id="" class="" value="서울특별시 동작구 신대방1동 72-2" readonly>
+                    </div>
+                    <div class="detail-con">
+                        <input type="text" name="" id="" class="" placeholder="상세주소 입력">
+                    </div>
+                </div>
+            </p>
+        </section>
+        <section class="guide-sec">
+            <p class="fs-18 fw-500">날짜 조회</p>
+            <p>
+                <span class="datepicker-con">
+                    <input type="text" name="" id="" class="datepicker" onfocus="this.blur();">
+                </span> 
+            </p>
+        </section>
+        <section class="guide-sec">
+            <p class="fs-18 fw-500">기간 조회</p>
+            <p>
+                <div class="period-wrap">
+                    <div class="period-con">
+                        <span class="datepicker-con">
+                            <input type="text" name="" id="period0" class="datepicker" onfocus="this.blur();">
+                        </span>
+                        <span class="hyphen"></span>
+                        <span class="datepicker-con">
+                            <input type="text" name="" id="period1" class="datepicker" onfocus="this.blur();">
+                        </span>
+                    </div>
+                    <div class="btn-con">
+                        <button type="button" class="btn">1주일</button>
+                        <button type="button" class="btn">1개월</button>
+                        <button type="button" class="btn">3개월</button>
+                    </div>
+                </div>
+            </p>
+        </section>
+        <section class="guide-sec">
+            <p class="fs-18 fw-500">인풋케이스 - 기타형</p>
+            <div>
+                <p class="fs-14 color-5a">앞자리 뒷자리 각자입력형</p>
+                <div class="flex-wrap even">
+                    <input type="text" name="" id="" placeholder="앞 6자리 입력">
+                    <input type="text" name="" id="" placeholder="뒤 7자리 입력">
+                </div>
+                <br />
+                <br />
+                <p class="fs-14 color-5a">선택하고 입력형</p>
+                <div class="fluid-wrap">
+                    <span class="select-con fix-l">
+                        <select name="" id="">
+                            <option value="">통신사</option>
+                            <option value="">SK</option>
+                            <option value="">KT</option>
+                            <option value="">LG</option>
+                        </select>
+                    </span>
+                    <input type="text" name="" id="" placeholder="- 없이 입력">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

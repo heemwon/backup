@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .cls-3{fill:none;stroke:#999;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.2px}
+        </style>
+    </defs>
+    <g id="btn_quick_call" transform="translate(-15 118)">
+        <path id="Icon_ionic-ios-call" fill="#4a5dc6" d="M5.156 22.545A19.355 19.355 0 0 1 9.2 19.839c1.212-.582 1.656-.57 2.513.048.714.516 1.176 1 2 .816s2.442-1.4 4.013-2.969 2.8-3.191 2.969-4.013-.306-1.284-.816-2c-.618-.858-.636-1.3-.048-2.514a18.973 18.973 0 0 1 2.705-4.043c.882-.882 1.08-.69 1.566-.516a8.909 8.909 0 0 1 1.434.762 4.325 4.325 0 0 1 1.719 1.82c.342.738.738 2.112-1.278 5.7a31.8 31.8 0 0 1-5.591 7.457l-.006.006-.006.006a31.923 31.923 0 0 1-7.456 5.591c-3.587 2.016-4.961 1.62-5.7 1.278A4.251 4.251 0 0 1 5.4 25.544a8.91 8.91 0 0 1-.762-1.434c-.172-.485-.37-.683.518-1.565z" transform="translate(20.51 -112.502)"/>
+        <path id="Icon_feather-phone-call" d="M15.093 7.5a7.5 7.5 0 0 0-5.925 5.925" class="cls-3" transform="translate(19.5 -112.5)"/>
+        <path id="Icon_feather-phone-call-2" d="M15.093 1.5A13.5 13.5 0 0 0 3.168 13.41" class="cls-3" transform="translate(20.5 -111.5)"/>
+    </g>
+</svg>

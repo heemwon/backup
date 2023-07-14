@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <g data-name="사각형 1822" style="stroke-width:1.5px;fill:#fff;stroke:#1d1d1d">
+        <path style="stroke:none" d="M0 0h30v38H0z" transform="translate(2 2)"/>
+        <path style="fill:none" d="M.75.75h28.5v36.5H.75z" transform="translate(2 2)"/>
+    </g>
+    <path data-name="Stroke 9" d="M0 .4h7.5" transform="translate(18.793 8.203)" style="stroke-miterlimit:10;stroke:#000;fill:none;stroke-width:1.5px"/>
+    <path data-name="Stroke 11" d="M0 .4h7.5" transform="translate(18.793 12.162)" style="stroke-miterlimit:10;stroke:#000;fill:none;stroke-width:1.5px"/>
+    <path data-name="Stroke 15" d="M0 5.58h5.58V0H0z" transform="translate(8.532 7.789)" style="stroke-linecap:round;stroke-miterlimit:10;stroke:#000;fill:none;stroke-width:1.5px"/>
+    <path data-name="Stroke 17" d="M0 5.58h5.58V0H0z" transform="translate(8.532 19.083)" style="stroke-linecap:round;stroke-miterlimit:10;stroke:#000;fill:none;stroke-width:1.5px"/>
+    <g data-name="그룹 3644">
+        <path data-name="Stroke 5" d="M8.5 0A8.5 8.5 0 1 1 0 8.5 8.5 8.5 0 0 1 8.5 0z" transform="translate(21.5 22)" style="fill:#4b6ceb;stroke-miterlimit:10;stroke:#000;stroke-width:1.5px"/>
+        <path data-name="Stroke 7" d="M7.791 0 3.657 4.725a.891.891 0 0 1-.637.3h-.031a.884.884 0 0 1-.626-.26L0 2.406" transform="translate(26.5 28)" style="stroke:#fff;stroke-linejoin:round;stroke-miterlimit:10;fill:none;stroke-width:1.5px"/>
+    </g>
+</svg>

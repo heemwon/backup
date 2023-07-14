@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- libs - Jquery, Datepicker, selectbox -->
+    <script src="../js/libs/jquery.min.js"></script>
+    <script src="../js/libs/jquery-ui.min.js"></script>
+    <script src="../js/libs/lib.js"></script>
+    <link rel="stylesheet" href="../css/lib.css">
+    <!-- // libs - Jquery, Datepicker, selectbox -->
+
+    <script src="../js/sub.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <title>인터넷 등기소</title>
+</head>
+<body>
+    <header class="area-header">
+        <div class="area-inner">
+            <span class="btn-historyback"><button>뒤로</button></span>
+            <h1 class="title">부동산 검색</h1>
+            <span class="btn-navigation"><button>메뉴</button></span>
+        </div>
+    </header>
+    <div class="area-content">
+        <div class="area-inner">
+            <div class="content-wrap">
+                <!-- 조건 검색 -->
+                <!-- 
+                <section class="filter-sec">
+                    <div class="filter-wrap active" data-filter-folding="container">
+                        <div class="filter-head">
+                            <span class="filter-title">조건 검색</span>
+                            <div class="fold-btn-con">
+                                <button type="button" class="fold-btn" data-filter-folding="trigger"></button>
+                            </div>
+                        </div>
+                        <div class="filter-body">
+                            <dl class="form-item">
+                                <dt class="item-head">
+                                    <span class="left-con">
+                                        <label for="period0" class="item-title">
+                                            접수일자
+                                        </label>
+                                        <span class="required">필수</span>
+                                    </span>
+                                </dt>
+                                <dd class="item-body">
+                                    <div class="period-wrap">
+                                        <div class="period-con">
+                                            <span class="datepicker-con">
+                                                <input type="text" name="" id="period0" class="datepicker" onfocus="this.blur();">
+                                            </span>
+                                            <span class="hyphen"></span>
+                                            <span class="datepicker-con">
+                                                <label for="">
+                                                    <input type="text" name="" id="period1" class="datepicker" onfocus="this.blur();">
+                                                </label>
+                                            </span>
+                                        </div>
+                                        <div class="btn-con">
+                                            <button type="button" class="btn">1주일</button>
+                                            <button type="button" class="btn">1개월</button>
+                                            <button type="button" class="btn">3개월</button>
+                                            <button type="button" class="btn">6개월</button>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <div class="btn-wrap">
+                                <div class="btn-con">
+                                    <button type="button" class="btn-solid medium color-4d">조회</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+                -->
+
+                <section class="default-sec">
+                    <div class="accordion-wrap selected-option-wrap">
+                        <div class="accordion-con title-type" data-accordion="container">
+                            <div class="accodion-head" data-accordion="item">
+                                <button type="button" class="selected-option-btn" data-accordion="trigger">
+                                    <div class="selected-option-con">
+                                        <span>상세조회</span>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="accodion-body has-padding">
+                                <dl class="form-item mt10">
+                                    <dt class="item-head">
+                                        <div class="left-con">
+                                            <label for="input0" class="item-title">항목명</label>
+                                            <div class="tooltip-wrap">
+                                                <button type="button" class="tooltip-btn" data-tooltip="trigger"><img src="../img/m_ico_qmark@3x.png" alt="도움말"></button>
+                                                <div class="msg-con" data-tooltip="container">
+                                                    <div class="inner-con">
+                                                        <p>
+                                                            항목명 툴팁
+                                                        </p>
+                                                        <button type="button" class="close-btn" onclick="tooltipHandler.closeTooltip()">
+                                                            <img src="../img/btn_tooltips_close.svg" alt="도움말 닫기">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <span class="required">필수</span>
+                                        </div>
+                                        <div class="right-con">
+                                            <span class="required-info"><span class="star">*</span> 필수입력</span>
+                                        </div>
+                                    </dt>
+                                    <dd class="item-body">
+                                        <div class="block-wrap">
+                                            <span class="clear-btn-con"><input type="text" id="input0" placeholder="가이드문구"><span class="clear-btn"></span></span>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl class="form-item">
+                                    <dt class="item-head">
+                                        <span class="left-con">
+                                            <label for="select0" class="item-title">
+                                                항목명
+                                            </label>
+                                        </span>
+                                    </dt>
+                                    <dd class="item-body">
+                                        <div class="block-wrap">
+                                            <span class="select-con">
+                                                <select name="" id="select0" class="">
+                                                    <option value="">전체</option>
+                                                </select>
+                                            </span>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl class="form-item">
+                                    <dt class="item-head">
+                                        <span class="left-con">
+                                            <label for="period0" class="item-title">
+                                                접수일자
+                                            </label>
+                                        </span>
+                                    </dt>
+                                    <dd class="item-body">
+                                        <div class="period-wrap">
+                                            <div class="period-con">
+                                                <span class="datepicker-con">
+                                                    <input type="text" name="" id="period0" class="datepicker" onfocus="this.blur();">
+                                                </span>
+                                                <span class="hyphen"></span>
+                                                <span class="datepicker-con">
+                                                    <label for="">
+                                                        <input type="text" name="" id="period1" class="datepicker" onfocus="this.blur();">
+                                                    </label>
+                                                </span>
+                                            </div>
+                                            <div class="btn-con">
+                                                <button type="button" class="btn">1주일</button>
+                                                <button type="button" class="btn">1개월</button>
+                                                <button type="button" class="btn">3개월</button>
+                                                <button type="button" class="btn">6개월</button>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <div class="btn-con mt25">
+                                    <button type="button" class="btn-solid large">조회</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 부동산 검색 목록 -->
+                <section class="content-sec">
+                    <div class="list-head">
+                        <div class="left-con">
+                            <span class="fs-14 color-86">전체 18건</span>
+                        </div>
+                    </div>
+                    <div class="list-body">
+                        <ul class="list-con">
+                            <li>
+                                <div class="item-head">
+                                    <div class="left-con">
+                                        <span>2021-01-07</span>
+                                        <span class="has-border">작성번호 112</span>
+                                    </div>
+                                    <div class="right-con">
+                                        <span class="tag ing">처리중</span>
+                                    </div>
+                                </div>
+                                <div class="item-body">
+                                    <div class="title-con">
+                                        <a href="#" class="title">
+                                            인천광역시 계양구 작전동 123412567
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item-foot">
+                                    <ul class="detail-info-con">
+                                        <li>
+                                            <span class="title">등기유형</span>
+                                            <span class="text">임차권이전</span>
+                                        </li>
+                                        <li>
+                                            <span class="title">법무사</span>
+                                            <span class="text">정가람</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-head">
+                                    <div class="left-con">
+                                        <span>2021-10-10</span>
+                                        <span class="has-border">작성번호 112</span>
+                                    </div>
+                                    <div class="right-con">
+                                        <span class="tag impossible">처리불가</span>
+                                    </div>
+                                </div>
+                                <div class="item-body">
+                                    <div class="title-con">
+                                        <a href="#" class="title">
+                                            인천광역시 계양구 작전동 123412567
+글자가 넘칠 경우 두줄로 표시 가능해요인천광역시 계양구 작전동 123412567
+글자가 넘칠 경우 두줄로 표시 가능해요
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item-foot">
+                                    <ul class="detail-info-con">
+                                        <li>
+                                            <span class="title">등기유형</span>
+                                            <span class="text">임차권이전</span>
+                                        </li>
+                                        <li>
+                                            <span class="title">법무사</span>
+                                            <span class="text">정가람</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer class="area-footer">
+        <div class="area-inner">
+            <div class="box-privite">
+                <a href="">이용약관</a>
+                <a href=""><strong>개인정보처리방침</strong></a>
+                <a href="">원격지원</a>
+                
+            </div>
+            <p class="text-copyright">Copyright © Supreme Court of Korea.<br > All right reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
